@@ -869,6 +869,16 @@ tile.rustyIron.name=Rusty Iron
 tile.elfFloor.name=Elf Floor
 tile.gondorianFloor.name=Gondorian Floor
 tile.stoneFloor.name=Stone Floor
+tile.silkStone.name=Smooth Stone
+tile.crackedSilkStone.name=Cracked Smooth Stone
+tile.straw.name=Straw
+tile.crackedEarth.name=Cracked Earth
+tile.bagEndFloor.name=Bag End Floor
+tile.bagEndWall.name=Bag End Wall
+tile.brownStone.name=Brown Stone
+tile.mordorStone.name=Mordor Stone
+tile.cliffBlock.name=Cliff Block
+tile.spiderEgg.name=Spider Egg
 
 item.nameTag.name=Name Tag
 item.leash.name=Lead

@@ -861,6 +861,16 @@ public class Item
         registerItemBlock(Blocks.ELF_FLOOR);
         registerItemBlock(Blocks.GONDORIAN_FLOOR);
         registerItemBlock(Blocks.STONE_FLOOR);
+        registerItemBlock(Blocks.SILK_STONE);
+        registerItemBlock(Blocks.CRACKED_SILK_STONE);
+        registerItemBlock(Blocks.STRAW);
+        registerItemBlock(Blocks.CRACKED_EARTH);
+        registerItemBlock(Blocks.BAG_END_FLOOR);
+        registerItemBlock(Blocks.BAG_END_WALL);
+        registerItemBlock(Blocks.BROWN_STONE);
+        registerItemBlock(Blocks.MORDOR_STONE);
+        registerItemBlock(Blocks.CLIFF_BLOCK);
+        registerItemBlock(Blocks.SPIDER_EGG);
         // End Awaken Dreams code
         registerItem(256, "iron_shovel", (new ItemSpade(Item.ToolMaterial.IRON)).setUnlocalizedName("shovelIron"));
         registerItem(257, "iron_pickaxe", (new ItemPickaxe(Item.ToolMaterial.IRON)).setUnlocalizedName("pickaxeIron"));

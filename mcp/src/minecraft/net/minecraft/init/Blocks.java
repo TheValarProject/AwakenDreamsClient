@@ -282,6 +282,16 @@ public class Blocks
     public static final Block ELF_FLOOR;
     public static final Block GONDORIAN_FLOOR;
     public static final Block STONE_FLOOR;
+    public static final Block SILK_STONE;
+    public static final Block CRACKED_SILK_STONE;
+    public static final Block STRAW;
+    public static final Block CRACKED_EARTH;
+    public static final Block BAG_END_FLOOR;
+    public static final Block BAG_END_WALL;
+    public static final Block BROWN_STONE;
+    public static final Block MORDOR_STONE;
+    public static final Block CLIFF_BLOCK;
+    public static final Block SPIDER_EGG;
     // Begin Awaken Dreams code
 
     @Nullable
@@ -553,7 +563,16 @@ public class Blocks
             ELF_FLOOR = getRegisteredBlock("elf_floor");
             GONDORIAN_FLOOR = getRegisteredBlock("gondorian_floor");
             STONE_FLOOR = getRegisteredBlock("stone_floor");
-            
+            SILK_STONE = getRegisteredBlock("silk_stone");
+            CRACKED_SILK_STONE = getRegisteredBlock("cracked_silk_stone");
+            STRAW = getRegisteredBlock("straw");
+            CRACKED_EARTH = getRegisteredBlock("cracked_earth");
+            BAG_END_FLOOR = getRegisteredBlock("bag_end_floor");
+            BAG_END_WALL = getRegisteredBlock("bag_end_wall");
+            BROWN_STONE = getRegisteredBlock("brown_stone");
+            MORDOR_STONE = getRegisteredBlock("mordor_stone");
+            CLIFF_BLOCK = getRegisteredBlock("cliff_block");
+            SPIDER_EGG = getRegisteredBlock("spider_egg");
             // End Awaken Dreams code
             CACHE.clear();
         }
