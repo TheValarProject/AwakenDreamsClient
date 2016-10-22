@@ -841,6 +841,16 @@ public class Item
         registerItemBlock(Blocks.STRUCTURE_BLOCK);
         // Begin Awaken Dreams code
         registerItemBlock(Blocks.JADE_ORE);
+        registerItemBlock(Blocks.AMBER_ORE);
+        registerItemBlock(Blocks.TANZANITE_ORE);
+        registerItemBlock(Blocks.PERMANENT_DIRT);
+        registerItemBlock(Blocks.AMETHYST_ORE);
+        registerItemBlock(Blocks.RUBY_ORE);
+        registerItemBlock(Blocks.ONYX_ORE);
+        registerItemBlock(Blocks.MOONSTONE_ORE);
+        registerItemBlock(Blocks.MINAS_MORGUL_GLOWSTONE);
+        registerItemBlock(Blocks.ARGONATH_STONE);
+        registerItemBlock(Blocks.MITHRIL_BLOCK);
         // End Awaken Dreams code
         registerItem(256, "iron_shovel", (new ItemSpade(Item.ToolMaterial.IRON)).setUnlocalizedName("shovelIron"));
         registerItem(257, "iron_pickaxe", (new ItemPickaxe(Item.ToolMaterial.IRON)).setUnlocalizedName("pickaxeIron"));

@@ -260,7 +260,19 @@ public class Blocks
     public static final Block field_189880_di;
     public static final Block field_189881_dj;
     public static final Block STRUCTURE_BLOCK;
+    // Begin Awaken Dreams code
     public static final Block JADE_ORE;
+    public static final Block AMBER_ORE;
+    public static final Block TANZANITE_ORE;
+    public static final Block PERMANENT_DIRT;
+    public static final Block AMETHYST_ORE;
+    public static final Block RUBY_ORE;
+    public static final Block ONYX_ORE;
+    public static final Block MOONSTONE_ORE;
+    public static final Block MINAS_MORGUL_GLOWSTONE;
+    public static final Block ARGONATH_STONE;
+    public static final Block MITHRIL_BLOCK;
+    // Begin Awaken Dreams code
 
     @Nullable
 
@@ -511,6 +523,16 @@ public class Blocks
             STRUCTURE_BLOCK = getRegisteredBlock("structure_block");
             // Begin Awaken Dreams code
             JADE_ORE = getRegisteredBlock("jade_ore");
+            AMBER_ORE = getRegisteredBlock("amber_ore");
+            TANZANITE_ORE = getRegisteredBlock("tanzanite_ore");
+            PERMANENT_DIRT = getRegisteredBlock("permanent_dirt");
+            AMETHYST_ORE = getRegisteredBlock("amethyst_ore");
+            RUBY_ORE = getRegisteredBlock("ruby_ore");
+            ONYX_ORE = getRegisteredBlock("onyx_ore");
+            MOONSTONE_ORE = getRegisteredBlock("moonstone_ore");
+            MINAS_MORGUL_GLOWSTONE = getRegisteredBlock("minas_morgul_glowstone");
+            ARGONATH_STONE = getRegisteredBlock("argonath_stone");
+            MITHRIL_BLOCK = getRegisteredBlock("mithril_block");
             // End Awaken Dreams code
             CACHE.clear();
         }

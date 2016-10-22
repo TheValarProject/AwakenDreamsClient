@@ -801,6 +801,16 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.ENDER_CHEST, "ender_chest");
         // Begin Awaken Dreams code
         this.registerBlock(Blocks.JADE_ORE, "jade_ore");
+        this.registerBlock(Blocks.AMBER_ORE, "amber_ore");
+        this.registerBlock(Blocks.TANZANITE_ORE, "tanzanite_ore");
+        this.registerBlock(Blocks.PERMANENT_DIRT, "permanent_dirt");
+        this.registerBlock(Blocks.AMETHYST_ORE, "amethyst_ore");
+        this.registerBlock(Blocks.RUBY_ORE, "ruby_ore");
+        this.registerBlock(Blocks.ONYX_ORE, "onyx_ore");
+        this.registerBlock(Blocks.MOONSTONE_ORE, "moonstone_ore");
+        this.registerBlock(Blocks.MINAS_MORGUL_GLOWSTONE, "minas_morgul_glowstone");
+        this.registerBlock(Blocks.ARGONATH_STONE, "argonath_stone");
+        this.registerBlock(Blocks.MITHRIL_BLOCK, "mithril_block");
         // End Awaken Dreams code
         this.registerItem(Items.IRON_SHOVEL, "iron_shovel");
         this.registerItem(Items.IRON_PICKAXE, "iron_pickaxe");

@@ -849,6 +849,16 @@ tile.structureVoid.name=Structure Void
 tile.structureBlock.name=Structure Block
 
 tile.oreJade.name=Jade Ore
+tile.oreAmber.name=Amber Ore
+tile.oreTanzanite.name=Tanzanite Ore
+tile.permanentDirt.name=Permanent Dirt
+tile.oreAmethyst.name=Amethyst Ore
+tile.oreRuby.name=Ruby Ore
+tile.oreOnyx.name=Onyx Ore
+tile.oreMoonstone.name=Moonstone Ore
+tile.minasMorgulGlowstone.name=Minas Morgul Glowstone
+tile.argonathStone.name=Argonath Stone
+tile.blockMithril.name=Mithril Block
 
 item.nameTag.name=Name Tag
 item.leash.name=Lead
