@@ -272,6 +272,16 @@ public class Blocks
     public static final Block MINAS_MORGUL_GLOWSTONE;
     public static final Block ARGONATH_STONE;
     public static final Block MITHRIL_BLOCK;
+    public static final Block CRYSTAL_ORE;
+    public static final Block DESERT_ROAD_BLOCK;
+    public static final Block DIRT_ROAD_BLOCK;
+    public static final Block LIGHT_BLUE_GLOWSTONE;
+    public static final Block BLACK_IRON;
+    public static final Block MORIA_PILLAR_STONE;
+    public static final Block RUSTY_IRON;
+    public static final Block ELF_FLOOR;
+    public static final Block GONDORIAN_FLOOR;
+    public static final Block STONE_FLOOR;
     // Begin Awaken Dreams code
 
     @Nullable
@@ -533,6 +543,17 @@ public class Blocks
             MINAS_MORGUL_GLOWSTONE = getRegisteredBlock("minas_morgul_glowstone");
             ARGONATH_STONE = getRegisteredBlock("argonath_stone");
             MITHRIL_BLOCK = getRegisteredBlock("mithril_block");
+            CRYSTAL_ORE = getRegisteredBlock("crystal_ore");
+            DESERT_ROAD_BLOCK = getRegisteredBlock("desert_road_block");
+            DIRT_ROAD_BLOCK = getRegisteredBlock("dirt_road_block");
+            LIGHT_BLUE_GLOWSTONE = getRegisteredBlock("light_blue_glowstone");
+            BLACK_IRON = getRegisteredBlock("black_iron");
+            MORIA_PILLAR_STONE = getRegisteredBlock("moria_pillar_stone");
+            RUSTY_IRON = getRegisteredBlock("rusty_iron");
+            ELF_FLOOR = getRegisteredBlock("elf_floor");
+            GONDORIAN_FLOOR = getRegisteredBlock("gondorian_floor");
+            STONE_FLOOR = getRegisteredBlock("stone_floor");
+            
             // End Awaken Dreams code
             CACHE.clear();
         }

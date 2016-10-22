@@ -811,6 +811,16 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.MINAS_MORGUL_GLOWSTONE, "minas_morgul_glowstone");
         this.registerBlock(Blocks.ARGONATH_STONE, "argonath_stone");
         this.registerBlock(Blocks.MITHRIL_BLOCK, "mithril_block");
+        this.registerBlock(Blocks.CRYSTAL_ORE, "crystal_ore");
+        this.registerBlock(Blocks.DESERT_ROAD_BLOCK, "desert_road_block");
+        this.registerBlock(Blocks.DIRT_ROAD_BLOCK, "dirt_road_block");
+        this.registerBlock(Blocks.LIGHT_BLUE_GLOWSTONE, "light_blue_glowstone");
+        this.registerBlock(Blocks.BLACK_IRON, "black_iron");
+        this.registerBlock(Blocks.MORIA_PILLAR_STONE, "moria_pillar_stone");
+        this.registerBlock(Blocks.RUSTY_IRON, "rusty_iron");
+        this.registerBlock(Blocks.ELF_FLOOR, "elf_floor");
+        this.registerBlock(Blocks.GONDORIAN_FLOOR, "gondorian_floor");
+        this.registerBlock(Blocks.STONE_FLOOR, "stone_floor");
         // End Awaken Dreams code
         this.registerItem(Items.IRON_SHOVEL, "iron_shovel");
         this.registerItem(Items.IRON_PICKAXE, "iron_pickaxe");

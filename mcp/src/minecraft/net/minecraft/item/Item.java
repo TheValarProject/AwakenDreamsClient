@@ -851,6 +851,16 @@ public class Item
         registerItemBlock(Blocks.MINAS_MORGUL_GLOWSTONE);
         registerItemBlock(Blocks.ARGONATH_STONE);
         registerItemBlock(Blocks.MITHRIL_BLOCK);
+        registerItemBlock(Blocks.CRYSTAL_ORE);
+        registerItemBlock(Blocks.DESERT_ROAD_BLOCK);
+        registerItemBlock(Blocks.DIRT_ROAD_BLOCK);
+        registerItemBlock(Blocks.LIGHT_BLUE_GLOWSTONE);
+        registerItemBlock(Blocks.BLACK_IRON);
+        registerItemBlock(Blocks.MORIA_PILLAR_STONE);
+        registerItemBlock(Blocks.RUSTY_IRON);
+        registerItemBlock(Blocks.ELF_FLOOR);
+        registerItemBlock(Blocks.GONDORIAN_FLOOR);
+        registerItemBlock(Blocks.STONE_FLOOR);
         // End Awaken Dreams code
         registerItem(256, "iron_shovel", (new ItemSpade(Item.ToolMaterial.IRON)).setUnlocalizedName("shovelIron"));
         registerItem(257, "iron_pickaxe", (new ItemPickaxe(Item.ToolMaterial.IRON)).setUnlocalizedName("pickaxeIron"));

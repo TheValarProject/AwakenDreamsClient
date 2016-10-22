@@ -859,6 +859,16 @@ tile.oreMoonstone.name=Moonstone Ore
 tile.minasMorgulGlowstone.name=Minas Morgul Glowstone
 tile.argonathStone.name=Argonath Stone
 tile.blockMithril.name=Mithril Block
+tile.oreCrystal.name=Crystal Ore
+tile.desertRoadBlock.name=Desert Road Block
+tile.dirtRoadBlock.name=Dirt Road Block
+tile.lightBlueGlowstone.name=Light Blue Glowstone
+tile.blackIron.name=Black Iron
+tile.moriaPillarStone.name=Moria Pillar Stone
+tile.rustyIron.name=Rusty Iron
+tile.elfFloor.name=Elf Floor
+tile.gondorianFloor.name=Gondorian Floor
+tile.stoneFloor.name=Stone Floor
 
 item.nameTag.name=Name Tag
 item.leash.name=Lead
