@@ -1344,6 +1344,9 @@ public class Block
         registerBlock(216, "bone_block", (new BlockBone()).setUnlocalizedName("boneBlock"));
         registerBlock(217, "structure_void", (new BlockStructureVoid()).setUnlocalizedName("structureVoid"));
         registerBlock(255, "structure_block", (new BlockStructure()).setBlockUnbreakable().setResistance(6000000.0F).setUnlocalizedName("structureBlock"));
+        // Being Awaken Dreams code
+        registerBlock(500, "jade_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreJade").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        // End Awaken Dreams code
         REGISTRY.validateKey();
 
         for (Block block15 : REGISTRY)

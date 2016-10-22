@@ -839,6 +839,9 @@ public class Item
         registerItemBlock(Blocks.field_189880_di);
         registerItemBlock(Blocks.field_189881_dj);
         registerItemBlock(Blocks.STRUCTURE_BLOCK);
+        // Begin Awaken Dreams code
+        registerItemBlock(Blocks.JADE_ORE);
+        // End Awaken Dreams code
         registerItem(256, "iron_shovel", (new ItemSpade(Item.ToolMaterial.IRON)).setUnlocalizedName("shovelIron"));
         registerItem(257, "iron_pickaxe", (new ItemPickaxe(Item.ToolMaterial.IRON)).setUnlocalizedName("pickaxeIron"));
         registerItem(258, "iron_axe", (new ItemAxe(Item.ToolMaterial.IRON)).setUnlocalizedName("hatchetIron"));

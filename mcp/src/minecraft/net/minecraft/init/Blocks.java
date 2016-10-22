@@ -260,6 +260,7 @@ public class Blocks
     public static final Block field_189880_di;
     public static final Block field_189881_dj;
     public static final Block STRUCTURE_BLOCK;
+    public static final Block JADE_ORE;
 
     @Nullable
 
@@ -508,6 +509,9 @@ public class Blocks
             field_189880_di = getRegisteredBlock("bone_block");
             field_189881_dj = getRegisteredBlock("structure_void");
             STRUCTURE_BLOCK = getRegisteredBlock("structure_block");
+            // Begin Awaken Dreams code
+            JADE_ORE = getRegisteredBlock("jade_ore");
+            // End Awaken Dreams code
             CACHE.clear();
         }
     }

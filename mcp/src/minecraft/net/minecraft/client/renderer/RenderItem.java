@@ -799,6 +799,9 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.CHEST, "chest");
         this.registerBlock(Blocks.TRAPPED_CHEST, "trapped_chest");
         this.registerBlock(Blocks.ENDER_CHEST, "ender_chest");
+        // Begin Awaken Dreams code
+        this.registerBlock(Blocks.JADE_ORE, "jade_ore");
+        // End Awaken Dreams code
         this.registerItem(Items.IRON_SHOVEL, "iron_shovel");
         this.registerItem(Items.IRON_PICKAXE, "iron_pickaxe");
         this.registerItem(Items.IRON_AXE, "iron_axe");
@@ -1072,6 +1075,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.STRUCTURE_BLOCK, TileEntityStructure.Mode.LOAD.getModeId(), "structure_block");
         this.registerBlock(Blocks.STRUCTURE_BLOCK, TileEntityStructure.Mode.CORNER.getModeId(), "structure_block");
         this.registerBlock(Blocks.STRUCTURE_BLOCK, TileEntityStructure.Mode.DATA.getModeId(), "structure_block");
+        
     }
 
     public void onResourceManagerReload(IResourceManager resourceManager)
