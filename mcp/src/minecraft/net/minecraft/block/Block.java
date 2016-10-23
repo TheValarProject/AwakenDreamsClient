@@ -1438,7 +1438,7 @@ public class Block
         registerBlock(591, "medium_dark_dwarf_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("mediumDarkDwarfStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         //registerBlock(592, "mud_block", (new BlockValarMud()).setUnlocalizedName("mudBlock").setBlockTextureName("mud_block"));
         //registerBlock(593, "gondorian_brick_stone_stairs", (new BlockValarDeprecated(1303)));
-        //registerBlock(594, "light_brown_wood", (new BlockValarMultitextured(Material.ROCK, "light_brown_wood_top", "light_brown_wood_side")).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("lightBrownWood"));
+        registerBlock(594, "light_brown_wood", (new Block(Material.WOOD).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("lightBrownWood")).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(595, "old_tree", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oldTree").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         //registerBlock(596, "bree_bookshelf", (new BlockValarBookshelf(Material.wood)).setHardness(1.5F).setSoundType(soundTypeWood).setUnlocalizedName("breeBookshelf").setBlockTextureName("bree_bookshelf"));
         registerBlock(597, "cross_hay", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("crossHay").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));

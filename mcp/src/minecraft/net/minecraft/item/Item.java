@@ -902,6 +902,7 @@ public class Item
         registerItemBlock(Blocks.ROHAN_IRON);
         registerItemBlock(Blocks.DARK_DWARF_STONE);
         registerItemBlock(Blocks.MEDIUM_DARK_DWARF_STONE);
+        registerItemBlock(Blocks.LIGHT_BROWN_WOOD);
         registerItemBlock(Blocks.OLD_TREE);
         registerItemBlock(Blocks.CROSS_HAY);
         registerItemBlock(Blocks.LIGHT_GREY_CIRCLE_STONE);
