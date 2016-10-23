@@ -385,6 +385,22 @@ public class Blocks
     public static final Block ELVEN_DECORATION_LIGHT;
     public static final Block ELVEN_DECORATION2;
     public static final Block ELVEN_DECORATION3;
+    public static final Block HOBBIT_FLOOR;
+    public static final Block HOBBIT_FLOOR2;
+    public static final Block DARK_BRICKS;
+    public static final Block ROHIRRIM_CROSSBEAM;
+    public static final Block CROSSBEAM;
+    public static final Block CROSSBEAM2;
+    public static final Block CROSSBEAM3;
+    public static final Block STANDARD_CROSSBEAM;
+    public static final Block STANDARD_CROSSBEAM2;
+    public static final Block STANDARD_CROSSBEAM3;
+    public static final Block VERTICAL_BEAM;
+    public static final Block VERTICAL_HORIZONTAL_BEAM;
+    public static final Block DALE_SANDSTONE;
+    public static final Block DALE_TILES;
+    public static final Block DALE_WALL;
+    public static final Block HARAD_SANDSTONE_FLOOR;
     // End Awaken Dreams code
 
     @Nullable
@@ -759,6 +775,22 @@ public class Blocks
             ELVEN_DECORATION_LIGHT = getRegisteredBlock("elven_decoration_light");
             ELVEN_DECORATION2 = getRegisteredBlock("elven_decoration2");
             ELVEN_DECORATION3 = getRegisteredBlock("elven_decoration3");
+            HOBBIT_FLOOR = getRegisteredBlock("hobbit_floor");
+            HOBBIT_FLOOR2 = getRegisteredBlock("hobbit_floor2");
+            DARK_BRICKS = getRegisteredBlock("dark_bricks");
+            ROHIRRIM_CROSSBEAM = getRegisteredBlock("rohirrim_crossbeam");
+            CROSSBEAM = getRegisteredBlock("crossbeam");
+            CROSSBEAM2 = getRegisteredBlock("crossbeam2");
+            CROSSBEAM3 = getRegisteredBlock("crossbeam3");
+            STANDARD_CROSSBEAM = getRegisteredBlock("standard_crossbeam");
+            STANDARD_CROSSBEAM2 = getRegisteredBlock("standard_crossbeam2");
+            STANDARD_CROSSBEAM3 = getRegisteredBlock("standard_crossbeam3");
+            VERTICAL_BEAM = getRegisteredBlock("vertical_beam");
+            VERTICAL_HORIZONTAL_BEAM = getRegisteredBlock("vertical_horizontal_beam");
+            DALE_SANDSTONE = getRegisteredBlock("dale_sandstone");
+            DALE_TILES = getRegisteredBlock("dale_tiles");
+            DALE_WALL = getRegisteredBlock("dale_wall");
+            HARAD_SANDSTONE_FLOOR = getRegisteredBlock("harad_sandstone_floor");
             // End Awaken Dreams code
             CACHE.clear();
         }

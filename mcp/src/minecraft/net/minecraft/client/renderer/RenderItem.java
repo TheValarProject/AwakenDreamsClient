@@ -924,6 +924,22 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.ELVEN_DECORATION_LIGHT, "elven_decoration_light");
         this.registerBlock(Blocks.ELVEN_DECORATION2, "elven_decoration2");
         this.registerBlock(Blocks.ELVEN_DECORATION3, "elven_decoration3");
+        this.registerBlock(Blocks.HOBBIT_FLOOR, "hobbit_floor");
+        this.registerBlock(Blocks.HOBBIT_FLOOR2, "hobbit_floor2");
+        this.registerBlock(Blocks.DARK_BRICKS, "dark_bricks");
+        this.registerBlock(Blocks.ROHIRRIM_CROSSBEAM, "rohirrim_crossbeam");
+        this.registerBlock(Blocks.CROSSBEAM, "crossbeam");
+        this.registerBlock(Blocks.CROSSBEAM2, "crossbeam2");
+        this.registerBlock(Blocks.CROSSBEAM3, "crossbeam3");
+        this.registerBlock(Blocks.STANDARD_CROSSBEAM, "standard_crossbeam");
+        this.registerBlock(Blocks.STANDARD_CROSSBEAM2, "standard_crossbeam2");
+        this.registerBlock(Blocks.STANDARD_CROSSBEAM3, "standard_crossbeam3");
+        this.registerBlock(Blocks.VERTICAL_BEAM, "vertical_beam");
+        this.registerBlock(Blocks.VERTICAL_HORIZONTAL_BEAM, "vertical_horizontal_beam");
+        this.registerBlock(Blocks.DALE_SANDSTONE, "dale_sandstone");
+        this.registerBlock(Blocks.DALE_TILES, "dale_tiles");
+        this.registerBlock(Blocks.DALE_WALL, "dale_wall");
+        this.registerBlock(Blocks.HARAD_SANDSTONE_FLOOR, "harad_sandstone_floor");
         // End Awaken Dreams code
         this.registerItem(Items.IRON_SHOVEL, "iron_shovel");
         this.registerItem(Items.IRON_PICKAXE, "iron_pickaxe");
