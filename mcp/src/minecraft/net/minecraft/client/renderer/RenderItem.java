@@ -885,6 +885,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.KHAND_FLOOR, "khand_floor");
         this.registerBlock(Blocks.RIVENDELL_FLOOR, "rivendell_floor");
         this.registerBlock(Blocks.COLUMN, "column");
+        this.registerBlock(Blocks.COLUMN_TOP, "column_top");
         this.registerBlock(Blocks.DWARF_BRICKS, "dwarf_bricks");
         this.registerBlock(Blocks.DWARF_FLOOR2, "dwarf_floor2");
         this.registerBlock(Blocks.DWARF_FLOOR3, "dwarf_floor3");
@@ -972,6 +973,8 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.BREE_TILE, "bree_tile");
         this.registerBlock(Blocks.PILE_OF_COINS, "pile_of_coins");
         this.registerBlock(Blocks.GREY_COLUMN, "grey_column");
+        this.registerBlock(Blocks.GREY_COLUMN_TOP, "grey_column_top");
+        this.registerBlock(Blocks.COLUMN_TOP_DECORATION, "column_top_decoration");
         this.registerBlock(Blocks.MEDUSELD_PILLAR, "meduseld_pillar");
         this.registerBlock(Blocks.DIAGONAL_BRICKS, "diagonal_bricks");
         // End Awaken Dreams code

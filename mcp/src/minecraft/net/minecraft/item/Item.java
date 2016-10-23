@@ -925,6 +925,7 @@ public class Item
         registerItemBlock(Blocks.KHAND_FLOOR);
         registerItemBlock(Blocks.RIVENDELL_FLOOR);
         registerItemBlock(Blocks.COLUMN);
+        registerItemBlock(Blocks.COLUMN_TOP);
         registerItemBlock(Blocks.DWARF_BRICKS);
         registerItemBlock(Blocks.DWARF_FLOOR2);
         registerItemBlock(Blocks.DWARF_FLOOR3);
@@ -1012,6 +1013,8 @@ public class Item
         registerItemBlock(Blocks.BREE_TILE);
         registerItemBlock(Blocks.PILE_OF_COINS);
         registerItemBlock(Blocks.GREY_COLUMN);
+        registerItemBlock(Blocks.GREY_COLUMN_TOP);
+        registerItemBlock(Blocks.COLUMN_TOP_DECORATION);
         registerItemBlock(Blocks.MEDUSELD_PILLAR);
         registerItemBlock(Blocks.DIAGONAL_BRICKS);
         // End Awaken Dreams code

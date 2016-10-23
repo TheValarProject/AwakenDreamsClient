@@ -933,6 +933,7 @@ tile.rhunFloor.name=Rhun Floor
 tile.khandFloor.name=Khand Floor
 tile.rivendellFloor.name=Rivendell Floor
 tile.column.name=Column
+tile.columnTop.name=Column Top
 tile.dwarfBricks.name=Dwarf Bricks
 tile.dwarfFloor2.name=Dwarf Floor 2
 tile.dwarfFloor3.name=Dwarf Floor 3
@@ -1020,6 +1021,8 @@ tile.carnDumLamp.name=Carn Dum Lamp
 tile.breeTile.name=Bree Tile
 tile.pileOfCoins.name=Pile of Coins
 tile.greyColumn.name=Grey Column
+tile.greyColumnTop.name=Grey Column Top
+tile.columnTopDecoration.name=Column Top Decoration
 tile.meduseldPillar.name=Meduseld Pillar
 tile.diagonalBricks.name=Diagonal Bricks
 

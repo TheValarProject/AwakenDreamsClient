@@ -346,6 +346,7 @@ public class Blocks
     public static final Block KHAND_FLOOR;
     public static final Block RIVENDELL_FLOOR;
     public static final Block COLUMN;
+    public static final Block COLUMN_TOP;
     public static final Block DWARF_BRICKS;
     public static final Block DWARF_FLOOR2;
     public static final Block DWARF_FLOOR3;
@@ -433,6 +434,8 @@ public class Blocks
     public static final Block BREE_TILE;
     public static final Block PILE_OF_COINS;
     public static final Block GREY_COLUMN;
+    public static final Block GREY_COLUMN_TOP;
+    public static final Block COLUMN_TOP_DECORATION;
     public static final Block MEDUSELD_PILLAR;
     public static final Block DIAGONAL_BRICKS;
     // End Awaken Dreams code
@@ -770,6 +773,7 @@ public class Blocks
             KHAND_FLOOR = getRegisteredBlock("khand_floor");
             RIVENDELL_FLOOR = getRegisteredBlock("rivendell_floor");
             COLUMN = getRegisteredBlock("column");
+            COLUMN_TOP = getRegisteredBlock("column_top");
             DWARF_BRICKS = getRegisteredBlock("dwarf_bricks");
             DWARF_FLOOR2 = getRegisteredBlock("dwarf_floor2");
             DWARF_FLOOR3 = getRegisteredBlock("dwarf_floor3");
@@ -856,6 +860,8 @@ public class Blocks
             BREE_TILE = getRegisteredBlock("bree_tile");
             PILE_OF_COINS = getRegisteredBlock("pile_of_coins");
             GREY_COLUMN = getRegisteredBlock("grey_column");
+            GREY_COLUMN_TOP = getRegisteredBlock("grey_column_top");
+            COLUMN_TOP_DECORATION = getRegisteredBlock("column_top_decoration");
             MEDUSELD_PILLAR = getRegisteredBlock("meduseld_pillar");
             DIAGONAL_BRICKS = getRegisteredBlock("diagonal_bricks");
             // End Awaken Dreams code
