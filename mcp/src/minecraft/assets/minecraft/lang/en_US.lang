@@ -905,6 +905,14 @@ tile.brownLapis.name=Brown Lapis
 tile.dwarfFloor.name=Dwarf Floor
 tile.dwarvenHallFloor.name=Dwarven Hall Floor
 tile.dwarfStone.name=Dwarf Stone
+tile.dwarvenGold.name=Dwarven Gold
+tile.rohanIron.name=Rohan Iron
+tile.darkDwarfStone.name=Dark Dwarf Stone
+tile.mediumDarkDwarfStone.name=Medium Dark Dwarf Stone
+tile.oldTree.name=Old Tree
+tile.crossHay.name=Cross Hay
+tile.lightGreyCircleStone.name=Light Grey Circle Stone
+tile.lossarnarchDecorationStone.name=Lossarnarch Decoration Stone
 
 item.nameTag.name=Name Tag
 item.leash.name=Lead

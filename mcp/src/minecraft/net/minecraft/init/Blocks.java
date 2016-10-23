@@ -318,6 +318,14 @@ public class Blocks
     public static final Block DWARF_FLOOR;
     public static final Block DWARVEN_HALL_FLOOR;
     public static final Block DWARF_STONE;
+    public static final Block DWARVEN_GOLD;
+    public static final Block ROHAN_IRON;
+    public static final Block DARK_DWARF_STONE;
+    public static final Block MEDIUM_DARK_DWARF_STONE;
+    public static final Block OLD_TREE;
+    public static final Block CROSS_HAY;
+    public static final Block LIGHT_GREY_CIRCLE_STONE;
+    public static final Block LOSSARNARCH_DECORATION_STONE;
     // End Awaken Dreams code
 
     @Nullable
@@ -625,6 +633,14 @@ public class Blocks
             DWARF_FLOOR = getRegisteredBlock("dwarf_floor");
             DWARVEN_HALL_FLOOR = getRegisteredBlock("dwarven_hall_floor");
             DWARF_STONE = getRegisteredBlock("dwarf_stone");
+            DWARVEN_GOLD = getRegisteredBlock("dwarven_gold");
+            ROHAN_IRON = getRegisteredBlock("rohan_iron");
+            DARK_DWARF_STONE = getRegisteredBlock("dark_dwarf_stone");
+            MEDIUM_DARK_DWARF_STONE = getRegisteredBlock("medium_dark_dwarf_stone");
+            OLD_TREE = getRegisteredBlock("old_tree");
+            CROSS_HAY = getRegisteredBlock("cross_hay");
+            LIGHT_GREY_CIRCLE_STONE = getRegisteredBlock("light_grey_circle_stone");
+            LOSSARNARCH_DECORATION_STONE = getRegisteredBlock("lossarnarch_decoration_stone");
             // End Awaken Dreams code
             CACHE.clear();
         }

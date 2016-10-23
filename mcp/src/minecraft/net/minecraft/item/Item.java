@@ -897,6 +897,14 @@ public class Item
         registerItemBlock(Blocks.DWARF_FLOOR);
         registerItemBlock(Blocks.DWARVEN_HALL_FLOOR);
         registerItemBlock(Blocks.DWARF_STONE);
+        registerItemBlock(Blocks.DWARVEN_GOLD);
+        registerItemBlock(Blocks.ROHAN_IRON);
+        registerItemBlock(Blocks.DARK_DWARF_STONE);
+        registerItemBlock(Blocks.MEDIUM_DARK_DWARF_STONE);
+        registerItemBlock(Blocks.OLD_TREE);
+        registerItemBlock(Blocks.CROSS_HAY);
+        registerItemBlock(Blocks.LIGHT_GREY_CIRCLE_STONE);
+        registerItemBlock(Blocks.LOSSARNARCH_DECORATION_STONE);
         // End Awaken Dreams code
         registerItem(256, "iron_shovel", (new ItemSpade(Item.ToolMaterial.IRON)).setUnlocalizedName("shovelIron"));
         registerItem(257, "iron_pickaxe", (new ItemPickaxe(Item.ToolMaterial.IRON)).setUnlocalizedName("pickaxeIron"));

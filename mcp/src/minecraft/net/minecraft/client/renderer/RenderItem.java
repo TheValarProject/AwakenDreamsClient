@@ -857,6 +857,14 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.DWARF_FLOOR, "dwarf_floor");
         this.registerBlock(Blocks.DWARVEN_HALL_FLOOR, "dwarven_hall_floor");
         this.registerBlock(Blocks.DWARF_STONE, "dwarf_stone");
+        this.registerBlock(Blocks.DWARVEN_GOLD, "dwarven_gold");
+        this.registerBlock(Blocks.ROHAN_IRON, "rohan_iron");
+        this.registerBlock(Blocks.DARK_DWARF_STONE, "dark_dwarf_stone");
+        this.registerBlock(Blocks.MEDIUM_DARK_DWARF_STONE, "medium_dark_dwarf_stone");
+        this.registerBlock(Blocks.OLD_TREE, "old_tree");
+        this.registerBlock(Blocks.CROSS_HAY, "cross_hay");
+        this.registerBlock(Blocks.LIGHT_GREY_CIRCLE_STONE, "light_grey_circle_stone");
+        this.registerBlock(Blocks.LOSSARNARCH_DECORATION_STONE, "lossarnarch_decoration_stone");
         // End Awaken Dreams code
         this.registerItem(Items.IRON_SHOVEL, "iron_shovel");
         this.registerItem(Items.IRON_PICKAXE, "iron_pickaxe");
