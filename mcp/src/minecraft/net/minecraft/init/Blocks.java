@@ -326,6 +326,22 @@ public class Blocks
     public static final Block CROSS_HAY;
     public static final Block LIGHT_GREY_CIRCLE_STONE;
     public static final Block LOSSARNARCH_DECORATION_STONE;
+    public static final Block ELVEN_STONE_FLOOR;
+    public static final Block ANCIENT_STONE;
+    public static final Block BREE_STONE_BRICKS;
+    public static final Block CRACKED_BREE_STONE_BRICKS;
+    public static final Block MOSSY_BREE_STONE_BRICKS;
+    public static final Block SHIRE_HAY;
+    public static final Block SHIRE_PATH;
+    public static final Block BREE_FLOOR;
+    public static final Block ARNOR_FLOOR;
+    public static final Block CARDOLAN_BRICK_STONE;
+    public static final Block ELVEN_SANDSTONE_FLOOR;
+    public static final Block DEAD_LAVA;
+    public static final Block CHISELED_GONDORIAN_STONE;
+    public static final Block NEEDLES;
+    public static final Block RHUN_FLOOR;
+    public static final Block KHAND_FLOOR;
     // End Awaken Dreams code
 
     @Nullable
@@ -641,6 +657,22 @@ public class Blocks
             CROSS_HAY = getRegisteredBlock("cross_hay");
             LIGHT_GREY_CIRCLE_STONE = getRegisteredBlock("light_grey_circle_stone");
             LOSSARNARCH_DECORATION_STONE = getRegisteredBlock("lossarnarch_decoration_stone");
+            ELVEN_STONE_FLOOR = getRegisteredBlock("elven_stone_floor");
+            ANCIENT_STONE = getRegisteredBlock("ancient_stone");
+            BREE_STONE_BRICKS = getRegisteredBlock("bree_stone_bricks");
+            CRACKED_BREE_STONE_BRICKS = getRegisteredBlock("cracked_bree_stone_bricks");
+            MOSSY_BREE_STONE_BRICKS = getRegisteredBlock("mossy_bree_stone_bricks");
+            SHIRE_HAY = getRegisteredBlock("shire_hay");
+            SHIRE_PATH = getRegisteredBlock("shire_path");
+            BREE_FLOOR = getRegisteredBlock("bree_floor");
+            ARNOR_FLOOR = getRegisteredBlock("arnor_floor");
+            CARDOLAN_BRICK_STONE = getRegisteredBlock("cardolan_brick_stone");
+            ELVEN_SANDSTONE_FLOOR = getRegisteredBlock("elven_sandstone_floor");
+            DEAD_LAVA = getRegisteredBlock("dead_lava");
+            CHISELED_GONDORIAN_STONE = getRegisteredBlock("chiseled_gondorian_stone");
+            NEEDLES = getRegisteredBlock("needles");
+            RHUN_FLOOR = getRegisteredBlock("rhun_floor");
+            KHAND_FLOOR = getRegisteredBlock("khand_floor");
             // End Awaken Dreams code
             CACHE.clear();
         }

@@ -865,6 +865,22 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.CROSS_HAY, "cross_hay");
         this.registerBlock(Blocks.LIGHT_GREY_CIRCLE_STONE, "light_grey_circle_stone");
         this.registerBlock(Blocks.LOSSARNARCH_DECORATION_STONE, "lossarnarch_decoration_stone");
+        this.registerBlock(Blocks.ELVEN_STONE_FLOOR, "elven_stone_floor");
+        this.registerBlock(Blocks.ANCIENT_STONE, "ancient_stone");
+        this.registerBlock(Blocks.BREE_STONE_BRICKS, "bree_stone_bricks");
+        this.registerBlock(Blocks.CRACKED_BREE_STONE_BRICKS, "cracked_bree_stone_bricks");
+        this.registerBlock(Blocks.MOSSY_BREE_STONE_BRICKS, "mossy_bree_stone_bricks");
+        this.registerBlock(Blocks.SHIRE_HAY, "shire_hay");
+        this.registerBlock(Blocks.SHIRE_PATH, "shire_path");
+        this.registerBlock(Blocks.BREE_FLOOR, "bree_floor");
+        this.registerBlock(Blocks.ARNOR_FLOOR, "arnor_floor");
+        this.registerBlock(Blocks.CARDOLAN_BRICK_STONE, "cardolan_brick_stone");
+        this.registerBlock(Blocks.ELVEN_SANDSTONE_FLOOR, "elven_sandstone_floor");
+        this.registerBlock(Blocks.DEAD_LAVA, "dead_lava");
+        this.registerBlock(Blocks.CHISELED_GONDORIAN_STONE, "chiseled_gondorian_stone");
+        this.registerBlock(Blocks.NEEDLES, "needles");
+        this.registerBlock(Blocks.RHUN_FLOOR, "rhun_floor");
+        this.registerBlock(Blocks.KHAND_FLOOR, "khand_floor");
         // End Awaken Dreams code
         this.registerItem(Items.IRON_SHOVEL, "iron_shovel");
         this.registerItem(Items.IRON_PICKAXE, "iron_pickaxe");
