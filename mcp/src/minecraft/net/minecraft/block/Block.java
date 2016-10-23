@@ -1567,14 +1567,14 @@ public class Block
         //registerBlock(721, "dale_window", (new BlockValarGlass()).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeGlass).setUnlocalizedName("daleWindow").setBlockTextureName("dale_window"));
         //registerBlock(722, "dale_window_2", (new BlockValarGlass()).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeGlass).setUnlocalizedName("daleWindow2").setBlockTextureName("dale_window_2"));
         //registerBlock(723, "harad_window", (new BlockValarGlass()).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("haradWindow").setBlockTextureName("harad_window"));
-        /*registerBlock(724, "mordor_lamp", (new Block(Material.ROCK)).setLightLevel(1.0F).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeGlass).setUnlocalizedName("mordorLamp").setBlockTextureName("mordor_lamp"));
-        registerBlock(725, "harad_light", (new Block(Material.ROCK)).setLightLevel(1.0F).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("haradLight").setBlockTextureName("harad_light"));
-        registerBlock(726, "elven_lamp", (new Block(Material.ROCK)).setLightLevel(1.0F).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("elvenLamp").setBlockTextureName("elven_lamp"));
-        registerBlock(727, "carn_dum_lamp", (new Block(Material.ROCK)).setLightLevel(1.0F).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("carnDumLamp").setBlockTextureName("carn_dum_lamp"));
+        registerBlock(724, "mordor_lamp", (new Block(Material.ROCK)).setLightLevel(1.0F).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.GLASS).setUnlocalizedName("mordorLamp").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        registerBlock(725, "harad_light", (new Block(Material.ROCK)).setLightLevel(1.0F).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("haradLight").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        registerBlock(726, "elven_lamp", (new Block(Material.ROCK)).setLightLevel(1.0F).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("elvenLamp").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        registerBlock(727, "carn_dum_lamp", (new Block(Material.ROCK)).setLightLevel(1.0F).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("carnDumLamp").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         //registerBlock(728, "elven_door", (new BlockValarDoor(Material.wood, "elven_door_item")).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("elvenDoor").setBlockTextureName("elven_door"));
         //registerBlock(729, "human_door", (new BlockValarDoor(Material.wood, "human_door_item")).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("humanDoor").setBlockTextureName("human_door"));
         //registerBlock(730, "green_bed", (new BlockValarBed("green_bed_item")).setHardness(0.2F).setSoundType(soundTypeCloth).setUnlocalizedName("greenBed").setBlockTextureName("green_bed"));
-        registerBlock(731, "bree_tile", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("breeTile").setBlockTextureName("bree_tile"));
+        registerBlock(731, "bree_tile", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("breeTile").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         //registerBlock(732, "bree_tile_stairs", (new BlockValarDeprecated(1481)));
         //registerBlock(733, "bree_tile_slab", (new BlockValarDeprecated(2231)));
         //registerBlock(734, "numenorean_stairs", (new BlockValarDeprecated(1324)));
@@ -1622,13 +1622,13 @@ public class Block
         //registerBlock(775, "southern_star_plant", (new BlockValarCrops(3)).setRenderType(1).setItemSeed("southern_star_seed").setItemYield("southern_star").setUnlocalizedName("southernStarPlant").setBlockTextureName("southern_star_plant"));
         //registerBlock(776, "strawberry_bush", (new BlockValarCrops(4)).setRenderType(1).setItemSeed("strawberry_seed").setItemYield("strawberry").setUnlocalizedName("strawberryBush").setBlockTextureName("strawberry_bush"));
         //registerBlock(777, "shire_garden_flower", (new BlockValarFlower()).setPlantBounds(12, 10, 16).setUnlocalizedName("shireGardenFlower").setBlockTextureName("shire_garden_flower"));
-        registerBlock(778, "pile_of_coins", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("pileOfCoins").setBlockTextureName("pile_of_coins")); // TODO custom step sound
-        registerBlock(779, "grey_column", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("greyColumn").setBlockTextureName("grey_column"));
+        registerBlock(778, "pile_of_coins", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("pileOfCoins").setCreativeTab(CreativeTabs.BUILDING_BLOCKS)); // TODO custom step sound
+        registerBlock(779, "grey_column", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("greyColumn").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         //registerBlock(780, "grey_column_top", (new BlockValarMultitextured(Material.ROCK, "grey_column_top_top", "grey_column_top_side")).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("greyColumnTop").setBlockTextureName("grey_column_top"));
         //registerBlock(781, "column_top_decoration", (new BlockValarMultitextured(Material.ROCK, "column_top_top", "column_top_decoration")).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("columnTopDecoration").setBlockTextureName("column_top_decoration"));
-        registerBlock(782, "meduseld_pillar", (new Block(Material.wood)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("meduseldPillar").setBlockTextureName("meduseld_pillar"));
-        registerBlock(783, "diagonal_bricks", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("diagonalBricks").setBlockTextureName("diagonal_bricks"));
-        //registerBlock(784, "dark_brown_wood", (new BlockValarDirectional(Material.wood)).setHardness(2.0F).setSoundType(soundTypeWood).setUnlocalizedName("darkBrownWood").setBlockTextureName("dark_brown_wood"));*/
+        registerBlock(782, "meduseld_pillar", (new Block(Material.WOOD)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("meduseldPillar").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        registerBlock(783, "diagonal_bricks", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("diagonalBricks").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        //registerBlock(784, "dark_brown_wood", (new BlockValarDirectional(Material.wood)).setHardness(2.0F).setSoundType(soundTypeWood).setUnlocalizedName("darkBrownWood").setBlockTextureName("dark_brown_wood"));
         // End Awaken Dreams code
         REGISTRY.validateKey();
 

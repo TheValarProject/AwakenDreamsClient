@@ -424,6 +424,15 @@ public class Blocks
     public static final Block WHITE_COBBLESTONE;
     public static final Block DUNLAND_TOTEM;
     public static final Block DUNLAND_WALL_DECORATION;
+    public static final Block MORDOR_LAMP;
+    public static final Block HARAD_LIGHT;
+    public static final Block ELVEN_LAMP;
+    public static final Block CARN_DUM_LAMP;
+    public static final Block BREE_TILE;
+    public static final Block PILE_OF_COINS;
+    public static final Block GREY_COLUMN;
+    public static final Block MEDUSELD_PILLAR;
+    public static final Block DIAGONAL_BRICKS;
     // End Awaken Dreams code
 
     @Nullable
@@ -836,6 +845,15 @@ public class Blocks
             WHITE_COBBLESTONE = getRegisteredBlock("white_cobblestone");
             DUNLAND_TOTEM = getRegisteredBlock("dunland_totem");
             DUNLAND_WALL_DECORATION = getRegisteredBlock("dunland_wall_decoration");
+            MORDOR_LAMP = getRegisteredBlock("mordor_lamp");
+            HARAD_LIGHT = getRegisteredBlock("harad_light");
+            ELVEN_LAMP = getRegisteredBlock("elven_lamp");
+            CARN_DUM_LAMP = getRegisteredBlock("carn_dum_lamp");
+            BREE_TILE = getRegisteredBlock("bree_tile");
+            PILE_OF_COINS = getRegisteredBlock("pile_of_coins");
+            GREY_COLUMN = getRegisteredBlock("grey_column");
+            MEDUSELD_PILLAR = getRegisteredBlock("meduseld_pillar");
+            DIAGONAL_BRICKS = getRegisteredBlock("diagonal_bricks");
             // End Awaken Dreams code
             CACHE.clear();
         }

@@ -1003,6 +1003,15 @@ public class Item
         registerItemBlock(Blocks.WHITE_COBBLESTONE);
         registerItemBlock(Blocks.DUNLAND_TOTEM);
         registerItemBlock(Blocks.DUNLAND_WALL_DECORATION);
+        registerItemBlock(Blocks.MORDOR_LAMP);
+        registerItemBlock(Blocks.HARAD_LIGHT);
+        registerItemBlock(Blocks.ELVEN_LAMP);
+        registerItemBlock(Blocks.CARN_DUM_LAMP);
+        registerItemBlock(Blocks.BREE_TILE);
+        registerItemBlock(Blocks.PILE_OF_COINS);
+        registerItemBlock(Blocks.GREY_COLUMN);
+        registerItemBlock(Blocks.MEDUSELD_PILLAR);
+        registerItemBlock(Blocks.DIAGONAL_BRICKS);
         // End Awaken Dreams code
         registerItem(256, "iron_shovel", (new ItemSpade(Item.ToolMaterial.IRON)).setUnlocalizedName("shovelIron"));
         registerItem(257, "iron_pickaxe", (new ItemPickaxe(Item.ToolMaterial.IRON)).setUnlocalizedName("pickaxeIron"));

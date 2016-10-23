@@ -1011,6 +1011,15 @@ tile.pelargirStone.name=Pelargir Stone
 tile.whiteCobblestone.name=White Cobblestone
 tile.dunlandTotem.name=Dunland Totem
 tile.dunlandWallDecoration.name=Dunland Wall Decoration
+tile.mordorLamp.name=Mordor Lamp
+tile.haradLight.name=Harad Light
+tile.elvenLamp.name=Elven Lamp
+tile.carnDumLamp.name=Carn Dum Lamp
+tile.breeTile.name=Bree Tile
+tile.pileOfCoins.name=Pile of Coins
+tile.greyColumn.name=Grey Column
+tile.meduseldPillar.name=Meduseld Pillar
+tile.diagonalBricks.name=Diagonal Bricks
 
 item.nameTag.name=Name Tag
 item.leash.name=Lead
