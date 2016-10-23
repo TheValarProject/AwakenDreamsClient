@@ -342,6 +342,17 @@ public class Blocks
     public static final Block NEEDLES;
     public static final Block RHUN_FLOOR;
     public static final Block KHAND_FLOOR;
+    public static final Block RIVENDELL_FLOOR;
+    public static final Block COLUMN;
+    public static final Block DWARF_BRICKS;
+    public static final Block DWARF_FLOOR2;
+    public static final Block DWARF_FLOOR3;
+    public static final Block DWARF_FLOOR4;
+    public static final Block DWARF_FLOOR5;
+    public static final Block DWARF_FLOOR6;
+    public static final Block DWARF_FLOOR7;
+    public static final Block DWARF_FLOOR8;
+    public static final Block DWARF_FLOOR9;
     // End Awaken Dreams code
 
     @Nullable
@@ -673,6 +684,17 @@ public class Blocks
             NEEDLES = getRegisteredBlock("needles");
             RHUN_FLOOR = getRegisteredBlock("rhun_floor");
             KHAND_FLOOR = getRegisteredBlock("khand_floor");
+            RIVENDELL_FLOOR = getRegisteredBlock("rivendell_floor");
+            COLUMN = getRegisteredBlock("column");
+            DWARF_BRICKS = getRegisteredBlock("dwarf_bricks");
+            DWARF_FLOOR2 = getRegisteredBlock("dwarf_floor2");
+            DWARF_FLOOR3 = getRegisteredBlock("dwarf_floor3");
+            DWARF_FLOOR4 = getRegisteredBlock("dwarf_floor4");
+            DWARF_FLOOR5 = getRegisteredBlock("dwarf_floor5");
+            DWARF_FLOOR6 = getRegisteredBlock("dwarf_floor6");
+            DWARF_FLOOR7 = getRegisteredBlock("dwarf_floor7");
+            DWARF_FLOOR8 = getRegisteredBlock("dwarf_floor8");
+            DWARF_FLOOR9 = getRegisteredBlock("dwarf_floor9");
             // End Awaken Dreams code
             CACHE.clear();
         }

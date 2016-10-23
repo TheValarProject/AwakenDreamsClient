@@ -929,6 +929,17 @@ tile.chiseledGondorianStone.name=Chiseled Gondorian Stone
 tile.needles.name=Needles
 tile.rhunFloor.name=Rhun Floor
 tile.khandFloor.name=Khand Floor
+tile.rivendellFloor.name=Rivendell Floor
+tile.column.name=Column
+tile.dwarfBricks.name=Dwarf Bricks
+tile.dwarfFloor2.name=Dwarf Floor 2
+tile.dwarfFloor3.name=Dwarf Floor 3
+tile.dwarfFloor4.name=Dwarf Floor 4
+tile.dwarfFloor5.name=Dwarf Floor 5
+tile.dwarfFloor6.name=Dwarf Floor 6
+tile.dwarfFloor7.name=Dwarf Floor 7
+tile.dwarfFloor8.name=Dwarf Floor 8
+tile.dwarfFloor9.name=Dwarf Floor 9
 
 item.nameTag.name=Name Tag
 item.leash.name=Lead
