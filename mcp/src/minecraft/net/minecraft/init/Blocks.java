@@ -401,6 +401,18 @@ public class Blocks
     public static final Block DALE_TILES;
     public static final Block DALE_WALL;
     public static final Block HARAD_SANDSTONE_FLOOR;
+    public static final Block HARAD_STONE_BRICKS;
+    public static final Block SANDFLOOR;
+    public static final Block UMBAR_HAVEN_FLOOR;
+    public static final Block UMBAR_STONE_BRICKS;
+    public static final Block UMBAR_WALL_DECORATION;
+    public static final Block KHAND_STONE_BRICKS;
+    public static final Block BROWN_BRICKS;
+    public static final Block EDORAS_COBBLESTONE;
+    public static final Block REINFORCED_WOOD;
+    public static final Block MEDUSELD_WOOD;
+    public static final Block ROHIRRIM_WALL_DECORATION;
+    public static final Block STATUE_HEAD;
     // End Awaken Dreams code
 
     @Nullable
@@ -790,7 +802,18 @@ public class Blocks
             DALE_SANDSTONE = getRegisteredBlock("dale_sandstone");
             DALE_TILES = getRegisteredBlock("dale_tiles");
             DALE_WALL = getRegisteredBlock("dale_wall");
-            HARAD_SANDSTONE_FLOOR = getRegisteredBlock("harad_sandstone_floor");
+            HARAD_SANDSTONE_FLOOR = getRegisteredBlock("harad_sandstone_floor");HARAD_STONE_BRICKS = getRegisteredBlock("harad_stone_bricks");
+            SANDFLOOR = getRegisteredBlock("sandfloor");
+            UMBAR_HAVEN_FLOOR = getRegisteredBlock("umbar_haven_floor");
+            UMBAR_STONE_BRICKS = getRegisteredBlock("umbar_stone_bricks");
+            UMBAR_WALL_DECORATION = getRegisteredBlock("umbar_wall_decoration");
+            KHAND_STONE_BRICKS = getRegisteredBlock("khand_stone_bricks");
+            BROWN_BRICKS = getRegisteredBlock("brown_bricks");
+            EDORAS_COBBLESTONE = getRegisteredBlock("edoras_cobblestone");
+            REINFORCED_WOOD = getRegisteredBlock("reinforced_wood");
+            MEDUSELD_WOOD = getRegisteredBlock("meduseld_wood");
+            ROHIRRIM_WALL_DECORATION = getRegisteredBlock("rohirrim_wall_decoration");
+            STATUE_HEAD = getRegisteredBlock("statue_head");
             // End Awaken Dreams code
             CACHE.clear();
         }
