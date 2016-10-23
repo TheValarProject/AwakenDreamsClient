@@ -413,6 +413,17 @@ public class Blocks
     public static final Block MEDUSELD_WOOD;
     public static final Block ROHIRRIM_WALL_DECORATION;
     public static final Block STATUE_HEAD;
+    public static final Block ANGMAR_FLOOR;
+    public static final Block ANGMAR_BRICKS;
+    public static final Block BEORNING_WOOD;
+    public static final Block ANNUMINAS_DECORATION;
+    public static final Block ARNOR_DECORATION_JEWEL;
+    public static final Block ARNORIAN_BRICKS;
+    public static final Block MINAS_TIRITH_FLOOR;
+    public static final Block PELARGIR_STONE;
+    public static final Block WHITE_COBBLESTONE;
+    public static final Block DUNLAND_TOTEM;
+    public static final Block DUNLAND_WALL_DECORATION;
     // End Awaken Dreams code
 
     @Nullable
@@ -814,6 +825,17 @@ public class Blocks
             MEDUSELD_WOOD = getRegisteredBlock("meduseld_wood");
             ROHIRRIM_WALL_DECORATION = getRegisteredBlock("rohirrim_wall_decoration");
             STATUE_HEAD = getRegisteredBlock("statue_head");
+            ANGMAR_FLOOR = getRegisteredBlock("angmar_floor");
+            ANGMAR_BRICKS = getRegisteredBlock("angmar_bricks");
+            BEORNING_WOOD = getRegisteredBlock("beorning_wood");
+            ANNUMINAS_DECORATION = getRegisteredBlock("annuminas_decoration");
+            ARNOR_DECORATION_JEWEL = getRegisteredBlock("arnor_decoration_jewel");
+            ARNORIAN_BRICKS = getRegisteredBlock("arnorian_bricks");
+            MINAS_TIRITH_FLOOR = getRegisteredBlock("minas_tirith_floor");
+            PELARGIR_STONE = getRegisteredBlock("pelargir_stone");
+            WHITE_COBBLESTONE = getRegisteredBlock("white_cobblestone");
+            DUNLAND_TOTEM = getRegisteredBlock("dunland_totem");
+            DUNLAND_WALL_DECORATION = getRegisteredBlock("dunland_wall_decoration");
             // End Awaken Dreams code
             CACHE.clear();
         }

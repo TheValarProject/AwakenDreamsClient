@@ -1000,6 +1000,17 @@ tile.reinforcedWood.name=Reinforced Wood
 tile.meduseldWood.name=Meduseld Wood
 tile.rohirrimWallDecoration.name=Rohirrim Wall Decoration
 tile.statueHead.name=Statue Head
+tile.angmarFloor.name=Angmar Floor
+tile.angmarBricks.name=Angmar Bricks
+tile.beorningWood.name=Beorning Wood
+tile.annuminasDecoration.name=Annuminas Decoration
+tile.arnorDecorationJewel.name=Arnor Decoration Jewel
+tile.arnorianBricks.name=Arnorian Bricks
+tile.minasTirithFloor.name=Minas Tirith Floor
+tile.pelargirStone.name=Pelargir Stone
+tile.whiteCobblestone.name=White Cobblestone
+tile.dunlandTotem.name=Dunland Totem
+tile.dunlandWallDecoration.name=Dunland Wall Decoration
 
 item.nameTag.name=Name Tag
 item.leash.name=Lead
