@@ -871,6 +871,16 @@ public class Item
         registerItemBlock(Blocks.MORDOR_STONE);
         registerItemBlock(Blocks.CLIFF_BLOCK);
         registerItemBlock(Blocks.SPIDER_EGG);
+        registerItemBlock(Blocks.GONDORIAN_STONE);
+        registerItemBlock(Blocks.GONDORIAN_BRICK_STONE);
+        registerItemBlock(Blocks.CRACKED_GONDORIAN_BRICK_STONE);
+        registerItemBlock(Blocks.SALT_ORE);
+        registerItemBlock(Blocks.DARK_METAL);
+        registerItemBlock(Blocks.RIVENDELL_WOOD);
+        registerItemBlock(Blocks.MOSS);
+        registerItemBlock(Blocks.GONDORIAN_ROOF);
+        registerItemBlock(Blocks.RIVENDELL_ROOF);
+        registerItemBlock(Blocks.MOSSY_GONDORIAN_BRICK_STONE);
         // End Awaken Dreams code
         registerItem(256, "iron_shovel", (new ItemSpade(Item.ToolMaterial.IRON)).setUnlocalizedName("shovelIron"));
         registerItem(257, "iron_pickaxe", (new ItemPickaxe(Item.ToolMaterial.IRON)).setUnlocalizedName("pickaxeIron"));

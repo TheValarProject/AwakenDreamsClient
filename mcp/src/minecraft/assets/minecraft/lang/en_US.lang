@@ -879,6 +879,16 @@ tile.brownStone.name=Brown Stone
 tile.mordorStone.name=Mordor Stone
 tile.cliffBlock.name=Cliff Block
 tile.spiderEgg.name=Spider Egg
+tile.gondorianStone.name=Gondorian Stone
+tile.gondorianBrickStone.name=Gondorian Brick Stone
+tile.crackedGondorianBrickStone.name=Cracked Gondorian Brick Stone
+tile.oreSalt.name=Salt Ore
+tile.darkMetal.name=Dark Metal
+tile.rivendellWood.name=Rivendell Wood
+tile.moss.name=Moss
+tile.gondorianRoof.name=Gondorian Roof
+tile.rivendellRoof.name=Rivendell Roof
+tile.mossyGondorianBrickStone.name=Mossy Gondorian Brick Stone
 
 item.nameTag.name=Name Tag
 item.leash.name=Lead

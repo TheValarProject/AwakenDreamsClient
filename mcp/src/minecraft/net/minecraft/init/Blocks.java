@@ -292,7 +292,17 @@ public class Blocks
     public static final Block MORDOR_STONE;
     public static final Block CLIFF_BLOCK;
     public static final Block SPIDER_EGG;
-    // Begin Awaken Dreams code
+    public static final Block GONDORIAN_STONE;
+    public static final Block GONDORIAN_BRICK_STONE;
+    public static final Block CRACKED_GONDORIAN_BRICK_STONE;
+    public static final Block SALT_ORE;
+    public static final Block DARK_METAL;
+    public static final Block RIVENDELL_WOOD;
+    public static final Block MOSS;
+    public static final Block GONDORIAN_ROOF;
+    public static final Block RIVENDELL_ROOF;
+    public static final Block MOSSY_GONDORIAN_BRICK_STONE;
+    // End Awaken Dreams code
 
     @Nullable
 
@@ -573,6 +583,16 @@ public class Blocks
             MORDOR_STONE = getRegisteredBlock("mordor_stone");
             CLIFF_BLOCK = getRegisteredBlock("cliff_block");
             SPIDER_EGG = getRegisteredBlock("spider_egg");
+            GONDORIAN_STONE = getRegisteredBlock("gondorian_stone");
+            GONDORIAN_BRICK_STONE = getRegisteredBlock("gondorian_brick_stone");
+            CRACKED_GONDORIAN_BRICK_STONE = getRegisteredBlock("cracked_gondorian_brick_stone");
+            SALT_ORE = getRegisteredBlock("salt_ore");
+            DARK_METAL = getRegisteredBlock("dark_metal");
+            RIVENDELL_WOOD = getRegisteredBlock("rivendell_wood");
+            MOSS = getRegisteredBlock("moss");
+            GONDORIAN_ROOF = getRegisteredBlock("gondorian_roof");
+            RIVENDELL_ROOF = getRegisteredBlock("rivendell_roof");
+            MOSSY_GONDORIAN_BRICK_STONE = getRegisteredBlock("mossy_gondorian_brick_stone");
             // End Awaken Dreams code
             CACHE.clear();
         }
