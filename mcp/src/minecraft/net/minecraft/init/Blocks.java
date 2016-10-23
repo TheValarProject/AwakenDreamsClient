@@ -302,6 +302,22 @@ public class Blocks
     public static final Block GONDORIAN_ROOF;
     public static final Block RIVENDELL_ROOF;
     public static final Block MOSSY_GONDORIAN_BRICK_STONE;
+    public static final Block ROHAN_BRICKS;
+    public static final Block MORDOR_BRICK_STONE;
+    public static final Block MITHRIL_ORE;
+    public static final Block NUMENOREAN;
+    public static final Block DWARF_INNER_WALL_DECORATION;
+    public static final Block DALE_STONE;
+    public static final Block DWARF_INNER_WALL_STONE;
+    public static final Block RED_LAPIS;
+    public static final Block PURPLE_LAPIS;
+    public static final Block LIGHT_BLUE_LAPIS;
+    public static final Block GREEN_LAPIS;
+    public static final Block DWARF_WALL;
+    public static final Block BROWN_LAPIS;
+    public static final Block DWARF_FLOOR;
+    public static final Block DWARVEN_HALL_FLOOR;
+    public static final Block DWARF_STONE;
     // End Awaken Dreams code
 
     @Nullable
@@ -593,6 +609,22 @@ public class Blocks
             GONDORIAN_ROOF = getRegisteredBlock("gondorian_roof");
             RIVENDELL_ROOF = getRegisteredBlock("rivendell_roof");
             MOSSY_GONDORIAN_BRICK_STONE = getRegisteredBlock("mossy_gondorian_brick_stone");
+            ROHAN_BRICKS = getRegisteredBlock("rohan_bricks");
+            MORDOR_BRICK_STONE = getRegisteredBlock("mordor_brick_stone");
+            MITHRIL_ORE = getRegisteredBlock("mithril_ore");
+            NUMENOREAN = getRegisteredBlock("numenorean");
+            DWARF_INNER_WALL_DECORATION = getRegisteredBlock("dwarf_inner_wall_decoration");
+            DALE_STONE = getRegisteredBlock("dale_stone");
+            DWARF_INNER_WALL_STONE = getRegisteredBlock("dwarf_inner_wall_stone");
+            RED_LAPIS = getRegisteredBlock("red_lapis");
+            PURPLE_LAPIS = getRegisteredBlock("purple_lapis");
+            LIGHT_BLUE_LAPIS = getRegisteredBlock("light_blue_lapis");
+            GREEN_LAPIS = getRegisteredBlock("green_lapis");
+            DWARF_WALL = getRegisteredBlock("dwarf_wall");
+            BROWN_LAPIS = getRegisteredBlock("brown_lapis");
+            DWARF_FLOOR = getRegisteredBlock("dwarf_floor");
+            DWARVEN_HALL_FLOOR = getRegisteredBlock("dwarven_hall_floor");
+            DWARF_STONE = getRegisteredBlock("dwarf_stone");
             // End Awaken Dreams code
             CACHE.clear();
         }

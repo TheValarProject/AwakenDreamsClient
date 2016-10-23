@@ -841,6 +841,22 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.GONDORIAN_ROOF, "gondorian_roof");
         this.registerBlock(Blocks.RIVENDELL_ROOF, "rivendell_roof");
         this.registerBlock(Blocks.MOSSY_GONDORIAN_BRICK_STONE, "mossy_gondorian_brick_stone");
+        this.registerBlock(Blocks.ROHAN_BRICKS, "rohan_bricks");
+        this.registerBlock(Blocks.MORDOR_BRICK_STONE, "mordor_brick_stone");
+        this.registerBlock(Blocks.MITHRIL_ORE, "mithril_ore");
+        this.registerBlock(Blocks.NUMENOREAN, "numenorean");
+        this.registerBlock(Blocks.DWARF_INNER_WALL_DECORATION, "dwarf_inner_wall_decoration");
+        this.registerBlock(Blocks.DALE_STONE, "dale_stone");
+        this.registerBlock(Blocks.DWARF_INNER_WALL_STONE, "dwarf_inner_wall_stone");
+        this.registerBlock(Blocks.RED_LAPIS, "red_lapis");
+        this.registerBlock(Blocks.PURPLE_LAPIS, "purple_lapis");
+        this.registerBlock(Blocks.LIGHT_BLUE_LAPIS, "light_blue_lapis");
+        this.registerBlock(Blocks.GREEN_LAPIS, "green_lapis");
+        this.registerBlock(Blocks.DWARF_WALL, "dwarf_wall");
+        this.registerBlock(Blocks.BROWN_LAPIS, "brown_lapis");
+        this.registerBlock(Blocks.DWARF_FLOOR, "dwarf_floor");
+        this.registerBlock(Blocks.DWARVEN_HALL_FLOOR, "dwarven_hall_floor");
+        this.registerBlock(Blocks.DWARF_STONE, "dwarf_stone");
         // End Awaken Dreams code
         this.registerItem(Items.IRON_SHOVEL, "iron_shovel");
         this.registerItem(Items.IRON_PICKAXE, "iron_pickaxe");
