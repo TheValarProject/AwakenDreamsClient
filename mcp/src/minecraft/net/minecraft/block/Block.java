@@ -1,5 +1,6 @@
 package net.minecraft.block;
 
+import com.elementfx.tvp.ad.block.Block3D;
 import com.google.common.collect.Sets;
 import java.util.List;
 import java.util.Random;
@@ -1441,7 +1442,7 @@ public class Block
         registerBlock(595, "old_tree", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oldTree").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         //registerBlock(596, "bree_bookshelf", (new BlockValarBookshelf(Material.wood)).setHardness(1.5F).setSoundType(soundTypeWood).setUnlocalizedName("breeBookshelf").setBlockTextureName("bree_bookshelf"));
         registerBlock(597, "cross_hay", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("crossHay").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerBlock(598, "light_grey_circle_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("lightGreyCircleStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        registerBlock(598, "light_grey_circle_stone", (new Block3D(Material.GLASS)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("lightGreyCircleStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         //registerBlock(599, "hobbit_lamp_1", (new BlockValarLamp()).setLampBounds(16, 32).setUnlocalizedName("hobbitLamp1").setBlockTextureName("hobbit_lamp_1"));
         //registerBlock(600, "hobbit_lamp_2", (new BlockValarLamp()).setLampBounds(16, 32).setUnlocalizedName("hobbitLamp2").setBlockTextureName("hobbit_lamp_2"));
         registerBlock(601, "lossarnarch_decoration_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("lossarnarchDecorationStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
@@ -1469,7 +1470,7 @@ public class Block
         registerBlock(622, "cardolan_brick_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("cardolanBrickStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(623, "elven_sandstone_floor", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("elvenSandstoneFloor").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(624, "dead_lava", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("deadLava").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerBlock(625, "chiseled_gondorian_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("chiseledGondorianStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        registerBlock(625, "chiseled_gondorian_stone", (new Block3D(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("chiseledGondorianStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(626, "needles", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("needles").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(627, "rhun_floor", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("rhunFloor").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(628, "khand_floor", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("khandFloor").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
