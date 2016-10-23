@@ -369,6 +369,22 @@ public class Blocks
     public static final Block SINDAR_FLOOR2;
     public static final Block SINDAR_DECORATION_STONE;
     public static final Block NOLDOR_FLOOR;
+    public static final Block NOLDOR_SANDSTONE_FLOOR;
+    public static final Block MALLORN_WOODPLANKS;
+    public static final Block LINDON_WOOD;
+    public static final Block LINDON_WALL_DECORATION;
+    public static final Block HIGH_ELF_WALL;
+    public static final Block HARLINDON_WOOD;
+    public static final Block FORLOND_FLOOR;
+    public static final Block FORLINDON_WOOD;
+    public static final Block FORLINDON_WALL;
+    public static final Block ELVEN_STONE_WALL;
+    public static final Block ELVEN_NOBLE_WALL;
+    public static final Block RIVENDELL_STATUE_BOTTOM;
+    public static final Block ELVEN_DECORATION;
+    public static final Block ELVEN_DECORATION_LIGHT;
+    public static final Block ELVEN_DECORATION2;
+    public static final Block ELVEN_DECORATION3;
     // End Awaken Dreams code
 
     @Nullable
@@ -727,6 +743,22 @@ public class Blocks
             SINDAR_FLOOR2 = getRegisteredBlock("sindar_floor2");
             SINDAR_DECORATION_STONE = getRegisteredBlock("sindar_decoration_stone");
             NOLDOR_FLOOR = getRegisteredBlock("noldor_floor");
+            NOLDOR_SANDSTONE_FLOOR = getRegisteredBlock("noldor_sandstone_floor");
+            MALLORN_WOODPLANKS = getRegisteredBlock("mallorn_woodplanks");
+            LINDON_WOOD = getRegisteredBlock("lindon_wood");
+            LINDON_WALL_DECORATION = getRegisteredBlock("lindon_wall_decoration");
+            HIGH_ELF_WALL = getRegisteredBlock("high_elf_wall");
+            HARLINDON_WOOD = getRegisteredBlock("harlindon_wood");
+            FORLOND_FLOOR = getRegisteredBlock("forlond_floor");
+            FORLINDON_WOOD = getRegisteredBlock("forlindon_wood");
+            FORLINDON_WALL = getRegisteredBlock("forlindon_wall");
+            ELVEN_STONE_WALL = getRegisteredBlock("elven_stone_wall");
+            ELVEN_NOBLE_WALL = getRegisteredBlock("elven_noble_wall");
+            RIVENDELL_STATUE_BOTTOM = getRegisteredBlock("rivendell_statue_bottom");
+            ELVEN_DECORATION = getRegisteredBlock("elven_decoration");
+            ELVEN_DECORATION_LIGHT = getRegisteredBlock("elven_decoration_light");
+            ELVEN_DECORATION2 = getRegisteredBlock("elven_decoration2");
+            ELVEN_DECORATION3 = getRegisteredBlock("elven_decoration3");
             // End Awaken Dreams code
             CACHE.clear();
         }

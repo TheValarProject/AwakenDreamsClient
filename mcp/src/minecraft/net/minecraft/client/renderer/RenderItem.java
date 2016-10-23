@@ -908,6 +908,22 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.SINDAR_FLOOR2, "sindar_floor2");
         this.registerBlock(Blocks.SINDAR_DECORATION_STONE, "sindar_decoration_stone");
         this.registerBlock(Blocks.NOLDOR_FLOOR, "noldor_floor");
+        this.registerBlock(Blocks.NOLDOR_SANDSTONE_FLOOR, "noldor_sandstone_floor");
+        this.registerBlock(Blocks.MALLORN_WOODPLANKS, "mallorn_woodplanks");
+        this.registerBlock(Blocks.LINDON_WOOD, "lindon_wood");
+        this.registerBlock(Blocks.LINDON_WALL_DECORATION, "lindon_wall_decoration");
+        this.registerBlock(Blocks.HIGH_ELF_WALL, "high_elf_wall");
+        this.registerBlock(Blocks.HARLINDON_WOOD, "harlindon_wood");
+        this.registerBlock(Blocks.FORLOND_FLOOR, "forlond_floor");
+        this.registerBlock(Blocks.FORLINDON_WOOD, "forlindon_wood");
+        this.registerBlock(Blocks.FORLINDON_WALL, "forlindon_wall");
+        this.registerBlock(Blocks.ELVEN_STONE_WALL, "elven_stone_wall");
+        this.registerBlock(Blocks.ELVEN_NOBLE_WALL, "elven_noble_wall");
+        this.registerBlock(Blocks.RIVENDELL_STATUE_BOTTOM, "rivendell_statue_bottom");
+        this.registerBlock(Blocks.ELVEN_DECORATION, "elven_decoration");
+        this.registerBlock(Blocks.ELVEN_DECORATION_LIGHT, "elven_decoration_light");
+        this.registerBlock(Blocks.ELVEN_DECORATION2, "elven_decoration2");
+        this.registerBlock(Blocks.ELVEN_DECORATION3, "elven_decoration3");
         // End Awaken Dreams code
         this.registerItem(Items.IRON_SHOVEL, "iron_shovel");
         this.registerItem(Items.IRON_PICKAXE, "iron_pickaxe");

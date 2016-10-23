@@ -948,6 +948,22 @@ public class Item
         registerItemBlock(Blocks.SINDAR_FLOOR2);
         registerItemBlock(Blocks.SINDAR_DECORATION_STONE);
         registerItemBlock(Blocks.NOLDOR_FLOOR);
+        registerItemBlock(Blocks.NOLDOR_SANDSTONE_FLOOR);
+        registerItemBlock(Blocks.MALLORN_WOODPLANKS);
+        registerItemBlock(Blocks.LINDON_WOOD);
+        registerItemBlock(Blocks.LINDON_WALL_DECORATION);
+        registerItemBlock(Blocks.HIGH_ELF_WALL);
+        registerItemBlock(Blocks.HARLINDON_WOOD);
+        registerItemBlock(Blocks.FORLOND_FLOOR);
+        registerItemBlock(Blocks.FORLINDON_WOOD);
+        registerItemBlock(Blocks.FORLINDON_WALL);
+        registerItemBlock(Blocks.ELVEN_STONE_WALL);
+        registerItemBlock(Blocks.ELVEN_NOBLE_WALL);
+        registerItemBlock(Blocks.RIVENDELL_STATUE_BOTTOM);
+        registerItemBlock(Blocks.ELVEN_DECORATION);
+        registerItemBlock(Blocks.ELVEN_DECORATION_LIGHT);
+        registerItemBlock(Blocks.ELVEN_DECORATION2);
+        registerItemBlock(Blocks.ELVEN_DECORATION3);
         // End Awaken Dreams code
         registerItem(256, "iron_shovel", (new ItemSpade(Item.ToolMaterial.IRON)).setUnlocalizedName("shovelIron"));
         registerItem(257, "iron_pickaxe", (new ItemPickaxe(Item.ToolMaterial.IRON)).setUnlocalizedName("pickaxeIron"));
