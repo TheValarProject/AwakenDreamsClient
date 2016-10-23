@@ -353,6 +353,22 @@ public class Blocks
     public static final Block DWARF_FLOOR7;
     public static final Block DWARF_FLOOR8;
     public static final Block DWARF_FLOOR9;
+    public static final Block DWARF_KING_STONE;
+    public static final Block DWARVEN_KING_FLOOR;
+    public static final Block DWARVEN_KING_FLOOR2;
+    public static final Block DWARVEN_PILLAR_DECORATION;
+    public static final Block DWARVEN_STEEL;
+    public static final Block EREBOR_FLOOR;
+    public static final Block EREBOR_FLOOR2;
+    public static final Block ERED_LUIN_STONE;
+    public static final Block IRON_HILLS_FLOOR;
+    public static final Block SMOOTH_GOLD;
+    public static final Block RIVENDELL_WALL;
+    public static final Block SINDAR_STONE;
+    public static final Block SINDAR_FLOOR;
+    public static final Block SINDAR_FLOOR2;
+    public static final Block SINDAR_DECORATION_STONE;
+    public static final Block NOLDOR_FLOOR;
     // End Awaken Dreams code
 
     @Nullable
@@ -695,6 +711,22 @@ public class Blocks
             DWARF_FLOOR7 = getRegisteredBlock("dwarf_floor7");
             DWARF_FLOOR8 = getRegisteredBlock("dwarf_floor8");
             DWARF_FLOOR9 = getRegisteredBlock("dwarf_floor9");
+            DWARF_KING_STONE = getRegisteredBlock("dwarf_king_stone");
+            DWARVEN_KING_FLOOR = getRegisteredBlock("dwarven_king_floor");
+            DWARVEN_KING_FLOOR2 = getRegisteredBlock("dwarven_king_floor2");
+            DWARVEN_PILLAR_DECORATION = getRegisteredBlock("dwarven_pillar_decoration");
+            DWARVEN_STEEL = getRegisteredBlock("dwarven_steel");
+            EREBOR_FLOOR = getRegisteredBlock("erebor_floor");
+            EREBOR_FLOOR2 = getRegisteredBlock("erebor_floor2");
+            ERED_LUIN_STONE = getRegisteredBlock("ered_luin_stone");
+            IRON_HILLS_FLOOR = getRegisteredBlock("iron_hills_floor");
+            SMOOTH_GOLD = getRegisteredBlock("smooth_gold");
+            RIVENDELL_WALL = getRegisteredBlock("rivendell_wall");
+            SINDAR_STONE = getRegisteredBlock("sindar_stone");
+            SINDAR_FLOOR = getRegisteredBlock("sindar_floor");
+            SINDAR_FLOOR2 = getRegisteredBlock("sindar_floor2");
+            SINDAR_DECORATION_STONE = getRegisteredBlock("sindar_decoration_stone");
+            NOLDOR_FLOOR = getRegisteredBlock("noldor_floor");
             // End Awaken Dreams code
             CACHE.clear();
         }

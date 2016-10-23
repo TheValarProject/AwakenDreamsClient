@@ -892,6 +892,22 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.DWARF_FLOOR7, "dwarf_floor7");
         this.registerBlock(Blocks.DWARF_FLOOR8, "dwarf_floor8");
         this.registerBlock(Blocks.DWARF_FLOOR9, "dwarf_floor9");
+        this.registerBlock(Blocks.DWARF_KING_STONE, "dwarf_king_stone");
+        this.registerBlock(Blocks.DWARVEN_KING_FLOOR, "dwarven_king_floor");
+        this.registerBlock(Blocks.DWARVEN_KING_FLOOR2, "dwarven_king_floor2");
+        this.registerBlock(Blocks.DWARVEN_PILLAR_DECORATION, "dwarven_pillar_decoration");
+        this.registerBlock(Blocks.DWARVEN_STEEL, "dwarven_steel");
+        this.registerBlock(Blocks.EREBOR_FLOOR, "erebor_floor");
+        this.registerBlock(Blocks.EREBOR_FLOOR2, "erebor_floor2");
+        this.registerBlock(Blocks.ERED_LUIN_STONE, "ered_luin_stone");
+        this.registerBlock(Blocks.IRON_HILLS_FLOOR, "iron_hills_floor");
+        this.registerBlock(Blocks.SMOOTH_GOLD, "smooth_gold");
+        this.registerBlock(Blocks.RIVENDELL_WALL, "rivendell_wall");
+        this.registerBlock(Blocks.SINDAR_STONE, "sindar_stone");
+        this.registerBlock(Blocks.SINDAR_FLOOR, "sindar_floor");
+        this.registerBlock(Blocks.SINDAR_FLOOR2, "sindar_floor2");
+        this.registerBlock(Blocks.SINDAR_DECORATION_STONE, "sindar_decoration_stone");
+        this.registerBlock(Blocks.NOLDOR_FLOOR, "noldor_floor");
         // End Awaken Dreams code
         this.registerItem(Items.IRON_SHOVEL, "iron_shovel");
         this.registerItem(Items.IRON_PICKAXE, "iron_pickaxe");
