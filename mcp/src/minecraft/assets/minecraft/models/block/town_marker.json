@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+      "end": "blocks/marker_end",
+      "side": "blocks/town_marker"
+    }
+}

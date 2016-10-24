@@ -868,6 +868,9 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.CROSS_HAY, "cross_hay");
         this.registerBlock(Blocks.LIGHT_GREY_CIRCLE_STONE, "light_grey_circle_stone");
         this.registerBlock(Blocks.LOSSARNARCH_DECORATION_STONE, "lossarnarch_decoration_stone");
+        this.registerBlock(Blocks.TOWN_MARKER, "town_marker");
+        this.registerBlock(Blocks.VILLAGE_MARKER, "village_marker");
+        this.registerBlock(Blocks.RUIN_MARKER, "ruin_marker");
         this.registerBlock(Blocks.ELVEN_STONE_FLOOR, "elven_stone_floor");
         this.registerBlock(Blocks.ANCIENT_STONE, "ancient_stone");
         this.registerBlock(Blocks.BREE_STONE_BRICKS, "bree_stone_bricks");
@@ -884,6 +887,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.NEEDLES, "needles");
         this.registerBlock(Blocks.RHUN_FLOOR, "rhun_floor");
         this.registerBlock(Blocks.KHAND_FLOOR, "khand_floor");
+        this.registerBlock(Blocks.CITY_MARKER, "city_marker");
         this.registerBlock(Blocks.RIVENDELL_FLOOR, "rivendell_floor");
         this.registerBlock(Blocks.COLUMN, "column");
         this.registerBlock(Blocks.COLUMN_TOP, "column_top");

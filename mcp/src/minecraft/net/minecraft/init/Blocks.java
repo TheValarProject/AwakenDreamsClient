@@ -329,6 +329,9 @@ public class Blocks
     public static final Block CROSS_HAY;
     public static final Block LIGHT_GREY_CIRCLE_STONE;
     public static final Block LOSSARNARCH_DECORATION_STONE;
+    public static final Block TOWN_MARKER;
+    public static final Block VILLAGE_MARKER;
+    public static final Block RUIN_MARKER;
     public static final Block ELVEN_STONE_FLOOR;
     public static final Block ANCIENT_STONE;
     public static final Block BREE_STONE_BRICKS;
@@ -345,6 +348,7 @@ public class Blocks
     public static final Block NEEDLES;
     public static final Block RHUN_FLOOR;
     public static final Block KHAND_FLOOR;
+    public static final Block CITY_MARKER;
     public static final Block RIVENDELL_FLOOR;
     public static final Block COLUMN;
     public static final Block COLUMN_TOP;
@@ -757,6 +761,9 @@ public class Blocks
             CROSS_HAY = getRegisteredBlock("cross_hay");
             LIGHT_GREY_CIRCLE_STONE = getRegisteredBlock("light_grey_circle_stone");
             LOSSARNARCH_DECORATION_STONE = getRegisteredBlock("lossarnarch_decoration_stone");
+            TOWN_MARKER = getRegisteredBlock("town_marker");
+            VILLAGE_MARKER = getRegisteredBlock("village_marker");
+            RUIN_MARKER = getRegisteredBlock("ruin_marker");
             ELVEN_STONE_FLOOR = getRegisteredBlock("elven_stone_floor");
             ANCIENT_STONE = getRegisteredBlock("ancient_stone");
             BREE_STONE_BRICKS = getRegisteredBlock("bree_stone_bricks");
@@ -773,6 +780,7 @@ public class Blocks
             NEEDLES = getRegisteredBlock("needles");
             RHUN_FLOOR = getRegisteredBlock("rhun_floor");
             KHAND_FLOOR = getRegisteredBlock("khand_floor");
+            CITY_MARKER = getRegisteredBlock("city_marker");
             RIVENDELL_FLOOR = getRegisteredBlock("rivendell_floor");
             COLUMN = getRegisteredBlock("column");
             COLUMN_TOP = getRegisteredBlock("column_top");

@@ -908,6 +908,9 @@ public class Item
         registerItemBlock(Blocks.CROSS_HAY);
         registerItemBlock(Blocks.LIGHT_GREY_CIRCLE_STONE);
         registerItemBlock(Blocks.LOSSARNARCH_DECORATION_STONE);
+        registerItemBlock(Blocks.TOWN_MARKER);
+        registerItemBlock(Blocks.VILLAGE_MARKER);
+        registerItemBlock(Blocks.RUIN_MARKER);
         registerItemBlock(Blocks.ELVEN_STONE_FLOOR);
         registerItemBlock(Blocks.ANCIENT_STONE);
         registerItemBlock(Blocks.BREE_STONE_BRICKS);
@@ -924,6 +927,7 @@ public class Item
         registerItemBlock(Blocks.NEEDLES);
         registerItemBlock(Blocks.RHUN_FLOOR);
         registerItemBlock(Blocks.KHAND_FLOOR);
+        registerItemBlock(Blocks.CITY_MARKER);
         registerItemBlock(Blocks.RIVENDELL_FLOOR);
         registerItemBlock(Blocks.COLUMN);
         registerItemBlock(Blocks.COLUMN_TOP);
