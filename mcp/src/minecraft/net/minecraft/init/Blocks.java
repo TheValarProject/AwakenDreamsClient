@@ -296,6 +296,7 @@ public class Blocks
     public static final Block GONDORIAN_STONE;
     public static final Block GONDORIAN_BRICK_STONE;
     public static final Block CRACKED_GONDORIAN_BRICK_STONE;
+    public static final Block BUCKLEBURY_LAMP;
     public static final Block SALT_ORE;
     public static final Block DARK_METAL;
     public static final Block RIVENDELL_WOOD;
@@ -723,6 +724,7 @@ public class Blocks
             GONDORIAN_STONE = getRegisteredBlock("gondorian_stone");
             GONDORIAN_BRICK_STONE = getRegisteredBlock("gondorian_brick_stone");
             CRACKED_GONDORIAN_BRICK_STONE = getRegisteredBlock("cracked_gondorian_brick_stone");
+            BUCKLEBURY_LAMP = getRegisteredBlock("bucklebury_lamp");
             SALT_ORE = getRegisteredBlock("salt_ore");
             DARK_METAL = getRegisteredBlock("dark_metal");
             RIVENDELL_WOOD = getRegisteredBlock("rivendell_wood");

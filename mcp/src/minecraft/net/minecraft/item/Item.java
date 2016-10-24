@@ -875,6 +875,7 @@ public class Item
         registerItemBlock(Blocks.GONDORIAN_STONE);
         registerItemBlock(Blocks.GONDORIAN_BRICK_STONE);
         registerItemBlock(Blocks.CRACKED_GONDORIAN_BRICK_STONE);
+        registerItemBlock(Blocks.BUCKLEBURY_LAMP);
         registerItemBlock(Blocks.SALT_ORE);
         registerItemBlock(Blocks.DARK_METAL);
         registerItemBlock(Blocks.RIVENDELL_WOOD);
