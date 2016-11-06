@@ -558,7 +558,7 @@
         "to": [ 8.5, 16, 8.5 ],
         "faces": {
           "down": { "texture": "#all" },
-          "up": { "texture": "#all" },
+          "up": { "texture": "#all", "cullface": "up" },
           "north": { "texture": "#all" },
           "east": { "texture": "#all" },
           "south": { "texture": "#all" },

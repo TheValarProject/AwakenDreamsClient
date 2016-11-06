@@ -35,6 +35,8 @@ public class BlockArchetLamp extends Block3D
         super(Material.ROCK, Arrays.asList(new AxisAlignedBB(4.5 / 16, 0.0D, 4.5 / 16, 11.5 / 16, 1.0D, 11.5 / 16)));
         this.setTickRandomly(true);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+        this.setCreativeTab(CreativeTabs.DECORATIONS);
+        this.setLightLevel(1.0F);
     }
     
     public void randomDisplayTick(IBlockState stateIn, World worldIn, BlockPos pos, Random rand)
