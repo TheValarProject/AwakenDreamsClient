@@ -328,6 +328,7 @@ public class Blocks
     public static final Block LIGHT_BROWN_WOOD;
     public static final Block CROSS_HAY;
     public static final Block LIGHT_GREY_CIRCLE_STONE;
+    public static final Block HOBBIT_LAMP_1;
     public static final Block HOBBIT_LAMP_2;
     public static final Block LOSSARNARCH_DECORATION_STONE;
     public static final Block ARCHET_LAMP;
@@ -762,6 +763,7 @@ public class Blocks
             OLD_TREE = getRegisteredBlock("old_tree");
             CROSS_HAY = getRegisteredBlock("cross_hay");
             LIGHT_GREY_CIRCLE_STONE = getRegisteredBlock("light_grey_circle_stone");
+            HOBBIT_LAMP_1 = getRegisteredBlock("hobbit_lamp_1");
             HOBBIT_LAMP_2 = getRegisteredBlock("hobbit_lamp_2");
             LOSSARNARCH_DECORATION_STONE = getRegisteredBlock("lossarnarch_decoration_stone");
             ARCHET_LAMP = getRegisteredBlock("archet_lamp");

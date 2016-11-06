@@ -867,6 +867,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.OLD_TREE, "old_tree");
         this.registerBlock(Blocks.CROSS_HAY, "cross_hay");
         this.registerBlock(Blocks.LIGHT_GREY_CIRCLE_STONE, "light_grey_circle_stone");
+        this.registerBlock(Blocks.HOBBIT_LAMP_1, "hobbit_lamp_1");
         this.registerBlock(Blocks.HOBBIT_LAMP_2, "hobbit_lamp_2");
         this.registerBlock(Blocks.LOSSARNARCH_DECORATION_STONE, "lossarnarch_decoration_stone");
         this.registerBlock(Blocks.ARCHET_LAMP, "archet_lamp");
