@@ -907,6 +907,7 @@ public class Item
         registerItemBlock(Blocks.OLD_TREE);
         registerItemBlock(Blocks.CROSS_HAY);
         registerItemBlock(Blocks.LIGHT_GREY_CIRCLE_STONE);
+        registerItemBlock(Blocks.HOBBIT_LAMP_2);
         registerItemBlock(Blocks.LOSSARNARCH_DECORATION_STONE);
         registerItemBlock(Blocks.ARCHET_LAMP);
         registerItemBlock(Blocks.TOWN_MARKER);
