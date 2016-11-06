@@ -908,6 +908,7 @@ public class Item
         registerItemBlock(Blocks.CROSS_HAY);
         registerItemBlock(Blocks.LIGHT_GREY_CIRCLE_STONE);
         registerItemBlock(Blocks.LOSSARNARCH_DECORATION_STONE);
+        registerItemBlock(Blocks.ARCHET_LAMP);
         registerItemBlock(Blocks.TOWN_MARKER);
         registerItemBlock(Blocks.VILLAGE_MARKER);
         registerItemBlock(Blocks.RUIN_MARKER);

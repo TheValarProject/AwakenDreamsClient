@@ -329,6 +329,7 @@ public class Blocks
     public static final Block CROSS_HAY;
     public static final Block LIGHT_GREY_CIRCLE_STONE;
     public static final Block LOSSARNARCH_DECORATION_STONE;
+    public static final Block ARCHET_LAMP;
     public static final Block TOWN_MARKER;
     public static final Block VILLAGE_MARKER;
     public static final Block RUIN_MARKER;
@@ -761,6 +762,7 @@ public class Blocks
             CROSS_HAY = getRegisteredBlock("cross_hay");
             LIGHT_GREY_CIRCLE_STONE = getRegisteredBlock("light_grey_circle_stone");
             LOSSARNARCH_DECORATION_STONE = getRegisteredBlock("lossarnarch_decoration_stone");
+            ARCHET_LAMP = getRegisteredBlock("archet_lamp");
             TOWN_MARKER = getRegisteredBlock("town_marker");
             VILLAGE_MARKER = getRegisteredBlock("village_marker");
             RUIN_MARKER = getRegisteredBlock("ruin_marker");
