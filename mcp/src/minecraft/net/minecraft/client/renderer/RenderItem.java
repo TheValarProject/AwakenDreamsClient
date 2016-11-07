@@ -1268,7 +1268,9 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.STRUCTURE_BLOCK, TileEntityStructure.Mode.LOAD.getModeId(), "structure_block");
         this.registerBlock(Blocks.STRUCTURE_BLOCK, TileEntityStructure.Mode.CORNER.getModeId(), "structure_block");
         this.registerBlock(Blocks.STRUCTURE_BLOCK, TileEntityStructure.Mode.DATA.getModeId(), "structure_block");
-        
+        // Begin Awaken Dreams code
+        this.registerItem(Items.BREE_DOOR, "bree_door");
+        // End Awaken Dreams code
     }
 
     public void onResourceManagerReload(IResourceManager resourceManager)

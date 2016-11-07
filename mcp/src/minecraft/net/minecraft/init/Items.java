@@ -219,6 +219,9 @@ public class Items
     public static final Item BEETROOT_SEEDS;
     public static final Item BEETROOT;
     public static final Item BEETROOT_SOUP;
+    // Begin Awaken Dreams code
+    public static final Item BREE_DOOR;
+    // End Awaken Dreams code
 
     private static Item getRegisteredItem(String name)
     {
@@ -447,6 +450,9 @@ public class Items
             BEETROOT_SEEDS = getRegisteredItem("beetroot_seeds");
             BEETROOT = getRegisteredItem("beetroot");
             BEETROOT_SOUP = getRegisteredItem("beetroot_soup");
+            // Begin Awaken Dreams code
+            BREE_DOOR = getRegisteredItem("bree_door");
+            // End Awaken Dreams code
         }
     }
 }

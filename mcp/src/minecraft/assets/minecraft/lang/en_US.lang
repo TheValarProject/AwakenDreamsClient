@@ -870,6 +870,7 @@ tile.elfFloor.name=Elf Floor
 tile.gondorianFloor.name=Gondorian Floor
 tile.stoneFloor.name=Stone Floor
 tile.moriaTrapdoor.name=Moria Trapdoor
+tile.breeDoor.name=Bree Door
 tile.palmLog.name=Palm Log
 tile.silkStone.name=Smooth Stone
 tile.crackedSilkStone.name=Cracked Smooth Stone
@@ -1298,6 +1299,8 @@ item.beetroot_seeds.name=Beetroot Seeds
 item.beetroot_soup.name=Beetroot Soup
 item.dragon_breath.name=Dragon's Breath
 item.elytra.name=Elytra
+
+item.breeDoor.name=Bree Door
 
 container.inventory=Inventory
 container.hopper=Item Hopper

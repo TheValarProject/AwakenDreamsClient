@@ -308,5 +308,8 @@ public class BlockModelShapes
                 return new ModelResourceLocation(s + "_double_slab", s1);
             }
         });
+        // Begin Awaken Dreams code
+        this.registerBlockWithStateMapper(Blocks.BREE_DOOR, (new StateMap.Builder()).ignore(new IProperty[] {BlockDoor.POWERED}).build());
+        // End Awaken Dreams code
     }
 }

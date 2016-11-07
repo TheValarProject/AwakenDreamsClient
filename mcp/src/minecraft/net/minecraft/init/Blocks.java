@@ -283,6 +283,7 @@ public class Blocks
     public static final Block GONDORIAN_FLOOR;
     public static final Block STONE_FLOOR;
     public static final Block MORIA_TRAPDOOR;
+    public static final BlockDoor BREE_DOOR;
     public static final Block PALM_LOG;
     public static final Block SILK_STONE;
     public static final Block CRACKED_SILK_STONE;
@@ -726,6 +727,7 @@ public class Blocks
             GONDORIAN_FLOOR = getRegisteredBlock("gondorian_floor");
             STONE_FLOOR = getRegisteredBlock("stone_floor");
             MORIA_TRAPDOOR = getRegisteredBlock("moria_trapdoor");
+            BREE_DOOR = (BlockDoor)getRegisteredBlock("bree_door");
             PALM_LOG = getRegisteredBlock("palm_log");
             SILK_STONE = getRegisteredBlock("silk_stone");
             CRACKED_SILK_STONE = getRegisteredBlock("cracked_silk_stone");

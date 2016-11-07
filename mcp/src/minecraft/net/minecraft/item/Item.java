@@ -1241,6 +1241,9 @@ public class Item
         registerItem(2265, "record_ward", (new ItemRecord("ward", SoundEvents.RECORD_WARD)).setUnlocalizedName("record"));
         registerItem(2266, "record_11", (new ItemRecord("11", SoundEvents.RECORD_11)).setUnlocalizedName("record"));
         registerItem(2267, "record_wait", (new ItemRecord("wait", SoundEvents.RECORD_WAIT)).setUnlocalizedName("record"));
+        // Begin Awaken Dreams code
+        registerItem(6056, "bree_door", (new ItemDoor(Blocks.BREE_DOOR)).setUnlocalizedName("breeDoor"));
+        // End Awaken Dreams code
     }
 
     /**
