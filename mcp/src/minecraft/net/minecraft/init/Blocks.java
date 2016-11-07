@@ -441,6 +441,13 @@ public class Blocks
     public static final Block ELVEN_LAMP;
     public static final Block CARN_DUM_LAMP;
     public static final Block BREE_TILE;
+    public static final Block HUMAN_TRAPDOOR;
+    public static final Block MORDOR_TRAPDOOR;
+    public static final Block KHANDISH_TRAPDOOR;
+    public static final Block SINDAR_TRAPDOOR;
+    public static final Block RIVERFOLK_TRAPDOOR;
+    public static final Block FORNOST_TRAPDOOR;
+    public static final Block PRISON_TRAPDOOR;
     public static final Block PILE_OF_COINS;
     public static final Block GREY_COLUMN;
     public static final Block GREY_COLUMN_TOP;
@@ -876,6 +883,13 @@ public class Blocks
             ELVEN_LAMP = getRegisteredBlock("elven_lamp");
             CARN_DUM_LAMP = getRegisteredBlock("carn_dum_lamp");
             BREE_TILE = getRegisteredBlock("bree_tile");
+            HUMAN_TRAPDOOR = getRegisteredBlock("human_trapdoor");
+            MORDOR_TRAPDOOR = getRegisteredBlock("mordor_trapdoor");
+            KHANDISH_TRAPDOOR = getRegisteredBlock("khandish_trapdoor");
+            SINDAR_TRAPDOOR = getRegisteredBlock("sindar_trapdoor");
+            RIVERFOLK_TRAPDOOR = getRegisteredBlock("riverfolk_trapdoor");
+            FORNOST_TRAPDOOR = getRegisteredBlock("fornost_trapdoor");
+            PRISON_TRAPDOOR = getRegisteredBlock("prison_trapdoor");
             PILE_OF_COINS = getRegisteredBlock("pile_of_coins");
             GREY_COLUMN = getRegisteredBlock("grey_column");
             GREY_COLUMN_TOP = getRegisteredBlock("grey_column_top");

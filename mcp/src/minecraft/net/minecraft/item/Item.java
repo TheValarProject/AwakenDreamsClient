@@ -1020,6 +1020,13 @@ public class Item
         registerItemBlock(Blocks.ELVEN_LAMP);
         registerItemBlock(Blocks.CARN_DUM_LAMP);
         registerItemBlock(Blocks.BREE_TILE);
+        registerItemBlock(Blocks.HUMAN_TRAPDOOR);
+        registerItemBlock(Blocks.MORDOR_TRAPDOOR);
+        registerItemBlock(Blocks.KHANDISH_TRAPDOOR);
+        registerItemBlock(Blocks.SINDAR_TRAPDOOR);
+        registerItemBlock(Blocks.RIVERFOLK_TRAPDOOR);
+        registerItemBlock(Blocks.FORNOST_TRAPDOOR);
+        registerItemBlock(Blocks.PRISON_TRAPDOOR);
         registerItemBlock(Blocks.PILE_OF_COINS);
         registerItemBlock(Blocks.GREY_COLUMN);
         registerItemBlock(Blocks.GREY_COLUMN_TOP);
