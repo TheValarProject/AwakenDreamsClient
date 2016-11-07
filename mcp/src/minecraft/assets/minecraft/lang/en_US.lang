@@ -869,6 +869,7 @@ tile.rustyIron.name=Rusty Iron
 tile.elfFloor.name=Elf Floor
 tile.gondorianFloor.name=Gondorian Floor
 tile.stoneFloor.name=Stone Floor
+tile.moriaTrapdoor.name=Moria Trapdoor
 tile.palmLog.name=Palm Log
 tile.silkStone.name=Smooth Stone
 tile.crackedSilkStone.name=Cracked Smooth Stone

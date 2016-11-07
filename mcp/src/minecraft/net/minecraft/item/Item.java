@@ -861,6 +861,7 @@ public class Item
         registerItemBlock(Blocks.ELF_FLOOR);
         registerItemBlock(Blocks.GONDORIAN_FLOOR);
         registerItemBlock(Blocks.STONE_FLOOR);
+        registerItemBlock(Blocks.MORIA_TRAPDOOR);
         registerItemBlock(Blocks.PALM_LOG);
         registerItemBlock(Blocks.SILK_STONE);
         registerItemBlock(Blocks.CRACKED_SILK_STONE);
