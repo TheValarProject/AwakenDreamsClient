@@ -221,6 +221,14 @@ public class Items
     public static final Item BEETROOT_SOUP;
     // Begin Awaken Dreams code
     public static final Item BREE_DOOR;
+    public static final Item ELVEN_DOOR;
+    public static final Item HUMAN_DOOR;
+    public static final Item CASTLE_DOOR;
+    public static final Item DOL_GULDUR_PRISON_DOOR;
+    public static final Item HILLMEN_DOOR;
+    public static final Item MORDOR_DOOR;
+    public static final Item PRISON_DOOR;
+    public static final Item SINDAR_DOOR;
     // End Awaken Dreams code
 
     private static Item getRegisteredItem(String name)
@@ -452,6 +460,14 @@ public class Items
             BEETROOT_SOUP = getRegisteredItem("beetroot_soup");
             // Begin Awaken Dreams code
             BREE_DOOR = getRegisteredItem("bree_door");
+            ELVEN_DOOR = getRegisteredItem("elven_door");
+            HUMAN_DOOR = getRegisteredItem("human_door");
+            CASTLE_DOOR = getRegisteredItem("castle_door");
+            DOL_GULDUR_PRISON_DOOR = getRegisteredItem("dol_guldur_prison_door");
+            HILLMEN_DOOR = getRegisteredItem("hillmen_door");
+            MORDOR_DOOR = getRegisteredItem("mordor_door");
+            PRISON_DOOR = getRegisteredItem("prison_door");
+            SINDAR_DOOR = getRegisteredItem("sindar_door");
             // End Awaken Dreams code
         }
     }

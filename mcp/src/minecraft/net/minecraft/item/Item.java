@@ -1243,6 +1243,14 @@ public class Item
         registerItem(2267, "record_wait", (new ItemRecord("wait", SoundEvents.RECORD_WAIT)).setUnlocalizedName("record"));
         // Begin Awaken Dreams code
         registerItem(6056, "bree_door", (new ItemDoor(Blocks.BREE_DOOR)).setUnlocalizedName("breeDoor"));
+        registerItem(6239, "elven_door", (new ItemDoor(Blocks.ELVEN_DOOR)).setUnlocalizedName("elvenDoor"));
+        registerItem(6240, "human_door", (new ItemDoor(Blocks.HUMAN_DOOR)).setUnlocalizedName("humanDoor"));
+        registerItem(6303, "castle_door", (new ItemDoor(Blocks.CASTLE_DOOR)).setUnlocalizedName("castleDoor"));
+        registerItem(6304, "dol_guldur_prison_door", (new ItemDoor(Blocks.DOL_GULDUR_PRISON_DOOR)).setUnlocalizedName("dolGuldurPrisonDoor"));
+        registerItem(6305, "hillmen_door", (new ItemDoor(Blocks.HILLMEN_DOOR)).setUnlocalizedName("hillmenDoor"));
+        registerItem(6306, "mordor_door", (new ItemDoor(Blocks.MORDOR_DOOR)).setUnlocalizedName("mordorDoor"));
+        registerItem(6307, "prison_door", (new ItemDoor(Blocks.PRISON_DOOR)).setUnlocalizedName("prisonDoor"));
+        registerItem(6308, "sindar_door", (new ItemDoor(Blocks.SINDAR_DOOR)).setUnlocalizedName("sindarDoor"));
         // End Awaken Dreams code
     }
 

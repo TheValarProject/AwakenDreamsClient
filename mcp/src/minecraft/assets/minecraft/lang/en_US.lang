@@ -1301,6 +1301,14 @@ item.dragon_breath.name=Dragon's Breath
 item.elytra.name=Elytra
 
 item.breeDoor.name=Bree Door
+item.elvenDoor.name=Elven Door
+item.humanDoor.name=Human Door
+item.castleDoor.name=Castle Door
+item.dolGuldurPrisonDoor.name=Dol Guldur Prison Door
+item.hillmenDoor.name=Hillmen Door
+item.mordorDoor.name=Mordor Door
+item.prisonDoor.name=Prison Door
+item.sindarDoor.name=Sindar Door
 
 container.inventory=Inventory
 container.hopper=Item Hopper

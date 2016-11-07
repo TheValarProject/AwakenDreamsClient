@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom",
+    "textures": {
+        "bottom": "blocks/mordor_door_lower",
+        "top": "blocks/mordor_door_upper"
+    }
+}

@@ -1270,6 +1270,14 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.STRUCTURE_BLOCK, TileEntityStructure.Mode.DATA.getModeId(), "structure_block");
         // Begin Awaken Dreams code
         this.registerItem(Items.BREE_DOOR, "bree_door");
+        this.registerItem(Items.ELVEN_DOOR, "elven_door");
+        this.registerItem(Items.HUMAN_DOOR, "human_door");
+        this.registerItem(Items.CASTLE_DOOR, "castle_door");
+        this.registerItem(Items.DOL_GULDUR_PRISON_DOOR, "dol_guldur_prison_door");
+        this.registerItem(Items.HILLMEN_DOOR, "hillmen_door");
+        this.registerItem(Items.MORDOR_DOOR, "mordor_door");
+        this.registerItem(Items.PRISON_DOOR, "prison_door");
+        this.registerItem(Items.SINDAR_DOOR, "sindar_door");
         // End Awaken Dreams code
     }
 

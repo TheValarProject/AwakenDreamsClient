@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom",
+    "textures": {
+        "bottom": "blocks/sindar_door_lower",
+        "top": "blocks/sindar_door_upper"
+    }
+}

@@ -441,6 +441,8 @@ public class Blocks
     public static final Block HARAD_LIGHT;
     public static final Block ELVEN_LAMP;
     public static final Block CARN_DUM_LAMP;
+    public static final BlockDoor ELVEN_DOOR;
+    public static final BlockDoor HUMAN_DOOR;
     public static final Block BREE_TILE;
     public static final Block HUMAN_TRAPDOOR;
     public static final Block MORDOR_TRAPDOOR;
@@ -449,6 +451,12 @@ public class Blocks
     public static final Block RIVERFOLK_TRAPDOOR;
     public static final Block FORNOST_TRAPDOOR;
     public static final Block PRISON_TRAPDOOR;
+    public static final BlockDoor CASTLE_DOOR;
+    public static final BlockDoor DOL_GULDUR_PRISON_DOOR;
+    public static final BlockDoor HILLMEN_DOOR;
+    public static final BlockDoor MORDOR_DOOR;
+    public static final BlockDoor PRISON_DOOR;
+    public static final BlockDoor SINDAR_DOOR;
     public static final Block PILE_OF_COINS;
     public static final Block GREY_COLUMN;
     public static final Block GREY_COLUMN_TOP;
@@ -884,6 +892,8 @@ public class Blocks
             HARAD_LIGHT = getRegisteredBlock("harad_light");
             ELVEN_LAMP = getRegisteredBlock("elven_lamp");
             CARN_DUM_LAMP = getRegisteredBlock("carn_dum_lamp");
+            ELVEN_DOOR = (BlockDoor)getRegisteredBlock("elven_door");
+            HUMAN_DOOR = (BlockDoor)getRegisteredBlock("human_door");
             BREE_TILE = getRegisteredBlock("bree_tile");
             HUMAN_TRAPDOOR = getRegisteredBlock("human_trapdoor");
             MORDOR_TRAPDOOR = getRegisteredBlock("mordor_trapdoor");
@@ -892,6 +902,12 @@ public class Blocks
             RIVERFOLK_TRAPDOOR = getRegisteredBlock("riverfolk_trapdoor");
             FORNOST_TRAPDOOR = getRegisteredBlock("fornost_trapdoor");
             PRISON_TRAPDOOR = getRegisteredBlock("prison_trapdoor");
+            CASTLE_DOOR = (BlockDoor)getRegisteredBlock("castle_door");
+            DOL_GULDUR_PRISON_DOOR = (BlockDoor)getRegisteredBlock("dol_guldur_prison_door");
+            HILLMEN_DOOR = (BlockDoor)getRegisteredBlock("hillmen_door");
+            MORDOR_DOOR = (BlockDoor)getRegisteredBlock("mordor_door");
+            PRISON_DOOR = (BlockDoor)getRegisteredBlock("prison_door");
+            SINDAR_DOOR = (BlockDoor)getRegisteredBlock("sindar_door");
             PILE_OF_COINS = getRegisteredBlock("pile_of_coins");
             GREY_COLUMN = getRegisteredBlock("grey_column");
             GREY_COLUMN_TOP = getRegisteredBlock("grey_column_top");
