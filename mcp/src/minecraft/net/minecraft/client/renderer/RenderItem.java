@@ -1271,6 +1271,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.STRUCTURE_BLOCK, TileEntityStructure.Mode.DATA.getModeId(), "structure_block");
         // Begin Awaken Dreams code
         this.registerItem(Items.BREE_DOOR, "bree_door");
+        this.registerItem(Items.DWARF_DOOR, "dwarf_door");
         this.registerItem(Items.ELVEN_DOOR, "elven_door");
         this.registerItem(Items.HUMAN_DOOR, "human_door");
         this.registerItem(Items.CASTLE_DOOR, "castle_door");

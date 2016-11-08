@@ -221,6 +221,7 @@ public class Items
     public static final Item BEETROOT_SOUP;
     // Begin Awaken Dreams code
     public static final Item BREE_DOOR;
+    public static final Item DWARF_DOOR;
     public static final Item ELVEN_DOOR;
     public static final Item HUMAN_DOOR;
     public static final Item CASTLE_DOOR;
@@ -515,6 +516,7 @@ public class Items
             itemRegistry.addObject(6054, "brown_hobbit_hat", (new ItemValarArmor(0, 1, 55, 0).setUnlocalizedName("brownHobbitHat").setTextureName("brown_hobbit_hat")));
             itemRegistry.addObject(6055, "orc_helmet", (new ItemValarArmor(0, 1, 200, 0).setUnlocalizedName("orcHelmet").setTextureName("orc_helmet")));*/
             BREE_DOOR = getRegisteredItem("bree_door");
+            DWARF_DOOR = getRegisteredItem("dwarf_door");
             //itemRegistry.addObject(6057, "rucksack", (new ItemValarBase().setUnlocalizedName("rucksack").setTextureName("rucksack")));
             /*itemRegistry.addObject(6058, "cram", (new ItemValarFood(2, 0.8F, false).setUnlocalizedName("cram").setTextureName("cram")));
             itemRegistry.addObject(6059, "cabbage", (new ItemValarFood(3, 0.6F, false).setUnlocalizedName("cabbage").setTextureName("cabbage")));

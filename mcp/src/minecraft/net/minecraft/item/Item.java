@@ -1244,6 +1244,7 @@ public class Item
         registerItem(2267, "record_wait", (new ItemRecord("wait", SoundEvents.RECORD_WAIT)).setUnlocalizedName("record"));
         // Begin Awaken Dreams code
         registerItem(6056, "bree_door", (new ItemDoor(Blocks.BREE_DOOR)).setUnlocalizedName("breeDoor"));
+        registerItem(6154, "dwarf_door", (new ItemDoor(Blocks.DWARF_DOOR)).setUnlocalizedName("dwarfDoor"));
         registerItem(6239, "elven_door", (new ItemDoor(Blocks.ELVEN_DOOR)).setUnlocalizedName("elvenDoor"));
         registerItem(6240, "human_door", (new ItemDoor(Blocks.HUMAN_DOOR)).setUnlocalizedName("humanDoor"));
         registerItem(6303, "castle_door", (new ItemDoor(Blocks.CASTLE_DOOR)).setUnlocalizedName("castleDoor"));

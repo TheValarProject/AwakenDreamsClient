@@ -1415,7 +1415,7 @@ public class Block
         registerBlock(564, "gondorian_roof", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("gondorianRoof").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(565, "rivendell_roof", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("rivendellRoof").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(566, "mossy_gondorian_brick_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("mossyGondorianBrickStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        //registerBlock(567, "dwarf_door", (new BlockValarDoor(Material.wood, "dwarf_door_item")).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("dwarfDoor").setBlockTextureName("dwarf_door"));
+        registerBlock(567, "dwarf_door", (new BlockDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("dwarfDoor").disableStats());
         //registerBlock(568, "window", (new BlockValarGlass()).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeGlass).setUnlocalizedName("window").setBlockTextureName("window"));
         registerBlock(569, "rohan_bricks", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("rohanBricks").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(570, "mordor_brick_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("mordorBrickStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));

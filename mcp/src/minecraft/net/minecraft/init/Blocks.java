@@ -307,6 +307,7 @@ public class Blocks
     public static final Block GONDORIAN_ROOF;
     public static final Block RIVENDELL_ROOF;
     public static final Block MOSSY_GONDORIAN_BRICK_STONE;
+    public static final BlockDoor DWARF_DOOR;
     public static final Block ROHAN_BRICKS;
     public static final Block MORDOR_BRICK_STONE;
     public static final Block MITHRIL_ORE;
@@ -760,6 +761,7 @@ public class Blocks
             GONDORIAN_ROOF = getRegisteredBlock("gondorian_roof");
             RIVENDELL_ROOF = getRegisteredBlock("rivendell_roof");
             MOSSY_GONDORIAN_BRICK_STONE = getRegisteredBlock("mossy_gondorian_brick_stone");
+            DWARF_DOOR = (BlockDoor)getRegisteredBlock("dwarf_door");
             ROHAN_BRICKS = getRegisteredBlock("rohan_bricks");
             MORDOR_BRICK_STONE = getRegisteredBlock("mordor_brick_stone");
             MITHRIL_ORE = getRegisteredBlock("mithril_ore");
