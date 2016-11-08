@@ -873,6 +873,7 @@ public class Item
         registerItemBlock(Blocks.MORDOR_STONE);
         registerItemBlock(Blocks.CLIFF_BLOCK);
         registerItemBlock(Blocks.SPIDER_EGG);
+        registerItemBlock(Blocks.LAMP);
         registerItemBlock(Blocks.GONDORIAN_STONE);
         registerItemBlock(Blocks.GONDORIAN_BRICK_STONE);
         registerItemBlock(Blocks.CRACKED_GONDORIAN_BRICK_STONE);

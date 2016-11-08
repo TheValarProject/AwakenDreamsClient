@@ -882,6 +882,7 @@ tile.brownStone.name=Brown Stone
 tile.mordorStone.name=Mordor Stone
 tile.cliffBlock.name=Cliff Block
 tile.spiderEgg.name=Spider Egg
+tile.lamp.name=Lamp
 tile.gondorianStone.name=Gondorian Stone
 tile.gondorianBrickStone.name=Gondorian Brick Stone
 tile.crackedGondorianBrickStone.name=Cracked Gondorian Brick Stone
