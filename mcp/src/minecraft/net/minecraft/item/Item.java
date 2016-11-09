@@ -907,6 +907,7 @@ public class Item
         registerItemBlock(Blocks.MEDIUM_DARK_DWARF_STONE);
         registerItemBlock(Blocks.LIGHT_BROWN_WOOD);
         registerItemBlock(Blocks.OLD_TREE);
+        registerItemBlock(Blocks.BREE_BOOKSHELF);
         registerItemBlock(Blocks.CROSS_HAY);
         registerItemBlock(Blocks.LIGHT_GREY_CIRCLE_STONE);
         registerItemBlock(Blocks.HOBBIT_LAMP_1);

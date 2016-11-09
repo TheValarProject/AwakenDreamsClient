@@ -1,6 +1,7 @@
 package net.minecraft.block;
 
 import com.elementfx.tvp.ad.block.Block3D;
+import com.elementfx.tvp.ad.block.Block3DDirectional;
 import com.elementfx.tvp.ad.block.BlockArchetLamp;
 import com.elementfx.tvp.ad.block.BlockLamp;
 import com.google.common.collect.Sets;
@@ -1439,11 +1440,11 @@ public class Block
         registerBlock(588, "dwarven_gold", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("dwarvenGold").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(589, "rohan_iron", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("rohanIron").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(590, "dark_dwarf_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("darkDwarfStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerBlock(591, "medium_dark_dwarf_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("mediumDarkDwarfStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        registerBlock(591, "medium_dark_dwarf_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("mediumDarkDwarfStone"));
         //registerBlock(592, "mud_block", (new BlockValarMud()).setUnlocalizedName("mudBlock").setBlockTextureName("mud_block"));
         registerBlock(594, "light_brown_wood", (new Block(Material.WOOD)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("lightBrownWood").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(595, "old_tree", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oldTree").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        //registerBlock(596, "bree_bookshelf", (new BlockValarBookshelf(Material.wood)).setHardness(1.5F).setSoundType(soundTypeWood).setUnlocalizedName("breeBookshelf").setBlockTextureName("bree_bookshelf"));
+        registerBlock(596, "bree_bookshelf", (new Block3DDirectional(Material.WOOD)).setHardness(1.5F).setSoundType(SoundType.WOOD).setUnlocalizedName("breeBookshelf").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(597, "cross_hay", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("crossHay").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(598, "light_grey_circle_stone", (new Block3D(Material.GLASS)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("lightGreyCircleStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(599, "hobbit_lamp_1", (new BlockLamp(Material.GLASS, Arrays.asList(new AxisAlignedBB(4.0 / 16, 0.0D, 4.0 / 16, 12.0 / 16, 1.0D, 12.0 / 16)))).setUnlocalizedName("hobbitLamp1"));

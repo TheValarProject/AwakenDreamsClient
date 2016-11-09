@@ -329,6 +329,7 @@ public class Blocks
     public static final Block DARK_DWARF_STONE;
     public static final Block MEDIUM_DARK_DWARF_STONE;
     public static final Block OLD_TREE;
+    public static final Block BREE_BOOKSHELF;
     public static final Block LIGHT_BROWN_WOOD;
     public static final Block CROSS_HAY;
     public static final Block LIGHT_GREY_CIRCLE_STONE;
@@ -784,6 +785,7 @@ public class Blocks
             MEDIUM_DARK_DWARF_STONE = getRegisteredBlock("medium_dark_dwarf_stone");
             LIGHT_BROWN_WOOD = getRegisteredBlock("light_brown_wood");
             OLD_TREE = getRegisteredBlock("old_tree");
+            BREE_BOOKSHELF = getRegisteredBlock("bree_bookshelf");
             CROSS_HAY = getRegisteredBlock("cross_hay");
             LIGHT_GREY_CIRCLE_STONE = getRegisteredBlock("light_grey_circle_stone");
             HOBBIT_LAMP_1 = getRegisteredBlock("hobbit_lamp_1");
