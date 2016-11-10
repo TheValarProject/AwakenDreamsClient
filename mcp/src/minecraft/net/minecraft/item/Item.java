@@ -923,6 +923,10 @@ public class Item
         registerItemBlock(Blocks.CRACKED_BREE_STONE_BRICKS);
         registerItemBlock(Blocks.MOSSY_BREE_STONE_BRICKS);
         registerItemBlock(Blocks.SHIRE_HAY);
+        registerItemBlock(Blocks.BREE_OAK_PLANKS);
+        registerItemBlock(Blocks.BREE_SPRUCE_PLANKS);
+        registerItemBlock(Blocks.BREE_BIRCH_PLANKS);
+        registerItemBlock(Blocks.BREE_JUNGLE_PLANKS);
         registerItemBlock(Blocks.SHIRE_PATH);
         registerItemBlock(Blocks.BREE_FLOOR);
         registerItemBlock(Blocks.ARNOR_FLOOR);

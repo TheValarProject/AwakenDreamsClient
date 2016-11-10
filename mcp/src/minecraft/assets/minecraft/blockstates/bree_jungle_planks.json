@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "bree_jungle_planks", "y": 90 },
+        "facing=west": { "model": "bree_jungle_planks", "y": 180 },
+        "facing=north": { "model": "bree_jungle_planks", "y": 270 },
+        "facing=east": { "model": "bree_jungle_planks", "y": 0 }
+    }
+}

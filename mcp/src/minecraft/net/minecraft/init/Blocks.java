@@ -346,6 +346,10 @@ public class Blocks
     public static final Block CRACKED_BREE_STONE_BRICKS;
     public static final Block MOSSY_BREE_STONE_BRICKS;
     public static final Block SHIRE_HAY;
+    public static final Block BREE_OAK_PLANKS;
+    public static final Block BREE_SPRUCE_PLANKS;
+    public static final Block BREE_BIRCH_PLANKS;
+    public static final Block BREE_JUNGLE_PLANKS;
     public static final Block SHIRE_PATH;
     public static final Block BREE_FLOOR;
     public static final Block ARNOR_FLOOR;
@@ -801,6 +805,10 @@ public class Blocks
             CRACKED_BREE_STONE_BRICKS = getRegisteredBlock("cracked_bree_stone_bricks");
             MOSSY_BREE_STONE_BRICKS = getRegisteredBlock("mossy_bree_stone_bricks");
             SHIRE_HAY = getRegisteredBlock("shire_hay");
+            BREE_OAK_PLANKS = getRegisteredBlock("bree_oak_planks");
+            BREE_SPRUCE_PLANKS = getRegisteredBlock("bree_spruce_planks");
+            BREE_BIRCH_PLANKS = getRegisteredBlock("bree_birch_planks");
+            BREE_JUNGLE_PLANKS = getRegisteredBlock("bree_jungle_planks");
             SHIRE_PATH = getRegisteredBlock("shire_path");
             BREE_FLOOR = getRegisteredBlock("bree_floor");
             ARNOR_FLOOR = getRegisteredBlock("arnor_floor");

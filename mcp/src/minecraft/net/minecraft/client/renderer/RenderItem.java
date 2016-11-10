@@ -883,6 +883,10 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.CRACKED_BREE_STONE_BRICKS, "cracked_bree_stone_bricks");
         this.registerBlock(Blocks.MOSSY_BREE_STONE_BRICKS, "mossy_bree_stone_bricks");
         this.registerBlock(Blocks.SHIRE_HAY, "shire_hay");
+        this.registerBlock(Blocks.BREE_OAK_PLANKS, "bree_oak_planks");
+        this.registerBlock(Blocks.BREE_SPRUCE_PLANKS, "bree_spruce_planks");
+        this.registerBlock(Blocks.BREE_BIRCH_PLANKS, "bree_birch_planks");
+        this.registerBlock(Blocks.BREE_JUNGLE_PLANKS, "bree_jungle_planks");
         this.registerBlock(Blocks.SHIRE_PATH, "shire_path");
         this.registerBlock(Blocks.BREE_FLOOR, "bree_floor");
         this.registerBlock(Blocks.ARNOR_FLOOR, "arnor_floor");
