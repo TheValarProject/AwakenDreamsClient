@@ -1357,7 +1357,7 @@ public class Block
         registerBlock(500, "jade_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreJade").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(501, "amber_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreAmber").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(502, "tanzanite_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreTanzanite").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerBlock(503, "permanent_dirt", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("permanentDirt").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        registerBlock(503, "permanent_dirt", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("permanentDirt")); // Deprecated in favor of coarse dirt
         //registerBlock(504, "luindol", (new BlockValarFlower()).setPlantBounds(12, 19).setUnlocalizedName("luindol").setBlockTextureName("luindol"));
         //registerBlock(505, "hopper_mushroom", (new BlockValarCustomRender(Material.plants, 1)).setCreativeTab(CreativeTabs.tabDecorations).setHardness(0.0F).setSoundType(soundTypeGrass).setUnlocalizedName("hopperMushroom").setBlockTextureName("hopper_mushroom"));
         registerBlock(506, "amethyst_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreAmethyst").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
