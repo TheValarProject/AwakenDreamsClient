@@ -1,5 +1,6 @@
 package net.minecraft.init;
 
+import com.elementfx.tvp.ad.block.BlockCustomDoor;
 import com.google.common.collect.Sets;
 import java.util.Set;
 import javax.annotation.Nullable;
@@ -283,7 +284,7 @@ public class Blocks
     public static final Block GONDORIAN_FLOOR;
     public static final Block STONE_FLOOR;
     public static final Block MORIA_TRAPDOOR;
-    public static final BlockDoor BREE_DOOR;
+    public static final BlockCustomDoor BREE_DOOR;
     public static final Block PALM_LOG;
     public static final Block SILK_STONE;
     public static final Block CRACKED_SILK_STONE;
@@ -307,7 +308,7 @@ public class Blocks
     public static final Block GONDORIAN_ROOF;
     public static final Block RIVENDELL_ROOF;
     public static final Block MOSSY_GONDORIAN_BRICK_STONE;
-    public static final BlockDoor DWARF_DOOR;
+    public static final BlockCustomDoor DWARF_DOOR;
     public static final Block ROHAN_BRICKS;
     public static final Block MORDOR_BRICK_STONE;
     public static final Block MITHRIL_ORE;
@@ -448,8 +449,8 @@ public class Blocks
     public static final Block HARAD_LIGHT;
     public static final Block ELVEN_LAMP;
     public static final Block CARN_DUM_LAMP;
-    public static final BlockDoor ELVEN_DOOR;
-    public static final BlockDoor HUMAN_DOOR;
+    public static final BlockCustomDoor ELVEN_DOOR;
+    public static final BlockCustomDoor HUMAN_DOOR;
     public static final Block BREE_TILE;
     public static final Block HUMAN_TRAPDOOR;
     public static final Block MORDOR_TRAPDOOR;
@@ -459,12 +460,12 @@ public class Blocks
     public static final Block FORNOST_TRAPDOOR;
     public static final Block PRISON_TRAPDOOR;
     public static final Block CANDLE;
-    public static final BlockDoor CASTLE_DOOR;
-    public static final BlockDoor DOL_GULDUR_PRISON_DOOR;
-    public static final BlockDoor HILLMEN_DOOR;
-    public static final BlockDoor MORDOR_DOOR;
-    public static final BlockDoor PRISON_DOOR;
-    public static final BlockDoor SINDAR_DOOR;
+    public static final BlockCustomDoor CASTLE_DOOR;
+    public static final BlockCustomDoor DOL_GULDUR_PRISON_DOOR;
+    public static final BlockCustomDoor HILLMEN_DOOR;
+    public static final BlockCustomDoor MORDOR_DOOR;
+    public static final BlockCustomDoor PRISON_DOOR;
+    public static final BlockCustomDoor SINDAR_DOOR;
     public static final Block PILE_OF_COINS;
     public static final Block GREY_COLUMN;
     public static final Block GREY_COLUMN_TOP;
@@ -743,7 +744,7 @@ public class Blocks
             GONDORIAN_FLOOR = getRegisteredBlock("gondorian_floor");
             STONE_FLOOR = getRegisteredBlock("stone_floor");
             MORIA_TRAPDOOR = getRegisteredBlock("moria_trapdoor");
-            BREE_DOOR = (BlockDoor)getRegisteredBlock("bree_door");
+            BREE_DOOR = (BlockCustomDoor)getRegisteredBlock("bree_door");
             PALM_LOG = getRegisteredBlock("palm_log");
             SILK_STONE = getRegisteredBlock("silk_stone");
             CRACKED_SILK_STONE = getRegisteredBlock("cracked_silk_stone");
@@ -767,7 +768,7 @@ public class Blocks
             GONDORIAN_ROOF = getRegisteredBlock("gondorian_roof");
             RIVENDELL_ROOF = getRegisteredBlock("rivendell_roof");
             MOSSY_GONDORIAN_BRICK_STONE = getRegisteredBlock("mossy_gondorian_brick_stone");
-            DWARF_DOOR = (BlockDoor)getRegisteredBlock("dwarf_door");
+            DWARF_DOOR = (BlockCustomDoor)getRegisteredBlock("dwarf_door");
             ROHAN_BRICKS = getRegisteredBlock("rohan_bricks");
             MORDOR_BRICK_STONE = getRegisteredBlock("mordor_brick_stone");
             MITHRIL_ORE = getRegisteredBlock("mithril_ore");
@@ -907,8 +908,8 @@ public class Blocks
             HARAD_LIGHT = getRegisteredBlock("harad_light");
             ELVEN_LAMP = getRegisteredBlock("elven_lamp");
             CARN_DUM_LAMP = getRegisteredBlock("carn_dum_lamp");
-            ELVEN_DOOR = (BlockDoor)getRegisteredBlock("elven_door");
-            HUMAN_DOOR = (BlockDoor)getRegisteredBlock("human_door");
+            ELVEN_DOOR = (BlockCustomDoor)getRegisteredBlock("elven_door");
+            HUMAN_DOOR = (BlockCustomDoor)getRegisteredBlock("human_door");
             BREE_TILE = getRegisteredBlock("bree_tile");
             HUMAN_TRAPDOOR = getRegisteredBlock("human_trapdoor");
             MORDOR_TRAPDOOR = getRegisteredBlock("mordor_trapdoor");
@@ -918,12 +919,12 @@ public class Blocks
             FORNOST_TRAPDOOR = getRegisteredBlock("fornost_trapdoor");
             PRISON_TRAPDOOR = getRegisteredBlock("prison_trapdoor");
             CANDLE = getRegisteredBlock("candle");
-            CASTLE_DOOR = (BlockDoor)getRegisteredBlock("castle_door");
-            DOL_GULDUR_PRISON_DOOR = (BlockDoor)getRegisteredBlock("dol_guldur_prison_door");
-            HILLMEN_DOOR = (BlockDoor)getRegisteredBlock("hillmen_door");
-            MORDOR_DOOR = (BlockDoor)getRegisteredBlock("mordor_door");
-            PRISON_DOOR = (BlockDoor)getRegisteredBlock("prison_door");
-            SINDAR_DOOR = (BlockDoor)getRegisteredBlock("sindar_door");
+            CASTLE_DOOR = (BlockCustomDoor)getRegisteredBlock("castle_door");
+            DOL_GULDUR_PRISON_DOOR = (BlockCustomDoor)getRegisteredBlock("dol_guldur_prison_door");
+            HILLMEN_DOOR = (BlockCustomDoor)getRegisteredBlock("hillmen_door");
+            MORDOR_DOOR = (BlockCustomDoor)getRegisteredBlock("mordor_door");
+            PRISON_DOOR = (BlockCustomDoor)getRegisteredBlock("prison_door");
+            SINDAR_DOOR = (BlockCustomDoor)getRegisteredBlock("sindar_door");
             PILE_OF_COINS = getRegisteredBlock("pile_of_coins");
             GREY_COLUMN = getRegisteredBlock("grey_column");
             GREY_COLUMN_TOP = getRegisteredBlock("grey_column_top");

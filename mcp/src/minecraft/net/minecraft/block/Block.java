@@ -4,6 +4,7 @@ import com.elementfx.tvp.ad.block.Block3D;
 import com.elementfx.tvp.ad.block.Block3DDirectional;
 import com.elementfx.tvp.ad.block.BlockArchetLamp;
 import com.elementfx.tvp.ad.block.BlockCandle;
+import com.elementfx.tvp.ad.block.BlockCustomDoor;
 import com.elementfx.tvp.ad.block.BlockLamp;
 import com.google.common.collect.Sets;
 
@@ -26,6 +27,7 @@ import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.item.EntityXPOrb;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Enchantments;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
@@ -1378,7 +1380,7 @@ public class Block
         registerBlock(524, "gondorian_floor", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("gondorianFloor").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(525, "stone_floor", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("stoneFloor").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(526, "moria_trapdoor", (new BlockTrapDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("moriaTrapdoor").disableStats());
-        registerBlock(527, "bree_door", (new BlockDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("breeDoor").disableStats());
+        registerBlock(527, "bree_door", (new BlockCustomDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("breeDoor").disableStats());
         //registerBlock(529, "stone_inscription_post", (new BlockValarStoneInscription(TileEntityValarStoneInscription.class, true)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("stoneInscriptionPost").setBlockTextureName("stone_inscription_post"));
         //registerBlock(530, "stone_inscription_wall", (new BlockValarStoneInscription(TileEntityValarStoneInscription.class, false)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("stoneInscriptionWall").setBlockTextureName("stone_inscription_wall"));
         //registerBlock(531, "palm_leaves", (new BlockValarLeaves()).setSaplingBlock("palm_sapling").setUnlocalizedName("palmLeaves").setBlockTextureName("palm_leaves"));
@@ -1417,7 +1419,7 @@ public class Block
         registerBlock(564, "gondorian_roof", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("gondorianRoof").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(565, "rivendell_roof", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("rivendellRoof").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(566, "mossy_gondorian_brick_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("mossyGondorianBrickStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerBlock(567, "dwarf_door", (new BlockDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("dwarfDoor").disableStats());
+        registerBlock(567, "dwarf_door", (new BlockCustomDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("dwarfDoor").disableStats());
         //registerBlock(568, "window", (new BlockValarGlass()).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeGlass).setUnlocalizedName("window").setBlockTextureName("window"));
         registerBlock(569, "rohan_bricks", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("rohanBricks").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(570, "mordor_brick_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("mordorBrickStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
@@ -1574,8 +1576,8 @@ public class Block
         registerBlock(725, "harad_light", (new Block(Material.ROCK)).setLightLevel(1.0F).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("haradLight").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(726, "elven_lamp", (new Block(Material.ROCK)).setLightLevel(1.0F).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("elvenLamp").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(727, "carn_dum_lamp", (new Block(Material.ROCK)).setLightLevel(1.0F).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("carnDumLamp").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerBlock(728, "elven_door", (new BlockDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("elvenDoor").disableStats());
-        registerBlock(729, "human_door", (new BlockDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("humanDoor").disableStats());
+        registerBlock(728, "elven_door", (new BlockCustomDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("elvenDoor").disableStats());
+        registerBlock(729, "human_door", (new BlockCustomDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("humanDoor").disableStats());
         //registerBlock(730, "green_bed", (new BlockValarBed("green_bed_item")).setHardness(0.2F).setSoundType(soundTypeCloth).setUnlocalizedName("greenBed").setBlockTextureName("green_bed"));
         registerBlock(731, "bree_tile", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("breeTile").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(736, "human_trapdoor", (new BlockTrapDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("humanTrapdoor").disableStats());
@@ -1591,12 +1593,12 @@ public class Block
         //registerBlock(745, "rohirrim_ladder", (new BlockValarLadder()).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeLadder).setUnlocalizedName("rohirrimLadder").setBlockTextureName("rohirrim_ladder"));
         //registerBlock(746, "dunland_ladder", (new BlockValarLadder()).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeLadder).setUnlocalizedName("dunlandLadder").setBlockTextureName("dunland_ladder"));
         //registerBlock(747, "sindar_chest", (new BlockValarChest(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("sindarChest").setBlockTextureName("sindar_chest"));
-        registerBlock(748, "castle_door", (new BlockDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("castleDoor").disableStats());
-        registerBlock(749, "dol_guldur_prison_door", (new BlockDoor(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("dolGuldurPrisonDoor").disableStats());
-        registerBlock(750, "hillmen_door", (new BlockDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("hillmenDoor").disableStats());
-        registerBlock(751, "mordor_door", (new BlockDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("mordorDoor").disableStats());
-        registerBlock(752, "prison_door", (new BlockDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("prisonDoor").disableStats());
-        registerBlock(753, "sindar_door", (new BlockDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("sindarDoor").disableStats());
+        registerBlock(748, "castle_door", (new BlockCustomDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("castleDoor").disableStats());
+        registerBlock(749, "dol_guldur_prison_door", (new BlockCustomDoor(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("dolGuldurPrisonDoor").disableStats());
+        registerBlock(750, "hillmen_door", (new BlockCustomDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("hillmenDoor").disableStats());
+        registerBlock(751, "mordor_door", (new BlockCustomDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("mordorDoor").disableStats());
+        registerBlock(752, "prison_door", (new BlockCustomDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("prisonDoor").disableStats());
+        registerBlock(753, "sindar_door", (new BlockCustomDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("sindarDoor").disableStats());
         //registerBlock(754, "yellow_leaves", (new BlockValarLeaves().setSaplingBlock("mallorn_sapling").setUnlocalizedName("yellowLeaves").setBlockTextureName("yellow_leaves"))); // TODO Change Mallorn leaf color based on time of year
         //registerBlock(755, "mallorn_sapling", (new BlockValarSapling()).setPlantBounds(232, 251, 256).setUnlocalizedName("mallornSapling").setBlockTextureName("mallorn_sapling"));
         //registerBlock(756, "brown_leaves", (new BlockValarLeaves().setUnlocalizedName("brownLeaves").setBlockTextureName("brown_leaves")));
