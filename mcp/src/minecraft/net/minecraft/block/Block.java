@@ -3,6 +3,7 @@ package net.minecraft.block;
 import com.elementfx.tvp.ad.block.Block3D;
 import com.elementfx.tvp.ad.block.Block3DDirectional;
 import com.elementfx.tvp.ad.block.BlockArchetLamp;
+import com.elementfx.tvp.ad.block.BlockCandle;
 import com.elementfx.tvp.ad.block.BlockLamp;
 import com.google.common.collect.Sets;
 
@@ -1585,7 +1586,7 @@ public class Block
         registerBlock(741, "fornost_trapdoor", (new BlockTrapDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("fornostTrapdoor").disableStats());
         registerBlock(742, "prison_trapdoor", (new BlockTrapDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("prisonTrapdoor").disableStats());
         //float[][] candleBumpMap = {{ 13, 0, 13, 19, 2, 19 }, { 11, 2, 13, 21, 3, 19 }, { 12, 2, 12, 20, 3, 13 }, { 12, 2, 19, 20, 3, 20 }, { 13, 2, 11, 19, 3, 12 }, { 13, 2, 20, 19, 3, 21 }, { 10, 3, 12, 22, 4, 20 }, { 11, 3, 11, 21, 4, 12 }, { 11, 3, 20, 21, 4, 21 }, { 12, 3, 10, 20, 4, 11 }, { 12, 3, 21, 20, 4, 22 }, { 9, 4, 11, 23, 5, 21 }, { 10, 4, 10, 22, 5, 11 }, { 10, 4, 21, 22, 5, 22 }, { 11, 4, 9, 21, 5, 10 }, { 11, 4, 22, 21, 5, 23 }, { 8, 5, 10, 24, 6, 22 }, { 9, 5, 9, 23, 6, 10 }, { 9, 5, 22, 23, 6, 23 }, { 10, 5, 8, 22, 6, 9 }, { 10, 5, 23, 22, 6, 24 }, { 13, 6, 15, 19, 24, 17 }, { 14, 6, 14, 18, 24, 15 }, { 14, 6, 17, 18, 24, 18 }, { 15, 6, 13, 17, 24, 14 }, { 15, 6, 18, 17, 24, 19 }, { 15, 24, 15, 17, 28, 17 }};
-        //registerBlock(743, "candle", (new BlockValarCandle(Material.ROCK)).setBumpMapping(candleBumpMap).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setLightLevel(0.5F).setUnlocalizedName("candle").setBlockTextureName("candle"));
+        registerBlock(743, "candle", (new BlockCandle()).setUnlocalizedName("candle"));
         //registerBlock(744, "human_ladder", (new BlockValarLadder()).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeLadder).setUnlocalizedName("humanLadder").setBlockTextureName("human_ladder"));
         //registerBlock(745, "rohirrim_ladder", (new BlockValarLadder()).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeLadder).setUnlocalizedName("rohirrimLadder").setBlockTextureName("rohirrim_ladder"));
         //registerBlock(746, "dunland_ladder", (new BlockValarLadder()).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeLadder).setUnlocalizedName("dunlandLadder").setBlockTextureName("dunland_ladder"));

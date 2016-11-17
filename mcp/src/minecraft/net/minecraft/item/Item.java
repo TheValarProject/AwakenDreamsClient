@@ -1033,6 +1033,7 @@ public class Item
         registerItemBlock(Blocks.RIVERFOLK_TRAPDOOR);
         registerItemBlock(Blocks.FORNOST_TRAPDOOR);
         registerItemBlock(Blocks.PRISON_TRAPDOOR);
+        registerItemBlock(Blocks.CANDLE);
         registerItemBlock(Blocks.PILE_OF_COINS);
         registerItemBlock(Blocks.GREY_COLUMN);
         registerItemBlock(Blocks.GREY_COLUMN_TOP);

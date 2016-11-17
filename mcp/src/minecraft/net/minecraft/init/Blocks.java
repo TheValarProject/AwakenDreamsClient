@@ -458,6 +458,7 @@ public class Blocks
     public static final Block RIVERFOLK_TRAPDOOR;
     public static final Block FORNOST_TRAPDOOR;
     public static final Block PRISON_TRAPDOOR;
+    public static final Block CANDLE;
     public static final BlockDoor CASTLE_DOOR;
     public static final BlockDoor DOL_GULDUR_PRISON_DOOR;
     public static final BlockDoor HILLMEN_DOOR;
@@ -916,6 +917,7 @@ public class Blocks
             RIVERFOLK_TRAPDOOR = getRegisteredBlock("riverfolk_trapdoor");
             FORNOST_TRAPDOOR = getRegisteredBlock("fornost_trapdoor");
             PRISON_TRAPDOOR = getRegisteredBlock("prison_trapdoor");
+            CANDLE = getRegisteredBlock("candle");
             CASTLE_DOOR = (BlockDoor)getRegisteredBlock("castle_door");
             DOL_GULDUR_PRISON_DOOR = (BlockDoor)getRegisteredBlock("dol_guldur_prison_door");
             HILLMEN_DOOR = (BlockDoor)getRegisteredBlock("hillmen_door");
