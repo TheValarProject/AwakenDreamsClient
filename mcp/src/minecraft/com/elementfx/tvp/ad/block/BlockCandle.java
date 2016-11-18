@@ -30,7 +30,7 @@ public class BlockCandle extends Block3D
 {
     public BlockCandle()
     {
-        super(Material.ROCK, Arrays.asList(new AxisAlignedBB(4.5 / 16, 0.0D, 4.5 / 16, 11.5 / 16, 1.0D, 11.5 / 16)));
+        super(Material.ROCK, Arrays.asList(new AxisAlignedBB(4.0 / 16, 0.0D, 4.0 / 16, 12.0 / 16, 1.0D, 12.0 / 16)));
         this.setTickRandomly(true);
         this.setCreativeTab(CreativeTabs.DECORATIONS);
         this.setLightLevel(0.5F);
