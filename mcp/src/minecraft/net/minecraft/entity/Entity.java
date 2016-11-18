@@ -13,6 +13,7 @@ import javax.annotation.Nullable;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFence;
 import net.minecraft.block.BlockFenceGate;
+import net.minecraft.block.BlockLadder;
 import net.minecraft.block.BlockLiquid;
 import net.minecraft.block.BlockWall;
 import net.minecraft.block.SoundType;
@@ -976,8 +977,10 @@ public abstract class Entity implements ICommandSender
                 double d13 = this.posY - d1;
                 double d14 = this.posZ - d2;
 
-                if (block != Blocks.LADDER)
+                // Begin Awaken Dreams code
+                if (!(block instanceof BlockLadder))
                 {
+                	// End Awaken Dreams code
                     d13 = 0.0D;
                 }
 

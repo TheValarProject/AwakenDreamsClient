@@ -4,6 +4,7 @@ import com.google.common.collect.Lists;
 import java.util.List;
 import javax.annotation.Nullable;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockLadder;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -39,8 +40,10 @@ public class CombatTracker
         {
             Block block = this.fighter.worldObj.getBlockState(new BlockPos(this.fighter.posX, this.fighter.getEntityBoundingBox().minY, this.fighter.posZ)).getBlock();
 
-            if (block == Blocks.LADDER)
+            // Begin Awaken Dreams code
+            if (block instanceof BlockLadder)
             {
+            	// End Awaken Dreams code
                 this.fallSuffix = "ladder";
             }
             else if (block == Blocks.VINE)

@@ -1034,6 +1034,9 @@ public class Item
         registerItemBlock(Blocks.FORNOST_TRAPDOOR);
         registerItemBlock(Blocks.PRISON_TRAPDOOR);
         registerItemBlock(Blocks.CANDLE);
+        registerItemBlock(Blocks.HUMAN_LADDER);
+        registerItemBlock(Blocks.ROHIRRIM_LADDER);
+        registerItemBlock(Blocks.DUNLAND_LADDER);
         registerItemBlock(Blocks.PILE_OF_COINS);
         registerItemBlock(Blocks.GREY_COLUMN);
         registerItemBlock(Blocks.GREY_COLUMN_TOP);

@@ -995,6 +995,9 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.FORNOST_TRAPDOOR, "fornost_trapdoor");
         this.registerBlock(Blocks.PRISON_TRAPDOOR, "prison_trapdoor");
         this.registerBlock(Blocks.CANDLE, "candle");
+        this.registerBlock(Blocks.HUMAN_LADDER, "human_ladder");
+        this.registerBlock(Blocks.ROHIRRIM_LADDER, "rohirrim_ladder");
+        this.registerBlock(Blocks.DUNLAND_LADDER, "dunland_ladder");
         this.registerBlock(Blocks.PILE_OF_COINS, "pile_of_coins");
         this.registerBlock(Blocks.GREY_COLUMN, "grey_column");
         this.registerBlock(Blocks.GREY_COLUMN_TOP, "grey_column_top");

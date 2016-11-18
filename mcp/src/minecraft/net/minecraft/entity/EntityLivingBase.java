@@ -1324,7 +1324,9 @@ public abstract class EntityLivingBase extends Entity
             BlockPos blockpos = new BlockPos(i, j, k);
             IBlockState iblockstate = this.worldObj.getBlockState(blockpos);
             Block block = iblockstate.getBlock();
-            return block != Blocks.LADDER && block != Blocks.VINE ? block instanceof BlockTrapDoor && this.canGoThroughtTrapDoorOnLadder(blockpos, iblockstate) : true;
+            // Begin Awaken Dreams code
+            return !(block instanceof BlockLadder) && block != Blocks.VINE ? block instanceof BlockTrapDoor && this.canGoThroughtTrapDoorOnLadder(blockpos, iblockstate) : true;
+            // End Awaken Dreams code
         }
     }
 
@@ -1334,8 +1336,10 @@ public abstract class EntityLivingBase extends Entity
         {
             IBlockState iblockstate = this.worldObj.getBlockState(pos.down());
 
-            if (iblockstate.getBlock() == Blocks.LADDER && iblockstate.getValue(BlockLadder.FACING) == state.getValue(BlockTrapDoor.FACING))
+            // Begin Awaken Dreams code
+            if (iblockstate.getBlock() instanceof BlockLadder && iblockstate.getValue(BlockLadder.FACING) == state.getValue(BlockTrapDoor.FACING))
             {
+            	// End Awaken Dreams code
                 return true;
             }
         }
