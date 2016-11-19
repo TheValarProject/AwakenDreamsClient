@@ -266,6 +266,7 @@ public class Blocks
     public static final Block AMBER_ORE;
     public static final Block TANZANITE_ORE;
     public static final Block PERMANENT_DIRT;
+    public static final Block LUINDOL;
     public static final Block AMETHYST_ORE;
     public static final Block RUBY_ORE;
     public static final Block ONYX_ORE;
@@ -729,6 +730,7 @@ public class Blocks
             AMBER_ORE = getRegisteredBlock("amber_ore");
             TANZANITE_ORE = getRegisteredBlock("tanzanite_ore");
             PERMANENT_DIRT = getRegisteredBlock("permanent_dirt");
+            LUINDOL = getRegisteredBlock("luindol");
             AMETHYST_ORE = getRegisteredBlock("amethyst_ore");
             RUBY_ORE = getRegisteredBlock("ruby_ore");
             ONYX_ORE = getRegisteredBlock("onyx_ore");

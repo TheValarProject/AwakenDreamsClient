@@ -5,6 +5,7 @@ import com.elementfx.tvp.ad.block.Block3DDirectional;
 import com.elementfx.tvp.ad.block.BlockArchetLamp;
 import com.elementfx.tvp.ad.block.BlockCandle;
 import com.elementfx.tvp.ad.block.BlockCustomDoor;
+import com.elementfx.tvp.ad.block.BlockCustomFlower;
 import com.elementfx.tvp.ad.block.BlockLamp;
 import com.google.common.collect.Sets;
 
@@ -1358,7 +1359,7 @@ public class Block
         registerBlock(501, "amber_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreAmber").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(502, "tanzanite_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreTanzanite").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(503, "permanent_dirt", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("permanentDirt")); // Deprecated in favor of coarse dirt
-        //registerBlock(504, "luindol", (new BlockValarFlower()).setPlantBounds(12, 19).setUnlocalizedName("luindol").setBlockTextureName("luindol"));
+        registerBlock(504, "luindol", (new BlockCustomFlower(new AxisAlignedBB(5.0 / 16, 0.0D, 5.0 / 16, 11.0 / 16, 9.5 / 16, 11.0 / 16))).setUnlocalizedName("luindol"));
         //registerBlock(505, "hopper_mushroom", (new BlockValarCustomRender(Material.plants, 1)).setCreativeTab(CreativeTabs.tabDecorations).setHardness(0.0F).setSoundType(soundTypeGrass).setUnlocalizedName("hopperMushroom").setBlockTextureName("hopper_mushroom"));
         registerBlock(506, "amethyst_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreAmethyst").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(507, "ruby_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreRuby").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));

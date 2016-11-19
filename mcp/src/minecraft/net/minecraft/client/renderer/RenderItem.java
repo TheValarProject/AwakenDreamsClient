@@ -804,6 +804,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.AMBER_ORE, "amber_ore");
         this.registerBlock(Blocks.TANZANITE_ORE, "tanzanite_ore");
         this.registerBlock(Blocks.PERMANENT_DIRT, "permanent_dirt");
+        this.registerBlock(Blocks.LUINDOL, "luindol");
         this.registerBlock(Blocks.AMETHYST_ORE, "amethyst_ore");
         this.registerBlock(Blocks.RUBY_ORE, "ruby_ore");
         this.registerBlock(Blocks.ONYX_ORE, "onyx_ore");

@@ -844,6 +844,7 @@ public class Item
         registerItemBlock(Blocks.AMBER_ORE);
         registerItemBlock(Blocks.TANZANITE_ORE);
         registerItemBlock(Blocks.PERMANENT_DIRT);
+        registerItemBlock(Blocks.LUINDOL);
         registerItemBlock(Blocks.AMETHYST_ORE);
         registerItemBlock(Blocks.RUBY_ORE);
         registerItemBlock(Blocks.ONYX_ORE);
