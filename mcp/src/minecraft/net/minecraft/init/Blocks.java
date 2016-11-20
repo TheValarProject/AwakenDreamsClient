@@ -326,6 +326,7 @@ public class Blocks
     public static final Block DWARF_FLOOR;
     public static final Block DWARVEN_HALL_FLOOR;
     public static final Block DWARF_STONE;
+    public static final Block DWARVEN_TORCH;
     public static final Block DWARVEN_GOLD;
     public static final Block ROHAN_IRON;
     public static final Block DARK_DWARF_STONE;
@@ -790,6 +791,7 @@ public class Blocks
             DWARF_FLOOR = getRegisteredBlock("dwarf_floor");
             DWARVEN_HALL_FLOOR = getRegisteredBlock("dwarven_hall_floor");
             DWARF_STONE = getRegisteredBlock("dwarf_stone");
+            DWARVEN_TORCH = getRegisteredBlock("dwarven_torch");
             DWARVEN_GOLD = getRegisteredBlock("dwarven_gold");
             ROHAN_IRON = getRegisteredBlock("rohan_iron");
             DARK_DWARF_STONE = getRegisteredBlock("dark_dwarf_stone");

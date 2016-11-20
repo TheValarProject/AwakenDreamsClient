@@ -862,6 +862,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.DWARF_FLOOR, "dwarf_floor");
         this.registerBlock(Blocks.DWARVEN_HALL_FLOOR, "dwarven_hall_floor");
         this.registerBlock(Blocks.DWARF_STONE, "dwarf_stone");
+        this.registerBlock(Blocks.DWARVEN_TORCH, "dwarven_torch");
         this.registerBlock(Blocks.DWARVEN_GOLD, "dwarven_gold");
         this.registerBlock(Blocks.ROHAN_IRON, "rohan_iron");
         this.registerBlock(Blocks.DARK_DWARF_STONE, "dark_dwarf_stone");

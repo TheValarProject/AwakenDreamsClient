@@ -911,6 +911,7 @@ tile.brownLapis.name=Brown Lapis
 tile.dwarfFloor.name=Dwarf Floor
 tile.dwarvenHallFloor.name=Dwarven Hall Floor
 tile.dwarfStone.name=Dwarf Stone
+tile.dwarvenTorch.name=Dwarven Torch
 tile.dwarvenGold.name=Dwarven Gold
 tile.rohanIron.name=Rohan Iron
 tile.darkDwarfStone.name=Dark Dwarf Stone

@@ -902,6 +902,7 @@ public class Item
         registerItemBlock(Blocks.DWARF_FLOOR);
         registerItemBlock(Blocks.DWARVEN_HALL_FLOOR);
         registerItemBlock(Blocks.DWARF_STONE);
+        registerItemBlock(Blocks.DWARVEN_TORCH);
         registerItemBlock(Blocks.DWARVEN_GOLD);
         registerItemBlock(Blocks.ROHAN_IRON);
         registerItemBlock(Blocks.DARK_DWARF_STONE);

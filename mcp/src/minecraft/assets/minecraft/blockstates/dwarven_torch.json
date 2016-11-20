@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "facing=up": { "model": "dwarven_torch" },
+        "facing=east": { "model": "dwarven_torch_wall" },
+        "facing=south": { "model": "dwarven_torch_wall", "y": 90 },
+        "facing=west": { "model": "dwarven_torch_wall", "y": 180 },
+        "facing=north": { "model": "dwarven_torch_wall", "y": 270 }
+    }
+}

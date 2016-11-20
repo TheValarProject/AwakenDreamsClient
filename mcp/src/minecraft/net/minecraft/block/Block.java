@@ -6,6 +6,7 @@ import com.elementfx.tvp.ad.block.BlockArchetLamp;
 import com.elementfx.tvp.ad.block.BlockCandle;
 import com.elementfx.tvp.ad.block.BlockCustomDoor;
 import com.elementfx.tvp.ad.block.BlockCustomFlower;
+import com.elementfx.tvp.ad.block.BlockDwarvenTorch;
 import com.elementfx.tvp.ad.block.BlockLamp;
 import com.google.common.collect.Sets;
 
@@ -1440,7 +1441,7 @@ public class Block
         registerBlock(584, "dwarf_floor", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("dwarfFloor").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(585, "dwarven_hall_floor", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("dwarvenHallFloor").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(586, "dwarf_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("dwarfStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        //registerBlock(587, "dwarven_torch", (new BlockValarTorch()).setLightLevel(0.9375F).setUnlocalizedName("dwarvenTorch").setBlockTextureName("dwarven_torch"));
+        registerBlock(587, "dwarven_torch", (new BlockDwarvenTorch()).setLightLevel(1.0F).setUnlocalizedName("dwarvenTorch").setCreativeTab(CreativeTabs.DECORATIONS));
         registerBlock(588, "dwarven_gold", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("dwarvenGold").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(589, "rohan_iron", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("rohanIron").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(590, "dark_dwarf_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("darkDwarfStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
