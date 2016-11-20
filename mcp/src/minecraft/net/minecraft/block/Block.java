@@ -1415,6 +1415,7 @@ public class Block
         //registerBlock(558, "simbelmyne", (new BlockValarFlower()).setPlantBounds(16, 6, 16).setRenderType(105).setUnlocalizedName("simbelmyne").setBlockTextureName("simbelmyne"));
         //registerBlock(559, "bree_glass", (new BlockValarGlass()).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeGlass).setUnlocalizedName("breeGlass").setBlockTextureName("bree_glass"));
         //registerBlock(560, "shire_flower", (new BlockValarFlower()).setPlantBounds(12, 10, 16).setUnlocalizedName("shireFlower").setBlockTextureName("shire_flower"));
+        registerBlock(560, "shire_flower", (new BlockCustomFlower(new AxisAlignedBB(5.0 / 16, 0.0D, 5.0 / 16, 11.0 / 16, 9.5 / 16, 11.0 / 16))).setUnlocalizedName("shireFlower"));
         registerBlock(561, "dark_metal", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("darkMetal").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(562, "rivendell_wood", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("rivendellWood").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(563, "moss", (new Block(Material.PLANTS)).setHardness(0.3F).setSoundType(SoundType.PLANT).setUnlocalizedName("moss").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
