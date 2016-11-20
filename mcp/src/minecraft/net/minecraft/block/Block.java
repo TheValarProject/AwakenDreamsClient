@@ -1409,7 +1409,7 @@ public class Block
         registerBlock(552, "gondorian_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("gondorianStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(553, "gondorian_brick_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("gondorianBrickStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(554, "cracked_gondorian_brick_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("crackedGondorianBrickStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        //registerBlock(555, "lorien_lamp", (new BlockValarLamp()).setLampBounds(26, 32).setUnlocalizedName("lorienLamp").setBlockTextureName("lorien_lamp"));
+        registerBlock(555, "lorien_lamp", (new BlockLamp(Material.GLASS, Arrays.asList(new AxisAlignedBB(1.5 / 16, 0.0D, 1.5 / 16, 14.5 / 16, 1.0D, 14.5 / 16)))).setUnlocalizedName("lorienLamp"));
         registerBlock(556, "bucklebury_lamp", (new Block3D(Material.GLASS, Arrays.asList(new AxisAlignedBB(4.75 / 16, 0.0D, 4.75 / 16, 11.25 / 16, 1.0D, 11.25 / 16)))).setUnlocalizedName("buckleburyLamp").setCreativeTab(CreativeTabs.DECORATIONS).setLightLevel(1.0F));
         registerBlock(557, "salt_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreSalt").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         //registerBlock(558, "simbelmyne", (new BlockValarFlower()).setPlantBounds(16, 6, 16).setRenderType(105).setUnlocalizedName("simbelmyne").setBlockTextureName("simbelmyne"));
