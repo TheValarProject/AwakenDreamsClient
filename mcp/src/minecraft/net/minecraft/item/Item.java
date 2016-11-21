@@ -881,6 +881,7 @@ public class Item
         registerItemBlock(Blocks.LORIEN_LAMP);
         registerItemBlock(Blocks.BUCKLEBURY_LAMP);
         registerItemBlock(Blocks.SALT_ORE);
+        registerItemBlock(Blocks.SHIRE_FLOWER);
         registerItemBlock(Blocks.DARK_METAL);
         registerItemBlock(Blocks.RIVENDELL_WOOD);
         registerItemBlock(Blocks.MOSS);

@@ -304,6 +304,7 @@ public class Blocks
     public static final Block LORIEN_LAMP;
     public static final Block BUCKLEBURY_LAMP;
     public static final Block SALT_ORE;
+    public static final Block SHIRE_FLOWER;
     public static final Block DARK_METAL;
     public static final Block RIVENDELL_WOOD;
     public static final Block MOSS;
@@ -771,6 +772,7 @@ public class Blocks
             LORIEN_LAMP = getRegisteredBlock("lorien_lamp");
             BUCKLEBURY_LAMP = getRegisteredBlock("bucklebury_lamp");
             SALT_ORE = getRegisteredBlock("salt_ore");
+            SHIRE_FLOWER = getRegisteredBlock("shire_flower");
             DARK_METAL = getRegisteredBlock("dark_metal");
             RIVENDELL_WOOD = getRegisteredBlock("rivendell_wood");
             MOSS = getRegisteredBlock("moss");
