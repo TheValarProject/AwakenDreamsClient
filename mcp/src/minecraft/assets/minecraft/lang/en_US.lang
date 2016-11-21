@@ -925,6 +925,7 @@ tile.lightGreyCircleStone.name=Light Grey Circle Stone
 tile.hobbitLamp1.name=Hobbit Lamp 1
 tile.hobbitLamp2.name=Hobbit Lamp 2
 tile.lossarnarchDecorationStone.name=Lossarnarch Decoration Stone
+tile.breeLamp.name=Bree Lamp
 tile.archetLamp.name=Archet Lamp
 tile.townMarker.name=Town Marker
 tile.villageMarker.name=Village Marker

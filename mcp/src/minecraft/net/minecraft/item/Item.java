@@ -916,6 +916,7 @@ public class Item
         registerItemBlock(Blocks.HOBBIT_LAMP_1);
         registerItemBlock(Blocks.HOBBIT_LAMP_2);
         registerItemBlock(Blocks.LOSSARNARCH_DECORATION_STONE);
+        registerItemBlock(Blocks.BREE_LAMP);
         registerItemBlock(Blocks.ARCHET_LAMP);
         registerItemBlock(Blocks.TOWN_MARKER);
         registerItemBlock(Blocks.VILLAGE_MARKER);

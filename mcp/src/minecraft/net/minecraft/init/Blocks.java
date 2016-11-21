@@ -340,6 +340,7 @@ public class Blocks
     public static final Block HOBBIT_LAMP_1;
     public static final Block HOBBIT_LAMP_2;
     public static final Block LOSSARNARCH_DECORATION_STONE;
+    public static final Block BREE_LAMP;
     public static final Block ARCHET_LAMP;
     public static final Block TOWN_MARKER;
     public static final Block VILLAGE_MARKER;
@@ -806,6 +807,7 @@ public class Blocks
             HOBBIT_LAMP_1 = getRegisteredBlock("hobbit_lamp_1");
             HOBBIT_LAMP_2 = getRegisteredBlock("hobbit_lamp_2");
             LOSSARNARCH_DECORATION_STONE = getRegisteredBlock("lossarnarch_decoration_stone");
+            BREE_LAMP = getRegisteredBlock("bree_lamp");
             ARCHET_LAMP = getRegisteredBlock("archet_lamp");
             TOWN_MARKER = getRegisteredBlock("town_marker");
             VILLAGE_MARKER = getRegisteredBlock("village_marker");
