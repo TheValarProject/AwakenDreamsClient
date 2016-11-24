@@ -805,6 +805,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.TANZANITE_ORE, "tanzanite_ore");
         this.registerBlock(Blocks.PERMANENT_DIRT, "permanent_dirt");
         this.registerBlock(Blocks.LUINDOL, "luindol");
+        this.registerBlock(Blocks.HOPPER_MUSHROOM, "hopper_mushroom");
         this.registerBlock(Blocks.AMETHYST_ORE, "amethyst_ore");
         this.registerBlock(Blocks.RUBY_ORE, "ruby_ore");
         this.registerBlock(Blocks.ONYX_ORE, "onyx_ore");
@@ -834,6 +835,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.MORDOR_STONE, "mordor_stone");
         this.registerBlock(Blocks.CLIFF_BLOCK, "cliff_block");
         this.registerBlock(Blocks.SPIDER_EGG, "spider_egg");
+        this.registerBlock(Blocks.ARFANDAS,  "arfandas");
         this.registerBlock(Blocks.ATHELAS, "athelas");
         this.registerBlock(Blocks.LAMP, "lamp");
         this.registerBlock(Blocks.GONDORIAN_STONE, "gondorian_stone");
@@ -1006,6 +1008,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.ROHIRRIM_LADDER, "rohirrim_ladder");
         this.registerBlock(Blocks.DUNLAND_LADDER, "dunland_ladder");
         this.registerBlock(Blocks.LORILENDEL, "lorilendel");
+        this.registerBlock(Blocks.SHIRE_GARDEN_FLOWER,  "shire_garden_flower");
         this.registerBlock(Blocks.PILE_OF_COINS, "pile_of_coins");
         this.registerBlock(Blocks.GREY_COLUMN, "grey_column");
         this.registerBlock(Blocks.GREY_COLUMN_TOP, "grey_column_top");

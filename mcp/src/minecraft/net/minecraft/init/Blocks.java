@@ -267,6 +267,7 @@ public class Blocks
     public static final Block TANZANITE_ORE;
     public static final Block PERMANENT_DIRT;
     public static final Block LUINDOL;
+    public static final Block HOPPER_MUSHROOM;
     public static final Block AMETHYST_ORE;
     public static final Block RUBY_ORE;
     public static final Block ONYX_ORE;
@@ -297,6 +298,7 @@ public class Blocks
     public static final Block MORDOR_STONE;
     public static final Block CLIFF_BLOCK;
     public static final Block SPIDER_EGG;
+    public static final Block ARFANDAS;
     public static final Block ATHELAS;
     public static final Block LAMP;
     public static final Block GONDORIAN_STONE;
@@ -477,6 +479,7 @@ public class Blocks
     public static final BlockCustomDoor PRISON_DOOR;
     public static final BlockCustomDoor SINDAR_DOOR;
     public static final Block LORILENDEL;
+    public static final Block SHIRE_GARDEN_FLOWER;
     public static final Block PILE_OF_COINS;
     public static final Block GREY_COLUMN;
     public static final Block GREY_COLUMN_TOP;
@@ -738,6 +741,7 @@ public class Blocks
             TANZANITE_ORE = getRegisteredBlock("tanzanite_ore");
             PERMANENT_DIRT = getRegisteredBlock("permanent_dirt");
             LUINDOL = getRegisteredBlock("luindol");
+            HOPPER_MUSHROOM = getRegisteredBlock("hopper_mushroom");
             AMETHYST_ORE = getRegisteredBlock("amethyst_ore");
             RUBY_ORE = getRegisteredBlock("ruby_ore");
             ONYX_ORE = getRegisteredBlock("onyx_ore");
@@ -768,6 +772,7 @@ public class Blocks
             MORDOR_STONE = getRegisteredBlock("mordor_stone");
             CLIFF_BLOCK = getRegisteredBlock("cliff_block");
             SPIDER_EGG = getRegisteredBlock("spider_egg");
+            ARFANDAS = getRegisteredBlock("arfandas");
             ATHELAS = getRegisteredBlock("athelas");
             LAMP = getRegisteredBlock("lamp");
             GONDORIAN_STONE = getRegisteredBlock("gondorian_stone");
@@ -947,6 +952,7 @@ public class Blocks
             PRISON_DOOR = (BlockCustomDoor)getRegisteredBlock("prison_door");
             SINDAR_DOOR = (BlockCustomDoor)getRegisteredBlock("sindar_door");
             LORILENDEL = getRegisteredBlock("lorilendel");
+            SHIRE_GARDEN_FLOWER = getRegisteredBlock("shire_garden_flower");
             PILE_OF_COINS = getRegisteredBlock("pile_of_coins");
             GREY_COLUMN = getRegisteredBlock("grey_column");
             GREY_COLUMN_TOP = getRegisteredBlock("grey_column_top");
