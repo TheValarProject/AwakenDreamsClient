@@ -1412,7 +1412,7 @@ public class Block
         registerBlock(555, "lorien_lamp", (new BlockLamp(Material.GLASS, Arrays.asList(new AxisAlignedBB(1.5 / 16, 0.0D, 1.5 / 16, 14.5 / 16, 1.0D, 14.5 / 16)))).setUnlocalizedName("lorienLamp"));
         registerBlock(556, "bucklebury_lamp", (new Block3D(Material.GLASS, Arrays.asList(new AxisAlignedBB(4.75 / 16, 0.0D, 4.75 / 16, 11.25 / 16, 1.0D, 11.25 / 16)))).setUnlocalizedName("buckleburyLamp").setCreativeTab(CreativeTabs.DECORATIONS).setLightLevel(1.0F));
         registerBlock(557, "salt_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreSalt").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        //registerBlock(558, "simbelmyne", (new BlockValarFlower()).setPlantBounds(16, 6, 16).setRenderType(105).setUnlocalizedName("simbelmyne").setBlockTextureName("simbelmyne"));
+        registerBlock(558, "simbelmyne", (new BlockCustomFlower()).setUnlocalizedName("simbelmyne"));
         //registerBlock(559, "bree_glass", (new BlockValarGlass()).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeGlass).setUnlocalizedName("breeGlass").setBlockTextureName("bree_glass"));
         registerBlock(560, "shire_flower", (new BlockCustomFlower(new AxisAlignedBB(5.0 / 16, 0.0D, 5.0 / 16, 11.0 / 16, 9.5 / 16, 11.0 / 16))).setUnlocalizedName("shireFlower"));
         registerBlock(561, "dark_metal", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("darkMetal").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
