@@ -874,6 +874,7 @@ public class Item
         registerItemBlock(Blocks.MORDOR_STONE);
         registerItemBlock(Blocks.CLIFF_BLOCK);
         registerItemBlock(Blocks.SPIDER_EGG);
+        registerItemBlock(Blocks.ATHELAS);
         registerItemBlock(Blocks.LAMP);
         registerItemBlock(Blocks.GONDORIAN_STONE);
         registerItemBlock(Blocks.GONDORIAN_BRICK_STONE);
@@ -881,6 +882,7 @@ public class Item
         registerItemBlock(Blocks.LORIEN_LAMP);
         registerItemBlock(Blocks.BUCKLEBURY_LAMP);
         registerItemBlock(Blocks.SALT_ORE);
+        registerItemBlock(Blocks.SIMBELMYNE);
         registerItemBlock(Blocks.SHIRE_FLOWER);
         registerItemBlock(Blocks.DARK_METAL);
         registerItemBlock(Blocks.RIVENDELL_WOOD);
@@ -917,6 +919,7 @@ public class Item
         registerItemBlock(Blocks.HOBBIT_LAMP_1);
         registerItemBlock(Blocks.HOBBIT_LAMP_2);
         registerItemBlock(Blocks.LOSSARNARCH_DECORATION_STONE);
+        registerItemBlock(Blocks.BREE_LAMP);
         registerItemBlock(Blocks.ARCHET_LAMP);
         registerItemBlock(Blocks.TOWN_MARKER);
         registerItemBlock(Blocks.VILLAGE_MARKER);
@@ -1041,6 +1044,7 @@ public class Item
         registerItemBlock(Blocks.HUMAN_LADDER);
         registerItemBlock(Blocks.ROHIRRIM_LADDER);
         registerItemBlock(Blocks.DUNLAND_LADDER);
+        registerItemBlock(Blocks.LORILENDEL);
         registerItemBlock(Blocks.PILE_OF_COINS);
         registerItemBlock(Blocks.GREY_COLUMN);
         registerItemBlock(Blocks.GREY_COLUMN_TOP);
