@@ -1042,6 +1042,7 @@ public class Item
         registerItemBlock(Blocks.HUMAN_LADDER);
         registerItemBlock(Blocks.ROHIRRIM_LADDER);
         registerItemBlock(Blocks.DUNLAND_LADDER);
+        registerItemBlock(Blocks.LORILENDEL);
         registerItemBlock(Blocks.PILE_OF_COINS);
         registerItemBlock(Blocks.GREY_COLUMN);
         registerItemBlock(Blocks.GREY_COLUMN_TOP);

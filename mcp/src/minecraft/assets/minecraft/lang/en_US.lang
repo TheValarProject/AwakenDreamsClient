@@ -1051,6 +1051,7 @@ tile.candle.name=Candle
 tile.humanLadder.name=Human Ladder
 tile.rohirrimLadder.name=Rohirrim Ladder
 tile.dunlandLadder.name=Dunland Ladder
+tile.lorilendel.name=Lorilendel
 tile.pileOfCoins.name=Pile of Coins
 tile.greyColumn.name=Grey Column
 tile.greyColumnTop.name=Grey Column Top

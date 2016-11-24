@@ -1588,7 +1588,6 @@ public class Block
         registerBlock(740, "riverfolk_trapdoor", (new BlockTrapDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("riverfolkTrapdoor").disableStats());
         registerBlock(741, "fornost_trapdoor", (new BlockTrapDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("fornostTrapdoor").disableStats());
         registerBlock(742, "prison_trapdoor", (new BlockTrapDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("prisonTrapdoor").disableStats());
-        //float[][] candleBumpMap = {{ 13, 0, 13, 19, 2, 19 }, { 11, 2, 13, 21, 3, 19 }, { 12, 2, 12, 20, 3, 13 }, { 12, 2, 19, 20, 3, 20 }, { 13, 2, 11, 19, 3, 12 }, { 13, 2, 20, 19, 3, 21 }, { 10, 3, 12, 22, 4, 20 }, { 11, 3, 11, 21, 4, 12 }, { 11, 3, 20, 21, 4, 21 }, { 12, 3, 10, 20, 4, 11 }, { 12, 3, 21, 20, 4, 22 }, { 9, 4, 11, 23, 5, 21 }, { 10, 4, 10, 22, 5, 11 }, { 10, 4, 21, 22, 5, 22 }, { 11, 4, 9, 21, 5, 10 }, { 11, 4, 22, 21, 5, 23 }, { 8, 5, 10, 24, 6, 22 }, { 9, 5, 9, 23, 6, 10 }, { 9, 5, 22, 23, 6, 23 }, { 10, 5, 8, 22, 6, 9 }, { 10, 5, 23, 22, 6, 24 }, { 13, 6, 15, 19, 24, 17 }, { 14, 6, 14, 18, 24, 15 }, { 14, 6, 17, 18, 24, 18 }, { 15, 6, 13, 17, 24, 14 }, { 15, 6, 18, 17, 24, 19 }, { 15, 24, 15, 17, 28, 17 }};
         registerBlock(743, "candle", (new BlockCandle()).setUnlocalizedName("candle"));
         registerBlock(744, "human_ladder", (new BlockLadder()).setHardness(0.4F).setSoundType(SoundType.LADDER).setUnlocalizedName("humanLadder"));
         registerBlock(745, "rohirrim_ladder", (new BlockLadder()).setHardness(0.4F).setSoundType(SoundType.LADDER).setUnlocalizedName("rohirrimLadder"));
@@ -1611,7 +1610,7 @@ public class Block
         //registerBlock(762, "dead_bush", (new BlockValarFlower()).setPlantBounds(30, 25).setUnlocalizedName("deadBush").setBlockTextureName("dead_bush"));
         //registerBlock(763, "cursed_plant", (new BlockValarFlower()).setPlantBounds(32, 26).setUnlocalizedName("cursedPlant").setBlockTextureName("cursed_plant"));
         //registerBlock(764, "haradwaith_fern", (new BlockValarFlower()).setPlantBounds(28, 31).setUnlocalizedName("haradwaithFern").setBlockTextureName("haradwaith_fern"));
-        //registerBlock(765, "lorilendel", (new BlockValarFlower()).setPlantBounds(30, 22).setRenderType(106).setUnlocalizedName("lorilendel").setBlockTextureName("lorilendel"));
+        registerBlock(765, "lorilendel", (new BlockCustomFlower()).setUnlocalizedName("lorilendel"));
         //registerBlock(766, "stakes", (new BlockValarCustomRender(Material.plants, CreativeTabs.tabDecorations, 106).setUnlocalizedName("stakes").setBlockTextureName("stakes")));
         //registerBlock(767, "southlinch", (new BlockValarCrops(5)).setRenderType(1).setItemSeed("southlinch_seed").setItemYield("south_linch").setUnlocalizedName("southlinch").setBlockTextureName("southlinch"));
         //registerBlock(768, "green_grape", (new BlockValarCrops(5)).setRenderType(106).setItemSeed("green_grape_seed").setItemYield("green_grapes").setRequiresStakes(true).setUnlocalizedName("greenGrape").setBlockTextureName("green_grape"));
