@@ -297,6 +297,7 @@ public class Blocks
     public static final Block MORDOR_STONE;
     public static final Block CLIFF_BLOCK;
     public static final Block SPIDER_EGG;
+    public static final Block ATHELAS;
     public static final Block LAMP;
     public static final Block GONDORIAN_STONE;
     public static final Block GONDORIAN_BRICK_STONE;
@@ -304,6 +305,7 @@ public class Blocks
     public static final Block LORIEN_LAMP;
     public static final Block BUCKLEBURY_LAMP;
     public static final Block SALT_ORE;
+    public static final Block SIMBELMYNE;
     public static final Block SHIRE_FLOWER;
     public static final Block DARK_METAL;
     public static final Block RIVENDELL_WOOD;
@@ -474,6 +476,7 @@ public class Blocks
     public static final BlockCustomDoor MORDOR_DOOR;
     public static final BlockCustomDoor PRISON_DOOR;
     public static final BlockCustomDoor SINDAR_DOOR;
+    public static final Block LORILENDEL;
     public static final Block PILE_OF_COINS;
     public static final Block GREY_COLUMN;
     public static final Block GREY_COLUMN_TOP;
@@ -765,6 +768,7 @@ public class Blocks
             MORDOR_STONE = getRegisteredBlock("mordor_stone");
             CLIFF_BLOCK = getRegisteredBlock("cliff_block");
             SPIDER_EGG = getRegisteredBlock("spider_egg");
+            ATHELAS = getRegisteredBlock("athelas");
             LAMP = getRegisteredBlock("lamp");
             GONDORIAN_STONE = getRegisteredBlock("gondorian_stone");
             GONDORIAN_BRICK_STONE = getRegisteredBlock("gondorian_brick_stone");
@@ -772,6 +776,7 @@ public class Blocks
             LORIEN_LAMP = getRegisteredBlock("lorien_lamp");
             BUCKLEBURY_LAMP = getRegisteredBlock("bucklebury_lamp");
             SALT_ORE = getRegisteredBlock("salt_ore");
+            SIMBELMYNE = getRegisteredBlock("simbelmyne");
             SHIRE_FLOWER = getRegisteredBlock("shire_flower");
             DARK_METAL = getRegisteredBlock("dark_metal");
             RIVENDELL_WOOD = getRegisteredBlock("rivendell_wood");
@@ -941,6 +946,7 @@ public class Blocks
             MORDOR_DOOR = (BlockCustomDoor)getRegisteredBlock("mordor_door");
             PRISON_DOOR = (BlockCustomDoor)getRegisteredBlock("prison_door");
             SINDAR_DOOR = (BlockCustomDoor)getRegisteredBlock("sindar_door");
+            LORILENDEL = getRegisteredBlock("lorilendel");
             PILE_OF_COINS = getRegisteredBlock("pile_of_coins");
             GREY_COLUMN = getRegisteredBlock("grey_column");
             GREY_COLUMN_TOP = getRegisteredBlock("grey_column_top");
