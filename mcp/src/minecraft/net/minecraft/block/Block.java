@@ -1403,7 +1403,7 @@ public class Block
         //registerBlock(546, "madarch", (new BlockValarCustomRender(Material.plants, 1)).setCreativeTab(CreativeTabs.tabDecorations).setHardness(0.0F).setSoundType(soundTypeGrass).setUnlocalizedName("madarch").setBlockTextureName("madarch"));
         //registerBlock(547, "mehas", (new BlockValarCustomRender(Material.plants, 1)).setCreativeTab(CreativeTabs.tabDecorations).setHardness(0.0F).setSoundType(soundTypeGrass).setUnlocalizedName("mehas").setBlockTextureName("mehas"));
         //registerBlock(548, "arfandas", (new BlockValarFlower()).setPlantBounds(10, 14, 16).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("arfandas").setBlockTextureName("arfandas"));
-        //registerBlock(549, "athelas", (new BlockValarFlower()).setPlantBounds(16, 8, 16).setRenderType(105).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("athelas").setBlockTextureName("athelas"));
+        registerBlock(549, "athelas", (new BlockCustomFlower()).setUnlocalizedName("athelas"));
         //registerBlock(550, "bellis", (new BlockValarFlower()).setPlantBounds(46, 61, 64).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("bellis").setBlockTextureName("bellis"));
         registerBlock(551, "lamp", (new BlockLamp(Material.GLASS, Arrays.asList(new AxisAlignedBB(3.0 / 16, 0.0D, 3.0 / 16, 13.0 / 16, 1.0D, 13.0 / 16)))).setUnlocalizedName("lamp"));
         registerBlock(552, "gondorian_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("gondorianStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
