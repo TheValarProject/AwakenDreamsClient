@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.UUID;
 import javax.annotation.Nullable;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockBed;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
@@ -753,7 +754,7 @@ public class EntityZombie extends EntityMob
                     {
                         Block block = this.worldObj.getBlockState(blockpos$mutableblockpos.set(k, l, i1)).getBlock();
 
-                        if (block == Blocks.IRON_BARS || block == Blocks.BED)
+                        if (block == Blocks.IRON_BARS || block instanceof BlockBed)
                         {
                             if (this.rand.nextFloat() < 0.3F)
                             {

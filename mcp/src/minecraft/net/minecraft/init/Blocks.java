@@ -1,5 +1,6 @@
 package net.minecraft.init;
 
+import com.elementfx.tvp.ad.block.BlockCustomBed;
 import com.elementfx.tvp.ad.block.BlockCustomDoor;
 import com.google.common.collect.Sets;
 import java.util.Set;
@@ -275,6 +276,8 @@ public class Blocks
     public static final Block MINAS_MORGUL_GLOWSTONE;
     public static final Block ARGONATH_STONE;
     public static final Block MITHRIL_BLOCK;
+    public static final BlockCustomBed BLUE_BED;
+    public static final BlockCustomBed BROWN_BED;
     public static final Block CRYSTAL_ORE;
     public static final Block DESERT_ROAD_BLOCK;
     public static final Block DIRT_ROAD_BLOCK;
@@ -460,6 +463,7 @@ public class Blocks
     public static final Block CARN_DUM_LAMP;
     public static final BlockCustomDoor ELVEN_DOOR;
     public static final BlockCustomDoor HUMAN_DOOR;
+    public static final BlockCustomBed GREEN_BED;
     public static final Block BREE_TILE;
     public static final Block HUMAN_TRAPDOOR;
     public static final Block MORDOR_TRAPDOOR;
@@ -749,6 +753,8 @@ public class Blocks
             MINAS_MORGUL_GLOWSTONE = getRegisteredBlock("minas_morgul_glowstone");
             ARGONATH_STONE = getRegisteredBlock("argonath_stone");
             MITHRIL_BLOCK = getRegisteredBlock("mithril_block");
+            BLUE_BED = (BlockCustomBed)getRegisteredBlock("blue_bed");
+            BROWN_BED = (BlockCustomBed)getRegisteredBlock("brown_bed");
             CRYSTAL_ORE = getRegisteredBlock("crystal_ore");
             DESERT_ROAD_BLOCK = getRegisteredBlock("desert_road_block");
             DIRT_ROAD_BLOCK = getRegisteredBlock("dirt_road_block");
@@ -933,6 +939,7 @@ public class Blocks
             CARN_DUM_LAMP = getRegisteredBlock("carn_dum_lamp");
             ELVEN_DOOR = (BlockCustomDoor)getRegisteredBlock("elven_door");
             HUMAN_DOOR = (BlockCustomDoor)getRegisteredBlock("human_door");
+            GREEN_BED = (BlockCustomBed)getRegisteredBlock("green_bed");
             BREE_TILE = getRegisteredBlock("bree_tile");
             HUMAN_TRAPDOOR = getRegisteredBlock("human_trapdoor");
             MORDOR_TRAPDOOR = getRegisteredBlock("mordor_trapdoor");

@@ -309,10 +309,13 @@ public class BlockModelShapes
             }
         });
         // Begin Awaken Dreams code
+        this.registerBlockWithStateMapper(Blocks.BLUE_BED, (new StateMap.Builder()).ignore(new IProperty[] {BlockBed.OCCUPIED}).build());
+        this.registerBlockWithStateMapper(Blocks.BROWN_BED, (new StateMap.Builder()).ignore(new IProperty[] {BlockBed.OCCUPIED}).build());
         this.registerBlockWithStateMapper(Blocks.BREE_DOOR, (new StateMap.Builder()).ignore(new IProperty[] {BlockDoor.POWERED}).build());
         this.registerBlockWithStateMapper(Blocks.DWARF_DOOR, (new StateMap.Builder()).ignore(new IProperty[] {BlockDoor.POWERED}).build());
         this.registerBlockWithStateMapper(Blocks.ELVEN_DOOR, (new StateMap.Builder()).ignore(new IProperty[] {BlockDoor.POWERED}).build());
         this.registerBlockWithStateMapper(Blocks.HUMAN_DOOR, (new StateMap.Builder()).ignore(new IProperty[] {BlockDoor.POWERED}).build());
+        this.registerBlockWithStateMapper(Blocks.GREEN_BED, (new StateMap.Builder()).ignore(new IProperty[] {BlockBed.OCCUPIED}).build());
         this.registerBlockWithStateMapper(Blocks.CASTLE_DOOR, (new StateMap.Builder()).ignore(new IProperty[] {BlockDoor.POWERED}).build());
         this.registerBlockWithStateMapper(Blocks.DOL_GULDUR_PRISON_DOOR, (new StateMap.Builder()).ignore(new IProperty[] {BlockDoor.POWERED}).build());
         this.registerBlockWithStateMapper(Blocks.HILLMEN_DOOR, (new StateMap.Builder()).ignore(new IProperty[] {BlockDoor.POWERED}).build());

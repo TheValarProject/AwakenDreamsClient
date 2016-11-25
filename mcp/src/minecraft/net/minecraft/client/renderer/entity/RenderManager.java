@@ -266,7 +266,7 @@ public class RenderManager
             IBlockState iblockstate = worldIn.getBlockState(new BlockPos(livingPlayerIn));
             Block block = iblockstate.getBlock();
 
-            if (block == Blocks.BED)
+            if (block instanceof BlockBed)
             {
                 int i = ((EnumFacing)iblockstate.getValue(BlockBed.FACING)).getHorizontalIndex();
                 this.playerViewY = (float)(i * 90 + 180);

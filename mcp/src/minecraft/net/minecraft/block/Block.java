@@ -4,6 +4,7 @@ import com.elementfx.tvp.ad.block.Block3D;
 import com.elementfx.tvp.ad.block.Block3DDirectional;
 import com.elementfx.tvp.ad.block.BlockArchetLamp;
 import com.elementfx.tvp.ad.block.BlockCandle;
+import com.elementfx.tvp.ad.block.BlockCustomBed;
 import com.elementfx.tvp.ad.block.BlockCustomDoor;
 import com.elementfx.tvp.ad.block.BlockCustomFlower;
 import com.elementfx.tvp.ad.block.BlockDwarvenTorch;
@@ -1369,8 +1370,8 @@ public class Block
         registerBlock(511, "minas_morgul_glowstone", (new Block(Material.GLASS)).setLightLevel(1.0F).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.GLASS).setUnlocalizedName("minasMorgulGlowstone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(512, "argonath_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("argonathStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(513, "mithril_block", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("blockMithril").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        //registerBlock(514, "blue_bed", (new BlockValarBed("blue_bed_item").setHardness(0.2F).setSoundType(soundTypeCloth).setUnlocalizedName("blueBed").setBlockTextureName("blue_bed")));
-        //registerBlock(515, "brown_bed", (new BlockValarBed("brown_bed_item")).setHardness(0.2F).setSoundType(soundTypeCloth).setUnlocalizedName("brownBed").setBlockTextureName("brown_bed"));
+        registerBlock(514, "blue_bed", (new BlockCustomBed()).setUnlocalizedName("blueBed"));
+        registerBlock(515, "brown_bed", (new BlockCustomBed()).setUnlocalizedName("brownBed"));
         registerBlock(516, "crystal_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreCrystal").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(517, "desert_road_block", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("desertRoadBlock").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(518, "dirt_road_block", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("dirtRoadBlock").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
@@ -1579,7 +1580,7 @@ public class Block
         registerBlock(727, "carn_dum_lamp", (new Block(Material.ROCK)).setLightLevel(1.0F).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("carnDumLamp").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(728, "elven_door", (new BlockCustomDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("elvenDoor").disableStats());
         registerBlock(729, "human_door", (new BlockCustomDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("humanDoor").disableStats());
-        //registerBlock(730, "green_bed", (new BlockValarBed("green_bed_item")).setHardness(0.2F).setSoundType(soundTypeCloth).setUnlocalizedName("greenBed").setBlockTextureName("green_bed"));
+        registerBlock(730, "green_bed", (new BlockCustomBed()).setUnlocalizedName("greenBed"));
         registerBlock(731, "bree_tile", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("breeTile").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(736, "human_trapdoor", (new BlockTrapDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("humanTrapdoor").disableStats());
         registerBlock(737, "mordor_trapdoor", (new BlockTrapDoor(Material.WOOD)).setHardness(3.0F).setSoundType(SoundType.WOOD).setUnlocalizedName("mordorTrapdoor").disableStats());

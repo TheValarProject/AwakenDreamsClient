@@ -220,10 +220,13 @@ public class Items
     public static final Item BEETROOT;
     public static final Item BEETROOT_SOUP;
     // Begin Awaken Dreams code
+    public static final Item BLUE_BED;
+    public static final Item BROWN_BED;
     public static final Item BREE_DOOR;
     public static final Item DWARF_DOOR;
     public static final Item ELVEN_DOOR;
     public static final Item HUMAN_DOOR;
+    public static final Item GREEN_BED;
     public static final Item CASTLE_DOOR;
     public static final Item DOL_GULDUR_PRISON_DOOR;
     public static final Item HILLMEN_DOOR;
@@ -460,6 +463,10 @@ public class Items
             BEETROOT = getRegisteredItem("beetroot");
             BEETROOT_SOUP = getRegisteredItem("beetroot_soup");
             // Begin Awaken Dreams code
+            BLUE_BED = getRegisteredItem("blue_bed");
+            Blocks.BLUE_BED.setItem(BLUE_BED);
+            BROWN_BED = getRegisteredItem("brown_bed");
+            Blocks.BROWN_BED.setItem(BROWN_BED);
             BREE_DOOR = getRegisteredItem("bree_door");
             Blocks.BREE_DOOR.setItem(BREE_DOOR);
             DWARF_DOOR = getRegisteredItem("dwarf_door");
@@ -468,6 +475,8 @@ public class Items
             Blocks.ELVEN_DOOR.setItem(ELVEN_DOOR);
             HUMAN_DOOR = getRegisteredItem("human_door");
             Blocks.HUMAN_DOOR.setItem(HUMAN_DOOR);
+            GREEN_BED = getRegisteredItem("green_bed");
+            Blocks.GREEN_BED.setItem(GREEN_BED);
             CASTLE_DOOR = getRegisteredItem("castle_door");
             Blocks.CASTLE_DOOR.setItem(CASTLE_DOOR);
             DOL_GULDUR_PRISON_DOOR = getRegisteredItem("dol_guldur_prison_door");

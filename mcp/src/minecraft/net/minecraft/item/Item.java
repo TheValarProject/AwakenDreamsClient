@@ -1,5 +1,7 @@
 package net.minecraft.item;
 
+import com.elementfx.tvp.ad.block.BlockCustomBed;
+import com.elementfx.tvp.ad.item.ItemCustomBed;
 import com.google.common.base.Function;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Maps;
@@ -1313,10 +1315,10 @@ public class Item
         itemRegistry.addObject(6048, "scorpion_tail", (new ItemValarBase(CreativeTabs.tabMaterials).setUnlocalizedName("scorpionTail").setTextureName("scorpion_tail")));
         itemRegistry.addObject(6049, "shark_tooth", (new ItemValarBase(CreativeTabs.tabMaterials).setUnlocalizedName("sharkTooth").setTextureName("shark_tooth")));
         itemRegistry.addObject(6050, "troll_skin", (new ItemValarBase(CreativeTabs.tabMaterials).setUnlocalizedName("trollSkin").setTextureName("troll_skin")));
-        itemRegistry.addObject(6051, "warg_fang", (new ItemValarBase(CreativeTabs.tabMaterials).setUnlocalizedName("wargFang").setTextureName("warg_fang")));
-        itemRegistry.addObject(6052, "blue_bed_item", (new ItemValarBed((BlockValarBed)Blocks.blueBed).setUnlocalizedName("blueBedItem").setTextureName("blue_bed_item")));
-        itemRegistry.addObject(6053, "brown_bed_item", (new ItemValarBed((BlockValarBed)Blocks.brownBed).setUnlocalizedName("brownBedItem").setTextureName("brown_bed_item")));
-        itemRegistry.addObject(6054, "brown_hobbit_hat", (new ItemValarArmor(0, 1, 55, 0).setUnlocalizedName("brownHobbitHat").setTextureName("brown_hobbit_hat")));
+        itemRegistry.addObject(6051, "warg_fang", (new ItemValarBase(CreativeTabs.tabMaterials).setUnlocalizedName("wargFang").setTextureName("warg_fang")));*/
+        registerItem(6052, "blue_bed", (new ItemCustomBed((BlockCustomBed)Blocks.BLUE_BED)).setUnlocalizedName("blueBed"));
+        registerItem(6053, "brown_bed", (new ItemCustomBed((BlockCustomBed)Blocks.BROWN_BED)).setUnlocalizedName("brownBed"));
+        /*itemRegistry.addObject(6054, "brown_hobbit_hat", (new ItemValarArmor(0, 1, 55, 0).setUnlocalizedName("brownHobbitHat").setTextureName("brown_hobbit_hat")));
         itemRegistry.addObject(6055, "orc_helmet", (new ItemValarArmor(0, 1, 200, 0).setUnlocalizedName("orcHelmet").setTextureName("orc_helmet")));*/
         registerItem(6056, "bree_door", (new ItemDoor(Blocks.BREE_DOOR)).setUnlocalizedName("breeDoor"));
       //itemRegistry.addObject(6057, "rucksack", (new ItemValarBase().setUnlocalizedName("rucksack").setTextureName("rucksack")));
@@ -1504,8 +1506,8 @@ public class Item
         //itemRegistry.addObject(6238, "a_knife_in_the_dark", (new ItemValarBase().setUnlocalizedName("aKnifeintheDark").setTextureName("a_knife_in_the_dark")));*/
         registerItem(6239, "elven_door", (new ItemDoor(Blocks.ELVEN_DOOR)).setUnlocalizedName("elvenDoor"));
         registerItem(6240, "human_door", (new ItemDoor(Blocks.HUMAN_DOOR)).setUnlocalizedName("humanDoor"));
-        /*itemRegistry.addObject(6241, "green_bed_item", (new ItemValarBed((BlockValarBed)Blocks.greenBed).setUnlocalizedName("greenBedItem").setTextureName("green_bed_item")));
-        //itemRegistry.addObject(6242, "one_ring", (new ItemValarBase().setUnlocalizedName("oneRing").setTextureName("one_ring")));
+        registerItem(6241, "green_bed", (new ItemCustomBed((BlockCustomBed)Blocks.GREEN_BED)).setUnlocalizedName("greenBed"));
+        /*//itemRegistry.addObject(6242, "one_ring", (new ItemValarBase().setUnlocalizedName("oneRing").setTextureName("one_ring")));
         itemRegistry.addObject(6243, "aicanar", (new ItemValarWeapon(6000, 10).setUnlocalizedName("aicanar").setTextureName("aicanar")));
         itemRegistry.addObject(6244, "balins_sword", (new ItemValarWeapon(1600, 7).setUnlocalizedName("balinsSword").setTextureName("balins_sword")));
         itemRegistry.addObject(6245, "bifurs_spear", (new ItemValarWeapon(1102, 6, 0, true, true).setUnlocalizedName("bifursSpear").setTextureName("bifurs_spear")));

@@ -1681,7 +1681,7 @@ public abstract class EntityPlayer extends EntityLivingBase
         this.setSize(0.6F, 1.8F);
         IBlockState iblockstate = this.worldObj.getBlockState(this.playerLocation);
 
-        if (this.playerLocation != null && iblockstate.getBlock() == Blocks.BED)
+        if (this.playerLocation != null && iblockstate.getBlock() instanceof BlockBed)
         {
             this.worldObj.setBlockState(this.playerLocation, iblockstate.withProperty(BlockBed.OCCUPIED, Boolean.valueOf(false)), 4);
             BlockPos blockpos = BlockBed.getSafeExitLocation(this.worldObj, this.playerLocation, 0);
@@ -1711,7 +1711,7 @@ public abstract class EntityPlayer extends EntityLivingBase
 
     private boolean isInBed()
     {
-        return this.worldObj.getBlockState(this.playerLocation).getBlock() == Blocks.BED;
+        return this.worldObj.getBlockState(this.playerLocation).getBlock() instanceof BlockBed;
     }
 
     @Nullable
@@ -1723,7 +1723,7 @@ public abstract class EntityPlayer extends EntityLivingBase
     {
         Block block = worldIn.getBlockState(bedLocation).getBlock();
 
-        if (block != Blocks.BED)
+        if (!(block instanceof BlockBed))
         {
             if (!forceSpawn)
             {
