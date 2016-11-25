@@ -1361,7 +1361,7 @@ public class Block
         registerBlock(502, "tanzanite_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreTanzanite").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(503, "permanent_dirt", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("permanentDirt")); // Deprecated in favor of coarse dirt
         registerBlock(504, "luindol", (new BlockCustomFlower(new AxisAlignedBB(5.0 / 16, 0.0D, 5.0 / 16, 11.0 / 16, 9.5 / 16, 11.0 / 16))).setUnlocalizedName("luindol"));
-        //registerBlock(505, "hopper_mushroom", (new BlockValarCustomRender(Material.plants, 1)).setCreativeTab(CreativeTabs.tabDecorations).setHardness(0.0F).setSoundType(soundTypeGrass).setUnlocalizedName("hopperMushroom").setBlockTextureName("hopper_mushroom"));
+        registerBlock(505, "hopper_mushroom", (new BlockCustomFlower(new AxisAlignedBB(5.0 / 16, 0.0D, 5.0 / 16, 11.0 / 16, 11.0 / 16, 11.0 / 16))).setUnlocalizedName("hopperMushroom"));
         registerBlock(506, "amethyst_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreAmethyst").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(507, "ruby_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreRuby").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(508, "onyx_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreOnyx").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
@@ -1402,7 +1402,7 @@ public class Block
         //registerBlock(545, "hopperfoot", (new BlockValarCustomRender(Material.plants, 1)).setCreativeTab(CreativeTabs.tabDecorations).setHardness(0.0F).setSoundType(soundTypeGrass).setUnlocalizedName("hopperfoot").setBlockTextureName("hopperfoot"));
         //registerBlock(546, "madarch", (new BlockValarCustomRender(Material.plants, 1)).setCreativeTab(CreativeTabs.tabDecorations).setHardness(0.0F).setSoundType(soundTypeGrass).setUnlocalizedName("madarch").setBlockTextureName("madarch"));
         //registerBlock(547, "mehas", (new BlockValarCustomRender(Material.plants, 1)).setCreativeTab(CreativeTabs.tabDecorations).setHardness(0.0F).setSoundType(soundTypeGrass).setUnlocalizedName("mehas").setBlockTextureName("mehas"));
-        //registerBlock(548, "arfandas", (new BlockValarFlower()).setPlantBounds(10, 14, 16).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("arfandas").setBlockTextureName("arfandas"));
+        registerBlock(548, "arfandas", (new BlockCustomFlower(new AxisAlignedBB(2.5 / 16, 0.0D, 2.5 / 16, 13.5 / 16, 15.0 / 16, 13.5 / 16))).setUnlocalizedName("arfandas"));
         registerBlock(549, "athelas", (new BlockCustomFlower()).setUnlocalizedName("athelas"));
         //registerBlock(550, "bellis", (new BlockValarFlower()).setPlantBounds(46, 61, 64).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("bellis").setBlockTextureName("bellis"));
         registerBlock(551, "lamp", (new BlockLamp(Material.GLASS, Arrays.asList(new AxisAlignedBB(3.0 / 16, 0.0D, 3.0 / 16, 13.0 / 16, 1.0D, 13.0 / 16)))).setUnlocalizedName("lamp"));
@@ -1414,7 +1414,7 @@ public class Block
         registerBlock(557, "salt_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreSalt").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(558, "simbelmyne", (new BlockCustomFlower()).setUnlocalizedName("simbelmyne"));
         //registerBlock(559, "bree_glass", (new BlockValarGlass()).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeGlass).setUnlocalizedName("breeGlass").setBlockTextureName("bree_glass"));
-        registerBlock(560, "shire_flower", (new BlockCustomFlower(new AxisAlignedBB(5.0 / 16, 0.0D, 5.0 / 16, 11.0 / 16, 9.5 / 16, 11.0 / 16))).setUnlocalizedName("shireFlower"));
+        registerBlock(560, "shire_flower", (new BlockCustomFlower(new AxisAlignedBB(2.0 / 16, 0.0D, 2.0 / 16, 14.0 / 16, 11.0 / 16, 14.0 / 16))).setUnlocalizedName("shireFlower"));
         registerBlock(561, "dark_metal", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("darkMetal").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(562, "rivendell_wood", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("rivendellWood").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(563, "moss", (new Block(Material.PLANTS)).setHardness(0.3F).setSoundType(SoundType.PLANT).setUnlocalizedName("moss").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
@@ -1622,7 +1622,7 @@ public class Block
         //registerBlock(774, "old_toby_plant", (new BlockValarCrops(3)).setRenderType(1).setItemSeed("old_toby_seed").setItemYield("old_toby").setUnlocalizedName("oldTobyPlant").setBlockTextureName("old_toby_plant"));
         //registerBlock(775, "southern_star_plant", (new BlockValarCrops(3)).setRenderType(1).setItemSeed("southern_star_seed").setItemYield("southern_star").setUnlocalizedName("southernStarPlant").setBlockTextureName("southern_star_plant"));
         //registerBlock(776, "strawberry_bush", (new BlockValarCrops(4)).setRenderType(1).setItemSeed("strawberry_seed").setItemYield("strawberry").setUnlocalizedName("strawberryBush").setBlockTextureName("strawberry_bush"));
-        //registerBlock(777, "shire_garden_flower", (new BlockValarFlower()).setPlantBounds(12, 10, 16).setUnlocalizedName("shireGardenFlower").setBlockTextureName("shire_garden_flower"));
+        registerBlock(777, "shire_garden_flower", (new BlockCustomFlower(new AxisAlignedBB(2.0 / 16, 0.0D, 2.0 / 16, 14.0 / 16, 11.0 / 16, 14.0 / 16))).setUnlocalizedName("shireGardenFlower"));
         registerBlock(778, "pile_of_coins", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("pileOfCoins").setCreativeTab(CreativeTabs.BUILDING_BLOCKS)); // TODO custom step sound
         registerBlock(779, "grey_column", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("greyColumn").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(780, "grey_column_top", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("greyColumnTop").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));

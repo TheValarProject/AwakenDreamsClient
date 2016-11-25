@@ -845,6 +845,7 @@ public class Item
         registerItemBlock(Blocks.TANZANITE_ORE);
         registerItemBlock(Blocks.PERMANENT_DIRT);
         registerItemBlock(Blocks.LUINDOL);
+        registerItemBlock(Blocks.HOPPER_MUSHROOM);
         registerItemBlock(Blocks.AMETHYST_ORE);
         registerItemBlock(Blocks.RUBY_ORE);
         registerItemBlock(Blocks.ONYX_ORE);
@@ -874,6 +875,7 @@ public class Item
         registerItemBlock(Blocks.MORDOR_STONE);
         registerItemBlock(Blocks.CLIFF_BLOCK);
         registerItemBlock(Blocks.SPIDER_EGG);
+        registerItemBlock(Blocks.ARFANDAS);
         registerItemBlock(Blocks.ATHELAS);
         registerItemBlock(Blocks.LAMP);
         registerItemBlock(Blocks.GONDORIAN_STONE);
@@ -1045,6 +1047,7 @@ public class Item
         registerItemBlock(Blocks.ROHIRRIM_LADDER);
         registerItemBlock(Blocks.DUNLAND_LADDER);
         registerItemBlock(Blocks.LORILENDEL);
+        registerItemBlock(Blocks.SHIRE_GARDEN_FLOWER);
         registerItemBlock(Blocks.PILE_OF_COINS);
         registerItemBlock(Blocks.GREY_COLUMN);
         registerItemBlock(Blocks.GREY_COLUMN_TOP);
