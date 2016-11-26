@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "blocks/old_toby_plant_stage_2"
+    }
+}

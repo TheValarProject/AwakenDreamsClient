@@ -1617,13 +1617,13 @@ public class Block
         registerBlock(767, "southlinch", (new BlockCustomCrops(5)).setUnlocalizedName("southlinch"));
         //registerBlock(768, "green_grape", (new BlockValarCrops(5)).setRenderType(106).setItemSeed("green_grape_seed").setItemYield("green_grapes").setRequiresStakes(true).setUnlocalizedName("greenGrape").setBlockTextureName("green_grape"));
         //registerBlock(769, "purple_grape", (new BlockValarCrops(5)).setRenderType(106).setItemSeed("purple_grape_seed").setItemYield("purple_grapes").setRequiresStakes(true).setUnlocalizedName("purpleGrape").setBlockTextureName("purple_grape"));
-        //registerBlock(770, "pipeweed_plant", (new BlockValarCrops(5)).setRenderType(1).setItemSeed("pipeweed_seed").setUnlocalizedName("pipeweedPlant").setBlockTextureName("pipeweed_plant"));
-        //registerBlock(771, "pea_plant", (new BlockValarCrops(5)).setRenderType(1).setItemSeed("pea_seed").setItemYield("peas").setUnlocalizedName("peaPlant").setBlockTextureName("pea_plant"));
-        //registerBlock(772, "leek_plant", (new BlockValarCrops(5)).setRenderType(1).setItemSeed("leek_seed").setItemYield("leek").setUnlocalizedName("leekPlant").setBlockTextureName("leek_plant"));
-        //registerBlock(773, "onion_plant", (new BlockValarCrops(5)).setRenderType(1).setItemSeed("onion_seed").setItemYield("onion").setUnlocalizedName("onionPlant").setBlockTextureName("onion_plant"));
-        //registerBlock(774, "old_toby_plant", (new BlockValarCrops(3)).setRenderType(1).setItemSeed("old_toby_seed").setItemYield("old_toby").setUnlocalizedName("oldTobyPlant").setBlockTextureName("old_toby_plant"));
-        //registerBlock(775, "southern_star_plant", (new BlockValarCrops(3)).setRenderType(1).setItemSeed("southern_star_seed").setItemYield("southern_star").setUnlocalizedName("southernStarPlant").setBlockTextureName("southern_star_plant"));
-        //registerBlock(776, "strawberry_bush", (new BlockValarCrops(4)).setRenderType(1).setItemSeed("strawberry_seed").setItemYield("strawberry").setUnlocalizedName("strawberryBush").setBlockTextureName("strawberry_bush"));
+        registerBlock(770, "pipeweed_plant", (new BlockCustomCrops(5)).setUnlocalizedName("pipeweedPlant"));
+        registerBlock(771, "pea_plant", (new BlockCustomCrops(5)).setUnlocalizedName("peaPlant"));
+        registerBlock(772, "leek_plant", (new BlockCustomCrops(5)).setUnlocalizedName("leekPlant"));
+        registerBlock(773, "onion_plant", (new BlockCustomCrops(5)).setUnlocalizedName("onionPlant"));
+        registerBlock(774, "old_toby_plant", (new BlockCustomCrops(3)).setUnlocalizedName("oldTobyPlant"));
+        registerBlock(775, "southern_star_plant", (new BlockCustomCrops(3)).setUnlocalizedName("southernStarPlant"));
+        registerBlock(776, "strawberry_bush", (new BlockCustomCrops(4)).setUnlocalizedName("strawberryBush"));
         registerBlock(777, "shire_garden_flower", (new BlockCustomFlower(new AxisAlignedBB(2.0 / 16, 0.0D, 2.0 / 16, 14.0 / 16, 11.0 / 16, 14.0 / 16))).setUnlocalizedName("shireGardenFlower"));
         registerBlock(778, "pile_of_coins", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("pileOfCoins").setCreativeTab(CreativeTabs.BUILDING_BLOCKS)); // TODO custom step sound
         registerBlock(779, "grey_column", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("greyColumn").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));

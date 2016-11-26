@@ -1,5 +1,6 @@
 package net.minecraft.init;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemArmorStand;
@@ -9,6 +10,7 @@ import net.minecraft.item.ItemEnchantedBook;
 import net.minecraft.item.ItemFishingRod;
 import net.minecraft.item.ItemMap;
 import net.minecraft.item.ItemPotion;
+import net.minecraft.item.ItemSeeds;
 import net.minecraft.item.ItemShears;
 import net.minecraft.util.ResourceLocation;
 
@@ -223,7 +225,10 @@ public class Items
     public static final Item BLUE_BED;
     public static final Item BROWN_BED;
     public static final Item BREE_DOOR;
+    public static final Item STRAWBERRY;
+    public static final Item SOUTHERN_STAR;
     public static final Item SOUTHLINCH;
+    public static final Item OLD_TOBY;
     public static final Item DWARF_DOOR;
     public static final Item ELVEN_DOOR;
     public static final Item HUMAN_DOOR;
@@ -235,6 +240,16 @@ public class Items
     public static final Item PRISON_DOOR;
     public static final Item SINDAR_DOOR;
     public static final Item SOUTHLINCH_SEED;
+    public static final Item PIPEWEED_SEED;
+    public static final Item PEA_SEED;
+    public static final Item PEAS;
+    public static final Item LEEK;
+    public static final Item LEEK_SEED;
+    public static final Item ONION_SEED;
+    public static final Item ONION;
+    public static final Item OLD_TOBY_SEED;
+    public static final Item SOUTHERN_STAR_SEED;
+    public static final Item STRAWBERRY_SEED;
     // End Awaken Dreams code
 
     private static Item getRegisteredItem(String name)
@@ -471,8 +486,14 @@ public class Items
             Blocks.BROWN_BED.setItem(BROWN_BED);
             BREE_DOOR = getRegisteredItem("bree_door");
             Blocks.BREE_DOOR.setItem(BREE_DOOR);
+            STRAWBERRY = getRegisteredItem("strawberry");
+            Blocks.STRAWBERRY_BUSH.setCrop(STRAWBERRY);
+            SOUTHERN_STAR = getRegisteredItem("southern_star");
+            Blocks.SOUTHERN_STAR_PLANT.setCrop(SOUTHERN_STAR);
             SOUTHLINCH = getRegisteredItem("southlinch");
             Blocks.SOUTHLINCH.setCrop(SOUTHLINCH);
+            OLD_TOBY = getRegisteredItem("old_toby");
+            Blocks.OLD_TOBY_PLANT.setCrop(OLD_TOBY);
             DWARF_DOOR = getRegisteredItem("dwarf_door");
             Blocks.DWARF_DOOR.setItem(DWARF_DOOR);
             ELVEN_DOOR = getRegisteredItem("elven_door");
@@ -495,6 +516,26 @@ public class Items
             Blocks.SINDAR_DOOR.setItem(SINDAR_DOOR);
             SOUTHLINCH_SEED = getRegisteredItem("southlinch_seed");
             Blocks.SOUTHLINCH.setSeed(SOUTHLINCH_SEED);
+            PIPEWEED_SEED = getRegisteredItem("pipeweed_seed");
+            Blocks.PIPEWEED_PLANT.setSeed(PIPEWEED_SEED);
+            PEA_SEED = getRegisteredItem("pea_seed");
+            Blocks.PEA_PLANT.setSeed(PEA_SEED);
+            PEAS = getRegisteredItem("peas");
+            Blocks.PEA_PLANT.setCrop(PEAS);
+            LEEK = getRegisteredItem("leek");
+            Blocks.LEEK_PLANT.setCrop(LEEK);
+            LEEK_SEED = getRegisteredItem("leek_seed");
+            Blocks.LEEK_PLANT.setSeed(LEEK_SEED);
+            ONION_SEED = getRegisteredItem("onion_seed");
+            Blocks.ONION_PLANT.setSeed(ONION_SEED);
+            ONION = getRegisteredItem("onion");
+            Blocks.ONION_PLANT.setCrop(ONION);
+            OLD_TOBY_SEED = getRegisteredItem("old_toby_seed");
+            Blocks.OLD_TOBY_PLANT.setSeed(OLD_TOBY_SEED);
+            SOUTHERN_STAR_SEED = getRegisteredItem("southern_star_seed");
+            Blocks.SOUTHERN_STAR_PLANT.setSeed(SOUTHERN_STAR_SEED);
+            STRAWBERRY_SEED = getRegisteredItem("strawberry_seed");
+            Blocks.STRAWBERRY_BUSH.setSeed(STRAWBERRY_SEED);
             // End Awaken Dreams code
         }
     }

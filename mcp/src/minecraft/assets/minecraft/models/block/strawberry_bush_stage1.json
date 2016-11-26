@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "blocks/strawberry_bush_stage_1"
+    }
+}

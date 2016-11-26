@@ -485,6 +485,13 @@ public class Blocks
     public static final BlockCustomDoor SINDAR_DOOR;
     public static final Block LORILENDEL;
     public static final BlockCustomCrops SOUTHLINCH;
+    public static final BlockCustomCrops PIPEWEED_PLANT;
+    public static final BlockCustomCrops PEA_PLANT;
+    public static final BlockCustomCrops LEEK_PLANT;
+    public static final BlockCustomCrops ONION_PLANT;
+    public static final BlockCustomCrops OLD_TOBY_PLANT;
+    public static final BlockCustomCrops SOUTHERN_STAR_PLANT;
+    public static final BlockCustomCrops STRAWBERRY_BUSH;
     public static final Block SHIRE_GARDEN_FLOWER;
     public static final Block PILE_OF_COINS;
     public static final Block GREY_COLUMN;
@@ -962,6 +969,13 @@ public class Blocks
             SINDAR_DOOR = (BlockCustomDoor)getRegisteredBlock("sindar_door");
             LORILENDEL = getRegisteredBlock("lorilendel");
             SOUTHLINCH = (BlockCustomCrops)getRegisteredBlock("southlinch");
+            PIPEWEED_PLANT = (BlockCustomCrops)getRegisteredBlock("pipeweed_plant");
+            PEA_PLANT = (BlockCustomCrops)getRegisteredBlock("pea_plant");
+            LEEK_PLANT = (BlockCustomCrops)getRegisteredBlock("leek_plant");
+            ONION_PLANT = (BlockCustomCrops)getRegisteredBlock("onion_plant");
+            OLD_TOBY_PLANT = (BlockCustomCrops)getRegisteredBlock("old_toby_plant");
+            SOUTHERN_STAR_PLANT = (BlockCustomCrops)getRegisteredBlock("southern_star_plant");
+            STRAWBERRY_BUSH = (BlockCustomCrops)getRegisteredBlock("strawberry_bush");
             SHIRE_GARDEN_FLOWER = getRegisteredBlock("shire_garden_flower");
             PILE_OF_COINS = getRegisteredBlock("pile_of_coins");
             GREY_COLUMN = getRegisteredBlock("grey_column");

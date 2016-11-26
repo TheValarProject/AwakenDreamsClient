@@ -41,12 +41,14 @@ import net.minecraft.client.resources.IResourceManagerReloadListener;
 import net.minecraft.crash.CrashReport;
 import net.minecraft.crash.CrashReportCategory;
 import net.minecraft.crash.ICrashReportDetail;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFishFood;
+import net.minecraft.item.ItemSeeds;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntityStructure;
 import net.minecraft.util.EnumFacing;
@@ -1293,7 +1295,10 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.BLUE_BED, "blue_bed");
         this.registerItem(Items.BROWN_BED, "brown_bed");
         this.registerItem(Items.BREE_DOOR, "bree_door");
+        this.registerItem(Items.STRAWBERRY, "strawberry");
+        this.registerItem(Items.SOUTHERN_STAR, "southern_star");
         this.registerItem(Items.SOUTHLINCH, "southlinch");
+        this.registerItem(Items.OLD_TOBY, "old_toby");
         this.registerItem(Items.DWARF_DOOR, "dwarf_door");
         this.registerItem(Items.ELVEN_DOOR, "elven_door");
         this.registerItem(Items.HUMAN_DOOR, "human_door");
@@ -1305,6 +1310,16 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.PRISON_DOOR, "prison_door");
         this.registerItem(Items.SINDAR_DOOR, "sindar_door");
         this.registerItem(Items.SOUTHLINCH_SEED, "southlinch_seed");
+        this.registerItem(Items.PIPEWEED_SEED, "pipeweed_seed");
+        this.registerItem(Items.PEA_SEED, "pea_seed");
+        this.registerItem(Items.PEAS, "peas");
+        this.registerItem(Items.LEEK, "leek");
+        this.registerItem(Items.LEEK_SEED, "leek_seed");
+        this.registerItem(Items.ONION_SEED, "onion_seed");
+        this.registerItem(Items.ONION, "onion");
+        this.registerItem(Items.OLD_TOBY_SEED, "old_toby_seed");
+        this.registerItem(Items.SOUTHERN_STAR_SEED, "southern_star_seed");
+        this.registerItem(Items.STRAWBERRY_SEED, "strawberry_seed");
         // End Awaken Dreams code
     }
 

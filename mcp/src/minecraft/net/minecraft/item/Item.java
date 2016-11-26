@@ -1328,9 +1328,10 @@ public class Item
         itemRegistry.addObject(6060, "coconut", (new ItemValarFood(1, 0.3F, false).setUnlocalizedName("coconut").setTextureName("coconut")));
         itemRegistry.addObject(6061, "raw_deer_meat", (new ItemValarFood(3, 0.4F, false).setUnlocalizedName("rawDeerMeat").setTextureName("raw_deer_meat")));
         itemRegistry.addObject(6062, "cooked_deer_meat", (new ItemValarFood(5, 0.6F, false).setUnlocalizedName("cookedDeerMeat").setTextureName("cooked_deer_meat")));
-        itemRegistry.addObject(6063, "muffin", (new ItemValarFood(1, 0.4F, false).setUnlocalizedName("muffin").setTextureName("muffin")));
-        itemRegistry.addObject(6064, "strawberry", (new ItemValarFood(2, 0.3F, false).setUnlocalizedName("strawberry").setTextureName("strawberry")));
-        itemRegistry.addObject(6065, "strawberry_muffin", (new ItemValarFood(3, 0.6F, false).setUnlocalizedName("strawberryMuffin").setTextureName("strawberry_muffin")));
+        itemRegistry.addObject(6063, "muffin", (new ItemValarFood(1, 0.4F, false).setUnlocalizedName("muffin").setTextureName("muffin")));*/
+        //registerItem(6064, "strawberry", (new ItemValarFood(2, 0.3F, false).setUnlocalizedName("strawberry").setTextureName("strawberry")));
+        registerItem(6064, "strawberry", (new Item()).setUnlocalizedName("strawberry").setCreativeTab(CreativeTabs.FOOD));
+        /*itemRegistry.addObject(6065, "strawberry_muffin", (new ItemValarFood(3, 0.6F, false).setUnlocalizedName("strawberryMuffin").setTextureName("strawberry_muffin")));
         itemRegistry.addObject(6066, "orange", (new ItemValarFood(2, 0.6F, false).setUnlocalizedName("orange").setTextureName("orange")));
         itemRegistry.addObject(6067, "orange_muffin", (new ItemValarFood(3, 0.6F, false).setUnlocalizedName("orangeMuffin").setTextureName("orange_muffin")));
         itemRegistry.addObject(6068, "pear", (new ItemValarFood(2, 0.6F, false).setUnlocalizedName("pear").setTextureName("pear")));
@@ -1361,14 +1362,13 @@ public class Item
         //itemRegistry.addObject(6093, "miruvor", (new ItemValarBase().setUnlocalizedName("miruvor").setTextureName("miruvor")));
         //itemRegistry.addObject(6094, "orange_potion", (new ItemValarBase().setUnlocalizedName("orangePotion").setTextureName("orange_potion")));
         //itemRegistry.addObject(6095, "red_potion", (new ItemValarBase().setUnlocalizedName("redPotion").setTextureName("red_potion")));
-        //itemRegistry.addObject(6096, "yellow_potion", (new ItemValarBase().setUnlocalizedName("yellowPotion").setTextureName("yellow_potion")));
-        itemRegistry.addObject(6097, "southern_star", (new ItemValarBase().setUnlocalizedName("southernStar").setTextureName("southern_star")));*/
+        //itemRegistry.addObject(6096, "yellow_potion", (new ItemValarBase().setUnlocalizedName("yellowPotion").setTextureName("yellow_potion")));*/
+        registerItem(6097, "southern_star", (new Item()).setUnlocalizedName("southernStar").setCreativeTab(CreativeTabs.MATERIALS));
         registerItem(6098, "southlinch", (new Item()).setUnlocalizedName("southlinch").setCreativeTab(CreativeTabs.MATERIALS));
         /*itemRegistry.addObject(6099, "gondorian_tobacco", (new ItemValarBase().setUnlocalizedName("gondorianTobacco").setTextureName("gondorian_tobacco")));
-        itemRegistry.addObject(6100, "longbottom_leaf", (new ItemValarBase().setUnlocalizedName("longbottomLeaf").setTextureName("longbottom_leaf")));
-        // Temporary break (remove this comment if you do not know what it is)
-        itemRegistry.addObject(6101, "old_toby", (new ItemValarBase().setUnlocalizedName("oldToby").setTextureName("old_toby")));
-        itemRegistry.addObject(6102, "brown_pipe", (new ItemValarBase().setUnlocalizedName("brownPipe").setTextureName("brown_pipe")));
+        itemRegistry.addObject(6100, "longbottom_leaf", (new ItemValarBase().setUnlocalizedName("longbottomLeaf").setTextureName("longbottom_leaf")));*/
+        registerItem(6101, "old_toby", (new Item()).setUnlocalizedName("oldToby").setCreativeTab(CreativeTabs.MATERIALS));
+        /*itemRegistry.addObject(6102, "brown_pipe", (new ItemValarBase().setUnlocalizedName("brownPipe").setTextureName("brown_pipe")));
         itemRegistry.addObject(6103, "stone_of_darkness", (new ItemValarBase().setUnlocalizedName("stoneOfDarkness").setTextureName("stone_of_darkness")));
         itemRegistry.addObject(6104, "stone_of_earth", (new ItemValarBase().setUnlocalizedName("stoneOfEarth").setTextureName("stone_of_earth")));
         itemRegistry.addObject(6105, "stone_of_fire", (new ItemValarBase().setUnlocalizedName("stoneOfFire").setTextureName("stone_of_fire")));
@@ -1579,18 +1579,21 @@ public class Item
         /*itemRegistry.addObject(6310, "green_grape_seed", (new ItemValarCrops((BlockValarCrops)Blocks.greenGrape)).setUnlocalizedName("greenGrapeSeed").setTextureName("green_grape_seed"));
         itemRegistry.addObject(6311, "green_grapes", (new ItemValarFood(2, 0.3F, false)).setUnlocalizedName("greenGrapes").setTextureName("green_grapes"));
         itemRegistry.addObject(6312, "purple_grape_seed", (new ItemValarCrops((BlockValarCrops)Blocks.purpleGrape)).setUnlocalizedName("purpleGrapeSeed").setTextureName("purple_grape_seed"));
-        itemRegistry.addObject(6313, "purple_grapes", (new ItemValarFood(2, 0.3F, false)).setUnlocalizedName("purpleGrapes").setTextureName("purple_grapes"));
-        itemRegistry.addObject(6314, "pipeweed_seed", (new ItemValarCrops((BlockValarCrops)Blocks.pipeweedPlant)).setUnlocalizedName("pipeweedSeed").setTextureName("pipeweed_seed"));
-        itemRegistry.addObject(6315, "pea_seed", (new ItemValarCrops((BlockValarCrops)Blocks.peaPlant)).setUnlocalizedName("peaSeed").setTextureName("pea_seed"));
-        itemRegistry.addObject(6316, "peas", (new ItemValarFood(1, 0.6F, false)).setUnlocalizedName("peas").setTextureName("peas"));
-        itemRegistry.addObject(6317, "leek", (new ItemValarFood(3, 0.6F, false)).setUnlocalizedName("leek").setTextureName("leek"));
-        itemRegistry.addObject(6318, "leek_seed", (new ItemValarCrops((BlockValarCrops)Blocks.leekPlant)).setUnlocalizedName("leekSeed").setTextureName("leek_seed"));
-        itemRegistry.addObject(6319, "onion_seed", (new ItemValarCrops((BlockValarCrops)Blocks.onionPlant)).setUnlocalizedName("onionSeed").setTextureName("onion_seed"));
-        itemRegistry.addObject(6320, "onion", (new ItemValarFood(3, 0.6F, false)).setUnlocalizedName("onion").setTextureName("onion"));
-        itemRegistry.addObject(6321, "old_toby_seed", (new ItemValarCrops((BlockValarCrops)Blocks.oldTobyPlant)).setUnlocalizedName("oldTobySeed").setTextureName("old_toby_seed"));
-        itemRegistry.addObject(6322, "southern_star_seed", (new ItemValarCrops((BlockValarCrops)Blocks.southernStarPlant)).setUnlocalizedName("southernStarSeed").setTextureName("southern_star_seed"));
-        itemRegistry.addObject(6323, "strawberry_seed", (new ItemValarCrops((BlockValarCrops)Blocks.strawberryBush)).setUnlocalizedName("strawberrySeed").setTextureName("strawberry_seed"));
-        itemRegistry.addObject(6324, "azogs_mace", (new ItemValarWeapon(3500, 7, 0, true, false)).setUnlocalizedName("azogsMace").setTextureName("azogs_mace"));
+        itemRegistry.addObject(6313, "purple_grapes", (new ItemValarFood(2, 0.3F, false)).setUnlocalizedName("purpleGrapes").setTextureName("purple_grapes"));*/
+        registerItem(6314, "pipeweed_seed", (new ItemSeeds(Blocks.PIPEWEED_PLANT, Blocks.FARMLAND)).setUnlocalizedName("pipeweedSeed"));
+        registerItem(6315, "pea_seed", (new ItemSeeds(Blocks.PEA_PLANT, Blocks.FARMLAND)).setUnlocalizedName("peaSeed"));
+        //registerItem(6316, "peas", (new ItemValarFood(1, 0.6F, false)).setUnlocalizedName("peas"));
+        registerItem(6316, "peas", (new Item()).setUnlocalizedName("peas").setCreativeTab(CreativeTabs.FOOD));
+        //registerItem(6317, "leek", (new ItemValarFood(3, 0.6F, false)).setUnlocalizedName("leek"));
+        registerItem(6317, "leek", (new Item()).setUnlocalizedName("leek").setCreativeTab(CreativeTabs.FOOD));
+        registerItem(6318, "leek_seed", (new ItemSeeds(Blocks.LEEK_PLANT, Blocks.FARMLAND)).setUnlocalizedName("leekSeed"));
+        registerItem(6319, "onion_seed", (new ItemSeeds(Blocks.ONION_PLANT, Blocks.FARMLAND)).setUnlocalizedName("onionSeed"));
+        //registerItem(6320, "onion", (new ItemValarFood(3, 0.6F, false)).setUnlocalizedName("onion"));
+        registerItem(6320, "onion", (new Item()).setUnlocalizedName("onion").setCreativeTab(CreativeTabs.FOOD));
+        registerItem(6321, "old_toby_seed", (new ItemSeeds(Blocks.OLD_TOBY_PLANT, Blocks.FARMLAND)).setUnlocalizedName("oldTobySeed"));
+        registerItem(6322, "southern_star_seed", (new ItemSeeds(Blocks.SOUTHERN_STAR_PLANT, Blocks.FARMLAND)).setUnlocalizedName("southernStarSeed"));
+        registerItem(6323, "strawberry_seed", (new ItemSeeds(Blocks.STRAWBERRY_BUSH, Blocks.FARMLAND)).setUnlocalizedName("strawberrySeed"));
+        /*itemRegistry.addObject(6324, "azogs_mace", (new ItemValarWeapon(3500, 7, 0, true, false)).setUnlocalizedName("azogsMace").setTextureName("azogs_mace"));
         // Temporary Id, change to proper id when adding items
         //itemRegistry.addObject(10002, "rucksack", (new ItemValarRucksack()).setUnlocalizedName("rucksack").setTextureName("rucksack"));
         //itemRegistry.addObject(10003, "frodos_finger", (new ItemValarFood(2, 0.1F, true).setUnlocalizedName("frodosFinger").setTextureName("frodos_finger")));
