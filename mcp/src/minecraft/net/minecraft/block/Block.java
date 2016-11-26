@@ -5,6 +5,7 @@ import com.elementfx.tvp.ad.block.Block3DDirectional;
 import com.elementfx.tvp.ad.block.BlockArchetLamp;
 import com.elementfx.tvp.ad.block.BlockCandle;
 import com.elementfx.tvp.ad.block.BlockCustomBed;
+import com.elementfx.tvp.ad.block.BlockCustomCrops;
 import com.elementfx.tvp.ad.block.BlockCustomDoor;
 import com.elementfx.tvp.ad.block.BlockCustomFlower;
 import com.elementfx.tvp.ad.block.BlockDwarvenTorch;
@@ -1613,7 +1614,7 @@ public class Block
         //registerBlock(764, "haradwaith_fern", (new BlockValarFlower()).setPlantBounds(28, 31).setUnlocalizedName("haradwaithFern").setBlockTextureName("haradwaith_fern"));
         registerBlock(765, "lorilendel", (new BlockCustomFlower()).setUnlocalizedName("lorilendel"));
         //registerBlock(766, "stakes", (new BlockValarCustomRender(Material.plants, CreativeTabs.tabDecorations, 106).setUnlocalizedName("stakes").setBlockTextureName("stakes")));
-        //registerBlock(767, "southlinch", (new BlockValarCrops(5)).setRenderType(1).setItemSeed("southlinch_seed").setItemYield("south_linch").setUnlocalizedName("southlinch").setBlockTextureName("southlinch"));
+        registerBlock(767, "southlinch", (new BlockCustomCrops(5)).setUnlocalizedName("southlinch"));
         //registerBlock(768, "green_grape", (new BlockValarCrops(5)).setRenderType(106).setItemSeed("green_grape_seed").setItemYield("green_grapes").setRequiresStakes(true).setUnlocalizedName("greenGrape").setBlockTextureName("green_grape"));
         //registerBlock(769, "purple_grape", (new BlockValarCrops(5)).setRenderType(106).setItemSeed("purple_grape_seed").setItemYield("purple_grapes").setRequiresStakes(true).setUnlocalizedName("purpleGrape").setBlockTextureName("purple_grape"));
         //registerBlock(770, "pipeweed_plant", (new BlockValarCrops(5)).setRenderType(1).setItemSeed("pipeweed_seed").setUnlocalizedName("pipeweedPlant").setBlockTextureName("pipeweed_plant"));

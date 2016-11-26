@@ -1293,6 +1293,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.BLUE_BED, "blue_bed");
         this.registerItem(Items.BROWN_BED, "brown_bed");
         this.registerItem(Items.BREE_DOOR, "bree_door");
+        this.registerItem(Items.SOUTHLINCH, "southlinch");
         this.registerItem(Items.DWARF_DOOR, "dwarf_door");
         this.registerItem(Items.ELVEN_DOOR, "elven_door");
         this.registerItem(Items.HUMAN_DOOR, "human_door");
@@ -1303,6 +1304,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.MORDOR_DOOR, "mordor_door");
         this.registerItem(Items.PRISON_DOOR, "prison_door");
         this.registerItem(Items.SINDAR_DOOR, "sindar_door");
+        this.registerItem(Items.SOUTHLINCH_SEED, "southlinch_seed");
         // End Awaken Dreams code
     }
 

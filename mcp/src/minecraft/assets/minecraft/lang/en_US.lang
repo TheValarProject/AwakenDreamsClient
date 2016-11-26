@@ -1324,6 +1324,7 @@ item.elytra.name=Elytra
 item.blueBed.name=Blue Bed
 item.brownBed.name=Brown Bed 
 item.breeDoor.name=Bree Door
+item.southlinch.name=Southlinch
 item.dwarfDoor.name=Dwarf Door
 item.elvenDoor.name=Elven Door
 item.humanDoor.name=Human Door
@@ -1334,6 +1335,7 @@ item.hillmenDoor.name=Hillmen Door
 item.mordorDoor.name=Mordor Door
 item.prisonDoor.name=Prison Door
 item.sindarDoor.name=Sindar Door
+item.southlinchSeed.name=Southlinch Seed
 
 container.inventory=Inventory
 container.hopper=Item Hopper

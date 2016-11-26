@@ -1,6 +1,7 @@
 package net.minecraft.init;
 
 import com.elementfx.tvp.ad.block.BlockCustomBed;
+import com.elementfx.tvp.ad.block.BlockCustomCrops;
 import com.elementfx.tvp.ad.block.BlockCustomDoor;
 import com.google.common.collect.Sets;
 import java.util.Set;
@@ -483,6 +484,7 @@ public class Blocks
     public static final BlockCustomDoor PRISON_DOOR;
     public static final BlockCustomDoor SINDAR_DOOR;
     public static final Block LORILENDEL;
+    public static final BlockCustomCrops SOUTHLINCH;
     public static final Block SHIRE_GARDEN_FLOWER;
     public static final Block PILE_OF_COINS;
     public static final Block GREY_COLUMN;
@@ -959,6 +961,7 @@ public class Blocks
             PRISON_DOOR = (BlockCustomDoor)getRegisteredBlock("prison_door");
             SINDAR_DOOR = (BlockCustomDoor)getRegisteredBlock("sindar_door");
             LORILENDEL = getRegisteredBlock("lorilendel");
+            SOUTHLINCH = (BlockCustomCrops)getRegisteredBlock("southlinch");
             SHIRE_GARDEN_FLOWER = getRegisteredBlock("shire_garden_flower");
             PILE_OF_COINS = getRegisteredBlock("pile_of_coins");
             GREY_COLUMN = getRegisteredBlock("grey_column");

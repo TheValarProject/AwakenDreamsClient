@@ -1,6 +1,7 @@
 package net.minecraft.item;
 
 import com.elementfx.tvp.ad.block.BlockCustomBed;
+import com.elementfx.tvp.ad.block.BlockCustomCrops;
 import com.elementfx.tvp.ad.item.ItemCustomBed;
 import com.google.common.base.Function;
 import com.google.common.collect.HashMultimap;
@@ -1361,9 +1362,9 @@ public class Item
         //itemRegistry.addObject(6094, "orange_potion", (new ItemValarBase().setUnlocalizedName("orangePotion").setTextureName("orange_potion")));
         //itemRegistry.addObject(6095, "red_potion", (new ItemValarBase().setUnlocalizedName("redPotion").setTextureName("red_potion")));
         //itemRegistry.addObject(6096, "yellow_potion", (new ItemValarBase().setUnlocalizedName("yellowPotion").setTextureName("yellow_potion")));
-        itemRegistry.addObject(6097, "southern_star", (new ItemValarBase().setUnlocalizedName("southernStar").setTextureName("southern_star")));
-        itemRegistry.addObject(6098, "south_linch", (new ItemValarBase().setUnlocalizedName("southLinch").setTextureName("south_linch")));
-        itemRegistry.addObject(6099, "gondorian_tobacco", (new ItemValarBase().setUnlocalizedName("gondorianTobacco").setTextureName("gondorian_tobacco")));
+        itemRegistry.addObject(6097, "southern_star", (new ItemValarBase().setUnlocalizedName("southernStar").setTextureName("southern_star")));*/
+        registerItem(6098, "southlinch", (new Item()).setUnlocalizedName("southlinch").setCreativeTab(CreativeTabs.MATERIALS));
+        /*itemRegistry.addObject(6099, "gondorian_tobacco", (new ItemValarBase().setUnlocalizedName("gondorianTobacco").setTextureName("gondorian_tobacco")));
         itemRegistry.addObject(6100, "longbottom_leaf", (new ItemValarBase().setUnlocalizedName("longbottomLeaf").setTextureName("longbottom_leaf")));
         // Temporary break (remove this comment if you do not know what it is)
         itemRegistry.addObject(6101, "old_toby", (new ItemValarBase().setUnlocalizedName("oldToby").setTextureName("old_toby")));
@@ -1574,8 +1575,8 @@ public class Item
         registerItem(6306, "mordor_door", (new ItemDoor(Blocks.MORDOR_DOOR)).setUnlocalizedName("mordorDoor"));
         registerItem(6307, "prison_door", (new ItemDoor(Blocks.PRISON_DOOR)).setUnlocalizedName("prisonDoor"));
         registerItem(6308, "sindar_door", (new ItemDoor(Blocks.SINDAR_DOOR)).setUnlocalizedName("sindarDoor"));
-        /*itemRegistry.addObject(6309, "southlinch_seed", (new ItemValarCrops((BlockValarCrops)Blocks.southlinch)).setUnlocalizedName("southlinchSeed").setTextureName("southlinch_seed"));
-        itemRegistry.addObject(6310, "green_grape_seed", (new ItemValarCrops((BlockValarCrops)Blocks.greenGrape)).setUnlocalizedName("greenGrapeSeed").setTextureName("green_grape_seed"));
+        registerItem(6309, "southlinch_seed", (new ItemSeeds(Blocks.SOUTHLINCH, Blocks.FARMLAND)).setUnlocalizedName("southlinchSeed"));
+        /*itemRegistry.addObject(6310, "green_grape_seed", (new ItemValarCrops((BlockValarCrops)Blocks.greenGrape)).setUnlocalizedName("greenGrapeSeed").setTextureName("green_grape_seed"));
         itemRegistry.addObject(6311, "green_grapes", (new ItemValarFood(2, 0.3F, false)).setUnlocalizedName("greenGrapes").setTextureName("green_grapes"));
         itemRegistry.addObject(6312, "purple_grape_seed", (new ItemValarCrops((BlockValarCrops)Blocks.purpleGrape)).setUnlocalizedName("purpleGrapeSeed").setTextureName("purple_grape_seed"));
         itemRegistry.addObject(6313, "purple_grapes", (new ItemValarFood(2, 0.3F, false)).setUnlocalizedName("purpleGrapes").setTextureName("purple_grapes"));

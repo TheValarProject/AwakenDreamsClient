@@ -223,6 +223,7 @@ public class Items
     public static final Item BLUE_BED;
     public static final Item BROWN_BED;
     public static final Item BREE_DOOR;
+    public static final Item SOUTHLINCH;
     public static final Item DWARF_DOOR;
     public static final Item ELVEN_DOOR;
     public static final Item HUMAN_DOOR;
@@ -233,6 +234,7 @@ public class Items
     public static final Item MORDOR_DOOR;
     public static final Item PRISON_DOOR;
     public static final Item SINDAR_DOOR;
+    public static final Item SOUTHLINCH_SEED;
     // End Awaken Dreams code
 
     private static Item getRegisteredItem(String name)
@@ -469,6 +471,8 @@ public class Items
             Blocks.BROWN_BED.setItem(BROWN_BED);
             BREE_DOOR = getRegisteredItem("bree_door");
             Blocks.BREE_DOOR.setItem(BREE_DOOR);
+            SOUTHLINCH = getRegisteredItem("southlinch");
+            Blocks.SOUTHLINCH.setCrop(SOUTHLINCH);
             DWARF_DOOR = getRegisteredItem("dwarf_door");
             Blocks.DWARF_DOOR.setItem(DWARF_DOOR);
             ELVEN_DOOR = getRegisteredItem("elven_door");
@@ -489,6 +493,8 @@ public class Items
             Blocks.PRISON_DOOR.setItem(PRISON_DOOR);
             SINDAR_DOOR = getRegisteredItem("sindar_door");
             Blocks.SINDAR_DOOR.setItem(SINDAR_DOOR);
+            SOUTHLINCH_SEED = getRegisteredItem("southlinch_seed");
+            Blocks.SOUTHLINCH.setSeed(SOUTHLINCH_SEED);
             // End Awaken Dreams code
         }
     }
