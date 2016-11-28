@@ -1296,10 +1296,27 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.STRUCTURE_BLOCK, TileEntityStructure.Mode.CORNER.getModeId(), "structure_block");
         this.registerBlock(Blocks.STRUCTURE_BLOCK, TileEntityStructure.Mode.DATA.getModeId(), "structure_block");
         // Begin Awaken Dreams code
+        this.registerItem(Items.LEMBAS, "lembas");
+        this.registerItem(Items.TOMATO, "tomato");
+        this.registerItem(Items.NUTS, "nuts");
+        this.registerItem(Items.CORN_COB, "corn_cob");
+        this.registerItem(Items.BERRIES, "berries");
         this.registerItem(Items.BLUE_BED, "blue_bed");
         this.registerItem(Items.BROWN_BED, "brown_bed");
         this.registerItem(Items.BREE_DOOR, "bree_door");
+        this.registerItem(Items.CRAM, "cram");
+        this.registerItem(Items.CABBAGE, "cabbage");
+        this.registerItem(Items.COCONUT, "coconut");
+        this.registerItem(Items.RAW_DEER_MEAT, "raw_deer_meat");
+        this.registerItem(Items.COOKED_DEER_MEAT, "cooked_deer_meat");
+        this.registerItem(Items.MUFFIN, "muffin");
         this.registerItem(Items.STRAWBERRY, "strawberry");
+        this.registerItem(Items.STRAWBERRY_MUFFIN, "strawberry_muffin");
+        this.registerItem(Items.ORANGE, "orange");
+        this.registerItem(Items.ORANGE_MUFFIN, "orange_muffin");
+        this.registerItem(Items.PEAR, "pear");
+        this.registerItem(Items.RAW_MEAT, "raw_meat");
+        this.registerItem(Items.COOKED_MEAT, "cooked_meat");
         this.registerItem(Items.SOUTHERN_STAR, "southern_star");
         this.registerItem(Items.SOUTHLINCH, "southlinch");
         this.registerItem(Items.OLD_TOBY, "old_toby");
@@ -1314,6 +1331,8 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.PRISON_DOOR, "prison_door");
         this.registerItem(Items.SINDAR_DOOR, "sindar_door");
         this.registerItem(Items.SOUTHLINCH_SEED, "southlinch_seed");
+        this.registerItem(Items.GREEN_GRAPES, "green_grapes");
+        this.registerItem(Items.PURPLE_GRAPES, "purple_grapes");
         this.registerItem(Items.PIPEWEED_SEED, "pipeweed_seed");
         this.registerItem(Items.PEA_SEED, "pea_seed");
         this.registerItem(Items.PEAS, "peas");

@@ -3,6 +3,7 @@ package net.minecraft.item;
 import com.elementfx.tvp.ad.block.BlockCustomBed;
 import com.elementfx.tvp.ad.block.BlockCustomCrops;
 import com.elementfx.tvp.ad.item.ItemCustomBed;
+import com.elementfx.tvp.ad.item.ItemCustomFood;
 import com.google.common.base.Function;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Maps;
@@ -1270,8 +1271,8 @@ public class Item
         registerItem(2266, "record_11", (new ItemRecord("11", SoundEvents.RECORD_11)).setUnlocalizedName("record"));
         registerItem(2267, "record_wait", (new ItemRecord("wait", SoundEvents.RECORD_WAIT)).setUnlocalizedName("record"));
         // Begin Awaken Dreams code
-        /*itemRegistry.addObject(6000, "lembas", (new ItemValarFood(8, 0.8F, false).setUnlocalizedName("lembas").setTextureName("lembas")));
-        itemRegistry.addObject(6001, "mithril_ingot", (new ItemValarBase(CreativeTabs.tabMaterials).setUnlocalizedName("mithrilIngot").setTextureName("mithril_ingot")));
+        registerItem(6000, "lembas", (new ItemCustomFood(8, 0.8F, false)).setUnlocalizedName("lembas"));
+        /*itemRegistry.addObject(6001, "mithril_ingot", (new ItemValarBase(CreativeTabs.tabMaterials).setUnlocalizedName("mithrilIngot").setTextureName("mithril_ingot")));
         itemRegistry.addObject(6002, "bronze_ingot", (new ItemValarBase(CreativeTabs.tabMaterials).setUnlocalizedName("bronzeIngot").setTextureName("bronze_ingot")));
         itemRegistry.addObject(6003, "pipe", (new ItemValarBase().setUnlocalizedName("pipe").setTextureName("pipe")));
         itemRegistry.addObject(6004, "tobacco", (new ItemValarBase().setUnlocalizedName("tobacco").setTextureName("tobacco")));
@@ -1291,24 +1292,24 @@ public class Item
         //itemRegistry.addObject(6018, "quartz", (new ItemValarBase().setUnlocalizedName("quartz").setTextureName("quartz")));
         itemRegistry.addObject(6019, "tanzanite", (new ItemValarBase(CreativeTabs.tabMaterials).setUnlocalizedName("tanzanite").setTextureName("tanzanite")));
         itemRegistry.addObject(6020, "uruk_sword", (new ItemValarWeapon(510, 7, 0, true, false).setUnlocalizedName("urukSword").setTextureName("uruk_sword")));
-        itemRegistry.addObject(6021, "phial_of_galadriel", (new ItemValarBase().setUnlocalizedName("phialOfGaladriel").setTextureName("phial_of_galadriel")));
-        itemRegistry.addObject(6022, "tomato", (new ItemValarFood(1, 0.1F, false).setUnlocalizedName("tomato").setTextureName("tomato")));
-        itemRegistry.addObject(6023, "blue_feather", (new ItemValarBase(CreativeTabs.tabMaterials).setUnlocalizedName("blueFeather").setTextureName("blue_feather")));
+        itemRegistry.addObject(6021, "phial_of_galadriel", (new ItemValarBase().setUnlocalizedName("phialOfGaladriel").setTextureName("phial_of_galadriel")));*/
+        registerItem(6022, "tomato", (new ItemCustomFood(1, 0.1F, false)).setUnlocalizedName("tomato"));
+        /*itemRegistry.addObject(6023, "blue_feather", (new ItemValarBase(CreativeTabs.tabMaterials).setUnlocalizedName("blueFeather").setTextureName("blue_feather")));
         //itemRegistry.addObject(6024, "rain_stick", (new ItemValarBase().setUnlocalizedName("rainStick").setTextureName("rain_stick")));
         //itemRegistry.addObject(6025, "sun_staff", (new ItemValarBase().setUnlocalizedName("sunStaff").setTextureName("sun_staff")));
         itemRegistry.addObject(6026, "spider_poison", (new ItemValarBase(CreativeTabs.tabMaterials).setUnlocalizedName("spiderPoison").setTextureName("spider_poison")));
         //itemRegistry.addObject(6027, "life_staff", (new ItemValarBase().setUnlocalizedName("lifeStaff").setTextureName("life_staff")));
-        itemRegistry.addObject(6028, "herugrim", (new ItemValarWeapon(830, 7, 0, true, false).setUnlocalizedName("herugrim").setTextureName("herugrim")));
-        itemRegistry.addObject(6029, "nuts", (new ItemValarFood(1, 0.2F, false).setUnlocalizedName("nuts").setTextureName("nuts")));
+        itemRegistry.addObject(6028, "herugrim", (new ItemValarWeapon(830, 7, 0, true, false).setUnlocalizedName("herugrim").setTextureName("herugrim")));*/
+        registerItem(6029, "nuts", (new ItemCustomFood(1, 0.2F, false)).setUnlocalizedName("nuts"));
         // SPOTS 6030-6031 FREE
-        itemRegistry.addObject(6032, "corn_cob", (new ItemValarFood(2, 0.3F, false).setUnlocalizedName("cornCob").setTextureName("corn_cob")));
+        registerItem(6032, "corn_cob", (new ItemCustomFood(2, 0.3F, false)).setUnlocalizedName("cornCob"));
         //itemRegistry.addObject(6033, "healing_staff", (new ItemValarBase().setUnlocalizedName("healingStaff").setTextureName("healing_staff")));
         //itemRegistry.addObject(6034, "lightning_rod", (new ItemValarBase().setUnlocalizedName("lightningRod").setTextureName("lightning_rod")));
-        itemRegistry.addObject(6035, "staff_base", (new ItemValarBase().setUnlocalizedName("staffBase").setTextureName("staff_base")));
+        /*itemRegistry.addObject(6035, "staff_base", (new ItemValarBase().setUnlocalizedName("staffBase").setTextureName("staff_base")));
         itemRegistry.addObject(6036, "knife", (new ItemValarWeapon(35, 4, 0, true, false).setUnlocalizedName("knife").setTextureName("knife")));
-        //itemRegistry.addObject(6037, "mana_bottle", (new ItemValarBase().setUnlocalizedName("manaBottle").setTextureName("mana_bottle")));
-        itemRegistry.addObject(6038, "berries", (new ItemValarFood(2, 0.3F, false).setUnlocalizedName("berries").setTextureName("berries")));
-        itemRegistry.addObject(6039, "gondorian_horn", (new ItemValarInstrument("").setUnlocalizedName("gondorianHorn").setTextureName("gondorian_horn")));
+        //itemRegistry.addObject(6037, "mana_bottle", (new ItemValarBase().setUnlocalizedName("manaBottle").setTextureName("mana_bottle")));*/
+        registerItem(6038, "berries", (new ItemCustomFood(2, 0.3F, false)).setUnlocalizedName("berries"));
+        /*itemRegistry.addObject(6039, "gondorian_horn", (new ItemValarInstrument("").setUnlocalizedName("gondorianHorn").setTextureName("gondorian_horn")));
         itemRegistry.addObject(6040, "bear_claw", (new ItemValarBase(CreativeTabs.tabMaterials).setUnlocalizedName("bearClaw").setTextureName("bear_claw")));
         itemRegistry.addObject(6041, "beast_skin", (new ItemValarBase(CreativeTabs.tabMaterials).setUnlocalizedName("beastSkin").setTextureName("beast_skin")));
         itemRegistry.addObject(6042, "dead_root", (new ItemValarBase(CreativeTabs.tabMaterials).setUnlocalizedName("deadRoot").setTextureName("dead_root")));
@@ -1327,21 +1328,20 @@ public class Item
         itemRegistry.addObject(6055, "orc_helmet", (new ItemValarArmor(0, 1, 200, 0).setUnlocalizedName("orcHelmet").setTextureName("orc_helmet")));*/
         registerItem(6056, "bree_door", (new ItemDoor(Blocks.BREE_DOOR)).setUnlocalizedName("breeDoor"));
       //itemRegistry.addObject(6057, "rucksack", (new ItemValarBase().setUnlocalizedName("rucksack").setTextureName("rucksack")));
-        /*itemRegistry.addObject(6058, "cram", (new ItemValarFood(2, 0.8F, false).setUnlocalizedName("cram").setTextureName("cram")));
-        itemRegistry.addObject(6059, "cabbage", (new ItemValarFood(3, 0.6F, false).setUnlocalizedName("cabbage").setTextureName("cabbage")));
-        itemRegistry.addObject(6060, "coconut", (new ItemValarFood(1, 0.3F, false).setUnlocalizedName("coconut").setTextureName("coconut")));
-        itemRegistry.addObject(6061, "raw_deer_meat", (new ItemValarFood(3, 0.4F, false).setUnlocalizedName("rawDeerMeat").setTextureName("raw_deer_meat")));
-        itemRegistry.addObject(6062, "cooked_deer_meat", (new ItemValarFood(5, 0.6F, false).setUnlocalizedName("cookedDeerMeat").setTextureName("cooked_deer_meat")));
-        itemRegistry.addObject(6063, "muffin", (new ItemValarFood(1, 0.4F, false).setUnlocalizedName("muffin").setTextureName("muffin")));*/
-        //registerItem(6064, "strawberry", (new ItemValarFood(2, 0.3F, false).setUnlocalizedName("strawberry").setTextureName("strawberry")));
-        registerItem(6064, "strawberry", (new Item()).setUnlocalizedName("strawberry").setCreativeTab(CreativeTabs.FOOD));
-        /*itemRegistry.addObject(6065, "strawberry_muffin", (new ItemValarFood(3, 0.6F, false).setUnlocalizedName("strawberryMuffin").setTextureName("strawberry_muffin")));
-        itemRegistry.addObject(6066, "orange", (new ItemValarFood(2, 0.6F, false).setUnlocalizedName("orange").setTextureName("orange")));
-        itemRegistry.addObject(6067, "orange_muffin", (new ItemValarFood(3, 0.6F, false).setUnlocalizedName("orangeMuffin").setTextureName("orange_muffin")));
-        itemRegistry.addObject(6068, "pear", (new ItemValarFood(2, 0.6F, false).setUnlocalizedName("pear").setTextureName("pear")));
-        itemRegistry.addObject(6069, "raw_meat", (new ItemValarFood(2, 0.2F, false).setUnlocalizedName("rawMeat").setTextureName("raw_meat")));
-        itemRegistry.addObject(6070, "cooked_meat", (new ItemValarFood(5, 0.7F, false).setUnlocalizedName("cookedMeat").setTextureName("cooked_meat")));
-        itemRegistry.addObject(6071, "rohan_helm_1", (new ItemValarBase().setUnlocalizedName("rohanHelm1").setTextureName("rohan_helm_1")));
+        registerItem(6058, "cram", (new ItemCustomFood(2, 0.8F, false)).setUnlocalizedName("cram"));
+        registerItem(6059, "cabbage", (new ItemCustomFood(3, 0.6F, false)).setUnlocalizedName("cabbage"));
+        registerItem(6060, "coconut", (new ItemCustomFood(1, 0.3F, false)).setUnlocalizedName("coconut"));
+        registerItem(6061, "raw_deer_meat", (new ItemCustomFood(3, 0.4F, false)).setUnlocalizedName("rawDeerMeat"));
+        registerItem(6062, "cooked_deer_meat", (new ItemCustomFood(5, 0.6F, false)).setUnlocalizedName("cookedDeerMeat"));
+        registerItem(6063, "muffin", (new ItemCustomFood(1, 0.4F, false)).setUnlocalizedName("muffin"));
+        registerItem(6064, "strawberry", (new ItemCustomFood(2, 0.3F, false)).setUnlocalizedName("strawberry").setCreativeTab(CreativeTabs.FOOD));
+        registerItem(6065, "strawberry_muffin", (new ItemCustomFood(3, 0.6F, false)).setUnlocalizedName("strawberryMuffin"));
+        registerItem(6066, "orange", (new ItemCustomFood(2, 0.6F, false)).setUnlocalizedName("orange"));
+        registerItem(6067, "orange_muffin", (new ItemCustomFood(3, 0.6F, false)).setUnlocalizedName("orangeMuffin"));
+        registerItem(6068, "pear", (new ItemCustomFood(2, 0.6F, false)).setUnlocalizedName("pear"));
+        registerItem(6069, "raw_meat", (new ItemCustomFood(2, 0.2F, false)).setUnlocalizedName("rawMeat"));
+        registerItem(6070, "cooked_meat", (new ItemCustomFood(5, 0.7F, false)).setUnlocalizedName("cookedMeat"));
+        /*itemRegistry.addObject(6071, "rohan_helm_1", (new ItemValarBase().setUnlocalizedName("rohanHelm1").setTextureName("rohan_helm_1")));
         itemRegistry.addObject(6072, "rohan_helm_2", (new ItemValarBase().setUnlocalizedName("rohanHelm2").setTextureName("rohan_helm_2")));
         itemRegistry.addObject(6073, "rohan_helm_3", (new ItemValarBase().setUnlocalizedName("rohanHelm3").setTextureName("rohan_helm_3")));
         itemRegistry.addObject(6074, "rohan_helm_4", (new ItemValarBase().setUnlocalizedName("rohanHelm4").setTextureName("rohan_helm_4")));
@@ -1580,20 +1580,17 @@ public class Item
         registerItem(6307, "prison_door", (new ItemDoor(Blocks.PRISON_DOOR)).setUnlocalizedName("prisonDoor"));
         registerItem(6308, "sindar_door", (new ItemDoor(Blocks.SINDAR_DOOR)).setUnlocalizedName("sindarDoor"));
         registerItem(6309, "southlinch_seed", (new ItemSeeds(Blocks.SOUTHLINCH, Blocks.FARMLAND)).setUnlocalizedName("southlinchSeed"));
-        /*itemRegistry.addObject(6310, "green_grape_seed", (new ItemValarCrops((BlockValarCrops)Blocks.greenGrape)).setUnlocalizedName("greenGrapeSeed").setTextureName("green_grape_seed"));
-        itemRegistry.addObject(6311, "green_grapes", (new ItemValarFood(2, 0.3F, false)).setUnlocalizedName("greenGrapes").setTextureName("green_grapes"));
-        itemRegistry.addObject(6312, "purple_grape_seed", (new ItemValarCrops((BlockValarCrops)Blocks.purpleGrape)).setUnlocalizedName("purpleGrapeSeed").setTextureName("purple_grape_seed"));
-        itemRegistry.addObject(6313, "purple_grapes", (new ItemValarFood(2, 0.3F, false)).setUnlocalizedName("purpleGrapes").setTextureName("purple_grapes"));*/
+        /*itemRegistry.addObject(6310, "green_grape_seed", (new ItemValarCrops((BlockValarCrops)Blocks.greenGrape)).setUnlocalizedName("greenGrapeSeed").setTextureName("green_grape_seed"));*/
+        registerItem(6311, "green_grapes", (new ItemCustomFood(2, 0.3F, false)).setUnlocalizedName("greenGrapes"));
+        /*itemRegistry.addObject(6312, "purple_grape_seed", (new ItemValarCrops((BlockValarCrops)Blocks.purpleGrape)).setUnlocalizedName("purpleGrapeSeed").setTextureName("purple_grape_seed"));*/
+        registerItem(6313, "purple_grapes", (new ItemCustomFood(2, 0.3F, false)).setUnlocalizedName("purpleGrapes"));
         registerItem(6314, "pipeweed_seed", (new ItemSeeds(Blocks.PIPEWEED_PLANT, Blocks.FARMLAND)).setUnlocalizedName("pipeweedSeed"));
         registerItem(6315, "pea_seed", (new ItemSeeds(Blocks.PEA_PLANT, Blocks.FARMLAND)).setUnlocalizedName("peaSeed"));
-        //registerItem(6316, "peas", (new ItemValarFood(1, 0.6F, false)).setUnlocalizedName("peas"));
-        registerItem(6316, "peas", (new Item()).setUnlocalizedName("peas").setCreativeTab(CreativeTabs.FOOD));
-        //registerItem(6317, "leek", (new ItemValarFood(3, 0.6F, false)).setUnlocalizedName("leek"));
-        registerItem(6317, "leek", (new Item()).setUnlocalizedName("leek").setCreativeTab(CreativeTabs.FOOD));
+        registerItem(6316, "peas", (new ItemCustomFood(1, 0.6F, false)).setUnlocalizedName("peas").setCreativeTab(CreativeTabs.FOOD));
+        registerItem(6317, "leek", (new ItemCustomFood(3, 0.6F, false)).setUnlocalizedName("leek").setCreativeTab(CreativeTabs.FOOD));
         registerItem(6318, "leek_seed", (new ItemSeeds(Blocks.LEEK_PLANT, Blocks.FARMLAND)).setUnlocalizedName("leekSeed"));
         registerItem(6319, "onion_seed", (new ItemSeeds(Blocks.ONION_PLANT, Blocks.FARMLAND)).setUnlocalizedName("onionSeed"));
-        //registerItem(6320, "onion", (new ItemValarFood(3, 0.6F, false)).setUnlocalizedName("onion"));
-        registerItem(6320, "onion", (new Item()).setUnlocalizedName("onion").setCreativeTab(CreativeTabs.FOOD));
+        registerItem(6320, "onion", (new ItemCustomFood(3, 0.6F, false)).setUnlocalizedName("onion").setCreativeTab(CreativeTabs.FOOD));
         registerItem(6321, "old_toby_seed", (new ItemSeeds(Blocks.OLD_TOBY_PLANT, Blocks.FARMLAND)).setUnlocalizedName("oldTobySeed"));
         registerItem(6322, "southern_star_seed", (new ItemSeeds(Blocks.SOUTHERN_STAR_PLANT, Blocks.FARMLAND)).setUnlocalizedName("southernStarSeed"));
         registerItem(6323, "strawberry_seed", (new ItemSeeds(Blocks.STRAWBERRY_BUSH, Blocks.FARMLAND)).setUnlocalizedName("strawberrySeed"));
