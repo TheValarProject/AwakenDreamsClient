@@ -447,6 +447,10 @@ public class Blocks
     public static final Block MEDUSELD_WOOD;
     public static final Block ROHIRRIM_WALL_DECORATION;
     public static final Block STATUE_HEAD;
+    public static final Block ROHIRRIM_OAK_PLANKS;
+    public static final Block ROHIRRIM_SPRUCE_PLANKS;
+    public static final Block ROHIRRIM_BIRCH_PLANKS;
+    public static final Block ROHIRRIM_JUNGLE_PLANKS;
     public static final Block ANGMAR_FLOOR;
     public static final Block ANGMAR_BRICKS;
     public static final Block BEORNING_WOOD;
@@ -931,6 +935,10 @@ public class Blocks
             MEDUSELD_WOOD = getRegisteredBlock("meduseld_wood");
             ROHIRRIM_WALL_DECORATION = getRegisteredBlock("rohirrim_wall_decoration");
             STATUE_HEAD = getRegisteredBlock("statue_head");
+            ROHIRRIM_OAK_PLANKS = getRegisteredBlock("rohirrim_oak_planks");
+            ROHIRRIM_SPRUCE_PLANKS = getRegisteredBlock("rohirrim_spruce_planks");
+            ROHIRRIM_BIRCH_PLANKS = getRegisteredBlock("rohirrim_birch_planks");
+            ROHIRRIM_JUNGLE_PLANKS = getRegisteredBlock("rohirrim_jungle_planks");
             ANGMAR_FLOOR = getRegisteredBlock("angmar_floor");
             ANGMAR_BRICKS = getRegisteredBlock("angmar_bricks");
             BEORNING_WOOD = getRegisteredBlock("beorning_wood");

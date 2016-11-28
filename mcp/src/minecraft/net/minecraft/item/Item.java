@@ -1022,6 +1022,10 @@ public class Item
         registerItemBlock(Blocks.MEDUSELD_WOOD);
         registerItemBlock(Blocks.ROHIRRIM_WALL_DECORATION);
         registerItemBlock(Blocks.STATUE_HEAD);
+        registerItemBlock(Blocks.ROHIRRIM_OAK_PLANKS);
+        registerItemBlock(Blocks.ROHIRRIM_SPRUCE_PLANKS);
+        registerItemBlock(Blocks.ROHIRRIM_BIRCH_PLANKS);
+        registerItemBlock(Blocks.ROHIRRIM_JUNGLE_PLANKS);
         registerItemBlock(Blocks.ANGMAR_FLOOR);
         registerItemBlock(Blocks.ANGMAR_BRICKS);
         registerItemBlock(Blocks.BEORNING_WOOD);
