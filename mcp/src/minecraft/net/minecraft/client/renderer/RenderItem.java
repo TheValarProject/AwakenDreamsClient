@@ -1306,6 +1306,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.ONYX, "onyx");
         this.registerItem(Items.MOONSTONE, "moonstone");
         this.registerItem(Items.TANZANITE, "tanzanite");
+        this.registerItem(Items.URUK_SWORD, "uruk_sword");
         this.registerItem(Items.TOMATO, "tomato");
         this.registerItem(Items.BLUE_FEATHER, "blue_feather");
         this.registerItem(Items.SPIDER_POISON, "spider_poison");

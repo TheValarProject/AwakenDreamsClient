@@ -232,6 +232,7 @@ public class Items
     public static final Item ONYX;
     public static final Item MOONSTONE;
     public static final Item TANZANITE;
+    public static final Item URUK_SWORD;
     public static final Item TOMATO;
     public static final Item BLUE_FEATHER;
     public static final Item SPIDER_POISON;
@@ -627,6 +628,7 @@ public class Items
             ONYX = getRegisteredItem("onyx");
             MOONSTONE = getRegisteredItem("moonstone");
             TANZANITE = getRegisteredItem("tanzanite");
+            URUK_SWORD = getRegisteredItem("uruk_sword");
             TOMATO = getRegisteredItem("tomato");
             BLUE_FEATHER = getRegisteredItem("blue_feather");
             SPIDER_POISON = getRegisteredItem("spider_poison");

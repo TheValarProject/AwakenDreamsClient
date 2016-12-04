@@ -4,6 +4,7 @@ import com.elementfx.tvp.ad.block.BlockCustomBed;
 import com.elementfx.tvp.ad.block.BlockCustomCrops;
 import com.elementfx.tvp.ad.item.ItemCustomBed;
 import com.elementfx.tvp.ad.item.ItemCustomFood;
+import com.elementfx.tvp.ad.item.ItemWeapon;
 import com.google.common.base.Function;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Maps;
@@ -1285,7 +1286,7 @@ public class Item
         registerItem(6016, "onyx", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("onyx"));
         registerItem(6017, "moonstone", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("moonstone"));
         registerItem(6019, "tanzanite", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("tanzanite"));
-        //registerItem(6020, "uruk_sword", (new ItemValarWeapon(510, 7, 0, true, false).setUnlocalizedName("urukSword"));
+        registerItem(6020, "uruk_sword", (new ItemWeapon(510, 7)).setUnlocalizedName("urukSword"));
         //registerItem(6021, "phial_of_galadriel", (new ItemValarBase().setUnlocalizedName("phialOfGaladriel"));
         registerItem(6022, "tomato", (new ItemCustomFood(1, 0.1F, false)).setUnlocalizedName("tomato"));
         registerItem(6023, "blue_feather", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("blueFeather"));
