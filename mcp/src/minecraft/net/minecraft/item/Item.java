@@ -1056,6 +1056,7 @@ public class Item
         registerItemBlock(Blocks.ROHIRRIM_LADDER);
         registerItemBlock(Blocks.DUNLAND_LADDER);
         registerItemBlock(Blocks.LORILENDEL);
+        registerItemBlock(Blocks.STAKES);
         registerItemBlock(Blocks.SHIRE_GARDEN_FLOWER);
         registerItemBlock(Blocks.PILE_OF_COINS);
         registerItemBlock(Blocks.GREY_COLUMN);

@@ -488,6 +488,7 @@ public class Blocks
     public static final BlockCustomDoor PRISON_DOOR;
     public static final BlockCustomDoor SINDAR_DOOR;
     public static final Block LORILENDEL;
+    public static final Block STAKES;
     public static final BlockCustomCrops SOUTHLINCH;
     public static final BlockCustomCrops PIPEWEED_PLANT;
     public static final BlockCustomCrops PEA_PLANT;
@@ -976,6 +977,7 @@ public class Blocks
             PRISON_DOOR = (BlockCustomDoor)getRegisteredBlock("prison_door");
             SINDAR_DOOR = (BlockCustomDoor)getRegisteredBlock("sindar_door");
             LORILENDEL = getRegisteredBlock("lorilendel");
+            STAKES = getRegisteredBlock("stakes");
             SOUTHLINCH = (BlockCustomCrops)getRegisteredBlock("southlinch");
             PIPEWEED_PLANT = (BlockCustomCrops)getRegisteredBlock("pipeweed_plant");
             PEA_PLANT = (BlockCustomCrops)getRegisteredBlock("pea_plant");

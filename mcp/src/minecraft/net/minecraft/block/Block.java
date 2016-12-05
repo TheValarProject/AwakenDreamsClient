@@ -1613,7 +1613,7 @@ public class Block
         //registerBlock(763, "cursed_plant", (new BlockValarFlower()).setPlantBounds(32, 26).setUnlocalizedName("cursedPlant").setBlockTextureName("cursed_plant"));
         //registerBlock(764, "haradwaith_fern", (new BlockValarFlower()).setPlantBounds(28, 31).setUnlocalizedName("haradwaithFern").setBlockTextureName("haradwaith_fern"));
         registerBlock(765, "lorilendel", (new BlockCustomFlower()).setUnlocalizedName("lorilendel"));
-        //registerBlock(766, "stakes", (new BlockValarCustomRender(Material.plants, CreativeTabs.tabDecorations, 106).setUnlocalizedName("stakes").setBlockTextureName("stakes")));
+        registerBlock(766, "stakes", (new Block3D(Material.WOOD, Arrays.asList(new AxisAlignedBB(0.2D, 0.0D, 0.2D, 0.8D, 1.0D, 0.8D)))).setUnlocalizedName("stakes").setCreativeTab(CreativeTabs.DECORATIONS));
         registerBlock(767, "southlinch", (new BlockCustomCrops(5)).setUnlocalizedName("southlinch"));
         //registerBlock(768, "green_grape", (new BlockValarCrops(5)).setRenderType(106).setItemSeed("green_grape_seed").setItemYield("green_grapes").setRequiresStakes(true).setUnlocalizedName("greenGrape").setBlockTextureName("green_grape"));
         //registerBlock(769, "purple_grape", (new BlockValarCrops(5)).setRenderType(106).setItemSeed("purple_grape_seed").setItemYield("purple_grapes").setRequiresStakes(true).setUnlocalizedName("purpleGrape").setBlockTextureName("purple_grape"));
