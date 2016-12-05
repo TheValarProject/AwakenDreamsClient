@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "items/dol_guldur_spiked_mace"
+    }
+}
