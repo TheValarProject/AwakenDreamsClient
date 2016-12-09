@@ -302,8 +302,13 @@ public class Blocks
     public static final Block MORDOR_STONE;
     public static final Block CLIFF_BLOCK;
     public static final Block SPIDER_EGG;
+    public static final Block BAKRUEL;
+    public static final Block HOPPERFOOT;
+    public static final Block MADARCH;
+    public static final Block MEHAS;
     public static final Block ARFANDAS;
     public static final Block ATHELAS;
+    public static final Block BELLIS;
     public static final Block LAMP;
     public static final Block GONDORIAN_STONE;
     public static final Block GONDORIAN_BRICK_STONE;
@@ -792,8 +797,13 @@ public class Blocks
             MORDOR_STONE = getRegisteredBlock("mordor_stone");
             CLIFF_BLOCK = getRegisteredBlock("cliff_block");
             SPIDER_EGG = getRegisteredBlock("spider_egg");
+            BAKRUEL = getRegisteredBlock("bakruel");
+            HOPPERFOOT = getRegisteredBlock("hopperfoot");
+            MADARCH = getRegisteredBlock("madarch");
+            MEHAS = getRegisteredBlock("mehas");
             ARFANDAS = getRegisteredBlock("arfandas");
             ATHELAS = getRegisteredBlock("athelas");
+            BELLIS = getRegisteredBlock("bellis");
             LAMP = getRegisteredBlock("lamp");
             GONDORIAN_STONE = getRegisteredBlock("gondorian_stone");
             GONDORIAN_BRICK_STONE = getRegisteredBlock("gondorian_brick_stone");
