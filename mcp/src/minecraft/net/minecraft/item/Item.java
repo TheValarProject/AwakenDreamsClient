@@ -880,8 +880,13 @@ public class Item
         registerItemBlock(Blocks.MORDOR_STONE);
         registerItemBlock(Blocks.CLIFF_BLOCK);
         registerItemBlock(Blocks.SPIDER_EGG);
+        registerItemBlock(Blocks.BAKRUEL);
+        registerItemBlock(Blocks.HOPPERFOOT);
+        registerItemBlock(Blocks.MADARCH);
+        registerItemBlock(Blocks.MEHAS);
         registerItemBlock(Blocks.ARFANDAS);
         registerItemBlock(Blocks.ATHELAS);
+        registerItemBlock(Blocks.BELLIS);
         registerItemBlock(Blocks.LAMP);
         registerItemBlock(Blocks.GONDORIAN_STONE);
         registerItemBlock(Blocks.GONDORIAN_BRICK_STONE);

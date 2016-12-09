@@ -1400,13 +1400,13 @@ public class Block
         registerBlock(541, "mordor_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("mordorStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(542, "cliff_block", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("cliffBlock").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(543, "spider_egg", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("spiderEgg").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        //registerBlock(544, "bakruel", (new BlockValarCustomRender(Material.plants, 1)).setCreativeTab(CreativeTabs.tabDecorations).setHardness(0.0F).setSoundType(soundTypeGrass).setUnlocalizedName("bakruel").setBlockTextureName("bakruel"));
-        //registerBlock(545, "hopperfoot", (new BlockValarCustomRender(Material.plants, 1)).setCreativeTab(CreativeTabs.tabDecorations).setHardness(0.0F).setSoundType(soundTypeGrass).setUnlocalizedName("hopperfoot").setBlockTextureName("hopperfoot"));
-        //registerBlock(546, "madarch", (new BlockValarCustomRender(Material.plants, 1)).setCreativeTab(CreativeTabs.tabDecorations).setHardness(0.0F).setSoundType(soundTypeGrass).setUnlocalizedName("madarch").setBlockTextureName("madarch"));
-        //registerBlock(547, "mehas", (new BlockValarCustomRender(Material.plants, 1)).setCreativeTab(CreativeTabs.tabDecorations).setHardness(0.0F).setSoundType(soundTypeGrass).setUnlocalizedName("mehas").setBlockTextureName("mehas"));
+        registerBlock(544, "bakruel", (new BlockCustomFlower(new AxisAlignedBB(4.5 / 16, 0.0D, 4.5 / 16, 11.0 / 16, 6.5 / 16, 11.5 / 16))).setUnlocalizedName("bakruel"));
+        registerBlock(545, "hopperfoot", (new BlockCustomFlower(new AxisAlignedBB(2.5 / 16, 0.0D, 2.5 / 16, 13.5 / 16, 15.5 / 16, 13.5 / 16))).setUnlocalizedName("hopperfoot"));
+        registerBlock(546, "madarch", (new BlockCustomFlower(new AxisAlignedBB(3.0 / 16, 0.0D, 1.0 / 16, 15.0 / 16, 9.0 / 16, 15.0 / 16))).setUnlocalizedName("madarch"));
+        registerBlock(547, "mehas", (new BlockCustomFlower(new AxisAlignedBB(4.0 / 16, 0.0D, 4.0 / 16, 12.0 / 16, 10.5 / 16, 12.0 / 16))).setUnlocalizedName("mehas"));
         registerBlock(548, "arfandas", (new BlockCustomFlower(new AxisAlignedBB(2.5 / 16, 0.0D, 2.5 / 16, 13.5 / 16, 15.0 / 16, 13.5 / 16))).setUnlocalizedName("arfandas"));
         registerBlock(549, "athelas", (new BlockCustomFlower()).setUnlocalizedName("athelas"));
-        //registerBlock(550, "bellis", (new BlockValarFlower()).setPlantBounds(46, 61, 64).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("bellis").setBlockTextureName("bellis"));
+        registerBlock(550, "bellis", (new BlockCustomFlower(new AxisAlignedBB(2.5 /16, 0.0D, 2.5 /16, 13.5 / 16, 15.5 / 16, 13.5 / 16))).setUnlocalizedName("bellis"));
         registerBlock(551, "lamp", (new BlockLamp(Material.GLASS, Arrays.asList(new AxisAlignedBB(3.0 / 16, 0.0D, 3.0 / 16, 13.0 / 16, 1.0D, 13.0 / 16)))).setUnlocalizedName("lamp"));
         registerBlock(552, "gondorian_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("gondorianStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(553, "gondorian_brick_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("gondorianBrickStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
