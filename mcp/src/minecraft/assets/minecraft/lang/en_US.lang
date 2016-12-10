@@ -906,6 +906,7 @@ tile.moss.name=Moss
 tile.gondorianRoof.name=Gondorian Roof
 tile.rivendellRoof.name=Rivendell Roof
 tile.mossyGondorianBrickStone.name=Mossy Gondorian Brick Stone
+tile.window.name=Window
 tile.rohanBricks.name=Rohan Bricks
 tile.mordorBrickStone.name=Mordor Brick Stone
 tile.oreMithril.name=Mithril Ore
