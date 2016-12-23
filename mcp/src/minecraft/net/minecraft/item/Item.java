@@ -902,6 +902,7 @@ public class Item
         registerItemBlock(Blocks.GONDORIAN_ROOF);
         registerItemBlock(Blocks.RIVENDELL_ROOF);
         registerItemBlock(Blocks.MOSSY_GONDORIAN_BRICK_STONE);
+        registerItemBlock(Blocks.WINDOW);
         registerItemBlock(Blocks.ROHAN_BRICKS);
         registerItemBlock(Blocks.MORDOR_BRICK_STONE);
         registerItemBlock(Blocks.MITHRIL_ORE);
