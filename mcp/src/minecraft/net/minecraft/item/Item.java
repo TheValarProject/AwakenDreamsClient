@@ -906,6 +906,7 @@ public class Item
         registerItemBlock(Blocks.ROHAN_BRICKS);
         registerItemBlock(Blocks.MORDOR_BRICK_STONE);
         registerItemBlock(Blocks.MITHRIL_ORE);
+        registerItemBlock(Blocks.ARLANS_SLIPPER);
         registerItemBlock(Blocks.NUMENOREAN);
         registerItemBlock(Blocks.DWARF_INNER_WALL_DECORATION);
         registerItemBlock(Blocks.DALE_STONE);
@@ -1061,6 +1062,10 @@ public class Item
         registerItemBlock(Blocks.HUMAN_LADDER);
         registerItemBlock(Blocks.ROHIRRIM_LADDER);
         registerItemBlock(Blocks.DUNLAND_LADDER);
+        registerItemBlock(Blocks.BUSH);
+        registerItemBlock(Blocks.DEAD_BUSH);
+        registerItemBlock(Blocks.CURSED_PLANT);
+        registerItemBlock(Blocks.HARADWAITH_FERN);
         registerItemBlock(Blocks.LORILENDEL);
         registerItemBlock(Blocks.STAKES);
         registerItemBlock(Blocks.SHIRE_GARDEN_FLOWER);

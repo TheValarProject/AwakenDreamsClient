@@ -1429,7 +1429,7 @@ public class Block
         registerBlock(570, "mordor_brick_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("mordorBrickStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(571, "mithril_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreMithril").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         //registerBlock(572, "bree_glass_pane", (new BlockValarPane("bree_glass", "bree_glass", Material.glass, false)).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeGlass).setUnlocalizedName("breeGlassPane").setBlockTextureName("bree_glass"));
-        //registerBlock(573, "arlans_slipper", (new BlockValarFlower()).setUnlocalizedName("arlansSlipper").setBlockTextureName("arlans_slipper"));
+        registerBlock(573, "arlans_slipper", (new BlockCustomFlower(new AxisAlignedBB(1.5 / 16, 0.0D, 1.5 / 16, 14.5 / 16, 16.0 / 16, 14.5 / 16))).setUnlocalizedName("arlansSlipper"));
         registerBlock(574, "numenorean", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("numenorean").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(575, "dwarf_inner_wall_decoration", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("dwarfInnerWallDecoration").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(576, "dale_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("daleStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
@@ -1608,10 +1608,10 @@ public class Block
         //registerBlock(758, "old_tree_sapling", (new BlockValarSapling()).setPlantBounds(56, 51, 64).setUnlocalizedName("oldTreeSapling").setBlockTextureName("old_tree_sapling"));
         //registerBlock(759, "light_brown_tree_sapling", (new BlockValarSapling()).setPlantBounds(22, 32).setUnlocalizedName("lightBrownTreeSapling").setBlockTextureName("light_brown_tree_sapling"));
         //registerBlock(760, "dead_tree_sapling", (new BlockValarSapling()).setPlantBounds(58, 45, 64).setUnlocalizedName("deadTreeSapling").setBlockTextureName("dead_tree_sapling"));
-        //registerBlock(761, "bush", (new BlockValarFlower()).setPlantBounds(31, 27).setUnlocalizedName("bush").setBlockTextureName("bush"));
-        //registerBlock(762, "dead_bush", (new BlockValarFlower()).setPlantBounds(30, 25).setUnlocalizedName("deadBush").setBlockTextureName("dead_bush"));
-        //registerBlock(763, "cursed_plant", (new BlockValarFlower()).setPlantBounds(32, 26).setUnlocalizedName("cursedPlant").setBlockTextureName("cursed_plant"));
-        //registerBlock(764, "haradwaith_fern", (new BlockValarFlower()).setPlantBounds(28, 31).setUnlocalizedName("haradwaithFern").setBlockTextureName("haradwaith_fern"));
+        registerBlock(761, "bush", (new BlockCustomFlower(new AxisAlignedBB( 1.0 / 16, 0.0D, 1.0 / 16, 15.0 / 16, 14.0 / 16, 15.0 / 16))).setUnlocalizedName("bush"));
+        registerBlock(762, "dead_bush", (new BlockCustomFlower(new AxisAlignedBB( 1.0 / 16, 0.0D, 1.0 / 16, 15.0 / 16, 12.0 / 16, 15.0 / 16))).setUnlocalizedName("deadBush"));
+        registerBlock(763, "cursed_plant", (new BlockCustomFlower(new AxisAlignedBB( 0.75 / 16, 0.0D, 0.75 / 16, 15.25 / 16, 14.0 / 16, 15.25 / 16 ))).setUnlocalizedName("cursedPlant"));
+        registerBlock(764, "haradwaith_fern", (new BlockCustomFlower(new AxisAlignedBB( 1.0 /16, 0.0D, 1.0 / 16, 15.0 / 16, 16.0 / 16, 15.0 / 16))).setUnlocalizedName("haradwaithFern"));
         registerBlock(765, "lorilendel", (new BlockCustomFlower()).setUnlocalizedName("lorilendel"));
         registerBlock(766, "stakes", (new Block3D(Material.WOOD, Arrays.asList(new AxisAlignedBB(0.2D, 0.0D, 0.2D, 0.8D, 1.0D, 0.8D)))).setUnlocalizedName("stakes").setCreativeTab(CreativeTabs.DECORATIONS));
         registerBlock(767, "southlinch", (new BlockCustomCrops(5)).setUnlocalizedName("southlinch"));

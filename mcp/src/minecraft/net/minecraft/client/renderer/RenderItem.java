@@ -863,6 +863,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.ROHAN_BRICKS, "rohan_bricks");
         this.registerBlock(Blocks.MORDOR_BRICK_STONE, "mordor_brick_stone");
         this.registerBlock(Blocks.MITHRIL_ORE, "mithril_ore");
+        this.registerBlock(Blocks.ARLANS_SLIPPER, "arlans_slipper");
         this.registerBlock(Blocks.NUMENOREAN, "numenorean");
         this.registerBlock(Blocks.DWARF_INNER_WALL_DECORATION, "dwarf_inner_wall_decoration");
         this.registerBlock(Blocks.DALE_STONE, "dale_stone");
@@ -1019,6 +1020,10 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.HUMAN_LADDER, "human_ladder");
         this.registerBlock(Blocks.ROHIRRIM_LADDER, "rohirrim_ladder");
         this.registerBlock(Blocks.DUNLAND_LADDER, "dunland_ladder");
+        this.registerBlock(Blocks.BUSH, "bush");
+        this.registerBlock(Blocks.DEAD_BUSH, "dead_bush");
+        this.registerBlock(Blocks.CURSED_PLANT, "cursed_plant");
+        this.registerBlock(Blocks.HARADWAITH_FERN, "haradwaith_fern");
         this.registerBlock(Blocks.LORILENDEL, "lorilendel");
         this.registerBlock(Blocks.STAKES, "stakes");
         this.registerBlock(Blocks.SHIRE_GARDEN_FLOWER,  "shire_garden_flower");
