@@ -859,6 +859,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.GONDORIAN_ROOF, "gondorian_roof");
         this.registerBlock(Blocks.RIVENDELL_ROOF, "rivendell_roof");
         this.registerBlock(Blocks.MOSSY_GONDORIAN_BRICK_STONE, "mossy_gondorian_brick_stone");
+        this.registerBlock(Blocks.WINDOW, "window");
         this.registerBlock(Blocks.ROHAN_BRICKS, "rohan_bricks");
         this.registerBlock(Blocks.MORDOR_BRICK_STONE, "mordor_brick_stone");
         this.registerBlock(Blocks.MITHRIL_ORE, "mithril_ore");
