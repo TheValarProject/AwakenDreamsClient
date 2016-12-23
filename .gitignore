@@ -1,9 +1,11 @@
 /mcp/bin
 /mcp/eclipse
 /mcp/temp
+/mcp/jars/screenshots
 /mcp/jars/saves
 /mcp/jars/usercache.json
 /mcp/jars/options.txt
+/mcp/reobf
 
 *.pyc
 **/logs
