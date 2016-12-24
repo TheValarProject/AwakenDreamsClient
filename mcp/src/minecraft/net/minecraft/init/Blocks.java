@@ -495,7 +495,7 @@ public class Blocks
     public static final BlockCustomDoor PRISON_DOOR;
     public static final BlockCustomDoor SINDAR_DOOR;
     public static final Block BUSH;
-    public static final Block DEAD_BUSH;
+    public static final Block ALT_DEAD_BUSH;
     public static final Block CURSED_PLANT;
     public static final Block HARADWAITH_FERN;
     public static final Block LORILENDEL;
@@ -995,7 +995,7 @@ public class Blocks
             PRISON_DOOR = (BlockCustomDoor)getRegisteredBlock("prison_door");
             SINDAR_DOOR = (BlockCustomDoor)getRegisteredBlock("sindar_door");
             BUSH = getRegisteredBlock("bush");
-            DEAD_BUSH = getRegisteredBlock("dead_bush");
+            ALT_DEAD_BUSH = getRegisteredBlock("alt_dead_bush");
             CURSED_PLANT = getRegisteredBlock("cursed_plant");
             HARADWAITH_FERN = getRegisteredBlock("haradwaith_fern");
             LORILENDEL = getRegisteredBlock("lorilendel");

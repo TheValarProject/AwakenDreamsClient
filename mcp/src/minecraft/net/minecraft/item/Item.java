@@ -1063,7 +1063,7 @@ public class Item
         registerItemBlock(Blocks.ROHIRRIM_LADDER);
         registerItemBlock(Blocks.DUNLAND_LADDER);
         registerItemBlock(Blocks.BUSH);
-        registerItemBlock(Blocks.DEAD_BUSH);
+        registerItemBlock(Blocks.ALT_DEAD_BUSH);
         registerItemBlock(Blocks.CURSED_PLANT);
         registerItemBlock(Blocks.HARADWAITH_FERN);
         registerItemBlock(Blocks.LORILENDEL);

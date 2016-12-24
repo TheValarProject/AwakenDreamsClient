@@ -1609,7 +1609,7 @@ public class Block
         //registerBlock(759, "light_brown_tree_sapling", (new BlockValarSapling()).setPlantBounds(22, 32).setUnlocalizedName("lightBrownTreeSapling").setBlockTextureName("light_brown_tree_sapling"));
         //registerBlock(760, "dead_tree_sapling", (new BlockValarSapling()).setPlantBounds(58, 45, 64).setUnlocalizedName("deadTreeSapling").setBlockTextureName("dead_tree_sapling"));
         registerBlock(761, "bush", (new BlockCustomFlower(new AxisAlignedBB( 1.0 / 16, 0.0D, 1.0 / 16, 15.0 / 16, 14.0 / 16, 15.0 / 16))).setUnlocalizedName("bush"));
-        registerBlock(762, "dead_bush", (new BlockCustomFlower(new AxisAlignedBB( 1.0 / 16, 0.0D, 1.0 / 16, 15.0 / 16, 12.0 / 16, 15.0 / 16))).setUnlocalizedName("deadBush"));
+        registerBlock(762, "alt_dead_bush", (new BlockCustomFlower(new AxisAlignedBB( 1.0 / 16, 0.0D, 1.0 / 16, 15.0 / 16, 12.0 / 16, 15.0 / 16))).setUnlocalizedName("altDeadBush")); // Deprecated
         registerBlock(763, "cursed_plant", (new BlockCustomFlower(new AxisAlignedBB( 0.75 / 16, 0.0D, 0.75 / 16, 15.25 / 16, 14.0 / 16, 15.25 / 16 ))).setUnlocalizedName("cursedPlant"));
         registerBlock(764, "haradwaith_fern", (new BlockCustomFlower(new AxisAlignedBB( 1.0 /16, 0.0D, 1.0 / 16, 15.0 / 16, 16.0 / 16, 15.0 / 16))).setUnlocalizedName("haradwaithFern"));
         registerBlock(765, "lorilendel", (new BlockCustomFlower()).setUnlocalizedName("lorilendel"));
