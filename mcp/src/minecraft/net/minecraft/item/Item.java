@@ -1496,7 +1496,7 @@ public class Item
         registerItem(6227, "morgul_sword", (new ItemWeapon(2500, 9)).setUnlocalizedName("morgulSword"));
         registerItem(6228, "elven_long_sword", (new ItemWeapon(1800, 7)).setUnlocalizedName("elvenLongSword"));
         registerItem(6229, "berserker_sword", (new ItemWeapon(1400, 8)).setUnlocalizedName("berserkerSword"));
-        registerItem(6230, "two_handed_sword", (new ItemWeapon(500, 7)).setUnlocalizedName("twohandedSword"));
+        registerItem(6230, "two_handed_sword", (new ItemWeapon(500, 7)).setUnlocalizedName("twoHandedSword"));
         //registerItem(6231, "green_flag", (new ItemValarBase().setUnlocalizedName("greenFlag"));
         //registerItem(6232, "hobbit_bow", (new ItemValarBase().setUnlocalizedName("hobbitBow"));
         //registerItem(6233, "rohan_sheild_6", (new ItemValarBase().setUnlocalizedName("rohanShield6"));
