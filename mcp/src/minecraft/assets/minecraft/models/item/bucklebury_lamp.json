@@ -1,3 +1,6 @@
 {
-    "parent": "block/bucklebury_lamp"
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "blocks/bucklebury_lamp_icon"
+    }
 }
