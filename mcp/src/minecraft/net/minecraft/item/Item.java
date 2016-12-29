@@ -1579,8 +1579,8 @@ public class Item
         /*registerItem(6312, "purple_grape_seed", (new ItemValarCrops((BlockValarCrops)Blocks.purpleGrape)).setUnlocalizedName("purpleGrapeSeed").setTextureName("purple_grape_seed"));*/
         registerItem(6313, "purple_grapes", (new ItemCustomFood(2, 0.3F, false)).setUnlocalizedName("purpleGrapes"));
         registerItem(6314, "pipeweed_seed", (new ItemSeeds(Blocks.PIPEWEED_PLANT, Blocks.FARMLAND)).setUnlocalizedName("pipeweedSeed"));
-        registerItem(6315, "pea_seed", (new ItemSeeds(Blocks.PEA_PLANT, Blocks.FARMLAND)).setUnlocalizedName("peaSeed"));
-        registerItem(6316, "peas", (new ItemCustomFood(1, 0.6F, false)).setUnlocalizedName("peas").setCreativeTab(CreativeTabs.FOOD));
+        registerItem(6315, "peas", (new ItemSeeds(Blocks.PEA_PLANT, Blocks.FARMLAND)).setUnlocalizedName("peas"));
+        registerItem(6316, "pea_pod", (new ItemCustomFood(1, 0.6F, false)).setUnlocalizedName("peaPod").setCreativeTab(CreativeTabs.FOOD));
         registerItem(6317, "leek", (new ItemCustomFood(3, 0.6F, false)).setUnlocalizedName("leek").setCreativeTab(CreativeTabs.FOOD));
         registerItem(6318, "leek_seed", (new ItemSeeds(Blocks.LEEK_PLANT, Blocks.FARMLAND)).setUnlocalizedName("leekSeed"));
         registerItem(6319, "onion_seed", (new ItemSeeds(Blocks.ONION_PLANT, Blocks.FARMLAND)).setUnlocalizedName("onionSeed"));

@@ -457,8 +457,8 @@ public class Items
     public static final Item GREEN_GRAPES;
     public static final Item PURPLE_GRAPES;
     public static final Item PIPEWEED_SEED;
-    public static final Item PEA_SEED;
     public static final Item PEAS;
+    public static final Item PEA_POD;
     public static final Item LEEK;
     public static final Item LEEK_SEED;
     public static final Item ONION_SEED;
@@ -950,10 +950,10 @@ public class Items
             PURPLE_GRAPES = getRegisteredItem("purple_grapes");
             PIPEWEED_SEED = getRegisteredItem("pipeweed_seed");
             Blocks.PIPEWEED_PLANT.setSeed(PIPEWEED_SEED);
-            PEA_SEED = getRegisteredItem("pea_seed");
-            Blocks.PEA_PLANT.setSeed(PEA_SEED);
             PEAS = getRegisteredItem("peas");
-            Blocks.PEA_PLANT.setCrop(PEAS);
+            Blocks.PEA_PLANT.setSeed(PEAS);
+            PEA_POD = getRegisteredItem("pea_pod");
+            Blocks.PEA_PLANT.setCrop(PEA_POD);
             LEEK = getRegisteredItem("leek");
             Blocks.LEEK_PLANT.setCrop(LEEK);
             LEEK_SEED = getRegisteredItem("leek_seed");

@@ -1543,8 +1543,8 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.GREEN_GRAPES, "green_grapes");
         this.registerItem(Items.PURPLE_GRAPES, "purple_grapes");
         this.registerItem(Items.PIPEWEED_SEED, "pipeweed_seed");
-        this.registerItem(Items.PEA_SEED, "pea_seed");
         this.registerItem(Items.PEAS, "peas");
+        this.registerItem(Items.PEA_POD, "pea_pod");
         this.registerItem(Items.LEEK, "leek");
         this.registerItem(Items.LEEK_SEED, "leek_seed");
         this.registerItem(Items.ONION_SEED, "onion_seed");
