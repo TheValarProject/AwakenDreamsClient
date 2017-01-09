@@ -2,6 +2,7 @@ package net.minecraft.item;
 
 import com.elementfx.tvp.ad.block.BlockCustomBed;
 import com.elementfx.tvp.ad.block.BlockCustomCrops;
+import com.elementfx.tvp.ad.item.ItemCustomArmor;
 import com.elementfx.tvp.ad.item.ItemCustomBed;
 import com.elementfx.tvp.ad.item.ItemCustomFood;
 import com.elementfx.tvp.ad.item.ItemWeapon;
@@ -1341,7 +1342,8 @@ public class Item
         registerItem(6068, "pear", (new ItemCustomFood(2, 0.6F, false)).setUnlocalizedName("pear"));
         registerItem(6069, "raw_meat", (new ItemCustomFood(2, 0.2F, false)).setUnlocalizedName("rawMeat"));
         registerItem(6070, "cooked_meat", (new ItemCustomFood(5, 0.7F, false)).setUnlocalizedName("cookedMeat"));
-        //registerItem(6071, "rohan_helm_1", (new ItemValarBase().setUnlocalizedName("rohanHelm1").setTextureName("rohan_helm_1")));
+        ItemCustomArmor.Properties rohanArmor = new ItemCustomArmor.Properties("rohan1", 20, 0.8, 0, 9);
+        registerItem(6071, "rohan_helmet_1", (new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.HEAD)).setUnlocalizedName("rohanHelmet1")));
         //registerItem(6072, "rohan_helm_2", (new ItemValarBase().setUnlocalizedName("rohanHelm2").setTextureName("rohan_helm_2")));
         //registerItem(6073, "rohan_helm_3", (new ItemValarBase().setUnlocalizedName("rohanHelm3").setTextureName("rohan_helm_3")));
         //registerItem(6074, "rohan_helm_4", (new ItemValarBase().setUnlocalizedName("rohanHelm4").setTextureName("rohan_helm_4")));

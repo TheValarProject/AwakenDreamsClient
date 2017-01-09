@@ -1,5 +1,6 @@
 package net.minecraft.entity;
 
+import com.elementfx.tvp.ad.item.ItemCustomArmor;
 import com.google.common.base.Objects;
 import com.google.common.collect.Maps;
 import java.util.Collection;
@@ -579,7 +580,13 @@ public abstract class EntityLivingBase extends Entity
             SoundEvent soundevent = SoundEvents.ITEM_ARMOR_EQUIP_GENERIC;
             Item item = stack.getItem();
 
-            if (item instanceof ItemArmor)
+            // Begin Awaken Dreams code
+            if (item instanceof ItemCustomArmor)
+            {
+            	soundevent = ((ItemCustomArmor)item).getSoundEvent();
+            }
+            // End Awaken Dreams code
+            else if (item instanceof ItemArmor)
             {
                 soundevent = ((ItemArmor)item).getArmorMaterial().getSoundEvent();
             }

@@ -1356,6 +1356,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.PEAR, "pear");
         this.registerItem(Items.RAW_MEAT, "raw_meat");
         this.registerItem(Items.COOKED_MEAT, "cooked_meat");
+        this.registerItem(Items.ROHAN_HELMET_1, "rohan_helmet_1");
         this.registerItem(Items.HUMAN_DAGGER, "human_dagger");
         this.registerItem(Items.HOBBIT_DAGGER, "hobbit_dagger");
         this.registerItem(Items.ELF_DAGGER, "elf_dagger");
