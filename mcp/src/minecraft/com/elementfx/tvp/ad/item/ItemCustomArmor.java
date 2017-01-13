@@ -202,7 +202,7 @@ public class ItemCustomArmor extends ItemArmor
     	}
     	
     	public ItemCustomArmor.Properties modifyDefensePoints(double a, double b) {
-    		this.setDefensePoints(a * this.getDefensePoints() + b);
+    		this.setDefensePoints(Math.round(a * this.getDefensePoints() + b));
     		return this;
     	}
     	
@@ -212,7 +212,7 @@ public class ItemCustomArmor extends ItemArmor
     	}
     	
     	public ItemCustomArmor.Properties modifyToughness(float a, float b) {
-    		this.setToughness(a * this.getToughness() + b);
+    		this.setToughness(Math.round(a * this.getToughness() + b));
     		return this;
     	}
     	
