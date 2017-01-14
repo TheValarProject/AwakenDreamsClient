@@ -1344,12 +1344,12 @@ public class Item
         registerItem(6070, "cooked_meat", (new ItemCustomFood(5, 0.7F, false)).setUnlocalizedName("cookedMeat"));
         ItemCustomArmor.Properties rohanArmor = new ItemCustomArmor.Properties("rohan1", 20, 0.8, 0, 9);
         registerItem(6071, "rohan_helmet_1", (new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.HEAD)).setUnlocalizedName("rohanHelmet1")));
-        //registerItem(6072, "rohan_helm_2", (new ItemValarBase().setUnlocalizedName("rohanHelm2").setTextureName("rohan_helm_2")));
-        //registerItem(6073, "rohan_helm_3", (new ItemValarBase().setUnlocalizedName("rohanHelm3").setTextureName("rohan_helm_3")));
-        //registerItem(6074, "rohan_helm_4", (new ItemValarBase().setUnlocalizedName("rohanHelm4").setTextureName("rohan_helm_4")));
-        //registerItem(6075, "rohan_helm_5", (new ItemValarBase().setUnlocalizedName("rohanHelm5").setTextureName("rohan_helm_5")));
-        //registerItem(6076, "rohan_helm_6", (new ItemValarBase().setUnlocalizedName("rohanHelm6").setTextureName("rohan_helm_6")));
-        //registerItem(6077, "rohan_chestplate", (new ItemValarBase().setUnlocalizedName("rohanChestplate").setTextureName("rohan_chestplate")));
+        registerItem(6072, "rohan_helmet_2", (new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).setTextureName("rohan2").adjustFor(EntityEquipmentSlot.HEAD)).setUnlocalizedName("rohanHelmet2")));
+        registerItem(6073, "rohan_helmet_3", (new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).setTextureName("rohan3").adjustFor(EntityEquipmentSlot.HEAD)).setUnlocalizedName("rohanHelmet3")));
+        registerItem(6074, "rohan_helmet_4", (new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).setTextureName("rohan4").adjustFor(EntityEquipmentSlot.HEAD)).setUnlocalizedName("rohanHelmet4")));
+        registerItem(6075, "rohan_helmet_5", (new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).setTextureName("rohan5").adjustFor(EntityEquipmentSlot.HEAD)).setUnlocalizedName("rohanHelmet5")));
+        registerItem(6076, "rohan_helmet_6", (new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).setTextureName("rohan6").adjustFor(EntityEquipmentSlot.HEAD)).setUnlocalizedName("rohanHelmet6")));
+        registerItem(6077, "rohan_chestplate", (new ItemCustomArmor(EntityEquipmentSlot.CHEST, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.CHEST)).setUnlocalizedName("rohanChestplate")));
         //registerItem(6080, "telescope", (new ItemValarTelescope().setUnlocalizedName("telescope").setTextureName("telescope")));
         //registerItem(6081, "stone_inscription", (new ItemValarStoneInscription()).setUnlocalizedName("stoneInscription").setTextureName("stone_inscription"));
         //registerItem(6082, "sting", (new ItemValarSting().setUnlocalizedName("sting").setTextureName("sting")));

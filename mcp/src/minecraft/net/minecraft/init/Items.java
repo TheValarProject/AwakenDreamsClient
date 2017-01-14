@@ -271,6 +271,12 @@ public class Items
     public static final Item RAW_MEAT;
     public static final Item COOKED_MEAT;
     public static final Item ROHAN_HELMET_1;
+    public static final Item ROHAN_HELMET_2;
+    public static final Item ROHAN_HELMET_3;
+    public static final Item ROHAN_HELMET_4;
+    public static final Item ROHAN_HELMET_5;
+    public static final Item ROHAN_HELMET_6;
+    public static final Item ROHAN_CHESTPLATE;
     public static final Item HUMAN_DAGGER;
     public static final Item HOBBIT_DAGGER;
     public static final Item ELF_DAGGER;
@@ -750,6 +756,12 @@ public class Items
             RAW_MEAT = getRegisteredItem("raw_meat");
             COOKED_MEAT = getRegisteredItem("cooked_meat");
             ROHAN_HELMET_1 = getRegisteredItem("rohan_helmet_1");
+            ROHAN_HELMET_2 = getRegisteredItem("rohan_helmet_2");
+            ROHAN_HELMET_3 = getRegisteredItem("rohan_helmet_3");
+            ROHAN_HELMET_4 = getRegisteredItem("rohan_helmet_4");
+            ROHAN_HELMET_5 = getRegisteredItem("rohan_helmet_5");
+            ROHAN_HELMET_6 = getRegisteredItem("rohan_helmet_6");
+            ROHAN_CHESTPLATE = getRegisteredItem("rohan_chestplate");
             HUMAN_DAGGER = getRegisteredItem("human_dagger");
             HOBBIT_DAGGER = getRegisteredItem("hobbit_dagger");
             ELF_DAGGER = getRegisteredItem("elf_dagger");
