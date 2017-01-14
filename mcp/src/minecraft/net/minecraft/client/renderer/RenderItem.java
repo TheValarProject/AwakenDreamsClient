@@ -1358,6 +1358,10 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.COOKED_MEAT, "cooked_meat");
         this.registerItem(Items.ROHAN_HELMET_1, "rohan_helmet_1");
         this.registerItem(Items.ROHAN_HELMET_2, "rohan_helmet_2");
+        this.registerItem(Items.ROHAN_HELMET_3, "rohan_helmet_3");
+        this.registerItem(Items.ROHAN_HELMET_4, "rohan_helmet_4");
+        this.registerItem(Items.ROHAN_HELMET_5, "rohan_helmet_5");
+        this.registerItem(Items.ROHAN_HELMET_6, "rohan_helmet_6");
         this.registerItem(Items.ROHAN_CHESTPLATE, "rohan_chestplate");
         this.registerItem(Items.HUMAN_DAGGER, "human_dagger");
         this.registerItem(Items.HOBBIT_DAGGER, "hobbit_dagger");
