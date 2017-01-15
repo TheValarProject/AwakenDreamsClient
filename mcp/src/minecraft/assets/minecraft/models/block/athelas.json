@@ -1,5 +1,5 @@
 {
-    "parent": "block/crop",
+    "parent": "block/raised_crop",
     "textures": {
         "crop": "blocks/athelas"
     }
