@@ -1332,7 +1332,7 @@ public class Item
         registerItem(6058, "cram", (new ItemCustomFood(2, 0.8F, false)).setUnlocalizedName("cram"));
         registerItem(6059, "cabbage", (new ItemCustomFood(3, 0.6F, false)).setUnlocalizedName("cabbage"));
         registerItem(6060, "coconut", (new ItemCustomFood(1, 0.3F, false)).setUnlocalizedName("coconut"));
-        registerItem(6061, "raw_deer_meat", (new ItemCustomFood(3, 0.4F, false)).setUnlocalizedName("rawDeerMeat"));
+        registerItem(6061, "raw_deer_meat", (new ItemCustomFood(3, 0.4F, true)).setUnlocalizedName("rawDeerMeat"));
         registerItem(6062, "cooked_deer_meat", (new ItemCustomFood(5, 0.6F, false)).setUnlocalizedName("cookedDeerMeat"));
         registerItem(6063, "muffin", (new ItemCustomFood(1, 0.4F, false)).setUnlocalizedName("muffin"));
         registerItem(6064, "strawberry", (new ItemCustomFood(2, 0.3F, false)).setUnlocalizedName("strawberry").setCreativeTab(CreativeTabs.FOOD));
@@ -1340,7 +1340,7 @@ public class Item
         registerItem(6066, "orange", (new ItemCustomFood(2, 0.6F, false)).setUnlocalizedName("orange"));
         registerItem(6067, "orange_muffin", (new ItemCustomFood(3, 0.6F, false)).setUnlocalizedName("orangeMuffin"));
         registerItem(6068, "pear", (new ItemCustomFood(2, 0.6F, false)).setUnlocalizedName("pear"));
-        registerItem(6069, "raw_meat", (new ItemCustomFood(2, 0.2F, false)).setUnlocalizedName("rawMeat"));
+        registerItem(6069, "raw_meat", (new ItemCustomFood(2, 0.2F, true)).setUnlocalizedName("rawMeat"));
         registerItem(6070, "cooked_meat", (new ItemCustomFood(5, 0.7F, false)).setUnlocalizedName("cookedMeat"));
         ItemCustomArmor.Properties rohanArmor = new ItemCustomArmor.Properties("rohan1", 20, 0.8, 0, 9);
         registerItem(6071, "rohan_helmet_1", (new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.HEAD)).setUnlocalizedName("rohanHelmet1")));
