@@ -1419,6 +1419,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.QUARTZ_MITHRIL_RING, "quartz_mithril_ring");
         this.registerItem(Items.AMBER_MITHRIL_RING, "amber_mithril_ring");
         this.registerItem(Items.SALT, "salt");
+        this.registerItem(Items.NOLDOR_CHESTPLATE, "noldor_chestplate");
         this.registerItem(Items.SILVER_INGOT, "silver_ingot");
         this.registerItem(Items.DWARF_DOOR, "dwarf_door");
         this.registerItem(Items.BOROMIRS_SWORD, "boromirs_sword");

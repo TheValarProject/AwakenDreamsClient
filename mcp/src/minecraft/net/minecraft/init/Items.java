@@ -333,6 +333,7 @@ public class Items
     public static final Item QUARTZ_MITHRIL_RING;
     public static final Item AMBER_MITHRIL_RING;
     public static final Item SALT;
+    public static final Item NOLDOR_CHESTPLATE;
     public static final Item SILVER_INGOT;
     public static final Item DWARF_DOOR;
     public static final Item BOROMIRS_SWORD;
@@ -821,6 +822,7 @@ public class Items
             QUARTZ_MITHRIL_RING = getRegisteredItem("quartz_mithril_ring");
             AMBER_MITHRIL_RING = getRegisteredItem("amber_mithril_ring");
             SALT = getRegisteredItem("salt");
+            NOLDOR_CHESTPLATE = getRegisteredItem("noldor_chestplate");
             SILVER_INGOT = getRegisteredItem("silver_ingot");
             DWARF_DOOR = getRegisteredItem("dwarf_door");
             Blocks.DWARF_DOOR.setItem(DWARF_DOOR);

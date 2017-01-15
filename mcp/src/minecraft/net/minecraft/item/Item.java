@@ -1420,7 +1420,8 @@ public class Item
         registerItem(6149, "quartz_mithril_ring", (new Item()).setCreativeTab(CreativeTabs.MISC).setUnlocalizedName("quartzMithrilRing"));
         registerItem(6150, "amber_mithril_ring", (new Item()).setCreativeTab(CreativeTabs.MISC).setUnlocalizedName("amberMithrilRing"));
         registerItem(6151, "salt", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("salt"));
-        //registerItem(6152, "noldor_chestplate", (new ItemValarBase().setUnlocalizedName("noldorChestplate").setTextureName("noldor_chestplate")));
+        ItemCustomArmor.Properties noldorArmor = new ItemCustomArmor.Properties("noldor", 25, 1.1, 0, 10);
+        registerItem(6152, "noldor_chestplate", (new ItemCustomArmor(EntityEquipmentSlot.CHEST, (new ItemCustomArmor.Properties(noldorArmor)).adjustFor(EntityEquipmentSlot.CHEST)).setUnlocalizedName("noldorChestplate")));
         registerItem(6153, "silver_ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("silverIngot"));
         registerItem(6154, "dwarf_door", (new ItemDoor(Blocks.DWARF_DOOR)).setUnlocalizedName("dwarfDoor"));
         registerItem(6155, "boromirs_sword", (new ItemWeapon(900, 9)).setUnlocalizedName("boromirsSword"));
