@@ -1589,6 +1589,8 @@ item.onion.name=Onion
 item.oldTobySeed.name=Old Toby Seed
 item.southernStarSeed.name=Southern Star Seed
 item.strawberrySeed.name=Strawberry Seed
+item.rohanBoots.name=Rohan Boots
+item.rohanLeggins.name=Rohan Leggins
 
 container.inventory=Inventory
 container.hopper=Item Hopper

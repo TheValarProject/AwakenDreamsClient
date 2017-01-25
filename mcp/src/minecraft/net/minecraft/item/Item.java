@@ -1598,6 +1598,8 @@ public class Item
         //registerItem(10004, "two_handed_sword", (new ItemValarWeapon(1, 20, 0, true).setUnlocalizedName("twoHandedSword").setTextureName("two_handed_sword")));
         //registerItem(10005, "easterling_helmet", (new ItemValarArmor(0, 1000, 2, 0).setUnlocalizedName("easterlingHelmet").setTextureName("easterling_helmet")));
         //registerItem(10006, "miruvoir", (new ItemValarDrinkable(Items.glass_bottle).setUnlocalizedName("miruvoir").setTextureName("miruvoir")));*/
+        registerItem(10007, "rohan_boots", (new ItemCustomArmor(EntityEquipmentSlot.FEET, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.FEET)).setUnlocalizedName("rohanBoots")));
+        registerItem(10008, "rohan_leggins", (new ItemCustomArmor(EntityEquipmentSlot.LEGS, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.LEGS)).setUnlocalizedName("rohanLeggins")));
         // End Awaken Dreams code
     }
 

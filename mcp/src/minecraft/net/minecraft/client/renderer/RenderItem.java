@@ -1560,6 +1560,8 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.OLD_TOBY_SEED, "old_toby_seed");
         this.registerItem(Items.SOUTHERN_STAR_SEED, "southern_star_seed");
         this.registerItem(Items.STRAWBERRY_SEED, "strawberry_seed");
+        this.registerItem(Items.ROHAN_BOOTS, "rohan_boots");
+        this.registerItem(Items.ROHAN_LEGGINS, "rohan_leggins");
         // End Awaken Dreams code
     }
 
