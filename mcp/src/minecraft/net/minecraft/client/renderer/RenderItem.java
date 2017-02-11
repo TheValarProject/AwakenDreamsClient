@@ -1483,6 +1483,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.ELVEN_LONG_SWORD, "elven_long_sword");
         this.registerItem(Items.BERSERKER_SWORD, "berserker_sword");
         this.registerItem(Items.TWO_HANDED_SWORD, "two_handed_sword");
+        this.registerItem(Items.THROWING_STONE, "throwing_stone");
         this.registerItem(Items.ROHIRRIM_AXE, "rohirrim_axe");
         this.registerItem(Items.ELVEN_DOOR, "elven_door");
         this.registerItem(Items.HUMAN_DOOR, "human_door");

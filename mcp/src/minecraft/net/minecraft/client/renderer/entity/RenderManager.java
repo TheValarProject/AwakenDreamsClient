@@ -1,5 +1,6 @@
 package net.minecraft.client.renderer.entity;
 
+import com.elementfx.tvp.ad.entity.projectile.EntityThrowingStone;
 import com.google.common.collect.Maps;
 import java.util.Map;
 import javax.annotation.Nullable;
@@ -213,6 +214,9 @@ public class RenderManager
         this.entityRenderMap.put(EntityAreaEffectCloud.class, new RenderAreaEffectCloud(this));
         this.entityRenderMap.put(EntityHorse.class, new RenderHorse(this, new ModelHorse(), 0.75F));
         this.entityRenderMap.put(EntityLightningBolt.class, new RenderLightningBolt(this));
+        //Begin Awaken Dreams code
+        this.entityRenderMap.put(EntityThrowingStone.class, new RenderSnowball(this, Items.THROWING_STONE, itemRendererIn));
+        //End Awaken Dreams code
         this.playerRenderer = new RenderPlayer(this);
         this.skinMap.put("default", this.playerRenderer);
         this.skinMap.put("slim", new RenderPlayer(this, true));

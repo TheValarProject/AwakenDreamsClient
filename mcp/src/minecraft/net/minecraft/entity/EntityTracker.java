@@ -1,5 +1,6 @@
 package net.minecraft.entity;
 
+import com.elementfx.tvp.ad.entity.projectile.EntityThrowingStone;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import java.util.List;
@@ -193,6 +194,12 @@ public class EntityTracker
         {
             this.addEntityToTracker(entityIn, 256, Integer.MAX_VALUE, false);
         }
+        //Begin Awaken Dreams code
+        else if (entityIn instanceof EntityThrowingStone)
+        {
+        	this.addEntityToTracker(entityIn, 64, 10, true);
+        }
+        //End Awaken Dreams code
     }
 
     public void trackEntity(Entity entityIn, int trackingRange, int updateFrequency)

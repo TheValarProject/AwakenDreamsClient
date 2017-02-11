@@ -1,5 +1,6 @@
 package net.minecraft.client.network;
 
+import com.elementfx.tvp.ad.entity.projectile.EntityThrowingStone;
 import com.google.common.collect.Maps;
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
@@ -444,6 +445,12 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
         {
             entity = new EntityAreaEffectCloud(this.clientWorldController, d0, d1, d2);
         }
+        //Begin Awaken Dreams code
+        else if (packetIn.getType() == 500)
+        {
+        	entity = new EntityThrowingStone(this.clientWorldController, d0, d1, d2);
+        }
+        //End Awaken Dreams code
 
         if (entity != null)
         {

@@ -1,5 +1,6 @@
 package net.minecraft.entity;
 
+import com.elementfx.tvp.ad.entity.projectile.EntityThrowingStone;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import java.util.List;
@@ -388,6 +389,9 @@ public class EntityList
         addMapping(EntityPolarBear.class, "PolarBear", 102, 15921906, 9803152);
         addMapping(EntityVillager.class, "Villager", 120, 5651507, 12422002);
         addMapping(EntityEnderCrystal.class, "EnderCrystal", 200);
+        //Begin Awaken Dreams code
+        addMapping(EntityThrowingStone.class, "ThrowingStone", 500);
+        //End Awaken Dreams code
     }
 
     public static class EntityEggInfo

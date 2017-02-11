@@ -397,6 +397,7 @@ public class Items
     public static final Item ELVEN_LONG_SWORD;
     public static final Item BERSERKER_SWORD;
     public static final Item TWO_HANDED_SWORD;
+    public static final Item THROWING_STONE;
     public static final Item ROHIRRIM_AXE;
     public static final Item ELVEN_DOOR;
     public static final Item HUMAN_DOOR;
@@ -889,6 +890,7 @@ public class Items
             ELVEN_LONG_SWORD = getRegisteredItem("elven_long_sword");
             BERSERKER_SWORD = getRegisteredItem("berserker_sword");
             TWO_HANDED_SWORD = getRegisteredItem("two_handed_sword");
+            THROWING_STONE = getRegisteredItem("throwing_stone");
             ROHIRRIM_AXE = getRegisteredItem("rohirrim_axe");
             ELVEN_DOOR = getRegisteredItem("elven_door");
             Blocks.ELVEN_DOOR.setItem(ELVEN_DOOR);

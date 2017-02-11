@@ -5,6 +5,7 @@ import com.elementfx.tvp.ad.block.BlockCustomCrops;
 import com.elementfx.tvp.ad.item.ItemCustomArmor;
 import com.elementfx.tvp.ad.item.ItemCustomBed;
 import com.elementfx.tvp.ad.item.ItemCustomFood;
+import com.elementfx.tvp.ad.item.ItemThrowingStone;
 import com.elementfx.tvp.ad.item.ItemWeapon;
 import com.google.common.base.Function;
 import com.google.common.collect.HashMultimap;
@@ -1503,7 +1504,7 @@ public class Item
         //registerItem(6231, "green_flag", (new ItemValarBase().setUnlocalizedName("greenFlag"));
         //registerItem(6232, "hobbit_bow", (new ItemValarBase().setUnlocalizedName("hobbitBow"));
         //registerItem(6233, "rohan_sheild_6", (new ItemValarBase().setUnlocalizedName("rohanShield6"));
-        //registerItem(6234, "throwing_stone", (new ItemValarBase().setUnlocalizedName("throwingStone"));
+        registerItem(6234, "throwing_stone", (new ItemThrowingStone(1).setUnlocalizedName("throwingStone")));
         registerItem(6235, "rohirrim_axe", (new ItemWeapon(267, 6)).setUnlocalizedName("rohirrimAxe"));
         //registerItem(6236, "ecthelions_boots", (new ItemValarArmor(3, 500, 3, 0).setUnlocalizedName("ecthelionsBoots"));
         registerItem(6239, "elven_door", (new ItemDoor(Blocks.ELVEN_DOOR)).setUnlocalizedName("elvenDoor"));

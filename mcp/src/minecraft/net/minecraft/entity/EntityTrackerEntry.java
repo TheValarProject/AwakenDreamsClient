@@ -1,5 +1,6 @@
 package net.minecraft.entity;
 
+import com.elementfx.tvp.ad.entity.projectile.EntityThrowingStone;
 import com.google.common.collect.Sets;
 import java.util.Collection;
 import java.util.Collections;
@@ -648,6 +649,12 @@ public class EntityTrackerEntry
         {
             return new SPacketSpawnObject(this.trackedEntity, 3);
         }
+        //Begin Awaken Dreams code
+        else if (this.trackedEntity instanceof EntityThrowingStone)
+        {
+        	return new SPacketSpawnObject(this.trackedEntity, 500);
+        }
+        //End Awaken Dreams code
         else
         {
             throw new IllegalArgumentException("Don\'t know how to add " + this.trackedEntity.getClass() + "!");
