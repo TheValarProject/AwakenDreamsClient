@@ -6,6 +6,7 @@
 /mcp/jars/usercache.json
 /mcp/jars/options.txt
 /mcp/reobf
+/mcp/jars/crash-reports
 
 *.pyc
 **/logs
