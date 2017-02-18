@@ -1,0 +1,11 @@
+/bin
+/eclipse
+/temp
+/jars/screenshots
+/jars/saves
+/jars/usercache.json
+/jars/options.txt
+/reobf
+/jars/crash-reports
+/AD-*
+/build
