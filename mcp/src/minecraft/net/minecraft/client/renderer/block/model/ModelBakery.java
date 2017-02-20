@@ -1,5 +1,6 @@
 package net.minecraft.client.renderer.block.model;
 
+import com.elementfx.tvp.ad.item.EnumRingBase;
 import com.google.common.base.Charsets;
 import com.google.common.base.Joiner;
 import com.google.common.base.Predicate;
@@ -15,6 +16,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.StringReader;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
@@ -35,9 +37,11 @@ import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.client.renderer.texture.TextureMap;
 import net.minecraft.client.resources.IResource;
 import net.minecraft.client.resources.IResourceManager;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.registry.IRegistry;
@@ -411,6 +415,16 @@ public class ModelBakery
         this.variantNames.put(Item.getItemFromBlock(Blocks.OAK_FENCE), Lists.newArrayList(new String[] {"oak_fence"}));
         this.variantNames.put(Items.OAK_DOOR, Lists.newArrayList(new String[] {"oak_door"}));
         this.variantNames.put(Items.BOAT, Lists.newArrayList(new String[] {"oak_boat"}));
+        // Begin Awaken Dreams code
+        ArrayList<ItemStack> rings = new ArrayList<ItemStack>();
+        Items.RING.getSubItems(Items.RING, CreativeTabs.MISC, rings);
+        ArrayList<String> ringNames = new ArrayList<String>();
+        for(ItemStack ring : rings)
+        {
+        	ringNames.add(ring.getUnlocalizedName().substring(5).replace('.', '_'));
+        }
+        this.variantNames.put(Items.RING, ringNames);
+        // End Awaken Dreams code
     }
 
     private List<String> getVariantNames(Item stack)

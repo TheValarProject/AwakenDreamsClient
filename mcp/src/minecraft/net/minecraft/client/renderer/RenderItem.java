@@ -1,7 +1,11 @@
 package net.minecraft.client.renderer;
 
+import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Nullable;
+
+import com.elementfx.tvp.ad.item.ItemRing;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirt;
 import net.minecraft.block.BlockDoublePlant;
@@ -1564,6 +1568,13 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.STRAWBERRY_SEED, "strawberry_seed");
         this.registerItem(Items.ROHAN_BOOTS, "rohan_boots");
         this.registerItem(Items.ROHAN_LEGGINS, "rohan_leggins");
+        this.itemModelMesher.register(Items.RING, new ItemMeshDefinition()
+        {
+            public ModelResourceLocation getModelLocation(ItemStack stack)
+            {
+            	return new ModelResourceLocation(stack.getUnlocalizedName().substring(5).replace('.', '_'), "inventory");
+            }
+        });
         // End Awaken Dreams code
     }
 

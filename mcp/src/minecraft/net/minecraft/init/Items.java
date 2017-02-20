@@ -477,6 +477,7 @@ public class Items
     public static final Item STRAWBERRY_SEED;
     public static final Item ROHAN_BOOTS;
     public static final Item ROHAN_LEGGINS;
+    public static final Item RING;
     // End Awaken Dreams code
 
     private static Item getRegisteredItem(String name)
@@ -990,6 +991,7 @@ public class Items
             Blocks.STRAWBERRY_BUSH.setSeed(STRAWBERRY_SEED);
             ROHAN_BOOTS = getRegisteredItem("rohan_boots");
             ROHAN_LEGGINS = getRegisteredItem("rohan_leggins");
+            RING = getRegisteredItem("ring");
             // End Awaken Dreams code
         }
     }
