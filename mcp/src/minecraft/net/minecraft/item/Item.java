@@ -1585,7 +1585,12 @@ public class Item
         /*registerItem(6312, "purple_grape_seed", (new ItemValarCrops((BlockValarCrops)Blocks.purpleGrape)).setUnlocalizedName("purpleGrapeSeed").setTextureName("purple_grape_seed"));*/
         registerItem(6313, "purple_grapes", (new ItemCustomFood(2, 0.3F, false)).setUnlocalizedName("purpleGrapes"));
         registerItem(6314, "pipeweed_seed", (new ItemSeeds(Blocks.PIPEWEED_PLANT, Blocks.FARMLAND)).setUnlocalizedName("pipeweedSeed"));
-        registerItem(6315, "peas", (new ItemSeeds(Blocks.PEA_PLANT, Blocks.FARMLAND)).setUnlocalizedName("peas"));
+        registerItem(6315, "peas", (new ItemSeedFood(1, 0.1F, Blocks.PEA_PLANT, Blocks.FARMLAND) {
+        	public int getHealAmount(ItemStack stack)
+            {
+                return this.itemRand.nextInt(6) == 0 ? 1 : 0;
+            }
+        }).setUnlocalizedName("peas"));
         registerItem(6316, "pea_pod", (new ItemCustomFood(1, 0.6F, false)).setUnlocalizedName("peaPod").setCreativeTab(CreativeTabs.FOOD));
         registerItem(6317, "leek", (new ItemCustomFood(3, 0.6F, false)).setUnlocalizedName("leek").setCreativeTab(CreativeTabs.FOOD));
         registerItem(6318, "leek_seed", (new ItemSeeds(Blocks.LEEK_PLANT, Blocks.FARMLAND)).setUnlocalizedName("leekSeed"));
