@@ -515,6 +515,7 @@ public class Blocks
     public static final Block COLUMN_TOP_DECORATION;
     public static final Block MEDUSELD_PILLAR;
     public static final Block DIAGONAL_BRICKS;
+    public static final Block BELL;
     // End Awaken Dreams code
 
     @Nullable
@@ -1015,6 +1016,7 @@ public class Blocks
             COLUMN_TOP_DECORATION = getRegisteredBlock("column_top_decoration");
             MEDUSELD_PILLAR = getRegisteredBlock("meduseld_pillar");
             DIAGONAL_BRICKS = getRegisteredBlock("diagonal_bricks");
+            BELL = getRegisteredBlock("bell");
             // End Awaken Dreams code
             CACHE.clear();
         }

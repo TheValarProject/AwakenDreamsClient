@@ -468,6 +468,9 @@ public class SoundEvents
     public static final SoundEvent ENTITY_ZOMBIE_VILLAGER_DEATH;
     public static final SoundEvent ENTITY_ZOMBIE_VILLAGER_HURT;
     public static final SoundEvent ENTITY_ZOMBIE_VILLAGER_STEP;
+    // Begin Awaken Dreams code
+    public static final SoundEvent BLOCK_BELL_RING;
+    // End Awaken Dreams code
 
     private static SoundEvent getRegisteredSoundEvent(String id)
     {
@@ -954,6 +957,9 @@ public class SoundEvents
             ENTITY_ZOMBIE_VILLAGER_DEATH = getRegisteredSoundEvent("entity.zombie_villager.death");
             ENTITY_ZOMBIE_VILLAGER_HURT = getRegisteredSoundEvent("entity.zombie_villager.hurt");
             ENTITY_ZOMBIE_VILLAGER_STEP = getRegisteredSoundEvent("entity.zombie_villager.step");
+            // Begin Awaken Dreams code
+            BLOCK_BELL_RING = getRegisteredSoundEvent("block.bell.ring");
+            // End Awaken Dreams code
         }
     }
 }

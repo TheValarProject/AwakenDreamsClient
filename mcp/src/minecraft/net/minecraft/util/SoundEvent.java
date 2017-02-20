@@ -483,6 +483,9 @@ public class SoundEvent
         registerSound("ui.button.click");
         registerSound("weather.rain");
         registerSound("weather.rain.above");
+        // Begin Awaken Dreams code
+        registerSound("block.bell.ring");
+        // End Awaken Dreams code
     }
 
     private static void registerSound(String soundNameIn)

@@ -1,5 +1,7 @@
 package net.minecraft.client.renderer.tileentity;
 
+import com.elementfx.tvp.ad.client.renderer.tileentity.TileEntityBellRenderer;
+import com.elementfx.tvp.ad.tileentity.TileEntityBell;
 import com.google.common.collect.Maps;
 import java.util.Map;
 import javax.annotation.Nullable;
@@ -67,6 +69,9 @@ public class TileEntityRendererDispatcher
         this.mapSpecialRenderers.put(TileEntitySkull.class, new TileEntitySkullRenderer());
         this.mapSpecialRenderers.put(TileEntityBanner.class, new TileEntityBannerRenderer());
         this.mapSpecialRenderers.put(TileEntityStructure.class, new TileEntityStructureRenderer());
+        // Being Awaken Dreams code
+        this.mapSpecialRenderers.put(TileEntityBell.class, new TileEntityBellRenderer());
+        // End Awaken Drams code
 
         for (TileEntitySpecialRenderer<?> tileentityspecialrenderer : this.mapSpecialRenderers.values())
         {
