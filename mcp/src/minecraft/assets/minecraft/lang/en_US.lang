@@ -1079,6 +1079,7 @@ tile.greyColumnTop.name=Grey Column Top
 tile.columnTopDecoration.name=Column Top Decoration
 tile.meduseldPillar.name=Meduseld Pillar
 tile.diagonalBricks.name=Diagonal Bricks
+tile.bell.name=Bell
 
 item.nameTag.name=Name Tag
 item.leash.name=Lead

@@ -12,6 +12,8 @@ public class TileEntityBell extends TileEntity implements ITickable
 {
 	/** The current index angle (between -14 and 14 inclusive) */
     public int angleIndex;
+    /** The previous index angle (between -14 and 14 inclusive, -1 <= angleIndex - prevAngleIndex <= 1 */
+    public int prevAngleIndex;
     /** 0 if not moving, 1 if moving in the positive direction, -1 if moving in the negative direction */
     public float angleDirection;
     /** true if the bell should continue moving once it has reach the bottom of its motion */
@@ -20,7 +22,7 @@ public class TileEntityBell extends TileEntity implements ITickable
      * Values generated from the formula sin((i-14)*pi/28)
      * (see update for usage details)
      */
-    final public float[] angleLookup = { -1, -.99371f, -.97493f, -.94388f, -.90097f, -.84672f, -.78183f, -.70711f, -.62349f, -.53203f, -.43388f, -.33028f, -.22252f, -.11196f, 0f, -.11196f, -.22252f, -.33028f, -.43388f, -.53203f, -.62349f, -.70711f, -.78183f, -.84672f, -.90097f, -.94388f, -.97493f, -.99371f, -1 };
+    final public float[] angleLookup = { -1, -.99371f, -.97493f, -.94388f, -.90097f, -.84672f, -.78183f, -.70711f, -.62349f, -.53203f, -.43388f, -.33028f, -.22252f, -.11196f, 0f, .11196f, .22252f, .33028f, .43388f, .53203f, .62349f, .70711f, .78183f, .84672f, .90097f, .94388f, .97493f, .99371f, 1 };
     
     /** The direction of the bell (determined when placed) */
     public EnumFacing direction;
@@ -37,7 +39,12 @@ public class TileEntityBell extends TileEntity implements ITickable
     
     public float getAngle()
     {
-    	return this.angleLookup[this.angleIndex];
+    	return this.angleLookup[this.angleIndex + 14];
+    }
+    
+    public float getPrevAngle()
+    {
+    	return this.angleLookup[this.prevAngleIndex + 14];
     }
 	
 	/**
@@ -45,10 +52,10 @@ public class TileEntityBell extends TileEntity implements ITickable
      */
 	public void update()
 	{
+		this.prevAngleIndex = this.angleIndex;
 		// Bell is moving
 		if(this.angleDirection != 0)
 		{
-			
 			this.angleIndex += this.angleDirection;
 			
 			// If bell is at the bottom of its swing

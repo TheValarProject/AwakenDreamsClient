@@ -108,6 +108,13 @@ public class BlockModelShapes
             {
                 return this.modelManager.getTextureMap().getAtlasSprite("minecraft:items/barrier");
             }
+            
+            // Begin Awaken Dreams code
+            if (block == Blocks.BELL)
+            {
+            	return this.modelManager.getTextureMap().getAtlasSprite("minecraft:blocks/bell");
+            }
+            // End Awaken Dreams code
         }
 
         if (ibakedmodel == null)
@@ -322,6 +329,7 @@ public class BlockModelShapes
         this.registerBlockWithStateMapper(Blocks.MORDOR_DOOR, (new StateMap.Builder()).ignore(new IProperty[] {BlockDoor.POWERED}).build());
         this.registerBlockWithStateMapper(Blocks.PRISON_DOOR, (new StateMap.Builder()).ignore(new IProperty[] {BlockDoor.POWERED}).build());
         this.registerBlockWithStateMapper(Blocks.SINDAR_DOOR, (new StateMap.Builder()).ignore(new IProperty[] {BlockDoor.POWERED}).build());
+        //this.registerBuiltInBlocks(Blocks.BELL);
         // End Awaken Dreams code
     }
 }

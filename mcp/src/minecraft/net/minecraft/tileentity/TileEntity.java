@@ -1,5 +1,6 @@
 package net.minecraft.tileentity;
 
+import com.elementfx.tvp.ad.tileentity.TileEntityBell;
 import com.google.common.collect.Maps;
 import java.util.Map;
 import javax.annotation.Nullable;
@@ -362,5 +363,8 @@ public abstract class TileEntity
         addMapping(TileEntityStructure.class, "Structure");
         addMapping(TileEntityEndGateway.class, "EndGateway");
         addMapping(TileEntityCommandBlock.class, "Control");
+        // Being Awaken Dreams code
+        addMapping(TileEntityBell.class, "Bell");
+        // End Awaken Dreams code
     }
 }

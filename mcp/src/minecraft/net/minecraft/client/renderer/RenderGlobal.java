@@ -1,5 +1,6 @@
 package net.minecraft.client.renderer;
 
+import com.elementfx.tvp.ad.block.BlockBell;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Queues;
@@ -752,8 +753,10 @@ public class RenderGlobal implements IWorldEventListener, IResourceManagerReload
 
                 Block block = this.theWorld.getBlockState(blockpos).getBlock();
 
-                if (tileentity1 != null && (block instanceof BlockChest || block instanceof BlockEnderChest || block instanceof BlockSign || block instanceof BlockSkull))
+                // Begin Awaken Dreams code
+                if (tileentity1 != null && (block instanceof BlockChest || block instanceof BlockEnderChest || block instanceof BlockSign || block instanceof BlockSkull || block instanceof BlockBell))
                 {
+                	// End Awaken Dreams code
                     TileEntityRendererDispatcher.instance.renderTileEntity(tileentity1, partialTicks, destroyblockprogress.getPartialBlockDamage());
                 }
             }
@@ -1905,8 +1908,10 @@ public class RenderGlobal implements IWorldEventListener, IResourceManagerReload
                 double d5 = (double)blockpos.getZ() - d2;
                 Block block = this.theWorld.getBlockState(blockpos).getBlock();
 
-                if (!(block instanceof BlockChest) && !(block instanceof BlockEnderChest) && !(block instanceof BlockSign) && !(block instanceof BlockSkull))
+                // Being Awaken Dreams code
+                if (!(block instanceof BlockChest) && !(block instanceof BlockEnderChest) && !(block instanceof BlockSign) && !(block instanceof BlockSkull) && !(block instanceof BlockBell))
                 {
+                	// End Awaken Dreams code
                     if (d3 * d3 + d4 * d4 + d5 * d5 > 1024.0D)
                     {
                         iterator.remove();
