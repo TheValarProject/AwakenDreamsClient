@@ -12,10 +12,10 @@ VN="AD-0.5b-$(date "+%d%m%y")"
 # Set platform specific options
 case "$(uname -s)" in
     Darwin)
-        MC_PATH="~/Library/Application\ Support/minecraft/versions/$MC_VERSION/$MC_VERSION.jar"
+        MC_PATH=~/Library/Application\ Support/minecraft/versions/$MC_VERSION/$MC_VERSION.jar
     ;;
     Linux)
-        MC_PATH="~/.minecraft/versions/$MC_VERSION/$MC_VERSION.jar"
+        MC_PATH=~/.minecraft/versions/$MC_VERSION/$MC_VERSION.jar
         ;;
     *)
         echo "Unsupported OS"
@@ -23,7 +23,11 @@ case "$(uname -s)" in
         ;;
 esac
 
-# TODO chedk to see if MC_PATH exists
+if [ ! -e "$MC_PATH" ]; then
+    echo "Cannot find Minecraft 1.10 jar, make sure you have run an 1.10 and then try again."
+    echo "Expected location: $MC_PATH"
+    exit 1
+fi
 
 # Clean up any files and folder from previous deployments
 rm -rf ./build $VN.zip $VN
@@ -39,7 +43,7 @@ mkdir build
 cd build
 
 # Extract the contents of the minecraft jar to the mcp/build folder
-jar xf $MC_PATH
+jar xf "$MC_PATH"
 
 # Remove jar signatures
 rm -rf META-INF
@@ -53,11 +57,11 @@ rsync -aP ../src/minecraft/assets/ assets/
 # Make directory for future versions subfolder
 mkdir ../$VN
 
+# Pack classes back into a jar folder
+jar cf ../$VN/$VN.jar *
+
 # Change back to mcp folder
 cd ../
-
-# Pack classes back into a jar folder
-jar cf $VN/$VN.jar build/*
 
 # Copy build_template.json
 cp build_template.json $VN/$VN.json
