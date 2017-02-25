@@ -1,0 +1,7 @@
+{
+    "parent": "item/pipe_smoking",
+    "textures": {
+      "layer0": "items/pipe_old_toby_smoking"
+  }
+ }
+ 

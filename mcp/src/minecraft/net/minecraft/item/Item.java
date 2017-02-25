@@ -6,6 +6,7 @@ import com.elementfx.tvp.ad.item.ItemCustomArmor;
 import com.elementfx.tvp.ad.item.ItemCustomBed;
 import com.elementfx.tvp.ad.item.ItemCustomFood;
 import com.elementfx.tvp.ad.item.ItemRing;
+import com.elementfx.tvp.ad.item.ItemPipe;
 import com.elementfx.tvp.ad.item.ItemThrowingStone;
 import com.elementfx.tvp.ad.item.ItemWeapon;
 import com.google.common.base.Function;
@@ -1291,8 +1292,8 @@ public class Item
         registerItem(6000, "lembas", (new ItemCustomFood(8, 0.8F, false)).setUnlocalizedName("lembas"));
         registerItem(6001, "mithril_ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("mithrilIngot"));
         registerItem(6002, "bronze_ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("bronzeIngot"));
-        //registerItem(6003, "pipe", (new Item()).setCreativeTab().setUnlocalizedName("pipe"));
-        //registerItem(6004, "tobacco", (new Item()).setCreativeTab().setUnlocalizedName("tobacco"));
+        registerItem(6003, "pipe", (new ItemPipe(false).setUnlocalizedName("pipe")));
+        registerItem(6004, "tobacco", (new Item()).setCreativeTab(CreativeTabs.MISC).setUnlocalizedName("tobacco"));
         //registerItem(6005, "flaming_arrow", (new Item()).setCreativeTab().setUnlocalizedName("flamingArrow"));
         registerItem(6008, "jade", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("jade"));
         registerItem(6009, "amber", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("amber"));
@@ -1609,6 +1610,8 @@ public class Item
         //registerItem(10006, "miruvoir", (new ItemValarDrinkable(Items.glass_bottle).setUnlocalizedName("miruvoir").setTextureName("miruvoir")));
         registerItem(10007, "rohan_boots", (new ItemCustomArmor(EntityEquipmentSlot.FEET, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.FEET)).setUnlocalizedName("rohanBoots")));
         registerItem(10008, "rohan_leggins", (new ItemCustomArmor(EntityEquipmentSlot.LEGS, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.LEGS)).setUnlocalizedName("rohanLeggins")));
+        registerItem(10009, "packed_pipe", (new ItemPipe(true).setUnlocalizedName("packedPipe")));
+        registerItem(10010, "toby_packed_pipe", (new ItemPipe(true).setUnlocalizedName("tobyPackedPipe")));
         // End Awaken Dreams code
     }
 

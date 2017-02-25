@@ -6,5 +6,8 @@ public enum EnumAction
     EAT,
     DRINK,
     BLOCK,
-    BOW;
+    BOW,
+    //Begin Awaken Dreams code
+    SMOKE;
+	//End AWaken Dreams code
 }

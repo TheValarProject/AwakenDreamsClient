@@ -1,0 +1,14 @@
+{
+    "parent": "item/pipe",
+    "textures": {
+      "layer0": "items/packed_pipe"
+  },
+    "overrides": [
+        {
+            "predicate": {
+                "smoking": 1
+            },
+            "model": "item/pipe_smoking"
+        }
+       ]
+}
