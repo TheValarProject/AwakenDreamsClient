@@ -435,9 +435,11 @@ public class ItemRenderer
                         GlStateManager.rotate((float)j * 45.0F, 0.0F, -1.0F, 0.0F);
                         break;
                         
+                    // Begin Awaken Dreams code
                     case SMOKE:
                     	this.transformSideFirstPerson(enumhandside, p_187457_7_);
                     	break;
+                    // End Awaken Dreams code
                 }
             }
             else

@@ -424,6 +424,16 @@ public class ModelBakery
         	ringNames.add(ring.getUnlocalizedName().substring(5).replace('.', '_'));
         }
         this.variantNames.put(Items.RING, ringNames);
+        
+        ArrayList<ItemStack> pipes = new ArrayList<ItemStack>();
+        Items.PIPE.getSubItems(Items.PIPE, CreativeTabs.MISC, pipes);
+        ArrayList<String> pipeNames = new ArrayList<String>();
+        for(ItemStack pipe : pipes)
+        {
+        	//System.out.println("stacks" + pipe.getMName().substring(5).replace('.', '_'));
+        	pipeNames.add(Items.PIPE.getModelName(pipe));
+        }
+        this.variantNames.put(Items.PIPE, pipeNames);
         // End Awaken Dreams code
     }
 

@@ -113,12 +113,12 @@ public class RenderPlayer extends RenderLivingBase<AbstractClientPlayer>
                     {
                         modelbiped$armpose = ModelBiped.ArmPose.BOW_AND_ARROW;
                     }
-                    //Begin Awaken Dreams code
+                    // Begin Awaken Dreams code
                     else if (enumaction == EnumAction.SMOKE)
                     {                	
                     	modelbiped$armpose = ModelBiped.ArmPose.PIPE;
                     }
-                    //End Awaken Dreams code
+                    // End Awaken Dreams code
                 }
             }
 
@@ -134,12 +134,12 @@ public class RenderPlayer extends RenderLivingBase<AbstractClientPlayer>
                     {
                         modelbiped$armpose1 = ModelBiped.ArmPose.BLOCK;
                     }
-                  //Begin Awaken Dreams code
+                    // Begin Awaken Dreams code
                     else if (enumaction1 == EnumAction.SMOKE)
                     {                	
                     	modelbiped$armpose1 = ModelBiped.ArmPose.PIPE;
                     }
-                    //End Awaken Dreams code
+                    // End Awaken Dreams code
                 }
             }
 

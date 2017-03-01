@@ -1610,8 +1610,8 @@ public class Item
         //registerItem(10006, "miruvoir", (new ItemValarDrinkable(Items.glass_bottle).setUnlocalizedName("miruvoir").setTextureName("miruvoir")));
         registerItem(10007, "rohan_boots", (new ItemCustomArmor(EntityEquipmentSlot.FEET, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.FEET)).setUnlocalizedName("rohanBoots")));
         registerItem(10008, "rohan_leggins", (new ItemCustomArmor(EntityEquipmentSlot.LEGS, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.LEGS)).setUnlocalizedName("rohanLeggins")));
-        registerItem(10009, "packed_pipe", (new ItemPipe(true).setUnlocalizedName("packedPipe")));
-        registerItem(10010, "toby_packed_pipe", (new ItemPipe(true).setUnlocalizedName("tobyPackedPipe")));
+        //registerItem(10009, "packed_pipe", (new ItemPipe(true).setUnlocalizedName("packedPipe")));
+        //registerItem(10010, "toby_packed_pipe", (new ItemPipe(true).setUnlocalizedName("tobyPackedPipe")));
         // End Awaken Dreams code
     }
 

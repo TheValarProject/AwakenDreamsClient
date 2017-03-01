@@ -282,7 +282,7 @@ public class ModelBiped extends ModelBase
             this.bipedRightArm.rotateAngleX = -((float)Math.PI / 2F) + this.bipedHead.rotateAngleX;
             this.bipedLeftArm.rotateAngleX = -((float)Math.PI / 2F) + this.bipedHead.rotateAngleX;
         }
-        //Begin Awaken Dreams code
+        // Begin Awaken Dreams code
         else if (this.rightArmPose == ModelBiped.ArmPose.PIPE)
         {
         	this.bipedRightArm.rotateAngleY = -0.44F + this.bipedHead.rotateAngleY;
@@ -293,7 +293,7 @@ public class ModelBiped extends ModelBase
         	this.bipedLeftArm.rotateAngleY = 0.44F + this.bipedHead.rotateAngleY;
         	this.bipedLeftArm.rotateAngleX = -1.23F + this.bipedHead.rotateAngleX;
         }
-        //End Awaken Dreams code
+        // End Awaken Dreams code
         
         copyModelAngles(this.bipedHead, this.bipedHeadwear);
     }
@@ -343,8 +343,8 @@ public class ModelBiped extends ModelBase
         ITEM,
         BLOCK,
         BOW_AND_ARROW,
-        //Begin Awaken Dreams code
+        // Begin Awaken Dreams code
     	PIPE;
-    	//End Awaken Dreams code
+    	// End Awaken Dreams code
     }
 }

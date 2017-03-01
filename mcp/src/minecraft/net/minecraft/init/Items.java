@@ -1,5 +1,7 @@
 package net.minecraft.init;
 
+import com.elementfx.tvp.ad.item.ItemPipe;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
@@ -225,7 +227,7 @@ public class Items
     public static final Item LEMBAS;
     public static final Item MITHRIL_INGOT;
     public static final Item BRONZE_INGOT;
-    public static final Item PIPE;
+    public static final ItemPipe PIPE;
     public static final Item TOBACCO;
     public static final Item JADE;
     public static final Item AMBER;
@@ -480,8 +482,8 @@ public class Items
     public static final Item ROHAN_BOOTS;
     public static final Item ROHAN_LEGGINS;
     public static final Item RING;
-    public static final Item PACKED_PIPE;
-    public static final Item TOBY_PACKED_PIPE;
+    //public static final Item PACKED_PIPE;
+    //public static final Item TOBY_PACKED_PIPE;
     // End Awaken Dreams code
 
     private static Item getRegisteredItem(String name)
@@ -714,9 +716,10 @@ public class Items
             // Begin Awaken Dreams code
             LEMBAS = getRegisteredItem("lembas");
             MITHRIL_INGOT = getRegisteredItem("mithril_ingot");
-            PIPE = getRegisteredItem("pipe");
+            PIPE = (ItemPipe) getRegisteredItem("pipe");
             BRONZE_INGOT = getRegisteredItem("bronze_ingot");
             TOBACCO = getRegisteredItem("tobacco");
+            PIPE.addSmokableItem(TOBACCO);
             JADE = getRegisteredItem("jade");
             AMBER = getRegisteredItem("amber");
             CRYSTAL = getRegisteredItem("crystal");
@@ -782,6 +785,7 @@ public class Items
             SOUTHLINCH = getRegisteredItem("southlinch");
             Blocks.SOUTHLINCH.setCrop(SOUTHLINCH);
             OLD_TOBY = getRegisteredItem("old_toby");
+            PIPE.addSmokableItem(OLD_TOBY);
             Blocks.OLD_TOBY_PLANT.setCrop(OLD_TOBY);
             STONE_OF_DARKNESS = getRegisteredItem("stone_of_darkness");
             STONE_OF_EARTH = getRegisteredItem("stone_of_earth");
@@ -998,8 +1002,8 @@ public class Items
             ROHAN_BOOTS = getRegisteredItem("rohan_boots");
             ROHAN_LEGGINS = getRegisteredItem("rohan_leggins");
             RING = getRegisteredItem("ring");
-            PACKED_PIPE = getRegisteredItem("packed_pipe");
-            TOBY_PACKED_PIPE = getRegisteredItem("toby_packed_pipe");
+            //PACKED_PIPE = getRegisteredItem("packed_pipe");
+            //TOBY_PACKED_PIPE = getRegisteredItem("toby_packed_pipe");
             // End Awaken Dreams code
         }
     }

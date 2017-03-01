@@ -7,7 +7,7 @@ public enum EnumAction
     DRINK,
     BLOCK,
     BOW,
-    //Begin Awaken Dreams code
+    // Begin Awaken Dreams code
     SMOKE;
-	//End AWaken Dreams code
+	// End AWaken Dreams code
 }
