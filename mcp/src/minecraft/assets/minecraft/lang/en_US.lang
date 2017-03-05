@@ -1080,6 +1080,7 @@ tile.columnTopDecoration.name=Column Top Decoration
 tile.meduseldPillar.name=Meduseld Pillar
 tile.diagonalBricks.name=Diagonal Bricks
 tile.bell.name=Bell
+tile.elvenCraftingTable.name=Elven Crafting Table
 
 item.nameTag.name=Name Tag
 item.leash.name=Lead
@@ -1695,6 +1696,8 @@ container.chest=Chest
 container.chestDouble=Large Chest
 container.enderchest=Ender Chest
 container.beacon=Beacon
+
+container.elvenCrafting=Elven Crafting
 
 container.spectatorCantOpen=Unable to open. Loot not generated yet.
 container.isLocked=%s is locked!

@@ -2,6 +2,9 @@ package net.minecraft.client.entity;
 
 import java.util.List;
 import javax.annotation.Nullable;
+
+import com.elementfx.tvp.ad.client.gui.inventory.GuiElvenCrafting;
+
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.ElytraSound;
@@ -803,6 +806,12 @@ public class EntityPlayerSP extends AbstractClientPlayer
         {
             this.mc.displayGuiScreen(new GuiRepair(this.inventory, this.worldObj));
         }
+        //Begin Awaken Dreams code
+        else if("minecraft:elven_crafting_table".equals(s))
+        {
+            this.mc.displayGuiScreen(new GuiElvenCrafting(this.inventory, this.worldObj));
+        }
+    	//End Awaken Dreams code
     }
 
     public void displayVillagerTradeGui(IMerchant villager)

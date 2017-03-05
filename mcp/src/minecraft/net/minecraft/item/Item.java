@@ -1079,6 +1079,7 @@ public class Item
         registerItemBlock(Blocks.MEDUSELD_PILLAR);
         registerItemBlock(Blocks.DIAGONAL_BRICKS);
         registerItemBlock(Blocks.BELL);
+        registerItemBlock(Blocks.ELVEN_CRAFTING_TABLE);
         // End Awaken Dreams code
         registerItem(256, "iron_shovel", (new ItemSpade(Item.ToolMaterial.IRON)).setUnlocalizedName("shovelIron"));
         registerItem(257, "iron_pickaxe", (new ItemPickaxe(Item.ToolMaterial.IRON)).setUnlocalizedName("pickaxeIron"));
