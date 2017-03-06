@@ -132,6 +132,10 @@ public class InventoryCrafting implements IInventory
      */
     public void markDirty()
     {
+    	// Begin Awaken Dreams code
+    	// Necessary to trigger update when stacksize is increased
+    	this.eventHandler.onCraftMatrixChanged(this);
+    	// End Awaken Dreams code
     }
 
     /**

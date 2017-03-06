@@ -1317,6 +1317,16 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.LEMBAS, "lembas");
         this.registerItem(Items.MITHRIL_INGOT, "mithril_ingot");
         this.registerItem(Items.BRONZE_INGOT, "bronze_ingot");
+        this.itemModelMesher.register(Items.PIPE, new ItemMeshDefinition()
+        {
+            public ModelResourceLocation getModelLocation(ItemStack stack)
+            {
+            	ModelResourceLocation m = new ModelResourceLocation(Items.PIPE.getModelName(stack), "inventory");
+            	//System.out.println("modelName=" + m.getResourceDomain() + " " + m.getResourcePath());
+            	return m;
+            }
+        });
+        this.registerItem(Items.TOBACCO, "tobacco");
         this.registerItem(Items.JADE, "jade");
         this.registerItem(Items.AMBER, "amber");
         this.registerItem(Items.CRYSTAL, "crystal");
@@ -1576,6 +1586,8 @@ public class RenderItem implements IResourceManagerReloadListener
             	return new ModelResourceLocation(stack.getUnlocalizedName().substring(5).replace('.', '_'), "inventory");
             }
         });
+        //this.registerItem(Items.PACKED_PIPE, "packed_pipe");
+        //this.registerItem(Items.TOBY_PACKED_PIPE, "toby_packed_pipe");
         // End Awaken Dreams code
     }
 
