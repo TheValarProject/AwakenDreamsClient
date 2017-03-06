@@ -43,7 +43,7 @@ public class ItemPipe extends Item
 	{
 		this.setMaxStackSize(1);
         this.setCreativeTab(CreativeTabs.MISC);
-        this.setMaxDamage(128);
+        this.setMaxDamage(127);
         
         this.smokableItems = new ArrayList<Item>();
         
@@ -104,7 +104,9 @@ public class ItemPipe extends Item
     		
     		if(itemStackIn.getItemDamage() + 1 > this.getMaxDamage())
         	{
-        		playerIn.dropItem(this.getStuffing(itemStackIn), false, false);
+    			ItemStack stuffing = this.getStuffing(itemStackIn);
+    			stuffing.stackSize--;
+        		playerIn.dropItem(stuffing, false, false);
         	}
     		
     		return new ActionResult(EnumActionResult.SUCCESS, itemStackIn);
