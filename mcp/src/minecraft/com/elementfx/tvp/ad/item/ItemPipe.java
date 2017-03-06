@@ -86,12 +86,7 @@ public class ItemPipe extends Item
     }
 
     public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
-    {
-    	if(itemStackIn.getItemDamage() + 1 >= this.getMaxDamage())
-    	{
-    		itemStackIn = this.clearStuffing(itemStackIn);
-    	}
-    	
+    {    	
     	if(this.isPacked(itemStackIn))
     	{
     		EntitySnowball headingHelper = new EntitySnowball(worldIn, playerIn);
@@ -106,6 +101,11 @@ public class ItemPipe extends Item
     		
     		worldIn.playSound((EntityPlayer)null, playerIn.posX, playerIn.posY, playerIn.posZ, SoundEvents.BLOCK_FURNACE_FIRE_CRACKLE, SoundCategory.NEUTRAL, 0.5F, 1.0F);
     		this.soundCountdown = (int) (5 + Math.random() * 11);
+    		
+    		if(itemStackIn.getItemDamage() + 1 > this.getMaxDamage())
+        	{
+        		playerIn.dropItem(this.getStuffing(itemStackIn), false, false);
+        	}
     		
     		return new ActionResult(EnumActionResult.SUCCESS, itemStackIn);
     	}
@@ -128,7 +128,7 @@ public class ItemPipe extends Item
     
     public boolean isPacked(ItemStack pipe)
     {
-    	if(!(pipe.hasTagCompound() && pipe.getTagCompound().hasKey("Stuffing")))
+    	if(!(pipe != null && pipe.hasTagCompound() && pipe.getTagCompound().hasKey("Stuffing")))
     	{
     		return false;
     	}
