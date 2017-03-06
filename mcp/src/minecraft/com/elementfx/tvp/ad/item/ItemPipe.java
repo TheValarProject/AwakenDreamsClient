@@ -43,7 +43,7 @@ public class ItemPipe extends Item
 	{
 		this.setMaxStackSize(1);
         this.setCreativeTab(CreativeTabs.MISC);
-        this.setMaxDamage(20);
+        this.setMaxDamage(128);
         
         this.smokableItems = new ArrayList<Item>();
         
@@ -67,6 +67,7 @@ public class ItemPipe extends Item
         	if(!playerIn.capabilities.isCreativeMode)
         	{
         		stack.damageItem(1, playerIn);
+        		this.decreaseStuffing(stack);
         	}
         }
     }
@@ -135,6 +136,7 @@ public class ItemPipe extends Item
     	return stuffing != null && this.canSmoke(stuffing.getItem());
     }
     
+    @Nullable
     public ItemStack getStuffing(ItemStack pipe)
     {
     	return this.isPacked(pipe) ? ItemStack.loadItemStackFromNBT(pipe.getTagCompound().getCompoundTag("Stuffing")) : null;
@@ -167,7 +169,7 @@ public class ItemPipe extends Item
     {
         if (this.isPacked(stack))
         {
-        	tooltip.add(TextFormatting.DARK_GREEN + I18n.translateToLocal(this.getUnlocalizedName() + "." + this.getStuffing(stack).getUnlocalizedName().substring(5)));
+        	tooltip.add(TextFormatting.DARK_GREEN + String.format(I18n.translateToLocal(this.getUnlocalizedName() + "." + this.getStuffing(stack).getUnlocalizedName().substring(5)), this.getStuffingAmount(stack)));
         }
         else {
         	tooltip.add(TextFormatting.GRAY + I18n.translateToLocal(this.getUnlocalizedName() + ".empty"));
@@ -221,12 +223,64 @@ public class ItemPipe extends Item
        				worldIn.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, entityIn.posX, entityIn.posY + 1.45, entityIn.posZ, headingHelper.motionX, headingHelper.motionY, headingHelper.motionZ, new int[0]);
        			}
         		
-    			worldIn.playSound((EntityPlayer)null, entityIn.posX, entityIn.posY, entityIn.posZ, SoundEvents.BLOCK_FURNACE_FIRE_CRACKLE, SoundCategory.NEUTRAL, 0.5F, 1.0F);
+    			worldIn.playSound((EntityPlayer)null, entityIn.posX, entityIn.posY, entityIn.posZ, SoundEvents.BLOCK_FIRE_AMBIENT, SoundCategory.NEUTRAL, 0.5F, 1.0F);
     			this.soundCountdown = (int) (5 + Math.random() * 11);
     		}
     		else {
     			this.soundCountdown--;
     		}
+    	}
+    }
+    
+    public int getStuffingAmount(ItemStack pipe)
+    {
+    	if(!this.isPacked(pipe))
+    	{
+    		return 0;
+    	}
+    	
+    	return this.getStuffing(pipe).stackSize;
+    }
+    
+    public void setStuffingAmount(ItemStack pipe, int amount)
+    {
+    	if(!this.isPacked(pipe))
+    	{
+    		return;
+    	}
+    	
+    	ItemStack stuffing = this.getStuffing(pipe);
+    	stuffing.stackSize = amount;
+    	
+    	if(stuffing.stackSize <= 0)
+    	{
+    		// TODO Modify the NBT attribute directly for efficiency
+    		this.clearStuffing(pipe);
+    	}
+    	else
+    	{
+    		this.stuffStack(pipe, stuffing);
+    	}
+    }
+    
+    public void decreaseStuffing(ItemStack pipe)
+    {
+    	if(!this.isPacked(pipe))
+    	{
+    		return;
+    	}
+    	
+    	ItemStack stuffing = this.getStuffing(pipe);
+    	stuffing.stackSize--;
+    	
+    	if(stuffing.stackSize <= 0)
+    	{
+    		// TODO Modify the NBT attribute directly for efficiency
+    		this.clearStuffing(pipe);
+    	}
+    	else
+    	{
+    		this.stuffStack(pipe, stuffing);
     	}
     }
 }
