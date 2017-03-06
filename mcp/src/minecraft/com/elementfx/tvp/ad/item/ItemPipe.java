@@ -146,7 +146,7 @@ public class ItemPipe extends Item
     
     public ItemStack getStuffed(Item stuffing)
     {
-    	return getStuffed(stuffing, 1);
+    	return getStuffed(stuffing, 64);
     }
     
     public ItemStack getStuffed(Item stuffing, int amount)
@@ -171,7 +171,14 @@ public class ItemPipe extends Item
     {
         if (this.isPacked(stack))
         {
-        	tooltip.add(TextFormatting.DARK_GREEN + String.format(I18n.translateToLocal(this.getUnlocalizedName() + "." + this.getStuffing(stack).getUnlocalizedName().substring(5)), this.getStuffingAmount(stack)));
+        	if(playerIn.isCreative())
+        	{
+        		tooltip.add(TextFormatting.DARK_GREEN + I18n.translateToLocal(this.getUnlocalizedName() + "." + this.getStuffing(stack).getUnlocalizedName().substring(5)).replace(" %s ", " "));
+        	}
+        	else
+        	{
+        		tooltip.add(TextFormatting.DARK_GREEN + String.format(I18n.translateToLocal(this.getUnlocalizedName() + "." + this.getStuffing(stack).getUnlocalizedName().substring(5)), this.getStuffingAmount(stack)));
+        	}
         }
         else {
         	tooltip.add(TextFormatting.GRAY + I18n.translateToLocal(this.getUnlocalizedName() + ".empty"));
