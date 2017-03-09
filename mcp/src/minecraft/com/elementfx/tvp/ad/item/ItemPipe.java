@@ -19,6 +19,7 @@ import net.minecraft.item.IItemPropertyGetter;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.stats.StatList;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
@@ -68,6 +69,7 @@ public class ItemPipe extends Item
         	{
         		stack.damageItem(1, playerIn);
         		this.decreaseStuffing(stack);
+        		playerIn.addStat(StatList.getObjectUseStats(this));
         	}
         }
     }
