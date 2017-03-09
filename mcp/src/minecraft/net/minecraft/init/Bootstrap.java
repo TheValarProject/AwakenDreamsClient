@@ -1,5 +1,6 @@
 package net.minecraft.init;
 
+import com.elementfx.tvp.ad.entity.projectile.EntityThrowingStone;
 import com.mojang.authlib.GameProfile;
 import java.io.PrintStream;
 import java.util.Random;
@@ -520,6 +521,15 @@ public class Bootstrap
                 }
             }
         });
+        // Begin Awaken Dreams code
+        BlockDispenser.DISPENSE_BEHAVIOR_REGISTRY.putObject(Items.THROWING_STONE, new BehaviorProjectileDispense()
+        {
+            protected IProjectile getProjectileEntity(World worldIn, IPosition position, ItemStack stackIn)
+            {
+                return new EntityThrowingStone(worldIn, position.getX(), position.getY(), position.getZ());
+            }
+        });
+        // End Awaken Dreams code
     }
 
     /**
