@@ -14,7 +14,7 @@ public class ItemRing extends Item
 		this.setHasSubtypes(true);
         this.setMaxDamage(0);
         this.setCreativeTab(CreativeTabs.MISC);
-        this.setMaxStackSize(0);
+        this.setMaxStackSize(1);
 	}
 	
 	/**
