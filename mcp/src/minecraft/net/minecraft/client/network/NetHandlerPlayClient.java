@@ -1,6 +1,8 @@
 package net.minecraft.client.network;
 
+import com.elementfx.tvp.ad.client.gui.inventory.GuiRucksack;
 import com.elementfx.tvp.ad.entity.projectile.EntityThrowingStone;
+import com.elementfx.tvp.ad.item.ItemRucksack;
 import com.google.common.collect.Maps;
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
@@ -1935,6 +1937,22 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
             String s1 = packetbuffer2.readStringFromBuffer(256);
             this.gameController.getSoundHandler().func_189520_a(s1, SoundCategory.getByName(s));
         }
+        // Begin Awaken Dreams code
+        else if ("AD|Rucksack".equals(packetIn.getChannelName()))
+        {
+        	EntityPlayerSP entityplayersp = this.gameController.thePlayer;
+        	PacketBuffer packetbuffer = packetIn.getBufferData();
+			try {
+				ItemStack rucksack = packetbuffer.readItemStackFromBuffer();
+				EnumHand hand = (EnumHand)packetbuffer.readEnumValue(EnumHand.class);
+				entityplayersp.openRucksack(rucksack, hand);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+        	int windowId = packetbuffer.readInt();
+            entityplayersp.openContainer.windowId = windowId;
+        }
+        // End Awaken Dreams code
     }
 
     /**

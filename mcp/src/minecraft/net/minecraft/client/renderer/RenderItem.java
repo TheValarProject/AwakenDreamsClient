@@ -1359,6 +1359,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.BLUE_BED, "blue_bed");
         this.registerItem(Items.BROWN_BED, "brown_bed");
         this.registerItem(Items.BREE_DOOR, "bree_door");
+        this.registerItem(Items.RUCKSACK, "rucksack");
         this.registerItem(Items.CRAM, "cram");
         this.registerItem(Items.CABBAGE, "cabbage");
         this.registerItem(Items.COCONUT, "coconut");

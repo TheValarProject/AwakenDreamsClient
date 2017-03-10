@@ -1,5 +1,8 @@
 package net.minecraft.entity.player;
 
+import com.elementfx.tvp.ad.client.gui.inventory.GuiRucksack;
+import com.elementfx.tvp.ad.inventory.ContainerRucksack;
+import com.elementfx.tvp.ad.item.ItemRucksack;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import com.mojang.authlib.GameProfile;
@@ -30,6 +33,7 @@ import net.minecraft.inventory.ContainerHorseInventory;
 import net.minecraft.inventory.ContainerMerchant;
 import net.minecraft.inventory.IContainerListener;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.inventory.InventoryBasic;
 import net.minecraft.inventory.SlotCrafting;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemMapBase;
@@ -907,6 +911,29 @@ public class EntityPlayerMP extends EntityPlayer implements IContainerListener
         this.openContainer.windowId = this.currentWindowId;
         this.openContainer.addListener(this);
     }
+    
+    // Begin Awaken Dreams code
+    public void openRucksack(ItemStack rucksack, EnumHand hand)
+    {
+    	if (this.openContainer != this.inventoryContainer)
+        {
+            this.closeScreen();
+        }
+    	InventoryBasic rucksackInventory = ((ItemRucksack)rucksack.getItem()).getInventory(rucksack);
+
+        this.getNextWindowId();
+        
+        PacketBuffer packetbuffer = new PacketBuffer(Unpooled.buffer());
+        packetbuffer.writeItemStackToBuffer(rucksack);
+        packetbuffer.writeEnumValue(hand);
+        packetbuffer.writeInt(this.currentWindowId);
+        this.connection.sendPacket(new SPacketCustomPayload("AD|Rucksack", packetbuffer));
+        
+        this.openContainer = new ContainerRucksack(this.inventory, rucksackInventory, hand == EnumHand.MAIN_HAND ? this.inventory.currentItem : 40);
+        this.openContainer.windowId = this.currentWindowId;
+        this.openContainer.addListener(this);
+    }
+    // End Awaken Dreams code
 
     public void openBook(ItemStack stack, EnumHand hand)
     {

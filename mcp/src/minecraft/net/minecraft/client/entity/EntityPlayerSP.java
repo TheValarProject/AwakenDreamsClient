@@ -4,6 +4,7 @@ import java.util.List;
 import javax.annotation.Nullable;
 
 import com.elementfx.tvp.ad.client.gui.inventory.GuiElvenCrafting;
+import com.elementfx.tvp.ad.client.gui.inventory.GuiRucksack;
 
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
@@ -789,6 +790,13 @@ public class EntityPlayerSP extends AbstractClientPlayer
     {
         this.mc.displayGuiScreen(new GuiScreenHorseInventory(this.inventory, inventoryIn, horse));
     }
+    
+    // Begin Awaken Dreams code
+    public void openRucksack(ItemStack rucksack, EnumHand hand)
+    {
+    	this.mc.displayGuiScreen(new GuiRucksack(this, rucksack, hand));
+    }
+    // End Awaken Dreams code
 
     public void displayGui(IInteractionObject guiOwner)
     {

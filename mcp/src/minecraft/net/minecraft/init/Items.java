@@ -261,6 +261,7 @@ public class Items
     public static final Item BLUE_BED;
     public static final Item BROWN_BED;
     public static final Item BREE_DOOR;
+    public static final Item RUCKSACK;
     public static final Item CRAM;
     public static final Item CABBAGE;
     public static final Item COCONUT;
@@ -755,6 +756,7 @@ public class Items
             Blocks.BROWN_BED.setItem(BROWN_BED);
             BREE_DOOR = getRegisteredItem("bree_door");
             Blocks.BREE_DOOR.setItem(BREE_DOOR);
+            RUCKSACK = getRegisteredItem("rucksack");
             CRAM = getRegisteredItem("cram");
             CABBAGE = getRegisteredItem("cabbage");
             COCONUT = getRegisteredItem("coconut");

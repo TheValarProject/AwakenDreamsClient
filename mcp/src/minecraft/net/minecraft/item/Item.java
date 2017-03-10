@@ -6,6 +6,7 @@ import com.elementfx.tvp.ad.item.ItemCustomArmor;
 import com.elementfx.tvp.ad.item.ItemCustomBed;
 import com.elementfx.tvp.ad.item.ItemCustomFood;
 import com.elementfx.tvp.ad.item.ItemRing;
+import com.elementfx.tvp.ad.item.ItemRucksack;
 import com.elementfx.tvp.ad.item.ItemPipe;
 import com.elementfx.tvp.ad.item.ItemThrowingStone;
 import com.elementfx.tvp.ad.item.ItemWeapon;
@@ -1333,7 +1334,7 @@ public class Item
         //registerItem(6054, "brown_hobbit_hat", (new ItemValarArmor(0, 1, 55, 0).setUnlocalizedName("brownHobbitHat").setTextureName("brown_hobbit_hat")));
         //registerItem(6055, "orc_helmet", (new ItemValarArmor(0, 1, 200, 0).setUnlocalizedName("orcHelmet").setTextureName("orc_helmet")));
         registerItem(6056, "bree_door", (new ItemDoor(Blocks.BREE_DOOR)).setUnlocalizedName("breeDoor"));
-        //registerItem(6057, "rucksack", (new ItemValarBase().setUnlocalizedName("rucksack").setTextureName("rucksack")));
+        registerItem(6057, "rucksack", (new ItemRucksack().setUnlocalizedName("rucksack")));
         registerItem(6058, "cram", (new ItemCustomFood(2, 0.8F, false)).setUnlocalizedName("cram"));
         registerItem(6059, "cabbage", (new ItemCustomFood(3, 0.6F, false)).setUnlocalizedName("cabbage"));
         registerItem(6060, "coconut", (new ItemCustomFood(1, 0.3F, false)).setUnlocalizedName("coconut"));

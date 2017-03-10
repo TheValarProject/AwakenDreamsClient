@@ -1,5 +1,6 @@
 package net.minecraft.network;
 
+import com.elementfx.tvp.ad.item.ItemRucksack;
 import com.google.common.collect.Lists;
 import com.google.common.primitives.Doubles;
 import com.google.common.primitives.Floats;
@@ -1790,5 +1791,38 @@ public class NetHandlerPlayServer implements INetHandlerPlayServer, ITickable
                 LOGGER.error((String)"Couldn\'t pick item", (Throwable)exception);
             }
         }
+        // Begin Awaken Dreams code
+        if ("AD|Rucksack".equals(s))
+        {
+            PacketBuffer packetbuffer = packetIn.getBufferData();
+
+            try
+            {
+                ItemStack itemstack = packetbuffer.readItemStackFromBuffer();
+                EnumHand hand = packetbuffer.readEnumValue(EnumHand.class);
+
+                if (itemstack == null)
+                {
+                    return;
+                }
+                
+                ItemStack itemstack1 = this.playerEntity.getHeldItem(hand);
+
+                if (itemstack1 == null)
+                {
+                    return;
+                }
+
+                if (itemstack.getItem() instanceof ItemRucksack && itemstack.getItem() == itemstack1.getItem())
+                {
+                    ((ItemRucksack)itemstack1.getItem()).saveInventory(itemstack1, ((ItemRucksack)itemstack.getItem()).getInventory(itemstack));
+                }
+            }
+            catch (Exception exception6)
+            {
+                LOGGER.error((String)"Couldn\'t handle rucksack info", (Throwable)exception6);
+            }
+        }
+        // End Awaken Dreams code
     }
 }

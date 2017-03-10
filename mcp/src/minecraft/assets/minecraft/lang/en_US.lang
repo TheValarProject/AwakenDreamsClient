@@ -1379,6 +1379,7 @@ item.wargFang.name=Warg Fang
 item.blueBed.name=Blue Bed
 item.brownBed.name=Brown Bed 
 item.breeDoor.name=Bree Door
+item.rucksack.name=Rucksack
 item.cram.name=Cram
 item.cabbage.name=Cabbage
 item.coconut.name=Coconut
@@ -1703,6 +1704,7 @@ container.enderchest=Ender Chest
 container.beacon=Beacon
 
 container.elvenCrafting=Elven Crafting
+container.rucksack=Rucksack
 
 container.spectatorCantOpen=Unable to open. Loot not generated yet.
 container.isLocked=%s is locked!
