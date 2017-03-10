@@ -790,7 +790,9 @@ public class GuiIngame extends Gui
             int j2 = j1 - (l1 - 1) * i2 - 10;
             int k2 = j1 - 10;
             int l2 = k1;
-            int i3 = entityplayer.getTotalArmorValue();
+            // Begin Awaken Dreams code
+            double i3 = entityplayer.getEntityAttribute(SharedMonsterAttributes.ARMOR).getAttributeValue();
+            // End Awaken Dreams code
             int j3 = -1;
 
             if (entityplayer.isPotionActive(MobEffects.REGENERATION))
@@ -802,25 +804,17 @@ public class GuiIngame extends Gui
 
             for (int k3 = 0; k3 < 10; ++k3)
             {
+            	// Begin Awaken Dreams code
+            	this.mc.getTextureManager().bindTexture(CUSTOM_ICONS);
                 if (i3 > 0)
                 {
                     int l3 = l + k3 * 8;
-
-                    if (k3 * 2 + 1 < i3)
-                    {
-                        this.drawTexturedModalRect(l3, j2, 34, 9, 9, 9);
-                    }
-
-                    if (k3 * 2 + 1 == i3)
-                    {
-                        this.drawTexturedModalRect(l3, j2, 25, 9, 9, 9);
-                    }
-
-                    if (k3 * 2 + 1 > i3)
-                    {
-                        this.drawTexturedModalRect(l3, j2, 16, 9, 9, 9);
-                    }
+                    
+                    this.drawTexturedModalRect(l3, j2, (int)(Math.min(2, Math.max(0, i3 - k3 * 2)) * 2) * 9, 0, 9, 9);
                 }
+                this.mc.getTextureManager().bindTexture(ICONS);
+                
+                // End Awaken Dreams code
             }
 
             this.mc.mcProfiler.endStartSection("health");

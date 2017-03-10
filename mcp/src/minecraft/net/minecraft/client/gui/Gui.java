@@ -12,6 +12,9 @@ public class Gui
     public static final ResourceLocation OPTIONS_BACKGROUND = new ResourceLocation("textures/gui/options_background.png");
     public static final ResourceLocation STAT_ICONS = new ResourceLocation("textures/gui/container/stats_icons.png");
     public static final ResourceLocation ICONS = new ResourceLocation("textures/gui/icons.png");
+    // Begin Awaken Dreams code
+    public static final ResourceLocation CUSTOM_ICONS = new ResourceLocation("textures/gui/custom_icons.png");
+    // End Awaken Dreams code
     protected float zLevel;
 
     /**
