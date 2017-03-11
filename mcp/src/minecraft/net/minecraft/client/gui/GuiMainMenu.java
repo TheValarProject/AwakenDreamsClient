@@ -224,6 +224,12 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
         {
             this.splashText = "OOoooOOOoooo! Spooky!";
         }
+        // Begin Awaken Dreams code
+        else if (calendar.get(Calendar.MONTH) == 3 && calendar.get(Calendar.DAY_OF_MONTH) == 15)
+        {
+        	this.splashText = "Happy Birthday TVP!";
+        }
+        // End Awaken Dreams code
 
         int i = 24;
         int j = this.height / 4 + 48;
