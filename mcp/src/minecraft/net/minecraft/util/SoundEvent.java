@@ -485,6 +485,9 @@ public class SoundEvent
         registerSound("weather.rain.above");
         // Begin Awaken Dreams code
         registerSound("block.bell.ring");
+        registerSound("entity.duck.ambient");
+        registerSound("entity.duck.hurt");
+        registerSound("entity.duck.death");
         // End Awaken Dreams code
     }
 

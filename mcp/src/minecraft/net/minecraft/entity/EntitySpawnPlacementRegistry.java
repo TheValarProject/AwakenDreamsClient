@@ -1,5 +1,6 @@
 package net.minecraft.entity;
 
+import com.elementfx.tvp.ad.entity.passive.EntityDuck;
 import com.google.common.collect.Maps;
 import java.util.Map;
 import net.minecraft.entity.boss.EntityDragon;
@@ -78,5 +79,8 @@ public class EntitySpawnPlacementRegistry
         ENTITY_PLACEMENTS.put(EntitySpider.class, EntityLiving.SpawnPlacementType.ON_GROUND);
         ENTITY_PLACEMENTS.put(EntityWitch.class, EntityLiving.SpawnPlacementType.ON_GROUND);
         ENTITY_PLACEMENTS.put(EntityZombie.class, EntityLiving.SpawnPlacementType.ON_GROUND);
+        // Begin Awaken Dreams code
+        ENTITY_PLACEMENTS.put(EntityDuck.class, EntityLiving.SpawnPlacementType.ON_GROUND);
+        // End Awaken Dreams code
     }
 }

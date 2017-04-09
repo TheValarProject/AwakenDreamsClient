@@ -79,6 +79,9 @@ public class LootTableList
     public static final ResourceLocation GAMEPLAY_FISHING_JUNK = register("gameplay/fishing/junk");
     public static final ResourceLocation GAMEPLAY_FISHING_TREASURE = register("gameplay/fishing/treasure");
     public static final ResourceLocation GAMEPLAY_FISHING_FISH = register("gameplay/fishing/fish");
+    // Begin Awaken Dreams code
+    public static final ResourceLocation ENTITIES_DUCK = register("entities/duck");
+    // End Awaken Dreams code
 
     private static ResourceLocation register(String id)
     {

@@ -470,6 +470,9 @@ public class SoundEvents
     public static final SoundEvent ENTITY_ZOMBIE_VILLAGER_STEP;
     // Begin Awaken Dreams code
     public static final SoundEvent BLOCK_BELL_RING;
+    public static final SoundEvent ENTITY_DUCK_AMBIENT;
+    public static final SoundEvent ENTITY_DUCK_HURT;
+    public static final SoundEvent ENTITY_DUCK_DEATH;
     // End Awaken Dreams code
 
     private static SoundEvent getRegisteredSoundEvent(String id)
@@ -959,6 +962,9 @@ public class SoundEvents
             ENTITY_ZOMBIE_VILLAGER_STEP = getRegisteredSoundEvent("entity.zombie_villager.step");
             // Begin Awaken Dreams code
             BLOCK_BELL_RING = getRegisteredSoundEvent("block.bell.ring");
+            ENTITY_DUCK_AMBIENT = getRegisteredSoundEvent("entity.duck.ambient");
+            ENTITY_DUCK_HURT = getRegisteredSoundEvent("entity.duck.hurt");
+            ENTITY_DUCK_DEATH = getRegisteredSoundEvent("entity.duck.death");
             // End Awaken Dreams code
         }
     }

@@ -1819,6 +1819,8 @@ entity.ZombieHorse.name=Zombie Horse
 entity.Rabbit.name=Rabbit
 entity.KillerBunny.name=The Killer Bunny
 
+entity.Duck.name=Duck
+
 entity.PrimedTnt.name=Block of TNT
 entity.FallingSand.name=Falling Block
 
