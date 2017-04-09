@@ -1,5 +1,7 @@
 package net.minecraft.util.datafix;
 
+import com.elementfx.tvp.ad.entity.passive.EntityDuck;
+
 import net.minecraft.block.BlockJukebox;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.boss.EntityDragon;
@@ -194,6 +196,9 @@ public class DataFixesManager
         TileEntityHopper.func_189683_a(datafixer);
         BlockJukebox.func_189873_a(datafixer);
         TileEntityMobSpawner.func_189684_a(datafixer);
+        // Begin Awaken Dreams code
+        EntityDuck.func_189789_b(datafixer);
+        // End Awaken Dreams code
         registerFixes(datafixer);
         return datafixer;
     }

@@ -1,5 +1,6 @@
 package net.minecraft.entity;
 
+import com.elementfx.tvp.ad.entity.passive.EntityDuck;
 import com.elementfx.tvp.ad.entity.projectile.EntityThrowingStone;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
@@ -391,6 +392,7 @@ public class EntityList
         addMapping(EntityEnderCrystal.class, "EnderCrystal", 200);
         //Begin Awaken Dreams code
         addMapping(EntityThrowingStone.class, "ThrowingStone", 500);
+        addMapping(EntityDuck.class, "Duck", 501, 3549732, 4085030);
         //End Awaken Dreams code
     }
 
