@@ -1,6 +1,10 @@
 package net.minecraft.inventory;
 
 import javax.annotation.Nullable;
+
+import com.elementfx.tvp.ad.inventory.SlotElvenCrafting;
+import com.elementfx.tvp.ad.item.crafting.ElvenCraftingManager;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.init.Blocks;
@@ -80,12 +84,6 @@ public class ContainerWorkbench extends Container
 
     public boolean canInteractWith(EntityPlayer playerIn)
     {
-    	// Begin Awaken Dreams code
-    	if (this.worldObj.getBlockState(this.pos).getBlock() == Blocks.ELVEN_CRAFTING_TABLE)
-    	{
-    		return playerIn.getDistanceSq((double)this.pos.getX() + 0.5D, (double)this.pos.getY() + 0.5D, (double)this.pos.getZ() + 0.5D) <= 64.0D;
-    	}
-    	// End Awaken Dreams code
         return this.worldObj.getBlockState(this.pos).getBlock() != Blocks.CRAFTING_TABLE ? false : playerIn.getDistanceSq((double)this.pos.getX() + 0.5D, (double)this.pos.getY() + 0.5D, (double)this.pos.getZ() + 0.5D) <= 64.0D;
     }
 
