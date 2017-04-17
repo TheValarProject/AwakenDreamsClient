@@ -12,6 +12,7 @@ import com.elementfx.tvp.ad.block.BlockCustomFlower;
 import com.elementfx.tvp.ad.block.BlockDwarvenTorch;
 import com.elementfx.tvp.ad.block.BlockElvenWorkbench;
 import com.elementfx.tvp.ad.block.BlockLamp;
+import com.elementfx.tvp.ad.block.BlockWaterWheel;
 import com.google.common.collect.Sets;
 
 import java.util.Arrays;
@@ -1636,6 +1637,7 @@ public class Block
         //registerBlock(784, "dark_brown_wood", (new BlockValarDirectional(Material.wood)).setHardness(2.0F).setSoundType(soundTypeWood).setUnlocalizedName("darkBrownWood").setBlockTextureName("dark_brown_wood"));
         registerBlock(785, "bell", (new BlockBell()).setUnlocalizedName("bell"));
         registerBlock(786, "elven_crafting_table", (new BlockElvenWorkbench()).setHardness(2.5F).setSoundType(SoundType.WOOD).setUnlocalizedName("elvenCraftingTable"));
+        registerBlock(787, "water_wheel", (new BlockWaterWheel()).setUnlocalizedName("waterWheel"));
         // End Awaken Dreams code
         REGISTRY.validateKey();
 

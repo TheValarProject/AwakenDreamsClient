@@ -1,5 +1,6 @@
 package net.minecraft.client.renderer;
 
+import com.elementfx.tvp.ad.block.BlockWaterWheel;
 import com.google.common.collect.Maps;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -113,6 +114,10 @@ public class BlockModelShapes
             if (block == Blocks.BELL)
             {
             	return this.modelManager.getTextureMap().getAtlasSprite("minecraft:blocks/bell");
+            }
+            if(block == Blocks.WATER_WHEEL)
+            {
+            	return this.modelManager.getTextureMap().getAtlasSprite("minecraft:blocks/water_wheel");
             }
             // End Awaken Dreams code
         }
@@ -330,6 +335,7 @@ public class BlockModelShapes
         this.registerBlockWithStateMapper(Blocks.PRISON_DOOR, (new StateMap.Builder()).ignore(new IProperty[] {BlockDoor.POWERED}).build());
         this.registerBlockWithStateMapper(Blocks.SINDAR_DOOR, (new StateMap.Builder()).ignore(new IProperty[] {BlockDoor.POWERED}).build());
         //this.registerBuiltInBlocks(Blocks.BELL);
+        this.registerBlockWithStateMapper(Blocks.WATER_WHEEL, (new StateMap.Builder()).ignore(new IProperty[] {BlockWaterWheel.FACING}).build());
         // End Awaken Dreams code
     }
 }

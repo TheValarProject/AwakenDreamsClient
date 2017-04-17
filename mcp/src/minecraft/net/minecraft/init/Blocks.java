@@ -517,6 +517,7 @@ public class Blocks
     public static final Block DIAGONAL_BRICKS;
     public static final Block BELL;
     public static final Block ELVEN_CRAFTING_TABLE;
+    public static final Block WATER_WHEEL;
     // End Awaken Dreams code
 
     @Nullable
@@ -1019,6 +1020,7 @@ public class Blocks
             DIAGONAL_BRICKS = getRegisteredBlock("diagonal_bricks");
             BELL = getRegisteredBlock("bell");
             ELVEN_CRAFTING_TABLE = getRegisteredBlock("elven_crafting_table");
+            WATER_WHEEL = getRegisteredBlock("water_wheel");
             // End Awaken Dreams code
             CACHE.clear();
         }

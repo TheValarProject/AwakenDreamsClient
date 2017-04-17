@@ -1,6 +1,7 @@
 package net.minecraft.tileentity;
 
 import com.elementfx.tvp.ad.tileentity.TileEntityBell;
+import com.elementfx.tvp.ad.tileentity.TileEntityWaterWheel;
 import com.google.common.collect.Maps;
 import java.util.Map;
 import javax.annotation.Nullable;
@@ -365,6 +366,7 @@ public abstract class TileEntity
         addMapping(TileEntityCommandBlock.class, "Control");
         // Being Awaken Dreams code
         addMapping(TileEntityBell.class, "Bell");
+        addMapping(TileEntityWaterWheel.class, "WaterWheel");
         // End Awaken Dreams code
     }
 }

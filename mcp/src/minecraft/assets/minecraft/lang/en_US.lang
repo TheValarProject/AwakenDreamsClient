@@ -1081,6 +1081,7 @@ tile.meduseldPillar.name=Meduseld Pillar
 tile.diagonalBricks.name=Diagonal Bricks
 tile.bell.name=Bell
 tile.elvenCraftingTable.name=Elven Crafting Table
+tile.waterWheel.name=Water Wheel
 
 item.nameTag.name=Name Tag
 item.leash.name=Lead
