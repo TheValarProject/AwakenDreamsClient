@@ -177,7 +177,7 @@ public class ElvenCraftingManager
             }
         }
 
-        return null;
+        return CraftingManager.getInstance().findMatchingRecipe(craftMatrix, worldIn);
     }
 
     public ItemStack[] getRemainingItems(InventoryCrafting craftMatrix, World worldIn)
@@ -190,14 +190,7 @@ public class ElvenCraftingManager
             }
         }
 
-        ItemStack[] aitemstack = new ItemStack[craftMatrix.getSizeInventory()];
-
-        for (int i = 0; i < aitemstack.length; ++i)
-        {
-            aitemstack[i] = craftMatrix.getStackInSlot(i);
-        }
-
-        return aitemstack;
+        return CraftingManager.getInstance().getRemainingItems(craftMatrix, worldIn);
     }
 
     public List<IRecipe> getRecipeList()

@@ -1,5 +1,6 @@
 package net.minecraft.stats;
 
+import com.elementfx.tvp.ad.item.crafting.ElvenCraftingManager;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
@@ -164,6 +165,16 @@ public class StatList
                 set.add(irecipe.getRecipeOutput().getItem());
             }
         }
+        
+        //Begin Awaken Dreams code
+        for (IRecipe irecipe : ElvenCraftingManager.getInstance().getRecipeList())
+        {
+            if (irecipe.getRecipeOutput() != null)
+            {
+                set.add(irecipe.getRecipeOutput().getItem());
+            }
+        }
+        //End Awaken Dreams code
 
         for (ItemStack itemstack : FurnaceRecipes.instance().getSmeltingList().values())
         {
