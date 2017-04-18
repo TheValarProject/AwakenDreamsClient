@@ -37,8 +37,6 @@ public class ElvenCraftingManager
 
     protected ElvenCraftingManager()
     {
-    	this.addRecipe(new ItemStack(Items.PIPE, 1), new Object[] {"  S", "SS ", "S  ", 'S', Items.STICK});
-        
         Collections.sort(this.getRecipeList(), new Comparator<IRecipe>()
         {
             public int compare(IRecipe p_compare_1_, IRecipe p_compare_2_)

@@ -63,6 +63,19 @@ public class FurnaceRecipes
         this.addSmeltingRecipeForBlock(Blocks.REDSTONE_ORE, new ItemStack(Items.REDSTONE), 0.7F);
         this.addSmeltingRecipeForBlock(Blocks.LAPIS_ORE, new ItemStack(Items.DYE, 1, EnumDyeColor.BLUE.getDyeDamage()), 0.2F);
         this.addSmeltingRecipeForBlock(Blocks.QUARTZ_ORE, new ItemStack(Items.QUARTZ), 0.2F);
+        
+        //Begin Awaken Dreams code
+        this.addSmeltingRecipeForBlock(Blocks.JADE_ORE, new ItemStack(Items.JADE), 1.0F);
+        this.addSmeltingRecipeForBlock(Blocks.AMBER_ORE, new ItemStack(Items.AMBER), 1.0F);
+        this.addSmeltingRecipeForBlock(Blocks.TANZANITE_ORE, new ItemStack(Items.TANZANITE), 1.0F);
+        this.addSmeltingRecipeForBlock(Blocks.AMETHYST_ORE, new ItemStack(Items.AMETHYST), 1.0F);
+        //this.addSmeltingRecipeForBlock(Blocks.RUBY_ORE, new ItemStack(Items.RUBY), 1.0F);
+        this.addSmeltingRecipeForBlock(Blocks.ONYX_ORE, new ItemStack(Items.ONYX), 1.0F);
+        this.addSmeltingRecipeForBlock(Blocks.MOONSTONE_ORE, new ItemStack(Items.MOONSTONE), 1.0F);
+        this.addSmeltingRecipeForBlock(Blocks.CRYSTAL_ORE, new ItemStack(Items.CRYSTAL), 1.0F);
+        this.addSmeltingRecipeForBlock(Blocks.SALT_ORE, new ItemStack(Items.SALT), 1.0F);
+        this.addSmeltingRecipeForBlock(Blocks.MITHRIL_ORE, new ItemStack(Items.MITHRIL_INGOT), 1.0F);
+        //End Awaken Dreams code    
     }
 
     /**
