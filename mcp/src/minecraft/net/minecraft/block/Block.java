@@ -1638,9 +1638,12 @@ public class Block
         registerBlock(785, "bell", (new BlockBell()).setUnlocalizedName("bell"));
         registerBlock(786, "elven_crafting_table", (new BlockElvenWorkbench()).setHardness(2.5F).setSoundType(SoundType.WOOD).setUnlocalizedName("elvenCraftingTable"));
         //787 - human_crafting_table
-        //788 - rohhirim_crafting_table
-        //789 - hobbit_crafting_table
-        //790 - 
+        //788 - gondorial_crafting_table
+        //789 - rohhirim_crafting_table
+        //790 - hobbit_crafting_table
+        //791 - mordor_crafting_table
+        //792 - isengard_crafting_table
+        //793 - goblin_crafting_table
         // End Awaken Dreams code
         REGISTRY.validateKey();
 
