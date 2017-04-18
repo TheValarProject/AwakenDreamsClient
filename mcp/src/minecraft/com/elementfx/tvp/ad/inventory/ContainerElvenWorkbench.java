@@ -1,21 +1,29 @@
-package net.minecraft.inventory;
+package com.elementfx.tvp.ad.inventory;
 
 import javax.annotation.Nullable;
 
-import com.elementfx.tvp.ad.inventory.SlotElvenCrafting;
 import com.elementfx.tvp.ad.item.crafting.ElvenCraftingManager;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.inventory.Container;
+import net.minecraft.inventory.ContainerWorkbench;
+import net.minecraft.inventory.IInventory;
+import net.minecraft.inventory.InventoryCraftResult;
+import net.minecraft.inventory.InventoryCrafting;
+import net.minecraft.inventory.Slot;
+import net.minecraft.inventory.SlotCrafting;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.CraftingManager;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class ContainerWorkbench extends Container
+
+
+public class ContainerElvenWorkbench extends Container
 {
-    /** The crafting matrix inventory (3x3). */
+	/** The crafting matrix inventory (3x3). */
     public InventoryCrafting craftMatrix = new InventoryCrafting(this, 3, 3);
     public IInventory craftResult = new InventoryCraftResult();
     private final World worldObj;
@@ -23,11 +31,12 @@ public class ContainerWorkbench extends Container
     /** Position of the workbench */
     private final BlockPos pos;
 
-    public ContainerWorkbench(InventoryPlayer playerInventory, World worldIn, BlockPos posIn)
+    public ContainerElvenWorkbench(InventoryPlayer playerInventory, World worldIn, BlockPos posIn)
     {
         this.worldObj = worldIn;
         this.pos = posIn;
-        this.addSlotToContainer(new SlotCrafting(playerInventory.player, this.craftMatrix, this.craftResult, 0, 124, 35));
+        
+        this.addSlotToContainer(new SlotElvenCrafting(playerInventory.player, this.craftMatrix, this.craftResult, 0, 124, 35));
 
         for (int i = 0; i < 3; ++i)
         {
@@ -58,7 +67,12 @@ public class ContainerWorkbench extends Container
      */
     public void onCraftMatrixChanged(IInventory inventoryIn)
     {
-        this.craftResult.setInventorySlotContents(0, CraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj));
+        this.craftResult.setInventorySlotContents(0, ElvenCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj));
+    }
+
+    public boolean canInteractWith(EntityPlayer playerIn)
+    {
+        return this.worldObj.getBlockState(this.pos).getBlock() != Blocks.ELVEN_CRAFTING_TABLE ? false : playerIn.getDistanceSq((double)this.pos.getX() + 0.5D, (double)this.pos.getY() + 0.5D, (double)this.pos.getZ() + 0.5D) <= 64.0D;
     }
 
     /**
@@ -80,11 +94,6 @@ public class ContainerWorkbench extends Container
                 }
             }
         }
-    }
-
-    public boolean canInteractWith(EntityPlayer playerIn)
-    {
-        return this.worldObj.getBlockState(this.pos).getBlock() != Blocks.CRAFTING_TABLE ? false : playerIn.getDistanceSq((double)this.pos.getX() + 0.5D, (double)this.pos.getY() + 0.5D, (double)this.pos.getZ() + 0.5D) <= 64.0D;
     }
 
     @Nullable

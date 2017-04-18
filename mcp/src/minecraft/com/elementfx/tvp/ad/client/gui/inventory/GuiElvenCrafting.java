@@ -1,5 +1,7 @@
 package com.elementfx.tvp.ad.client.gui.inventory;
 
+import com.elementfx.tvp.ad.inventory.ContainerElvenWorkbench;
+
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.resources.I18n;
@@ -23,7 +25,7 @@ public class GuiElvenCrafting extends GuiContainer
 
     public GuiElvenCrafting(InventoryPlayer playerInv, World worldIn, BlockPos blockPosition)
     {
-        super(new ContainerWorkbench(playerInv, worldIn, blockPosition));
+        super(new ContainerElvenWorkbench(playerInv, worldIn, blockPosition));
     }
 
     /**

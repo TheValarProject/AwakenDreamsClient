@@ -2,6 +2,8 @@ package com.elementfx.tvp.ad.block;
 
 import javax.annotation.Nullable;
 
+import com.elementfx.tvp.ad.inventory.ContainerElvenWorkbench;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockWorkbench;
 import net.minecraft.block.material.Material;
@@ -73,6 +75,11 @@ public class BlockElvenWorkbench extends BlockWorkbench
         public ITextComponent getDisplayName()
         {
             return new TextComponentTranslation(Blocks.ELVEN_CRAFTING_TABLE.getUnlocalizedName() + ".name", new Object[0]);
+        }
+        
+        public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn)
+        {
+            return new ContainerElvenWorkbench(playerInventory, this.world, this.position);
         }
 
         public String getGuiID()
