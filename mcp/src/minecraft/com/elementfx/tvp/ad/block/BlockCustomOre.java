@@ -4,8 +4,11 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockOre;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -15,8 +18,23 @@ import net.minecraft.world.World;
 
 public class BlockCustomOre extends BlockOre
 {
+	private int minExp;
+	
+	private int maxExp;
+	
+	public BlockCustomOre(int minExpIn, int maxExpIn)
+	{
+		this.minExp = minExpIn;
+		this.maxExp = maxExpIn;
+		this.setHardness(1.5F);
+		this.setResistance(10.0F);
+		this.setSoundType(SoundType.STONE);
+		this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+	}
+	
 	public BlockCustomOre()
 	{
+		this(3, 7);
 	}
 	
 	@Nullable
@@ -38,41 +56,7 @@ public class BlockCustomOre extends BlockOre
 
         if (this.getItemDropped(state, worldIn.rand, fortune) != Item.getItemFromBlock(this))
         {
-            int i = 0;
-
-            if (this == Blocks.JADE_ORE)
-            {
-                i = MathHelper.getRandomIntegerInRange(worldIn.rand, 3, 7);
-            }
-            else if (this == Blocks.AMBER_ORE)
-            {
-                i = MathHelper.getRandomIntegerInRange(worldIn.rand, 3, 7);
-            }
-            else if (this == Blocks.TANZANITE_ORE)
-            {
-                i = MathHelper.getRandomIntegerInRange(worldIn.rand, 3, 7);
-            }
-            else if (this == Blocks.AMETHYST_ORE)
-            {
-                i = MathHelper.getRandomIntegerInRange(worldIn.rand, 3, 7);
-            }
-            else if (this == Blocks.ONYX_ORE)
-            {
-                i = MathHelper.getRandomIntegerInRange(worldIn.rand, 3, 7);
-            }
-            else if (this == Blocks.MOONSTONE_ORE)
-            {
-                i = MathHelper.getRandomIntegerInRange(worldIn.rand, 3, 7);
-            }
-            else if (this == Blocks.CRYSTAL_ORE)
-            {
-                i = MathHelper.getRandomIntegerInRange(worldIn.rand, 2, 5);
-            }
-            else if (this == Blocks.SALT_ORE)
-            {
-                i = MathHelper.getRandomIntegerInRange(worldIn.rand, 0, 2);
-            }
-
+            int i = MathHelper.getRandomIntegerInRange(worldIn.rand, minExp, maxExp);
             this.dropXpOnBlockBreak(worldIn, pos, i);
         }
     }
