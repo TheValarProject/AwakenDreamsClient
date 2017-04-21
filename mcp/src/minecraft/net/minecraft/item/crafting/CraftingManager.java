@@ -1,6 +1,7 @@
 package net.minecraft.item.crafting;
 
 import com.elementfx.tvp.ad.item.crafting.RecipePipe;
+import com.elementfx.tvp.ad.item.crafting.RecipesCustom;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import java.util.Collections;
@@ -202,6 +203,7 @@ public class CraftingManager
         	this.addShapelessRecipe(Items.PIPE.getStuffed(stuffing), new Object[] {new ItemStack(Items.PIPE, 1), new ItemStack(stuffing, 1)});
         }*/
         this.recipes.add(new RecipePipe());
+        (new RecipesCustom()).addRecipes(this);
         // End Awaken Dreams code
         Collections.sort(this.recipes, new Comparator<IRecipe>()
         {

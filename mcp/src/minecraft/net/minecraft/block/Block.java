@@ -9,6 +9,7 @@ import com.elementfx.tvp.ad.block.BlockCustomBed;
 import com.elementfx.tvp.ad.block.BlockCustomCrops;
 import com.elementfx.tvp.ad.block.BlockCustomDoor;
 import com.elementfx.tvp.ad.block.BlockCustomFlower;
+import com.elementfx.tvp.ad.block.BlockCustomOre;
 import com.elementfx.tvp.ad.block.BlockDwarvenTorch;
 import com.elementfx.tvp.ad.block.BlockElvenWorkbench;
 import com.elementfx.tvp.ad.block.BlockLamp;
@@ -1360,22 +1361,22 @@ public class Block
         registerBlock(217, "structure_void", (new BlockStructureVoid()).setUnlocalizedName("structureVoid"));
         registerBlock(255, "structure_block", (new BlockStructure()).setBlockUnbreakable().setResistance(6000000.0F).setUnlocalizedName("structureBlock"));
         // Being Awaken Dreams code
-        registerBlock(500, "jade_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreJade").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerBlock(501, "amber_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreAmber").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerBlock(502, "tanzanite_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreTanzanite").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        registerBlock(500, "jade_ore", (new BlockCustomOre()).setUnlocalizedName("oreJade"));
+        registerBlock(501, "amber_ore", (new BlockCustomOre()).setUnlocalizedName("oreAmber"));
+        registerBlock(502, "tanzanite_ore", (new BlockCustomOre()).setUnlocalizedName("oreTanzanite"));
         registerBlock(503, "permanent_dirt", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("permanentDirt")); // Deprecated in favor of coarse dirt
         registerBlock(504, "luindol", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(12, 19))).setUnlocalizedName("luindol"));
         registerBlock(505, "hopper_mushroom", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(4, 11, 16))).setUnlocalizedName("hopperMushroom"));
-        registerBlock(506, "amethyst_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreAmethyst").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerBlock(507, "ruby_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreRuby").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerBlock(508, "onyx_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreOnyx").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerBlock(509, "moonstone_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreMoonstone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        registerBlock(506, "amethyst_ore", (new BlockCustomOre()).setUnlocalizedName("oreAmethyst"));
+        registerBlock(507, "ruby_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreRuby").setCreativeTab(CreativeTabs.BUILDING_BLOCKS)); //needs ruby item for furnace recipes and item drop
+        registerBlock(508, "onyx_ore", (new BlockCustomOre()).setUnlocalizedName("oreOnyx"));
+        registerBlock(509, "moonstone_ore", (new BlockCustomOre()).setUnlocalizedName("oreMoonstone"));
         registerBlock(511, "minas_morgul_glowstone", (new Block(Material.GLASS)).setLightLevel(1.0F).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.GLASS).setUnlocalizedName("minasMorgulGlowstone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(512, "argonath_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("argonathStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(513, "mithril_block", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("blockMithril").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(514, "blue_bed", (new BlockCustomBed()).setUnlocalizedName("blueBed"));
         registerBlock(515, "brown_bed", (new BlockCustomBed()).setUnlocalizedName("brownBed"));
-        registerBlock(516, "crystal_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreCrystal").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        registerBlock(516, "crystal_ore", (new BlockCustomOre(2, 5)).setUnlocalizedName("oreCrystal"));
         registerBlock(517, "desert_road_block", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("desertRoadBlock").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(518, "dirt_road_block", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("dirtRoadBlock").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(519, "light_blue_glowstone", (new Block(Material.GLASS)).setLightLevel(1.0F).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.GLASS).setUnlocalizedName("lightBlueGlowstone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
@@ -1415,7 +1416,7 @@ public class Block
         registerBlock(554, "cracked_gondorian_brick_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("crackedGondorianBrickStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(555, "lorien_lamp", (new BlockLamp(Material.GLASS, Arrays.asList(new AxisAlignedBB(1.5 / 16, 0.0D, 1.5 / 16, 14.5 / 16, 1.0D, 14.5 / 16)))).setUnlocalizedName("lorienLamp"));
         registerBlock(556, "bucklebury_lamp", (new Block3D(Material.GLASS, Arrays.asList(new AxisAlignedBB(4.75 / 16, 0.0D, 4.75 / 16, 11.25 / 16, 1.0D, 11.25 / 16)))).setUnlocalizedName("buckleburyLamp").setCreativeTab(CreativeTabs.DECORATIONS).setLightLevel(1.0F));
-        registerBlock(557, "salt_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreSalt").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        registerBlock(557, "salt_ore", (new BlockCustomOre(0, 2)).setUnlocalizedName("oreSalt"));
         registerBlock(558, "simbelmyne", (new BlockCustomFlower(new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 6.0 / 16, 1.0D))).setUnlocalizedName("simbelmyne"));
         //registerBlock(559, "bree_glass", (new BlockValarGlass()).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeGlass).setUnlocalizedName("breeGlass").setBlockTextureName("bree_glass"));
         registerBlock(560, "shire_flower", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(12, 10, 16))).setUnlocalizedName("shireFlower"));
@@ -1429,7 +1430,7 @@ public class Block
         registerBlock(568, "window", (new BlockGlass(Material.GLASS, false)).setHardness(0.5F).setSoundType(SoundType.GLASS).setUnlocalizedName("window"));
         registerBlock(569, "rohan_bricks", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("rohanBricks").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(570, "mordor_brick_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("mordorBrickStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerBlock(571, "mithril_ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("oreMithril").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        registerBlock(571, "mithril_ore", (new BlockCustomOre()).setUnlocalizedName("oreMithril"));
         //registerBlock(572, "bree_glass_pane", (new BlockValarPane("bree_glass", "bree_glass", Material.glass, false)).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeGlass).setUnlocalizedName("breeGlassPane").setBlockTextureName("bree_glass"));
         registerBlock(573, "arlans_slipper", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(28, 32))).setUnlocalizedName("arlansSlipper"));
         registerBlock(574, "numenorean", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("numenorean").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
@@ -1636,6 +1637,13 @@ public class Block
         //registerBlock(784, "dark_brown_wood", (new BlockValarDirectional(Material.wood)).setHardness(2.0F).setSoundType(soundTypeWood).setUnlocalizedName("darkBrownWood").setBlockTextureName("dark_brown_wood"));
         registerBlock(785, "bell", (new BlockBell()).setUnlocalizedName("bell"));
         registerBlock(786, "elven_crafting_table", (new BlockElvenWorkbench()).setHardness(2.5F).setSoundType(SoundType.WOOD).setUnlocalizedName("elvenCraftingTable"));
+        //787 - human_crafting_table
+        //788 - gondorial_crafting_table
+        //789 - rohhirim_crafting_table
+        //790 - hobbit_crafting_table
+        //791 - mordor_crafting_table
+        //792 - isengard_crafting_table
+        //793 - goblin_crafting_table
         // End Awaken Dreams code
         REGISTRY.validateKey();
 
