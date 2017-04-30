@@ -483,8 +483,7 @@ public class Items
     public static final Item ROHAN_BOOTS;
     public static final Item ROHAN_LEGGINS;
     public static final Item RING;
-    //public static final Item PACKED_PIPE;
-    //public static final Item TOBY_PACKED_PIPE;
+    public static final Item ELVEN_STEEL_INGOT;
     // End Awaken Dreams code
 
     private static Item getRegisteredItem(String name)
@@ -1004,8 +1003,7 @@ public class Items
             ROHAN_BOOTS = getRegisteredItem("rohan_boots");
             ROHAN_LEGGINS = getRegisteredItem("rohan_leggins");
             RING = getRegisteredItem("ring");
-            //PACKED_PIPE = getRegisteredItem("packed_pipe");
-            //TOBY_PACKED_PIPE = getRegisteredItem("toby_packed_pipe");
+            ELVEN_STEEL_INGOT = getRegisteredItem("elven_steel_ingot");
             // End Awaken Dreams code
         }
     }

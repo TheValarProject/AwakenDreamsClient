@@ -1604,6 +1604,7 @@ public class Item
         registerItem(6323, "strawberry_seed", (new ItemSeeds(Blocks.STRAWBERRY_BUSH, Blocks.FARMLAND)).setUnlocalizedName("strawberrySeed"));
         //registerItem(6324, "azogs_mace", (new ItemValarWeapon(3500, 7, 0, true, false)).setUnlocalizedName("azogsMace").setTextureName("azogs_mace"));
         registerItem(6325, "ring", (new ItemRing()).setUnlocalizedName("ring"));
+        registerItem(6326, "elven_steel_ingot", (new Item()).setUnlocalizedName("elvenSteelIngot").setCreativeTab(CreativeTabs.MATERIALS));
         // Temporary Id, change to proper id when adding items
         //registerItem(10002, "rucksack", (new ItemValarRucksack()).setUnlocalizedName("rucksack").setTextureName("rucksack"));
         //registerItem(10003, "frodos_finger", (new ItemValarFood(2, 0.1F, true).setUnlocalizedName("frodosFinger").setTextureName("frodos_finger")));
@@ -1612,8 +1613,6 @@ public class Item
         //registerItem(10006, "miruvoir", (new ItemValarDrinkable(Items.glass_bottle).setUnlocalizedName("miruvoir").setTextureName("miruvoir")));
         registerItem(10007, "rohan_boots", (new ItemCustomArmor(EntityEquipmentSlot.FEET, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.FEET)).setUnlocalizedName("rohanBoots")));
         registerItem(10008, "rohan_leggins", (new ItemCustomArmor(EntityEquipmentSlot.LEGS, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.LEGS)).setUnlocalizedName("rohanLeggins")));
-        //registerItem(10009, "packed_pipe", (new ItemPipe(true).setUnlocalizedName("packedPipe")));
-        //registerItem(10010, "toby_packed_pipe", (new ItemPipe(true).setUnlocalizedName("tobyPackedPipe")));
         // End Awaken Dreams code
     }
 

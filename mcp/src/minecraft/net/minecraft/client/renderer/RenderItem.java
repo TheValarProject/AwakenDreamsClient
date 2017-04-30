@@ -1587,8 +1587,7 @@ public class RenderItem implements IResourceManagerReloadListener
             	return new ModelResourceLocation(stack.getUnlocalizedName().substring(5).replace('.', '_'), "inventory");
             }
         });
-        //this.registerItem(Items.PACKED_PIPE, "packed_pipe");
-        //this.registerItem(Items.TOBY_PACKED_PIPE, "toby_packed_pipe");
+        this.registerItem(Items.ELVEN_STEEL_INGOT, "elven_steel_ingot");
         // End Awaken Dreams code
     }
 

@@ -1680,6 +1680,7 @@ item.ring.mithril.stoneOfSky.name=Mithril Ring of Sky
 item.ring.mithril.stoneOfSunlight.name=Mithril Ring of Sunlight
 item.ring.mithril.stoneOfWealth.name=Mithril Ring of Wealth
 item.ring.mithril.stoneOfWind.name=Mithril Ring of Wind
+item.elvenSteelIngot.name=Elven Steel Ingot
 
 container.inventory=Inventory
 container.hopper=Item Hopper
