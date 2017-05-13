@@ -10,8 +10,8 @@ import com.elementfx.tvp.ad.block.BlockCustomCrops;
 import com.elementfx.tvp.ad.block.BlockCustomDoor;
 import com.elementfx.tvp.ad.block.BlockCustomFlower;
 import com.elementfx.tvp.ad.block.BlockCustomOre;
+import com.elementfx.tvp.ad.block.BlockCustomWorkbench;
 import com.elementfx.tvp.ad.block.BlockDwarvenTorch;
-import com.elementfx.tvp.ad.block.BlockElvenWorkbench;
 import com.elementfx.tvp.ad.block.BlockLamp;
 import com.google.common.collect.Sets;
 
@@ -1636,7 +1636,7 @@ public class Block
         registerBlock(783, "diagonal_bricks", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("diagonalBricks").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         //registerBlock(784, "dark_brown_wood", (new BlockValarDirectional(Material.wood)).setHardness(2.0F).setSoundType(soundTypeWood).setUnlocalizedName("darkBrownWood").setBlockTextureName("dark_brown_wood"));
         registerBlock(785, "bell", (new BlockBell()).setUnlocalizedName("bell"));
-        registerBlock(786, "elven_crafting_table", (new BlockElvenWorkbench()).setHardness(2.5F).setSoundType(SoundType.WOOD).setUnlocalizedName("elvenCraftingTable"));
+        registerBlock(786, "elven_crafting_table", (new BlockCustomWorkbench()).setHardness(2.5F).setSoundType(SoundType.WOOD).setUnlocalizedName("elvenCraftingTable"));
         //787 - human_crafting_table
         //788 - gondorial_crafting_table
         //789 - rohhirim_crafting_table
