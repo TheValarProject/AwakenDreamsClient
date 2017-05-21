@@ -2,6 +2,7 @@ package net.minecraft.item;
 
 import com.elementfx.tvp.ad.block.BlockCustomBed;
 import com.elementfx.tvp.ad.block.BlockCustomCrops;
+import com.elementfx.tvp.ad.block.BlockCustomWorkbench;
 import com.elementfx.tvp.ad.item.ItemCustomArmor;
 import com.elementfx.tvp.ad.item.ItemCustomBed;
 import com.elementfx.tvp.ad.item.ItemCustomFood;
@@ -1081,7 +1082,14 @@ public class Item
         registerItemBlock(Blocks.MEDUSELD_PILLAR);
         registerItemBlock(Blocks.DIAGONAL_BRICKS);
         registerItemBlock(Blocks.BELL);
-        registerItemBlock(Blocks.ELVEN_CRAFTING_TABLE);
+        registerItemBlock(Blocks.CUSTOM_CRAFTING_TABLE, (new ItemMultiTexture(Blocks.CUSTOM_CRAFTING_TABLE, Blocks.CUSTOM_CRAFTING_TABLE, new Function<ItemStack, String>()
+        {
+            @Nullable
+            public String apply(@Nullable ItemStack p_apply_1_)
+            {
+                return BlockCustomWorkbench.EnumType.byMetadata(p_apply_1_.getMetadata()).getUnlocalizedName();
+            }
+        })).setUnlocalizedName("customWorkbench"));
         // End Awaken Dreams code
         registerItem(256, "iron_shovel", (new ItemSpade(Item.ToolMaterial.IRON)).setUnlocalizedName("shovelIron"));
         registerItem(257, "iron_pickaxe", (new ItemPickaxe(Item.ToolMaterial.IRON)).setUnlocalizedName("pickaxeIron"));

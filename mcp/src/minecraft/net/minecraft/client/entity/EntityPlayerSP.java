@@ -4,6 +4,13 @@ import java.util.List;
 import javax.annotation.Nullable;
 
 import com.elementfx.tvp.ad.client.gui.inventory.GuiElvenCrafting;
+import com.elementfx.tvp.ad.client.gui.inventory.GuiGoblinCrafting;
+import com.elementfx.tvp.ad.client.gui.inventory.GuiGondorianCrafting;
+import com.elementfx.tvp.ad.client.gui.inventory.GuiHobbitCrafting;
+import com.elementfx.tvp.ad.client.gui.inventory.GuiHumanCrafting;
+import com.elementfx.tvp.ad.client.gui.inventory.GuiIsengardCrafting;
+import com.elementfx.tvp.ad.client.gui.inventory.GuiMordorCrafting;
+import com.elementfx.tvp.ad.client.gui.inventory.GuiRohirrimCrafting;
 import com.elementfx.tvp.ad.client.gui.inventory.GuiRucksack;
 
 import net.minecraft.block.state.IBlockState;
@@ -818,6 +825,34 @@ public class EntityPlayerSP extends AbstractClientPlayer
         else if("minecraft:elven_crafting_table".equals(s))
         {
             this.mc.displayGuiScreen(new GuiElvenCrafting(this.inventory, this.worldObj));
+        }
+        else if("minecraft:human_crafting_table".equals(s))
+        {
+            this.mc.displayGuiScreen(new GuiHumanCrafting(this.inventory, this.worldObj));
+        }
+        else if("minecraft:gondorian_crafting_table".equals(s))
+        {
+            this.mc.displayGuiScreen(new GuiGondorianCrafting(this.inventory, this.worldObj));
+        }
+        else if("minecraft:rohirrim_crafting_table".equals(s))
+        {
+            this.mc.displayGuiScreen(new GuiRohirrimCrafting(this.inventory, this.worldObj));
+        }
+        else if("minecraft:hobbit_crafting_table".equals(s))
+        {
+            this.mc.displayGuiScreen(new GuiHobbitCrafting(this.inventory, this.worldObj));
+        }
+        else if("minecraft:mordor_crafting_table".equals(s))
+        {
+            this.mc.displayGuiScreen(new GuiMordorCrafting(this.inventory, this.worldObj));
+        }
+        else if("minecraft:isengard_crafting_table".equals(s))
+        {
+            this.mc.displayGuiScreen(new GuiIsengardCrafting(this.inventory, this.worldObj));
+        }
+        else if("minecraft:goblin_crafting_table".equals(s))
+        {
+            this.mc.displayGuiScreen(new GuiGoblinCrafting(this.inventory, this.worldObj));
         }
     	//End Awaken Dreams code
     }

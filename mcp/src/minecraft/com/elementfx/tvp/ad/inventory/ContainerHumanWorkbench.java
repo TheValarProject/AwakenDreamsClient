@@ -1,8 +1,7 @@
 package com.elementfx.tvp.ad.inventory;
 
 import javax.annotation.Nullable;
-
-import com.elementfx.tvp.ad.item.crafting.ElvenCraftingManager;
+import com.elementfx.tvp.ad.item.crafting.HumanCraftingManager;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -21,7 +20,7 @@ import net.minecraft.world.World;
 
 
 
-public class ContainerElvenWorkbench extends Container
+public class ContainerHumanWorkbench extends Container
 {
 	/** The crafting matrix inventory (3x3). */
     public InventoryCrafting craftMatrix = new InventoryCrafting(this, 3, 3);
@@ -31,12 +30,12 @@ public class ContainerElvenWorkbench extends Container
     /** Position of the workbench */
     private final BlockPos pos;
 
-    public ContainerElvenWorkbench(InventoryPlayer playerInventory, World worldIn, BlockPos posIn)
+    public ContainerHumanWorkbench(InventoryPlayer playerInventory, World worldIn, BlockPos posIn)
     {
         this.worldObj = worldIn;
         this.pos = posIn;
         
-        this.addSlotToContainer(new SlotElvenCrafting(playerInventory.player, this.craftMatrix, this.craftResult, 0, 124, 35));
+        this.addSlotToContainer(new SlotHumanCrafting(playerInventory.player, this.craftMatrix, this.craftResult, 0, 124, 35));
 
         for (int i = 0; i < 3; ++i)
         {
@@ -67,7 +66,7 @@ public class ContainerElvenWorkbench extends Container
      */
     public void onCraftMatrixChanged(IInventory inventoryIn)
     {
-        this.craftResult.setInventorySlotContents(0, ElvenCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj));
+        this.craftResult.setInventorySlotContents(0, HumanCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj));
     }
 
     public boolean canInteractWith(EntityPlayer playerIn)

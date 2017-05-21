@@ -516,7 +516,8 @@ public class Blocks
     public static final Block MEDUSELD_PILLAR;
     public static final Block DIAGONAL_BRICKS;
     public static final Block BELL;
-    public static final Block ELVEN_CRAFTING_TABLE;
+    public static final Block CUSTOM_CRAFTING_TABLE;
+    //public static final Block HUMAN_CRAFTING_TABLE;
     // End Awaken Dreams code
 
     @Nullable
@@ -1018,7 +1019,7 @@ public class Blocks
             MEDUSELD_PILLAR = getRegisteredBlock("meduseld_pillar");
             DIAGONAL_BRICKS = getRegisteredBlock("diagonal_bricks");
             BELL = getRegisteredBlock("bell");
-            ELVEN_CRAFTING_TABLE = getRegisteredBlock("elven_crafting_table");
+            CUSTOM_CRAFTING_TABLE = getRegisteredBlock("custom_crafting_table");
             // End Awaken Dreams code
             CACHE.clear();
         }

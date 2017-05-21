@@ -1,61 +1,108 @@
 package com.elementfx.tvp.ad.block;
 
+import java.util.List;
+
 import javax.annotation.Nullable;
 
 import com.elementfx.tvp.ad.inventory.ContainerElvenWorkbench;
+import com.elementfx.tvp.ad.inventory.ContainerGoblinWorkbench;
+import com.elementfx.tvp.ad.inventory.ContainerGondorianWorkbench;
+import com.elementfx.tvp.ad.inventory.ContainerHobbitWorkbench;
+import com.elementfx.tvp.ad.inventory.ContainerHumanWorkbench;
+import com.elementfx.tvp.ad.inventory.ContainerIsengardWorkbench;
+import com.elementfx.tvp.ad.inventory.ContainerMordorWorkbench;
+import com.elementfx.tvp.ad.inventory.ContainerRohirrimWorkbench;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockSandStone;
 import net.minecraft.block.BlockWorkbench;
+import net.minecraft.block.BlockWorkbench.InterfaceCraftingTable;
+import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.properties.IProperty;
+import net.minecraft.block.properties.PropertyEnum;
+import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.ContainerWorkbench;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.StatList;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.IStringSerializable;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentTranslation;
-import net.minecraft.world.IInteractionObject;
 import net.minecraft.world.World;
 
-public class BlockCustomWorkbench extends BlockWorkbench
+public class BlockCustomWorkbench extends Block
 {
-	//Holds name of workbench for GUI initialization
-	private static String workbenchType;
-	//Holds name of Block of each workbench for Interface name
-	private static String workbenchBlock;
-	
-	public BlockCustomWorkbench(BlockCustomWorkbench.WorkbenchType workbenchTypeIn)
-	{
-		super();
-		this.workbenchType = workbenchTypeIn.getType();
-		this.workbenchBlock = workbenchTypeIn.getWorkbenchBlock();
-	}
-	
-	public BlockCustomWorkbench()
+	public static final PropertyEnum<BlockCustomWorkbench.EnumType> TYPE = PropertyEnum.<BlockCustomWorkbench.EnumType>create("type", BlockCustomWorkbench.EnumType.class);
+
+    public BlockCustomWorkbench()
     {
-        this(WorkbenchType.ELVEN);
+        super(Material.WOOD);
+        this.setDefaultState(this.blockState.getBaseState().withProperty(TYPE, BlockCustomWorkbench.EnumType.HUMAN));
+        this.setCreativeTab(CreativeTabs.DECORATIONS);
     }
 
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ)
+    /**
+     * Gets the metadata of the item this Block can drop. This method is called when the block gets destroyed. It
+     * returns the metadata of the dropped item based on the old metadata of the block.
+     */
+    public int damageDropped(IBlockState state)
     {
-        if (worldIn.isRemote)
+        return ((BlockCustomWorkbench.EnumType)state.getValue(TYPE)).getMetadata();
+    }
+
+    /**
+     * returns a list of blocks with the same ID, but different meta (eg: wood returns 4 blocks)
+     */
+    public void getSubBlocks(Item itemIn, CreativeTabs tab, List<ItemStack> list)
+    {
+        for (BlockCustomWorkbench.EnumType blockcustomworkbench$enumtype : BlockCustomWorkbench.EnumType.values())
         {
-            return true;
+            list.add(new ItemStack(itemIn, 1, blockcustomworkbench$enumtype.getMetadata()));
         }
-        else
-        {
-            playerIn.displayGui(new BlockCustomWorkbench.InterfaceCustomCraftingTable(worldIn, pos));
-            playerIn.addStat(StatList.CRAFTING_TABLE_INTERACTION);
-            return true;
-        }
+    }
+
+    /**
+     * Get the MapColor for this Block and the given BlockState
+     */
+    public MapColor getMapColor(IBlockState state)
+    {
+        return MapColor.WOOD;
+    }
+
+    /**
+     * Convert the given metadata into a BlockState for this Block
+     */
+    public IBlockState getStateFromMeta(int meta)
+    {
+        return this.getDefaultState().withProperty(TYPE, BlockCustomWorkbench.EnumType.byMetadata(meta));
+    }
+
+    /**
+     * Convert the BlockState into the correct metadata value
+     */
+    public int getMetaFromState(IBlockState state)
+    {
+        return ((BlockCustomWorkbench.EnumType)state.getValue(TYPE)).getMetadata();
+    }
+    
+    public static String getName(IBlockState state)
+    {
+    	return ((BlockCustomWorkbench.EnumType)state.getValue(TYPE)).getName();
+    }
+
+    protected BlockStateContainer createBlockState()
+    {
+        return new BlockStateContainer(this, new IProperty[] {TYPE});
     }
     
     public boolean isOpaqueCube(IBlockState state) 
@@ -72,7 +119,21 @@ public class BlockCustomWorkbench extends BlockWorkbench
     {
         return false;
     }
-
+    
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ)
+    {
+        if (worldIn.isRemote)
+        {
+            return true;
+        }
+        else
+        {
+            playerIn.displayGui(new BlockCustomWorkbench.InterfaceCustomCraftingTable(worldIn, pos));
+            playerIn.addStat(StatList.CRAFTING_TABLE_INTERACTION);
+            return true;
+        }
+    }
+    
     public static class InterfaceCustomCraftingTable extends InterfaceCraftingTable
     {
         private final World world;
@@ -87,53 +148,109 @@ public class BlockCustomWorkbench extends BlockWorkbench
 
         public ITextComponent getDisplayName()
         {
-            return new TextComponentTranslation(workbenchBlock + ".name", new Object[0]);
+            return new TextComponentTranslation("tile.customWorkbench.elven.name", new Object[0]);
         }
         
         public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn)
         {
-        	if(workbenchType == "elven") //There should be better way to differentiate created container than checking the type String. Would be nice to have it set in WorkbenchType Enumerator
+        	switch (world.getBlockState(position).getBlock().getMetaFromState(world.getBlockState(position)))
         	{
-                return new ContainerElvenWorkbench(playerInventory, this.world, this.position);
+        		case 0:
+        			return new ContainerElvenWorkbench(playerInventory, this.world, this.position);
+        			
+        		case 1:
+        			return new ContainerHumanWorkbench(playerInventory, this.world, this.position);
+        			
+        		case 2:
+        			return new ContainerGondorianWorkbench(playerInventory, this.world, this.position);
+        			
+        		case 3:
+        			return new ContainerRohirrimWorkbench(playerInventory, this.world, this.position);
+        		
+        		case 4:
+        			return new ContainerHobbitWorkbench(playerInventory, this.world, this.position);
+        		
+        		case 5:
+        			return new ContainerMordorWorkbench(playerInventory, this.world, this.position);
+        		
+        		case 6:
+        			return new ContainerIsengardWorkbench(playerInventory, this.world, this.position);
+        		
+        		case 7:
+        			return new ContainerGoblinWorkbench(playerInventory, this.world, this.position);
+        			
+        		default:
+        			return new ContainerWorkbench(playerInventory, this.world, this.position);
+        
         	}
-            return new ContainerWorkbench(playerInventory, this.world, this.position);
         }
 
         public String getGuiID()
         {
-            return "minecraft:" + workbenchType + "_crafting_table";
+        	String typeName = BlockCustomWorkbench.getName(world.getBlockState(position));     	
+        	return "minecraft:" + typeName;
         }
     }
-    
-    public static enum WorkbenchType
+
+
+    public static enum EnumType implements IStringSerializable
     {
-    	ELVEN("elven", "elven_crafting_table");
-    	//HUMAN("human"),
-    	//GONDORIAN("gondorian"),
-    	//ROHIRIM("rohirrim"),
-    	//HOBBIT("hobbit"),
-    	//MORDOR("mordor"),
-    	//ISENGARD("isengard"),
-    	//GOBLIN("goblin");
-    	
-    	private final String type;
-    	private final String workbenchBlock;
-    	
-    	private WorkbenchType(String typeIn, String workbenchBlockIn)
-    	{
-    		this.type = typeIn;
-    		this.workbenchBlock = workbenchBlockIn;
-    	}
-    	
-    	public String getType()
-    	{
-    		return this.type;
-    	}
-    	
-    	public String getWorkbenchBlock()
-    	{
-    		return this.workbenchBlock;
-    	}
-    	
+    	ELVEN(0, "elven_crafting_table", "elven"),
+    	HUMAN(1, "human_crafting_table", "human"),
+    	GONDORIAN(2, "gondorian_crafting_table", "gondorian"),
+    	ROHIRRIM(3, "rohirrim_crafting_table", "rohirrim"),
+    	HOBBIT(4, "hobbit_crafting_table", "hobbit"),
+    	MORDOR(5, "mordor_crafting_table", "mordor"),
+    	ISENGARD(6, "isengard_crafting_table", "isengard"),
+    	GOBLIN(7, "goblin_crafting_table", "goblin");
+
+        private static final BlockCustomWorkbench.EnumType[] META_LOOKUP = new BlockCustomWorkbench.EnumType[values().length];
+        private final int metadata;
+        private final String name;
+        private final String unlocalizedName;
+
+        private EnumType(int meta, String name, String unlocalizedName)
+        {
+            this.metadata = meta;
+            this.name = name;
+            this.unlocalizedName = unlocalizedName;
+        }
+
+        public int getMetadata()
+        {
+            return this.metadata;
+        }
+
+        public String toString()
+        {
+            return this.name;
+        }
+
+        public static BlockCustomWorkbench.EnumType byMetadata(int meta)
+        {
+            if (meta < 0 || meta >= META_LOOKUP.length)
+            {
+                meta = 0;
+            }
+
+            return META_LOOKUP[meta];
+        }
+
+        public String getName()
+        {
+            return this.name;
+        }
+
+        public String getUnlocalizedName()
+        {
+            return this.unlocalizedName;
+        }
+
+        static {
+            for (BlockCustomWorkbench.EnumType blockcustomworkbench$enumtype : values())
+            {
+                META_LOOKUP[blockcustomworkbench$enumtype.getMetadata()] = blockcustomworkbench$enumtype;
+            }
+        }
     }
 }

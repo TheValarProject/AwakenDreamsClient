@@ -434,6 +434,7 @@ public class ModelBakery
         	pipeNames.add(Items.PIPE.getModelName(pipe));
         }
         this.variantNames.put(Items.PIPE, pipeNames);
+        this.variantNames.put(Item.getItemFromBlock(Blocks.CUSTOM_CRAFTING_TABLE), Lists.newArrayList(new String[] {"elven_crafting_table", "human_crafting_table", "gondorian_crafting_table", "rohirrim_crafting_table", "hobbit_crafting_table", "mordor_crafting_table", "isengard_crafting_table", "goblin_crafting_table"}));
         // End Awaken Dreams code
     }
 

@@ -1,5 +1,6 @@
 package net.minecraft.client.renderer;
 
+import com.elementfx.tvp.ad.block.BlockCustomWorkbench;
 import com.google.common.collect.Maps;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -330,6 +331,7 @@ public class BlockModelShapes
         this.registerBlockWithStateMapper(Blocks.PRISON_DOOR, (new StateMap.Builder()).ignore(new IProperty[] {BlockDoor.POWERED}).build());
         this.registerBlockWithStateMapper(Blocks.SINDAR_DOOR, (new StateMap.Builder()).ignore(new IProperty[] {BlockDoor.POWERED}).build());
         //this.registerBuiltInBlocks(Blocks.BELL);
+        this.registerBlockWithStateMapper(Blocks.CUSTOM_CRAFTING_TABLE, (new StateMap.Builder()).withName(BlockCustomWorkbench.TYPE).build());
         // End Awaken Dreams code
     }
 }
