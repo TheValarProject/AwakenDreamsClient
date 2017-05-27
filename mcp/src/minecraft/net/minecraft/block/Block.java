@@ -13,6 +13,7 @@ import com.elementfx.tvp.ad.block.BlockCustomOre;
 import com.elementfx.tvp.ad.block.BlockDwarvenTorch;
 import com.elementfx.tvp.ad.block.BlockElvenWorkbench;
 import com.elementfx.tvp.ad.block.BlockLamp;
+import com.elementfx.tvp.ad.block.BlockWaterWheel;
 import com.google.common.collect.Sets;
 
 import java.util.Arrays;
@@ -1644,6 +1645,7 @@ public class Block
         //791 - mordor_crafting_table
         //792 - isengard_crafting_table
         //793 - goblin_crafting_table
+        registerBlock(787, "water_wheel", (new BlockWaterWheel()).setUnlocalizedName("waterWheel"));
         // End Awaken Dreams code
         REGISTRY.validateKey();
 

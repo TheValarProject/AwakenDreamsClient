@@ -1,6 +1,7 @@
 package net.minecraft.client.renderer;
 
 import com.elementfx.tvp.ad.block.BlockBell;
+import com.elementfx.tvp.ad.block.BlockWaterWheel;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Queues;
@@ -754,7 +755,7 @@ public class RenderGlobal implements IWorldEventListener, IResourceManagerReload
                 Block block = this.theWorld.getBlockState(blockpos).getBlock();
 
                 // Begin Awaken Dreams code
-                if (tileentity1 != null && (block instanceof BlockChest || block instanceof BlockEnderChest || block instanceof BlockSign || block instanceof BlockSkull || block instanceof BlockBell))
+                if (tileentity1 != null && (block instanceof BlockChest || block instanceof BlockEnderChest || block instanceof BlockSign || block instanceof BlockSkull || block instanceof BlockBell || block instanceof BlockWaterWheel))
                 {
                 	// End Awaken Dreams code
                     TileEntityRendererDispatcher.instance.renderTileEntity(tileentity1, partialTicks, destroyblockprogress.getPartialBlockDamage());

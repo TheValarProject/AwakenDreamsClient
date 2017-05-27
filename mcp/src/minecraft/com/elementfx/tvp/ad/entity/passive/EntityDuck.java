@@ -19,6 +19,7 @@ import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
@@ -82,10 +83,10 @@ public class EntityDuck extends EntityAnimal
         super.onLivingUpdate();
         this.oFlap = this.wingRotation;
         this.oFlapSpeed = this.destPos;
-        this.destPos = (float)((double)this.destPos + (double)(this.onGround ? -1 : 4) * 0.3D);
+        this.destPos = (float)((double)this.destPos + (double)(this.onGround || (this.worldObj.getBlockState(this.getPosition().add(0, this.getEyeHeight(), 0)).getBlock() != Blocks.WATER && this.worldObj.getBlockState(this.getPosition().add(0, -1, 0)).getBlock() == Blocks.WATER) ? -1 : 4) * 0.3D);
         this.destPos = MathHelper.clamp_float(this.destPos, 0.0F, 1.0F);
 
-        if (!this.onGround && this.wingRotDelta < 1.0F)
+        if (!this.onGround && !(this.worldObj.getBlockState(this.getPosition().add(0, this.getEyeHeight(), 0)).getBlock() != Blocks.WATER && this.worldObj.getBlockState(this.getPosition().add(0, -1, 0)).getBlock() == Blocks.WATER) && this.wingRotDelta < 1.0F)
         {
             this.wingRotDelta = 1.0F;
         }

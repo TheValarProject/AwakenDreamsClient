@@ -1,7 +1,7 @@
 package com.elementfx.tvp.ad.client.renderer.tileentity;
 
-import com.elementfx.tvp.ad.client.model.ModelBell;
-import com.elementfx.tvp.ad.tileentity.TileEntityBell;
+import com.elementfx.tvp.ad.client.model.ModelWaterWheel;
+import com.elementfx.tvp.ad.tileentity.TileEntityWaterWheel;
 
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
@@ -10,12 +10,12 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 
-public class TileEntityBellRenderer extends TileEntitySpecialRenderer<TileEntityBell>
+public class TileEntityWaterWheelRenderer extends TileEntitySpecialRenderer<TileEntityWaterWheel>
 {
-    private static final ResourceLocation TEXTURE_BELL = new ResourceLocation("textures/blocks/bell.png");
-    private final ModelBell modelBell = new ModelBell();
+    private static final ResourceLocation TEXTURE_WATER_WHEEL = new ResourceLocation("textures/blocks/water_wheel.png");
+    private final ModelWaterWheel modelWaterWheel = new ModelWaterWheel();
 
-    public void renderTileEntityAt(TileEntityBell te, double x, double y, double z, float partialTicks, int destroyStage)
+    public void renderTileEntityAt(TileEntityWaterWheel te, double x, double y, double z, float partialTicks, int destroyStage)
     {
     	if (destroyStage >= 0)
         {
@@ -28,7 +28,7 @@ public class TileEntityBellRenderer extends TileEntitySpecialRenderer<TileEntity
         }
     	else
     	{
-    		this.bindTexture(TEXTURE_BELL);
+    		this.bindTexture(TEXTURE_WATER_WHEEL);
     	}
     	
     	GlStateManager.pushMatrix();
@@ -36,17 +36,10 @@ public class TileEntityBellRenderer extends TileEntitySpecialRenderer<TileEntity
     	GlStateManager.rotate(180.0F, 0.0F, 0.0F, 1.0F);
     	GlStateManager.rotate((float)EnumFacing.getHorizontal(te.getBlockMetadata() & 3).getHorizontalAngle() + 90, 0.0F, 1.0F, 0.0F);
     	GlStateManager.enableCull();
-    	float f = (float)(Math.PI / 4 * (te.getAngle() + partialTicks * (te.getAngle() - te.getPrevAngle())));
-    	float clapperOffset = (float) (Math.PI / 12 - 0.05);
-    	if(Math.abs(f) > clapperOffset) {
-    		this.modelBell.clapperRod.rotateAngleZ = (float) (f + Math.signum(f) * -1 * clapperOffset); 
-    	}
-    	else {
-    		this.modelBell.clapperRod.rotateAngleZ = 0F;
-    	}
-    	this.modelBell.crown.rotateAngleZ = f;
-    	this.modelBell.render((Entity)null, 0F, 0F, 0F, 0F, 0F, 0.075F);
-    	System.out.println(this.modelBell);
+    	this.modelWaterWheel.Axel.rotateAngleZ = te.angle;
+    	//System.out.println("SpinDir: " + te.spinDirection);
+    	//System.out.println(this.modelWaterWheel);
+    	this.modelWaterWheel.render((Entity)null, 0F, 0F, 0F, 0F, 0F, 0.05F);
     	GlStateManager.popMatrix();
     	
     	if (destroyStage >= 0)
