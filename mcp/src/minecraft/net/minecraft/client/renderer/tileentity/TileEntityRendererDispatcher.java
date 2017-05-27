@@ -74,7 +74,7 @@ public class TileEntityRendererDispatcher
         // Being Awaken Dreams code
         this.mapSpecialRenderers.put(TileEntityBell.class, new TileEntityBellRenderer());
         this.mapSpecialRenderers.put(TileEntityWaterWheel.class, new TileEntityWaterWheelRenderer());
-        // End Awaken Drams code
+        // End Awaken Dreams code
 
         for (TileEntitySpecialRenderer<?> tileentityspecialrenderer : this.mapSpecialRenderers.values())
         {

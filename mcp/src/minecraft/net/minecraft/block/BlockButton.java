@@ -224,6 +224,7 @@ public abstract class BlockButton extends BlockDirectional
 
     public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
     {
+    	System.out.println("updateTick in BlockButton!");
         if (!worldIn.isRemote)
         {
             if (((Boolean)state.getValue(POWERED)).booleanValue())

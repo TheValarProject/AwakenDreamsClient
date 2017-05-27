@@ -1,6 +1,7 @@
 package com.elementfx.tvp.ad.block;
 
 import java.util.Random;
+import java.util.Set;
 
 import javax.annotation.Nullable;
 
@@ -9,6 +10,7 @@ import com.elementfx.tvp.ad.tileentity.TileEntityWaterWheel;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
+import net.minecraft.block.BlockDynamicLiquid;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
@@ -32,6 +34,7 @@ import net.minecraft.util.Mirror;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 public class BlockWaterWheel extends BlockContainer
@@ -45,7 +48,7 @@ public class BlockWaterWheel extends BlockContainer
         // TODO
         this.setHardness(2.5F);
         this.setResistance(10.0F);
-        //this.setTickRandomly(true);
+        this.setTickRandomly(true);
         this.setSoundType(SoundType.WOOD);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
     }
@@ -91,6 +94,7 @@ public class BlockWaterWheel extends BlockContainer
     public IBlockState onBlockPlaced(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
     {
     	EnumFacing enumfacing = placer.getHorizontalFacing().rotateY();
+    	worldIn.scheduleUpdate(pos, this, this.tickRate(worldIn));
     	return super.onBlockPlaced(worldIn, pos, facing, hitX, hitY, hitZ, meta, placer).withProperty(FACING, enumfacing);
     }
     
@@ -99,10 +103,18 @@ public class BlockWaterWheel extends BlockContainer
         this.func_189540_a(state, worldIn, pos, state.getBlock());
     }
     
+    /**
+     * How many world ticks before ticking
+     */
+    public int tickRate(World worldIn)
+    {
+        return 10;
+    }
+    
     public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
     {
-    	//System.out.println("update water wheel tick");
     	this.func_189540_a(state, worldIn, pos, state.getBlock());
+    	worldIn.scheduleUpdate(pos, this, this.tickRate(worldIn));
     }
     
     public void func_189540_a(IBlockState p_189540_1_, World p_189540_2_, BlockPos p_189540_3_, Block p_189540_4_)
@@ -131,12 +143,23 @@ public class BlockWaterWheel extends BlockContainer
         	{
         		continue;
         	}
-        	System.out.println(facing.toString());
         	curBlock = worldIn.getBlockState(centerPos.offset(facing)).getBlock();
         	if(curBlock != Blocks.AIR && curBlock != Blocks.WATER && curBlock != Blocks.FLOWING_WATER)
             {
             	return false;
             }
+        	if(facing != EnumFacing.UP && facing != EnumFacing.DOWN) {
+        		curBlock = worldIn.getBlockState(centerPos.offset(facing).offset(EnumFacing.UP)).getBlock();
+        		if(curBlock != Blocks.AIR && curBlock != Blocks.WATER && curBlock != Blocks.FLOWING_WATER)
+                {
+                	return false;
+                }
+        		curBlock = worldIn.getBlockState(centerPos.offset(facing).offset(EnumFacing.DOWN)).getBlock();
+        		if(curBlock != Blocks.AIR && curBlock != Blocks.WATER && curBlock != Blocks.FLOWING_WATER)
+                {
+                	return false;
+                }
+        	}
         }
         
         return true;
@@ -174,5 +197,25 @@ public class BlockWaterWheel extends BlockContainer
     public IBlockState withMirror(IBlockState state, Mirror mirrorIn)
     {
         return state.withRotation(mirrorIn.toRotation((EnumFacing)state.getValue(FACING)));
+    }
+    
+    /**
+     * Can this block provide power. Only wire currently seems to have this change based on its state.
+     */
+    public boolean canProvidePower(IBlockState state)
+    {
+        return true;
+    }
+    
+    public int getWeakPower(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
+    {
+    	System.out.println("getWeakPower " + ((TileEntityWaterWheel)blockAccess.getTileEntity(pos)).spinDirection * 15);
+        return (int)Math.min(15, (Math.abs(((TileEntityWaterWheel)blockAccess.getTileEntity(pos)).spinDirection) * 23));
+    }
+    
+    public int getStrongPower(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
+    {
+    	//System.out.println("getStrongPower");
+        return super.getStrongPower(blockState, blockAccess, pos, side);
     }
 }
