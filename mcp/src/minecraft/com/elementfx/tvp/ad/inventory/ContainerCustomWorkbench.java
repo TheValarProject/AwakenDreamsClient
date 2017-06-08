@@ -1,7 +1,15 @@
 package com.elementfx.tvp.ad.inventory;
 
 import javax.annotation.Nullable;
+
+import com.elementfx.tvp.ad.item.crafting.ElvenCraftingManager;
+import com.elementfx.tvp.ad.item.crafting.GoblinCraftingManager;
+import com.elementfx.tvp.ad.item.crafting.GondorianCraftingManager;
+import com.elementfx.tvp.ad.item.crafting.HobbitCraftingManager;
+import com.elementfx.tvp.ad.item.crafting.HumanCraftingManager;
+import com.elementfx.tvp.ad.item.crafting.IsengardCraftingManager;
 import com.elementfx.tvp.ad.item.crafting.MordorCraftingManager;
+import com.elementfx.tvp.ad.item.crafting.RohirrimCraftingManager;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -20,7 +28,7 @@ import net.minecraft.world.World;
 
 
 
-public class ContainerMordorWorkbench extends Container
+public class ContainerCustomWorkbench extends Container
 {
 	/** The crafting matrix inventory (3x3). */
     public InventoryCrafting craftMatrix = new InventoryCrafting(this, 3, 3);
@@ -29,13 +37,17 @@ public class ContainerMordorWorkbench extends Container
 
     /** Position of the workbench */
     private final BlockPos pos;
+    
+    private final int meta;
 
-    public ContainerMordorWorkbench(InventoryPlayer playerInventory, World worldIn, BlockPos posIn)
+    public ContainerCustomWorkbench(InventoryPlayer playerInventory, World worldIn, BlockPos posIn, int metaIn)
     {
         this.worldObj = worldIn;
         this.pos = posIn;
+        this.meta = metaIn;
         
-        this.addSlotToContainer(new SlotMordorCrafting(playerInventory.player, this.craftMatrix, this.craftResult, 0, 124, 35));
+        
+        this.addSlotToContainer(new SlotCustomCrafting(playerInventory.player, this.craftMatrix, this.craftResult, 0, 124, 35, meta));
 
         for (int i = 0; i < 3; ++i)
         {
@@ -66,7 +78,46 @@ public class ContainerMordorWorkbench extends Container
      */
     public void onCraftMatrixChanged(IInventory inventoryIn)
     {
-        this.craftResult.setInventorySlotContents(0, MordorCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj));
+    	ItemStack recipe;
+        switch(meta)
+        {
+        case 0:
+        	recipe = ElvenCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+        	break;
+        	
+        case 1:
+        	recipe = HumanCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+        	break;
+        	
+        case 2:
+        	recipe = GondorianCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+        	break;
+        	
+        case 3:
+        	recipe = RohirrimCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+        	break;
+        	
+        case 4:
+        	recipe = HobbitCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+        	break;
+        	
+        case 5:
+        	recipe = MordorCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+        	break;
+        	
+        case 6:
+        	recipe = IsengardCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+        	break;
+        	
+        case 7:
+        	recipe = GoblinCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+        	break;
+        	
+        default:
+        	recipe = CraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+        }
+        
+        this.craftResult.setInventorySlotContents(0, recipe);
     }
 
     public boolean canInteractWith(EntityPlayer playerIn)

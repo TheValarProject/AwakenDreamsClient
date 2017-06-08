@@ -4,15 +4,7 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import com.elementfx.tvp.ad.inventory.ContainerElvenWorkbench;
-import com.elementfx.tvp.ad.inventory.ContainerGoblinWorkbench;
-import com.elementfx.tvp.ad.inventory.ContainerGondorianWorkbench;
-import com.elementfx.tvp.ad.inventory.ContainerHobbitWorkbench;
-import com.elementfx.tvp.ad.inventory.ContainerHumanWorkbench;
-import com.elementfx.tvp.ad.inventory.ContainerIsengardWorkbench;
-import com.elementfx.tvp.ad.inventory.ContainerMordorWorkbench;
-import com.elementfx.tvp.ad.inventory.ContainerRohirrimWorkbench;
-
+import com.elementfx.tvp.ad.inventory.ContainerCustomWorkbench;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSandStone;
 import net.minecraft.block.BlockWorkbench;
@@ -120,6 +112,11 @@ public class BlockCustomWorkbench extends Block
         return false;
     }
     
+    public static String getUnlocalizedName(IBlockState state)
+    {
+        return ((BlockCustomWorkbench.EnumType)state.getValue(TYPE)).getUnlocalizedName();
+    }
+    
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ)
     {
         if (worldIn.isRemote)
@@ -148,47 +145,17 @@ public class BlockCustomWorkbench extends Block
 
         public ITextComponent getDisplayName()
         {
-            return new TextComponentTranslation("tile.customWorkbench.elven.name", new Object[0]);
+        	return new TextComponentTranslation("tile.customWorkbench." + BlockCustomWorkbench.getUnlocalizedName(world.getBlockState(position)) + ".name");
         }
         
         public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn)
         {
-        	switch (world.getBlockState(position).getBlock().getMetaFromState(world.getBlockState(position)))
-        	{
-        		case 0:
-        			return new ContainerElvenWorkbench(playerInventory, this.world, this.position);
-        			
-        		case 1:
-        			return new ContainerHumanWorkbench(playerInventory, this.world, this.position);
-        			
-        		case 2:
-        			return new ContainerGondorianWorkbench(playerInventory, this.world, this.position);
-        			
-        		case 3:
-        			return new ContainerRohirrimWorkbench(playerInventory, this.world, this.position);
-        		
-        		case 4:
-        			return new ContainerHobbitWorkbench(playerInventory, this.world, this.position);
-        		
-        		case 5:
-        			return new ContainerMordorWorkbench(playerInventory, this.world, this.position);
-        		
-        		case 6:
-        			return new ContainerIsengardWorkbench(playerInventory, this.world, this.position);
-        		
-        		case 7:
-        			return new ContainerGoblinWorkbench(playerInventory, this.world, this.position);
-        			
-        		default:
-        			return new ContainerWorkbench(playerInventory, this.world, this.position);
-        
-        	}
+        	return new ContainerCustomWorkbench(playerInventory, this.world, this.position, world.getBlockState(position).getBlock().getMetaFromState(world.getBlockState(position)));
         }
 
         public String getGuiID()
-        {
-        	String typeName = BlockCustomWorkbench.getName(world.getBlockState(position));     	
-        	return "minecraft:" + typeName;
+        { 	
+        	return "minecraft:" + BlockCustomWorkbench.getName(world.getBlockState(position));   
         }
     }
 
