@@ -16,19 +16,26 @@ public class GuiCustomCrafting extends GuiContainer
 	private static String typeIdentifier;
 	private static int fontColor;
     
-	protected int xSize = 204;
-    protected int ySize = 194;
+	protected int xSize;
+    protected int ySize;
     
     public GuiCustomCrafting(InventoryPlayer playerInv, World worldIn, String typeIdentifierIn, int fontColorIn, int metaIn)
     {
-    	this(playerInv, worldIn, BlockPos.ORIGIN, typeIdentifierIn, fontColorIn, metaIn);
+    	this(playerInv, worldIn, BlockPos.ORIGIN, typeIdentifierIn, fontColorIn, metaIn, 176, 166);
     }
     
-    public GuiCustomCrafting(InventoryPlayer playerInv, World worldIn, BlockPos blockPosition, String typeIdentifierIn, int fontColorIn, int metaIn)
+    public GuiCustomCrafting(InventoryPlayer playerInv, World worldIn, String typeIdentifierIn, int fontColorIn, int metaIn, int xSizeIn, int ySizeIn)
+    {
+    	this(playerInv, worldIn, BlockPos.ORIGIN, typeIdentifierIn, fontColorIn, metaIn, xSizeIn, ySizeIn);
+    }
+    
+    public GuiCustomCrafting(InventoryPlayer playerInv, World worldIn, BlockPos blockPosition, String typeIdentifierIn, int fontColorIn, int metaIn, int xSizeIn, int ySizeIn)
     {
     	super(new ContainerCustomWorkbench(playerInv, worldIn, blockPosition, metaIn));
     	this.typeIdentifier = typeIdentifierIn;
     	this.fontColor = fontColorIn;
+    	this.xSize = xSizeIn;
+    	this.ySize = ySizeIn;
     	CUSTOM_CRAFTING_TABLE_GUI_TEXTURES = new ResourceLocation("textures/gui/container/" + typeIdentifier + "_crafting_table.png");
     		
     }
@@ -38,8 +45,8 @@ public class GuiCustomCrafting extends GuiContainer
      */
     protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY)
     {
-        this.fontRendererObj.drawString(I18n.format("container." + typeIdentifier + "Crafting", new Object[0]), 20, 6, fontColor);
-        this.fontRendererObj.drawString(I18n.format("container.inventory", new Object[0]), 8, this.ySize - 120, fontColor);
+        this.fontRendererObj.drawString(I18n.format("container." + typeIdentifier + "Crafting", new Object[0]), 28, 6, fontColor);
+        this.fontRendererObj.drawString(I18n.format("container.inventory", new Object[0]), 8, 72, fontColor);
     }
 
     /**

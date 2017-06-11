@@ -815,11 +815,11 @@ public class EntityPlayerSP extends AbstractClientPlayer
         //Begin Awaken Dreams code
         else if("minecraft:elven_crafting_table".equals(s))
         {
-            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "elven", 15859662, 0));
+            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "elven", 15859662, 0, 204, 194));
         }
         else if("minecraft:human_crafting_table".equals(s))
         {
-            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "human", 4210752, 1));
+            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "human", 12366482, 1));
         }
         else if("minecraft:gondorian_crafting_table".equals(s))
         {
