@@ -1039,7 +1039,6 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.MEDUSELD_PILLAR, "meduseld_pillar");
         this.registerBlock(Blocks.DIAGONAL_BRICKS, "diagonal_bricks");
         this.registerBlock(Blocks.BELL, "bell");
-        this.registerBlock(Blocks.ELVEN_CRAFTING_TABLE,  "elven_crafting_table");
         this.registerBlock(Blocks.CUSTOM_CRAFTING_TABLE, BlockCustomWorkbench.EnumType.ELVEN.getMetadata(), "elven_crafting_table");
         this.registerBlock(Blocks.CUSTOM_CRAFTING_TABLE, BlockCustomWorkbench.EnumType.HUMAN.getMetadata(), "human_crafting_table");
         this.registerBlock(Blocks.CUSTOM_CRAFTING_TABLE, BlockCustomWorkbench.EnumType.GONDORIAN.getMetadata(), "gondorian_crafting_table");
