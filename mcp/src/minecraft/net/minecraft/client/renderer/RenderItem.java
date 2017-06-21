@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Nullable;
 
+import com.elementfx.tvp.ad.block.BlockCustomWorkbench;
 import com.elementfx.tvp.ad.item.ItemRing;
 
 import net.minecraft.block.Block;
@@ -1039,6 +1040,14 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.DIAGONAL_BRICKS, "diagonal_bricks");
         this.registerBlock(Blocks.BELL, "bell");
         this.registerBlock(Blocks.ELVEN_CRAFTING_TABLE,  "elven_crafting_table");
+        this.registerBlock(Blocks.CUSTOM_CRAFTING_TABLE, BlockCustomWorkbench.EnumType.ELVEN.getMetadata(), "elven_crafting_table");
+        this.registerBlock(Blocks.CUSTOM_CRAFTING_TABLE, BlockCustomWorkbench.EnumType.HUMAN.getMetadata(), "human_crafting_table");
+        this.registerBlock(Blocks.CUSTOM_CRAFTING_TABLE, BlockCustomWorkbench.EnumType.GONDORIAN.getMetadata(), "gondorian_crafting_table");
+        this.registerBlock(Blocks.CUSTOM_CRAFTING_TABLE, BlockCustomWorkbench.EnumType.ROHIRRIM.getMetadata(), "rohirrim_crafting_table");
+        this.registerBlock(Blocks.CUSTOM_CRAFTING_TABLE, BlockCustomWorkbench.EnumType.HOBBIT.getMetadata(), "hobbit_crafting_table");
+        this.registerBlock(Blocks.CUSTOM_CRAFTING_TABLE, BlockCustomWorkbench.EnumType.MORDOR.getMetadata(), "mordor_crafting_table");
+        this.registerBlock(Blocks.CUSTOM_CRAFTING_TABLE, BlockCustomWorkbench.EnumType.ISENGARD.getMetadata(), "isengard_crafting_table");
+        this.registerBlock(Blocks.CUSTOM_CRAFTING_TABLE, BlockCustomWorkbench.EnumType.GOBLIN.getMetadata(), "goblin_crafting_table");
         this.registerBlock(Blocks.WATER_WHEEL, "water_wheel");
         // End Awaken Dreams code
         this.registerItem(Items.IRON_SHOVEL, "iron_shovel");
@@ -1588,8 +1597,7 @@ public class RenderItem implements IResourceManagerReloadListener
             	return new ModelResourceLocation(stack.getUnlocalizedName().substring(5).replace('.', '_'), "inventory");
             }
         });
-        //this.registerItem(Items.PACKED_PIPE, "packed_pipe");
-        //this.registerItem(Items.TOBY_PACKED_PIPE, "toby_packed_pipe");
+        this.registerItem(Items.ELVEN_STEEL_INGOT, "elven_steel_ingot");
         // End Awaken Dreams code
     }
 

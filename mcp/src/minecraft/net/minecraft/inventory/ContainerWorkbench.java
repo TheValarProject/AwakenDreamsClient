@@ -1,10 +1,6 @@
 package net.minecraft.inventory;
 
 import javax.annotation.Nullable;
-
-import com.elementfx.tvp.ad.inventory.SlotElvenCrafting;
-import com.elementfx.tvp.ad.item.crafting.ElvenCraftingManager;
-
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.init.Blocks;

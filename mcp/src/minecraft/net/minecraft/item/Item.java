@@ -2,6 +2,7 @@ package net.minecraft.item;
 
 import com.elementfx.tvp.ad.block.BlockCustomBed;
 import com.elementfx.tvp.ad.block.BlockCustomCrops;
+import com.elementfx.tvp.ad.block.BlockCustomWorkbench;
 import com.elementfx.tvp.ad.item.ItemCustomArmor;
 import com.elementfx.tvp.ad.item.ItemCustomBed;
 import com.elementfx.tvp.ad.item.ItemCustomFood;
@@ -1081,7 +1082,14 @@ public class Item
         registerItemBlock(Blocks.MEDUSELD_PILLAR);
         registerItemBlock(Blocks.DIAGONAL_BRICKS);
         registerItemBlock(Blocks.BELL);
-        registerItemBlock(Blocks.ELVEN_CRAFTING_TABLE);
+        registerItemBlock(Blocks.CUSTOM_CRAFTING_TABLE, (new ItemMultiTexture(Blocks.CUSTOM_CRAFTING_TABLE, Blocks.CUSTOM_CRAFTING_TABLE, new Function<ItemStack, String>()
+        {
+            @Nullable
+            public String apply(@Nullable ItemStack p_apply_1_)
+            {
+                return BlockCustomWorkbench.EnumType.byMetadata(p_apply_1_.getMetadata()).getUnlocalizedName();
+            }
+        })).setUnlocalizedName("customWorkbench"));
         registerItemBlock(Blocks.WATER_WHEEL);
         // End Awaken Dreams code
         registerItem(256, "iron_shovel", (new ItemSpade(Item.ToolMaterial.IRON)).setUnlocalizedName("shovelIron"));
@@ -1390,41 +1398,41 @@ public class Item
         registerItem(6112, "stone_of_wealth", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("stoneOfWealth"));
         registerItem(6113, "stone_of_wind", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("stoneOfWind"));
         registerItem(6114, "hammer", (new Item()).setCreativeTab(CreativeTabs.TOOLS).setUnlocalizedName("hammer"));
-        registerItem(6115, "gold_ring", (new Item()).setUnlocalizedName("goldRing")); // Deprecated 
-        registerItem(6116, "onyx_gold_ring", (new Item()).setUnlocalizedName("onyxGoldRing")); // Deprecated 
-        registerItem(6117, "tanzanite_gold_ring", (new Item()).setUnlocalizedName("tanzaniteGoldRing")); // Deprecated 
-        registerItem(6118, "jade_gold_ring", (new Item()).setUnlocalizedName("jadeGoldRing")); // Deprecated 
-        registerItem(6119, "moonstone_gold_ring", (new Item()).setUnlocalizedName("moonstoneGoldRing")); // Deprecated 
-        registerItem(6120, "amethyst_gold_ring", (new Item()).setUnlocalizedName("amethystGoldRing")); // Deprecated 
-        registerItem(6121, "ruby_gold_ring", (new Item()).setUnlocalizedName("rubyGoldRing")); // Deprecated 
-        registerItem(6122, "quartz_gold_ring", (new Item()).setUnlocalizedName("quartzGoldRing")); // Deprecated 
-        registerItem(6123, "amber_gold_ring", (new Item()).setUnlocalizedName("amberGoldRing")); // Deprecated 
-        registerItem(6124, "silver_ring", (new Item()).setUnlocalizedName("silverRing")); // Deprecated 
-        registerItem(6125, "onyx_silver_ring", (new Item()).setUnlocalizedName("onyxSilverRing")); // Deprecated 
-        registerItem(6126, "tanzanite_silver_ring", (new Item()).setUnlocalizedName("tanzaniteSilverRing")); // Deprecated 
-        registerItem(6127, "jade_silver_ring", (new Item()).setUnlocalizedName("jadeSilverRing")); // Deprecated 
-        registerItem(6128, "moonstone_silver_ring", (new Item()).setUnlocalizedName("moonstoneSilverRing")); // Deprecated 
-        registerItem(6129, "amethyst_silver_ring", (new Item()).setUnlocalizedName("amethystSilverRing")); // Deprecated 
-        registerItem(6130, "ruby_silver_ring", (new Item()).setUnlocalizedName("rubySilverRing")); // Deprecated 
-        registerItem(6131, "quartz_silver_ring", (new Item()).setUnlocalizedName("quartzSilverRing")); // Deprecated 
-        registerItem(6132, "amber_silver_ring", (new Item()).setUnlocalizedName("amberSilverRing")); // Deprecated 
-        registerItem(6133, "bronze_ring", (new Item()).setUnlocalizedName("bronzeRing")); // Deprecated 
-        registerItem(6134, "onyx_bronze_ring", (new Item()).setUnlocalizedName("onyxBronzeRing")); // Deprecated 
-        registerItem(6135, "tanzanite_bronze_ring", (new Item()).setUnlocalizedName("tanzaniteBronzeRing")); // Deprecated 
-        registerItem(6136, "jade_bronze_ring", (new Item()).setUnlocalizedName("jadeBronzeRing")); // Deprecated 
-        registerItem(6137, "moonstone_bronze_ring", (new Item()).setUnlocalizedName("moonstoneBronzeRing")); // Deprecated 
-        registerItem(6138, "amethyst_bronze_ring", (new Item()).setUnlocalizedName("amethystBronzeRing")); // Deprecated 
-        registerItem(6139, "ruby_bronze_ring", (new Item()).setUnlocalizedName("rubyBronzeRing")); // Deprecated 
-        registerItem(6140, "quartz_bronze_ring", (new Item()).setUnlocalizedName("quartzBronzeRing")); // Deprecated 
-        registerItem(6141, "amber_bronze_ring", (new Item()).setUnlocalizedName("amberBronzeRing")); // Deprecated 
-        registerItem(6142, "mithril_ring", (new Item()).setUnlocalizedName("mithrilRing")); // Deprecated 
-        registerItem(6143, "onyx_mithril_ring", (new Item()).setUnlocalizedName("onyxMithrilRing")); // Deprecated 
-        registerItem(6144, "tanzanite_mithril_ring", (new Item()).setUnlocalizedName("tanzaniteMithrilRing")); // Deprecated 
-        registerItem(6145, "jade_mithril_ring", (new Item()).setUnlocalizedName("jadeMithrilRing")); // Deprecated 
-        registerItem(6146, "moonstone_mithril_ring", (new Item()).setUnlocalizedName("moonstoneMithrilRing")); // Deprecated 
-        registerItem(6147, "amethyst_mithril_ring", (new Item()).setUnlocalizedName("amethystMithrilRing")); // Deprecated 
-        registerItem(6148, "ruby_mithril_ring", (new Item()).setUnlocalizedName("rubyMithrilRing")); // Deprecated 
-        registerItem(6149, "quartz_mithril_ring", (new Item()).setUnlocalizedName("quartzMithrilRing")); // Deprecated 
+        registerItem(6115, "gold_ring", (new Item()).setUnlocalizedName("goldRing")); // Deprecated
+        registerItem(6116, "onyx_gold_ring", (new Item()).setUnlocalizedName("onyxGoldRing")); // Deprecated
+        registerItem(6117, "tanzanite_gold_ring", (new Item()).setUnlocalizedName("tanzaniteGoldRing")); // Deprecated
+        registerItem(6118, "jade_gold_ring", (new Item()).setUnlocalizedName("jadeGoldRing")); // Deprecated
+        registerItem(6119, "moonstone_gold_ring", (new Item()).setUnlocalizedName("moonstoneGoldRing")); // Deprecated
+        registerItem(6120, "amethyst_gold_ring", (new Item()).setUnlocalizedName("amethystGoldRing")); // Deprecated
+        registerItem(6121, "ruby_gold_ring", (new Item()).setUnlocalizedName("rubyGoldRing")); // Deprecated
+        registerItem(6122, "quartz_gold_ring", (new Item()).setUnlocalizedName("quartzGoldRing")); // Deprecated
+        registerItem(6123, "amber_gold_ring", (new Item()).setUnlocalizedName("amberGoldRing")); // Deprecated
+        registerItem(6124, "silver_ring", (new Item()).setUnlocalizedName("silverRing")); // Deprecated
+        registerItem(6125, "onyx_silver_ring", (new Item()).setUnlocalizedName("onyxSilverRing")); // Deprecated
+        registerItem(6126, "tanzanite_silver_ring", (new Item()).setUnlocalizedName("tanzaniteSilverRing")); // Deprecated
+        registerItem(6127, "jade_silver_ring", (new Item()).setUnlocalizedName("jadeSilverRing")); // Deprecated
+        registerItem(6128, "moonstone_silver_ring", (new Item()).setUnlocalizedName("moonstoneSilverRing")); // Deprecated
+        registerItem(6129, "amethyst_silver_ring", (new Item()).setUnlocalizedName("amethystSilverRing")); // Deprecated
+        registerItem(6130, "ruby_silver_ring", (new Item()).setUnlocalizedName("rubySilverRing")); // Deprecated
+        registerItem(6131, "quartz_silver_ring", (new Item()).setUnlocalizedName("quartzSilverRing")); // Deprecated
+        registerItem(6132, "amber_silver_ring", (new Item()).setUnlocalizedName("amberSilverRing")); // Deprecated
+        registerItem(6133, "bronze_ring", (new Item()).setUnlocalizedName("bronzeRing")); // Deprecated
+        registerItem(6134, "onyx_bronze_ring", (new Item()).setUnlocalizedName("onyxBronzeRing")); // Deprecated
+        registerItem(6135, "tanzanite_bronze_ring", (new Item()).setUnlocalizedName("tanzaniteBronzeRing")); // Deprecated
+        registerItem(6136, "jade_bronze_ring", (new Item()).setUnlocalizedName("jadeBronzeRing")); // Deprecated
+        registerItem(6137, "moonstone_bronze_ring", (new Item()).setUnlocalizedName("moonstoneBronzeRing")); // Deprecated
+        registerItem(6138, "amethyst_bronze_ring", (new Item()).setUnlocalizedName("amethystBronzeRing")); // Deprecated
+        registerItem(6139, "ruby_bronze_ring", (new Item()).setUnlocalizedName("rubyBronzeRing")); // Deprecated
+        registerItem(6140, "quartz_bronze_ring", (new Item()).setUnlocalizedName("quartzBronzeRing")); // Deprecated
+        registerItem(6141, "amber_bronze_ring", (new Item()).setUnlocalizedName("amberBronzeRing")); // Deprecated
+        registerItem(6142, "mithril_ring", (new Item()).setUnlocalizedName("mithrilRing")); // Deprecated
+        registerItem(6143, "onyx_mithril_ring", (new Item()).setUnlocalizedName("onyxMithrilRing")); // Deprecated
+        registerItem(6144, "tanzanite_mithril_ring", (new Item()).setUnlocalizedName("tanzaniteMithrilRing")); // Deprecated
+        registerItem(6145, "jade_mithril_ring", (new Item()).setUnlocalizedName("jadeMithrilRing")); // Deprecated
+        registerItem(6146, "moonstone_mithril_ring", (new Item()).setUnlocalizedName("moonstoneMithrilRing")); // Deprecated
+        registerItem(6147, "amethyst_mithril_ring", (new Item()).setUnlocalizedName("amethystMithrilRing")); // Deprecated
+        registerItem(6148, "ruby_mithril_ring", (new Item()).setUnlocalizedName("rubyMithrilRing")); // Deprecated
+        registerItem(6149, "quartz_mithril_ring", (new Item()).setUnlocalizedName("quartzMithrilRing")); // Deprecated
         registerItem(6150, "amber_mithril_ring", (new Item()).setUnlocalizedName("amberMithrilRing"));
         registerItem(6151, "salt", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("salt"));
         ItemCustomArmor.Properties noldorArmor = new ItemCustomArmor.Properties("noldor", 25, 1.1, 0, 10);
@@ -1460,47 +1468,47 @@ public class Item
         registerItem(6181, "boar_horns", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("boarHorns"));
         registerItem(6182, "gold_ring_of_darkness", (new Item()).setUnlocalizedName("goldRingOfDarkness")); // Deprecated
         registerItem(6183, "gold_ring_of_earth", (new Item()).setUnlocalizedName("goldRingOfEarth")); // Deprecated
-        registerItem(6184, "gold_ring_of_fire", (new Item()).setUnlocalizedName("goldRingOfFire")); // Deprecated 
-        registerItem(6185, "gold_ring_of_greed", (new Item()).setUnlocalizedName("goldRingOfGreed")); // Deprecated 
-        registerItem(6186, "gold_ring_of_hope", (new Item()).setUnlocalizedName("goldRingOfHope")); // Deprecated 
-        registerItem(6187, "gold_ring_of_nature", (new Item()).setUnlocalizedName("goldRingOfNature")); // Deprecated 
-        registerItem(6188, "gold_ring_of_sea", (new Item()).setUnlocalizedName("goldRingOfSea")); // Deprecated 
-        registerItem(6189, "gold_ring_of_sky", (new Item()).setUnlocalizedName("goldRingOfSky")); // Deprecated 
-        registerItem(6190, "gold_ring_of_sunlight", (new Item()).setUnlocalizedName("goldRingOfSunlight")); // Deprecated 
-        registerItem(6191, "gold_ring_of_wealth", (new Item()).setUnlocalizedName("goldRingOfWealth")); // Deprecated 
-        registerItem(6192, "gold_ring_of_wind", (new Item()).setUnlocalizedName("goldRingOfWind")); // Deprecated 
-        registerItem(6193, "silver_ring_of_darkness", (new Item()).setUnlocalizedName("silverRingOfDarkness")); // Deprecated 
-        registerItem(6194, "silver_ring_of_earth", (new Item()).setUnlocalizedName("silverRingOfEarth")); // Deprecated 
-        registerItem(6195, "silver_ring_of_fire", (new Item()).setUnlocalizedName("silverRingOfFire")); // Deprecated 
-        registerItem(6196, "silver_ring_of_greed", (new Item()).setUnlocalizedName("silverRingOfGreed")); // Deprecated 
-        registerItem(6197, "silver_ring_of_hope", (new Item()).setUnlocalizedName("silverRingOfHope")); // Deprecated 
-        registerItem(6198, "silver_ring_of_nature", (new Item()).setUnlocalizedName("silverRingOfNature")); // Deprecated 
-        registerItem(6199, "silver_ring_of_sea", (new Item()).setUnlocalizedName("silverRingOfSea")); // Deprecated 
-        registerItem(6200, "silver_ring_of_sky", (new Item()).setUnlocalizedName("silverRingOfSky")); // Deprecated 
-        registerItem(6201, "silver_ring_of_sunlight", (new Item()).setUnlocalizedName("silverRingOfSunlight")); // Deprecated 
-        registerItem(6202, "silver_ring_of_wealth", (new Item()).setUnlocalizedName("silverRingOfWealth")); // Deprecated 
-        registerItem(6203, "silver_ring_of_wind", (new Item()).setUnlocalizedName("silverRingOfWind")); // Deprecated 
-        registerItem(6204, "bronze_ring_of_darkness", (new Item()).setUnlocalizedName("bronzeRingOfDarkness")); // Deprecated 
-        registerItem(6205, "bronze_ring_of_earth", (new Item()).setUnlocalizedName("bronzeRingOfEarth")); // Deprecated 
-        registerItem(6206, "bronze_ring_of_fire", (new Item()).setUnlocalizedName("bronzeRingOfFire")); // Deprecated 
-        registerItem(6207, "bronze_ring_of_greed", (new Item()).setUnlocalizedName("bronzeRingOfGreed")); // Deprecated 
-        registerItem(6208, "bronze_ring_of_hope", (new Item()).setUnlocalizedName("bronzeRingOfHope")); // Deprecated 
-        registerItem(6209, "bronze_ring_of_nature", (new Item()).setUnlocalizedName("bronzeRingOfNature")); // Deprecated 
-        registerItem(6210, "bronze_ring_of_sea", (new Item()).setUnlocalizedName("bronzeRingOfSea")); // Deprecated 
-        registerItem(6211, "bronze_ring_of_sky", (new Item()).setUnlocalizedName("bronzeRingOfSky")); // Deprecated 
-        registerItem(6212, "bronze_ring_of_sunlight", (new Item()).setUnlocalizedName("bronzeRingOfSunlight")); // Deprecated 
-        registerItem(6213, "bronze_ring_of_wealth", (new Item()).setUnlocalizedName("bronzeRingOfWealth")); // Deprecated 
-        registerItem(6214, "bronze_ring_of_wind", (new Item()).setUnlocalizedName("bronzeRingOfWind")); // Deprecated 
-        registerItem(6215, "mithril_ring_of_darkness", (new Item()).setUnlocalizedName("mithrilRingOfDarkness")); // Deprecated 
-        registerItem(6216, "mithril_ring_of_earth", (new Item()).setUnlocalizedName("mithrilRingOfEarth")); // Deprecated 
-        registerItem(6217, "mithril_ring_of_fire", (new Item()).setUnlocalizedName("mithrilRingOfFire")); // Deprecated 
-        registerItem(6218, "mithril_ring_of_greed", (new Item()).setUnlocalizedName("mithrilRingOfGreed")); // Deprecated 
-        registerItem(6219, "mithril_ring_of_hope", (new Item()).setUnlocalizedName("mithrilRingOfHope")); // Deprecated 
-        registerItem(6220, "mithril_ring_of_nature", (new Item()).setUnlocalizedName("mithrilRingOfNature")); // Deprecated 
-        registerItem(6221, "mithril_ring_of_sea", (new Item()).setUnlocalizedName("mithrilRingOfSea")); // Deprecated 
-        registerItem(6222, "mithril_ring_of_sky", (new Item()).setUnlocalizedName("mithrilRingOfSky")); // Deprecated 
-        registerItem(6223, "mithril_ring_of_sunlight", (new Item()).setUnlocalizedName("mithrilRingOfSunlight")); // Deprecated 
-        registerItem(6224, "mithril_ring_of_wealth", (new Item()).setUnlocalizedName("mithrilRingOfWealth")); // Deprecated 
+        registerItem(6184, "gold_ring_of_fire", (new Item()).setUnlocalizedName("goldRingOfFire")); // Deprecated
+        registerItem(6185, "gold_ring_of_greed", (new Item()).setUnlocalizedName("goldRingOfGreed")); // Deprecated
+        registerItem(6186, "gold_ring_of_hope", (new Item()).setUnlocalizedName("goldRingOfHope")); // Deprecated
+        registerItem(6187, "gold_ring_of_nature", (new Item()).setUnlocalizedName("goldRingOfNature")); // Deprecated
+        registerItem(6188, "gold_ring_of_sea", (new Item()).setUnlocalizedName("goldRingOfSea")); // Deprecated
+        registerItem(6189, "gold_ring_of_sky", (new Item()).setUnlocalizedName("goldRingOfSky")); // Deprecated
+        registerItem(6190, "gold_ring_of_sunlight", (new Item()).setUnlocalizedName("goldRingOfSunlight")); // Deprecated
+        registerItem(6191, "gold_ring_of_wealth", (new Item()).setUnlocalizedName("goldRingOfWealth")); // Deprecated
+        registerItem(6192, "gold_ring_of_wind", (new Item()).setUnlocalizedName("goldRingOfWind")); // Deprecated
+        registerItem(6193, "silver_ring_of_darkness", (new Item()).setUnlocalizedName("silverRingOfDarkness")); // Deprecated
+        registerItem(6194, "silver_ring_of_earth", (new Item()).setUnlocalizedName("silverRingOfEarth")); // Deprecated
+        registerItem(6195, "silver_ring_of_fire", (new Item()).setUnlocalizedName("silverRingOfFire")); // Deprecated
+        registerItem(6196, "silver_ring_of_greed", (new Item()).setUnlocalizedName("silverRingOfGreed")); // Deprecated
+        registerItem(6197, "silver_ring_of_hope", (new Item()).setUnlocalizedName("silverRingOfHope")); // Deprecated
+        registerItem(6198, "silver_ring_of_nature", (new Item()).setUnlocalizedName("silverRingOfNature")); // Deprecated
+        registerItem(6199, "silver_ring_of_sea", (new Item()).setUnlocalizedName("silverRingOfSea")); // Deprecated
+        registerItem(6200, "silver_ring_of_sky", (new Item()).setUnlocalizedName("silverRingOfSky")); // Deprecated
+        registerItem(6201, "silver_ring_of_sunlight", (new Item()).setUnlocalizedName("silverRingOfSunlight")); // Deprecated
+        registerItem(6202, "silver_ring_of_wealth", (new Item()).setUnlocalizedName("silverRingOfWealth")); // Deprecated
+        registerItem(6203, "silver_ring_of_wind", (new Item()).setUnlocalizedName("silverRingOfWind")); // Deprecated
+        registerItem(6204, "bronze_ring_of_darkness", (new Item()).setUnlocalizedName("bronzeRingOfDarkness")); // Deprecated
+        registerItem(6205, "bronze_ring_of_earth", (new Item()).setUnlocalizedName("bronzeRingOfEarth")); // Deprecated
+        registerItem(6206, "bronze_ring_of_fire", (new Item()).setUnlocalizedName("bronzeRingOfFire")); // Deprecated
+        registerItem(6207, "bronze_ring_of_greed", (new Item()).setUnlocalizedName("bronzeRingOfGreed")); // Deprecated
+        registerItem(6208, "bronze_ring_of_hope", (new Item()).setUnlocalizedName("bronzeRingOfHope")); // Deprecated
+        registerItem(6209, "bronze_ring_of_nature", (new Item()).setUnlocalizedName("bronzeRingOfNature")); // Deprecated
+        registerItem(6210, "bronze_ring_of_sea", (new Item()).setUnlocalizedName("bronzeRingOfSea")); // Deprecated
+        registerItem(6211, "bronze_ring_of_sky", (new Item()).setUnlocalizedName("bronzeRingOfSky")); // Deprecated
+        registerItem(6212, "bronze_ring_of_sunlight", (new Item()).setUnlocalizedName("bronzeRingOfSunlight")); // Deprecated
+        registerItem(6213, "bronze_ring_of_wealth", (new Item()).setUnlocalizedName("bronzeRingOfWealth")); // Deprecated
+        registerItem(6214, "bronze_ring_of_wind", (new Item()).setUnlocalizedName("bronzeRingOfWind")); // Deprecated
+        registerItem(6215, "mithril_ring_of_darkness", (new Item()).setUnlocalizedName("mithrilRingOfDarkness")); // Deprecated
+        registerItem(6216, "mithril_ring_of_earth", (new Item()).setUnlocalizedName("mithrilRingOfEarth")); // Deprecated
+        registerItem(6217, "mithril_ring_of_fire", (new Item()).setUnlocalizedName("mithrilRingOfFire")); // Deprecated
+        registerItem(6218, "mithril_ring_of_greed", (new Item()).setUnlocalizedName("mithrilRingOfGreed")); // Deprecated
+        registerItem(6219, "mithril_ring_of_hope", (new Item()).setUnlocalizedName("mithrilRingOfHope")); // Deprecated
+        registerItem(6220, "mithril_ring_of_nature", (new Item()).setUnlocalizedName("mithrilRingOfNature")); // Deprecated
+        registerItem(6221, "mithril_ring_of_sea", (new Item()).setUnlocalizedName("mithrilRingOfSea")); // Deprecated
+        registerItem(6222, "mithril_ring_of_sky", (new Item()).setUnlocalizedName("mithrilRingOfSky")); // Deprecated
+        registerItem(6223, "mithril_ring_of_sunlight", (new Item()).setUnlocalizedName("mithrilRingOfSunlight")); // Deprecated
+        registerItem(6224, "mithril_ring_of_wealth", (new Item()).setUnlocalizedName("mithrilRingOfWealth")); // Deprecated
         registerItem(6225, "mithril_ring_of_wind", (new Item()).setUnlocalizedName("mithrilRingOfWind"));
         registerItem(6226, "anduril", (new ItemWeapon(3000, 11)).setUnlocalizedName("anduril"));
         registerItem(6227, "morgul_sword", (new ItemWeapon(2500, 9)).setUnlocalizedName("morgulSword"));
@@ -1605,6 +1613,7 @@ public class Item
         registerItem(6323, "strawberry_seed", (new ItemSeeds(Blocks.STRAWBERRY_BUSH, Blocks.FARMLAND)).setUnlocalizedName("strawberrySeed"));
         //registerItem(6324, "azogs_mace", (new ItemValarWeapon(3500, 7, 0, true, false)).setUnlocalizedName("azogsMace").setTextureName("azogs_mace"));
         registerItem(6325, "ring", (new ItemRing()).setUnlocalizedName("ring"));
+        registerItem(6326, "elven_steel_ingot", (new Item()).setUnlocalizedName("elvenSteelIngot").setCreativeTab(CreativeTabs.MATERIALS));
         // Temporary Id, change to proper id when adding items
         //registerItem(10002, "rucksack", (new ItemValarRucksack()).setUnlocalizedName("rucksack").setTextureName("rucksack"));
         //registerItem(10003, "frodos_finger", (new ItemValarFood(2, 0.1F, true).setUnlocalizedName("frodosFinger").setTextureName("frodos_finger")));
@@ -1613,8 +1622,6 @@ public class Item
         //registerItem(10006, "miruvoir", (new ItemValarDrinkable(Items.glass_bottle).setUnlocalizedName("miruvoir").setTextureName("miruvoir")));
         registerItem(10007, "rohan_boots", (new ItemCustomArmor(EntityEquipmentSlot.FEET, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.FEET)).setUnlocalizedName("rohanBoots")));
         registerItem(10008, "rohan_leggins", (new ItemCustomArmor(EntityEquipmentSlot.LEGS, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.LEGS)).setUnlocalizedName("rohanLeggins")));
-        //registerItem(10009, "packed_pipe", (new ItemPipe(true).setUnlocalizedName("packedPipe")));
-        //registerItem(10010, "toby_packed_pipe", (new ItemPipe(true).setUnlocalizedName("tobyPackedPipe")));
         // End Awaken Dreams code
     }
 

@@ -21,25 +21,22 @@ import net.minecraft.item.crafting.ShapedRecipes;
 import net.minecraft.item.crafting.ShapelessRecipes;
 import net.minecraft.world.World;
 
-public class ElvenCraftingManager extends CustomCraftingManager
+public class HobbitCraftingManager extends CustomCraftingManager
 {
 	 /** The static instance of this class */
-    private static final ElvenCraftingManager INSTANCE = new ElvenCraftingManager();
+    private static final HobbitCraftingManager INSTANCE = new HobbitCraftingManager();
     private final List<IRecipe> recipes = Lists.<IRecipe>newArrayList();
 
     /**
      * Returns the static instance of this class
      */
-    public static ElvenCraftingManager getInstance()
+    public static HobbitCraftingManager getInstance()
     {
         return INSTANCE;
     }
 
-    protected ElvenCraftingManager()
-    {
-    	this.addRecipe(new ItemStack(Items.ELVEN_LONG_SWORD, 1), new Object[] {"I", "I", "S", 'S', Items.STICK, 'I', Items.ELVEN_STEEL_INGOT});
-    	this.addRecipe(new ItemStack(Items.ELF_DAGGER, 1), new Object[] {"I", "S", 'S', Items.STICK, 'I', Items.ELVEN_STEEL_INGOT});
-    	this.addRecipe(new ItemStack(Items.NOLDOR_CHESTPLATE, 1), new Object[] {"I I", "IGI", "IGI", 'G', Items.GOLD_INGOT, 'I', Items.ELVEN_STEEL_INGOT});
+    protected HobbitCraftingManager()
+    { 	
     	Collections.sort(this.getRecipeList(), new Comparator<IRecipe>()
         {
             public int compare(IRecipe p_compare_1_, IRecipe p_compare_2_)

@@ -36,7 +36,7 @@ public class ItemThrowingStone extends Item
         if(!worldIn.isRemote)
         {
         	EntityThrowingStone thrownStone = new EntityThrowingStone(worldIn, playerIn, thrownDemage);
-        	thrownStone.setHeadingFromThrower(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 1.5F, 1.0F);
+        	thrownStone.setHeadingFromThrower(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 1.1F, 1.0F);
         	worldIn.spawnEntityInWorld(thrownStone);
         }
         

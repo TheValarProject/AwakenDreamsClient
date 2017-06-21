@@ -1080,7 +1080,14 @@ tile.columnTopDecoration.name=Column Top Decoration
 tile.meduseldPillar.name=Meduseld Pillar
 tile.diagonalBricks.name=Diagonal Bricks
 tile.bell.name=Bell
-tile.elvenCraftingTable.name=Elven Crafting Table
+tile.customWorkbench.elven.name=Elven Crafting Table
+tile.customWorkbench.human.name=Human Crafting Table
+tile.customWorkbench.gondorian.name=Gondorian Crafting Table
+tile.customWorkbench.rohirrim.name=Rohirrim Crafting Table
+tile.customWorkbench.hobbit.name=Hobbit Crafting Table
+tile.customWorkbench.mordor.name=Mordor Crafting Table
+tile.customWorkbench.isengard.name=Isengard Crafting Table
+tile.customWorkbench.goblin.name=Goblin Crafting Table
 tile.waterWheel.name=Water Wheel
 
 item.nameTag.name=Name Tag
@@ -1378,7 +1385,7 @@ item.sharkTooth.name=Shark Tooth
 item.trollSkin.name=Troll Skin
 item.wargFang.name=Warg Fang
 item.blueBed.name=Blue Bed
-item.brownBed.name=Brown Bed 
+item.brownBed.name=Brown Bed
 item.breeDoor.name=Bree Door
 item.rucksack.name=Rucksack
 item.cram.name=Cram
@@ -1681,6 +1688,7 @@ item.ring.mithril.stoneOfSky.name=Mithril Ring of Sky
 item.ring.mithril.stoneOfSunlight.name=Mithril Ring of Sunlight
 item.ring.mithril.stoneOfWealth.name=Mithril Ring of Wealth
 item.ring.mithril.stoneOfWind.name=Mithril Ring of Wind
+item.elvenSteelIngot.name=Elven Steel Ingot
 
 container.inventory=Inventory
 container.hopper=Item Hopper
@@ -1705,6 +1713,13 @@ container.enderchest=Ender Chest
 container.beacon=Beacon
 
 container.elvenCrafting=Elven Crafting
+container.humanCrafting=Human Crafting
+container.gondorianCrafting=Gondorian Crafting
+container.rohirrimCrafting=Rohirrim Crafting
+container.hobbitCrafting=Hobbit Crafting
+container.mordorCrafting=Mordor Crafting
+container.isengardCrafting=Isengard Crafting
+container.goblinCrafting=Goblin Crafting
 container.rucksack=Rucksack
 
 container.spectatorCantOpen=Unable to open. Loot not generated yet.

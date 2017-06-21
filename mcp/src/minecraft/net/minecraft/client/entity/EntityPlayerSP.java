@@ -2,10 +2,8 @@ package net.minecraft.client.entity;
 
 import java.util.List;
 import javax.annotation.Nullable;
-
-import com.elementfx.tvp.ad.client.gui.inventory.GuiElvenCrafting;
+import com.elementfx.tvp.ad.client.gui.inventory.GuiCustomCrafting;
 import com.elementfx.tvp.ad.client.gui.inventory.GuiRucksack;
-
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.ElytraSound;
@@ -817,7 +815,35 @@ public class EntityPlayerSP extends AbstractClientPlayer
         //Begin Awaken Dreams code
         else if("minecraft:elven_crafting_table".equals(s))
         {
-            this.mc.displayGuiScreen(new GuiElvenCrafting(this.inventory, this.worldObj));
+            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "elven", 15859662, 0, 204, 194));
+        }
+        else if("minecraft:human_crafting_table".equals(s))
+        {
+            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "human", 12366482, 1));
+        }
+        else if("minecraft:gondorian_crafting_table".equals(s))
+        {
+            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "gondorian", 4210752, 2));
+        }
+        else if("minecraft:rohirrim_crafting_table".equals(s))
+        {
+            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "rohirrim", 4210752, 3));
+        }
+        else if("minecraft:hobbit_crafting_table".equals(s))
+        {
+            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "hobbit", 4210752, 4));
+        }
+        else if("minecraft:mordor_crafting_table".equals(s))
+        {
+            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "mordor", 4210752, 5));
+        }
+        else if("minecraft:isengard_crafting_table".equals(s))
+        {
+            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "isengard", 4210752, 6));
+        }
+        else if("minecraft:goblin_crafting_table".equals(s))
+        {
+            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "goblin", 4210752, 7));
         }
     	//End Awaken Dreams code
     }
