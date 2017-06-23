@@ -5,7 +5,7 @@
         "up": "blocks/elven_crafting_table_top",
         "side": "blocks/elven_crafting_table_side",
         "sideB": "blocks/elven_crafting_table_side_blanket",
-        "bottom": "blocks/elven_decoration2"
+        "bottom": "blocks/elven_decoration_2"
     },
     "elements": [
       {
