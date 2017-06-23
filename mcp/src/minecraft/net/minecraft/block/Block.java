@@ -13,6 +13,8 @@ import com.elementfx.tvp.ad.block.BlockCustomOre;
 import com.elementfx.tvp.ad.block.BlockCustomWorkbench;
 import com.elementfx.tvp.ad.block.BlockDwarvenTorch;
 import com.elementfx.tvp.ad.block.BlockLamp;
+import com.elementfx.tvp.ad.block.BlockStakePlant;
+import com.elementfx.tvp.ad.block.BlockStakes;
 import com.elementfx.tvp.ad.block.BlockWaterWheel;
 import com.google.common.collect.Sets;
 
@@ -1617,10 +1619,10 @@ public class Block
         registerBlock(763, "cursed_plant", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(32, 27))).setUnlocalizedName("cursedPlant"));
         registerBlock(764, "haradwaith_fern", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(28, 31))).setUnlocalizedName("haradwaithFern"));
         registerBlock(765, "lorilendel", (new BlockCustomFlower()).setUnlocalizedName("lorilendel"));
-        registerBlock(766, "stakes", (new Block3D(Material.WOOD, Arrays.asList(new AxisAlignedBB(0.2D, 0.0D, 0.2D, 0.8D, 1.0D, 0.8D)))).setUnlocalizedName("stakes").setCreativeTab(CreativeTabs.DECORATIONS));
+        registerBlock(766, "stakes", (new BlockStakes()).setUnlocalizedName("stakes").setCreativeTab(CreativeTabs.DECORATIONS));
         registerBlock(767, "southlinch", (new BlockCustomCrops(5)).setUnlocalizedName("southlinch"));
-        //registerBlock(768, "green_grape", (new BlockValarCrops(5)).setRenderType(106).setItemSeed("green_grape_seed").setItemYield("green_grapes").setRequiresStakes(true).setUnlocalizedName("greenGrape").setBlockTextureName("green_grape"));
-        //registerBlock(769, "purple_grape", (new BlockValarCrops(5)).setRenderType(106).setItemSeed("purple_grape_seed").setItemYield("purple_grapes").setRequiresStakes(true).setUnlocalizedName("purpleGrape").setBlockTextureName("purple_grape"));
+        registerBlock(768, "green_grape", (new BlockStakePlant(5)).setUnlocalizedName("greenGrape"));
+        registerBlock(769, "purple_grape", (new BlockStakePlant(5)).setUnlocalizedName("purpleGrape"));
         registerBlock(770, "pipeweed_plant", (new BlockCustomCrops(5)).setUnlocalizedName("pipeweedPlant"));
         registerBlock(771, "pea_plant", (new BlockCustomCrops(5)).setUnlocalizedName("peaPlant"));
         registerBlock(772, "leek_plant", (new BlockCustomCrops(5)).setUnlocalizedName("leekPlant"));

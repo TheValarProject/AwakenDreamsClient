@@ -501,6 +501,8 @@ public class Blocks
     public static final Block LORILENDEL;
     public static final Block STAKES;
     public static final BlockCustomCrops SOUTHLINCH;
+    public static final BlockCustomCrops GREEN_GRAPE;
+    public static final BlockCustomCrops PURPLE_GRAPE;
     public static final BlockCustomCrops PIPEWEED_PLANT;
     public static final BlockCustomCrops PEA_PLANT;
     public static final BlockCustomCrops LEEK_PLANT;
@@ -1004,6 +1006,8 @@ public class Blocks
             LORILENDEL = getRegisteredBlock("lorilendel");
             STAKES = getRegisteredBlock("stakes");
             SOUTHLINCH = (BlockCustomCrops)getRegisteredBlock("southlinch");
+            GREEN_GRAPE = (BlockCustomCrops)getRegisteredBlock("green_grape");
+            PURPLE_GRAPE = (BlockCustomCrops)getRegisteredBlock("purple_grape");
             PIPEWEED_PLANT = (BlockCustomCrops)getRegisteredBlock("pipeweed_plant");
             PEA_PLANT = (BlockCustomCrops)getRegisteredBlock("pea_plant");
             LEEK_PLANT = (BlockCustomCrops)getRegisteredBlock("leek_plant");

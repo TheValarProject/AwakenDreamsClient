@@ -8,6 +8,7 @@ import com.elementfx.tvp.ad.item.ItemCustomBed;
 import com.elementfx.tvp.ad.item.ItemCustomFood;
 import com.elementfx.tvp.ad.item.ItemRing;
 import com.elementfx.tvp.ad.item.ItemRucksack;
+import com.elementfx.tvp.ad.item.ItemStakeSeeds;
 import com.elementfx.tvp.ad.item.ItemPipe;
 import com.elementfx.tvp.ad.item.ItemThrowingStone;
 import com.elementfx.tvp.ad.item.ItemWeapon;
@@ -1592,9 +1593,9 @@ public class Item
         registerItem(6307, "prison_door", (new ItemDoor(Blocks.PRISON_DOOR)).setUnlocalizedName("prisonDoor"));
         registerItem(6308, "sindar_door", (new ItemDoor(Blocks.SINDAR_DOOR)).setUnlocalizedName("sindarDoor"));
         registerItem(6309, "southlinch_seed", (new ItemSeeds(Blocks.SOUTHLINCH, Blocks.FARMLAND)).setUnlocalizedName("southlinchSeed"));
-        /*registerItem(6310, "green_grape_seed", (new ItemValarCrops((BlockValarCrops)Blocks.greenGrape)).setUnlocalizedName("greenGrapeSeed").setTextureName("green_grape_seed"));*/
+        registerItem(6310, "green_grape_seed", (new ItemStakeSeeds(Blocks.GREEN_GRAPE, Blocks.FARMLAND)).setUnlocalizedName("greenGrapeSeed"));
         registerItem(6311, "green_grapes", (new ItemCustomFood(2, 0.3F, false)).setUnlocalizedName("greenGrapes"));
-        /*registerItem(6312, "purple_grape_seed", (new ItemValarCrops((BlockValarCrops)Blocks.purpleGrape)).setUnlocalizedName("purpleGrapeSeed").setTextureName("purple_grape_seed"));*/
+        registerItem(6312, "purple_grape_seed", (new ItemStakeSeeds(Blocks.PURPLE_GRAPE, Blocks.FARMLAND)).setUnlocalizedName("purpleGrapeSeed"));
         registerItem(6313, "purple_grapes", (new ItemCustomFood(2, 0.3F, false)).setUnlocalizedName("purpleGrapes"));
         registerItem(6314, "pipeweed_seed", (new ItemSeeds(Blocks.PIPEWEED_PLANT, Blocks.FARMLAND)).setUnlocalizedName("pipeweedSeed"));
         registerItem(6315, "peas", (new ItemSeedFood(1, 0.1F, Blocks.PEA_PLANT, Blocks.FARMLAND) {

@@ -468,7 +468,9 @@ public class Items
     public static final Item PRISON_DOOR;
     public static final Item SINDAR_DOOR;
     public static final Item SOUTHLINCH_SEED;
+    public static final Item GREEN_GRAPE_SEED;
     public static final Item GREEN_GRAPES;
+    public static final Item PURPLE_GRAPE_SEED;
     public static final Item PURPLE_GRAPES;
     public static final Item PIPEWEED_SEED;
     public static final Item PEAS;
@@ -978,8 +980,14 @@ public class Items
             Blocks.SINDAR_DOOR.setItem(SINDAR_DOOR);
             SOUTHLINCH_SEED = getRegisteredItem("southlinch_seed");
             Blocks.SOUTHLINCH.setSeed(SOUTHLINCH_SEED);
+            GREEN_GRAPE_SEED = getRegisteredItem("green_grape_seed");
+            Blocks.GREEN_GRAPE.setSeed(GREEN_GRAPE_SEED);
             GREEN_GRAPES = getRegisteredItem("green_grapes");
+            Blocks.GREEN_GRAPE.setCrop(GREEN_GRAPES);
+            PURPLE_GRAPE_SEED = getRegisteredItem("purple_grape_seed");
+            Blocks.PURPLE_GRAPE.setSeed(PURPLE_GRAPE_SEED);
             PURPLE_GRAPES = getRegisteredItem("purple_grapes");
+            Blocks.PURPLE_GRAPE.setCrop(PURPLE_GRAPES);
             PIPEWEED_SEED = getRegisteredItem("pipeweed_seed");
             Blocks.PIPEWEED_PLANT.setSeed(PIPEWEED_SEED);
             PEAS = getRegisteredItem("peas");

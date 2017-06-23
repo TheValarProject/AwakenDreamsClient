@@ -2,6 +2,9 @@ package net.minecraft.block;
 
 import java.util.Random;
 import javax.annotation.Nullable;
+
+import com.elementfx.tvp.ad.block.BlockStakes;
+
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyInteger;
@@ -93,7 +96,9 @@ public class BlockFarmland extends Block
     private boolean hasCrops(World worldIn, BlockPos pos)
     {
         Block block = worldIn.getBlockState(pos.up()).getBlock();
-        return block instanceof BlockCrops || block instanceof BlockStem;
+        // Begin Awaken Dreams code
+        return block instanceof BlockCrops || block instanceof BlockStem || block instanceof BlockStakes;
+        // End Awaken Dreams code
     }
 
     private boolean hasWater(World worldIn, BlockPos pos)
