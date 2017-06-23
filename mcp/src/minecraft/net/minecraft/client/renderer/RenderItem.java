@@ -1528,8 +1528,8 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.ORCRIST, "orcrist");
         this.registerItem(Items.SWORD_OF_WESTERNESSE, "sword_of_westernesse");
         this.registerItem(Items.THORINS_SWORD, "thorins_sword");
-        this.registerItem(Items.THRAINS_WARHAMMER, "thrains_warhammer");
-        this.registerItem(Items.THRORS_WARHAMMER, "thrors_warhammer");
+        this.registerItem(Items.THRAINS_WAR_HAMMER, "thrains_war_hammer");
+        this.registerItem(Items.THRORS_WAR_HAMMER, "thrors_war_hammer");
         this.registerItem(Items.ARAGORNS_ELF_KNIFE, "aragorns_elf_knife");
         this.registerItem(Items.EOWYNS_SWORD, "eowyns_sword");
         this.registerItem(Items.GANDALF_THE_GREYS_STAFF, "gandalf_the_greys_staff");
@@ -1590,7 +1590,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.SOUTHERN_STAR_SEED, "southern_star_seed");
         this.registerItem(Items.STRAWBERRY_SEED, "strawberry_seed");
         this.registerItem(Items.ROHAN_BOOTS, "rohan_boots");
-        this.registerItem(Items.ROHAN_LEGGINS, "rohan_leggins");
+        this.registerItem(Items.ROHAN_LEGGINGS, "rohan_leggings");
         this.itemModelMesher.register(Items.RING, new ItemMeshDefinition()
         {
             public ModelResourceLocation getModelLocation(ItemStack stack)

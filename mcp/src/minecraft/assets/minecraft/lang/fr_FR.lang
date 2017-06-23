@@ -1999,8 +1999,8 @@ item.oinsStaff.name=Bâton de Oin
 item.orcrist.name=Orcrist
 item.swordOfWesternesse.name=Épée du Westernesse
 item.thorinsSword.name=Épée de Thorin
-item.thrainsWarhammer.name=Marteau de guerre de Thrain
-item.throrsWarhammer.name==Marteau de guerre de Thror
+item.thrainsWarHammer.name=Marteau de guerre de Thrain
+item.throrsWarHammer.name==Marteau de guerre de Thror
 item.aragornsElfKnife.name=Couteau elfique d'Aragorn
 item.eowynsSword.name=Épée d'Eowyn
 item.gandalfTheGreysStaff.name=Bâton de Gandalf le Gris
@@ -2061,7 +2061,7 @@ item.oldTobySeed.name=Graine de vieux tobie
 item.southernStarSeed.name=Graine de Étoile du Sud
 item.strawberrySeed.name=Graine de fraise
 item.rohanBoots.name=Bottes de Rohan
-item.rohanLeggins.name=Jambières de Rohan
+item.rohanLeggings.name=Jambières de Rohan
 item.ring.bronze.name=Anneau de bronze
 item.ring.bronze.onyx.name=Bague d'onyx en bronze
 item.ring.bronze.tanzanite.name=Bague de tanzanite en bronze

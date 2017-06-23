@@ -421,8 +421,8 @@ public class Items
     public static final Item ORCRIST;
     public static final Item SWORD_OF_WESTERNESSE;
     public static final Item THORINS_SWORD;
-    public static final Item THRAINS_WARHAMMER;
-    public static final Item THRORS_WARHAMMER;
+    public static final Item THRAINS_WAR_HAMMER;
+    public static final Item THRORS_WAR_HAMMER;
     public static final Item ARAGORNS_ELF_KNIFE;
     public static final Item EOWYNS_SWORD;
     public static final Item GANDALF_THE_GREYS_STAFF;
@@ -483,7 +483,7 @@ public class Items
     public static final Item SOUTHERN_STAR_SEED;
     public static final Item STRAWBERRY_SEED;
     public static final Item ROHAN_BOOTS;
-    public static final Item ROHAN_LEGGINS;
+    public static final Item ROHAN_LEGGINGS;
     public static final Item RING;
     public static final Item ELVEN_STEEL_INGOT;
     // End Awaken Dreams code
@@ -926,8 +926,8 @@ public class Items
             ORCRIST = getRegisteredItem("orcrist");
             SWORD_OF_WESTERNESSE = getRegisteredItem("sword_of_westernesse");
             THORINS_SWORD = getRegisteredItem("thorins_sword");
-            THRAINS_WARHAMMER = getRegisteredItem("thrains_warhammer");
-            THRORS_WARHAMMER = getRegisteredItem("thrors_warhammer");
+            THRAINS_WAR_HAMMER = getRegisteredItem("thrains_war_hammer");
+            THRORS_WAR_HAMMER = getRegisteredItem("thrors_war_hammer");
             ARAGORNS_ELF_KNIFE = getRegisteredItem("aragorns_elf_knife");
             EOWYNS_SWORD = getRegisteredItem("eowyns_sword");
             GANDALF_THE_GREYS_STAFF = getRegisteredItem("gandalf_the_greys_staff");
@@ -1009,7 +1009,7 @@ public class Items
             STRAWBERRY_SEED = getRegisteredItem("strawberry_seed");
             Blocks.STRAWBERRY_BUSH.setSeed(STRAWBERRY_SEED);
             ROHAN_BOOTS = getRegisteredItem("rohan_boots");
-            ROHAN_LEGGINS = getRegisteredItem("rohan_leggins");
+            ROHAN_LEGGINGS = getRegisteredItem("rohan_leggings");
             RING = getRegisteredItem("ring");
             ELVEN_STEEL_INGOT = getRegisteredItem("elven_steel_ingot");
             // End Awaken Dreams code

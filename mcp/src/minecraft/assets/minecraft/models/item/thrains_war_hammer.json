@@ -1,6 +1,6 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "items/thrains_warhammer"
+        "layer0": "items/thrains_war_hammer"
     }
 }

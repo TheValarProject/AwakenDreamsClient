@@ -1541,8 +1541,8 @@ public class Item
         registerItem(6255, "orcrist", (new ItemWeapon(8001, 12)).setUnlocalizedName("orcrist"));
         registerItem(6256, "sword_of_westernesse", (new ItemWeapon(3200, 8)).setUnlocalizedName("swordOfWesternesse"));
         registerItem(6257, "thorins_sword", (new ItemWeapon(1200, 6)).setUnlocalizedName("thorinsSword"));
-        registerItem(6258, "thrains_warhammer", (new ItemWeapon(1288, 6)).setUnlocalizedName("thrainsWarhammer"));
-        registerItem(6259, "thrors_warhammer", (new ItemWeapon(1428, 7)).setUnlocalizedName("throrsWarhammer"));
+        registerItem(6258, "thrains_war_hammer", (new ItemWeapon(1288, 6)).setUnlocalizedName("thrainsWarHammer"));
+        registerItem(6259, "thrors_war_hammer", (new ItemWeapon(1428, 7)).setUnlocalizedName("throrsWarHammer"));
         registerItem(6260, "aragorns_elf_knife", (new ItemWeapon(1300, 5)).setUnlocalizedName("aragornsElfKnife"));
         registerItem(6261, "eowyns_sword", (new ItemWeapon(1261, 6)).setUnlocalizedName("eowynsSword"));
         registerItem(6262, "gandalf_the_greys_staff", (new ItemWeapon(3000, 9)).setUnlocalizedName("gandalfTheGreysStaff"));
@@ -1622,7 +1622,7 @@ public class Item
         //registerItem(10005, "easterling_helmet", (new ItemValarArmor(0, 1000, 2, 0).setUnlocalizedName("easterlingHelmet").setTextureName("easterling_helmet")));
         //registerItem(10006, "miruvoir", (new ItemValarDrinkable(Items.glass_bottle).setUnlocalizedName("miruvoir").setTextureName("miruvoir")));
         registerItem(10007, "rohan_boots", (new ItemCustomArmor(EntityEquipmentSlot.FEET, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.FEET)).setUnlocalizedName("rohanBoots")));
-        registerItem(10008, "rohan_leggins", (new ItemCustomArmor(EntityEquipmentSlot.LEGS, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.LEGS)).setUnlocalizedName("rohanLeggins")));
+        registerItem(10008, "rohan_leggings", (new ItemCustomArmor(EntityEquipmentSlot.LEGS, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.LEGS)).setUnlocalizedName("rohanLeggings")));
         // End Awaken Dreams code
     }
 
