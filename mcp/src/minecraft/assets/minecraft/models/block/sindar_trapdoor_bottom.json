@@ -1,6 +1,7 @@
 {
-    "parent": "block/trapdoor_bottom",
+    "parent": "block/trapdoor_sided_bottom",
     "textures": {
-        "texture": "blocks/sindar_trapdoor"
+        "top": "blocks/sindar_trapdoor_top",
+        "side": "blocks/sindar_trapdoor_side"
     }
 }
