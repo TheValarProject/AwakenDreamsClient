@@ -168,6 +168,12 @@ public abstract class AbstractClientPlayer extends EntityPlayer
             f *= 1.0F - f1 * 0.15F;
         }
 
+        // Begin Awaken Dreams code
+        if (this.isHandActive() && this.getActiveItemStack() != null && this.getActiveItemStack().getItem() == Items.TELESCOPE) {
+        	f *= 0.055F;
+        }
+        // End Awaken Dreams code
+
         return f;
     }
 }

@@ -28,6 +28,7 @@ import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.IAttributeInstance;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.init.MobEffects;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.Item;
@@ -54,6 +55,9 @@ public class GuiIngame extends Gui
     private static final ResourceLocation VIGNETTE_TEX_PATH = new ResourceLocation("textures/misc/vignette.png");
     private static final ResourceLocation WIDGETS_TEX_PATH = new ResourceLocation("textures/gui/widgets.png");
     private static final ResourceLocation PUMPKIN_BLUR_TEX_PATH = new ResourceLocation("textures/misc/pumpkinblur.png");
+    // Begin Awaken Dreams code
+    private static final ResourceLocation TELESCOPE_BLUR_TEX_PATH = new ResourceLocation("textures/misc/telescopeblur.png");
+    // End Awaken Dreams code
     private final Random rand = new Random();
     private final Minecraft mc;
     private final RenderItem itemRenderer;
@@ -169,6 +173,12 @@ public class GuiIngame extends Gui
                 this.renderPortal(f, scaledresolution);
             }
         }
+        
+        // Begin Awaken Dreams code
+        if(this.mc.gameSettings.thirdPersonView == 0 && this.mc.thePlayer.isHandActive() && this.mc.thePlayer.getActiveItemStack() != null && this.mc.thePlayer.getActiveItemStack().getItem() == Items.TELESCOPE) {
+        	this.renderTelescopeOverlay(scaledresolution);
+        }
+        // End Awaken Dreams code
 
         if (this.mc.playerController.isSpectator())
         {
@@ -1040,6 +1050,30 @@ public class GuiIngame extends Gui
         GlStateManager.enableAlpha();
         GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
     }
+    
+    // Begin Awaken Dreams code
+    private void renderTelescopeOverlay(ScaledResolution scaledRes)
+    {
+    	GlStateManager.disableDepth();
+        GlStateManager.depthMask(false);
+        GlStateManager.tryBlendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+        GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
+        GlStateManager.disableAlpha();
+        this.mc.getTextureManager().bindTexture(TELESCOPE_BLUR_TEX_PATH);
+        Tessellator tessellator = Tessellator.getInstance();
+        VertexBuffer vertexbuffer = tessellator.getBuffer();
+        vertexbuffer.begin(7, DefaultVertexFormats.POSITION_TEX);
+        vertexbuffer.pos(0.0D, (double)scaledRes.getScaledHeight(), -90.0D).tex(0.0D, 1.0D).endVertex();
+        vertexbuffer.pos((double)scaledRes.getScaledWidth(), (double)scaledRes.getScaledHeight(), -90.0D).tex(1.0D, 1.0D).endVertex();
+        vertexbuffer.pos((double)scaledRes.getScaledWidth(), 0.0D, -90.0D).tex(1.0D, 0.0D).endVertex();
+        vertexbuffer.pos(0.0D, 0.0D, -90.0D).tex(0.0D, 0.0D).endVertex();
+        tessellator.draw();
+        GlStateManager.depthMask(true);
+        GlStateManager.enableDepth();
+        GlStateManager.enableAlpha();
+        GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
+    }
+    // End Awaken Dreams code
 
     /**
      * Renders a Vignette arount the entire screen that changes with light level.

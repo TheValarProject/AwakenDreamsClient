@@ -9,6 +9,7 @@ import com.elementfx.tvp.ad.item.ItemCustomFood;
 import com.elementfx.tvp.ad.item.ItemRing;
 import com.elementfx.tvp.ad.item.ItemRucksack;
 import com.elementfx.tvp.ad.item.ItemStakeSeeds;
+import com.elementfx.tvp.ad.item.ItemTelescope;
 import com.elementfx.tvp.ad.item.ItemPipe;
 import com.elementfx.tvp.ad.item.ItemThrowingStone;
 import com.elementfx.tvp.ad.item.ItemWeapon;
@@ -1366,7 +1367,7 @@ public class Item
         registerItem(6075, "rohan_helmet_5", (new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).setTextureName("rohan5").adjustFor(EntityEquipmentSlot.HEAD)).setUnlocalizedName("rohanHelmet5")));
         registerItem(6076, "rohan_helmet_6", (new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).setTextureName("rohan6").adjustFor(EntityEquipmentSlot.HEAD)).setUnlocalizedName("rohanHelmet6")));
         registerItem(6077, "rohan_chestplate", (new ItemCustomArmor(EntityEquipmentSlot.CHEST, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.CHEST)).setUnlocalizedName("rohanChestplate")));
-        //registerItem(6080, "telescope", (new ItemValarTelescope().setUnlocalizedName("telescope").setTextureName("telescope")));
+        registerItem(6080, "telescope", (new ItemTelescope()).setUnlocalizedName("telescope"));
         //registerItem(6081, "stone_inscription", (new ItemValarStoneInscription()).setUnlocalizedName("stoneInscription").setTextureName("stone_inscription"));
         //registerItem(6082, "sting", (new ItemValarSting().setUnlocalizedName("sting").setTextureName("sting")));
         registerItem(6085, "human_dagger", (new ItemWeapon(50, 4)).setUnlocalizedName("humanDagger"));
