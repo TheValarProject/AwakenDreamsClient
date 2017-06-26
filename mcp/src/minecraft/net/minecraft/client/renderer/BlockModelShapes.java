@@ -114,7 +114,7 @@ public class BlockModelShapes
             // Begin Awaken Dreams code
             if (block == Blocks.BELL)
             {
-            	return this.modelManager.getTextureMap().getAtlasSprite("minecraft:blocks/bell");
+            	return this.modelManager.getTextureMap().getAtlasSprite("minecraft:items/bell");
             }
             if(block == Blocks.WATER_WHEEL)
             {
@@ -335,7 +335,7 @@ public class BlockModelShapes
         this.registerBlockWithStateMapper(Blocks.MORDOR_DOOR, (new StateMap.Builder()).ignore(new IProperty[] {BlockDoor.POWERED}).build());
         this.registerBlockWithStateMapper(Blocks.PRISON_DOOR, (new StateMap.Builder()).ignore(new IProperty[] {BlockDoor.POWERED}).build());
         this.registerBlockWithStateMapper(Blocks.SINDAR_DOOR, (new StateMap.Builder()).ignore(new IProperty[] {BlockDoor.POWERED}).build());
-        //this.registerBuiltInBlocks(Blocks.BELL);
+        this.registerBuiltInBlocks(Blocks.BELL);
         this.registerBlockWithStateMapper(Blocks.CUSTOM_CRAFTING_TABLE, (new StateMap.Builder()).withName(BlockCustomWorkbench.TYPE).build());
         this.registerBlockWithStateMapper(Blocks.WATER_WHEEL, (new StateMap.Builder()).ignore(new IProperty[] {BlockWaterWheel.FACING}).build());
         // End Awaken Dreams code

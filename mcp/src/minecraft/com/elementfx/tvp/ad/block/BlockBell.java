@@ -35,7 +35,7 @@ public class BlockBell extends BlockContainer
 	
     public BlockBell()
     {
-        super(Material.GROUND, MapColor.IRON);
+        super(Material.IRON);
         this.setLightOpacity(0);
         this.setCreativeTab(CreativeTabs.DECORATIONS);
         this.setHardness(2.5F);
