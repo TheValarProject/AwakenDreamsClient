@@ -46,7 +46,6 @@ public class TileEntityBellRenderer extends TileEntitySpecialRenderer<TileEntity
     	}
     	this.modelBell.crown.rotateAngleZ = f;
     	this.modelBell.render((Entity)null, 0F, 0F, 0F, 0F, 0F, 0.075F);
-    	System.out.println(this.modelBell);
     	GlStateManager.popMatrix();
     	
     	if (destroyStage >= 0)

@@ -32,7 +32,6 @@ public class TileEntityWaterWheel extends TileEntity implements ITickable
 	{
 		this.spinDirection = spinDirection(this.worldObj, this.pos, this.worldObj.getBlockState(this.pos));
 		this.angle += 0.075 * this.spinDirection;
-		//System.out.println(this.pos + " - " + this.spinDirection);
 	}
 	
 	private float spinDirection(World worldIn, BlockPos pos, IBlockState state) {
@@ -72,13 +71,6 @@ public class TileEntityWaterWheel extends TileEntity implements ITickable
     	states[2] = worldIn.getBlockState(lowerCenterPos);
     	states[3] = worldIn.getBlockState(lowerCenterPos.offset(posFace));
     	states[4] = worldIn.getBlockState(lowerCenterPos.offset(posFace, 2));
-    	
-    	/*System.out.println("----");
-    	for(IBlockState debugState : states) {
-    		if(debugState.getBlock() == Blocks.FLOWING_WATER || debugState.getBlock() == Blocks.WATER) {
-    			System.out.println("debugState level: " + debugState.getValue(BlockLiquid.LEVEL));
-    		}
-    	}*/
     	
     	for(int i = 1; i <= 3; i++) {
     		if(states[i].getBlock() != Blocks.FLOWING_WATER && states[i].getBlock() != Blocks.WATER) {

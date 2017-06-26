@@ -50,7 +50,6 @@ public class ItemRucksack extends Item
 	
 	public InventoryBasic getInventory(ItemStack rucksack)
 	{
-		System.out.println("load Inventory");
 		if(!rucksack.hasTagCompound())
 		{
 			return new InventoryBasic("Rucksack", false, 9);
@@ -73,7 +72,6 @@ public class ItemRucksack extends Item
 			if (j >= 0 && j < inventory.getSizeInventory())
 			{
 				inventory.setInventorySlotContents(j, ItemStack.loadItemStackFromNBT(nbttagcompound));
-				System.out.println("Loading slot " + j + ": " + inventory.getStackInSlot(j).getDisplayName());
 			}
 		}
 		
@@ -82,14 +80,12 @@ public class ItemRucksack extends Item
 	
 	public ItemStack saveInventory(ItemStack rucksack, IInventory inventory)
 	{
-		System.out.println("save Inventory");
 		NBTTagList nbttaglist = new NBTTagList();
 
 		for (int i = 0; i < inventory.getSizeInventory(); ++i)
 		{
 			if (inventory.getStackInSlot(i) != null)
 			{
-				System.out.println("Saving slot " + i + ": " + inventory.getStackInSlot(i).getDisplayName());
 				NBTTagCompound nbttagcompound = new NBTTagCompound();
 				nbttagcompound.setByte("Slot", (byte)i);
 				inventory.getStackInSlot(i).writeToNBT(nbttagcompound);

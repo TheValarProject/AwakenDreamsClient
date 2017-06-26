@@ -37,8 +37,6 @@ public class TileEntityWaterWheelRenderer extends TileEntitySpecialRenderer<Tile
     	GlStateManager.rotate((float)EnumFacing.getHorizontal(te.getBlockMetadata() & 3).getHorizontalAngle() + 90, 0.0F, 1.0F, 0.0F);
     	GlStateManager.enableCull();
     	this.modelWaterWheel.Axel.rotateAngleZ = te.angle;
-    	//System.out.println("SpinDir: " + te.spinDirection);
-    	//System.out.println(this.modelWaterWheel);
     	this.modelWaterWheel.render((Entity)null, 0F, 0F, 0F, 0F, 0F, 0.05F);
     	GlStateManager.popMatrix();
     	

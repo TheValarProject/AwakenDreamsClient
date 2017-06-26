@@ -209,13 +209,11 @@ public class BlockWaterWheel extends BlockContainer
     
     public int getWeakPower(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
     {
-    	System.out.println("getWeakPower " + ((TileEntityWaterWheel)blockAccess.getTileEntity(pos)).spinDirection * 15);
         return (int)Math.min(15, (Math.abs(((TileEntityWaterWheel)blockAccess.getTileEntity(pos)).spinDirection) * 23));
     }
     
     public int getStrongPower(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
     {
-    	//System.out.println("getStrongPower");
         return super.getStrongPower(blockState, blockAccess, pos, side);
     }
 }
