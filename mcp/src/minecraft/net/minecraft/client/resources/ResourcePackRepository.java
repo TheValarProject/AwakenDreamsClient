@@ -56,6 +56,9 @@ public class ResourcePackRepository
     private static final Pattern field_190117_e = Pattern.compile("^[a-fA-F0-9]{40}$");
     private final File dirResourcepacks;
     public final IResourcePack rprDefaultResourcePack;
+    // Begin Awaken Dreams code
+    public final IResourcePack rprAwakenDreamsResourcePack;
+    // End Awaken Dreams code
     private final File dirServerResourcepacks;
     public final MetadataSerializer rprMetadataSerializer;
     private IResourcePack resourcePackInstance;
@@ -64,8 +67,11 @@ public class ResourcePackRepository
     private List<ResourcePackRepository.Entry> repositoryEntriesAll = Lists.<ResourcePackRepository.Entry>newArrayList();
     private final List<ResourcePackRepository.Entry> repositoryEntries = Lists.<ResourcePackRepository.Entry>newArrayList();
 
-    public ResourcePackRepository(File dirResourcepacksIn, File dirServerResourcepacksIn, IResourcePack rprDefaultResourcePackIn, MetadataSerializer rprMetadataSerializerIn, GameSettings settings)
+    // Begin Awaken Dreams code
+    public ResourcePackRepository(File dirResourcepacksIn, File dirServerResourcepacksIn, IResourcePack rprDefaultResourcePackIn, IResourcePack rprAwakenDreamsResourcePackIn, MetadataSerializer rprMetadataSerializerIn, GameSettings settings)
     {
+    	this.rprAwakenDreamsResourcePack = rprAwakenDreamsResourcePackIn;
+    	// End Awaken Dreams code
         this.dirResourcepacks = dirResourcepacksIn;
         this.dirServerResourcepacks = dirServerResourcepacksIn;
         this.rprDefaultResourcePack = rprDefaultResourcePackIn;

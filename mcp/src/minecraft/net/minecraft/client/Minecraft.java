@@ -1,5 +1,6 @@
 package net.minecraft.client;
 
+import com.elementfx.tvp.ad.client.resources.AwakenDreamsResourcePack;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Queues;
 import com.google.common.collect.Sets;
@@ -343,6 +344,9 @@ public class Minecraft implements IThreadListener, ISnooperInfo
     private final MetadataSerializer metadataSerializer_ = new MetadataSerializer();
     private final List<IResourcePack> defaultResourcePacks = Lists.<IResourcePack>newArrayList();
     private final DefaultResourcePack mcDefaultResourcePack;
+    // Begin Awaken Dreams code
+    private final AwakenDreamsResourcePack adDefaultResourcePack;
+    // End Awaken Dreams code
     private ResourcePackRepository mcResourcePackRepository;
     private LanguageManager mcLanguageManager;
     private BlockColors blockColors;
@@ -394,6 +398,9 @@ public class Minecraft implements IThreadListener, ISnooperInfo
         this.twitchDetails = gameConfig.userInfo.userProperties;
         this.profileProperties = gameConfig.userInfo.profileProperties;
         this.mcDefaultResourcePack = new DefaultResourcePack(gameConfig.folderInfo.getAssetsIndex());
+        // Begin Awaken Dreams code
+        this.adDefaultResourcePack = new AwakenDreamsResourcePack(gameConfig.folderInfo.getAssetsIndex());
+        // End Awaken Dreams code
         this.proxy = gameConfig.userInfo.proxy == null ? Proxy.NO_PROXY : gameConfig.userInfo.proxy;
         this.sessionService = (new YggdrasilAuthenticationService(this.proxy, UUID.randomUUID().toString())).createMinecraftSessionService();
         this.session = gameConfig.userInfo.session;
@@ -496,6 +503,9 @@ public class Minecraft implements IThreadListener, ISnooperInfo
     {
         this.gameSettings = new GameSettings(this, this.mcDataDir);
         this.defaultResourcePacks.add(this.mcDefaultResourcePack);
+        // Begin Awaken Dreams code 
+        this.defaultResourcePacks.add(this.adDefaultResourcePack);
+        // End Awaken Dreams code
         this.startTimerHackThread();
 
         if (this.gameSettings.overrideHeight > 0 && this.gameSettings.overrideWidth > 0)
@@ -512,7 +522,7 @@ public class Minecraft implements IThreadListener, ISnooperInfo
         this.framebufferMc = new Framebuffer(this.displayWidth, this.displayHeight, true);
         this.framebufferMc.setFramebufferColor(0.0F, 0.0F, 0.0F, 0.0F);
         this.registerMetadataSerializers();
-        this.mcResourcePackRepository = new ResourcePackRepository(this.fileResourcepacks, new File(this.mcDataDir, "server-resource-packs"), this.mcDefaultResourcePack, this.metadataSerializer_, this.gameSettings);
+        this.mcResourcePackRepository = new ResourcePackRepository(this.fileResourcepacks, new File(this.mcDataDir, "server-resource-packs"), this.mcDefaultResourcePack, this.adDefaultResourcePack, this.metadataSerializer_, this.gameSettings);
         this.mcResourceManager = new SimpleReloadableResourceManager(this.metadataSerializer_);
         this.mcLanguageManager = new LanguageManager(this.metadataSerializer_, this.gameSettings.language);
         this.mcResourceManager.registerReloadListener(this.mcLanguageManager);

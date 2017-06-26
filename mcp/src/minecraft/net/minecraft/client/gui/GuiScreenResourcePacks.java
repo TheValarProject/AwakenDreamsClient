@@ -1,5 +1,6 @@
 package net.minecraft.client.gui;
 
+import com.elementfx.tvp.ad.client.resources.ResourcePackListEntryAwakenDreams;
 import com.google.common.collect.Lists;
 import java.io.File;
 import java.io.IOException;
@@ -67,6 +68,9 @@ public class GuiScreenResourcePacks extends GuiScreen
             }
 
             this.selectedResourcePacks.add(new ResourcePackListEntryDefault(this));
+            // Begin Awaken Dreams code
+            this.selectedResourcePacks.add(new ResourcePackListEntryAwakenDreams(this));
+            // End Awaken Dreams code
         }
 
         this.availableResourcePacksList = new GuiResourcePackAvailable(this.mc, 200, this.height, this.availableResourcePacks);

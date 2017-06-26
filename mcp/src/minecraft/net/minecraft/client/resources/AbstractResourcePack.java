@@ -63,8 +63,10 @@ public abstract class AbstractResourcePack implements IResourcePack
         return readMetadata(metadataSerializer, this.getInputStreamByName("pack.mcmeta"), metadataSectionName);
     }
 
-    static <T extends IMetadataSection> T readMetadata(MetadataSerializer metadataSerializer, InputStream p_110596_1_, String sectionName)
+    // Begin Awaken Dreams code
+    public static <T extends IMetadataSection> T readMetadata(MetadataSerializer metadataSerializer, InputStream p_110596_1_, String sectionName)
     {
+    	// End Awaken Dreams code
         JsonObject jsonobject = null;
         BufferedReader bufferedreader = null;
 

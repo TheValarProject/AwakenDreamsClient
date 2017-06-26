@@ -961,10 +961,10 @@ public class SoundEvents
             ENTITY_ZOMBIE_VILLAGER_HURT = getRegisteredSoundEvent("entity.zombie_villager.hurt");
             ENTITY_ZOMBIE_VILLAGER_STEP = getRegisteredSoundEvent("entity.zombie_villager.step");
             // Begin Awaken Dreams code
-            BLOCK_BELL_RING = getRegisteredSoundEvent("block.bell.ring");
-            ENTITY_DUCK_AMBIENT = getRegisteredSoundEvent("entity.duck.ambient");
-            ENTITY_DUCK_HURT = getRegisteredSoundEvent("entity.duck.hurt");
-            ENTITY_DUCK_DEATH = getRegisteredSoundEvent("entity.duck.death");
+            BLOCK_BELL_RING = getRegisteredSoundEvent("awakendreams:block.bell.ring");
+            ENTITY_DUCK_AMBIENT = getRegisteredSoundEvent("awakendreams:entity.duck.ambient");
+            ENTITY_DUCK_HURT = getRegisteredSoundEvent("awakendreams:entity.duck.hurt");
+            ENTITY_DUCK_DEATH = getRegisteredSoundEvent("awakendreams:entity.duck.death");
             // End Awaken Dreams code
         }
     }
