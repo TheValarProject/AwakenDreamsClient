@@ -169,7 +169,7 @@ public abstract class AbstractClientPlayer extends EntityPlayer
         }
 
         // Begin Awaken Dreams code
-        if (this.isHandActive() && this.getActiveItemStack() != null && this.getActiveItemStack().getItem() == Items.TELESCOPE) {
+        if (this.isHandActive() && Minecraft.getMinecraft().gameSettings.thirdPersonView == 0 && this.getActiveItemStack() != null && this.getActiveItemStack().getItem() == Items.TELESCOPE) {
         	f *= 0.055F;
         }
         // End Awaken Dreams code
