@@ -169,7 +169,8 @@ public class BlockCustomWorkbench extends Block
     	HOBBIT(4, "hobbit_crafting_table", "hobbit"),
     	MORDOR(5, "mordor_crafting_table", "mordor"),
     	ISENGARD(6, "isengard_crafting_table", "isengard"),
-    	GOBLIN(7, "goblin_crafting_table", "goblin");
+    	GOBLIN(7, "goblin_crafting_table", "goblin"),
+    	DWARVEN(8, "dwarven_crafting_table", "dwarven");
 
         private static final BlockCustomWorkbench.EnumType[] META_LOOKUP = new BlockCustomWorkbench.EnumType[values().length];
         private final int metadata;

@@ -2,6 +2,7 @@ package com.elementfx.tvp.ad.inventory;
 
 import javax.annotation.Nullable;
 
+import com.elementfx.tvp.ad.item.crafting.DwarvenCraftingManager;
 import com.elementfx.tvp.ad.item.crafting.ElvenCraftingManager;
 import com.elementfx.tvp.ad.item.crafting.GoblinCraftingManager;
 import com.elementfx.tvp.ad.item.crafting.GondorianCraftingManager;
@@ -72,6 +73,10 @@ public class SlotCustomCrafting extends SlotCrafting
         	
         case 7:
         	aitemstack = GoblinCraftingManager.getInstance().getRemainingItems(this.craftMatrix, playerIn.worldObj);
+        	break;
+        	
+        case 8:
+        	aitemstack = DwarvenCraftingManager.getInstance().getRemainingItems(this.craftMatrix, playerIn.worldObj);
         	break;
         	
         default:

@@ -2,6 +2,7 @@ package com.elementfx.tvp.ad.inventory;
 
 import javax.annotation.Nullable;
 
+import com.elementfx.tvp.ad.item.crafting.DwarvenCraftingManager;
 import com.elementfx.tvp.ad.item.crafting.ElvenCraftingManager;
 import com.elementfx.tvp.ad.item.crafting.GoblinCraftingManager;
 import com.elementfx.tvp.ad.item.crafting.GondorianCraftingManager;
@@ -111,6 +112,10 @@ public class ContainerCustomWorkbench extends Container
         	
         case 7:
         	recipe = GoblinCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+        	break;
+        	
+        case 8:
+        	recipe = DwarvenCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
         	break;
         	
         default:

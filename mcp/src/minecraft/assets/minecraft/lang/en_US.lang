@@ -1088,6 +1088,7 @@ tile.customWorkbench.hobbit.name=Hobbit Crafting Table
 tile.customWorkbench.mordor.name=Mordor Crafting Table
 tile.customWorkbench.isengard.name=Isengard Crafting Table
 tile.customWorkbench.goblin.name=Goblin Crafting Table
+tile.customWorkbench.dwarven.name=Dwarven Crafting Table
 tile.waterWheel.name=Water Wheel
 
 item.nameTag.name=Name Tag
@@ -1723,6 +1724,7 @@ container.hobbitCrafting=Hobbit Crafting
 container.mordorCrafting=Mordor Crafting
 container.isengardCrafting=Isengard Crafting
 container.goblinCrafting=Goblin Crafting
+container.dwarvenCrafting=Dwarven Crafting
 container.rucksack=Rucksack
 
 container.spectatorCantOpen=Unable to open. Loot not generated yet.

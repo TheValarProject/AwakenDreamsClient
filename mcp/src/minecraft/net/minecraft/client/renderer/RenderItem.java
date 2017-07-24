@@ -1047,6 +1047,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.CUSTOM_CRAFTING_TABLE, BlockCustomWorkbench.EnumType.MORDOR.getMetadata(), "mordor_crafting_table");
         this.registerBlock(Blocks.CUSTOM_CRAFTING_TABLE, BlockCustomWorkbench.EnumType.ISENGARD.getMetadata(), "isengard_crafting_table");
         this.registerBlock(Blocks.CUSTOM_CRAFTING_TABLE, BlockCustomWorkbench.EnumType.GOBLIN.getMetadata(), "goblin_crafting_table");
+        this.registerBlock(Blocks.CUSTOM_CRAFTING_TABLE, BlockCustomWorkbench.EnumType.DWARVEN.getMetadata(), "dwarven_crafting_table");
         this.registerBlock(Blocks.WATER_WHEEL, "water_wheel");
         // End Awaken Dreams code
         this.registerItem(Items.IRON_SHOVEL, "iron_shovel");
