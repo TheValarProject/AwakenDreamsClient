@@ -118,6 +118,10 @@ public class RenderPlayer extends RenderLivingBase<AbstractClientPlayer>
                     {                	
                     	modelbiped$armpose = ModelBiped.ArmPose.PIPE;
                     }
+                    else if (enumaction == EnumAction.OBSERVE)
+                    {                	
+                    	modelbiped$armpose = ModelBiped.ArmPose.TELESCOPE;
+                    }
                     // End Awaken Dreams code
                 }
             }
@@ -138,6 +142,10 @@ public class RenderPlayer extends RenderLivingBase<AbstractClientPlayer>
                     else if (enumaction1 == EnumAction.SMOKE)
                     {                	
                     	modelbiped$armpose1 = ModelBiped.ArmPose.PIPE;
+                    }
+                    else if (enumaction1 == EnumAction.OBSERVE)
+                    {                	
+                    	modelbiped$armpose1 = ModelBiped.ArmPose.TELESCOPE;
                     }
                     // End Awaken Dreams code
                 }

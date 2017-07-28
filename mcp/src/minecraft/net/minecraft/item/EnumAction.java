@@ -8,6 +8,7 @@ public enum EnumAction
     BLOCK,
     BOW,
     // Begin Awaken Dreams code
-    SMOKE;
+    SMOKE,
+    OBSERVE;
 	// End AWaken Dreams code
 }

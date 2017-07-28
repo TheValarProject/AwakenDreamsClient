@@ -1,8 +1,10 @@
 package net.minecraft.client.model;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.init.Items;
 import net.minecraft.util.EnumHandSide;
 import net.minecraft.util.math.MathHelper;
 
@@ -293,6 +295,16 @@ public class ModelBiped extends ModelBase
         	this.bipedLeftArm.rotateAngleY = 0.44F + this.bipedHead.rotateAngleY;
         	this.bipedLeftArm.rotateAngleX = -1.23F + this.bipedHead.rotateAngleX;
         }
+        else if (this.rightArmPose == ModelBiped.ArmPose.TELESCOPE)
+        {
+        	this.bipedRightArm.rotateAngleY = -0.46F + this.bipedHead.rotateAngleY;
+        	this.bipedRightArm.rotateAngleX = -1.77F + this.bipedHead.rotateAngleX;
+        }
+        else if (this.leftArmPose == ModelBiped.ArmPose.TELESCOPE)
+        {
+        	this.bipedLeftArm.rotateAngleY = 0.46F + this.bipedHead.rotateAngleY;
+        	this.bipedLeftArm.rotateAngleX = -1.77F + this.bipedHead.rotateAngleX;
+        }
         // End Awaken Dreams code
         
         copyModelAngles(this.bipedHead, this.bipedHeadwear);
@@ -344,7 +356,8 @@ public class ModelBiped extends ModelBase
         BLOCK,
         BOW_AND_ARROW,
         // Begin Awaken Dreams code
-    	PIPE;
+    	PIPE,
+    	TELESCOPE;
     	// End Awaken Dreams code
     }
 }

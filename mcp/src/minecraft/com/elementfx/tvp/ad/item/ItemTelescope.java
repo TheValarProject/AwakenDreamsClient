@@ -35,15 +35,19 @@ import net.minecraft.world.World;
 import net.minecraft.world.storage.WorldInfo;
 
 public class ItemTelescope extends Item
-{
-	public List<Item> smokableItems;
-	
-	private int soundCountdown = 0;
-	
+{	
 	public ItemTelescope()
 	{
 		this.setMaxStackSize(1);
         this.setCreativeTab(CreativeTabs.TOOLS);
+        
+        this.addPropertyOverride(new ResourceLocation("observing"), new IItemPropertyGetter()
+        {
+            public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
+            {
+                return entityIn != null && entityIn.isHandActive() && entityIn.getActiveItemStack() == stack ? 1.0F : 0.0F;
+            }
+        });
 	}
     
     public int getMaxItemUseDuration(ItemStack stack)
@@ -56,8 +60,7 @@ public class ItemTelescope extends Item
      */
     public EnumAction getItemUseAction(ItemStack stack)
     {
-    	// TODO Custom action
-        return EnumAction.NONE;
+        return EnumAction.OBSERVE;
     }
 
     public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
