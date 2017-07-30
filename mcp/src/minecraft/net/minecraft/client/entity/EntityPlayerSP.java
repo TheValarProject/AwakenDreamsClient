@@ -839,7 +839,7 @@ public class EntityPlayerSP extends AbstractClientPlayer
         }
         else if("minecraft:isengard_crafting_table".equals(s))
         {
-            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "isengard", 4210752, 6));
+            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "isengard", 4142656, 6));
         }
         else if("minecraft:goblin_crafting_table".equals(s))
         {
