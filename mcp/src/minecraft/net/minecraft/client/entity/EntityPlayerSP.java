@@ -847,7 +847,7 @@ public class EntityPlayerSP extends AbstractClientPlayer
         }
         else if("minecraft:dwarven_crafting_table".equals(s))
         {
-            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "dwarven", 4210752, 7));
+            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "dwarven", 4210752, 8));
         }
     	//End Awaken Dreams code
     }
