@@ -823,7 +823,7 @@ public class EntityPlayerSP extends AbstractClientPlayer
         }
         else if("minecraft:gondorian_crafting_table".equals(s))
         {
-            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "gondorian", 4210752, 2));
+            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "gondorian", 2236448, 2, 192, 172));
         }
         else if("minecraft:rohirrim_crafting_table".equals(s))
         {
