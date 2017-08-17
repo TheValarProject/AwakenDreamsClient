@@ -1,6 +1,6 @@
 # Basic Translation Guidelines
 
-Thanks for taking an interesting in this project, we are always in need of translators! Our mod is currently available in English and French, and some work has been done to translate to it into Danish. These languages could use help with proofreading and maintenance, and we welcome the translation into any new language. If you are familiar with git, or are feeling ambitious, you may want to follow the instructions in our [Advanced Translation Guidelines](Advanced_Translation_Guidelines.md) instead of the instructions below.
+Thanks for taking an interesting in this project, we are always in need of translators! Our mod is currently available in English, French and Czech, and some work has been done to translate to it into Danish. These languages could use help with proofreading and maintenance, and we welcome the translation into any new language. If you are familiar with git, or are feeling ambitious, you may want to follow the instructions in our [Advanced Translation Guidelines](Advanced_Translation_Guidelines.md) instead of the instructions below.
 
 ## Adding Translations for a New Language
 
@@ -17,7 +17,7 @@ The `category.key` component is an identifier used by the program, and should *n
 Open this file with your favorite text editor (this doesn't require anything special, even Notepad will do), and go through each of the lines with a `[TODO]` prefix, translating the string on the right side of the line, and then removing the `[TODO]` prefix to mark it as finished. Try to follow the same conventions that are used by vanilla minecraft (such as for capitalization). Avoid slang wherever possible.
 
 When you are done editing the file, save it and then return to the issue you made on Github. Create a response saying that you've finished your translation, and then attach the finished translation file by simply dragging it onto your response, and then submit your comment. A collaborator (again probably @scribblemaniac) will take care of the technical task of merging it into the source code, and will let you know when it is done and will close the issue you created. In the next development or stable build, you should be able to see the fruits of your labor. You are strongly encouraged to become a maintainer of the language after making your submission, see the section "Maintaining a Language" for details.
-  
+
 ## Proofreading a Language
 
 All of our translations could use some proofreading to make sure there are no spelling mistakes and that improper words are not used. To do this, go [here](https://github.com/TheValarProject/AwakenDreamsClient/tree/master/mcp/src/minecraft/assets/minecraft/lang) and click on the .lang file corresponding to your language. The file names are formatted like this: `<langugage>_<REGION>.lang`. Both the language and region are abbreviated to you will have to do a bit of thinking to figure out which one you want. For example the language english is en, and the region of the United States is US, so American English is in the `en_US.lang` file. You can always guess and check what language is in the file if you are in doubt.
@@ -36,7 +36,8 @@ Go through all of the lines in each of these sections, reading the strings to th
 When you have finished reading through all of the lines added by the mod, find the maintenance thread for the language you proofread. Here is a list of links to said threads for convenience:
 
 - [English](https://github.com/TheValarProject/AwakenDreamsClient/issues/39)
-- [French](https://github.com/TheValarProject/AwakenDreamsClient/issues/38) 
+- [French](https://github.com/TheValarProject/AwakenDreamsClient/issues/38)
+- [Czech](https://github.com/TheValarProject/AwakenDreamsClient/issues/43)
 
 Make a new comment on that issue and include all of the corrected lines in it. One of our collaborators will take care of updating the translation.
 
