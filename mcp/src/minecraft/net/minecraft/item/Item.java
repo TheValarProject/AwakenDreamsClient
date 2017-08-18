@@ -1302,7 +1302,7 @@ public class Item
         registerItem(2266, "record_11", (new ItemRecord("11", SoundEvents.RECORD_11)).setUnlocalizedName("record"));
         registerItem(2267, "record_wait", (new ItemRecord("wait", SoundEvents.RECORD_WAIT)).setUnlocalizedName("record"));
         // Begin Awaken Dreams code
-        registerItem(6000, "lembas", (new ItemCustomFood(8, 0.8F, false)).setUnlocalizedName("lembas"));
+        registerItem(6000, "awakendreams:lembas", (new ItemCustomFood(8, 0.8F, false)).setUnlocalizedName("lembas"));
         registerItem(6001, "mithril_ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("mithrilIngot"));
         registerItem(6002, "bronze_ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("bronzeIngot"));
         registerItem(6003, "pipe", (new ItemPipe(false).setUnlocalizedName("pipe")));

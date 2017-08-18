@@ -1324,7 +1324,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.STRUCTURE_BLOCK, TileEntityStructure.Mode.CORNER.getModeId(), "structure_block");
         this.registerBlock(Blocks.STRUCTURE_BLOCK, TileEntityStructure.Mode.DATA.getModeId(), "structure_block");
         // Begin Awaken Dreams code
-        this.registerItem(Items.LEMBAS, "lembas");
+        this.registerItem(Items.LEMBAS, "awakendreams:lembas");
         this.registerItem(Items.MITHRIL_INGOT, "mithril_ingot");
         this.registerItem(Items.BRONZE_INGOT, "bronze_ingot");
         this.itemModelMesher.register(Items.PIPE, new ItemMeshDefinition()

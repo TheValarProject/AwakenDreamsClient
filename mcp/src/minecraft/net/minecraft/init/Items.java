@@ -717,7 +717,7 @@ public class Items
             BEETROOT = getRegisteredItem("beetroot");
             BEETROOT_SOUP = getRegisteredItem("beetroot_soup");
             // Begin Awaken Dreams code
-            LEMBAS = getRegisteredItem("lembas");
+            LEMBAS = getRegisteredItem("awakendreams:lembas");
             MITHRIL_INGOT = getRegisteredItem("mithril_ingot");
             PIPE = (ItemPipe) getRegisteredItem("pipe");
             BRONZE_INGOT = getRegisteredItem("bronze_ingot");
