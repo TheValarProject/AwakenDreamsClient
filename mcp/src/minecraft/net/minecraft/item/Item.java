@@ -13,6 +13,7 @@ import com.elementfx.tvp.ad.item.ItemTelescope;
 import com.elementfx.tvp.ad.item.ItemPipe;
 import com.elementfx.tvp.ad.item.ItemThrowingStone;
 import com.elementfx.tvp.ad.item.ItemWeapon;
+import com.elementfx.tvp.ad.util.ADResourceLocation;
 import com.google.common.base.Function;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Maps;
@@ -1302,328 +1303,327 @@ public class Item
         registerItem(2266, "record_11", (new ItemRecord("11", SoundEvents.RECORD_11)).setUnlocalizedName("record"));
         registerItem(2267, "record_wait", (new ItemRecord("wait", SoundEvents.RECORD_WAIT)).setUnlocalizedName("record"));
         // Begin Awaken Dreams code
-        registerItem(6000, "awakendreams:lembas", (new ItemCustomFood(8, 0.8F, false)).setUnlocalizedName("lembas"));
-        registerItem(6001, "mithril_ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("mithrilIngot"));
-        registerItem(6002, "bronze_ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("bronzeIngot"));
-        registerItem(6003, "pipe", (new ItemPipe(false).setUnlocalizedName("pipe")));
-        registerItem(6004, "tobacco", (new Item()).setCreativeTab(CreativeTabs.MISC).setUnlocalizedName("tobacco"));
-        //registerItem(6005, "flaming_arrow", (new Item()).setCreativeTab().setUnlocalizedName("flamingArrow"));
-        registerItem(6008, "jade", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("jade"));
-        registerItem(6009, "amber", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("amber"));
-        //registerItem(6010, "parchment", (new Item()).setCreativeTab().setUnlocalizedName("parchment"));
-        registerItem(6014, "crystal", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("crystal"));
-        registerItem(6015, "amethyst", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("amethyst"));
-        registerItem(6016, "onyx", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("onyx"));
-        registerItem(6017, "moonstone", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("moonstone"));
-        registerItem(6019, "tanzanite", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("tanzanite"));
-        registerItem(6020, "uruk_sword", (new ItemWeapon(510, 7)).setUnlocalizedName("urukSword"));
-        //registerItem(6021, "phial_of_galadriel", (new ItemValarBase().setUnlocalizedName("phialOfGaladriel"));
-        registerItem(6022, "tomato", (new ItemCustomFood(1, 0.1F, false)).setUnlocalizedName("tomato"));
-        registerItem(6023, "blue_feather", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("blueFeather"));
-        registerItem(6026, "spider_poison", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("spiderPoison"));
-        registerItem(6028, "herugrim", (new ItemWeapon(830, 7)).setUnlocalizedName("herugrim"));
-        registerItem(6029, "nuts", (new ItemCustomFood(1, 0.2F, false)).setUnlocalizedName("nuts"));
-        registerItem(6032, "corn_cob", (new ItemCustomFood(2, 0.3F, false)).setUnlocalizedName("cornCob"));
-        registerItem(6035, "staff_base", (new ItemWeapon(350, 2)).setUnlocalizedName("staffBase"));
-        registerItem(6036, "knife", (new ItemWeapon(35, 4)).setUnlocalizedName("knife"));
-        registerItem(6038, "berries", (new ItemCustomFood(2, 0.3F, false)).setUnlocalizedName("berries"));
-        //registerItem(6039, "gondorian_horn", (new ItemValarInstrument("").setUnlocalizedName("gondorianHorn").setTextureName("gondorian_horn")));
-        registerItem(6040, "bear_claw", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("bearClaw"));
-        registerItem(6041, "beast_skin", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("beastSkin"));
-        registerItem(6042, "dead_root", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("deadRoot"));
-        registerItem(6043, "eagle_feather", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("eagleFeather"));
-        registerItem(6044, "goblin_eye", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("goblinEye"));
-        registerItem(6045, "helegrog_deamon_heart", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("helegrogDeamonHeart"));
-        registerItem(6046, "orc_blood", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("orcBlood"));
-        registerItem(6047, "owl_feather", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("owlFeather"));
-        registerItem(6048, "scorpion_tail", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("scorpionTail"));
-        registerItem(6049, "shark_tooth", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("sharkTooth"));
-        registerItem(6050, "troll_skin", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("trollSkin"));
-        registerItem(6051, "warg_fang", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("wargFang"));
-        registerItem(6052, "blue_bed", (new ItemCustomBed((BlockCustomBed)Blocks.BLUE_BED)).setUnlocalizedName("blueBed"));
-        registerItem(6053, "brown_bed", (new ItemCustomBed((BlockCustomBed)Blocks.BROWN_BED)).setUnlocalizedName("brownBed"));
-        //registerItem(6054, "brown_hobbit_hat", (new ItemValarArmor(0, 1, 55, 0).setUnlocalizedName("brownHobbitHat").setTextureName("brown_hobbit_hat")));
-        //registerItem(6055, "orc_helmet", (new ItemValarArmor(0, 1, 200, 0).setUnlocalizedName("orcHelmet").setTextureName("orc_helmet")));
-        registerItem(6056, "bree_door", (new ItemDoor(Blocks.BREE_DOOR)).setUnlocalizedName("breeDoor"));
-        registerItem(6057, "rucksack", (new ItemRucksack().setUnlocalizedName("rucksack")));
-        registerItem(6058, "cram", (new ItemCustomFood(2, 0.8F, false)).setUnlocalizedName("cram"));
-        registerItem(6059, "cabbage", (new ItemCustomFood(3, 0.6F, false)).setUnlocalizedName("cabbage"));
-        registerItem(6060, "coconut", (new ItemCustomFood(1, 0.3F, false)).setUnlocalizedName("coconut"));
-        registerItem(6061, "raw_deer_meat", (new ItemCustomFood(3, 0.4F, true)).setUnlocalizedName("rawDeerMeat"));
-        registerItem(6062, "cooked_deer_meat", (new ItemCustomFood(5, 0.6F, false)).setUnlocalizedName("cookedDeerMeat"));
-        registerItem(6063, "muffin", (new ItemCustomFood(1, 0.4F, false)).setUnlocalizedName("muffin"));
-        registerItem(6064, "strawberry", (new ItemCustomFood(2, 0.3F, false)).setUnlocalizedName("strawberry").setCreativeTab(CreativeTabs.FOOD));
-        registerItem(6065, "strawberry_muffin", (new ItemCustomFood(3, 0.6F, false)).setUnlocalizedName("strawberryMuffin"));
-        registerItem(6066, "orange", (new ItemCustomFood(2, 0.6F, false)).setUnlocalizedName("orange"));
-        registerItem(6067, "orange_muffin", (new ItemCustomFood(3, 0.6F, false)).setUnlocalizedName("orangeMuffin"));
-        registerItem(6068, "pear", (new ItemCustomFood(2, 0.6F, false)).setUnlocalizedName("pear"));
-        registerItem(6069, "raw_meat", (new ItemCustomFood(2, 0.2F, true)).setUnlocalizedName("rawMeat"));
-        registerItem(6070, "cooked_meat", (new ItemCustomFood(5, 0.7F, false)).setUnlocalizedName("cookedMeat"));
+        registerADItem(6000, "lembas", new ItemCustomFood(8, 0.8F, false));
+        registerADItem(6001, "mithril_Ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6002, "bronze_Ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6003, "pipe", new ItemPipe(false));
+        registerADItem(6004, "tobacco", (new Item()).setCreativeTab(CreativeTabs.MISC));
+        //registerADItem(6005, "flaming_arrow", (new Item()).setCreativeTab().setUnlocalizedName("flamingArrow"));
+        registerADItem(6008, "jade", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6009, "amber", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        //registerADItem(6010, "parchment", (new Item()).setCreativeTab().setUnlocalizedName("parchment"));
+        registerADItem(6014, "crystal", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6015, "amethyst", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6016, "onyx", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6017, "moonstone", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6019, "tanzanite", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6020, "uruk_Sword", new ItemWeapon(510, 7));
+        //registerADItem(6021, "phial_of_galadriel", (new ItemValarBase().setUnlocalizedName("phialOfGaladriel"));
+        registerADItem(6022, "tomato", new ItemCustomFood(1, 0.1F, false));
+        registerADItem(6023, "blue_Feather", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6026, "spider_Poison", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6028, "herugrim", new ItemWeapon(830, 7));
+        registerADItem(6029, "nuts", new ItemCustomFood(1, 0.2F, false));
+        registerADItem(6032, "corn_Cob", new ItemCustomFood(2, 0.3F, false));
+        registerADItem(6035, "staff_Base", new ItemWeapon(350, 2));
+        registerADItem(6036, "knife", new ItemWeapon(35, 4));
+        registerADItem(6038, "berries", new ItemCustomFood(2, 0.3F, false));
+        //registerADItem(6039, "gondorian_Horn", (new ItemValarInstrument("")));
+        registerADItem(6040, "bear_Claw", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6041, "beast_Skin", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6042, "dead_Root", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6043, "eagle_Feather", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6044, "goblin_Eye", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6045, "helegrog_Deamon_Heart", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6046, "orc_Blood", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6047, "owl_Feather", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6048, "scorpion_Tail", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6049, "shark_Tooth", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6050, "troll_Skin", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6051, "warg_Fang", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6052, "blue_Bed", (new ItemCustomBed((BlockCustomBed)Blocks.BLUE_BED)));
+        registerADItem(6053, "brown_Bed", (new ItemCustomBed((BlockCustomBed)Blocks.BROWN_BED)));
+        //registerADItem(6054, "brown_Hobbit_Hat", new ItemValarArmor(0, 1, 55, 0));
+        //registerADItem(6055, "orc_Helmet", new ItemValarArmor(0, 1, 200, 0));
+        registerADItem(6056, "bree_Door", new ItemDoor(Blocks.BREE_DOOR));
+        registerADItem(6057, "rucksack", new ItemRucksack());
+        registerADItem(6058, "cram", new ItemCustomFood(2, 0.8F, false));
+        registerADItem(6059, "cabbage", new ItemCustomFood(3, 0.6F, false));
+        registerADItem(6060, "coconut", new ItemCustomFood(1, 0.3F, false));
+        registerADItem(6061, "raw_Deer_Meat", new ItemCustomFood(3, 0.4F, true));
+        registerADItem(6062, "cooked_Deer_Meat", new ItemCustomFood(5, 0.6F, false));
+        registerADItem(6063, "muffin", new ItemCustomFood(1, 0.4F, false));
+        registerADItem(6064, "strawberry", new ItemCustomFood(2, 0.3F, false));
+        registerADItem(6065, "strawberry_Muffin", new ItemCustomFood(3, 0.6F, false));
+        registerADItem(6066, "orange", new ItemCustomFood(2, 0.6F, false));
+        registerADItem(6067, "orange_Muffin", new ItemCustomFood(3, 0.6F, false));
+        registerADItem(6068, "pear", new ItemCustomFood(2, 0.6F, false));
+        registerADItem(6069, "raw_Meat", new ItemCustomFood(2, 0.2F, true));
+        registerADItem(6070, "cooked_Meat", new ItemCustomFood(5, 0.7F, false));
         ItemCustomArmor.Properties rohanArmor = new ItemCustomArmor.Properties("rohan1", 20, 0.8, 0, 9);
-        registerItem(6071, "rohan_helmet_1", (new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.HEAD)).setUnlocalizedName("rohanHelmet1")));
-        registerItem(6072, "rohan_helmet_2", (new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).setTextureName("rohan2").adjustFor(EntityEquipmentSlot.HEAD)).setUnlocalizedName("rohanHelmet2")));
-        registerItem(6073, "rohan_helmet_3", (new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).setTextureName("rohan3").adjustFor(EntityEquipmentSlot.HEAD)).setUnlocalizedName("rohanHelmet3")));
-        registerItem(6074, "rohan_helmet_4", (new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).setTextureName("rohan4").adjustFor(EntityEquipmentSlot.HEAD)).setUnlocalizedName("rohanHelmet4")));
-        registerItem(6075, "rohan_helmet_5", (new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).setTextureName("rohan5").adjustFor(EntityEquipmentSlot.HEAD)).setUnlocalizedName("rohanHelmet5")));
-        registerItem(6076, "rohan_helmet_6", (new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).setTextureName("rohan6").adjustFor(EntityEquipmentSlot.HEAD)).setUnlocalizedName("rohanHelmet6")));
-        registerItem(6077, "rohan_chestplate", (new ItemCustomArmor(EntityEquipmentSlot.CHEST, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.CHEST)).setUnlocalizedName("rohanChestplate")));
-        registerItem(6080, "telescope", (new ItemTelescope()).setUnlocalizedName("telescope"));
-        //registerItem(6081, "stone_inscription", (new ItemValarStoneInscription()).setUnlocalizedName("stoneInscription").setTextureName("stone_inscription"));
-        //registerItem(6082, "sting", (new ItemValarSting().setUnlocalizedName("sting").setTextureName("sting")));
-        registerItem(6085, "human_dagger", (new ItemWeapon(50, 4)).setUnlocalizedName("humanDagger"));
-        registerItem(6086, "hobbit_dagger", (new ItemWeapon(50, 4)).setUnlocalizedName("hobbitDagger"));
-        registerItem(6087, "elf_dagger", (new ItemWeapon(80, 5)).setUnlocalizedName("elfDagger"));
-        registerItem(6088, "gondorian_sword", (new ItemWeapon(350, 6)).setUnlocalizedName("gondorianSword"));
-        //registerItem(6089, "broken_narsil", (new ItemValarWeapon(2000, 10).setUnlocalizedName("brokenNarsil").setTextureName("broken_narsil")));
-        //registerItem(6090, "poison_potion", (new ItemValarBase().setUnlocalizedName("poisonPotion").setTextureName("poison_potion")));
-        //registerItem(6091, "healing_potion", (new ItemValarBase().setUnlocalizedName("healingPotion").setTextureName("healing_potion")));
-        //registerItem(6092, "light_blue_potion", (new ItemValarBase().setUnlocalizedName("lightBluePotion").setTextureName("light_blue_potion")));
-        //registerItem(6093, "miruvor", (new ItemValarBase().setUnlocalizedName("miruvor").setTextureName("miruvor")));
-        //registerItem(6094, "orange_potion", (new ItemValarBase().setUnlocalizedName("orangePotion").setTextureName("orange_potion")));
-        //registerItem(6095, "red_potion", (new ItemValarBase().setUnlocalizedName("redPotion").setTextureName("red_potion")));
-        //registerItem(6096, "yellow_potion", (new ItemValarBase().setUnlocalizedName("yellowPotion").setTextureName("yellow_potion")));*/
-        registerItem(6097, "southern_star", (new Item()).setUnlocalizedName("southernStar").setCreativeTab(CreativeTabs.MATERIALS));
-        registerItem(6098, "southlinch", (new Item()).setUnlocalizedName("southlinch").setCreativeTab(CreativeTabs.MATERIALS));
-        //registerItem(6099, "gondorian_tobacco", (new ItemValarBase().setUnlocalizedName("gondorianTobacco").setTextureName("gondorian_tobacco")));
-        //registerItem(6100, "longbottom_leaf", (new ItemValarBase().setUnlocalizedName("longbottomLeaf").setTextureName("longbottom_leaf")));
-        registerItem(6101, "old_toby", (new Item()).setUnlocalizedName("oldToby").setCreativeTab(CreativeTabs.MATERIALS));
-        //registerItem(6102, "brown_pipe", (new ItemValarBase()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("brownPipe"));
-        registerItem(6103, "stone_of_darkness", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("stoneOfDarkness"));
-        registerItem(6104, "stone_of_earth", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("stoneOfEarth"));
-        registerItem(6105, "stone_of_fire", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("stoneOfFire"));
-        registerItem(6106, "stone_of_greed", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("stoneOfGreed"));
-        registerItem(6107, "stone_of_hope", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("stoneOfHope"));
-        registerItem(6108, "stone_of_nature", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("stoneOfNature"));
-        registerItem(6109, "stone_of_sunlight", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("stoneOfSunlight"));
-        registerItem(6110, "stone_of_sea", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("stoneOfSea"));
-        registerItem(6111, "stone_of_sky", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("stoneOfSky"));
-        registerItem(6112, "stone_of_wealth", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("stoneOfWealth"));
-        registerItem(6113, "stone_of_wind", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("stoneOfWind"));
-        registerItem(6114, "hammer", (new Item()).setCreativeTab(CreativeTabs.TOOLS).setUnlocalizedName("hammer"));
-        registerItem(6115, "gold_ring", (new Item()).setUnlocalizedName("goldRing")); // Deprecated
-        registerItem(6116, "onyx_gold_ring", (new Item()).setUnlocalizedName("onyxGoldRing")); // Deprecated
-        registerItem(6117, "tanzanite_gold_ring", (new Item()).setUnlocalizedName("tanzaniteGoldRing")); // Deprecated
-        registerItem(6118, "jade_gold_ring", (new Item()).setUnlocalizedName("jadeGoldRing")); // Deprecated
-        registerItem(6119, "moonstone_gold_ring", (new Item()).setUnlocalizedName("moonstoneGoldRing")); // Deprecated
-        registerItem(6120, "amethyst_gold_ring", (new Item()).setUnlocalizedName("amethystGoldRing")); // Deprecated
-        registerItem(6121, "ruby_gold_ring", (new Item()).setUnlocalizedName("rubyGoldRing")); // Deprecated
-        registerItem(6122, "quartz_gold_ring", (new Item()).setUnlocalizedName("quartzGoldRing")); // Deprecated
-        registerItem(6123, "amber_gold_ring", (new Item()).setUnlocalizedName("amberGoldRing")); // Deprecated
-        registerItem(6124, "silver_ring", (new Item()).setUnlocalizedName("silverRing")); // Deprecated
-        registerItem(6125, "onyx_silver_ring", (new Item()).setUnlocalizedName("onyxSilverRing")); // Deprecated
-        registerItem(6126, "tanzanite_silver_ring", (new Item()).setUnlocalizedName("tanzaniteSilverRing")); // Deprecated
-        registerItem(6127, "jade_silver_ring", (new Item()).setUnlocalizedName("jadeSilverRing")); // Deprecated
-        registerItem(6128, "moonstone_silver_ring", (new Item()).setUnlocalizedName("moonstoneSilverRing")); // Deprecated
-        registerItem(6129, "amethyst_silver_ring", (new Item()).setUnlocalizedName("amethystSilverRing")); // Deprecated
-        registerItem(6130, "ruby_silver_ring", (new Item()).setUnlocalizedName("rubySilverRing")); // Deprecated
-        registerItem(6131, "quartz_silver_ring", (new Item()).setUnlocalizedName("quartzSilverRing")); // Deprecated
-        registerItem(6132, "amber_silver_ring", (new Item()).setUnlocalizedName("amberSilverRing")); // Deprecated
-        registerItem(6133, "bronze_ring", (new Item()).setUnlocalizedName("bronzeRing")); // Deprecated
-        registerItem(6134, "onyx_bronze_ring", (new Item()).setUnlocalizedName("onyxBronzeRing")); // Deprecated
-        registerItem(6135, "tanzanite_bronze_ring", (new Item()).setUnlocalizedName("tanzaniteBronzeRing")); // Deprecated
-        registerItem(6136, "jade_bronze_ring", (new Item()).setUnlocalizedName("jadeBronzeRing")); // Deprecated
-        registerItem(6137, "moonstone_bronze_ring", (new Item()).setUnlocalizedName("moonstoneBronzeRing")); // Deprecated
-        registerItem(6138, "amethyst_bronze_ring", (new Item()).setUnlocalizedName("amethystBronzeRing")); // Deprecated
-        registerItem(6139, "ruby_bronze_ring", (new Item()).setUnlocalizedName("rubyBronzeRing")); // Deprecated
-        registerItem(6140, "quartz_bronze_ring", (new Item()).setUnlocalizedName("quartzBronzeRing")); // Deprecated
-        registerItem(6141, "amber_bronze_ring", (new Item()).setUnlocalizedName("amberBronzeRing")); // Deprecated
-        registerItem(6142, "mithril_ring", (new Item()).setUnlocalizedName("mithrilRing")); // Deprecated
-        registerItem(6143, "onyx_mithril_ring", (new Item()).setUnlocalizedName("onyxMithrilRing")); // Deprecated
-        registerItem(6144, "tanzanite_mithril_ring", (new Item()).setUnlocalizedName("tanzaniteMithrilRing")); // Deprecated
-        registerItem(6145, "jade_mithril_ring", (new Item()).setUnlocalizedName("jadeMithrilRing")); // Deprecated
-        registerItem(6146, "moonstone_mithril_ring", (new Item()).setUnlocalizedName("moonstoneMithrilRing")); // Deprecated
-        registerItem(6147, "amethyst_mithril_ring", (new Item()).setUnlocalizedName("amethystMithrilRing")); // Deprecated
-        registerItem(6148, "ruby_mithril_ring", (new Item()).setUnlocalizedName("rubyMithrilRing")); // Deprecated
-        registerItem(6149, "quartz_mithril_ring", (new Item()).setUnlocalizedName("quartzMithrilRing")); // Deprecated
-        registerItem(6150, "amber_mithril_ring", (new Item()).setUnlocalizedName("amberMithrilRing"));
-        registerItem(6151, "salt", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("salt"));
+        registerADItem(6071, "rohan_Helmet_1", new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.HEAD)));
+        registerADItem(6072, "rohan_Helmet_2", new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).setTextureName("rohan2").adjustFor(EntityEquipmentSlot.HEAD)));
+        registerADItem(6073, "rohan_Helmet_3", new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).setTextureName("rohan3").adjustFor(EntityEquipmentSlot.HEAD)));
+        registerADItem(6074, "rohan_Helmet_4", new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).setTextureName("rohan4").adjustFor(EntityEquipmentSlot.HEAD)));
+        registerADItem(6075, "rohan_Helmet_5", new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).setTextureName("rohan5").adjustFor(EntityEquipmentSlot.HEAD)));
+        registerADItem(6076, "rohan_Helmet_6", new ItemCustomArmor(EntityEquipmentSlot.HEAD, (new ItemCustomArmor.Properties(rohanArmor)).setTextureName("rohan6").adjustFor(EntityEquipmentSlot.HEAD)));
+        registerADItem(6077, "rohan_Chestplate", new ItemCustomArmor(EntityEquipmentSlot.CHEST, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.CHEST)));
+        registerADItem(6080, "telescope", new ItemTelescope());
+        //registerADItem(6081, "stone_Inscription", new ItemValarStoneInscription());
+        //registerADItem(6082, "sting", new ItemValarSting());
+        registerADItem(6085, "human_Dagger", new ItemWeapon(50, 4));
+        registerADItem(6086, "hobbit_Dagger", new ItemWeapon(50, 4));
+        registerADItem(6087, "elf_Dagger", new ItemWeapon(80, 5));
+        registerADItem(6088, "gondorian_Sword", new ItemWeapon(350, 6));
+        //registerADItem(6089, "broken_Narsil", new ItemValarWeapon(2000, 10));
+        //registerADItem(6090, "poison_Potion", new Item());
+        //registerADItem(6091, "healing_Potion", new Item());
+        //registerADItem(6092, "light_Blue_Potion", new Item());
+        //registerADItem(6093, "miruvor", new Item());
+        //registerADItem(6094, "orange_Potion", new Item());
+        //registerADItem(6095, "red_Potion", new Item());
+        //registerADItem(6096, "yellow_Potion", new Item());*/
+        registerADItem(6097, "southern_Star", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6098, "southlinch", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        //registerADItem(6099, "gondorian_Tobacco", new Item());
+        //registerADItem(6100, "longbottom_Leaf", new Item());
+        registerADItem(6101, "old_Toby", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        //registerADItem(6102, "brown_Pipe", new Item());
+        registerADItem(6103, "stone_Of_Darkness", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6104, "stone_Of_Earth", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("stoneOfEarth"));
+        registerADItem(6105, "stone_Of_Fire", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6106, "stone_Of_Greed", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6107, "stone_Of_Hope", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6108, "stone_Of_Nature", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6109, "stone_Of_Sunlight", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6110, "stone_Of_Sea", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6111, "stone_Of_Sky", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6112, "stone_Of_Wealth", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6113, "stone_Of_Wind", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6114, "hammer", (new Item()).setCreativeTab(CreativeTabs.TOOLS));
+        registerADItem(6115, "gold_Ring", new Item()); // Deprecated
+        registerADItem(6116, "onyx_Gold_Ring", new Item()); // Deprecated
+        registerADItem(6117, "tanzanite_Gold_Ring", new Item()); // Deprecated
+        registerADItem(6118, "jade_Gold_Ring", new Item()); // Deprecated
+        registerADItem(6119, "moonstone_Gold_Ring", new Item()); // Deprecated
+        registerADItem(6120, "amethyst_Gold_Ring", new Item()); // Deprecated
+        registerADItem(6121, "ruby_Gold_Ring", new Item()); // Deprecated
+        registerADItem(6122, "quartz_Gold_Ring", new Item()); // Deprecated
+        registerADItem(6123, "amber_Gold_Ring", new Item()); // Deprecated
+        registerADItem(6124, "silver_Ring", new Item()); // Deprecated
+        registerADItem(6125, "onyx_Silver_Ring", new Item()); // Deprecated
+        registerADItem(6126, "tanzanite_Silver_Ring", new Item()); // Deprecated
+        registerADItem(6127, "jade_Silver_Ring", new Item()); // Deprecated
+        registerADItem(6128, "moonstone_Silver_Ring", new Item()); // Deprecated
+        registerADItem(6129, "amethyst_Silver_Ring", new Item()); // Deprecated
+        registerADItem(6130, "ruby_Silver_Ring", new Item()); // Deprecated
+        registerADItem(6131, "quartz_Silver_Ring", new Item()); // Deprecated
+        registerADItem(6132, "amber_Silver_Ring", new Item()); // Deprecated
+        registerADItem(6133, "bronze_Ring", new Item()); // Deprecated
+        registerADItem(6134, "onyx_Bronze_Ring", new Item()); // Deprecated
+        registerADItem(6135, "tanzanite_Bronze_Ring", new Item()); // Deprecated
+        registerADItem(6136, "jade_Bronze_Ring", new Item()); // Deprecated
+        registerADItem(6137, "moonstone_Bronze_Ring", new Item()); // Deprecated
+        registerADItem(6138, "amethyst_Bronze_Ring", new Item()); // Deprecated
+        registerADItem(6139, "ruby_Bronze_Ring", new Item()); // Deprecated
+        registerADItem(6140, "quartz_Bronze_Ring", new Item()); // Deprecated
+        registerADItem(6141, "amber_Bronze_Ring", new Item()); // Deprecated
+        registerADItem(6142, "mithril_Ring", new Item()); // Deprecated
+        registerADItem(6143, "onyx_Mithril_Ring", new Item()); // Deprecated
+        registerADItem(6144, "tanzanite_Mithril_Ring", new Item()); // Deprecated
+        registerADItem(6145, "jade_Mithril_Ring", new Item()); // Deprecated
+        registerADItem(6146, "moonstone_Mithril_Ring", new Item()); // Deprecated
+        registerADItem(6147, "amethyst_Mithril_Ring", new Item()); // Deprecated
+        registerADItem(6148, "ruby_Mithril_Ring", new Item()); // Deprecated
+        registerADItem(6149, "quartz_Mithril_Ring", new Item()); // Deprecated
+        registerADItem(6150, "amber_Mithril_Ring", new Item()); // Deprecated
+        registerADItem(6151, "salt", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
         ItemCustomArmor.Properties noldorArmor = new ItemCustomArmor.Properties("noldor", 25, 1.1, 0, 10);
-        registerItem(6152, "noldor_chestplate", (new ItemCustomArmor(EntityEquipmentSlot.CHEST, (new ItemCustomArmor.Properties(noldorArmor)).adjustFor(EntityEquipmentSlot.CHEST)).setUnlocalizedName("noldorChestplate")));
-        registerItem(6153, "silver_ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("silverIngot"));
-        registerItem(6154, "dwarf_door", (new ItemDoor(Blocks.DWARF_DOOR)).setUnlocalizedName("dwarfDoor"));
-        registerItem(6155, "boromirs_sword", (new ItemWeapon(900, 9)).setUnlocalizedName("boromirsSword"));
-        //registerItem(6156, "grey_potion", (new ItemValarBase().setUnlocalizedName("greyPotion").setTextureName("grey_potion")));
-        //registerItem(6157, "blue_potion", (new ItemValarBase().setUnlocalizedName("bluePotion").setTextureName("blue_potion")));
-        //registerItem(6158, "brown_potion", (new ItemValarBase().setUnlocalizedName("brownPotion").setTextureName("brown_potion")));
-        //registerItem(6159, "dark_green_potion", (new ItemValarBase().setUnlocalizedName("darkGreenPotion").setTextureName("dark_green_potion")));
-        //registerItem(6160, "elanor_potion", (new ItemValarBase().setUnlocalizedName("elanorPotion").setTextureName("elanor_potion")));
-        //registerItem(6161, "light_purple_potion", (new ItemValarBase().setUnlocalizedName("lightPurplePotion").setTextureName("light_purple_potion")));
-        //registerItem(6162, "orc_potion", (new ItemValarBase().setUnlocalizedName("orcPotion").setTextureName("orc_potion")));
-        registerItem(6163, "orc_sword_1", (new ItemWeapon(230, 5)).setUnlocalizedName("orcSword1"));
-        registerItem(6164, "orc_sword_2", (new ItemWeapon(230, 5)).setUnlocalizedName("orcSword2"));
-        //registerItem(6165, "rivendell_sword", (new ItemValarBase().setUnlocalizedName("rivendellSword").setTextureName("rivendell_sword")));
-        registerItem(6166, "goblin_sword", (new ItemWeapon(200, 5)).setUnlocalizedName("goblinSword"));
-        registerItem(6167, "hobbit_axe", (new ItemWeapon(235, 5)).setUnlocalizedName("hobbitAxe"));
-        registerItem(6168, "sharkus_shortsword", (new ItemWeapon(467, 8)).setUnlocalizedName("sharkusShortsword"));
-        registerItem(6169, "battle_pickaxe", (new ItemWeapon(300, 5)).setUnlocalizedName("battlePickaxe"));
-        registerItem(6170, "shirriff_club", (new ItemWeapon(131, 6)).setUnlocalizedName("shirriffClub"));
-        registerItem(6171, "pike_club", (new ItemWeapon(350, 6)).setUnlocalizedName("pikeClub"));
-        registerItem(6172, "hobbit_sword", (new ItemWeapon(230, 5)).setUnlocalizedName("hobbitSword"));
-        registerItem(6173, "hobbit_hammer", (new ItemWeapon(235, 5)).setUnlocalizedName("hobbitHammer"));
-        //registerItem(6174, "dwarven_axe_moria", (new ItemValarBase().setUnlocalizedName("dwarvenAxeMoria").setTextureName("dwarvenaxemoria")));
-        /*registerItem(6175, "green_arrow", (new ItemValarBase().setUnlocalizedName("greenArrow").setTextureName("green_arrow")));
-        registerItem(6176, "black_arrow", (new ItemValarBase().setUnlocalizedName("blackArrow").setTextureName("black_arrow")));
-        registerItem(6177, "goblin_arrow", (new ItemValarBase().setUnlocalizedName("goblinArrow").setTextureName("goblin_arrow")));
-        registerItem(6179, "red_arrow", (new ItemValarBase().setUnlocalizedName("redArrow").setTextureName("red_arrow")));
-        registerItem(6179, "yellow_arrow", (new ItemValarBase().setUnlocalizedName("yellowArrow").setTextureName("yellow_arrow")));
-        //registerItem(6180, "throwing_rock", (new ItemValarBase().setUnlocalizedName("throwingRock").setTextureName("throwing_rock")));*/
-        registerItem(6181, "boar_horns", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("boarHorns"));
-        registerItem(6182, "gold_ring_of_darkness", (new Item()).setUnlocalizedName("goldRingOfDarkness")); // Deprecated
-        registerItem(6183, "gold_ring_of_earth", (new Item()).setUnlocalizedName("goldRingOfEarth")); // Deprecated
-        registerItem(6184, "gold_ring_of_fire", (new Item()).setUnlocalizedName("goldRingOfFire")); // Deprecated
-        registerItem(6185, "gold_ring_of_greed", (new Item()).setUnlocalizedName("goldRingOfGreed")); // Deprecated
-        registerItem(6186, "gold_ring_of_hope", (new Item()).setUnlocalizedName("goldRingOfHope")); // Deprecated
-        registerItem(6187, "gold_ring_of_nature", (new Item()).setUnlocalizedName("goldRingOfNature")); // Deprecated
-        registerItem(6188, "gold_ring_of_sea", (new Item()).setUnlocalizedName("goldRingOfSea")); // Deprecated
-        registerItem(6189, "gold_ring_of_sky", (new Item()).setUnlocalizedName("goldRingOfSky")); // Deprecated
-        registerItem(6190, "gold_ring_of_sunlight", (new Item()).setUnlocalizedName("goldRingOfSunlight")); // Deprecated
-        registerItem(6191, "gold_ring_of_wealth", (new Item()).setUnlocalizedName("goldRingOfWealth")); // Deprecated
-        registerItem(6192, "gold_ring_of_wind", (new Item()).setUnlocalizedName("goldRingOfWind")); // Deprecated
-        registerItem(6193, "silver_ring_of_darkness", (new Item()).setUnlocalizedName("silverRingOfDarkness")); // Deprecated
-        registerItem(6194, "silver_ring_of_earth", (new Item()).setUnlocalizedName("silverRingOfEarth")); // Deprecated
-        registerItem(6195, "silver_ring_of_fire", (new Item()).setUnlocalizedName("silverRingOfFire")); // Deprecated
-        registerItem(6196, "silver_ring_of_greed", (new Item()).setUnlocalizedName("silverRingOfGreed")); // Deprecated
-        registerItem(6197, "silver_ring_of_hope", (new Item()).setUnlocalizedName("silverRingOfHope")); // Deprecated
-        registerItem(6198, "silver_ring_of_nature", (new Item()).setUnlocalizedName("silverRingOfNature")); // Deprecated
-        registerItem(6199, "silver_ring_of_sea", (new Item()).setUnlocalizedName("silverRingOfSea")); // Deprecated
-        registerItem(6200, "silver_ring_of_sky", (new Item()).setUnlocalizedName("silverRingOfSky")); // Deprecated
-        registerItem(6201, "silver_ring_of_sunlight", (new Item()).setUnlocalizedName("silverRingOfSunlight")); // Deprecated
-        registerItem(6202, "silver_ring_of_wealth", (new Item()).setUnlocalizedName("silverRingOfWealth")); // Deprecated
-        registerItem(6203, "silver_ring_of_wind", (new Item()).setUnlocalizedName("silverRingOfWind")); // Deprecated
-        registerItem(6204, "bronze_ring_of_darkness", (new Item()).setUnlocalizedName("bronzeRingOfDarkness")); // Deprecated
-        registerItem(6205, "bronze_ring_of_earth", (new Item()).setUnlocalizedName("bronzeRingOfEarth")); // Deprecated
-        registerItem(6206, "bronze_ring_of_fire", (new Item()).setUnlocalizedName("bronzeRingOfFire")); // Deprecated
-        registerItem(6207, "bronze_ring_of_greed", (new Item()).setUnlocalizedName("bronzeRingOfGreed")); // Deprecated
-        registerItem(6208, "bronze_ring_of_hope", (new Item()).setUnlocalizedName("bronzeRingOfHope")); // Deprecated
-        registerItem(6209, "bronze_ring_of_nature", (new Item()).setUnlocalizedName("bronzeRingOfNature")); // Deprecated
-        registerItem(6210, "bronze_ring_of_sea", (new Item()).setUnlocalizedName("bronzeRingOfSea")); // Deprecated
-        registerItem(6211, "bronze_ring_of_sky", (new Item()).setUnlocalizedName("bronzeRingOfSky")); // Deprecated
-        registerItem(6212, "bronze_ring_of_sunlight", (new Item()).setUnlocalizedName("bronzeRingOfSunlight")); // Deprecated
-        registerItem(6213, "bronze_ring_of_wealth", (new Item()).setUnlocalizedName("bronzeRingOfWealth")); // Deprecated
-        registerItem(6214, "bronze_ring_of_wind", (new Item()).setUnlocalizedName("bronzeRingOfWind")); // Deprecated
-        registerItem(6215, "mithril_ring_of_darkness", (new Item()).setUnlocalizedName("mithrilRingOfDarkness")); // Deprecated
-        registerItem(6216, "mithril_ring_of_earth", (new Item()).setUnlocalizedName("mithrilRingOfEarth")); // Deprecated
-        registerItem(6217, "mithril_ring_of_fire", (new Item()).setUnlocalizedName("mithrilRingOfFire")); // Deprecated
-        registerItem(6218, "mithril_ring_of_greed", (new Item()).setUnlocalizedName("mithrilRingOfGreed")); // Deprecated
-        registerItem(6219, "mithril_ring_of_hope", (new Item()).setUnlocalizedName("mithrilRingOfHope")); // Deprecated
-        registerItem(6220, "mithril_ring_of_nature", (new Item()).setUnlocalizedName("mithrilRingOfNature")); // Deprecated
-        registerItem(6221, "mithril_ring_of_sea", (new Item()).setUnlocalizedName("mithrilRingOfSea")); // Deprecated
-        registerItem(6222, "mithril_ring_of_sky", (new Item()).setUnlocalizedName("mithrilRingOfSky")); // Deprecated
-        registerItem(6223, "mithril_ring_of_sunlight", (new Item()).setUnlocalizedName("mithrilRingOfSunlight")); // Deprecated
-        registerItem(6224, "mithril_ring_of_wealth", (new Item()).setUnlocalizedName("mithrilRingOfWealth")); // Deprecated
-        registerItem(6225, "mithril_ring_of_wind", (new Item()).setUnlocalizedName("mithrilRingOfWind"));
-        registerItem(6226, "anduril", (new ItemWeapon(3000, 11)).setUnlocalizedName("anduril"));
-        registerItem(6227, "morgul_sword", (new ItemWeapon(2500, 9)).setUnlocalizedName("morgulSword"));
-        registerItem(6228, "elven_long_sword", (new ItemWeapon(1800, 7)).setUnlocalizedName("elvenLongSword"));
-        registerItem(6229, "berserker_sword", (new ItemWeapon(1400, 8)).setUnlocalizedName("berserkerSword"));
-        registerItem(6230, "two_handed_sword", (new ItemWeapon(500, 7)).setUnlocalizedName("twoHandedSword"));
-        //registerItem(6231, "green_flag", (new ItemValarBase().setUnlocalizedName("greenFlag"));
-        //registerItem(6232, "hobbit_bow", (new ItemValarBase().setUnlocalizedName("hobbitBow"));
-        //registerItem(6233, "rohan_sheild_6", (new ItemValarBase().setUnlocalizedName("rohanShield6"));
-        registerItem(6234, "throwing_stone", (new ItemThrowingStone(1).setUnlocalizedName("throwingStone")));
-        registerItem(6235, "rohirrim_axe", (new ItemWeapon(267, 6)).setUnlocalizedName("rohirrimAxe"));
-        //registerItem(6236, "ecthelions_boots", (new ItemValarArmor(3, 500, 3, 0).setUnlocalizedName("ecthelionsBoots"));
-        registerItem(6239, "elven_door", (new ItemDoor(Blocks.ELVEN_DOOR)).setUnlocalizedName("elvenDoor"));
-        registerItem(6240, "human_door", (new ItemDoor(Blocks.HUMAN_DOOR)).setUnlocalizedName("humanDoor"));
-        registerItem(6241, "green_bed", (new ItemCustomBed((BlockCustomBed)Blocks.GREEN_BED)).setUnlocalizedName("greenBed"));
-        //registerItem(6242, "one_ring", (new ItemValarBase().setUnlocalizedName("oneRing"));
-        registerItem(6243, "aicanar", (new ItemWeapon(6000, 10)).setUnlocalizedName("aicanar"));
-        registerItem(6244, "balins_sword", (new ItemWeapon(1600, 7)).setUnlocalizedName("balinsSword"));
-        registerItem(6245, "bifurs_spear", (new ItemWeapon(1102, 6)).setUnlocalizedName("bifursSpear"));
-        //registerItem(6246, "bofurs_spear", (new ItemWeapon(1182, 6)).setUnlocalizedName("bofursSpear"));
-        registerItem(6247, "bomburs_spoon", (new ItemWeapon(321, 4)).setUnlocalizedName("bombursSpoon"));
-        registerItem(6248, "doris_sword", (new ItemWeapon(1500, 5)).setUnlocalizedName("dorisSword"));
-        registerItem(6249, "dwalins_axe", (new ItemWeapon(1700, 7)).setUnlocalizedName("dwalinsAxe"));
-        registerItem(6250, "filis_knife", (new ItemWeapon(112, 4)).setUnlocalizedName("filisKnife"));
-        registerItem(6251, "filis_sword", (new ItemWeapon(1111, 6)).setUnlocalizedName("filisSword"));
-        registerItem(6252, "kilis_sword", (new ItemWeapon(1111, 6)).setUnlocalizedName("kilisSword"));
-        registerItem(6253, "noris_club", (new ItemWeapon(861, 5)).setUnlocalizedName("norisClub"));
-        registerItem(6254, "oins_staff", (new ItemWeapon(922, 6)).setUnlocalizedName("oinsStaff"));
-        registerItem(6255, "orcrist", (new ItemWeapon(8001, 12)).setUnlocalizedName("orcrist"));
-        registerItem(6256, "sword_of_westernesse", (new ItemWeapon(3200, 8)).setUnlocalizedName("swordOfWesternesse"));
-        registerItem(6257, "thorins_sword", (new ItemWeapon(1200, 6)).setUnlocalizedName("thorinsSword"));
-        registerItem(6258, "thrains_war_hammer", (new ItemWeapon(1288, 6)).setUnlocalizedName("thrainsWarHammer"));
-        registerItem(6259, "thrors_war_hammer", (new ItemWeapon(1428, 7)).setUnlocalizedName("throrsWarHammer"));
-        registerItem(6260, "aragorns_elf_knife", (new ItemWeapon(1300, 5)).setUnlocalizedName("aragornsElfKnife"));
-        registerItem(6261, "eowyns_sword", (new ItemWeapon(1261, 6)).setUnlocalizedName("eowynsSword"));
-        registerItem(6262, "gandalf_the_greys_staff", (new ItemWeapon(3000, 9)).setUnlocalizedName("gandalfTheGreysStaff"));
-        registerItem(6263, "gandalf_the_whites_staff", (new ItemWeapon(5000, 11)).setUnlocalizedName("gandalfTheWhitesStaff"));
-        registerItem(6264, "gimlis_two_headed_axe", (new ItemWeapon(2000, 9)).setUnlocalizedName("gimlisTwoHeadedAxe"));
-        registerItem(6265, "gimlis_longaxe", (new ItemWeapon(1700, 7)).setUnlocalizedName("gimlisLongaxe"));
-        registerItem(6266, "glamdring", (new ItemWeapon(3200, 11)).setUnlocalizedName("glamdring"));
-        registerItem(6267, "gloins_axe", (new ItemWeapon(1700, 7)).setUnlocalizedName("gloinsAxe"));
-        registerItem(6268, "glorfindels_sword", (new ItemWeapon(3600, 9)).setUnlocalizedName("glorfindelsSword"));
-        registerItem(6269, "guthwine", (new ItemWeapon(1732, 8)).setUnlocalizedName("guthwine"));
-        registerItem(6270, "hadhafang", (new ItemWeapon(3400, 10)).setUnlocalizedName("hadhafang"));
-        //registerItem(6271, "herugrim", (new ItemValarBase().setUnlocalizedName("herugrim"));
-        registerItem(6272, "legolas_sword", (new ItemWeapon(2900, 9)).setUnlocalizedName("legolasSword"));
-        registerItem(6273, "radagasts_staff", (new ItemWeapon(3100, 8)).setUnlocalizedName("radagastsStaff"));
-        registerItem(6274, "lurtz_sword", (new ItemWeapon(1870, 8)).setUnlocalizedName("lurtzSword"));
-        registerItem(6275, "saurons_mace", (new ItemWeapon(7500, 13)).setUnlocalizedName("sauronsMace"));
-        registerItem(6276, "sarumans_staff", (new ItemWeapon(4500, 10)).setUnlocalizedName("sarumansStaff"));
-        registerItem(6277, "yaznegs_axe", (new ItemWeapon(830, 6)).setUnlocalizedName("yaznegsAxe"));
-        registerItem(6278, "dwarven_lord_knife", (new ItemWeapon(1200, 4)).setUnlocalizedName("dwarvenLordKnife"));
-        registerItem(6279, "gondorian_noble_sword", (new ItemWeapon(1400, 7)).setUnlocalizedName("gondorianNobleSword"));
-        registerItem(6280, "mace_of_glory", (new ItemWeapon(2100, 8)).setUnlocalizedName("maceOfGlory"));
-        registerItem(6281, "golden_war_hammer_of_erebor", (new ItemWeapon(2800, 7)).setUnlocalizedName("goldenWarHammerOfErebor"));
-        registerItem(6282, "gondorian_spear", (new ItemWeapon(1000, 6)).setUnlocalizedName("gondorianSpear"));
-        registerItem(6283, "rohirrim_spear", (new ItemWeapon(1040, 6)).setUnlocalizedName("rohirrimSpear"));
-        registerItem(6284, "bull_head_mace", (new ItemWeapon(1091, 6)).setUnlocalizedName("bullHeadMace"));
-        registerItem(6285, "corsair_eket", (new ItemWeapon(1133, 7)).setUnlocalizedName("corsairEket"));
-        registerItem(6286, "dol_guldur_spiked_mace", (new ItemWeapon(981, 6)).setUnlocalizedName("dolGuldurSpikedMace"));
-        registerItem(6287, "fell_wargrider_sword", (new ItemWeapon(991, 6)).setUnlocalizedName("fellWargriderSword"));
-        registerItem(6288, "haradrim_snake_dagger", (new ItemWeapon(777, 5)).setUnlocalizedName("haradrimSnakeDagger"));
-        registerItem(6289, "north_goblin_mace", (new ItemWeapon(531, 5)).setUnlocalizedName("northGoblinMace"));
-        registerItem(6290, "north_goblin_sword", (new ItemWeapon(772, 5)).setUnlocalizedName("northGoblinSword"));
-        registerItem(6291, "orc_captain_sword", (new ItemWeapon(1130, 7)).setUnlocalizedName("orcCaptainSword"));
-        registerItem(6292, "orc_dagger", (new ItemWeapon(103, 4)).setUnlocalizedName("orcDagger"));
-        registerItem(6293, "orc_halbard", (new ItemWeapon(605, 7)).setUnlocalizedName("orcHalbard"));
-        registerItem(6294, "uruk_siege_trooper_dagger", (new ItemWeapon(1041, 5)).setUnlocalizedName("urukSiegeTrooperDagger"));
-        //registerItem(6295, "orc_spawner", (new ItemValarBase().setUnlocalizedName("orcSpawner"));
-        registerItem(6296, "iron_mace", (new ItemWeapon(387, 7)).setUnlocalizedName("ironMace"));
-        registerItem(6297, "orc_sword_3", (new ItemWeapon(837, 6)).setUnlocalizedName("orcSword3"));
-        //registerItem(6298, "morannon_orc_shield", (new ItemValarBase().setUnlocalizedName("morannonOrcShield"));
-        registerItem(6299, "morannon_dagger", (new ItemWeapon(99, 3)).setUnlocalizedName("morannonDagger"));
-        registerItem(6300, "orc_spear", (new ItemWeapon(123, 6)).setUnlocalizedName("orcSpear"));
-        //registerItem(6301, "net", (new ItemValarBase().setUnlocalizedName("net").setTextureName("net")));
-        //registerItem(6302, "erus_staff", (new ItemValarErusStaff()).setUnlocalizedName("erusStaff").setTextureName("erus_staff"));
-        registerItem(6303, "castle_door", (new ItemDoor(Blocks.CASTLE_DOOR)).setUnlocalizedName("castleDoor"));
-        registerItem(6304, "dol_guldur_prison_door", (new ItemDoor(Blocks.DOL_GULDUR_PRISON_DOOR)).setUnlocalizedName("dolGuldurPrisonDoor"));
-        registerItem(6305, "hillmen_door", (new ItemDoor(Blocks.HILLMEN_DOOR)).setUnlocalizedName("hillmenDoor"));
-        registerItem(6306, "mordor_door", (new ItemDoor(Blocks.MORDOR_DOOR)).setUnlocalizedName("mordorDoor"));
-        registerItem(6307, "prison_door", (new ItemDoor(Blocks.PRISON_DOOR)).setUnlocalizedName("prisonDoor"));
-        registerItem(6308, "sindar_door", (new ItemDoor(Blocks.SINDAR_DOOR)).setUnlocalizedName("sindarDoor"));
-        registerItem(6309, "southlinch_seed", (new ItemSeeds(Blocks.SOUTHLINCH, Blocks.FARMLAND)).setUnlocalizedName("southlinchSeed"));
-        registerItem(6310, "green_grape_seed", (new ItemStakeSeeds(Blocks.GREEN_GRAPE, Blocks.FARMLAND)).setUnlocalizedName("greenGrapeSeed"));
-        registerItem(6311, "green_grapes", (new ItemCustomFood(2, 0.3F, false)).setUnlocalizedName("greenGrapes"));
-        registerItem(6312, "purple_grape_seed", (new ItemStakeSeeds(Blocks.PURPLE_GRAPE, Blocks.FARMLAND)).setUnlocalizedName("purpleGrapeSeed"));
-        registerItem(6313, "purple_grapes", (new ItemCustomFood(2, 0.3F, false)).setUnlocalizedName("purpleGrapes"));
-        registerItem(6314, "pipeweed_seed", (new ItemSeeds(Blocks.PIPEWEED_PLANT, Blocks.FARMLAND)).setUnlocalizedName("pipeweedSeed"));
-        registerItem(6315, "peas", (new ItemSeedFood(1, 0.1F, Blocks.PEA_PLANT, Blocks.FARMLAND) {
+        registerADItem(6152, "noldor_Chestplate", new ItemCustomArmor(EntityEquipmentSlot.CHEST, (new ItemCustomArmor.Properties(noldorArmor)).adjustFor(EntityEquipmentSlot.CHEST)));
+        registerADItem(6153, "silver_Ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6154, "dwarf_Door", new ItemDoor(Blocks.DWARF_DOOR));
+        registerADItem(6155, "boromirs_Sword", new ItemWeapon(900, 9));
+        //registerADItem(6156, "grey_Potion", new ItemValarBase());
+        //registerADItem(6157, "blue_Potion", new ItemValarBase());
+        //registerADItem(6158, "brown_Potion", new ItemValarBase());
+        //registerADItem(6159, "dark_Green_Potion", new ItemValarBase());
+        //registerADItem(6160, "elanor_Potion", new ItemValarBase());
+        //registerADItem(6161, "light_Purple_Potion", new ItemValarBase());
+        //registerADItem(6162, "orc_Potion", new ItemValarBase());
+        registerADItem(6163, "orc_Sword_1", new ItemWeapon(230, 5));
+        registerADItem(6164, "orc_Sword_2", new ItemWeapon(230, 5));
+        //registerADItem(6165, "rivendell_Sword", new ItemValarBase());
+        registerADItem(6166, "goblin_Sword", new ItemWeapon(200, 5));
+        registerADItem(6167, "hobbit_Axe", new ItemWeapon(235, 5));
+        registerADItem(6168, "sharkus_Shortsword", new ItemWeapon(467, 8));
+        registerADItem(6169, "battle_Pickaxe", new ItemWeapon(300, 5));
+        registerADItem(6170, "shirriff_Club", new ItemWeapon(131, 6));
+        registerADItem(6171, "pike_Club", new ItemWeapon(350, 6));
+        registerADItem(6172, "hobbit_Sword", new ItemWeapon(230, 5));
+        registerADItem(6173, "hobbit_Hammer", new ItemWeapon(235, 5));
+        //registerADItem(6174, "dwarven_Axe_Moria", new Item());
+        /*registerADItem(6175, "green_Arrow", new Item());
+        registerADItem(6176, "black_Arrow", new Item());
+        registerADItem(6177, "goblin_Arrow", new Item());
+        registerADItem(6179, "red_Arrow", new Item());
+        registerADItem(6179, "yellow_Arrow", new Item());
+        //registerADItem(6180, "throwing_Rock", new Item());*/
+        registerADItem(6181, "boar_Horns", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6182, "gold_Ring_Of_Darkness", new Item()); // Deprecated
+        registerADItem(6183, "gold_Ring_Of_Earth", new Item()); // Deprecated
+        registerADItem(6184, "gold_Ring_Of_Fire", new Item()); // Deprecated
+        registerADItem(6185, "gold_Ring_Of_Greed", new Item()); // Deprecated
+        registerADItem(6186, "gold_Ring_Of_Hope", new Item()); // Deprecated
+        registerADItem(6187, "gold_Ring_Of_Nature", new Item()); // Deprecated
+        registerADItem(6188, "gold_Ring_Of_Sea", new Item()); // Deprecated
+        registerADItem(6189, "gold_Ring_Of_Sky", new Item()); // Deprecated
+        registerADItem(6190, "gold_Ring_Of_Sunlight", new Item()); // Deprecated
+        registerADItem(6191, "gold_Ring_Of_Wealth", new Item()); // Deprecated
+        registerADItem(6192, "gold_Ring_Of_Wind", new Item()); // Deprecated
+        registerADItem(6193, "silver_Ring_Of_Darkness", new Item()); // Deprecated
+        registerADItem(6194, "silver_Ring_Of_Earth", new Item()); // Deprecated
+        registerADItem(6195, "silver_Ring_Of_Fire", new Item()); // Deprecated
+        registerADItem(6196, "silver_Ring_Of_Greed", new Item()); // Deprecated
+        registerADItem(6197, "silver_Ring_Of_Hope", new Item()); // Deprecated
+        registerADItem(6198, "silver_Ring_Of_Nature", new Item()); // Deprecated
+        registerADItem(6199, "silver_Ring_Of_Sea", new Item()); // Deprecated
+        registerADItem(6200, "silver_Ring_Of_Sky", new Item()); // Deprecated
+        registerADItem(6201, "silver_Ring_Of_Sunlight", new Item()); // Deprecated
+        registerADItem(6202, "silver_Ring_Of_Wealth", new Item()); // Deprecated
+        registerADItem(6203, "silver_Ring_Of_Wind", new Item()); // Deprecated
+        registerADItem(6204, "bronze_Ring_Of_Darkness", new Item()); // Deprecated
+        registerADItem(6205, "bronze_Ring_Of_Earth", new Item()); // Deprecated
+        registerADItem(6206, "bronze_Ring_Of_Fire", new Item()); // Deprecated
+        registerADItem(6207, "bronze_Ring_Of_Greed", new Item()); // Deprecated
+        registerADItem(6208, "bronze_Ring_Of_Hope", new Item()); // Deprecated
+        registerADItem(6209, "bronze_Ring_Of_Nature", new Item()); // Deprecated
+        registerADItem(6210, "bronze_Ring_Of_Sea", new Item()); // Deprecated
+        registerADItem(6211, "bronze_Ring_Of_Sky", new Item()); // Deprecated
+        registerADItem(6212, "bronze_Ring_Of_Sunlight", new Item()); // Deprecated
+        registerADItem(6213, "bronze_Ring_Of_Wealth", new Item()); // Deprecated
+        registerADItem(6214, "bronze_Ring_Of_Wind", new Item()); // Deprecated
+        registerADItem(6215, "mithril_Ring_Of_Darkness", new Item()); // Deprecated
+        registerADItem(6216, "mithril_Ring_Of_Earth", new Item()); // Deprecated
+        registerADItem(6217, "mithril_Ring_Of_Fire", new Item()); // Deprecated
+        registerADItem(6218, "mithril_Ring_Of_Greed", new Item()); // Deprecated
+        registerADItem(6219, "mithril_Ring_Of_Hope", new Item()); // Deprecated
+        registerADItem(6220, "mithril_Ring_Of_Nature", new Item()); // Deprecated
+        registerADItem(6221, "mithril_Ring_Of_Sea", new Item()); // Deprecated
+        registerADItem(6222, "mithril_Ring_Of_Sky", new Item()); // Deprecated
+        registerADItem(6223, "mithril_Ring_Of_Sunlight", new Item()); // Deprecated
+        registerADItem(6224, "mithril_Ring_Of_Wealth", new Item()); // Deprecated
+        registerADItem(6225, "mithril_Ring_Of_Wind", new Item()); // Deprecated
+        registerADItem(6226, "anduril", new ItemWeapon(3000, 11));
+        registerADItem(6227, "morgul_Sword", new ItemWeapon(2500, 9));
+        registerADItem(6228, "elven_Long_Sword", new ItemWeapon(1800, 7));
+        registerADItem(6229, "berserker_Sword", new ItemWeapon(1400, 8));
+        registerADItem(6230, "two_Handed_Sword", new ItemWeapon(500, 7));
+        //registerADItem(6231, "green_Flag", new Item());
+        //registerADItem(6232, "hobbit_Bow", new ItemValarBase());
+        //registerADItem(6233, "rohan_sheild_6", (new ItemValarBase().setUnlocalizedName("rohanShield6"));
+        registerADItem(6234, "throwing_Stone", new ItemThrowingStone(1));
+        registerADItem(6235, "rohirrim_Axe", new ItemWeapon(267, 6));
+        //registerADItem(6236, "ecthelions_Boots", new ItemValarArmor(3, 500, 3, 0));
+        registerADItem(6239, "elven_Door", new ItemDoor(Blocks.ELVEN_DOOR));
+        registerADItem(6240, "human_Door", new ItemDoor(Blocks.HUMAN_DOOR));
+        registerADItem(6241, "green_Bed", new ItemCustomBed((BlockCustomBed)Blocks.GREEN_BED));
+        //registerADItem(6242, "one_Ring", new Item());
+        registerADItem(6243, "aicanar", new ItemWeapon(6000, 10));
+        registerADItem(6244, "balins_Sword", new ItemWeapon(1600, 7));
+        registerADItem(6245, "bifurs_Spear", new ItemWeapon(1102, 6));
+        //registerADItem(6246, "bofurs_Spear", new ItemWeapon(1182, 6));
+        registerADItem(6247, "bomburs_Spoon", new ItemWeapon(321, 4));
+        registerADItem(6248, "doris_Sword", new ItemWeapon(1500, 5));
+        registerADItem(6249, "dwalins_Axe", new ItemWeapon(1700, 7));
+        registerADItem(6250, "filis_Knife", new ItemWeapon(112, 4));
+        registerADItem(6251, "filis_Sword", new ItemWeapon(1111, 6));
+        registerADItem(6252, "kilis_Sword", new ItemWeapon(1111, 6));
+        registerADItem(6253, "noris_Club", new ItemWeapon(861, 5));
+        registerADItem(6254, "oins_Staff", new ItemWeapon(922, 6));
+        registerADItem(6255, "orcrist", new ItemWeapon(8001, 12));
+        registerADItem(6256, "sword_Of_Westernesse", new ItemWeapon(3200, 8));
+        registerADItem(6257, "thorins_Sword", new ItemWeapon(1200, 6));
+        registerADItem(6258, "thrains_War_Hammer", new ItemWeapon(1288, 6));
+        registerADItem(6259, "thrors_War_Hammer", new ItemWeapon(1428, 7));
+        registerADItem(6260, "aragorns_Elf_Knife", new ItemWeapon(1300, 5));
+        registerADItem(6261, "eowyns_Sword", new ItemWeapon(1261, 6));
+        registerADItem(6262, "gandalf_The_Greys_Staff", new ItemWeapon(3000, 9));
+        registerADItem(6263, "gandalf_The_Whites_Staff", new ItemWeapon(5000, 11));
+        registerADItem(6264, "gimlis_Two_Headed_Axe", new ItemWeapon(2000, 9));
+        registerADItem(6265, "gimlis_Longaxe", new ItemWeapon(1700, 7));
+        registerADItem(6266, "glamdring", new ItemWeapon(3200, 11));
+        registerADItem(6267, "gloins_Axe", new ItemWeapon(1700, 7));
+        registerADItem(6268, "glorfindels_Sword", new ItemWeapon(3600, 9));
+        registerADItem(6269, "guthwine", new ItemWeapon(1732, 8));
+        registerADItem(6270, "hadhafang", new ItemWeapon(3400, 10));
+        //registerADItem(6271, "herugrim", new ItemValarBase());
+        registerADItem(6272, "legolas_Sword", new ItemWeapon(2900, 9));
+        registerADItem(6273, "radagasts_Staff", new ItemWeapon(3100, 8));
+        registerADItem(6274, "lurtz_Sword", new ItemWeapon(1870, 8));
+        registerADItem(6275, "saurons_Mace", new ItemWeapon(7500, 13));
+        registerADItem(6276, "sarumans_Staff", new ItemWeapon(4500, 10));
+        registerADItem(6277, "yaznegs_Axe", new ItemWeapon(830, 6));
+        registerADItem(6278, "dwarven_Lord_Knife", new ItemWeapon(1200, 4));
+        registerADItem(6279, "gondorian_Noble_Sword", new ItemWeapon(1400, 7));
+        registerADItem(6280, "mace_Of_Glory", new ItemWeapon(2100, 8));
+        registerADItem(6281, "golden_War_Hammer_Of_Erebor", new ItemWeapon(2800, 7));
+        registerADItem(6282, "gondorian_Spear", new ItemWeapon(1000, 6));
+        registerADItem(6283, "rohirrim_Spear", new ItemWeapon(1040, 6));
+        registerADItem(6284, "bull_Head_Mace", new ItemWeapon(1091, 6));
+        registerADItem(6285, "corsair_Eket", new ItemWeapon(1133, 7));
+        registerADItem(6286, "dol_Guldur_Spiked_Mace", new ItemWeapon(981, 6));
+        registerADItem(6287, "fell_Wargrider_Sword", new ItemWeapon(991, 6));
+        registerADItem(6288, "haradrim_Snake_Dagger", new ItemWeapon(777, 5));
+        registerADItem(6289, "north_Goblin_Mace", new ItemWeapon(531, 5));
+        registerADItem(6290, "north_Goblin_Sword", new ItemWeapon(772, 5));
+        registerADItem(6291, "orc_Captain_Sword", new ItemWeapon(1130, 7));
+        registerADItem(6292, "orc_Dagger", new ItemWeapon(103, 4));
+        registerADItem(6293, "orc_Halbard", new ItemWeapon(605, 7));
+        registerADItem(6294, "uruk_Siege_Trooper_Dagger", new ItemWeapon(1041, 5));
+        //registerADItem(6295, "orc_Spawner", new ItemValarBase();
+        registerADItem(6296, "iron_Mace", new ItemWeapon(387, 7));
+        registerADItem(6297, "orc_Sword_3", new ItemWeapon(837, 6));
+        //registerADItem(6298, "morannon_Orc_Shield", new Item());
+        registerADItem(6299, "morannon_Dagger", new ItemWeapon(99, 3));
+        registerADItem(6300, "orc_Spear", new ItemWeapon(123, 6));
+        //registerADItem(6301, "net", new Item());
+        //registerADItem(6302, "erus_Staff", new ItemValarErusStaff());
+        registerADItem(6303, "castle_Door", new ItemDoor(Blocks.CASTLE_DOOR));
+        registerADItem(6304, "dol_Guldur_Prison_Door", new ItemDoor(Blocks.DOL_GULDUR_PRISON_DOOR));
+        registerADItem(6305, "hillmen_Door", new ItemDoor(Blocks.HILLMEN_DOOR));
+        registerADItem(6306, "mordor_Door", new ItemDoor(Blocks.MORDOR_DOOR));
+        registerADItem(6307, "prison_Door", new ItemDoor(Blocks.PRISON_DOOR));
+        registerADItem(6308, "sindar_Door", new ItemDoor(Blocks.SINDAR_DOOR));
+        registerADItem(6309, "southlinch_Seed", new ItemSeeds(Blocks.SOUTHLINCH, Blocks.FARMLAND));
+        registerADItem(6310, "green_Grape_Seed", new ItemStakeSeeds(Blocks.GREEN_GRAPE, Blocks.FARMLAND));
+        registerADItem(6311, "green_Grapes", new ItemCustomFood(2, 0.3F, false));
+        registerADItem(6312, "purple_Grape_Seed", new ItemStakeSeeds(Blocks.PURPLE_GRAPE, Blocks.FARMLAND));
+        registerADItem(6313, "purple_Grapes", new ItemCustomFood(2, 0.3F, false));
+        registerADItem(6314, "pipeweed_Seed", new ItemSeeds(Blocks.PIPEWEED_PLANT, Blocks.FARMLAND));
+        registerADItem(6315, "peas", new ItemSeedFood(1, 0.1F, Blocks.PEA_PLANT, Blocks.FARMLAND) {
         	public int getHealAmount(ItemStack stack)
             {
                 return this.itemRand.nextInt(6) == 0 ? 1 : 0;
             }
-        }).setUnlocalizedName("peas"));
-        registerItem(6316, "pea_pod", (new ItemCustomFood(1, 0.6F, false)).setUnlocalizedName("peaPod").setCreativeTab(CreativeTabs.FOOD));
-        registerItem(6317, "leek", (new ItemCustomFood(3, 0.6F, false)).setUnlocalizedName("leek").setCreativeTab(CreativeTabs.FOOD));
-        registerItem(6318, "leek_seed", (new ItemSeeds(Blocks.LEEK_PLANT, Blocks.FARMLAND)).setUnlocalizedName("leekSeed"));
-        registerItem(6319, "onion_seed", (new ItemSeeds(Blocks.ONION_PLANT, Blocks.FARMLAND)).setUnlocalizedName("onionSeed"));
-        registerItem(6320, "onion", (new ItemCustomFood(3, 0.6F, false)).setUnlocalizedName("onion").setCreativeTab(CreativeTabs.FOOD));
-        registerItem(6321, "old_toby_seed", (new ItemSeeds(Blocks.OLD_TOBY_PLANT, Blocks.FARMLAND)).setUnlocalizedName("oldTobySeed"));
-        registerItem(6322, "southern_star_seed", (new ItemSeeds(Blocks.SOUTHERN_STAR_PLANT, Blocks.FARMLAND)).setUnlocalizedName("southernStarSeed"));
-        registerItem(6323, "strawberry_seed", (new ItemSeeds(Blocks.STRAWBERRY_BUSH, Blocks.FARMLAND)).setUnlocalizedName("strawberrySeed"));
-        //registerItem(6324, "azogs_mace", (new ItemValarWeapon(3500, 7, 0, true, false)).setUnlocalizedName("azogsMace").setTextureName("azogs_mace"));
-        registerItem(6325, "ring", (new ItemRing()).setUnlocalizedName("ring"));
-        registerItem(6326, "elven_steel_ingot", (new Item()).setUnlocalizedName("elvenSteelIngot").setCreativeTab(CreativeTabs.MATERIALS));
+        });
+        registerADItem(6316, "pea_Pod", new ItemCustomFood(1, 0.6F, false));
+        registerADItem(6317, "leek", new ItemCustomFood(3, 0.6F, false));
+        registerADItem(6318, "leek_Seed", new ItemSeeds(Blocks.LEEK_PLANT, Blocks.FARMLAND));
+        registerADItem(6319, "onion_Seed", new ItemSeeds(Blocks.ONION_PLANT, Blocks.FARMLAND));
+        registerADItem(6320, "onion", new ItemCustomFood(3, 0.6F, false));
+        registerADItem(6321, "old_Toby_Seed", new ItemSeeds(Blocks.OLD_TOBY_PLANT, Blocks.FARMLAND));
+        registerADItem(6322, "southern_Star_Seed", new ItemSeeds(Blocks.SOUTHERN_STAR_PLANT, Blocks.FARMLAND));
+        registerADItem(6323, "strawberry_Seed", new ItemSeeds(Blocks.STRAWBERRY_BUSH, Blocks.FARMLAND));
+        //registerADItem(6324, "azogs_Mace", new ItemValarWeapon(3500, 7, 0, true, false));
+        registerADItem(6325, "ring", new ItemRing());
+        registerADItem(6326, "elven_Steel_Ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
         // Temporary Id, change to proper id when adding items
-        //registerItem(10002, "rucksack", (new ItemValarRucksack()).setUnlocalizedName("rucksack").setTextureName("rucksack"));
-        //registerItem(10003, "frodos_finger", (new ItemValarFood(2, 0.1F, true).setUnlocalizedName("frodosFinger").setTextureName("frodos_finger")));
-        //registerItem(10004, "two_handed_sword", (new ItemValarWeapon(1, 20, 0, true).setUnlocalizedName("twoHandedSword").setTextureName("two_handed_sword")));
-        //registerItem(10005, "easterling_helmet", (new ItemValarArmor(0, 1000, 2, 0).setUnlocalizedName("easterlingHelmet").setTextureName("easterling_helmet")));
-        //registerItem(10006, "miruvoir", (new ItemValarDrinkable(Items.glass_bottle).setUnlocalizedName("miruvoir").setTextureName("miruvoir")));
-        registerItem(10007, "rohan_boots", (new ItemCustomArmor(EntityEquipmentSlot.FEET, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.FEET)).setUnlocalizedName("rohanBoots")));
-        registerItem(10008, "rohan_leggings", (new ItemCustomArmor(EntityEquipmentSlot.LEGS, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.LEGS)).setUnlocalizedName("rohanLeggings")));
+        //registerADItem(10003, "frodos_Finger", new ItemValarFood(2, 0.1F, true));
+        //registerADItem(10004, "two_Handed_Sword", new ItemValarWeapon(1, 20, 0, true));
+        //registerADItem(10005, "easterling_Helmet", new ItemValarArmor(0, 1000, 2, 0));
+        //registerADItem(10006, "miruvoir", new ItemValarDrinkable(Items.glass_bottle));
+        registerADItem(10007, "rohan_Boots", new ItemCustomArmor(EntityEquipmentSlot.FEET, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.FEET)));
+        registerADItem(10008, "rohan_Leggings", new ItemCustomArmor(EntityEquipmentSlot.LEGS, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.LEGS)));
         // End Awaken Dreams code
     }
 
@@ -1648,6 +1648,25 @@ public class Item
     {
         registerItem(id, new ResourceLocation(textualID), itemIn);
     }
+    
+    // Begin Awaken Dreams code
+    /**
+     * @param mixedId Requires format of _ instead of spaces and camel caps. Ex: item_Name
+     */
+    private static void registerADItem(int id, String mixedId, Item itemIn)
+    {
+    		registerADItem(id, mixedId.toLowerCase(), mixedId.replace("_", ""), itemIn);
+    }
+    
+    private static void registerADItem(int id, String textualID, String unlocalizedName, Item itemIn)
+    {
+    		if(unlocalizedName != null)
+    		{
+    			itemIn.setUnlocalizedName(unlocalizedName);
+    		}
+    		registerItem(id, new ADResourceLocation(textualID), itemIn);
+    }
+    // End Awaken Dreams code
 
     private static void registerItem(int id, ResourceLocation textualID, Item itemIn)
     {

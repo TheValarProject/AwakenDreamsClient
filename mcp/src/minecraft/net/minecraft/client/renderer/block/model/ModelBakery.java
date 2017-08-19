@@ -421,7 +421,7 @@ public class ModelBakery
         ArrayList<String> ringNames = new ArrayList<String>();
         for(ItemStack ring : rings)
         {
-        	ringNames.add(ring.getUnlocalizedName().substring(5).replace('.', '_'));
+        		ringNames.add("awakendreams:" + ring.getUnlocalizedName().substring(5).replace('.', '_'));
         }
         this.variantNames.put(Items.RING, ringNames);
         
@@ -430,11 +430,12 @@ public class ModelBakery
         ArrayList<String> pipeNames = new ArrayList<String>();
         for(ItemStack pipe : pipes)
         {
-        	//System.out.println("stacks" + pipe.getMName().substring(5).replace('.', '_'));
-        	pipeNames.add(Items.PIPE.getModelName(pipe));
+	        	//System.out.println("stacks" + pipe.getMName().substring(5).replace('.', '_'));
+	        	pipeNames.add("awakendreams:" + Items.PIPE.getModelName(pipe));
         }
         this.variantNames.put(Items.PIPE, pipeNames);
-        this.variantNames.put(Item.getItemFromBlock(Blocks.CUSTOM_CRAFTING_TABLE), Lists.newArrayList(new String[] {"elven_crafting_table", "human_crafting_table", "gondorian_crafting_table", "rohirrim_crafting_table", "hobbit_crafting_table", "mordor_crafting_table", "isengard_crafting_table", "goblin_crafting_table"}));
+        
+        this.variantNames.put(Item.getItemFromBlock(Blocks.CUSTOM_CRAFTING_TABLE), Lists.newArrayList(new String[] {"awakendreams:elven_crafting_table", "awakendreams:human_crafting_table", "awakendreams:gondorian_crafting_table", "awakendreams:rohirrim_crafting_table", "awakendreams:hobbit_crafting_table", "awakendreams:mordor_crafting_table", "awakendreams:isengard_crafting_table", "awakendreams:goblin_crafting_table"}));
         // End Awaken Dreams code
     }
 

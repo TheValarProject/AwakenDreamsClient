@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "awakendreams:items/elven_long_sword"
+    }
+}
