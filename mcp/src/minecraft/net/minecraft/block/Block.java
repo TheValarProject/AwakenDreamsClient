@@ -16,6 +16,7 @@ import com.elementfx.tvp.ad.block.BlockLamp;
 import com.elementfx.tvp.ad.block.BlockStakePlant;
 import com.elementfx.tvp.ad.block.BlockStakes;
 import com.elementfx.tvp.ad.block.BlockWaterWheel;
+import com.elementfx.tvp.ad.util.ADResourceLocation;
 import com.google.common.collect.Sets;
 
 import java.util.Arrays;
@@ -1364,7 +1365,7 @@ public class Block
         registerBlock(217, "structure_void", (new BlockStructureVoid()).setUnlocalizedName("structureVoid"));
         registerBlock(255, "structure_block", (new BlockStructure()).setBlockUnbreakable().setResistance(6000000.0F).setUnlocalizedName("structureBlock"));
         // Being Awaken Dreams code
-        registerBlock(500, "jade_ore", (new BlockCustomOre()).setUnlocalizedName("oreJade"));
+        registerADBlock(500, "jade_Ore", new BlockCustomOre());
         registerBlock(501, "amber_ore", (new BlockCustomOre()).setUnlocalizedName("oreAmber"));
         registerBlock(502, "tanzanite_ore", (new BlockCustomOre()).setUnlocalizedName("oreTanzanite"));
         registerBlock(503, "permanent_dirt", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("permanentDirt")); // Deprecated in favor of coarse dirt
@@ -1700,6 +1701,25 @@ public class Block
     {
         registerBlock(id, new ResourceLocation(textualID), block_);
     }
+    
+    // Begin Awaken Dreams code
+    /**
+     * @param mixedId Requires format of _ instead of spaces and camel caps. Ex: block_Name
+     */
+    private static void registerADBlock(int id, String mixedId, Block block_)
+    {
+    		registerADBlock(id, mixedId.toLowerCase(), mixedId.replace("_", ""), block_);
+    }
+    
+    private static void registerADBlock(int id, String textualID, String unlocalizedName, Block block_)
+    {
+    		if(unlocalizedName != null)
+    		{
+    			block_.setUnlocalizedName(unlocalizedName);
+    		}
+    		registerBlock(id, new ADResourceLocation(textualID), block_);
+    }
+    // End Awaken Dreams code
 
     public static enum EnumOffsetType
     {

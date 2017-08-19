@@ -3228,7 +3228,7 @@ tile.woolCarpet.white.name=Tapis blanc
 tile.woolCarpet.yellow.name=Tapis jaune
 tile.workbench.name=Établi
 
-tile.oreJade=Minerai de jade
+tile.jadeOre=Minerai de jade
 tile.oreAmber.name=Minerai d'ambre
 tile.oreTanzanite.name=Minerai de tanzanite
 tile.permanentDirt=Terre permanente

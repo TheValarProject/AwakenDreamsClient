@@ -3,6 +3,7 @@ package net.minecraft.init;
 import com.elementfx.tvp.ad.block.BlockCustomBed;
 import com.elementfx.tvp.ad.block.BlockCustomCrops;
 import com.elementfx.tvp.ad.block.BlockCustomDoor;
+import com.elementfx.tvp.ad.util.ADResourceLocation;
 import com.google.common.collect.Sets;
 import java.util.Set;
 import javax.annotation.Nullable;
@@ -540,6 +541,22 @@ public class Blocks
             return block;
         }
     }
+    
+    // Begin Awaken Dreams code
+    private static Block getRegisteredADBlock(String blockName)
+    {
+    		Block block = (Block)Block.REGISTRY.getObject(new ADResourceLocation(blockName));
+    		
+    		if (!CACHE.add(block))
+    		{
+    			throw new IllegalStateException("Invalid Block requested: " + blockName);
+    		}
+    		else
+    		{
+    			return block;
+    		}
+    }
+    // End Awaken Dreams code
 
     static
     {
@@ -770,7 +787,7 @@ public class Blocks
             field_189881_dj = getRegisteredBlock("structure_void");
             STRUCTURE_BLOCK = getRegisteredBlock("structure_block");
             // Begin Awaken Dreams code
-            JADE_ORE = getRegisteredBlock("jade_ore");
+            JADE_ORE = getRegisteredADBlock("jade_ore");
             AMBER_ORE = getRegisteredBlock("amber_ore");
             TANZANITE_ORE = getRegisteredBlock("tanzanite_ore");
             PERMANENT_DIRT = getRegisteredBlock("permanent_dirt");

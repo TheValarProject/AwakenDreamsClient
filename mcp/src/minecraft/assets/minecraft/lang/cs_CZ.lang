@@ -3206,7 +3206,7 @@ tile.woolCarpet.white.name=Koberec
 tile.woolCarpet.yellow.name=Žlutý koberec
 tile.workbench.name=Pracovní stůl
 
-tile.oreJade.name=Ložisko Nefritu
+tile.jadeOre.name=Ložisko Nefritu
 tile.oreAmber.name=Ložisko Jantaru
 tile.oreTanzanite.name=Ložisko Tanzanitu
 tile.permanentDirt.name=Trvalá hlína

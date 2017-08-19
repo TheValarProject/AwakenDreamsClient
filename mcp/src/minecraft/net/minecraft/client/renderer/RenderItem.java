@@ -114,6 +114,16 @@ public class RenderItem implements IResourceManagerReloadListener
     {
     		this.itemModelMesher.register(itm, subType, new ModelResourceLocation(new ADResourceLocation(identifier), "inventory"));
     }
+    
+    protected void registerADBlock(Block blk, int subType, String identifier)
+    {
+        this.registerADItem(Item.getItemFromBlock(blk), subType, identifier);
+    }
+
+    private void registerADBlock(Block blk, String identifier)
+    {
+        this.registerADBlock(blk, 0, identifier);
+    }
     // End Awaken Dreams code
 
     protected void registerBlock(Block blk, int subType, String identifier)
@@ -820,7 +830,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerBlock(Blocks.TRAPPED_CHEST, "trapped_chest");
         this.registerBlock(Blocks.ENDER_CHEST, "ender_chest");
         // Begin Awaken Dreams code
-        this.registerBlock(Blocks.JADE_ORE, "jade_ore");
+        this.registerADBlock(Blocks.JADE_ORE, "jade_ore");
         this.registerBlock(Blocks.AMBER_ORE, "amber_ore");
         this.registerBlock(Blocks.TANZANITE_ORE, "tanzanite_ore");
         this.registerBlock(Blocks.PERMANENT_DIRT, "permanent_dirt");

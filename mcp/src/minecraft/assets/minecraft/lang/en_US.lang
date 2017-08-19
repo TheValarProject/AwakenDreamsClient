@@ -848,7 +848,7 @@ tile.boneBlock.name=Bone Block
 tile.structureVoid.name=Structure Void
 tile.structureBlock.name=Structure Block
 
-tile.oreJade.name=Jade Ore
+tile.jadeOre.name=Jade Ore
 tile.oreAmber.name=Amber Ore
 tile.oreTanzanite.name=Tanzanite Ore
 tile.permanentDirt.name=Permanent Dirt
