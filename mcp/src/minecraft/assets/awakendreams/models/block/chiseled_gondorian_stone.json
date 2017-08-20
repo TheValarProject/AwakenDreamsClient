@@ -1,0 +1,6 @@
+{
+    "parent": "awakendreams:block/cube_circle",
+    "textures": {
+        "all": "awakendreams:blocks/chiseled_gondorian_stone"
+    }
+}

@@ -1,6 +1,0 @@
-{
-    "parent": "block/stake_plant",
-    "textures": {
-        "plant": "blocks/green_grape_stage_3"
-    }
-}

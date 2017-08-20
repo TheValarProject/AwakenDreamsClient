@@ -1,0 +1,9 @@
+{
+    "variants": {
+      "age=0": { "model": "awakendreams:purple_grape_stage0" },
+      "age=1": { "model": "awakendreams:purple_grape_stage1" },
+      "age=2": { "model": "awakendreams:purple_grape_stage2" },
+      "age=3": { "model": "awakendreams:purple_grape_stage3" },
+      "age=4": { "model": "awakendreams:purple_grape_stage4" }
+    }
+}

@@ -1,6 +1,0 @@
-{
-    "parent": "block/cross",
-    "textures": {
-        "cross": "blocks/pipeweed_plant_stage_0"
-    }
-}

@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top",
+    "textures": {
+        "bottom": "awakendreams:blocks/dwarf_door_lower",
+        "top": "awakendreams:blocks/dwarf_door_upper"
+    }
+}

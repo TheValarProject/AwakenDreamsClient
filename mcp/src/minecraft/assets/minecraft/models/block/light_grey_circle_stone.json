@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_circle",
-    "textures": {
-        "all": "blocks/light_grey_circle_stone"
-    }
-}

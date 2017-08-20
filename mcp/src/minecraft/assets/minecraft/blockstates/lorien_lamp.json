@@ -1,8 +1,0 @@
-{
-    "variants": {
-        "facing=south": { "model": "lorien_lamp", "y": 90 },
-        "facing=west": { "model": "lorien_lamp", "y": 180 },
-        "facing=north": { "model": "lorien_lamp", "y": 270 },
-        "facing=east": { "model": "lorien_lamp", "y": 0 }
-    }
-}

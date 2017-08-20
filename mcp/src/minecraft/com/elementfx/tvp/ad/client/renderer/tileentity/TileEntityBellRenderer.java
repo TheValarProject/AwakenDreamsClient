@@ -12,7 +12,7 @@ import net.minecraft.util.math.BlockPos;
 
 public class TileEntityBellRenderer extends TileEntitySpecialRenderer<TileEntityBell>
 {
-    private static final ResourceLocation TEXTURE_BELL = new ResourceLocation("textures/blocks/bell.png");
+    private static final ResourceLocation TEXTURE_BELL = new ResourceLocation("awakendreams:textures/blocks/bell.png");
     private final ModelBell modelBell = new ModelBell();
 
     public void renderTileEntityAt(TileEntityBell te, double x, double y, double z, float partialTicks, int destroyStage)

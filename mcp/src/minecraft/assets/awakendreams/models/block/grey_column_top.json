@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "awakendreams:blocks/grey_column_top",
+        "side": "awakendreams:blocks/grey_column_top_side"
+    }
+}

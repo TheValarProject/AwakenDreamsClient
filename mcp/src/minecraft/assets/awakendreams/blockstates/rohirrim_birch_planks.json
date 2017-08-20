@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "awakendreams:rohirrim_birch_planks", "y": 90 },
+        "facing=west": { "model": "awakendreams:rohirrim_birch_planks", "y": 180 },
+        "facing=north": { "model": "awakendreams:rohirrim_birch_planks", "y": 270 },
+        "facing=east": { "model": "awakendreams:rohirrim_birch_planks", "y": 0 }
+    }
+}

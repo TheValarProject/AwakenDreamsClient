@@ -1,8 +1,0 @@
-{
-    "variants": {
-        "facing=south": { "model": "archet_lamp", "y": 90 },
-        "facing=west": { "model": "archet_lamp", "y": 180 },
-        "facing=north": { "model": "archet_lamp", "y": 270 },
-        "facing=east": { "model": "archet_lamp", "y": 0 }
-    }
-}

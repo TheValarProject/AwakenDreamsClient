@@ -1,7 +1,0 @@
-{
-    "parent": "block/door_bottom_rh",
-    "textures": {
-        "bottom": "blocks/castle_door_lower",
-        "top": "blocks/castle_door_upper"
-    }
-}

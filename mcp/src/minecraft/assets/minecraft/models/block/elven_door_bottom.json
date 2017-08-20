@@ -1,7 +1,0 @@
-{
-    "parent": "block/door_bottom",
-    "textures": {
-        "bottom": "blocks/elven_door_lower",
-        "top": "blocks/elven_door_upper"
-    }
-}

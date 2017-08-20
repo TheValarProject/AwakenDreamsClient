@@ -1,0 +1,6 @@
+{
+    "parent": "awakendreams:block/raised_crop",
+    "textures": {
+        "crop": "awakendreams:blocks/athelas"
+    }
+}

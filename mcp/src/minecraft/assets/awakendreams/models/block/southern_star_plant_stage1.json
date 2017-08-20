@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "awakendreams:blocks/southern_star_plant_stage_1"
+    }
+}

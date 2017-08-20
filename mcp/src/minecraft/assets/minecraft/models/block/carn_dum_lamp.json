@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "blocks/carn_dum_lamp"
-    }
-}

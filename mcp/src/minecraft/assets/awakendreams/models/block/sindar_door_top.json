@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top",
+    "textures": {
+        "bottom": "awakendreams:blocks/sindar_door_lower",
+        "top": "awakendreams:blocks/sindar_door_upper"
+    }
+}
