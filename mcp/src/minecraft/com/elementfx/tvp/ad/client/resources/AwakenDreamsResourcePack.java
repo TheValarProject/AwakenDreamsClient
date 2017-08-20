@@ -1,5 +1,6 @@
 package com.elementfx.tvp.ad.client.resources;
 
+import com.elementfx.tvp.ad.util.ADResourceLocation;
 import com.google.common.collect.ImmutableSet;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -19,7 +20,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class AwakenDreamsResourcePack implements IResourcePack
 {
-    public static final Set<String> DEFAULT_RESOURCE_DOMAINS = ImmutableSet.<String>of("minecraft", "awakendreams");
+    public static final Set<String> DEFAULT_RESOURCE_DOMAINS = ImmutableSet.<String>of("awakendreams");
     private final ResourceIndex resourceIndex;
 
     public AwakenDreamsResourcePack(ResourceIndex resourceIndexIn)
@@ -78,7 +79,7 @@ public class AwakenDreamsResourcePack implements IResourcePack
         {
 //        	ResourceLocation location = new ResourceLocation("awakendreams:pack.mcmeta");
             //InputStream inputstream = new FileInputStream("/assets/" + location.getResourceDomain() + "/" + location.getResourcePath());
-        	InputStream inputstream = this.getResourceStream(new ResourceLocation("awakendreams:pack.mcmeta"));
+        		InputStream inputstream = this.getResourceStream(new ADResourceLocation("pack.mcmeta"));
             return AbstractResourcePack.readMetadata(metadataSerializer, inputstream, metadataSectionName);
         }
         catch (RuntimeException var4)
@@ -93,7 +94,7 @@ public class AwakenDreamsResourcePack implements IResourcePack
 
     public BufferedImage getPackImage() throws IOException
     {
-        return TextureUtil.readBufferedImage(this.getResourceStream(new ResourceLocation("textures/misc/adpack.png")));
+        return TextureUtil.readBufferedImage(this.getResourceStream(new ADResourceLocation("textures/misc/adpack.png")));
     }
 
     public String getPackName()
