@@ -1,5 +1,6 @@
 package net.minecraft.client.gui;
 
+import com.elementfx.tvp.ad.util.ADResourceLocation;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
@@ -56,7 +57,7 @@ public class GuiIngame extends Gui
     private static final ResourceLocation WIDGETS_TEX_PATH = new ResourceLocation("textures/gui/widgets.png");
     private static final ResourceLocation PUMPKIN_BLUR_TEX_PATH = new ResourceLocation("textures/misc/pumpkinblur.png");
     // Begin Awaken Dreams code
-    private static final ResourceLocation TELESCOPE_BLUR_TEX_PATH = new ResourceLocation("textures/misc/telescopeblur.png");
+    private static final ResourceLocation TELESCOPE_BLUR_TEX_PATH = new ADResourceLocation("textures/misc/telescopeblur.png");
     // End Awaken Dreams code
     private final Random rand = new Random();
     private final Minecraft mc;
