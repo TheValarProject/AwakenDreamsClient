@@ -1,6 +1,7 @@
 package com.elementfx.tvp.ad.client.renderer.entity;
 
 import com.elementfx.tvp.ad.entity.passive.EntityDuck;
+import com.elementfx.tvp.ad.util.ADResourceLocation;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.renderer.entity.RenderLiving;
@@ -11,7 +12,7 @@ import net.minecraft.util.math.MathHelper;
 
 public class RenderDuck extends RenderLiving<EntityDuck>
 {
-    private static final ResourceLocation DUCK_TEXTURES = new ResourceLocation("textures/entity/duck.png");
+    private static final ResourceLocation DUCK_TEXTURES = new ADResourceLocation("textures/entity/duck.png");
 
     public RenderDuck(RenderManager renderManagerIn, ModelBase modelBaseIn, float shadowSizeIn)
     {
