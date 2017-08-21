@@ -1,6 +1,8 @@
 package com.elementfx.tvp.ad.client.gui.inventory;
 
 import com.elementfx.tvp.ad.inventory.ContainerCustomWorkbench;
+import com.elementfx.tvp.ad.util.ADResourceLocation;
+
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.resources.I18n;
@@ -36,7 +38,7 @@ public class GuiCustomCrafting extends GuiContainer
     	this.fontColor = fontColorIn;
     	this.xSize = xSizeIn;
     	this.ySize = ySizeIn;
-    	CUSTOM_CRAFTING_TABLE_GUI_TEXTURES = new ResourceLocation("textures/gui/container/" + typeIdentifier + "_crafting_table.png");
+    	CUSTOM_CRAFTING_TABLE_GUI_TEXTURES = new ADResourceLocation("textures/gui/container/" + typeIdentifier + "_crafting_table.png");
     		
     }
 

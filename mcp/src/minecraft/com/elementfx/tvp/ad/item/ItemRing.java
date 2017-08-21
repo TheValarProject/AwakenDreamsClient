@@ -21,21 +21,21 @@ public class ItemRing extends Item
      * Returns the unlocalized name of this item. This version accepts an ItemStack so different stacks can have
      * different names based on their damage or NBT.
      */
-    public String getUnlocalizedName(ItemStack stack)
-    {
-    	EnumRingBase base = EnumRingBase.fromMetadata(stack.getMetadata());
-        EnumRingStone stone;
-        if(stack.hasTagCompound())
-        {
-        	stone = EnumRingStone.fromId(stack.getTagCompound().getInteger("Stone"));
-        }
-        else
-        {
-        	stone = EnumRingStone.NONE;
-        }
-        return super.getUnlocalizedName() + "." + base.getUnlocalizedName() + (stone == EnumRingStone.NONE ? "" : "." + stone.getUnlocalizedName());
-    }
-    
+	public String getUnlocalizedName(ItemStack stack)
+	{
+		EnumRingBase base = EnumRingBase.fromMetadata(stack.getMetadata());
+		EnumRingStone stone;
+		if(stack.hasTagCompound())
+		{
+			stone = EnumRingStone.fromId(stack.getTagCompound().getInteger("Stone"));
+		}
+		else
+		{
+			stone = EnumRingStone.NONE;
+		}
+		return super.getUnlocalizedName() + "." + base.getUnlocalizedName() + (stone == EnumRingStone.NONE ? "" : "." + stone.getUnlocalizedName());
+	}
+
     /**
      * returns a list of items with the same ID, but different meta (eg: dye returns 16 items)
      */

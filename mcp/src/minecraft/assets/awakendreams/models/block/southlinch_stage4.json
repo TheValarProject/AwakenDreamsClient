@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "awakendreams:blocks/southlinch_stage_4"
+    }
+}

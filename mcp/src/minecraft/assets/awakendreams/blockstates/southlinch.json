@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "age=0": { "model": "awakendreams:southlinch_stage0" },
+        "age=1": { "model": "awakendreams:southlinch_stage1" },
+        "age=2": { "model": "awakendreams:southlinch_stage2" },
+        "age=3": { "model": "awakendreams:southlinch_stage3" },
+        "age=4": { "model": "awakendreams:southlinch_stage4" }
+    }
+}

@@ -1,6 +1,0 @@
-{
-    "parent": "block/cross",
-    "textures": {
-        "cross": "blocks/leek_plant_stage_1"
-    }
-}

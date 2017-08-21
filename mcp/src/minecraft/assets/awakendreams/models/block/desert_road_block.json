@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "awakendreams:blocks/desert_road_block"
+    }
+}

@@ -52,7 +52,7 @@ rm -rf META-INF
 cp -a ../reobf/minecraft/. .
 
 # Add the mod's assets from mcp/src/minecraft/assets to the existing minecraft assets in mcp/build/assets
-rsync -aP ../src/minecraft/assets/ assets/
+cp -aP ../src/minecraft/assets/awakendreams assets/awakendreams
 
 # Make directory for future versions subfolder
 mkdir ../$VN

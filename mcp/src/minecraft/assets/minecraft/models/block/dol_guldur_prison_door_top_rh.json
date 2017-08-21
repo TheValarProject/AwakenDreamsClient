@@ -1,7 +1,0 @@
-{
-    "parent": "block/door_top_rh",
-    "textures": {
-        "bottom": "blocks/dol_guldur_prison_door_lower",
-        "top": "blocks/dol_guldur_prison_door_upper"
-    }
-}

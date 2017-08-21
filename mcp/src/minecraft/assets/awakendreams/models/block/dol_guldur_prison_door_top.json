@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top",
+    "textures": {
+        "bottom": "awakendreams:blocks/dol_guldur_prison_door_lower",
+        "top": "awakendreams:blocks/dol_guldur_prison_door_upper"
+    }
+}

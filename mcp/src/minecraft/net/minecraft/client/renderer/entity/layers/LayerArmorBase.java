@@ -151,7 +151,7 @@ public abstract class LayerArmorBase<T extends ModelBase> implements LayerRender
     private ResourceLocation getArmorResource(ItemArmor armor, boolean p_177178_2_, String p_177178_3_)
     {
     	// Begin Awaken Dreams code
-        String s = String.format("textures/models/armor/%s_layer_%d%s.png", new Object[] {armor instanceof ItemCustomArmor ? ((ItemCustomArmor)armor).getTextureName() : armor.getArmorMaterial().getName(), Integer.valueOf(p_177178_2_ ? 2 : 1), p_177178_3_ == null ? "" : String.format("_%s", new Object[]{p_177178_3_})});
+        String s = String.format("%stextures/models/armor/%s_layer_%d%s.png", new Object[] {armor instanceof ItemCustomArmor ? "awakendreams:" : "", armor instanceof ItemCustomArmor ? ((ItemCustomArmor)armor).getTextureName() : armor.getArmorMaterial().getName(), Integer.valueOf(p_177178_2_ ? 2 : 1), p_177178_3_ == null ? "" : String.format("_%s", new Object[]{p_177178_3_})});
         // End Awaken Dreams code
         ResourceLocation resourcelocation = (ResourceLocation)ARMOR_TEXTURE_RES_MAP.get(s);
 

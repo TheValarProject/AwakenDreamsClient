@@ -1,6 +1,0 @@
-{
-    "parent": "block/cross",
-    "textures": {
-        "cross": "blocks/southern_star_plant_stage_2"
-    }
-}

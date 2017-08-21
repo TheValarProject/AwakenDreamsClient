@@ -1,8 +1,0 @@
-{
-    "variants": {
-        "facing=south": { "model": "hobbit_lamp_1", "y": 90 },
-        "facing=west": { "model": "hobbit_lamp_1", "y": 180 },
-        "facing=north": { "model": "hobbit_lamp_1", "y": 270 },
-        "facing=east": { "model": "hobbit_lamp_1", "y": 0 }
-    }
-}

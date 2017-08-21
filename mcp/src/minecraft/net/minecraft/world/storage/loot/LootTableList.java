@@ -1,5 +1,6 @@
 package net.minecraft.world.storage.loot;
 
+import com.elementfx.tvp.ad.util.ADResourceLocation;
 import com.google.common.collect.Sets;
 import java.util.Collections;
 import java.util.Set;
@@ -80,7 +81,12 @@ public class LootTableList
     public static final ResourceLocation GAMEPLAY_FISHING_TREASURE = register("gameplay/fishing/treasure");
     public static final ResourceLocation GAMEPLAY_FISHING_FISH = register("gameplay/fishing/fish");
     // Begin Awaken Dreams code
-    public static final ResourceLocation ENTITIES_DUCK = register("entities/duck");
+    public static final ResourceLocation ENTITIES_DUCK = registerAD("entities/duck");
+    
+    private static ResourceLocation registerAD(String id)
+    {
+    		return register(new ADResourceLocation(id));
+    }
     // End Awaken Dreams code
 
     private static ResourceLocation register(String id)

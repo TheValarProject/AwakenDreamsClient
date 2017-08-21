@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_circle",
-    "textures": {
-        "all": "blocks/chiseled_gondorian_stone"
-    }
-}

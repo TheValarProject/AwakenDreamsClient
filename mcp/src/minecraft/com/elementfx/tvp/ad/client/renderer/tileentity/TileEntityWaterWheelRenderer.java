@@ -2,6 +2,7 @@ package com.elementfx.tvp.ad.client.renderer.tileentity;
 
 import com.elementfx.tvp.ad.client.model.ModelWaterWheel;
 import com.elementfx.tvp.ad.tileentity.TileEntityWaterWheel;
+import com.elementfx.tvp.ad.util.ADResourceLocation;
 
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
@@ -12,7 +13,7 @@ import net.minecraft.util.math.BlockPos;
 
 public class TileEntityWaterWheelRenderer extends TileEntitySpecialRenderer<TileEntityWaterWheel>
 {
-    private static final ResourceLocation TEXTURE_WATER_WHEEL = new ResourceLocation("textures/blocks/water_wheel.png");
+    private static final ResourceLocation TEXTURE_WATER_WHEEL = new ADResourceLocation("textures/blocks/water_wheel.png");
     private final ModelWaterWheel modelWaterWheel = new ModelWaterWheel();
 
     public void renderTileEntityAt(TileEntityWaterWheel te, double x, double y, double z, float partialTicks, int destroyStage)

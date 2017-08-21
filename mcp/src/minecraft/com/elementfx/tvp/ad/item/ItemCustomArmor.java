@@ -89,18 +89,18 @@ public class ItemCustomArmor extends ItemArmor
 
         if (equipmentSlot == this.armorType)
         {
-        	this.properties.applyAttributeModifiers(equipmentSlot.getIndex(), multimap);
+        		this.properties.applyAttributeModifiers(equipmentSlot.getIndex(), multimap);
         }
 
         return multimap;
     }
     
     public SoundEvent getSoundEvent() {
-    	return this.properties.getSound();
+    		return this.properties.getSound();
     }
     
     public String getTextureName() {
-    	return this.properties.getTextureName();
+    		return this.properties.getTextureName();
     }
     
     public static class Properties {

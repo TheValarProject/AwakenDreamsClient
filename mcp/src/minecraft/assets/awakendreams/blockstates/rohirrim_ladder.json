@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "awakendreams:rohirrim_ladder" },
+        "facing=east":  { "model": "awakendreams:rohirrim_ladder", "y": 90 },
+        "facing=south": { "model": "awakendreams:rohirrim_ladder", "y": 180 },
+        "facing=west":  { "model": "awakendreams:rohirrim_ladder", "y": 270 }
+    }
+}

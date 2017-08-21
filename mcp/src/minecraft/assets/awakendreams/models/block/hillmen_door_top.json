@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top",
+    "textures": {
+        "bottom": "awakendreams:blocks/hillmen_door_lower",
+        "top": "awakendreams:blocks/hillmen_door_upper"
+    }
+}

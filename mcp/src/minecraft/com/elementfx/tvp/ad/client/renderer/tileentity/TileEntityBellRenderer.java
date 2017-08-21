@@ -2,6 +2,7 @@ package com.elementfx.tvp.ad.client.renderer.tileentity;
 
 import com.elementfx.tvp.ad.client.model.ModelBell;
 import com.elementfx.tvp.ad.tileentity.TileEntityBell;
+import com.elementfx.tvp.ad.util.ADResourceLocation;
 
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
@@ -12,7 +13,7 @@ import net.minecraft.util.math.BlockPos;
 
 public class TileEntityBellRenderer extends TileEntitySpecialRenderer<TileEntityBell>
 {
-    private static final ResourceLocation TEXTURE_BELL = new ResourceLocation("textures/blocks/bell.png");
+    private static final ResourceLocation TEXTURE_BELL = new ADResourceLocation("textures/blocks/bell.png");
     private final ModelBell modelBell = new ModelBell();
 
     public void renderTileEntityAt(TileEntityBell te, double x, double y, double z, float partialTicks, int destroyStage)

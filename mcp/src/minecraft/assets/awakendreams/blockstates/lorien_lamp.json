@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "awakendreams:lorien_lamp", "y": 90 },
+        "facing=west": { "model": "awakendreams:lorien_lamp", "y": 180 },
+        "facing=north": { "model": "awakendreams:lorien_lamp", "y": 270 },
+        "facing=east": { "model": "awakendreams:lorien_lamp", "y": 0 }
+    }
+}
