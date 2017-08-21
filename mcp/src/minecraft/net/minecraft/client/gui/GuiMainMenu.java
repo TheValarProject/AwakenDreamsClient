@@ -1,5 +1,6 @@
 package net.minecraft.client.gui;
 
+import com.elementfx.tvp.ad.util.ADResourceLocation;
 import com.google.common.collect.Lists;
 import java.io.BufferedReader;
 import java.io.Closeable;
@@ -74,7 +75,21 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
     private static final ResourceLocation MINECRAFT_TITLE_TEXTURES = new ResourceLocation("textures/gui/title/minecraft.png");
 
     /** An array of all the paths to the panorama pictures. */
-    private static final ResourceLocation[] TITLE_PANORAMA_PATHS = new ResourceLocation[] {new ResourceLocation("textures/gui/title/background/panorama_0.png"), new ResourceLocation("textures/gui/title/background/panorama_1.png"), new ResourceLocation("textures/gui/title/background/panorama_2.png"), new ResourceLocation("textures/gui/title/background/panorama_3.png"), new ResourceLocation("textures/gui/title/background/panorama_4.png"), new ResourceLocation("textures/gui/title/background/panorama_5.png")};
+    // Begin Awaken Dreams code
+    private static final String[] PANORAMA_INFO = { "bree_entrance", "edoras", "fornost", "goblin_town", "moria", "rivendell" };
+    private static final ResourceLocation[][] TITLE_PANORAMA_PATHS = new ResourceLocation[PANORAMA_INFO.length][6];
+    static
+    {
+    		for(int i = 0; i < PANORAMA_INFO.length; i++)
+    		{
+    			for(int j = 0; j < 6; j++)
+    			{
+    				TITLE_PANORAMA_PATHS[i][j] = new ADResourceLocation(String.format("textures/gui/title/background/%s_%d.png", new Object[] { PANORAMA_INFO[i], j }));
+    			}
+    		}
+    }
+    private final int PANORAMA_INDEX;
+    // End Awaken Dreams code
     public static final String MORE_INFO_TEXT = "Please click " + TextFormatting.UNDERLINE + "here" + TextFormatting.RESET + " for more information.";
 
     /** Width of openGLWarning2 */
@@ -162,6 +177,10 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
             this.openGLWarning2 = I18n.format("title.oldgl2", new Object[0]);
             this.openGLWarningLink = "https://help.mojang.com/customer/portal/articles/325948?ref=game";
         }
+        
+        // Begin Awaken Dreams code
+        PANORAMA_INDEX = RANDOM.nextInt(PANORAMA_INFO.length);
+        // End Awaken Dreams code
     }
 
     /**
@@ -450,7 +469,7 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
                     GlStateManager.rotate(-90.0F, 1.0F, 0.0F, 0.0F);
                 }
 
-                this.mc.getTextureManager().bindTexture(TITLE_PANORAMA_PATHS[k]);
+                this.mc.getTextureManager().bindTexture(TITLE_PANORAMA_PATHS[PANORAMA_INDEX][k]);
                 vertexbuffer.begin(7, DefaultVertexFormats.POSITION_TEX_COLOR);
                 int l = 255 / (j + 1);
                 float f3 = 0.0F;
