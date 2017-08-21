@@ -1407,13 +1407,13 @@ public class Block
         registerADBlock(541, "mordor_Stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(542, "cliff_Block", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(543, "spider_Egg", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerADBlock(544, "bakruel", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(32, 25, 64))));
+        registerADBlock(544, "bakruel", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(28, 25, 64, -1))));
         registerADBlock(545, "hopperfoot", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(12, 15, 16))));
-        registerADBlock(546, "madarch", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(32, 18, 32))));
-        registerADBlock(547, "mehas", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(18, 21))));
+        registerADBlock(546, "madarch", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(28, 18, 32, 4))));
+        registerADBlock(547, "mehas", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(17, 21, 32, 1))));
         registerADBlock(548, "arfandas", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(10, 14, 16))));
         registerADBlock(549, "athelas", (new BlockCustomFlower(new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 8.0 / 16, 1.0D))));
-        registerADBlock(550, "bellis", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(46, 51, 64))));
+        registerADBlock(550, "bellis", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(46, 61, 64, -1))));
         registerADBlock(551, "lamp", (new BlockLamp(Material.GLASS, Arrays.asList(new AxisAlignedBB(3.0 / 16, 0.0D, 3.0 / 16, 13.0 / 16, 1.0D, 13.0 / 16)))));
         registerADBlock(552, "gondorian_Stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(553, "gondorian_Brick_Stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
@@ -1615,7 +1615,7 @@ public class Block
         //registerADBlock(758, "old_Tree_Sapling", (new BlockValarSapling()).setPlantBounds(56, 51, 64).setBlockTextureName("old_tree_sapling"));
         //registerADBlock(759, "light_Brown_Tree_Sapling", (new BlockValarSapling()).setPlantBounds(22, 32).setBlockTextureName("light_brown_tree_sapling"));
         //registerADBlock(760, "dead_Tree_Sapling", (new BlockValarSapling()).setPlantBounds(58, 45, 64).setBlockTextureName("dead_tree_sapling"));
-        registerADBlock(761, "bush", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(32, 26))));
+        registerADBlock(761, "bush", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(31, 26, 32, -1))));
         registerADBlock(762, "alt_Dead_Bush", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(30, 25)))); // Deprecated
         registerADBlock(763, "cursed_Plant", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(32, 27))));
         registerADBlock(764, "haradwaith_Fern", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(28, 31))));

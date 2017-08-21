@@ -45,14 +45,20 @@ public class BlockCustomFlower extends BlockBush
     /** Helps create bounding boxes for blocks that use the cross block model */
     public static AxisAlignedBB generateCrossBoundingBox(int width, int height)
     {
-    	return generateCrossBoundingBox(width, height, 32);
+    		return generateCrossBoundingBox(width, height, 32);
     }
     
     /** Helps create bounding boxes for blocks that use the cross block model */
     public static AxisAlignedBB generateCrossBoundingBox(int width, int height, int scale)
     {
-    	// 0.9^2 + 0.9^2 = 1.62
-    	double w2 = Math.sqrt(1.62) * width / (scale * 2 * Math.sqrt(2));
-    	return new AxisAlignedBB(0.5 - w2, 0.0D, 0.5 - w2, 0.5 + w2, height / (double)scale, 0.5 + w2);
+	    	return generateCrossBoundingBox(width, height, scale, 0);
+    }
+    
+    public static AxisAlignedBB generateCrossBoundingBox(int width, int height, int scale, int offset)
+    {
+	    	// 0.9^2 + 0.9^2 = 1.62
+	    	double widthOffset = Math.sqrt(1.62) * width / (scale * 2 * Math.sqrt(2));
+	    	double centerOffset = Math.sqrt(1.62) * offset / (scale * 2 * Math.sqrt(2));
+	    	return new AxisAlignedBB(0.5 - widthOffset + centerOffset, 0.0D, 0.5 - widthOffset - centerOffset, 0.5 + widthOffset + centerOffset, height / (double)scale, 0.5 + widthOffset + centerOffset);
     }
 }
