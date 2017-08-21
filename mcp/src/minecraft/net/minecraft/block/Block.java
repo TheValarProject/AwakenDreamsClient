@@ -1406,13 +1406,13 @@ public class Block
         registerBlock(541, "mordor_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("mordorStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(542, "cliff_block", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("cliffBlock").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(543, "spider_egg", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("spiderEgg").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerBlock(544, "bakruel", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(32, 25, 64))).setUnlocalizedName("bakruel"));
+        registerBlock(544, "bakruel", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(28, 25, 64, -1))).setUnlocalizedName("bakruel"));
         registerBlock(545, "hopperfoot", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(12, 15, 16))).setUnlocalizedName("hopperfoot"));
-        registerBlock(546, "madarch", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(32, 18, 32))).setUnlocalizedName("madarch"));
-        registerBlock(547, "mehas", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(18, 21))).setUnlocalizedName("mehas"));
+        registerBlock(546, "madarch", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(28, 18, 32, 4))).setUnlocalizedName("madarch"));
+        registerBlock(547, "mehas", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(17, 21, 32, 1))).setUnlocalizedName("mehas"));
         registerBlock(548, "arfandas", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(10, 14, 16))).setUnlocalizedName("arfandas"));
         registerBlock(549, "athelas", (new BlockCustomFlower(new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 8.0 / 16, 1.0D))).setUnlocalizedName("athelas"));
-        registerBlock(550, "bellis", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(46, 51, 64))).setUnlocalizedName("bellis"));
+        registerBlock(550, "bellis", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(44, 61, 64, -1))).setUnlocalizedName("bellis"));
         registerBlock(551, "lamp", (new BlockLamp(Material.GLASS, Arrays.asList(new AxisAlignedBB(3.0 / 16, 0.0D, 3.0 / 16, 13.0 / 16, 1.0D, 13.0 / 16)))).setUnlocalizedName("lamp"));
         registerBlock(552, "gondorian_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("gondorianStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerBlock(553, "gondorian_brick_stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setUnlocalizedName("gondorianBrickStone").setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
@@ -1614,7 +1614,7 @@ public class Block
         //registerBlock(758, "old_tree_sapling", (new BlockValarSapling()).setPlantBounds(56, 51, 64).setUnlocalizedName("oldTreeSapling").setBlockTextureName("old_tree_sapling"));
         //registerBlock(759, "light_brown_tree_sapling", (new BlockValarSapling()).setPlantBounds(22, 32).setUnlocalizedName("lightBrownTreeSapling").setBlockTextureName("light_brown_tree_sapling"));
         //registerBlock(760, "dead_tree_sapling", (new BlockValarSapling()).setPlantBounds(58, 45, 64).setUnlocalizedName("deadTreeSapling").setBlockTextureName("dead_tree_sapling"));
-        registerBlock(761, "bush", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(32, 26))).setUnlocalizedName("bush"));
+        registerBlock(761, "bush", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(31, 26, 32, -1))).setUnlocalizedName("bush"));
         registerBlock(762, "alt_dead_bush", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(30, 25))).setUnlocalizedName("altDeadBush")); // Deprecated
         registerBlock(763, "cursed_plant", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(32, 27))).setUnlocalizedName("cursedPlant"));
         registerBlock(764, "haradwaith_fern", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(28, 31))).setUnlocalizedName("haradwaithFern"));
