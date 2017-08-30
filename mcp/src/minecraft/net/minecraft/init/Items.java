@@ -740,12 +740,19 @@ public class Items
             TOBACCO = getRegisteredADItem("tobacco");
             PIPE.addSmokableItem(TOBACCO);
             JADE = getRegisteredADItem("jade");
+            Blocks.JADE_ORE.setItemDrop(JADE);
             AMBER = getRegisteredADItem("amber");
+            Blocks.AMBER_ORE.setItemDrop(AMBER);
             CRYSTAL = getRegisteredADItem("crystal");
+            Blocks.CRYSTAL_ORE.setItemDrop(CRYSTAL);
             AMETHYST = getRegisteredADItem("amethyst");
+            Blocks.AMETHYST_ORE.setItemDrop(AMETHYST);
             ONYX = getRegisteredADItem("onyx");
+            Blocks.ONYX_ORE.setItemDrop(ONYX);
             MOONSTONE = getRegisteredADItem("moonstone");
+            Blocks.MOONSTONE_ORE.setItemDrop(MOONSTONE);
             TANZANITE = getRegisteredADItem("tanzanite");
+            Blocks.TANZANITE_ORE.setItemDrop(TANZANITE);
             URUK_SWORD = getRegisteredADItem("uruk_sword");
             TOMATO = getRegisteredADItem("tomato");
             BLUE_FEATHER = getRegisteredADItem("blue_feather");
@@ -857,6 +864,7 @@ public class Items
             QUARTZ_MITHRIL_RING = getRegisteredADItem("quartz_mithril_ring");
             AMBER_MITHRIL_RING = getRegisteredADItem("amber_mithril_ring");
             SALT = getRegisteredADItem("salt");
+            Blocks.SALT_ORE.setItemDrop(SALT);
             NOLDOR_CHESTPLATE = getRegisteredADItem("noldor_chestplate");
             SILVER_INGOT = getRegisteredADItem("silver_ingot");
             DWARF_DOOR = getRegisteredADItem("dwarf_door");

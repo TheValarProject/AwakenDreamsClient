@@ -19,8 +19,9 @@ import net.minecraft.world.World;
 public class BlockCustomOre extends BlockOre
 {
 	private int minExp;
-	
 	private int maxExp;
+	private int dropAmount = 1;
+	private Item dropItem;
 	
 	public BlockCustomOre(int minExpIn, int maxExpIn)
 	{
@@ -37,6 +38,25 @@ public class BlockCustomOre extends BlockOre
 		this(3, 7);
 	}
 	
+	public void setItemDrop(Item drop)
+	{
+		this.dropItem = drop;
+	}
+	
+	public Block setQuantityDropped(int quantity)
+	{
+		this.dropAmount = Math.max(0, quantity);
+		return this;
+	}
+	
+	/**
+     * Returns the quantity of items to drop on block destruction.
+     */
+    public int quantityDropped(Random random)
+    {
+        return this.dropAmount;
+    }
+	
 	@Nullable
 
     /**
@@ -44,7 +64,7 @@ public class BlockCustomOre extends BlockOre
      */
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-        return this == Blocks.JADE_ORE ? Items.JADE : (this == Blocks.AMBER_ORE ? Items.AMBER : (this == Blocks.TANZANITE_ORE ? Items.TANZANITE : (this == Blocks.AMETHYST_ORE ? Items.AMETHYST : (this == Blocks.ONYX_ORE ? Items.ONYX : (this == Blocks.MOONSTONE_ORE ? Items.MOONSTONE : (this == Blocks.CRYSTAL_ORE ? Items.CRYSTAL : (this == Blocks.SALT_ORE ? Items.SALT : Item.getItemFromBlock(this))))))));
+        return this.dropItem != null ? this.dropItem : Item.getItemFromBlock(this);
     }
 	
 	/**

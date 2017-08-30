@@ -1420,7 +1420,7 @@ public class Block
         registerADBlock(554, "cracked_Gondorian_Brick_Stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(555, "lorien_Lamp", (new BlockLamp(Material.GLASS, Arrays.asList(new AxisAlignedBB(1.5 / 16, 0.0D, 1.5 / 16, 14.5 / 16, 1.0D, 14.5 / 16)))));
         registerADBlock(556, "bucklebury_Lamp", (new Block3D(Material.GLASS, Arrays.asList(new AxisAlignedBB(4.75 / 16, 0.0D, 4.75 / 16, 11.25 / 16, 1.0D, 11.25 / 16)))).setCreativeTab(CreativeTabs.DECORATIONS).setLightLevel(1.0F));
-        registerADBlock(557, "salt_Ore", new BlockCustomOre(0, 2));
+        registerADBlock(557, "salt_Ore", new BlockCustomOre(0, 2).setQuantityDropped(5));
         registerADBlock(558, "simbelmyne", (new BlockCustomFlower(new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 6.0 / 16, 1.0D))));
         //registerADBlock(559, "bree_Glass", (new BlockValarGlass()).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeGlass).setBlockTextureName("bree_glass"));
         registerADBlock(560, "shire_Flower", (new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(12, 10, 16))));
