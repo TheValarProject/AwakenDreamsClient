@@ -29,9 +29,16 @@ import net.minecraft.world.World;
 
 public class BlockStakePlant extends BlockCustomCrops
 {
+	private static final AxisAlignedBB boundingBox = new AxisAlignedBB(0.125D, 0.0D, 0.125D, 0.875D, 1.0D, 0.875D);
+
 	public BlockStakePlant(int totalStages)
     {
 		super(totalStages);
+    }
+	
+	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+    {
+        return BlockStakePlant.boundingBox;
     }
 	
 	@Nullable
