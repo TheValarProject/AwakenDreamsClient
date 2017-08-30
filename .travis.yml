@@ -1,0 +1,9 @@
+language: bash
+notifications:
+  email: false
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y imagemagick
+script:
+  - tests/image_translucency.sh
+  - tests/image_dimensions.sh
