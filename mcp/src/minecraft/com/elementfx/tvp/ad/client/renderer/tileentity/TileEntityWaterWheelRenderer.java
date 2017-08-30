@@ -13,7 +13,7 @@ import net.minecraft.util.math.BlockPos;
 
 public class TileEntityWaterWheelRenderer extends TileEntitySpecialRenderer<TileEntityWaterWheel>
 {
-    private static final ResourceLocation TEXTURE_WATER_WHEEL = new ADResourceLocation("textures/blocks/water_wheel.png");
+    private static final ResourceLocation TEXTURE_WATER_WHEEL = new ADResourceLocation("textures/entity/water_wheel.png");
     private final ModelWaterWheel modelWaterWheel = new ModelWaterWheel();
 
     public void renderTileEntityAt(TileEntityWaterWheel te, double x, double y, double z, float partialTicks, int destroyStage)
