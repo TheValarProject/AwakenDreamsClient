@@ -14,3 +14,6 @@ matrix:
         - npm install jsonlint
       script:
         - tests/json_validate.sh
+cache:
+  directories:
+    - "node_modules"
