@@ -1323,11 +1323,11 @@ public class Item
         registerADItem(6023, "blue_Feather", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
         registerADItem(6026, "spider_Poison", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
         registerADItem(6028, "herugrim", new ItemWeapon(830, 7));
-        registerADItem(6029, "nuts", new ItemCustomFood(1, 0.2F, false));
+        registerADItem(6029, "nuts", new ItemCustomFood(1, 10, 0.2F, false));
         registerADItem(6032, "corn_Cob", new ItemCustomFood(2, 0.3F, false));
         registerADItem(6035, "staff_Base", new ItemWeapon(350, 2));
         registerADItem(6036, "knife", new ItemWeapon(35, 4));
-        registerADItem(6038, "berries", new ItemCustomFood(2, 0.3F, false));
+        registerADItem(6038, "berries", new ItemCustomFood(2, 15, 0.3F, false));
         //registerADItem(6039, "gondorian_Horn", (new ItemValarInstrument("")));
         registerADItem(6040, "bear_Claw", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
         registerADItem(6041, "beast_Skin", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
@@ -1353,7 +1353,7 @@ public class Item
         registerADItem(6061, "raw_Deer_Meat", new ItemCustomFood(3, 0.4F, true));
         registerADItem(6062, "cooked_Deer_Meat", new ItemCustomFood(5, 0.6F, false));
         registerADItem(6063, "muffin", new ItemCustomFood(1, 0.4F, false));
-        registerADItem(6064, "strawberry", new ItemCustomFood(2, 0.3F, false));
+        registerADItem(6064, "strawberry", new ItemCustomFood(2, 20, 0.3F, false));
         registerADItem(6065, "strawberry_Muffin", new ItemCustomFood(3, 0.6F, false));
         registerADItem(6066, "orange", new ItemCustomFood(2, 0.6F, false));
         registerADItem(6067, "orange_Muffin", new ItemCustomFood(3, 0.6F, false));
@@ -1596,17 +1596,17 @@ public class Item
         registerADItem(6308, "sindar_Door", new ItemDoor(Blocks.SINDAR_DOOR));
         registerADItem(6309, "southlinch_Seed", new ItemSeeds(Blocks.SOUTHLINCH, Blocks.FARMLAND));
         registerADItem(6310, "green_Grape_Seed", new ItemStakeSeeds(Blocks.GREEN_GRAPE, Blocks.FARMLAND));
-        registerADItem(6311, "green_Grapes", new ItemCustomFood(2, 0.3F, false));
+        registerADItem(6311, "green_Grapes", new ItemCustomFood(2, 15, 0.3F, false));
         registerADItem(6312, "purple_Grape_Seed", new ItemStakeSeeds(Blocks.PURPLE_GRAPE, Blocks.FARMLAND));
-        registerADItem(6313, "purple_Grapes", new ItemCustomFood(2, 0.3F, false));
+        registerADItem(6313, "purple_Grapes", new ItemCustomFood(2, 15, 0.3F, false));
         registerADItem(6314, "pipeweed_Seed", new ItemSeeds(Blocks.PIPEWEED_PLANT, Blocks.FARMLAND));
-        registerADItem(6315, "peas", new ItemSeedFood(1, 0.1F, Blocks.PEA_PLANT, Blocks.FARMLAND) {
+        registerADItem(6315, "peas", new ItemSeedFood(1, 10, 0.1F, Blocks.PEA_PLANT, Blocks.FARMLAND) {
         	public int getHealAmount(ItemStack stack)
             {
                 return this.itemRand.nextInt(6) == 0 ? 1 : 0;
             }
         });
-        registerADItem(6316, "pea_Pod", new ItemCustomFood(1, 0.6F, false));
+        registerADItem(6316, "pea_Pod", new ItemCustomFood(1, 20, 0.6F, false));
         registerADItem(6317, "leek", new ItemCustomFood(3, 0.6F, false));
         registerADItem(6318, "leek_Seed", new ItemSeeds(Blocks.LEEK_PLANT, Blocks.FARMLAND));
         registerADItem(6319, "onion_Seed", new ItemSeeds(Blocks.ONION_PLANT, Blocks.FARMLAND));
