@@ -53,6 +53,7 @@ for IMAGE in $IMAGES; do
   fi
 done
 
+# Exit with an error if necessary
 if [ $ERROR -ne 0 ]; then
 	exit 1
 fi
