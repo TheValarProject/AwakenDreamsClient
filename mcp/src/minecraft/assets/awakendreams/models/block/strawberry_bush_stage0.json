@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "awakendreams:blocks/strawberry_bush_stage_0"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "awakendreams:blocks/strawberry_bush_stage_0"
+  }
 }

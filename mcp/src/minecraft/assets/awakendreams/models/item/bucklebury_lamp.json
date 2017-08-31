@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "awakendreams:blocks/bucklebury_lamp_icon"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "awakendreams:blocks/bucklebury_lamp_icon"
+  }
 }

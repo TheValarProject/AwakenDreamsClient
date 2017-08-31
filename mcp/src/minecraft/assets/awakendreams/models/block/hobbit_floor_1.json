@@ -1,71 +1,172 @@
 {
-    "parent": "block/cube_column",
-    "textures": {
-        "particle": "awakendreams:blocks/hobbit_floor_1_end",
-        "end": "awakendreams:blocks/hobbit_floor_1_end",
-        "side": "awakendreams:blocks/hobbit_floor_1_side"
-    },
-    "elements": [
-      {
-        "__comment": "Main block",
-        "from": [ 0, 0, 0 ],
-        "to": [ 16, 15, 16 ],
-        "faces": {
-          "down": { "texture": "#end", "cullface": "down" },
-          "up": { "texture": "#end" },
-          "north": { "texture": "#side", "cullface": "north" },
-          "south": { "texture": "#side", "cullface": "south" },
-          "west": { "texture": "#side", "cullface": "west" },
-          "east": { "texture": "#side", "cullface": "east" }
-        }
-      },
-      {
-        "__comment": "Tile north-west",
-        "from": [ 0.25, 15, 0.25 ],
-        "to": [ 7.75, 16, 7.75 ],
-        "faces": {
-          "up": { "texture": "#end", "cullface": "up" },
-          "north": { "texture": "#side"},
-          "south": { "texture": "#side" },
-          "west": { "texture": "#side" },
-          "east": { "texture": "#side" }
-        }
-      },
-      {
-        "__comment": "Tile north-east",
-        "from": [ 8.25, 15, 0.25 ],
-        "to": [ 15.75, 16, 7.75 ],
-        "faces": {
-          "up": { "texture": "#end", "cullface": "up" },
-          "north": { "texture": "#side"},
-          "south": { "texture": "#side" },
-          "west": { "texture": "#side" },
-          "east": { "texture": "#side" }
-        }
-      },
-      {
-        "__comment": "Tile south-west",
-        "from": [ 0.25, 15, 8.25 ],
-        "to": [ 7.75, 16, 15.75 ],
-        "faces": {
-          "up": { "texture": "#end", "cullface": "up" },
-          "north": { "texture": "#side"},
-          "south": { "texture": "#side" },
-          "west": { "texture": "#side" },
-          "east": { "texture": "#side" }
-        }
-      },
-      {
-        "__comment": "Tile south-east",
-        "from": [ 8.25, 15, 8.25 ],
-        "to": [ 15.75, 16, 15.75 ],
-        "faces": {
-          "up": { "texture": "#end", "cullface": "up" },
-          "north": { "texture": "#side"},
-          "south": { "texture": "#side" },
-          "west": { "texture": "#side" },
-          "east": { "texture": "#side" }
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "awakendreams:blocks/hobbit_floor_1_end",
+    "end": "awakendreams:blocks/hobbit_floor_1_end",
+    "side": "awakendreams:blocks/hobbit_floor_1_side"
+  },
+  "elements": [
+    {
+      "__comment": "Main block",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        15,
+        16
+      ],
+      "faces": {
+        "down": {
+          "texture": "#end",
+          "cullface": "down"
+        },
+        "up": {
+          "texture": "#end"
+        },
+        "north": {
+          "texture": "#side",
+          "cullface": "north"
+        },
+        "south": {
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "east": {
+          "texture": "#side",
+          "cullface": "east"
         }
       }
-    ]
+    },
+    {
+      "__comment": "Tile north-west",
+      "from": [
+        0.25,
+        15,
+        0.25
+      ],
+      "to": [
+        7.75,
+        16,
+        7.75
+      ],
+      "faces": {
+        "up": {
+          "texture": "#end",
+          "cullface": "up"
+        },
+        "north": {
+          "texture": "#side"
+        },
+        "south": {
+          "texture": "#side"
+        },
+        "west": {
+          "texture": "#side"
+        },
+        "east": {
+          "texture": "#side"
+        }
+      }
+    },
+    {
+      "__comment": "Tile north-east",
+      "from": [
+        8.25,
+        15,
+        0.25
+      ],
+      "to": [
+        15.75,
+        16,
+        7.75
+      ],
+      "faces": {
+        "up": {
+          "texture": "#end",
+          "cullface": "up"
+        },
+        "north": {
+          "texture": "#side"
+        },
+        "south": {
+          "texture": "#side"
+        },
+        "west": {
+          "texture": "#side"
+        },
+        "east": {
+          "texture": "#side"
+        }
+      }
+    },
+    {
+      "__comment": "Tile south-west",
+      "from": [
+        0.25,
+        15,
+        8.25
+      ],
+      "to": [
+        7.75,
+        16,
+        15.75
+      ],
+      "faces": {
+        "up": {
+          "texture": "#end",
+          "cullface": "up"
+        },
+        "north": {
+          "texture": "#side"
+        },
+        "south": {
+          "texture": "#side"
+        },
+        "west": {
+          "texture": "#side"
+        },
+        "east": {
+          "texture": "#side"
+        }
+      }
+    },
+    {
+      "__comment": "Tile south-east",
+      "from": [
+        8.25,
+        15,
+        8.25
+      ],
+      "to": [
+        15.75,
+        16,
+        15.75
+      ],
+      "faces": {
+        "up": {
+          "texture": "#end",
+          "cullface": "up"
+        },
+        "north": {
+          "texture": "#side"
+        },
+        "south": {
+          "texture": "#side"
+        },
+        "west": {
+          "texture": "#side"
+        },
+        "east": {
+          "texture": "#side"
+        }
+      }
+    }
+  ]
 }

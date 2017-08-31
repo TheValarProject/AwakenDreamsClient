@@ -1,6 +1,6 @@
 {
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "awakendreams:blocks/dwarf_floor_5"
-    }
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "awakendreams:blocks/dwarf_floor_5"
+  }
 }

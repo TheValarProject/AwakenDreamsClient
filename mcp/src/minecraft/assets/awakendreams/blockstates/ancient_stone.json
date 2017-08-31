@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:ancient_stone" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:ancient_stone"
     }
+  }
 }

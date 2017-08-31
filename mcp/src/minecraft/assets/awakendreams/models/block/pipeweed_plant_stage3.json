@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "awakendreams:blocks/pipeweed_plant_stage_3"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "awakendreams:blocks/pipeweed_plant_stage_3"
+  }
 }

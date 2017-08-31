@@ -1,6 +1,6 @@
 {
-	"parent": "item/generated",
-	"textures": {
-	  "layer0": "awakendreams:items/silver_ring_of_earth"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "awakendreams:items/silver_ring_of_earth"
   }
 }

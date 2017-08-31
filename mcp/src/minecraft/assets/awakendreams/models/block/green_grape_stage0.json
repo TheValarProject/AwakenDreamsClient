@@ -1,6 +1,6 @@
 {
-    "parent": "awakendreams:block/stake_plant",
-    "textures": {
-        "plant": "awakendreams:blocks/green_grape_stage_0"
-    }
+  "parent": "awakendreams:block/stake_plant",
+  "textures": {
+    "plant": "awakendreams:blocks/green_grape_stage_0"
+  }
 }

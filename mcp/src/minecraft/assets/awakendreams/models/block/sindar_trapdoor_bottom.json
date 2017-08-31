@@ -1,7 +1,7 @@
 {
-    "parent": "awakendreams:block/trapdoor_sided_bottom",
-    "textures": {
-        "top": "awakendreams:blocks/sindar_trapdoor_top",
-        "side": "awakendreams:blocks/sindar_trapdoor_side"
-    }
+  "parent": "awakendreams:block/trapdoor_sided_bottom",
+  "textures": {
+    "top": "awakendreams:blocks/sindar_trapdoor_top",
+    "side": "awakendreams:blocks/sindar_trapdoor_side"
+  }
 }

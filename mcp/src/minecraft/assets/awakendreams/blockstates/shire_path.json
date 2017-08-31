@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:shire_path" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:shire_path"
     }
+  }
 }

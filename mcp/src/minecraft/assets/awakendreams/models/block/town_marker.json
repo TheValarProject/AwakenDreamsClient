@@ -1,7 +1,7 @@
 {
-    "parent": "block/cube_column",
-    "textures": {
-      "end": "awakendreams:blocks/marker_end",
-      "side": "awakendreams:blocks/town_marker"
-    }
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "awakendreams:blocks/marker_end",
+    "side": "awakendreams:blocks/town_marker"
+  }
 }

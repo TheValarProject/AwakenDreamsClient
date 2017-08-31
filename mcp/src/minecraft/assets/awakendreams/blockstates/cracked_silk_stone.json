@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:cracked_silk_stone" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:cracked_silk_stone"
     }
+  }
 }

@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:smooth_gold" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:smooth_gold"
     }
+  }
 }

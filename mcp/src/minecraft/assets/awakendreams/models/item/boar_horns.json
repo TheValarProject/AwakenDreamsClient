@@ -1,6 +1,6 @@
 {
-	"parent": "item/generated",
-	"textures": {
-	  "layer0": "awakendreams:items/boar_horns"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "awakendreams:items/boar_horns"
   }
 }

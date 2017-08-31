@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:sindar_stone" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:sindar_stone"
     }
+  }
 }

@@ -1,6 +1,6 @@
 {
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "awakendreams:blocks/bag_end_wall"
-    }
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "awakendreams:blocks/bag_end_wall"
+  }
 }

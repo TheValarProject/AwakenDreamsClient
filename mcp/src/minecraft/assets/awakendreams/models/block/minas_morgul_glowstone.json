@@ -1,6 +1,6 @@
 {
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "awakendreams:blocks/minas_morgul_glowstone"
-    }
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "awakendreams:blocks/minas_morgul_glowstone"
+  }
 }

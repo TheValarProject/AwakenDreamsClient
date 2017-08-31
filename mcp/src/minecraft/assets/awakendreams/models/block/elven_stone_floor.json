@@ -1,6 +1,6 @@
 {
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "awakendreams:blocks/elven_stone_floor"
-    }
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "awakendreams:blocks/elven_stone_floor"
+  }
 }

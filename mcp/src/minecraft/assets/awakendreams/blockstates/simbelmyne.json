@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:simbelmyne" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:simbelmyne"
     }
+  }
 }

@@ -1,6 +1,6 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "awakendreams:items/anduril"
-    }
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "awakendreams:items/anduril"
+  }
 }

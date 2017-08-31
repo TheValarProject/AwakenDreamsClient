@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:iron_hills_floor" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:iron_hills_floor"
     }
+  }
 }

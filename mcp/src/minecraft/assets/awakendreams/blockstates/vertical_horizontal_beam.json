@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:vertical_horizontal_beam" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:vertical_horizontal_beam"
     }
+  }
 }

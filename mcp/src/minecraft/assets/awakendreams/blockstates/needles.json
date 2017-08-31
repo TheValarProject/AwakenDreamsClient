@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:needles" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:needles"
     }
+  }
 }

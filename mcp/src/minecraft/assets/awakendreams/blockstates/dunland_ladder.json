@@ -1,8 +1,19 @@
 {
-    "variants": {
-        "facing=north": { "model": "awakendreams:dunland_ladder" },
-        "facing=east":  { "model": "awakendreams:dunland_ladder", "y": 90 },
-        "facing=south": { "model": "awakendreams:dunland_ladder", "y": 180 },
-        "facing=west":  { "model": "awakendreams:dunland_ladder", "y": 270 }
+  "variants": {
+    "facing=north": {
+      "model": "awakendreams:dunland_ladder"
+    },
+    "facing=east": {
+      "model": "awakendreams:dunland_ladder",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "awakendreams:dunland_ladder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "awakendreams:dunland_ladder",
+      "y": 270
     }
+  }
 }

@@ -1,6 +1,6 @@
 {
-	"parent": "item/generated",
-	"textures": {
-	  "layer0": "awakendreams:items/coconut"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "awakendreams:items/coconut"
   }
 }

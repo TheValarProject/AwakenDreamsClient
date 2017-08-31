@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:dark_metal" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:dark_metal"
     }
+  }
 }

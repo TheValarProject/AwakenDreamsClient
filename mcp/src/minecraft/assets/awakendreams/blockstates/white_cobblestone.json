@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:white_cobblestone" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:white_cobblestone"
     }
+  }
 }

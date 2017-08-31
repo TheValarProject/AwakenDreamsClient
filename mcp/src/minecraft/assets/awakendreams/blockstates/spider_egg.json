@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:spider_egg" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:spider_egg"
     }
+  }
 }

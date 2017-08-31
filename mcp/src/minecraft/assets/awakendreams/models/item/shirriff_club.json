@@ -1,6 +1,6 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "awakendreams:items/shirriff_club"
-    }
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "awakendreams:items/shirriff_club"
+  }
 }

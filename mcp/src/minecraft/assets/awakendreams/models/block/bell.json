@@ -1,6 +1,6 @@
 {
-    "textures": {
-        "particle": "awakendreams:blocks/bell"
-    },
-    "elements": []
+  "textures": {
+    "particle": "awakendreams:blocks/bell"
+  },
+  "elements": []
 }

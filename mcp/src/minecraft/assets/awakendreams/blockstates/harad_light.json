@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:harad_light" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:harad_light"
     }
+  }
 }

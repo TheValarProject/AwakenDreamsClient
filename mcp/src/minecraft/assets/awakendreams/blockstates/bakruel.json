@@ -1,5 +1,7 @@
 {
-    "variants":{
-        "normal": { "model": "awakendreams:bakruel" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:bakruel"
     }
+  }
 }

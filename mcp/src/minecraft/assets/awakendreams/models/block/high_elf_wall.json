@@ -1,6 +1,6 @@
 {
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "awakendreams:blocks/high_elf_wall"
-    }
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "awakendreams:blocks/high_elf_wall"
+  }
 }

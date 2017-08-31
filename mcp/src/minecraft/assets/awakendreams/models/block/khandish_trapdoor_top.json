@@ -1,7 +1,7 @@
 {
-    "parent": "awakendreams:block/trapdoor_sided_top",
-    "textures": {
-        "top": "awakendreams:blocks/khandish_trapdoor_top",
-        "side": "awakendreams:blocks/khandish_trapdoor_side"
-    }
+  "parent": "awakendreams:block/trapdoor_sided_top",
+  "textures": {
+    "top": "awakendreams:blocks/khandish_trapdoor_top",
+    "side": "awakendreams:blocks/khandish_trapdoor_side"
+  }
 }

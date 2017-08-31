@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:carn_dum_lamp" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:carn_dum_lamp"
     }
+  }
 }

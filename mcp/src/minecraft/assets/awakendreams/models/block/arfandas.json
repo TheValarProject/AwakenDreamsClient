@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "awakendreams:blocks/arfandas"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "awakendreams:blocks/arfandas"
+  }
 }

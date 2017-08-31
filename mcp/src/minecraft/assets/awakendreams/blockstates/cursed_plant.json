@@ -1,5 +1,7 @@
 {
-    "variants":{
-        "normal": { "model": "awakendreams:cursed_plant" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:cursed_plant"
     }
+  }
 }

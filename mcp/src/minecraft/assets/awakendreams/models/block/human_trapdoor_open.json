@@ -1,7 +1,7 @@
 {
-    "parent": "awakendreams:block/trapdoor_sided_open",
-    "textures": {
-        "top": "awakendreams:blocks/human_trapdoor_top",
-        "side": "awakendreams:blocks/human_trapdoor_side"
-    }
+  "parent": "awakendreams:block/trapdoor_sided_open",
+  "textures": {
+    "top": "awakendreams:blocks/human_trapdoor_top",
+    "side": "awakendreams:blocks/human_trapdoor_side"
+  }
 }

@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:mithril_block" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:mithril_block"
     }
+  }
 }

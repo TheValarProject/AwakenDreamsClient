@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "awakendreams:blocks/haradwaith_fern"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "awakendreams:blocks/haradwaith_fern"
+  }
 }

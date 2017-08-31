@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:cardolan_brick_stone" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:cardolan_brick_stone"
     }
+  }
 }

@@ -1,6 +1,6 @@
 {
-	"parent": "item/generated",
-	"textures": {
-	  "layer0": "awakendreams:items/scorpion_tail"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "awakendreams:items/scorpion_tail"
   }
 }

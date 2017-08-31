@@ -1,9 +1,22 @@
 {
-    "variants": {
-        "facing=up": { "model": "awakendreams:dwarven_torch" },
-        "facing=east": { "model": "awakendreams:dwarven_torch_wall" },
-        "facing=south": { "model": "awakendreams:dwarven_torch_wall", "y": 90 },
-        "facing=west": { "model": "awakendreams:dwarven_torch_wall", "y": 180 },
-        "facing=north": { "model": "awakendreams:dwarven_torch_wall", "y": 270 }
+  "variants": {
+    "facing=up": {
+      "model": "awakendreams:dwarven_torch"
+    },
+    "facing=east": {
+      "model": "awakendreams:dwarven_torch_wall"
+    },
+    "facing=south": {
+      "model": "awakendreams:dwarven_torch_wall",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "awakendreams:dwarven_torch_wall",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "awakendreams:dwarven_torch_wall",
+      "y": 270
     }
+  }
 }

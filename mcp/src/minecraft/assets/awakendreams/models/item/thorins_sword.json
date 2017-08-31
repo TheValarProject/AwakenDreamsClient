@@ -1,6 +1,6 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "awakendreams:items/thorins_sword"
-    }
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "awakendreams:items/thorins_sword"
+  }
 }

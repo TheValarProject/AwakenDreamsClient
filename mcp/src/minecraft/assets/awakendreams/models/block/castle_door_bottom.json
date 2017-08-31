@@ -1,7 +1,7 @@
 {
-    "parent": "block/door_bottom",
-    "textures": {
-        "bottom": "awakendreams:blocks/castle_door_lower",
-        "top": "awakendreams:blocks/castle_door_upper"
-    }
+  "parent": "block/door_bottom",
+  "textures": {
+    "bottom": "awakendreams:blocks/castle_door_lower",
+    "top": "awakendreams:blocks/castle_door_upper"
+  }
 }

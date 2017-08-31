@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:elf_floor" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:elf_floor"
     }
+  }
 }

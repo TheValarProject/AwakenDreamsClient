@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:sindar_floor_1" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:sindar_floor_1"
     }
+  }
 }

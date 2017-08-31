@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "awakendreams:blocks/athelas"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "awakendreams:blocks/athelas"
+  }
 }

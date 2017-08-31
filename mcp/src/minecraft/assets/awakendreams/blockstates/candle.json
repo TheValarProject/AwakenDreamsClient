@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:candle" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:candle"
     }
+  }
 }

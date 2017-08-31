@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:bree_tile" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:bree_tile"
     }
+  }
 }

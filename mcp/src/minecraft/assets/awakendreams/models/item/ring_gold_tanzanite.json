@@ -1,6 +1,6 @@
 {
-	"parent": "item/generated",
-	"textures": {
-	  "layer0": "awakendreams:items/tanzanite_gold_ring"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "awakendreams:items/tanzanite_gold_ring"
   }
 }

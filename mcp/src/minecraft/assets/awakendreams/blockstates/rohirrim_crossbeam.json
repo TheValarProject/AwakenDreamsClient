@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:rohirrim_crossbeam" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:rohirrim_crossbeam"
     }
+  }
 }

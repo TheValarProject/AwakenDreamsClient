@@ -1,6 +1,6 @@
 {
-	"parent": "item/generated",
-	"textures": {
-	  "layer0": "awakendreams:items/raw_deer_meat"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "awakendreams:items/raw_deer_meat"
   }
 }

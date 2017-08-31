@@ -1,6 +1,6 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "awakendreams:items/uruk_siege_trooper_dagger"
-    }
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "awakendreams:items/uruk_siege_trooper_dagger"
+  }
 }

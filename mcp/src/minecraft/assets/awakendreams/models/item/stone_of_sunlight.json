@@ -1,6 +1,6 @@
 {
-	"parent": "item/generated",
-	"textures": {
-	  "layer0": "awakendreams:items/stone_of_sunlight"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "awakendreams:items/stone_of_sunlight"
   }
 }

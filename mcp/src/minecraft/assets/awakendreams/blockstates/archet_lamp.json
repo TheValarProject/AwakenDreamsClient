@@ -1,8 +1,20 @@
 {
-    "variants": {
-        "facing=south": { "model": "awakendreams:archet_lamp", "y": 90 },
-        "facing=west": { "model": "awakendreams:archet_lamp", "y": 180 },
-        "facing=north": { "model": "awakendreams:archet_lamp", "y": 270 },
-        "facing=east": { "model": "awakendreams:archet_lamp", "y": 0 }
+  "variants": {
+    "facing=south": {
+      "model": "awakendreams:archet_lamp",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "awakendreams:archet_lamp",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "awakendreams:archet_lamp",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "awakendreams:archet_lamp",
+      "y": 0
     }
+  }
 }

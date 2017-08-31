@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:umbar_wall_decoration" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:umbar_wall_decoration"
     }
+  }
 }

@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:annuminas_decoration" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:annuminas_decoration"
     }
+  }
 }

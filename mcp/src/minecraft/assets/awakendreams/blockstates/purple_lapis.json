@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:purple_lapis" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:purple_lapis"
     }
+  }
 }

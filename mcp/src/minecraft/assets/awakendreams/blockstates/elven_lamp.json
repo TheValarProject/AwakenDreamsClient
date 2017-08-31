@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:elven_lamp" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:elven_lamp"
     }
+  }
 }

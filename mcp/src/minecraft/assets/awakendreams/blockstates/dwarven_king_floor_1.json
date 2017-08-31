@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:dwarven_king_floor_1" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:dwarven_king_floor_1"
     }
+  }
 }

@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:column" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:column"
     }
+  }
 }

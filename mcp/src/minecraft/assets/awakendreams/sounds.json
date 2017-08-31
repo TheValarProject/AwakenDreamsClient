@@ -1,25 +1,25 @@
 {
-    "block.bell.ring": {
-        "sounds": [
-            "awakendreams:bell_ring"
-        ]
-    },
-    "entity.duck.ambient": {
-        "sounds": [
-            "awakendreams:mob/duck/say1",
-            "awakendreams:mob/duck/say2",
-            "awakendreams:mob/duck/say3"
-        ]
-    },
-    "entity.duck.hurt": {
-        "sounds": [
-            "awakendreams:mob/duck/hurt1",
-            "awakendreams:mob/duck/hurt2"
-        ]
-    },
-    "entity.duck.death": {
-        "sounds": [
-            "awakendreams:mob/duck/death"
-        ]
-    }
+  "block.bell.ring": {
+    "sounds": [
+      "awakendreams:bell_ring"
+    ]
+  },
+  "entity.duck.ambient": {
+    "sounds": [
+      "awakendreams:mob/duck/say1",
+      "awakendreams:mob/duck/say2",
+      "awakendreams:mob/duck/say3"
+    ]
+  },
+  "entity.duck.hurt": {
+    "sounds": [
+      "awakendreams:mob/duck/hurt1",
+      "awakendreams:mob/duck/hurt2"
+    ]
+  },
+  "entity.duck.death": {
+    "sounds": [
+      "awakendreams:mob/duck/death"
+    ]
+  }
 }

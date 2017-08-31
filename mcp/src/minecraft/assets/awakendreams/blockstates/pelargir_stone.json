@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:pelargir_stone" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:pelargir_stone"
     }
+  }
 }

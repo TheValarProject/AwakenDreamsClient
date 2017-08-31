@@ -1,6 +1,6 @@
 {
-	"parent": "item/generated",
-	"textures": {
-	  "layer0": "awakendreams:items/beast_skin"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "awakendreams:items/beast_skin"
   }
 }

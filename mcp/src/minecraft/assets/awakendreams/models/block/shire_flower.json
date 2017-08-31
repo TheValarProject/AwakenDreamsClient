@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "awakendreams:blocks/shire_flower"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "awakendreams:blocks/shire_flower"
+  }
 }

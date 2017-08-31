@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:athelas" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:athelas"
     }
+  }
 }

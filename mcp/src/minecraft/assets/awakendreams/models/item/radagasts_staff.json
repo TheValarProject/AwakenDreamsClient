@@ -1,6 +1,6 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "awakendreams:items/radagasts_staff"
-    }
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "awakendreams:items/radagasts_staff"
+  }
 }

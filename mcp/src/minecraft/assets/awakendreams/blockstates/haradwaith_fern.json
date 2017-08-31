@@ -1,5 +1,7 @@
 {
-    "variants":{
-        "normal": { "model": "awakendreams:haradwaith_fern" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:haradwaith_fern"
     }
+  }
 }

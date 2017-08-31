@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:ruin_marker" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:ruin_marker"
     }
+  }
 }

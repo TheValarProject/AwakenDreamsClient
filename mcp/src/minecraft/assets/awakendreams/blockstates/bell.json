@@ -1,8 +1,16 @@
 {
-    "variants": {
-        "facing=south": { "model": "awakendreams:bell" },
-        "facing=west": { "model": "awakendreams:bell" },
-        "facing=north": { "model": "awakendreams:bell" },
-        "facing=east": { "model": "awakendreams:bell" }
+  "variants": {
+    "facing=south": {
+      "model": "awakendreams:bell"
+    },
+    "facing=west": {
+      "model": "awakendreams:bell"
+    },
+    "facing=north": {
+      "model": "awakendreams:bell"
+    },
+    "facing=east": {
+      "model": "awakendreams:bell"
     }
+  }
 }

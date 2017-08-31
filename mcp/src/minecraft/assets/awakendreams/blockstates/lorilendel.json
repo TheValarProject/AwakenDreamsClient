@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:lorilendel" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:lorilendel"
     }
+  }
 }

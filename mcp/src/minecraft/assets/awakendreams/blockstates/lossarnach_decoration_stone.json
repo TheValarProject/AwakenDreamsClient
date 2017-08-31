@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:lossarnach_decoration_stone" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:lossarnach_decoration_stone"
     }
+  }
 }

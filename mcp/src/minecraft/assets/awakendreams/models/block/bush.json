@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "awakendreams:blocks/bush"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "awakendreams:blocks/bush"
+  }
 }

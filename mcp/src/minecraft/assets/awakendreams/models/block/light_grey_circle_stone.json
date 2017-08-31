@@ -1,6 +1,6 @@
 {
-    "parent": "awakendreams:block/cube_circle",
-    "textures": {
-        "all": "awakendreams:blocks/light_grey_circle_stone"
-    }
+  "parent": "awakendreams:block/cube_circle",
+  "textures": {
+    "all": "awakendreams:blocks/light_grey_circle_stone"
+  }
 }

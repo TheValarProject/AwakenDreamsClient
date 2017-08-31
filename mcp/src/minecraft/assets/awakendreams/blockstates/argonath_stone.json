@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:argonath_stone" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:argonath_stone"
     }
+  }
 }

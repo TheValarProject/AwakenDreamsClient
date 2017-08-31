@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-      "layer0": "awakendreams:items/rohan_helmet_5"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "awakendreams:items/rohan_helmet_5"
   }
 }

@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:dwarf_wall" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:dwarf_wall"
     }
+  }
 }

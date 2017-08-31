@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:amber_ore" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:amber_ore"
     }
+  }
 }

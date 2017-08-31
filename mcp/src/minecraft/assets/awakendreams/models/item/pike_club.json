@@ -1,6 +1,6 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "awakendreams:items/pike_club"
-    }
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "awakendreams:items/pike_club"
+  }
 }

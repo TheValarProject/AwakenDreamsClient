@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:old_tree" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:old_tree"
     }
+  }
 }

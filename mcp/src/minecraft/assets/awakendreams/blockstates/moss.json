@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:moss" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:moss"
     }
+  }
 }

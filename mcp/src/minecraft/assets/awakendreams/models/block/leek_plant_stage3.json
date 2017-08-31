@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "awakendreams:blocks/leek_plant_stage_3"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "awakendreams:blocks/leek_plant_stage_3"
+  }
 }

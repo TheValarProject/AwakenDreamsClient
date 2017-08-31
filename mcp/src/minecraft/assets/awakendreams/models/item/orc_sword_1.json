@@ -1,6 +1,6 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "awakendreams:items/orc_sword_1"
-    }
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "awakendreams:items/orc_sword_1"
+  }
 }

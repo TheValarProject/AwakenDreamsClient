@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "awakendreams:blocks/southlinch_stage_2"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "awakendreams:blocks/southlinch_stage_2"
+  }
 }

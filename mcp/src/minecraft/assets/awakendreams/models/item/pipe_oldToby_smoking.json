@@ -1,6 +1,6 @@
 {
-    "parent": "awakendreams:item/pipe_smoking",
-    "textures": {
-      "layer0": "awakendreams:items/pipe_old_toby_smoking"
+  "parent": "awakendreams:item/pipe_smoking",
+  "textures": {
+    "layer0": "awakendreams:items/pipe_old_toby_smoking"
   }
- }
+}

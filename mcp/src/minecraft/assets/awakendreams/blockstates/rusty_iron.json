@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:rusty_iron" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:rusty_iron"
     }
+  }
 }

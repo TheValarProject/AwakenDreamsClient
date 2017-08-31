@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:cross_hay" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:cross_hay"
     }
+  }
 }

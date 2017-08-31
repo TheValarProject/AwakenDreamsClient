@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "awakendreams:blocks/luindol"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "awakendreams:blocks/luindol"
+  }
 }

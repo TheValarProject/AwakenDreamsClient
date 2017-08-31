@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:gondorian_roof" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:gondorian_roof"
     }
+  }
 }

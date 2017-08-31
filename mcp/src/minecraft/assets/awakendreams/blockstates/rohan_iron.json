@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:rohan_iron" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:rohan_iron"
     }
+  }
 }

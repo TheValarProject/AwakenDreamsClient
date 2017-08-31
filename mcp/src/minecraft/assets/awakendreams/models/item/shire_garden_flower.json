@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "awakendreams:blocks/shire_garden_flower"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "awakendreams:blocks/shire_garden_flower"
+  }
 }

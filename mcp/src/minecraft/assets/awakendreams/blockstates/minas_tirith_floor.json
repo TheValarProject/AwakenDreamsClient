@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:minas_tirith_floor" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:minas_tirith_floor"
     }
+  }
 }

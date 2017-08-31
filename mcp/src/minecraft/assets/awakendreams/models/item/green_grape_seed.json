@@ -1,6 +1,6 @@
 {
-	"parent": "item/generated",
-	"textures": {
-	  "layer0": "awakendreams:items/green_grape_seed"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "awakendreams:items/green_grape_seed"
   }
 }

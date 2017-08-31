@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:rivendell_roof" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:rivendell_roof"
     }
+  }
 }

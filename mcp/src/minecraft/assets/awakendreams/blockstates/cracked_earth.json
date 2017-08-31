@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:cracked_earth" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:cracked_earth"
     }
+  }
 }

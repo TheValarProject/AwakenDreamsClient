@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:luindol" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:luindol"
     }
+  }
 }

@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:dark_dwarf_stone" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:dark_dwarf_stone"
     }
+  }
 }

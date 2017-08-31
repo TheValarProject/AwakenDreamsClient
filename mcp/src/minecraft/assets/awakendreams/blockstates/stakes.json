@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:stakes" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:stakes"
     }
+  }
 }

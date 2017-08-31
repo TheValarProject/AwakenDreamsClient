@@ -1,6 +1,6 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "awakendreams:items/gondorian_spear"
-    }
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "awakendreams:items/gondorian_spear"
+  }
 }

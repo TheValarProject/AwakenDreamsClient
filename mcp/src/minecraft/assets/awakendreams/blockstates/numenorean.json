@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:numenorean" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:numenorean"
     }
+  }
 }

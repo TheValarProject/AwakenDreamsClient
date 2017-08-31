@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:dwarven_gold" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:dwarven_gold"
     }
+  }
 }

@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "awakendreams:blocks/cursed_plant"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "awakendreams:blocks/cursed_plant"
+  }
 }

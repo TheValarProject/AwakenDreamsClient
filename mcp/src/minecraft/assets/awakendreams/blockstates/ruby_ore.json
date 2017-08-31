@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:ruby_ore" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:ruby_ore"
     }
+  }
 }

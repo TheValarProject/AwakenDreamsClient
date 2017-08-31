@@ -1,7 +1,7 @@
 {
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "awakendreams:blocks/palm_log_end",
-        "side": "awakendreams:blocks/palm_log_side"
-    }
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "awakendreams:blocks/palm_log_end",
+    "side": "awakendreams:blocks/palm_log_side"
+  }
 }

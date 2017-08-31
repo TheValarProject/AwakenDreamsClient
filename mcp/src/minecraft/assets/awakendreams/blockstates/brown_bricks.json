@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:brown_bricks" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:brown_bricks"
     }
+  }
 }

@@ -1,6 +1,6 @@
 {
-    "parent": "block/cross",
-    "textures": {
-        "cross": "awakendreams:blocks/hopper_mushroom"
-    }
+  "parent": "block/cross",
+  "textures": {
+    "cross": "awakendreams:blocks/hopper_mushroom"
+  }
 }

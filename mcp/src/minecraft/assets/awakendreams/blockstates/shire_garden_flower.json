@@ -1,5 +1,7 @@
 {
-    "variants":{
-        "normal": { "model": "awakendreams:shire_garden_flower" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:shire_garden_flower"
     }
+  }
 }

@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:town_marker" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:town_marker"
     }
+  }
 }

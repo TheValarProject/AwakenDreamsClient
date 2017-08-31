@@ -1,5 +1,7 @@
 {
-    "variants":{
-        "normal": { "model": "awakendreams:arlans_slipper" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:arlans_slipper"
     }
+  }
 }

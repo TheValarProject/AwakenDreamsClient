@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:elven_stone_wall" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:elven_stone_wall"
     }
+  }
 }

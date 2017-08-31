@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:straw" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:straw"
     }
+  }
 }

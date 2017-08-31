@@ -1,13 +1,31 @@
 {
-    "variants": {
-        "type=elven_crafting_table": { "model": "awakendreams:elven_crafting_table" },
-        "type=human_crafting_table": { "model": "awakendreams:human_crafting_table" },
-        "type=gondorian_crafting_table": { "model": "awakendreams:gondorian_crafting_table" },
-        "type=rohirrim_crafting_table": { "model": "awakendreams:elven_crafting_table" },
-        "type=hobbit_crafting_table": { "model": "awakendreams:elven_crafting_table" },
-        "type=mordor_crafting_table": { "model": "awakendreams:elven_crafting_table" },
-        "type=isengard_crafting_table": { "model": "awakendreams:isengard_crafting_table" },
-        "type=goblin_crafting_table": { "model": "awakendreams:elven_crafting_table" },
-        "type=dwarven_crafting_table": { "model": "awakendreams:elven_crafting_table" }
+  "variants": {
+    "type=elven_crafting_table": {
+      "model": "awakendreams:elven_crafting_table"
+    },
+    "type=human_crafting_table": {
+      "model": "awakendreams:human_crafting_table"
+    },
+    "type=gondorian_crafting_table": {
+      "model": "awakendreams:gondorian_crafting_table"
+    },
+    "type=rohirrim_crafting_table": {
+      "model": "awakendreams:elven_crafting_table"
+    },
+    "type=hobbit_crafting_table": {
+      "model": "awakendreams:elven_crafting_table"
+    },
+    "type=mordor_crafting_table": {
+      "model": "awakendreams:elven_crafting_table"
+    },
+    "type=isengard_crafting_table": {
+      "model": "awakendreams:isengard_crafting_table"
+    },
+    "type=goblin_crafting_table": {
+      "model": "awakendreams:elven_crafting_table"
+    },
+    "type=dwarven_crafting_table": {
+      "model": "awakendreams:elven_crafting_table"
     }
+  }
 }

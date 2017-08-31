@@ -1,6 +1,6 @@
 {
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "awakendreams:items/dol_guldur_spiked_mace"
-    }
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "awakendreams:items/dol_guldur_spiked_mace"
+  }
 }

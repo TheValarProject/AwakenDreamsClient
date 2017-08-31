@@ -1,5 +1,7 @@
 {
-    "variants": {
-        "normal": { "model": "awakendreams:rhun_floor" }
+  "variants": {
+    "normal": {
+      "model": "awakendreams:rhun_floor"
     }
+  }
 }
