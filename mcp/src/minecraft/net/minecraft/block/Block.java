@@ -1372,7 +1372,7 @@ public class Block
         registerADBlock(504, "luindol", new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(12, 19)));
         registerADBlock(505, "hopper_Mushroom", new BlockCustomFlower(BlockCustomFlower.generateCrossBoundingBox(4, 11, 16)));
         registerADBlock(506, "amethyst_Ore", new BlockCustomOre());
-        registerADBlock(507, "ruby_Ore", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS)); //needs ruby item for furnace recipes and item drop
+        registerADBlock(507, "ruby_Ore", new BlockCustomOre());
         registerADBlock(508, "onyx_Ore", new BlockCustomOre());
         registerADBlock(509, "moonstone_Ore", new BlockCustomOre());
         registerADBlock(511, "minas_Morgul_Glowstone", (new Block(Material.GLASS)).setLightLevel(1.0F).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.GLASS).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));

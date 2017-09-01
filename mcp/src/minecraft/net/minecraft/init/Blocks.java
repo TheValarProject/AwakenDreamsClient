@@ -273,7 +273,7 @@ public class Blocks
     public static final Block LUINDOL;
     public static final Block HOPPER_MUSHROOM;
     public static final BlockCustomOre AMETHYST_ORE;
-    public static final Block RUBY_ORE;
+    public static final BlockCustomOre RUBY_ORE;
     public static final BlockCustomOre ONYX_ORE;
     public static final BlockCustomOre MOONSTONE_ORE;
     public static final Block MINAS_MORGUL_GLOWSTONE;
@@ -795,7 +795,7 @@ public class Blocks
             LUINDOL = getRegisteredADBlock("luindol");
             HOPPER_MUSHROOM = getRegisteredADBlock("hopper_mushroom");
             AMETHYST_ORE = (BlockCustomOre)getRegisteredADBlock("amethyst_ore");
-            RUBY_ORE = getRegisteredADBlock("ruby_ore");
+            RUBY_ORE = (BlockCustomOre)getRegisteredADBlock("ruby_ore");
             ONYX_ORE = (BlockCustomOre)getRegisteredADBlock("onyx_ore");
             MOONSTONE_ORE = (BlockCustomOre)getRegisteredADBlock("moonstone_ore");
             MINAS_MORGUL_GLOWSTONE = getRegisteredADBlock("minas_morgul_glowstone");

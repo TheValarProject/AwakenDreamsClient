@@ -488,6 +488,7 @@ public class Items
     public static final Item ROHAN_LEGGINGS;
     public static final Item RING;
     public static final Item ELVEN_STEEL_INGOT;
+    public static final Item RUBY;
     
     private static Item getRegisteredADItem(String name)
     {
@@ -1038,6 +1039,8 @@ public class Items
             ROHAN_LEGGINGS = getRegisteredADItem("rohan_leggings");
             RING = getRegisteredADItem("ring");
             ELVEN_STEEL_INGOT = getRegisteredADItem("elven_steel_ingot");
+            RUBY = getRegisteredADItem("ruby");
+            Blocks.RUBY_ORE.setItemDrop(RUBY);
             // End Awaken Dreams code
         }
     }

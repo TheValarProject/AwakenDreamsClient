@@ -564,6 +564,7 @@ item.ring.mithril.stoneOfSunlight.name=Bague de la lumière du soleil en mithril
 item.ring.mithril.stoneOfWealth.name=Bague de la richesse en mithril
 item.ring.mithril.stoneOfWind.name=Bague du vent en mithril
 item.elvenSteelIngot.name=Lingot d'acier elfique
+item.ruby.name=Rubis
 
 container.elvenCrafting=Fabrication Elfique
 container.humanCrafting=Fabrication Humaine

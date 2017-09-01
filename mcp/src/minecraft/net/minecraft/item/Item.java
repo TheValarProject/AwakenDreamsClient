@@ -1617,6 +1617,7 @@ public class Item
         //registerADItem(6324, "azogs_Mace", new ItemValarWeapon(3500, 7, 0, true, false));
         registerADItem(6325, "ring", new ItemRing());
         registerADItem(6326, "elven_Steel_Ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6327, "ruby", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
         // Temporary Id, change to proper id when adding items
         //registerADItem(10003, "frodos_Finger", new ItemValarFood(2, 0.1F, true));
         //registerADItem(10004, "two_Handed_Sword", new ItemValarWeapon(1, 20, 0, true));

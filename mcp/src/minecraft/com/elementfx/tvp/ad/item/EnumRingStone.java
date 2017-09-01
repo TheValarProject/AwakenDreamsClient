@@ -16,7 +16,7 @@ public enum EnumRingStone  implements IStringSerializable
 	JADE(3, Items.JADE),
 	MOONSTONE(4, Items.MOONSTONE),
 	AMETHYST(5, Items.AMETHYST),
-	//RUBY(6, Items.RUBY),
+	RUBY(6, Items.RUBY),
 	QUARTZ(7, Items.QUARTZ),
 	AMBER(8, Items.AMBER),
 	STONE_OF_DARKNESS(67, Items.STONE_OF_DARKNESS),
