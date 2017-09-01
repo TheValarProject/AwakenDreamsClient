@@ -69,7 +69,7 @@ public class FurnaceRecipes
         this.addSmeltingRecipeForBlock(Blocks.AMBER_ORE, new ItemStack(Items.AMBER), 1.0F);
         this.addSmeltingRecipeForBlock(Blocks.TANZANITE_ORE, new ItemStack(Items.TANZANITE), 1.0F);
         this.addSmeltingRecipeForBlock(Blocks.AMETHYST_ORE, new ItemStack(Items.AMETHYST), 1.0F);
-        //this.addSmeltingRecipeForBlock(Blocks.RUBY_ORE, new ItemStack(Items.RUBY), 1.0F);
+        this.addSmeltingRecipeForBlock(Blocks.RUBY_ORE, new ItemStack(Items.RUBY), 1.0F);
         this.addSmeltingRecipeForBlock(Blocks.ONYX_ORE, new ItemStack(Items.ONYX), 1.0F);
         this.addSmeltingRecipeForBlock(Blocks.MOONSTONE_ORE, new ItemStack(Items.MOONSTONE), 1.0F);
         this.addSmeltingRecipeForBlock(Blocks.CRYSTAL_ORE, new ItemStack(Items.CRYSTAL), 1.0F);

@@ -1624,6 +1624,7 @@ public class Item
         //registerADItem(10006, "miruvoir", new ItemValarDrinkable(Items.glass_bottle));
         registerADItem(10007, "rohan_Boots", new ItemCustomArmor(EntityEquipmentSlot.FEET, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.FEET)));
         registerADItem(10008, "rohan_Leggings", new ItemCustomArmor(EntityEquipmentSlot.LEGS, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.LEGS)));
+        registerADItem(10009, "ruby", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
         // End Awaken Dreams code
     }
 

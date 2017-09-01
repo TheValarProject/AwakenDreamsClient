@@ -586,6 +586,7 @@ item.ring.mithril.stoneOfSunlight.name=Mithril Ring of Sunlight
 item.ring.mithril.stoneOfWealth.name=Mithril Ring of Wealth
 item.ring.mithril.stoneOfWind.name=Mithril Ring of Wind
 item.elvenSteelIngot.name=Elven Steel Ingot
+item.ruby.name=Ruby
 
 container.elvenCrafting=Elven Crafting
 container.humanCrafting=Human Crafting
