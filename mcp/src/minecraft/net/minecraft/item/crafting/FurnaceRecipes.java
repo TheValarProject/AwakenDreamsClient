@@ -75,6 +75,7 @@ public class FurnaceRecipes
         this.addSmeltingRecipeForBlock(Blocks.CRYSTAL_ORE, new ItemStack(Items.CRYSTAL), 1.0F);
         this.addSmeltingRecipeForBlock(Blocks.SALT_ORE, new ItemStack(Items.SALT), 1.0F);
         this.addSmeltingRecipeForBlock(Blocks.MITHRIL_ORE, new ItemStack(Items.MITHRIL_INGOT), 1.0F);
+        this.addSmelting(Items.DUCK, new ItemStack(Items.COOKED_DUCK), 0.35F);
         //End Awaken Dreams code    
     }
 

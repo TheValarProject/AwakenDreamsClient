@@ -565,6 +565,8 @@ item.ring.mithril.stoneOfWealth.name=Bague de la richesse en mithril
 item.ring.mithril.stoneOfWind.name=Bague du vent en mithril
 item.elvenSteelIngot.name=Lingot d'acier elfique
 item.ruby.name=Rubis
+item.duck.name=Canard cru
+item.cookedDuck.name=Canard rôti
 
 container.elvenCrafting=Fabrication Elfique
 container.humanCrafting=Fabrication Humaine

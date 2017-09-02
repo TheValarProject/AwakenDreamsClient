@@ -587,6 +587,8 @@ item.ring.mithril.stoneOfWealth.name=Prsten bohatství z Mithrilu
 item.ring.mithril.stoneOfWind.name=Prsten větru z Mithrilu
 item.elvenSteelIngot.name=Ingot Elfího železa
 item.ruby.name=Rubín
+item.duck.name=Syrová kachna
+item.cookedDuck.name=Pečená kachna
 
 container.elvenCrafting=Elfí výroba
 container.humanCrafting=Lidská výroba

@@ -1618,6 +1618,8 @@ public class Item
         registerADItem(6325, "ring", new ItemRing());
         registerADItem(6326, "elven_Steel_Ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
         registerADItem(6327, "ruby", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        registerADItem(6328, "duck", (new ItemCustomFood(2, 0.35F, true)).setPotionEffect(new PotionEffect(MobEffects.HUNGER, 600, 0), 0.3F));
+        registerADItem(6329, "cooked_Duck", (new ItemCustomFood(6, 0.7F, true)));       
         // Temporary Id, change to proper id when adding items
         //registerADItem(10003, "frodos_Finger", new ItemValarFood(2, 0.1F, true));
         //registerADItem(10004, "two_Handed_Sword", new ItemValarWeapon(1, 20, 0, true));
