@@ -393,6 +393,7 @@ public class EntityList
         //Begin Awaken Dreams code
         addMapping(EntityThrowingStone.class, "ThrowingStone", 500);
         addMapping(EntityDuck.class, "Duck", 501, 3549732, 4085030);
+        addMapping(EntityEgg.class, "ThrownDuckEgg", 502);
         //End Awaken Dreams code
     }
 

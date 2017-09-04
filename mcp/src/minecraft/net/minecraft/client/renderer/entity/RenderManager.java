@@ -2,6 +2,7 @@ package net.minecraft.client.renderer.entity;
 
 import com.elementfx.tvp.ad.client.renderer.entity.RenderDuck;
 import com.elementfx.tvp.ad.entity.passive.EntityDuck;
+import com.elementfx.tvp.ad.entity.projectile.EntityCustomEgg;
 import com.elementfx.tvp.ad.entity.projectile.EntityThrowingStone;
 import com.google.common.collect.Maps;
 import java.util.Map;
@@ -219,6 +220,7 @@ public class RenderManager
         //Begin Awaken Dreams code
         this.entityRenderMap.put(EntityThrowingStone.class, new RenderSnowball(this, Items.THROWING_STONE, itemRendererIn));
         this.entityRenderMap.put(EntityDuck.class, new RenderDuck(this, new ModelChicken(), 0.3F));
+        this.entityRenderMap.put(EntityCustomEgg.class, new RenderSnowball(this, Items.DUCK_EGG, itemRendererIn));
         //End Awaken Dreams code
         this.playerRenderer = new RenderPlayer(this);
         this.skinMap.put("default", this.playerRenderer);

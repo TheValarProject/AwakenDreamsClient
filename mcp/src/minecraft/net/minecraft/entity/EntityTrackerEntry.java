@@ -1,5 +1,6 @@
 package net.minecraft.entity;
 
+import com.elementfx.tvp.ad.entity.projectile.EntityCustomEgg;
 import com.elementfx.tvp.ad.entity.projectile.EntityThrowingStone;
 import com.google.common.collect.Sets;
 import java.util.Collection;
@@ -653,6 +654,10 @@ public class EntityTrackerEntry
         else if (this.trackedEntity instanceof EntityThrowingStone)
         {
         	return new SPacketSpawnObject(this.trackedEntity, 500);
+        }
+        else if (this.trackedEntity instanceof EntityCustomEgg)
+        {
+            return new SPacketSpawnObject(this.trackedEntity, 502);
         }
         //End Awaken Dreams code
         else

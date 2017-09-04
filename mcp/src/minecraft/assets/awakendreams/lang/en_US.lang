@@ -589,6 +589,7 @@ item.elvenSteelIngot.name=Elven Steel Ingot
 item.ruby.name=Ruby
 item.duck.name=Raw Duck
 item.cookedDuck.name=Cooked Duck
+item.duckEgg.name=Duck Egg
 
 container.elvenCrafting=Elven Crafting
 container.humanCrafting=Human Crafting
