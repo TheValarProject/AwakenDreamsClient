@@ -589,6 +589,7 @@ item.elvenSteelIngot.name=Ingot Elfího železa
 item.ruby.name=Rubín
 item.duck.name=Syrová kachna
 item.cookedDuck.name=Pečená kachna
+item.duckEgg.name=Kachní vejce
 
 container.elvenCrafting=Elfí výroba
 container.humanCrafting=Lidská výroba

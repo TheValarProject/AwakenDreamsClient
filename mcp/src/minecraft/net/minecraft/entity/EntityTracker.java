@@ -1,5 +1,6 @@
 package net.minecraft.entity;
 
+import com.elementfx.tvp.ad.entity.projectile.EntityCustomEgg;
 import com.elementfx.tvp.ad.entity.projectile.EntityThrowingStone;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
@@ -198,6 +199,10 @@ public class EntityTracker
         else if (entityIn instanceof EntityThrowingStone)
         {
         	this.addEntityToTracker(entityIn, 64, 10, true);
+        }
+        else if (entityIn instanceof EntityCustomEgg)
+        {
+            this.addEntityToTracker(entityIn, 64, 10, true);
         }
         //End Awaken Dreams code
     }

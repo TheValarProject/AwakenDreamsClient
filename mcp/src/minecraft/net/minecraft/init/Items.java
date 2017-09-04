@@ -491,6 +491,7 @@ public class Items
     public static final Item RUBY;
     public static final Item DUCK;
     public static final Item COOKED_DUCK;
+    public static final Item DUCK_EGG;
     
     private static Item getRegisteredADItem(String name)
     {
@@ -1045,6 +1046,7 @@ public class Items
             Blocks.RUBY_ORE.setItemDrop(RUBY);
             DUCK = getRegisteredADItem("duck");
             COOKED_DUCK = getRegisteredADItem("cooked_duck");
+            DUCK_EGG = getRegisteredADItem("duck_egg");
             // End Awaken Dreams code
         }
     }

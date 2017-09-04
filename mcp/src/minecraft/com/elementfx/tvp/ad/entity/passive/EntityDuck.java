@@ -42,12 +42,16 @@ public class EntityDuck extends EntityAnimal
     public float oFlapSpeed;
     public float oFlap;
     public float wingRotDelta = 1.0F;
+    
+    /** The time until the next egg is spawned. */
+    public int timeUntilNextEgg;
 
     public EntityDuck(World worldIn)
     {
         super(worldIn);
         this.setSize(0.4F, 0.7F);
         this.setPathPriority(PathNodeType.WATER, 4.0F);
+        this.timeUntilNextEgg = this.rand.nextInt(6000) + 6000;
     }
 
     protected void initEntityAI()
@@ -99,6 +103,13 @@ public class EntityDuck extends EntityAnimal
         }
 
         this.wingRotation += this.wingRotDelta * 2.0F;
+        
+        if (!this.worldObj.isRemote && !this.isChild() && --this.timeUntilNextEgg <= 0)
+        {
+            this.playSound(SoundEvents.ENTITY_CHICKEN_EGG, 1.0F, (this.rand.nextFloat() - this.rand.nextFloat()) * 0.2F + 1.0F);
+            this.dropItem(Items.DUCK_EGG, 1);
+            this.timeUntilNextEgg = this.rand.nextInt(6000) + 6000;
+        }
     }
 
     public void fall(float distance, float damageMultiplier)

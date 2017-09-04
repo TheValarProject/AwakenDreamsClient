@@ -1619,6 +1619,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerADItem(Items.RUBY, "ruby");
         this.registerADItem(Items.DUCK, "duck");
         this.registerADItem(Items.COOKED_DUCK, "cooked_duck");
+        this.registerADItem(Items.DUCK_EGG,  "duck_egg");
         this.itemModelMesher.register(Items.RING, new ItemMeshDefinition()
         {
             public ModelResourceLocation getModelLocation(ItemStack stack)
