@@ -1,5 +1,6 @@
 package net.minecraft.init;
 
+import com.elementfx.tvp.ad.entity.projectile.EntityCustomEgg;
 import com.elementfx.tvp.ad.entity.projectile.EntityThrowingStone;
 import com.mojang.authlib.GameProfile;
 import java.io.PrintStream;
@@ -527,6 +528,13 @@ public class Bootstrap
             protected IProjectile getProjectileEntity(World worldIn, IPosition position, ItemStack stackIn)
             {
                 return new EntityThrowingStone(worldIn, position.getX(), position.getY(), position.getZ());
+            }
+        });
+        BlockDispenser.DISPENSE_BEHAVIOR_REGISTRY.putObject(Items.DUCK_EGG, new BehaviorProjectileDispense()
+        {
+            protected IProjectile getProjectileEntity(World worldIn, IPosition position, ItemStack stackIn)
+            {
+                return new EntityCustomEgg(worldIn, position.getX(), position.getY(), position.getZ());
             }
         });
         // End Awaken Dreams code
