@@ -1,7 +1,13 @@
 /bin
 /eclipse
 /jars/screenshots
-/jars/saves
+
+/jars/saves/*
+!/jars/saves/Official Test World
+/jars/saves/Official Test World/stats/
+/jars/saves/Official Test World/playerdata/
+/jars/saves/Official Test World/session.lock
+
 /jars/usercache.json
 /jars/options.txt
 /reobf
