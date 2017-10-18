@@ -602,6 +602,7 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
         this.drawCenteredString(this.fontRendererObj, this.splashText, 0, -8, -256);
         GlStateManager.popMatrix();
         String s = "Minecraft 1.10";
+        String awakenDreamsTitle = "Awaken Dreams 0.5b";
 
         if (this.mc.isDemo())
         {
@@ -613,6 +614,7 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
         }
 
         this.drawString(this.fontRendererObj, s, 2, this.height - 10, -1);
+        this.drawString(this.fontRendererObj, awakenDreamsTitle, 2, this.height - 20, -1);
         String s1 = "Copyright Mojang AB. Do not distribute!";
         this.drawString(this.fontRendererObj, "Copyright Mojang AB. Do not distribute!", this.width - this.fontRendererObj.getStringWidth("Copyright Mojang AB. Do not distribute!") - 2, this.height - 10, -1);
 
