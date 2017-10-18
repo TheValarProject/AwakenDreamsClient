@@ -1454,7 +1454,7 @@ public class Block
         registerADBlock(588, "dwarven_Gold", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(589, "rohan_Iron", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(590, "dark_Dwarf_Stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerADBlock(591, "medium_Dark_Dwarf_Stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE));
+        registerADBlock(591, "medium_Dark_Dwarf_Stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         //registerADBlock(592, "mud_Block", (new BlockValarMud()).setBlockTextureName("mud_block"));
         registerADBlock(594, "light_Brown_Wood", (new Block(Material.WOOD)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.WOOD).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(595, "old_Tree", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
