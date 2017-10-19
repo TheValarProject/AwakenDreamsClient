@@ -16,6 +16,10 @@ matrix:
         - npm install jsonlint
       script:
         - tests/json_validate.sh
+    - stage: Recompilation
+      language: java
+      script:
+        - tests/recompile.sh
 cache:
   directories:
     - "node_modules"
