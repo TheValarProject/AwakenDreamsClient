@@ -1520,13 +1520,13 @@ public class Block
         registerADBlock(658, "sindar_Decoration_Stone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(659, "noldor_Floor", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(660, "noldor_Sandstone_Floor", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerADBlock(661, "mallorn_Woodplanks", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerADBlock(662, "lindon_Wood", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        registerADBlock(661, "mallorn_Woodplanks", (new Block(Material.WOOD)).setHardness(2.0F).setResistance(5.0F).setSoundType(SoundType.WOOD).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        registerADBlock(662, "lindon_Wood", (new Block(Material.WOOD)).setHardness(2.0F).setResistance(5.0F).setSoundType(SoundType.WOOD).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(663, "lindon_Wall_Decoration", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(664, "high_Elf_Wall", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(665, "harlindon_Wood", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(666, "forlond_Floor", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerADBlock(667, "forlindon_Wood", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        registerADBlock(667, "forlindon_Wood", (new Block(Material.WOOD)).setHardness(2.0F).setResistance(5.0F).setSoundType(SoundType.WOOD).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(668, "forlindon_Wall", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(669, "elven_Stone_Wall", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(670, "elven_Noble_Wall", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
@@ -1559,8 +1559,8 @@ public class Block
         registerADBlock(698, "khand_Stone_Bricks", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(699, "brown_Bricks", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(700, "edoras_Cobblestone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerADBlock(701, "reinforced_Wood", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        registerADBlock(702, "meduseld_Wood", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        registerADBlock(701, "reinforced_Wood", (new Block(Material.WOOD)).setHardness(2.0F).setResistance(10.0F).setSoundType(SoundType.WOOD).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
+        registerADBlock(702, "meduseld_Wood", (new Block(Material.WOOD)).setHardness(2.0F).setResistance(5.0F).setSoundType(SoundType.WOOD).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(703, "rohirrim_Wall_Decoration", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(704, "statue_Head", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(705, "rohirrim_Oak_Planks", (new Block3DDirectional(Material.WOOD)).setHardness(2.0F).setResistance(5.0F).setSoundType(SoundType.WOOD).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
