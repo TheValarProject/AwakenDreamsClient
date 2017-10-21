@@ -132,14 +132,6 @@ public class BlockCustomBed extends BlockBed
     }
 
     /**
-     * Convert the BlockState into the correct metadata value
-     */
-    public int getMetaFromState(IBlockState state)
-    {
-        return 0;
-    }
-
-    /**
      * Get the actual Block state of this Block at the given position. This applies properties not visible in the
      * metadata, such as fence connections.
      */
