@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Random;
 import javax.annotation.Nullable;
 
+import com.elementfx.tvp.ad.item.ItemCustomBed;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBed;
 import net.minecraft.block.BlockFence;
@@ -43,10 +45,7 @@ public class BlockCustomBed extends BlockBed
 	private Item inventoryItem = null;
 	/** Whether this bed is placed below another one */
     public static final PropertyBool BUNK = PropertyBool.create("bunk");
-
-    protected static final AxisAlignedBB[] BOUNDING_BOXES = new AxisAlignedBB[] {new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5625D, 1.0D), new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D)};
-    public static final AxisAlignedBB BUNK_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
-
+    public static final AxisAlignedBB BOTTOM_BUNK_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
 
     public BlockCustomBed()
     {
@@ -54,6 +53,19 @@ public class BlockCustomBed extends BlockBed
         this.setHardness(0.2F);
         this.setSoundType(SoundType.CLOTH);
         this.setDefaultState(this.blockState.getBaseState().withProperty(BUNK, Boolean.valueOf(false)));
+    }
+    
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState stateIn, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ)
+    {
+    	IBlockState state = this.getActualState(stateIn, worldIn, pos);
+    	boolean flag = heldItem != null;
+    	if(flag && heldItem.getItem() instanceof ItemCustomBed && !((Boolean)stateIn.getValue(BUNK)).booleanValue())
+    	{
+    		ItemCustomBed bed = (ItemCustomBed) heldItem.getItem();
+    		bed.onItemUse(heldItem, playerIn, worldIn, pos, hand, side, hitX, hitY, hitZ);
+    		return false;
+    	}
+    	return super.onBlockActivated(worldIn, pos, stateIn, playerIn, hand, heldItem, side, hitX, hitY, hitZ);
     }
     
     // The item cannot be set in the constructor because the members of Items aren't initialized yet
@@ -79,38 +91,15 @@ public class BlockCustomBed extends BlockBed
     {
         return new ItemStack(this.inventoryItem);
     }
-
-    public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn)
-    {
-        state = state.getActualState(worldIn, pos);
-        addCollisionBoxToList(pos, entityBox, collidingBoxes, BED_AABB);
-
-        if (((Boolean)state.getValue(BUNK)).booleanValue())
-        {
-            addCollisionBoxToList(pos, entityBox, collidingBoxes, BUNK_AABB);
-        }
-
-    }
     
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
     {
         state = this.getActualState(state, source, pos);
-        return BOUNDING_BOXES[getBoundingBoxIdx(state)];
-    }
-
-    /**
-     * Returns the correct index into boundingBoxes, based on what the fence is connected to.
-     */
-    private static int getBoundingBoxIdx(IBlockState state)
-    {
-        int i = 0;
-
-        if (((Boolean)state.getValue(BUNK)).booleanValue())
+        if(((Boolean)state.getValue(BUNK)).booleanValue())
         {
-            i |= 1;
+        	return BOTTOM_BUNK_AABB;
         }
-
-        return i;
+        return BED_AABB;
     }
 
     public boolean canConnectTo(IBlockAccess worldIn, BlockPos pos)
