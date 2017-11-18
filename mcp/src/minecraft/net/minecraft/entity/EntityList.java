@@ -1,6 +1,7 @@
 package net.minecraft.entity;
 
 import com.elementfx.tvp.ad.entity.passive.EntityDuck;
+import com.elementfx.tvp.ad.entity.projectile.EntityCustomArrow;
 import com.elementfx.tvp.ad.entity.projectile.EntityThrowingStone;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
@@ -394,6 +395,8 @@ public class EntityList
         addMapping(EntityThrowingStone.class, "ThrowingStone", 500);
         addMapping(EntityDuck.class, "Duck", 501, 3549732, 4085030);
         addMapping(EntityEgg.class, "ThrownDuckEgg", 502);
+        addMapping(EntityCustomArrow.class, "CustomArrow", 503);
+        
         //End Awaken Dreams code
     }
 

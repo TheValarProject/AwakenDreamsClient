@@ -1,5 +1,6 @@
 package net.minecraft.entity;
 
+import com.elementfx.tvp.ad.entity.projectile.EntityCustomArrow;
 import com.elementfx.tvp.ad.entity.projectile.EntityCustomEgg;
 import com.elementfx.tvp.ad.entity.projectile.EntityThrowingStone;
 import com.google.common.collect.Sets;
@@ -658,6 +659,12 @@ public class EntityTrackerEntry
         else if (this.trackedEntity instanceof EntityCustomEgg)
         {
             return new SPacketSpawnObject(this.trackedEntity, 502);
+        }
+        else if (this.trackedEntity instanceof EntityCustomArrow)
+        {
+            Entity entityx = ((EntityArrow)this.trackedEntity).shootingEntity;
+            return new SPacketSpawnObject(this.trackedEntity, 503, 1 + (entityx != null ? entityx.getEntityId() : this.trackedEntity.getEntityId()));
+       
         }
         //End Awaken Dreams code
         else
