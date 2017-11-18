@@ -4,6 +4,7 @@ import com.elementfx.tvp.ad.block.BlockCustomBed;
 import com.elementfx.tvp.ad.block.BlockCustomCrops;
 import com.elementfx.tvp.ad.block.BlockCustomWorkbench;
 import com.elementfx.tvp.ad.item.ItemCustomArmor;
+import com.elementfx.tvp.ad.item.ItemCustomArrow;
 import com.elementfx.tvp.ad.item.ItemCustomBed;
 import com.elementfx.tvp.ad.item.ItemCustomEgg;
 import com.elementfx.tvp.ad.item.ItemCustomFood;
@@ -1309,7 +1310,7 @@ public class Item
         registerADItem(6002, "bronze_Ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
         registerADItem(6003, "pipe", new ItemPipe(false));
         registerADItem(6004, "tobacco", (new Item()).setCreativeTab(CreativeTabs.MISC));
-        //registerADItem(6005, "flaming_arrow", (new Item()).setCreativeTab().setUnlocalizedName("flamingArrow"));
+        registerADItem(6005, "flaming_Arrow", (new ItemCustomArrow(true)));
         registerADItem(6008, "jade", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
         registerADItem(6009, "amber", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
         //registerADItem(6010, "parchment", (new Item()).setCreativeTab().setUnlocalizedName("parchment"));

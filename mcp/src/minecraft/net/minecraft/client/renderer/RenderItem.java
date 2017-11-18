@@ -1360,6 +1360,7 @@ public class RenderItem implements IResourceManagerReloadListener
             }
         });
         this.registerADItem(Items.TOBACCO, "tobacco");
+        this.registerADItem(Items.FLAMING_ARROW, "flaming_arrow");
         this.registerADItem(Items.JADE, "jade");
         this.registerADItem(Items.AMBER, "amber");
         this.registerADItem(Items.CRYSTAL, "crystal");

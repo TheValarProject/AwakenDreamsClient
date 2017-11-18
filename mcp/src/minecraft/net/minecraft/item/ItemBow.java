@@ -1,6 +1,7 @@
 package net.minecraft.item;
 
 import javax.annotation.Nullable;
+import com.elementfx.tvp.ad.item.ItemCustomArrow;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.EntityLivingBase;
@@ -104,6 +105,13 @@ public class ItemBow extends Item
                 {
                     boolean flag1 = flag && itemstack.getItem() == Items.ARROW;
 
+                    // Begin Awaken Dreams code
+                    if(flag && itemstack.getItem() instanceof ItemCustomArrow)
+                    {
+                    	flag1 = true;
+                    }
+                    // End Awaken Dreams code
+                    
                     if (!worldIn.isRemote)
                     {
                         ItemArrow itemarrow = (ItemArrow)((ItemArrow)(itemstack.getItem() instanceof ItemArrow ? itemstack.getItem() : Items.ARROW));

@@ -12,5 +12,6 @@ public class RecipesCustom
 	{
 		manager.addRecipe(new ItemStack(Items.PIPE, 1), new Object[] {"  S", "SS ", "S  ", 'S', Items.STICK});
 		manager.addShapelessRecipe(new ItemStack(Items.THROWING_STONE, 4), new Object[] {Blocks.COBBLESTONE});
+		manager.addShapelessRecipe(new ItemStack(Items.FLAMING_ARROW, 1), new Object[] {Items.ARROW, Items.FIRE_CHARGE});
 	}
 }

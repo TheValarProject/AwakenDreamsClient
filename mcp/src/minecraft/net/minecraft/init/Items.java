@@ -230,6 +230,7 @@ public class Items
     public static final Item BRONZE_INGOT;
     public static final ItemPipe PIPE;
     public static final Item TOBACCO;
+    public static final Item FLAMING_ARROW;
     public static final Item JADE;
     public static final Item AMBER;
     public static final Item CRYSTAL;
@@ -743,6 +744,7 @@ public class Items
             BRONZE_INGOT = getRegisteredADItem("bronze_ingot");
             TOBACCO = getRegisteredADItem("tobacco");
             PIPE.addSmokableItem(TOBACCO);
+            FLAMING_ARROW = getRegisteredADItem("flaming_arrow");
             JADE = getRegisteredADItem("jade");
             Blocks.JADE_ORE.setItemDrop(JADE);
             AMBER = getRegisteredADItem("amber");
