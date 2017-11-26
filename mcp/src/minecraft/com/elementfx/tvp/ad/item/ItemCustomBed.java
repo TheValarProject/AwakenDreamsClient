@@ -63,8 +63,10 @@ public class ItemCustomBed extends ItemBed
                 boolean flag1 = worldIn.getBlockState(blockpos).getBlock().isReplaceable(worldIn, blockpos);
                 boolean flag2 = flag || worldIn.isAirBlock(pos);
                 boolean flag3 = flag1 || worldIn.isAirBlock(blockpos);
+                IBlockState iblockstatex = worldIn.getBlockState(blockpos);
+                Block blockx = iblockstatex.getBlock();
 
-                if (flag2 && flag3 && worldIn.getBlockState(pos.down()).isFullyOpaque() && worldIn.getBlockState(blockpos.down()).isFullyOpaque())
+                if (flag2 && flag3 && ((worldIn.getBlockState(pos.down()).isFullyOpaque() && worldIn.getBlockState(blockpos.down()).isFullyOpaque() || (worldIn.getBlockState(pos.down()).getBlock() instanceof BlockCustomBed && worldIn.getBlockState(blockpos.down()).getBlock() instanceof BlockCustomBed))))
                 {
                     IBlockState iblockstate1 = this.bedBlock.getDefaultState().withProperty(BlockBed.OCCUPIED, Boolean.valueOf(false)).withProperty(BlockBed.FACING, enumfacing).withProperty(BlockBed.PART, BlockBed.EnumPartType.FOOT);
 
@@ -76,7 +78,10 @@ public class ItemCustomBed extends ItemBed
 
                     SoundType soundtype = iblockstate1.getBlock().getSoundType();
                     worldIn.playSound((EntityPlayer)null, pos, soundtype.getPlaceSound(), SoundCategory.BLOCKS, (soundtype.getVolume() + 1.0F) / 2.0F, soundtype.getPitch() * 0.8F);
-                    --stack.stackSize;
+                    if(!playerIn.isCreative())
+                    {
+                    	--stack.stackSize;	
+                    }
                     return EnumActionResult.SUCCESS;
                 }
                 else

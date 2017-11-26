@@ -1,33 +1,63 @@
 {
   "variants": {
-    "facing=north,part=foot": {
+    "bunk=false,facing=north,part=foot": {
       "model": "awakendreams:green_bed_foot",
       "y": 180
     },
-    "facing=east,part=foot": {
+    "bunk=false,facing=east,part=foot": {
       "model": "awakendreams:green_bed_foot",
       "y": 270
     },
-    "facing=south,part=foot": {
+    "bunk=false,facing=south,part=foot": {
       "model": "awakendreams:green_bed_foot"
     },
-    "facing=west,part=foot": {
+    "bunk=false,facing=west,part=foot": {
       "model": "awakendreams:green_bed_foot",
       "y": 90
     },
-    "facing=north,part=head": {
+    "bunk=false,facing=north,part=head": {
       "model": "awakendreams:green_bed_head",
       "y": 180
     },
-    "facing=east,part=head": {
+    "bunk=false,facing=east,part=head": {
       "model": "awakendreams:green_bed_head",
       "y": 270
     },
-    "facing=south,part=head": {
+    "bunk=false,facing=south,part=head": {
       "model": "awakendreams:green_bed_head"
     },
-    "facing=west,part=head": {
+    "bunk=false,facing=west,part=head": {
       "model": "awakendreams:green_bed_head",
+      "y": 90
+    },
+    "bunk=true,facing=north,part=foot": {
+      "model": "awakendreams:green_bunk_bed_foot",
+      "y": 180
+    },
+    "bunk=true,facing=east,part=foot": {
+      "model": "awakendreams:green_bunk_bed_foot",
+      "y": 270
+    },
+    "bunk=true,facing=south,part=foot": {
+      "model": "awakendreams:green_bunk_bed_foot"
+    },
+    "bunk=true,facing=west,part=foot": {
+      "model": "awakendreams:green_bunk_bed_foot",
+      "y": 90
+    },
+    "bunk=true,facing=north,part=head": {
+      "model": "awakendreams:green_bunk_bed_head",
+      "y": 180
+    },
+    "bunk=true,facing=east,part=head": {
+      "model": "awakendreams:green_bunk_bed_head",
+      "y": 270
+    },
+    "bunk=true,facing=south,part=head": {
+      "model": "awakendreams:green_bunk_bed_head"
+    },
+    "bunk=true,facing=west,part=head": {
+      "model": "awakendreams:green_bunk_bed_head",
       "y": 90
     }
   }
