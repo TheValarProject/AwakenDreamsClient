@@ -115,9 +115,10 @@ public class BlockCustomBed extends BlockBed
         }
         
         Boolean isSameDirection = iblockstate.getValue(FACING) == iblockstateup.getValue(FACING);
+        Boolean isOppositeDirection = iblockstate.getValue(FACING) == iblockstateup.getValue(FACING).getOpposite();
         Boolean isSamePart = iblockstate.getValue(PART) == iblockstateup.getValue(PART);
 
-        return isSamePart.booleanValue() == isSameDirection.booleanValue();
+        return (isSameDirection && isSamePart) || (isOppositeDirection && !isSamePart);
     }
 
     /**
