@@ -29,6 +29,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemLead;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.IStringSerializable;
@@ -62,8 +63,10 @@ public class BlockCustomBed extends BlockBed
     	if(flag && heldItem.getItem() instanceof ItemCustomBed && !((Boolean)stateIn.getValue(BUNK)).booleanValue())
     	{
     		ItemCustomBed bed = (ItemCustomBed) heldItem.getItem();
-    		bed.onItemUse(heldItem, playerIn, worldIn, pos, hand, side, hitX, hitY, hitZ);
-    		return false;
+    		if(bed.onItemUse(heldItem, playerIn, worldIn, pos, hand, side, hitX, hitY, hitZ) == EnumActionResult.SUCCESS)
+    		{
+    			return true;
+    		}
     	}
     	return super.onBlockActivated(worldIn, pos, stateIn, playerIn, hand, heldItem, side, hitX, hitY, hitZ);
     }
