@@ -1372,7 +1372,7 @@ public class Item
         registerADItem(6077, "rohan_Chestplate", new ItemCustomArmor(EntityEquipmentSlot.CHEST, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.CHEST)));
         registerADItem(6080, "telescope", new ItemTelescope());
         //registerADItem(6081, "stone_Inscription", new ItemValarStoneInscription());
-        //registerADItem(6082, "sting", new ItemValarSting());
+        registerADItem(6082, "sting", new ItemWeapon(1000, 6, true));
         registerADItem(6085, "human_Dagger", new ItemWeapon(50, 4));
         registerADItem(6086, "hobbit_Dagger", new ItemWeapon(50, 4));
         registerADItem(6087, "elf_Dagger", new ItemWeapon(80, 5));

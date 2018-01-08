@@ -1415,6 +1415,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerADItem(Items.ROHAN_HELMET_6, "rohan_helmet_6");
         this.registerADItem(Items.ROHAN_CHESTPLATE, "rohan_chestplate");
         this.registerADItem(Items.TELESCOPE, "telescope");
+        this.registerADItem(Items.STING, "sting");
         this.registerADItem(Items.HUMAN_DAGGER, "human_dagger");
         this.registerADItem(Items.HOBBIT_DAGGER, "hobbit_dagger");
         this.registerADItem(Items.ELF_DAGGER, "elf_dagger");

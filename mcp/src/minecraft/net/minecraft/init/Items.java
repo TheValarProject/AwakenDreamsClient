@@ -285,6 +285,7 @@ public class Items
     public static final Item ROHAN_HELMET_6;
     public static final Item ROHAN_CHESTPLATE;
     public static final Item TELESCOPE;
+    public static final Item STING;
     public static final Item HUMAN_DAGGER;
     public static final Item HOBBIT_DAGGER;
     public static final Item ELF_DAGGER;
@@ -810,6 +811,7 @@ public class Items
             ROHAN_HELMET_6 = getRegisteredADItem("rohan_helmet_6");
             ROHAN_CHESTPLATE = getRegisteredADItem("rohan_chestplate");
             TELESCOPE = getRegisteredADItem("telescope");
+            STING = getRegisteredADItem("sting");
             HUMAN_DAGGER = getRegisteredADItem("human_dagger");
             HOBBIT_DAGGER = getRegisteredADItem("hobbit_dagger");
             ELF_DAGGER = getRegisteredADItem("elf_dagger");
