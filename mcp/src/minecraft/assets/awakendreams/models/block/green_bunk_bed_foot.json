@@ -1,5 +1,5 @@
 {
-  "parent": "awakendreams:block/bed_foot",
+  "parent": "awakendreams:block/bunk_bed_foot",
   "textures": {
     "top": "awakendreams:blocks/green_bed_feet_top",
     "end": "awakendreams:blocks/green_bed_feet_end",
