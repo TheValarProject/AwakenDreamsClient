@@ -20,7 +20,7 @@ import net.minecraft.world.World;
 
 public class ItemElvenWeapon extends ItemWeapon
 {
-	private boolean glows;
+	private int glowAmount;
 	
     public ItemElvenWeapon(int maxUses, float damageVsEntity) {
     	this(maxUses, damageVsEntity, -2.4F, 0, true, null);
@@ -37,11 +37,30 @@ public class ItemElvenWeapon extends ItemWeapon
     public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
     {
     	List<EntityMob> list = worldIn.<EntityMob>getEntitiesWithinAABB(EntityMob.class, entityIn.getEntityBoundingBox().expand(20.0D, 8.0D, 20.0D));
-    	this.glows = !list.isEmpty();
+
+    	if(!list.isEmpty())
+    	{
+    		double minDistSq = (int) list.get(0).getDistanceSq(entityIn.getPosition());
+    		for(EntityMob entity : list) {
+    			minDistSq = Math.min(minDistSq, entity.getDistanceSq(entityIn.getPosition()));
+    		}
+    		// 20^2 = 864
+        	this.glowAmount = 255 - (int) Math.min(minDistSq / 400.0 * 255, 255);
+        	System.out.println(glowAmount);
+    	}
+    	else
+    	{
+    		this.glowAmount = 0;
+    	}
     }
     
     public boolean isGlowing(ItemStack stack)
     {
-    	return this.glows;
+    	return this.glowAmount > 0;
+    }
+
+    public int getGlowAmount(ItemStack stack)
+    {
+    	return this.glowAmount;
     }
 }

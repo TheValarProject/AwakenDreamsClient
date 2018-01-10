@@ -887,7 +887,12 @@ public final class ItemStack
     // Begin Awaken Dreams code
     public boolean glows()
     {
-    	return this.getItem() instanceof ItemElvenWeapon ? ((ItemElvenWeapon) this.getItem()).isGlowing(this) ? true : false : false;
+    	return this.getItem() instanceof ItemElvenWeapon && ((ItemElvenWeapon) this.getItem()).isGlowing(this);
+    }
+    
+    public int glowAmount()
+    {
+    	return this.getItem() instanceof ItemElvenWeapon ? ((ItemElvenWeapon) this.getItem()).getGlowAmount(this) : 0;
     }
     // End Awaken Dreams code
 
