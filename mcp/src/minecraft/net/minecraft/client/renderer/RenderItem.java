@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Nullable;
 
+import org.lwjgl.opengl.GL11;
+
 import com.elementfx.tvp.ad.block.BlockCustomWorkbench;
 import com.elementfx.tvp.ad.item.ItemRing;
 import com.elementfx.tvp.ad.util.ADResourceLocation;
@@ -193,7 +195,7 @@ public class RenderItem implements IResourceManagerReloadListener
                 // Begin Awaken Dreams code
                 if(stack.glows())
                 {
-                	this.renderGlow(model);
+                	this.renderGlow(model, stack.glowAmount());
                 }
                 // End Awaken Dreams code
             }
@@ -203,27 +205,31 @@ public class RenderItem implements IResourceManagerReloadListener
     }
 
     // Begin Awaken Dreams code
-    private void renderGlow(IBakedModel model)
+    private void renderGlow(IBakedModel model, int glowAmount)
     {
+    		int color = 0x2890D6;
+    		color |= glowAmount / 2 << 24;
+    		System.out.println(glowAmount);
     	GlStateManager.depthMask(false);
         GlStateManager.depthFunc(514);
         GlStateManager.disableLighting();
-        GlStateManager.blendFunc(GlStateManager.SourceFactor.SRC_COLOR, GlStateManager.DestFactor.ONE);
+        GlStateManager.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE);
         this.textureManager.bindTexture(RES_ITEM_GLOW);
         GlStateManager.matrixMode(5890);        
         GlStateManager.pushMatrix();
+        //GlStateManager.alphaFunc(GL11., 0);
         GlStateManager.scale(8.0F, 8.0F, 8.0F);
         float f = (float)(Minecraft.getSystemTime() % 3000L) / 3000.0F / 8.0F;
         GlStateManager.translate(f, 0.0F, 0.0F);
         GlStateManager.rotate(-50.0F, 0.0F, 0.0F, 1.0F);
-        this.renderModel(model, 0xFF2890D6);
+        this.renderModel(model, color);
         GlStateManager.popMatrix();        
         GlStateManager.pushMatrix();
         GlStateManager.scale(8.0F, 8.0F, 8.0F);
         float f1 = (float)(Minecraft.getSystemTime() % 4873L) / 4873.0F / 8.0F;
         GlStateManager.translate(-f1, 0.0F, 0.0F);
         GlStateManager.rotate(10.0F, 0.0F, 0.0F, 1.0F);
-        this.renderModel(model, 0xFF2890D6);
+        this.renderModel(model, color);
         GlStateManager.popMatrix();       
         GlStateManager.matrixMode(5888);
         GlStateManager.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
