@@ -207,9 +207,8 @@ public class RenderItem implements IResourceManagerReloadListener
     // Begin Awaken Dreams code
     private void renderGlow(IBakedModel model, int glowAmount)
     {
-    		int color = 0x2890D6;
-    		color |= glowAmount / 2 << 24;
-    		System.out.println(glowAmount);
+    	int color = 0x2890D6;
+    	color |= glowAmount / 2 << 24;
     	GlStateManager.depthMask(false);
         GlStateManager.depthFunc(514);
         GlStateManager.disableLighting();

@@ -36,7 +36,7 @@ public class ItemElvenWeapon extends ItemWeapon
      */
     public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
     {
-    	List<EntityMob> list = worldIn.<EntityMob>getEntitiesWithinAABB(EntityMob.class, entityIn.getEntityBoundingBox().expand(20.0D, 8.0D, 20.0D));
+    	List<EntityMob> list = worldIn.<EntityMob>getEntitiesWithinAABB(EntityMob.class, entityIn.getEntityBoundingBox().expand(20.0D, 20.0D, 20.0D));
 
     	if(!list.isEmpty())
     	{
@@ -46,7 +46,6 @@ public class ItemElvenWeapon extends ItemWeapon
     		}
     		// 20^2 = 864
         	this.glowAmount = 255 - (int) Math.min(minDistSq / 400.0 * 255, 255);
-        	System.out.println(glowAmount);
     	}
     	else
     	{
