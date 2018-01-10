@@ -29,18 +29,12 @@ public class ItemWeapon extends Item
     private final int enchantability;
     private final boolean isFull3d;
     private final Item repairItem;
-    private final boolean detectsOrcs;
-    private boolean glows;
     
     public ItemWeapon(int maxUses, float damageVsEntity) {
-    	this(maxUses, damageVsEntity, false);
-    }
-    
-    public ItemWeapon(int maxUses, float damageVsEntity, boolean detectIn) {
-    	this(maxUses, damageVsEntity, -2.4F, 0, true, null, detectIn);
+    	this(maxUses, damageVsEntity, -2.4F, 0, true, null);
     }
 
-    public ItemWeapon(int maxUses, float damageVsEntity, float attackSpeed, int enchantability, boolean renderFull3D, Item repairItem, boolean detectIn) {
+    public ItemWeapon(int maxUses, float damageVsEntity, float attackSpeed, int enchantability, boolean renderFull3D, Item repairItem) {
     	this.setCreativeTab(CreativeTabs.COMBAT);
     	this.setMaxStackSize(1);
         this.setMaxDamage(maxUses);
@@ -49,35 +43,6 @@ public class ItemWeapon extends Item
         this.enchantability = enchantability;
         this.isFull3d = renderFull3D;
         this.repairItem = repairItem;
-        this.detectsOrcs = detectIn;
-        this.glows = false;
-    }
-    
-    /**
-     * Called each tick as long the item is on a player inventory. Uses by maps to check if is on a player hand and
-     * update it's contents.
-     */
-    public void onUpdate(ItemStack stack, World worldIn, Entity entityIn, int itemSlot, boolean isSelected)
-    {
-    	if(detectsOrcs)
-    	{
-            BlockPos pos = entityIn.getPosition();
-            List<EntityMob> list = worldIn.<EntityMob>getEntitiesWithinAABB(EntityMob.class, new AxisAlignedBB((double)pos.getX() - 20.0D, (double)pos.getY() - 20.0D, (double)pos.getZ() - 20.0D, (double)pos.getX() + 20.0D, (double)pos.getY() + 20.0D, (double)pos.getZ() + 20.0D));
-
-            if(list.isEmpty())
-            {
-            	this.glows = false;
-            }
-            else
-            {
-            	this.glows = true;
-            }
-    	}
-    }
-    
-    public boolean hasEffect(ItemStack stack)
-    {
-        return glows;
     }
     
     /**

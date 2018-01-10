@@ -8,6 +8,7 @@ import com.elementfx.tvp.ad.item.ItemCustomArrow;
 import com.elementfx.tvp.ad.item.ItemCustomBed;
 import com.elementfx.tvp.ad.item.ItemCustomEgg;
 import com.elementfx.tvp.ad.item.ItemCustomFood;
+import com.elementfx.tvp.ad.item.ItemElvenWeapon;
 import com.elementfx.tvp.ad.item.ItemRing;
 import com.elementfx.tvp.ad.item.ItemRucksack;
 import com.elementfx.tvp.ad.item.ItemStakeSeeds;
@@ -477,6 +478,7 @@ public class Item
     {
         return stack.isItemEnchanted();
     }
+    
 
     /**
      * Return an item rarity from EnumRarity
@@ -1372,7 +1374,7 @@ public class Item
         registerADItem(6077, "rohan_Chestplate", new ItemCustomArmor(EntityEquipmentSlot.CHEST, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.CHEST)));
         registerADItem(6080, "telescope", new ItemTelescope());
         //registerADItem(6081, "stone_Inscription", new ItemValarStoneInscription());
-        registerADItem(6082, "sting", new ItemWeapon(1000, 6, true));
+        registerADItem(6082, "sting", new ItemElvenWeapon(1000, 6));
         registerADItem(6085, "human_Dagger", new ItemWeapon(50, 4));
         registerADItem(6086, "hobbit_Dagger", new ItemWeapon(50, 4));
         registerADItem(6087, "elf_Dagger", new ItemWeapon(80, 5));

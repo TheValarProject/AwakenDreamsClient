@@ -68,6 +68,9 @@ import net.minecraft.world.World;
 public class RenderItem implements IResourceManagerReloadListener
 {
     private static final ResourceLocation RES_ITEM_GLINT = new ResourceLocation("textures/misc/enchanted_item_glint.png");
+    // Begin Awaken Dreams code
+    private static final ResourceLocation RES_ITEM_GLOW = new ADResourceLocation("textures/misc/item_glow.png");
+    // End Awaken Dreams code
 
     /** False when the renderer is rendering the item's effects into a GUI */
     private boolean notRenderingEffectsInGUI = true;
@@ -187,12 +190,50 @@ public class RenderItem implements IResourceManagerReloadListener
                 {
                     this.renderEffect(model);
                 }
+                // Begin Awaken Dreams code
+                if(stack.glows())
+                {
+                	this.renderGlow(model);
+                }
+                // End Awaken Dreams code
             }
 
             GlStateManager.popMatrix();
         }
     }
 
+    // Begin Awaken Dreams code
+    private void renderGlow(IBakedModel model)
+    {
+    	GlStateManager.depthMask(false);
+        GlStateManager.depthFunc(514);
+        GlStateManager.disableLighting();
+        GlStateManager.blendFunc(GlStateManager.SourceFactor.SRC_COLOR, GlStateManager.DestFactor.ONE);
+        this.textureManager.bindTexture(RES_ITEM_GLOW);
+        GlStateManager.matrixMode(5890);        
+        GlStateManager.pushMatrix();
+        GlStateManager.scale(8.0F, 8.0F, 8.0F);
+        float f = (float)(Minecraft.getSystemTime() % 3000L) / 3000.0F / 8.0F;
+        GlStateManager.translate(f, 0.0F, 0.0F);
+        GlStateManager.rotate(-50.0F, 0.0F, 0.0F, 1.0F);
+        this.renderModel(model, 0xFF2890D6);
+        GlStateManager.popMatrix();        
+        GlStateManager.pushMatrix();
+        GlStateManager.scale(8.0F, 8.0F, 8.0F);
+        float f1 = (float)(Minecraft.getSystemTime() % 4873L) / 4873.0F / 8.0F;
+        GlStateManager.translate(-f1, 0.0F, 0.0F);
+        GlStateManager.rotate(10.0F, 0.0F, 0.0F, 1.0F);
+        this.renderModel(model, 0xFF2890D6);
+        GlStateManager.popMatrix();       
+        GlStateManager.matrixMode(5888);
+        GlStateManager.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
+        GlStateManager.enableLighting();
+        GlStateManager.depthFunc(515);
+        GlStateManager.depthMask(true);
+        this.textureManager.bindTexture(TextureMap.LOCATION_BLOCKS_TEXTURE);
+    }
+    // End Awaken Dreams code
+    
     private void renderEffect(IBakedModel model)
     {
         GlStateManager.depthMask(false);
@@ -200,21 +241,21 @@ public class RenderItem implements IResourceManagerReloadListener
         GlStateManager.disableLighting();
         GlStateManager.blendFunc(GlStateManager.SourceFactor.SRC_COLOR, GlStateManager.DestFactor.ONE);
         this.textureManager.bindTexture(RES_ITEM_GLINT);
-        GlStateManager.matrixMode(5890);
+        GlStateManager.matrixMode(5890);        
         GlStateManager.pushMatrix();
         GlStateManager.scale(8.0F, 8.0F, 8.0F);
         float f = (float)(Minecraft.getSystemTime() % 3000L) / 3000.0F / 8.0F;
         GlStateManager.translate(f, 0.0F, 0.0F);
         GlStateManager.rotate(-50.0F, 0.0F, 0.0F, 1.0F);
         this.renderModel(model, -8372020);
-        GlStateManager.popMatrix();
+        GlStateManager.popMatrix();        
         GlStateManager.pushMatrix();
         GlStateManager.scale(8.0F, 8.0F, 8.0F);
         float f1 = (float)(Minecraft.getSystemTime() % 4873L) / 4873.0F / 8.0F;
         GlStateManager.translate(-f1, 0.0F, 0.0F);
         GlStateManager.rotate(10.0F, 0.0F, 0.0F, 1.0F);
         this.renderModel(model, -8372020);
-        GlStateManager.popMatrix();
+        GlStateManager.popMatrix();       
         GlStateManager.matrixMode(5888);
         GlStateManager.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
         GlStateManager.enableLighting();

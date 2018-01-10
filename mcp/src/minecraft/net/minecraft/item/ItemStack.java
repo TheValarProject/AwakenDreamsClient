@@ -1,5 +1,6 @@
 package net.minecraft.item;
 
+import com.elementfx.tvp.ad.item.ItemElvenWeapon;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Multimap;
@@ -882,6 +883,13 @@ public final class ItemStack
     {
         return this.getItem().hasEffect(this);
     }
+    
+    // Begin Awaken Dreams code
+    public boolean glows()
+    {
+    	return this.getItem() instanceof ItemElvenWeapon ? ((ItemElvenWeapon) this.getItem()).isGlowing(this) ? true : false : false;
+    }
+    // End Awaken Dreams code
 
     public EnumRarity getRarity()
     {
