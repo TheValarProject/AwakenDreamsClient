@@ -1,8 +1,11 @@
 package net.minecraft.client.renderer.entity.layers;
 
+import com.elementfx.tvp.ad.item.ItemElvenWeapon;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.block.model.ItemCameraTransforms;
 import net.minecraft.client.renderer.entity.RenderLivingBase;
 import net.minecraft.entity.EntityLivingBase;
@@ -58,8 +61,31 @@ public class LayerHeldItem implements LayerRenderer<EntityLivingBase>
             GlStateManager.rotate(180.0F, 0.0F, 1.0F, 0.0F);
             boolean flag = handSide == EnumHandSide.LEFT;
             GlStateManager.translate((float)(flag ? -1 : 1) / 16.0F, 0.125F, -0.625F);
+            // Begin Awaken Dreams code
+            if(p_188358_2_.getItem() instanceof ItemElvenWeapon)
+            {
+            	int i = p_188358_1_.getBrightnessForRender(0F);
+                float f = i % 65536;
+                float f1 = i / 65536;
+                ItemElvenWeapon itemweapon = (ItemElvenWeapon) p_188358_2_.getItem();
+    			float f2 = (float)(itemweapon.getGlowAmount());
+    			f2 = Math.min(f2, 240F);
+    			if(itemweapon.isGlowing())
+    			{
+    	    		if(f<f1)
+    	    		{
+    	    			f = Math.min(f + f2, 240);
+    	    		}
+    	    		else
+    	    		{
+    	    			f1 = Math.min(f1 + f2, 240);
+    	    		}
+    			}
+                OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, f, f1);  
+            }  
+            // End Awaken Dreams code
             Minecraft.getMinecraft().getItemRenderer().renderItemSide(p_188358_1_, p_188358_2_, p_188358_3_, flag);
-            GlStateManager.popMatrix();
+            GlStateManager.popMatrix();     
         }
     }
 
