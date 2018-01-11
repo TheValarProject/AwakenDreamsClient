@@ -1,5 +1,6 @@
 package net.minecraft.client.renderer;
 
+import com.elementfx.tvp.ad.item.ItemElvenWeapon;
 import com.google.common.base.Objects;
 import javax.annotation.Nullable;
 import net.minecraft.block.Block;
@@ -108,9 +109,37 @@ public class ItemRenderer
         int i = this.mc.theWorld.getCombinedLight(new BlockPos(abstractclientplayer.posX, abstractclientplayer.posY + (double)abstractclientplayer.getEyeHeight(), abstractclientplayer.posZ), 0);
         float f = (float)(i & 65535);
         float f1 = (float)(i >> 16);
+        // Begin Awaken Dreams code
+        ItemStack itemstack = null;
+        if(itemStackMainHand != null && itemStackMainHand.getItem() instanceof ItemElvenWeapon)
+        {
+        	itemstack = itemStackMainHand;
+        }
+        else if(itemStackOffHand != null && itemStackOffHand.getItem() instanceof ItemElvenWeapon)
+        {
+        	itemstack = itemStackOffHand;
+        }
+        if(itemstack != null)
+        {
+			ItemElvenWeapon itemweapon = (ItemElvenWeapon) itemstack.getItem();
+			float f2 = (float)(itemweapon.getGlowAmount());
+			f2 = Math.min(f2, 240F);
+			if(itemweapon.isGlowing())
+			{
+	    		if(f<f1)
+	    		{
+	    			f = Math.min(f + f2, 240);
+	    		}
+	    		else
+	    		{
+	    			f1 = Math.min(f1 + f2, 240);
+	    		}
+			}
+        }
+        // End Awaken Dreams  code
         OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, f, f1);
     }
-
+    
     private void rotateArm(float p_187458_1_)
     {
         EntityPlayerSP entityplayersp = this.mc.thePlayer;
@@ -455,7 +484,6 @@ public class ItemRenderer
 
             this.renderItemSide(p_187457_1_, p_187457_6_, flag1 ? ItemCameraTransforms.TransformType.FIRST_PERSON_RIGHT_HAND : ItemCameraTransforms.TransformType.FIRST_PERSON_LEFT_HAND, !flag1);
         }
-
         GlStateManager.popMatrix();
     }
 

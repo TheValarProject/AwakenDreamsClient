@@ -53,12 +53,12 @@ public class ItemElvenWeapon extends ItemWeapon
     	}
     }
     
-    public boolean isGlowing(ItemStack stack)
+    public boolean isGlowing()
     {
     	return this.glowAmount > 0;
     }
 
-    public int getGlowAmount(ItemStack stack)
+    public int getGlowAmount()
     {
     	return this.glowAmount;
     }
