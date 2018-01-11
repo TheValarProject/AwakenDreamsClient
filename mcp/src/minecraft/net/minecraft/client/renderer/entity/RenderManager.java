@@ -5,6 +5,7 @@ import com.elementfx.tvp.ad.entity.passive.EntityDuck;
 import com.elementfx.tvp.ad.entity.projectile.EntityCustomArrow;
 import com.elementfx.tvp.ad.entity.projectile.EntityCustomEgg;
 import com.elementfx.tvp.ad.entity.projectile.EntityThrowingStone;
+import com.elementfx.tvp.ad.item.ItemElvenWeapon;
 import com.google.common.collect.Maps;
 import java.util.Map;
 import javax.annotation.Nullable;
@@ -358,6 +359,25 @@ public class RenderManager
 
         int j = i % 65536;
         int k = i / 65536;
+        // Begin Awaken Dreams code
+        if(p_188388_1_ instanceof EntityItem && ((EntityItem) p_188388_1_).getEntityItem().getItem() instanceof ItemElvenWeapon)
+        {
+        	ItemElvenWeapon itemweapon= (ItemElvenWeapon) ((EntityItem) p_188388_1_).getEntityItem().getItem();
+        	int g = itemweapon.getGlowAmount();
+			g = Math.min(g, 240);
+			if(itemweapon.isGlowing())
+			{
+	    		if(j<k)
+	    		{
+	    			j = Math.min(j + g, 240);
+	    		}
+	    		else
+	    		{
+	    			k = Math.min(j + g, 240);
+	    		}
+			}
+        }
+        // End Awaken Dreams code
         OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, (float)j, (float)k);
         GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
         this.doRenderEntity(p_188388_1_, d0 - this.renderPosX, d1 - this.renderPosY, d2 - this.renderPosZ, f, p_188388_2_, p_188388_3_);
