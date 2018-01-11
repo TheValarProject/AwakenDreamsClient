@@ -103,23 +103,14 @@ public class ItemRenderer
         GlStateManager.popMatrix();
     }
 
-    private void setLightmap()
+    private void setLightmap(ItemStack itemstack)
     {
         AbstractClientPlayer abstractclientplayer = this.mc.thePlayer;
         int i = this.mc.theWorld.getCombinedLight(new BlockPos(abstractclientplayer.posX, abstractclientplayer.posY + (double)abstractclientplayer.getEyeHeight(), abstractclientplayer.posZ), 0);
         float f = (float)(i & 65535);
         float f1 = (float)(i >> 16);
         // Begin Awaken Dreams code
-        ItemStack itemstack = null;
-        if(itemStackMainHand != null && itemStackMainHand.getItem() instanceof ItemElvenWeapon)
-        {
-        	itemstack = itemStackMainHand;
-        }
-        else if(itemStackOffHand != null && itemStackOffHand.getItem() instanceof ItemElvenWeapon)
-        {
-        	itemstack = itemStackOffHand;
-        }
-        if(itemstack != null)
+        if(itemstack != null && itemstack.getItem() instanceof ItemElvenWeapon)
         {
 			ItemElvenWeapon itemweapon = (ItemElvenWeapon) itemstack.getItem();
 			float f2 = (float)(itemweapon.getGlowAmount());
@@ -366,7 +357,6 @@ public class ItemRenderer
         }
 
         this.rotateArroundXAndY(f1, f2);
-        this.setLightmap();
         this.rotateArm(partialTicks);
         GlStateManager.enableRescaleNormal();
 
@@ -393,6 +383,7 @@ public class ItemRenderer
         boolean flag = p_187457_4_ == EnumHand.MAIN_HAND;
         EnumHandSide enumhandside = flag ? p_187457_1_.getPrimaryHand() : p_187457_1_.getPrimaryHand().opposite();
         GlStateManager.pushMatrix();
+        this.setLightmap(p_187457_6_);
 
         if (p_187457_6_ == null)
         {
