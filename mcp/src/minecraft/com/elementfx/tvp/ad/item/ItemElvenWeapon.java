@@ -40,9 +40,9 @@ public class ItemElvenWeapon extends ItemWeapon
 
     	if(!list.isEmpty())
     	{
-    		double minDistSq = (int) list.get(0).getDistanceSq(entityIn.getPosition());
+    		double minDistSq = (int) list.get(0).getDistanceSqToEntity(entityIn);
     		for(EntityMob entity : list) {
-    			minDistSq = Math.min(minDistSq, entity.getDistanceSq(entityIn.getPosition()));
+    			minDistSq = Math.min(minDistSq, entity.getDistanceSqToEntity(entityIn));
     		}
     		// 20^2 = 864
         	this.glowAmount = 255 - (int) Math.min(minDistSq / 400.0 * 255, 255);
