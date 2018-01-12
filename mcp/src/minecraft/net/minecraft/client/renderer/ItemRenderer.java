@@ -461,8 +461,9 @@ public class ItemRenderer
                         
                     // Begin Awaken Dreams code
                     case SMOKE:
-                    	this.transformSideFirstPerson(enumhandside, p_187457_7_);
-                    	break;
+                    case OBSERVE:
+                        this.transformSideFirstPerson(enumhandside, p_187457_7_);
+                        break;
                     // End Awaken Dreams code
                 }
             }
