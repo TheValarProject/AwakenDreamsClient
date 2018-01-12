@@ -103,7 +103,9 @@ public class ItemRenderer
         GlStateManager.popMatrix();
     }
 
+    // Begin Awaken Dreams code
     private void setLightmap(ItemStack itemstack)
+    // End Awaken Dreams code
     {
         AbstractClientPlayer abstractclientplayer = this.mc.thePlayer;
         int i = this.mc.theWorld.getCombinedLight(new BlockPos(abstractclientplayer.posX, abstractclientplayer.posY + (double)abstractclientplayer.getEyeHeight(), abstractclientplayer.posZ), 0);
@@ -383,7 +385,9 @@ public class ItemRenderer
         boolean flag = p_187457_4_ == EnumHand.MAIN_HAND;
         EnumHandSide enumhandside = flag ? p_187457_1_.getPrimaryHand() : p_187457_1_.getPrimaryHand().opposite();
         GlStateManager.pushMatrix();
+        // Begin Awaken Dreams code
         this.setLightmap(p_187457_6_);
+        // End Awaken Dreams code
 
         if (p_187457_6_ == null)
         {
