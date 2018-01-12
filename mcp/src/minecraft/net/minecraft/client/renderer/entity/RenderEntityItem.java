@@ -91,6 +91,9 @@ public class RenderEntityItem extends Render<EntityItem>
         if (itemstack != null && itemstack.getItem() != null)
         {
             i = Item.getIdFromItem(itemstack.getItem()) + itemstack.getMetadata();
+            // Begin Awaken Dreams code
+            itemstack.updateAnimation(entity.worldObj, entity, 0, false);
+            // End Awaken Dreams code
         }
         else
         {
