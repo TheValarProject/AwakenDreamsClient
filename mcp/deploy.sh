@@ -58,6 +58,7 @@ cp -aP ../src/minecraft/assets/awakendreams assets/awakendreams
 mkdir ../$VN
 
 # Pack classes back into a jar folder
+# Must use JDK 1.8.0*
 jar cf ../$VN/$VN.jar *
 
 # Change back to mcp folder
