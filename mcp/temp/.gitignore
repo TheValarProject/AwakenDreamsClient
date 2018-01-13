@@ -1,3 +1,6 @@
 *
 !/src
 !/.gitignore
+!/client_rg.srg
+!/client_ro_cls.srg
+!/client_meta.log
