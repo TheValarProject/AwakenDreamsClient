@@ -2,6 +2,7 @@ package net.minecraft.item;
 
 import com.google.common.collect.Multimap;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockWeb;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
@@ -39,7 +40,9 @@ public class ItemSword extends Item
     {
         Block block = state.getBlock();
 
-        if (block == Blocks.WEB)
+        // Begin Awaken Dreams code
+        if (block instanceof BlockWeb)
+        	// End Awaken Dreams code
         {
             return 15.0F;
         }
@@ -86,7 +89,9 @@ public class ItemSword extends Item
      */
     public boolean canHarvestBlock(IBlockState blockIn)
     {
-        return blockIn.getBlock() == Blocks.WEB;
+    		// Begin Awaken Dreams code
+        return blockIn.getBlock() instanceof BlockWeb;
+        // End Awken Dreams code
     }
 
     /**

@@ -1578,7 +1578,7 @@ public class Block
         registerADBlock(717, "white_Cobblestone", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(718, "dunland_Totem", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(719, "dunland_Wall_Decoration", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        //registerADBlock(720, "mirkwood_Web", (new BlockValarWeb()).setLightOpacity(1).setHardness(4.0F).setBlockTextureName("mirkwood_web"));
+        registerADBlock(720, "mirkwood_Web", (new BlockWeb()).setLightOpacity(1).setHardness(4.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         //registerADBlock(721, "dale_Window", (new BlockValarGlass()).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeGlass).setBlockTextureName("dale_window"));
         //registerADBlock(722, "dale_Window_2", (new BlockValarGlass()).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeGlass).setBlockTextureName("dale_window_2"));
         //registerADBlock(723, "harad_Window", (new BlockValarGlass()).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setBlockTextureName("harad_window"));

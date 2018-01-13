@@ -1,6 +1,7 @@
 package net.minecraft.item;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockWeb;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
@@ -25,7 +26,9 @@ public class ItemShears extends Item
     {
         stack.damageItem(1, entityLiving);
         Block block = state.getBlock();
-        return state.getMaterial() != Material.LEAVES && block != Blocks.WEB && block != Blocks.TALLGRASS && block != Blocks.VINE && block != Blocks.TRIPWIRE && block != Blocks.WOOL ? super.onBlockDestroyed(stack, worldIn, state, pos, entityLiving) : true;
+        // Begin Awaken Dreams code
+        return state.getMaterial() != Material.LEAVES && block instanceof BlockWeb && block != Blocks.TALLGRASS && block != Blocks.VINE && block != Blocks.TRIPWIRE && block != Blocks.WOOL ? super.onBlockDestroyed(stack, worldIn, state, pos, entityLiving) : true;
+        // End Awaken Dreams code
     }
 
     /**
@@ -34,12 +37,16 @@ public class ItemShears extends Item
     public boolean canHarvestBlock(IBlockState blockIn)
     {
         Block block = blockIn.getBlock();
-        return block == Blocks.WEB || block == Blocks.REDSTONE_WIRE || block == Blocks.TRIPWIRE;
+        // Begin Awaken Dreams code
+        return block instanceof BlockWeb || block == Blocks.REDSTONE_WIRE || block == Blocks.TRIPWIRE;
+        // End Awaken Dreams code
     }
 
     public float getStrVsBlock(ItemStack stack, IBlockState state)
     {
         Block block = state.getBlock();
-        return block != Blocks.WEB && state.getMaterial() != Material.LEAVES ? (block == Blocks.WOOL ? 5.0F : super.getStrVsBlock(stack, state)) : 15.0F;
+        // Begin Awaken Dreams code
+        return block instanceof BlockWeb && state.getMaterial() != Material.LEAVES ? (block == Blocks.WOOL ? 5.0F : super.getStrVsBlock(stack, state)) : 15.0F;
+        // End Awaken Dreams code
     }
 }

@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.google.common.collect.Multimap;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockWeb;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
@@ -57,7 +58,7 @@ public class ItemWeapon extends Item
     {
         Block block = state.getBlock();
 
-        if (block == Blocks.WEB)
+        if (block instanceof BlockWeb)
         {
             return 15.0F;
         }
