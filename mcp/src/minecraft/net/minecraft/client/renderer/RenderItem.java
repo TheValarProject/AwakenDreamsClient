@@ -1527,6 +1527,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerADItem(Items.BOROMIRS_SWORD, "boromirs_sword");
         this.registerADItem(Items.ORC_SWORD_1, "orc_sword_1");
         this.registerADItem(Items.ORC_SWORD_2, "orc_sword_2");
+        this.registerADItem(Items.RIVENDELL_SWORD, "rivendell_sword");
         this.registerADItem(Items.GOBLIN_SWORD, "goblin_sword");
         this.registerADItem(Items.HOBBIT_AXE, "hobbit_axe");
         this.registerADItem(Items.SHARKUS_SHORTSWORD, "sharkus_shortsword");

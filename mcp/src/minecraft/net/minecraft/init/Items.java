@@ -3,6 +3,7 @@ package net.minecraft.init;
 import com.elementfx.tvp.ad.item.ItemPipe;
 import com.elementfx.tvp.ad.util.ADResourceLocation;
 
+import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
@@ -348,6 +349,7 @@ public class Items
     public static final Item BOROMIRS_SWORD;
     public static final Item ORC_SWORD_1;
     public static final Item ORC_SWORD_2;
+	public static final Item RIVENDELL_SWORD;
     public static final Item GOBLIN_SWORD;
     public static final Item HOBBIT_AXE;
     public static final Item SHARKUS_SHORTSWORD;
@@ -879,6 +881,7 @@ public class Items
             BOROMIRS_SWORD = getRegisteredADItem("boromirs_sword");
             ORC_SWORD_1 = getRegisteredADItem("orc_sword_1");
             ORC_SWORD_2 = getRegisteredADItem("orc_sword_2");
+            RIVENDELL_SWORD = getRegisteredADItem("rivendell_sword");
             GOBLIN_SWORD = getRegisteredADItem("goblin_sword");
             HOBBIT_AXE = getRegisteredADItem("hobbit_axe");
             SHARKUS_SHORTSWORD = getRegisteredADItem("sharkus_shortsword");

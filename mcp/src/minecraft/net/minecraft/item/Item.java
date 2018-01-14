@@ -1459,7 +1459,7 @@ public class Item
         //registerADItem(6162, "orc_Potion", new ItemValarBase());
         registerADItem(6163, "orc_Sword_1", new ItemWeapon(230, 5));
         registerADItem(6164, "orc_Sword_2", new ItemWeapon(230, 5));
-        //registerADItem(6165, "rivendell_Sword", new ItemValarBase());
+        registerADItem(6165, "rivendell_Sword", new ItemElvenWeapon(2200, 8));
         registerADItem(6166, "goblin_Sword", new ItemWeapon(200, 5));
         registerADItem(6167, "hobbit_Axe", new ItemWeapon(235, 5));
         registerADItem(6168, "sharkus_Shortsword", new ItemWeapon(467, 8));
