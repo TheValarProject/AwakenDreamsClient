@@ -1078,6 +1078,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerADBlock(Blocks.DUNLAND_TOTEM, "dunland_totem");
         this.registerADBlock(Blocks.MIRKWOOD_WEB, "mirkwood_web");
         this.registerADBlock(Blocks.DALE_WINDOW, "dale_window");
+        this.registerADBlock(Blocks.DALE_WINDOW_2, "dale_window_2");
         this.registerADBlock(Blocks.DUNLAND_WALL_DECORATION, "dunland_wall_decoration");
         this.registerADBlock(Blocks.MORDOR_LAMP, "mordor_lamp");
         this.registerADBlock(Blocks.HARAD_LIGHT, "harad_light");
