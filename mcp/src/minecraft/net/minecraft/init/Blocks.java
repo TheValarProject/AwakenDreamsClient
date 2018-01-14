@@ -471,7 +471,7 @@ public class Blocks
     public static final Block WHITE_COBBLESTONE;
     public static final Block DUNLAND_TOTEM;
     public static final Block MIRKWOOD_WEB;
-    public static final Block DALE_WINDOW;
+    public static final Block DALE_WINDOW_1;
     public static final Block DALE_WINDOW_2;
     public static final Block DUNLAND_WALL_DECORATION;
     public static final Block MORDOR_LAMP;
@@ -995,7 +995,7 @@ public class Blocks
             WHITE_COBBLESTONE = getRegisteredADBlock("white_cobblestone");
             DUNLAND_TOTEM = getRegisteredADBlock("dunland_totem");
             MIRKWOOD_WEB = getRegisteredADBlock("mirkwood_web");
-            DALE_WINDOW = getRegisteredADBlock("dale_window");
+            DALE_WINDOW_1 = getRegisteredADBlock("dale_window_1");
             DALE_WINDOW_2 = getRegisteredADBlock("dale_window_2");
             DUNLAND_WALL_DECORATION = getRegisteredADBlock("dunland_wall_decoration");
             MORDOR_LAMP = getRegisteredADBlock("mordor_lamp");
