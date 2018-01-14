@@ -1059,6 +1059,7 @@ public class Item
         registerItemBlock(Blocks.WHITE_COBBLESTONE);
         registerItemBlock(Blocks.DUNLAND_TOTEM);
         registerItemBlock(Blocks.MIRKWOOD_WEB);
+        registerItemBlock(Blocks.DALE_WINDOW);
         registerItemBlock(Blocks.DUNLAND_WALL_DECORATION);
         registerItemBlock(Blocks.MORDOR_LAMP);
         registerItemBlock(Blocks.HARAD_LIGHT);

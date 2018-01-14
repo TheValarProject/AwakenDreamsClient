@@ -1579,7 +1579,7 @@ public class Block
         registerADBlock(718, "dunland_Totem", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(719, "dunland_Wall_Decoration", (new Block(Material.ROCK)).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         registerADBlock(720, "mirkwood_Web", (new BlockWeb()).setLightOpacity(1).setHardness(4.0F).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
-        //registerADBlock(721, "dale_Window", (new BlockValarGlass()).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeGlass).setBlockTextureName("dale_window"));
+        registerADBlock(721, "dale_Window", (new BlockGlass(Material.GLASS, false)).setHardness(0.3F).setSoundType(SoundType.GLASS).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
         //registerADBlock(722, "dale_Window_2", (new BlockValarGlass()).setHardness(1.5F).setResistance(10.0F).setSoundType(soundTypeGlass).setBlockTextureName("dale_window_2"));
         //registerADBlock(723, "harad_Window", (new BlockValarGlass()).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.STONE).setBlockTextureName("harad_window"));
         registerADBlock(724, "mordor_Lamp", (new Block(Material.ROCK)).setLightLevel(1.0F).setHardness(1.5F).setResistance(10.0F).setSoundType(SoundType.GLASS).setCreativeTab(CreativeTabs.BUILDING_BLOCKS));
