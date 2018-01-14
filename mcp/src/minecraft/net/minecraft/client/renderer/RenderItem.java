@@ -1678,7 +1678,6 @@ public class RenderItem implements IResourceManagerReloadListener
             		return new ModelResourceLocation("awakendreams:" + stack.getUnlocalizedName().substring(5).replace('.', '_'), "inventory");
             }
         });
-        this.registerADItem(Items.ELVEN_STEEL_INGOT, "elven_steel_ingot");
         // End Awaken Dreams code
     }
 

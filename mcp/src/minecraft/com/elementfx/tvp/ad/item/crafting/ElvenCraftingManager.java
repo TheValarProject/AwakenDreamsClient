@@ -37,9 +37,9 @@ public class ElvenCraftingManager extends CustomCraftingManager
 
     protected ElvenCraftingManager()
     {
-    	this.addRecipe(new ItemStack(Items.ELVEN_LONG_SWORD, 1), new Object[] {"I", "I", "S", 'S', Items.STICK, 'I', Items.ELVEN_STEEL_INGOT});
-    	this.addRecipe(new ItemStack(Items.ELF_DAGGER, 1), new Object[] {"I", "S", 'S', Items.STICK, 'I', Items.ELVEN_STEEL_INGOT});
-    	this.addRecipe(new ItemStack(Items.NOLDOR_CHESTPLATE, 1), new Object[] {"I I", "IGI", "IGI", 'G', Items.GOLD_INGOT, 'I', Items.ELVEN_STEEL_INGOT});
+    	this.addRecipe(new ItemStack(Items.ELVEN_LONG_SWORD, 1), new Object[] {"I", "I", "S", 'S', Items.STICK, 'I', Items.DIAMOND});
+    	this.addRecipe(new ItemStack(Items.ELF_DAGGER, 1), new Object[] {"I", "S", 'S', Items.STICK, 'I', Items.IRON_INGOT});
+    	this.addRecipe(new ItemStack(Items.NOLDOR_CHESTPLATE, 1), new Object[] {"I I", "IGI", "IGI", 'G', Items.GOLD_INGOT, 'I', Items.DIAMOND});
     	Collections.sort(this.getRecipeList(), new Comparator<IRecipe>()
         {
             public int compare(IRecipe p_compare_1_, IRecipe p_compare_2_)

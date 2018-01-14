@@ -1623,7 +1623,7 @@ public class Item
         registerADItem(6323, "strawberry_Seed", new ItemSeeds(Blocks.STRAWBERRY_BUSH, Blocks.FARMLAND));
         //registerADItem(6324, "azogs_Mace", new ItemValarWeapon(3500, 7, 0, true, false));
         registerADItem(6325, "ring", new ItemRing());
-        registerADItem(6326, "elven_Steel_Ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
+        //registerADItem(6326, "elven_Steel_Ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS)); - deprecated
         registerADItem(6327, "ruby", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
         registerADItem(6328, "duck", (new ItemCustomFood(2, 0.35F, true)).setPotionEffect(new PotionEffect(MobEffects.HUNGER, 600, 0), 0.3F));
         registerADItem(6329, "cooked_Duck", (new ItemCustomFood(6, 0.7F, true)));   
