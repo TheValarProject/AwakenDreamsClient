@@ -37,6 +37,11 @@ public class IsengardCraftingManager extends CustomCraftingManager
 
     protected IsengardCraftingManager()
     {
+    	this.addRecipe(new ItemStack(Items.URUK_SWORD, 1), new Object[] {"I", "I", "S", 'S', Items.STICK, 'I', Items.IRON_INGOT});
+    	this.addRecipe(new ItemStack(Items.BERSERKER_SWORD, 1), new Object[] {"III", " I ", " S ", 'S', Items.STICK, 'I', Items.IRON_INGOT});
+    	this.addRecipe(new ItemStack(Items.FELL_WARGRIDER_SWORD, 1), new Object[] {"I ", " I", " S", 'S', Items.STICK, 'I', Items.IRON_INGOT});    	
+    	this.addRecipe(new ItemStack(Items.URUK_SIEGE_TROOPER_DAGGER, 1), new Object[] {"I", "S", 'S', Items.STICK, 'I', Items.IRON_INGOT});
+    	(new RecipesOrcWeapons()).addRecipes(this);
     	Collections.sort(this.getRecipeList(), new Comparator<IRecipe>()
         {
             public int compare(IRecipe p_compare_1_, IRecipe p_compare_2_)

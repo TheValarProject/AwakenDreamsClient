@@ -37,6 +37,10 @@ public class GoblinCraftingManager extends CustomCraftingManager
 
     protected GoblinCraftingManager()
     {
+    	this.addRecipe(new ItemStack(Items.GOBLIN_SWORD, 1), new Object[] {"I", "I", "S", 'S', Items.STICK, 'I', Items.IRON_INGOT});
+    	this.addRecipe(new ItemStack(Items.NORTH_GOBLIN_SWORD, 1), new Object[] {"G", "G", "S", 'S', Items.STICK, 'G', Items.GOLD_INGOT});
+    	this.addRecipe(new ItemStack(Items.NORTH_GOBLIN_MACE, 1), new Object[] {"I", "I", "I", 'I', Items.IRON_INGOT});
+    	(new RecipesOrcWeapons()).addRecipes(this);
     	Collections.sort(this.getRecipeList(), new Comparator<IRecipe>()
         {
             public int compare(IRecipe p_compare_1_, IRecipe p_compare_2_)

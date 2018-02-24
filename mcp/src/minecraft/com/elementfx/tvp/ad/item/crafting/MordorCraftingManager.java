@@ -4,13 +4,13 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
-
 import javax.annotation.Nullable;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.Item;
@@ -36,7 +36,11 @@ public class MordorCraftingManager extends CustomCraftingManager
     }
 
     protected MordorCraftingManager()
-    {
+    {    	
+    	this.addRecipe(new ItemStack(Items.MORANNON_DAGGER, 1), new Object[] {"G", "S", 'S', Items.STICK, 'G', Items.GOLD_INGOT});
+    	this.addRecipe(new ItemStack(Items.DOL_GULDUR_SPIKED_MACE, 1), new Object[] {" I ", "IPI", " S ", 'S', Items.STICK, 'I', Items.IRON_INGOT, 'P', Blocks.PLANKS});
+    	this.addRecipe(new ItemStack(Items.MORGUL_SWORD, 1), new Object[] {"D", "D", "S", 'S', Items.STICK, 'D', Items.DIAMOND});
+    	(new RecipesOrcWeapons()).addRecipes(this);
     	Collections.sort(this.getRecipeList(), new Comparator<IRecipe>()
         {
             public int compare(IRecipe p_compare_1_, IRecipe p_compare_2_)

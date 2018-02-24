@@ -1589,7 +1589,7 @@ public class Item
         registerADItem(6294, "uruk_Siege_Trooper_Dagger", new ItemWeapon(1041, 5));
         //registerADItem(6295, "orc_Spawner", new ItemValarBase();
         registerADItem(6296, "iron_Mace", new ItemWeapon(387, 7));
-        registerADItem(6297, "orc_Sword_3", new ItemWeapon(837, 6));
+        registerADItem(6297, "orc_Sword_3", new ItemWeapon(180, 3));
         //registerADItem(6298, "morannon_Orc_Shield", new Item());
         registerADItem(6299, "morannon_Dagger", new ItemWeapon(99, 3));
         registerADItem(6300, "orc_Spear", new ItemWeapon(123, 6));
