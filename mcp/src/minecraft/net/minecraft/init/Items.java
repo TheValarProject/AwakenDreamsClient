@@ -291,6 +291,7 @@ public class Items
     public static final Item HOBBIT_DAGGER;
     public static final Item ELF_DAGGER;
     public static final Item GONDORIAN_SWORD;
+    public static final Item BROKEN_NARSIL;
     public static final Item SOUTHERN_STAR;
     public static final Item SOUTHLINCH;
     public static final Item OLD_TOBY;
@@ -358,6 +359,7 @@ public class Items
     public static final Item PIKE_CLUB;
     public static final Item HOBBIT_SWORD;
     public static final Item HOBBIT_HAMMER;
+    public static final Item DWARVEN_AXE_MORIA;
     public static final Item BOAR_HORNS;
     public static final Item GOLD_RING_OF_DARKNESS;
     public static final Item GOLD_RING_OF_EARTH;
@@ -488,6 +490,7 @@ public class Items
     public static final Item OLD_TOBY_SEED;
     public static final Item SOUTHERN_STAR_SEED;
     public static final Item STRAWBERRY_SEED;
+    public static final Item AZOGS_MACE;
     public static final Item ROHAN_BOOTS;
     public static final Item ROHAN_LEGGINGS;
     public static final Item RING;
@@ -817,6 +820,7 @@ public class Items
             HOBBIT_DAGGER = getRegisteredADItem("hobbit_dagger");
             ELF_DAGGER = getRegisteredADItem("elf_dagger");
             GONDORIAN_SWORD = getRegisteredADItem("gondorian_sword");
+            BROKEN_NARSIL = getRegisteredADItem("broken_narsil");
             SOUTHERN_STAR = getRegisteredADItem("southern_star");
             Blocks.SOUTHERN_STAR_PLANT.setCrop(SOUTHERN_STAR);
             SOUTHLINCH = getRegisteredADItem("southlinch");
@@ -890,6 +894,7 @@ public class Items
             PIKE_CLUB = getRegisteredADItem("pike_club");
             HOBBIT_SWORD = getRegisteredADItem("hobbit_sword");
             HOBBIT_HAMMER = getRegisteredADItem("hobbit_hammer");
+            DWARVEN_AXE_MORIA = getRegisteredADItem("dwarven_axe_moria");
             BOAR_HORNS = getRegisteredADItem("boar_horns");
             GOLD_RING_OF_DARKNESS = getRegisteredADItem("gold_ring_of_darkness");
             GOLD_RING_OF_EARTH = getRegisteredADItem("gold_ring_of_earth");
@@ -1044,6 +1049,7 @@ public class Items
             Blocks.SOUTHERN_STAR_PLANT.setSeed(SOUTHERN_STAR_SEED);
             STRAWBERRY_SEED = getRegisteredADItem("strawberry_seed");
             Blocks.STRAWBERRY_BUSH.setSeed(STRAWBERRY_SEED);
+            AZOGS_MACE = getRegisteredADItem("azogs_mace");
             ROHAN_BOOTS = getRegisteredADItem("rohan_boots");
             ROHAN_LEGGINGS = getRegisteredADItem("rohan_leggings");
             RING = getRegisteredADItem("ring");

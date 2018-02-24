@@ -1469,6 +1469,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerADItem(Items.HOBBIT_DAGGER, "hobbit_dagger");
         this.registerADItem(Items.ELF_DAGGER, "elf_dagger");
         this.registerADItem(Items.GONDORIAN_SWORD, "gondorian_sword");
+        this.registerADItem(Items.BROKEN_NARSIL, "broken_narsil");
         this.registerADItem(Items.SOUTHERN_STAR, "southern_star");
         this.registerADItem(Items.SOUTHLINCH, "southlinch");
         this.registerADItem(Items.OLD_TOBY, "old_toby");
@@ -1536,6 +1537,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerADItem(Items.PIKE_CLUB, "pike_club");
         this.registerADItem(Items.HOBBIT_SWORD, "hobbit_sword");
         this.registerADItem(Items.HOBBIT_HAMMER, "hobbit_hammer");
+        this.registerADItem(Items.DWARVEN_AXE_MORIA, "dwarven_axe_moria");
         this.registerADItem(Items.BOAR_HORNS, "boar_horns");
         this.registerADItem(Items.GOLD_RING_OF_DARKNESS, "gold_ring_of_darkness");
         this.registerADItem(Items.GOLD_RING_OF_EARTH, "gold_ring_of_earth");
@@ -1666,6 +1668,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerADItem(Items.OLD_TOBY_SEED, "old_toby_seed");
         this.registerADItem(Items.SOUTHERN_STAR_SEED, "southern_star_seed");
         this.registerADItem(Items.STRAWBERRY_SEED, "strawberry_seed");
+        this.registerADItem(Items.AZOGS_MACE, "azogs_mace");
         this.registerADItem(Items.ROHAN_BOOTS, "rohan_boots");
         this.registerADItem(Items.ROHAN_LEGGINGS, "rohan_leggings");
         this.registerADItem(Items.RUBY, "ruby");

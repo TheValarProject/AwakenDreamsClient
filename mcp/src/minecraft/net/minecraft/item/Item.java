@@ -1382,7 +1382,7 @@ public class Item
         registerADItem(6086, "hobbit_Dagger", new ItemWeapon(50, 4));
         registerADItem(6087, "elf_Dagger", new ItemWeapon(80, 5));
         registerADItem(6088, "gondorian_Sword", new ItemWeapon(350, 6));
-        //registerADItem(6089, "broken_Narsil", new ItemValarWeapon(2000, 10));
+        registerADItem(6089, "broken_Narsil", new ItemWeapon(2000, 6));
         //registerADItem(6090, "poison_Potion", new Item());
         //registerADItem(6091, "healing_Potion", new Item());
         //registerADItem(6092, "light_Blue_Potion", new Item());
@@ -1468,13 +1468,13 @@ public class Item
         registerADItem(6171, "pike_Club", new ItemWeapon(350, 6));
         registerADItem(6172, "hobbit_Sword", new ItemWeapon(230, 5));
         registerADItem(6173, "hobbit_Hammer", new ItemWeapon(235, 5));
-        //registerADItem(6174, "dwarven_Axe_Moria", new Item());
+        registerADItem(6174, "dwarven_Axe_Moria", new ItemWeapon(1800, 7));
         /*registerADItem(6175, "green_Arrow", new Item());
         registerADItem(6176, "black_Arrow", new Item());
         registerADItem(6177, "goblin_Arrow", new Item());
         registerADItem(6179, "red_Arrow", new Item());
         registerADItem(6179, "yellow_Arrow", new Item());
-        //registerADItem(6180, "throwing_Rock", new Item());*/
+        //registerADItem(6180, "throwing_Rock", new Item()); Already added as throwing_Stone 6234*/
         registerADItem(6181, "boar_Horns", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
         registerADItem(6182, "gold_Ring_Of_Darkness", new Item()); // Deprecated
         registerADItem(6183, "gold_Ring_Of_Earth", new Item()); // Deprecated
@@ -1563,7 +1563,7 @@ public class Item
         registerADItem(6268, "glorfindels_Sword", new ItemElvenWeapon(3600, 9));
         registerADItem(6269, "guthwine", new ItemWeapon(1732, 8));
         registerADItem(6270, "hadhafang", new ItemElvenWeapon(3400, 10));
-        //registerADItem(6271, "herugrim", new ItemValarBase());
+        //registerADItem(6271, "herugrim", new ItemWeapon(3000, 8)); Already added as 6028
         registerADItem(6272, "legolas_Sword", new ItemWeapon(2900, 9));
         registerADItem(6273, "radagasts_Staff", new ItemWeapon(3100, 8));
         registerADItem(6274, "lurtz_Sword", new ItemWeapon(1870, 8));
@@ -1621,7 +1621,7 @@ public class Item
         registerADItem(6321, "old_Toby_Seed", new ItemSeeds(Blocks.OLD_TOBY_PLANT, Blocks.FARMLAND));
         registerADItem(6322, "southern_Star_Seed", new ItemSeeds(Blocks.SOUTHERN_STAR_PLANT, Blocks.FARMLAND));
         registerADItem(6323, "strawberry_Seed", new ItemSeeds(Blocks.STRAWBERRY_BUSH, Blocks.FARMLAND));
-        //registerADItem(6324, "azogs_Mace", new ItemValarWeapon(3500, 7, 0, true, false));
+        registerADItem(6324, "azogs_Mace", new ItemWeapon(3500, 10));
         registerADItem(6325, "ring", new ItemRing());
         //registerADItem(6326, "elven_Steel_Ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS)); - deprecated
         registerADItem(6327, "ruby", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
@@ -1630,7 +1630,7 @@ public class Item
         registerADItem(6330, "duck_Egg", new ItemCustomEgg());
         // Temporary Id, change to proper id when adding items
         //registerADItem(10003, "frodos_Finger", new ItemValarFood(2, 0.1F, true));
-        //registerADItem(10004, "two_Handed_Sword", new ItemValarWeapon(1, 20, 0, true));
+        //registerADItem(10004, "two_Handed_Sword", new ItemValarWeapon(1, 20, 0, true)); //Already added as 6230
         //registerADItem(10005, "easterling_Helmet", new ItemValarArmor(0, 1000, 2, 0));
         //registerADItem(10006, "miruvoir", new ItemValarDrinkable(Items.glass_bottle));
         registerADItem(10007, "rohan_Boots", new ItemCustomArmor(EntityEquipmentSlot.FEET, (new ItemCustomArmor.Properties(rohanArmor)).adjustFor(EntityEquipmentSlot.FEET)));
