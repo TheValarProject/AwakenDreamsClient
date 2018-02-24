@@ -37,7 +37,11 @@ public class GondorianCraftingManager extends CustomCraftingManager
 
     protected GondorianCraftingManager()
     {
-    	Collections.sort(this.getRecipeList(), new Comparator<IRecipe>()
+		this.addRecipe(new ItemStack(Items.GONDORIAN_SPEAR, 1), new Object[] {"  I", " S ", "S  ", 'S', Items.STICK, 'I', Items.IRON_INGOT});
+		this.addRecipe(new ItemStack(Items.GONDORIAN_SWORD, 1), new Object[] {"I", "I", "S", 'S', Items.STICK, 'I', Items.IRON_INGOT});
+		this.addRecipe(new ItemStack(Items.GONDORIAN_NOBLE_SWORD, 1), new Object[] {"G", "G", "S", 'S', Items.STICK, 'G', Items.GOLD_INGOT});
+		this.addRecipe(new ItemStack(Items.SWORD_OF_WESTERNESSE, 1), new Object[] {"D", "D", "S", 'S', Items.STICK, 'D', Items.DIAMOND});
+		Collections.sort(this.getRecipeList(), new Comparator<IRecipe>()
         {
             public int compare(IRecipe p_compare_1_, IRecipe p_compare_2_)
             {

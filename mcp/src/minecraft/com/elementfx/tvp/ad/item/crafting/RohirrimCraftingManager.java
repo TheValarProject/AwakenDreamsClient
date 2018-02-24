@@ -37,6 +37,8 @@ public class RohirrimCraftingManager extends CustomCraftingManager
 
     protected RohirrimCraftingManager()
     {
+		this.addRecipe(new ItemStack(Items.ROHIRRIM_AXE, 1), new Object[] {"II", "SI", "S ", 'S', Items.STICK, 'I', Items.IRON_INGOT});
+		this.addRecipe(new ItemStack(Items.ROHIRRIM_SPEAR, 1), new Object[] {"  I", " S ", "S  ", 'S', Items.STICK, 'I', Items.IRON_INGOT});
     	Collections.sort(this.getRecipeList(), new Comparator<IRecipe>()
         {
             public int compare(IRecipe p_compare_1_, IRecipe p_compare_2_)
