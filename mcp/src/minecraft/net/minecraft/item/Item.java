@@ -1576,7 +1576,7 @@ public class Item
         registerADItem(6281, "golden_War_Hammer_Of_Erebor", new ItemWeapon(2800, 7));
         registerADItem(6282, "gondorian_Spear", new ItemWeapon(1000, 6));
         registerADItem(6283, "rohirrim_Spear", new ItemWeapon(1040, 6));
-        registerADItem(6284, "bull_Head_Mace", new ItemWeapon(1091, 6));
+        registerADItem(6284, "bull_Head_Mace", new ItemWeapon(1091, 7));
         registerADItem(6285, "corsair_Eket", new ItemWeapon(1133, 7));
         registerADItem(6286, "dol_Guldur_Spiked_Mace", new ItemWeapon(981, 6));
         registerADItem(6287, "fell_Wargrider_Sword", new ItemWeapon(991, 6));
@@ -1588,7 +1588,7 @@ public class Item
         registerADItem(6293, "orc_Halbard", new ItemWeapon(605, 7));
         registerADItem(6294, "uruk_Siege_Trooper_Dagger", new ItemWeapon(1041, 5));
         //registerADItem(6295, "orc_Spawner", new ItemValarBase();
-        registerADItem(6296, "iron_Mace", new ItemWeapon(387, 7));
+        registerADItem(6296, "iron_Mace", new ItemWeapon(387, 6));
         registerADItem(6297, "orc_Sword_3", new ItemWeapon(180, 3));
         //registerADItem(6298, "morannon_Orc_Shield", new Item());
         registerADItem(6299, "morannon_Dagger", new ItemWeapon(99, 3));
