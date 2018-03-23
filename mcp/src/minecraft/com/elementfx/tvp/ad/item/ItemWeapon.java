@@ -29,13 +29,17 @@ public class ItemWeapon extends Item
     private final float attackDamage, attackSpeed;
     private final int enchantability;
     private final boolean isFull3d;
-    private final Item repairItem;
+    private final Item.ToolMaterial material;
     
     public ItemWeapon(int maxUses, float damageVsEntity) {
-    	this(maxUses, damageVsEntity, -2.4F, 0, true, null);
+    	this(maxUses, damageVsEntity, null);
+    }
+    
+    public ItemWeapon(int maxUses, float damageVsEntity, Item.ToolMaterial material) {
+    	this(maxUses, damageVsEntity, -2.4F, 0, true, material);
     }
 
-    public ItemWeapon(int maxUses, float damageVsEntity, float attackSpeed, int enchantability, boolean renderFull3D, Item repairItem) {
+    public ItemWeapon(int maxUses, float damageVsEntity, float attackSpeed, int enchantability, boolean renderFull3D, Item.ToolMaterial material) {
     	this.setCreativeTab(CreativeTabs.COMBAT);
     	this.setMaxStackSize(1);
         this.setMaxDamage(maxUses);
@@ -43,7 +47,7 @@ public class ItemWeapon extends Item
         this.attackSpeed = attackSpeed;
         this.enchantability = enchantability;
         this.isFull3d = renderFull3D;
-        this.repairItem = repairItem;
+        this.material = material;
     }
     
     /**
@@ -121,7 +125,7 @@ public class ItemWeapon extends Item
      */
     public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
     {
-        return this.repairItem == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
+        return this.material.getRepairItem() == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
     }
     
     public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot equipmentSlot)
