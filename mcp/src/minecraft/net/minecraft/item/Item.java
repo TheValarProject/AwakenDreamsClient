@@ -39,6 +39,7 @@ import net.minecraft.block.BlockSilverfish;
 import net.minecraft.block.BlockStone;
 import net.minecraft.block.BlockStoneBrick;
 import net.minecraft.block.BlockWall;
+import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
@@ -1324,7 +1325,7 @@ public class Item
         registerADItem(6016, "onyx", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
         registerADItem(6017, "moonstone", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
         registerADItem(6019, "tanzanite", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
-        registerADItem(6020, "uruk_Sword", new ItemWeapon(510, 7));
+        registerADItem(6020, "uruk_Sword", new ItemWeapon(510, 7, Item.ToolMaterial.IRON));
         //registerADItem(6021, "phial_of_galadriel", (new ItemValarBase().setUnlocalizedName("phialOfGaladriel"));
         registerADItem(6022, "tomato", new ItemCustomFood(1, 0.1F, false));
         registerADItem(6023, "blue_Feather", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
@@ -1333,7 +1334,7 @@ public class Item
         registerADItem(6029, "nuts", new ItemCustomFood(1, 10, 0.2F, false));
         registerADItem(6032, "corn_Cob", new ItemCustomFood(2, 0.3F, false));
         registerADItem(6035, "staff_Base", new ItemWeapon(350, 2));
-        registerADItem(6036, "knife", new ItemWeapon(35, 4));
+        registerADItem(6036, "knife", new ItemWeapon(35, 4, Item.ToolMaterial.IRON));
         registerADItem(6038, "berries", new ItemCustomFood(2, 15, 0.3F, false));
         //registerADItem(6039, "gondorian_Horn", (new ItemValarInstrument("")));
         registerADItem(6040, "bear_Claw", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
@@ -1378,10 +1379,10 @@ public class Item
         registerADItem(6080, "telescope", new ItemTelescope());
         //registerADItem(6081, "stone_Inscription", new ItemValarStoneInscription());
         registerADItem(6082, "sting", new ItemElvenWeapon(1000, 6));
-        registerADItem(6085, "human_Dagger", new ItemWeapon(50, 4));
-        registerADItem(6086, "hobbit_Dagger", new ItemWeapon(50, 4));
-        registerADItem(6087, "elf_Dagger", new ItemWeapon(80, 5));
-        registerADItem(6088, "gondorian_Sword", new ItemWeapon(350, 6));
+        registerADItem(6085, "human_Dagger", new ItemWeapon(50, 4, Item.ToolMaterial.IRON));
+        registerADItem(6086, "hobbit_Dagger", new ItemWeapon(50, 4, Item.ToolMaterial.WOOD));
+        registerADItem(6087, "elf_Dagger", new ItemWeapon(80, 5, Item.ToolMaterial.IRON));
+        registerADItem(6088, "gondorian_Sword", new ItemWeapon(350, 6, Item.ToolMaterial.IRON));
         registerADItem(6089, "broken_Narsil", new ItemWeapon(2000, 6));
         //registerADItem(6090, "poison_Potion", new Item());
         //registerADItem(6091, "healing_Potion", new Item());
@@ -1457,18 +1458,18 @@ public class Item
         //registerADItem(6160, "elanor_Potion", new ItemValarBase());
         //registerADItem(6161, "light_Purple_Potion", new ItemValarBase());
         //registerADItem(6162, "orc_Potion", new ItemValarBase());
-        registerADItem(6163, "orc_Sword_1", new ItemWeapon(230, 5));
-        registerADItem(6164, "orc_Sword_2", new ItemWeapon(230, 5));
-        registerADItem(6165, "rivendell_Sword", new ItemElvenWeapon(2200, 8));
-        registerADItem(6166, "goblin_Sword", new ItemWeapon(200, 5));
-        registerADItem(6167, "hobbit_Axe", new ItemWeapon(235, 5));
+        registerADItem(6163, "orc_Sword_1", new ItemWeapon(230, 5, Item.ToolMaterial.IRON));
+        registerADItem(6164, "orc_Sword_2", new ItemWeapon(230, 5, Item.ToolMaterial.IRON));
+        registerADItem(6165, "rivendell_Sword", new ItemElvenWeapon(2200, 8, Item.ToolMaterial.GOLD));
+        registerADItem(6166, "goblin_Sword", new ItemWeapon(200, 5, Item.ToolMaterial.IRON));
+        registerADItem(6167, "hobbit_Axe", new ItemWeapon(235, 5, Item.ToolMaterial.IRON));
         registerADItem(6168, "sharkus_Shortsword", new ItemWeapon(467, 8));
-        registerADItem(6169, "battle_Pickaxe", new ItemWeapon(300, 5));
-        registerADItem(6170, "shirriff_Club", new ItemWeapon(131, 6));
-        registerADItem(6171, "pike_Club", new ItemWeapon(350, 6));
-        registerADItem(6172, "hobbit_Sword", new ItemWeapon(230, 5));
-        registerADItem(6173, "hobbit_Hammer", new ItemWeapon(235, 5));
-        registerADItem(6174, "dwarven_Axe_Moria", new ItemWeapon(1800, 7));
+        registerADItem(6169, "battle_Pickaxe", new ItemWeapon(300, 5, Item.ToolMaterial.IRON));
+        registerADItem(6170, "shirriff_Club", new ItemWeapon(131, 6, Item.ToolMaterial.WOOD));
+        registerADItem(6171, "pike_Club", new ItemWeapon(350, 6, Item.ToolMaterial.IRON));
+        registerADItem(6172, "hobbit_Sword", new ItemWeapon(230, 5, Item.ToolMaterial.IRON));
+        registerADItem(6173, "hobbit_Hammer", new ItemWeapon(235, 5, Item.ToolMaterial.IRON));
+        registerADItem(6174, "dwarven_Axe_Moria", new ItemWeapon(1800, 7, Item.ToolMaterial.IRON));
         /*registerADItem(6175, "green_Arrow", new Item());
         registerADItem(6176, "black_Arrow", new Item());
         registerADItem(6177, "goblin_Arrow", new Item());
@@ -1521,15 +1522,15 @@ public class Item
         registerADItem(6224, "mithril_Ring_Of_Wealth", new Item()); // Deprecated
         registerADItem(6225, "mithril_Ring_Of_Wind", new Item()); // Deprecated
         registerADItem(6226, "anduril", new ItemWeapon(3000, 11));
-        registerADItem(6227, "morgul_Sword", new ItemWeapon(2500, 9));
-        registerADItem(6228, "elven_Long_Sword", new ItemWeapon(1800, 7));
-        registerADItem(6229, "berserker_Sword", new ItemWeapon(1400, 8));
-        registerADItem(6230, "two_Handed_Sword", new ItemWeapon(500, 7));
+        registerADItem(6227, "morgul_Sword", new ItemWeapon(2500, 9, Item.ToolMaterial.DIAMOND));
+        registerADItem(6228, "elven_Long_Sword", new ItemWeapon(1800, 7, Item.ToolMaterial.IRON));
+        registerADItem(6229, "berserker_Sword", new ItemWeapon(1400, 8, Item.ToolMaterial.IRON));
+        registerADItem(6230, "two_Handed_Sword", new ItemWeapon(500, 7, Item.ToolMaterial.IRON));
         //registerADItem(6231, "green_Flag", new Item());
         //registerADItem(6232, "hobbit_Bow", new ItemValarBase());
         //registerADItem(6233, "rohan_sheild_6", (new ItemValarBase().setUnlocalizedName("rohanShield6"));
         registerADItem(6234, "throwing_Stone", new ItemThrowingStone(1));
-        registerADItem(6235, "rohirrim_Axe", new ItemWeapon(267, 6));
+        registerADItem(6235, "rohirrim_Axe", new ItemWeapon(267, 6, Item.ToolMaterial.IRON));
         //registerADItem(6236, "ecthelions_Boots", new ItemValarArmor(3, 500, 3, 0));
         registerADItem(6239, "elven_Door", new ItemDoor(Blocks.ELVEN_DOOR));
         registerADItem(6240, "human_Door", new ItemDoor(Blocks.HUMAN_DOOR));
@@ -1548,7 +1549,7 @@ public class Item
         registerADItem(6253, "noris_Club", new ItemWeapon(861, 5));
         registerADItem(6254, "oins_Staff", new ItemWeapon(922, 6));
         registerADItem(6255, "orcrist", new ItemElvenWeapon(8001, 12));
-        registerADItem(6256, "sword_Of_Westernesse", new ItemWeapon(3200, 8));
+        registerADItem(6256, "sword_Of_Westernesse", new ItemWeapon(3200, 8, Item.ToolMaterial.DIAMOND));
         registerADItem(6257, "thorins_Sword", new ItemWeapon(1200, 6));
         registerADItem(6258, "thrains_War_Hammer", new ItemWeapon(1288, 6));
         registerADItem(6259, "thrors_War_Hammer", new ItemWeapon(1428, 7));
@@ -1570,29 +1571,29 @@ public class Item
         registerADItem(6275, "saurons_Mace", new ItemWeapon(7500, 13));
         registerADItem(6276, "sarumans_Staff", new ItemWeapon(4500, 10));
         registerADItem(6277, "yaznegs_Axe", new ItemWeapon(830, 6));
-        registerADItem(6278, "dwarven_Lord_Knife", new ItemWeapon(1200, 4));
-        registerADItem(6279, "gondorian_Noble_Sword", new ItemWeapon(1400, 7));
-        registerADItem(6280, "mace_Of_Glory", new ItemWeapon(2100, 8));
-        registerADItem(6281, "golden_War_Hammer_Of_Erebor", new ItemWeapon(2800, 7));
-        registerADItem(6282, "gondorian_Spear", new ItemWeapon(1000, 6));
-        registerADItem(6283, "rohirrim_Spear", new ItemWeapon(1040, 6));
-        registerADItem(6284, "bull_Head_Mace", new ItemWeapon(1091, 7));
-        registerADItem(6285, "corsair_Eket", new ItemWeapon(1133, 7));
-        registerADItem(6286, "dol_Guldur_Spiked_Mace", new ItemWeapon(981, 6));
-        registerADItem(6287, "fell_Wargrider_Sword", new ItemWeapon(991, 6));
-        registerADItem(6288, "haradrim_Snake_Dagger", new ItemWeapon(777, 5));
-        registerADItem(6289, "north_Goblin_Mace", new ItemWeapon(531, 5));
-        registerADItem(6290, "north_Goblin_Sword", new ItemWeapon(772, 5));
-        registerADItem(6291, "orc_Captain_Sword", new ItemWeapon(1130, 7));
-        registerADItem(6292, "orc_Dagger", new ItemWeapon(103, 4));
-        registerADItem(6293, "orc_Halbard", new ItemWeapon(605, 7));
-        registerADItem(6294, "uruk_Siege_Trooper_Dagger", new ItemWeapon(1041, 5));
+        registerADItem(6278, "dwarven_Lord_Knife", new ItemWeapon(1200, 4, Item.ToolMaterial.MITHRIL));
+        registerADItem(6279, "gondorian_Noble_Sword", new ItemWeapon(1400, 7, Item.ToolMaterial.GOLD));
+        registerADItem(6280, "mace_Of_Glory", new ItemWeapon(2100, 8, Item.ToolMaterial.IRON));
+        registerADItem(6281, "golden_War_Hammer_Of_Erebor", new ItemWeapon(2800, 7, Item.ToolMaterial.GOLD));
+        registerADItem(6282, "gondorian_Spear", new ItemWeapon(1000, 6, Item.ToolMaterial.IRON));
+        registerADItem(6283, "rohirrim_Spear", new ItemWeapon(1040, 6, Item.ToolMaterial.IRON));
+        registerADItem(6284, "bull_Head_Mace", new ItemWeapon(1091, 7, Item.ToolMaterial.IRON));
+        registerADItem(6285, "corsair_Eket", new ItemWeapon(1133, 7, Item.ToolMaterial.IRON));
+        registerADItem(6286, "dol_Guldur_Spiked_Mace", new ItemWeapon(981, 6, Item.ToolMaterial.IRON));
+        registerADItem(6287, "fell_Wargrider_Sword", new ItemWeapon(991, 6, Item.ToolMaterial.IRON));
+        registerADItem(6288, "haradrim_Snake_Dagger", new ItemWeapon(777, 5, Item.ToolMaterial.GOLD));
+        registerADItem(6289, "north_Goblin_Mace", new ItemWeapon(531, 5, Item.ToolMaterial.IRON));
+        registerADItem(6290, "north_Goblin_Sword", new ItemWeapon(772, 5, Item.ToolMaterial.GOLD));
+        registerADItem(6291, "orc_Captain_Sword", new ItemWeapon(1130, 7, Item.ToolMaterial.GOLD));
+        registerADItem(6292, "orc_Dagger", new ItemWeapon(103, 4, Item.ToolMaterial.IRON));
+        registerADItem(6293, "orc_Halbard", new ItemWeapon(605, 7, Item.ToolMaterial.IRON));
+        registerADItem(6294, "uruk_Siege_Trooper_Dagger", new ItemWeapon(1041, 5, Item.ToolMaterial.IRON));
         //registerADItem(6295, "orc_Spawner", new ItemValarBase();
-        registerADItem(6296, "iron_Mace", new ItemWeapon(387, 6));
-        registerADItem(6297, "orc_Sword_3", new ItemWeapon(180, 3));
+        registerADItem(6296, "iron_Mace", new ItemWeapon(387, 6, Item.ToolMaterial.IRON));
+        registerADItem(6297, "orc_Sword_3", new ItemWeapon(180, 3, Item.ToolMaterial.STONE));
         //registerADItem(6298, "morannon_Orc_Shield", new Item());
-        registerADItem(6299, "morannon_Dagger", new ItemWeapon(99, 3));
-        registerADItem(6300, "orc_Spear", new ItemWeapon(123, 6));
+        registerADItem(6299, "morannon_Dagger", new ItemWeapon(99, 3, Item.ToolMaterial.GOLD));
+        registerADItem(6300, "orc_Spear", new ItemWeapon(123, 6, Item.ToolMaterial.IRON));
         //registerADItem(6301, "net", new Item());
         //registerADItem(6302, "erus_Staff", new ItemValarErusStaff());
         registerADItem(6303, "castle_Door", new ItemDoor(Blocks.CASTLE_DOOR));
@@ -1690,7 +1691,10 @@ public class Item
         STONE(1, 131, 4.0F, 1.0F, 5),
         IRON(2, 250, 6.0F, 2.0F, 14),
         DIAMOND(3, 1561, 8.0F, 3.0F, 10),
-        GOLD(0, 32, 12.0F, 0.0F, 22);
+        GOLD(0, 32, 12.0F, 0.0F, 22),
+        // Begin Awaken Dreams code
+        MITHRIL(0, 2100, 12.0F, 10.0F, 10);
+        // End Awaken Dreams code
 
         private final int harvestLevel;
         private final int maxUses;

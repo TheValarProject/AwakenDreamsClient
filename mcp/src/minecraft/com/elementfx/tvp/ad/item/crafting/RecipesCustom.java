@@ -14,6 +14,7 @@ public class RecipesCustom
 		manager.addShapelessRecipe(new ItemStack(Items.THROWING_STONE, 4), new Object[] {Blocks.COBBLESTONE});
 		manager.addShapelessRecipe(new ItemStack(Items.FLAMING_ARROW, 1), new Object[] {Items.ARROW, Items.FIRE_CHARGE});
 		
+		manager.addRecipe(new ItemStack(Items.KNIFE, 1), new Object[] {"I", "S", 'S', Items.STICK, 'I', Items.IRON_INGOT});
 		manager.addRecipe(new ItemStack(Items.BATTLE_PICKAXE, 1), new Object[] {"III", " I ", " S ", 'S', Items.STICK, 'I', Items.IRON_INGOT});
 		manager.addRecipe(new ItemStack(Items.PIKE_CLUB, 1), new Object[] {"I", "I", "I", 'I', Items.IRON_INGOT});
 		manager.addRecipe(new ItemStack(Items.SHIRRIFF_CLUB, 1), new Object[] {"S", "S", "S", 'S', Items.STICK});

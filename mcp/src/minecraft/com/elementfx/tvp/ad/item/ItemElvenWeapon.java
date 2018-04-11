@@ -23,11 +23,15 @@ public class ItemElvenWeapon extends ItemWeapon
 	private int glowAmount;
 	
     public ItemElvenWeapon(int maxUses, float damageVsEntity) {
-    	this(maxUses, damageVsEntity, -2.4F, 0, true, null);
+    	this(maxUses, damageVsEntity, null);
+    }
+    
+    public ItemElvenWeapon(int maxUses, float damageVsEntity, Item.ToolMaterial material) {
+    	this(maxUses, damageVsEntity, -2.4F, 0, true, material);
     }
 
-    public ItemElvenWeapon(int maxUses, float damageVsEntity, float attackSpeed, int enchantability, boolean renderFull3D, Item repairItem) {
-    	super(maxUses, damageVsEntity, attackSpeed, enchantability, renderFull3D, repairItem);
+    public ItemElvenWeapon(int maxUses, float damageVsEntity, float attackSpeed, int enchantability, boolean renderFull3D, Item.ToolMaterial material) {
+    	super(maxUses, damageVsEntity, attackSpeed, enchantability, renderFull3D, material);
     }
     
     /**
