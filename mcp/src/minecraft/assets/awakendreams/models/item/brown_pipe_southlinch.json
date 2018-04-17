@@ -1,0 +1,14 @@
+{
+  "parent": "awakendreams:item/pipe",
+  "textures": {
+    "layer0": "awakendreams:items/brown_pipe_old_toby"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "smoking": 1
+      },
+      "model": "awakendreams:item/brown_pipe_oldToby_smoking"
+    }
+  ]
+}

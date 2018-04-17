@@ -573,6 +573,8 @@ item.duckEgg.name=Oeuf de canard
 stuffing.empty=Vide
 stuffing.tobacco=Rempli de %d Tabac
 stuffing.oldToby=Rempli de %d Vieux Tobie
+stuffing.southernStar=Rempli de %d Étoile du Sud
+stuffing.southlinch=Rempli de %d Herbe à Pipe de Bree
 
 container.elvenCrafting=Fabrication Elfique
 container.humanCrafting=Fabrication Humaine

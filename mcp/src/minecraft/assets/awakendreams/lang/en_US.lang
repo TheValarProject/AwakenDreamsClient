@@ -600,6 +600,8 @@ item.duckEgg.name=Duck Egg
 stuffing.empty=Empty
 stuffing.tobacco=Packed with %d Tobacco
 stuffing.oldToby=Packed with %d Old Toby
+stuffing.southernStar=Packed with %d Southern Star
+stuffing.southlinch=Packed with %d Southlinch
 
 container.elvenCrafting=Elven Crafting
 container.humanCrafting=Human Crafting

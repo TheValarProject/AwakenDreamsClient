@@ -600,6 +600,8 @@ item.duckEgg.name=Kachní vejce
 stuffing.empty=Prázdná
 stuffing.tobacco=Naplněná %d Tabákem
 stuffing.oldToby=Naplněná %d Starým Tobym
+stuffing.southernStar=Naplněná %d Jižní Hvězdou
+stuffing.southlinch=Naplněná %d Jižním Vrškem
 
 container.elvenCrafting=Elfí výroba
 container.humanCrafting=Lidská výroba
