@@ -15,6 +15,8 @@ def check_file(path):
             if not "=" in line:
                 continue
             unlocalizedName = line[0:line.index('=')]
+            if not line[line.index('=')+1:].strip():
+                print("Warning: Empty value for key '" + unlocalizedName + "' in '" + filename + "'")
             if unlocalizedName in curNames:
                 print("Warning: Duplicate key '" + unlocalizedName + "' in '" + filename + "'", file=sys.stderr)
             else:
