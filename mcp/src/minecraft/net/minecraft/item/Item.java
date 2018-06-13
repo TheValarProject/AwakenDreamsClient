@@ -1396,7 +1396,7 @@ public class Item
         //registerADItem(6099, "gondorian_Tobacco", new Item());
         //registerADItem(6100, "longbottom_Leaf", new Item());
         registerADItem(6101, "old_Toby", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
-        //registerADItem(6102, "brown_Pipe", new Item());
+        registerADItem(6102, "brown_Pipe", new ItemPipe(false));
         registerADItem(6103, "stone_Of_Darkness", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
         registerADItem(6104, "stone_Of_Earth", (new Item()).setCreativeTab(CreativeTabs.MATERIALS).setUnlocalizedName("stoneOfEarth"));
         registerADItem(6105, "stone_Of_Fire", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));

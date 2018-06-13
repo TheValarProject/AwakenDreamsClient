@@ -1473,6 +1473,14 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerADItem(Items.SOUTHERN_STAR, "southern_star");
         this.registerADItem(Items.SOUTHLINCH, "southlinch");
         this.registerADItem(Items.OLD_TOBY, "old_toby");
+        this.itemModelMesher.register(Items.BROWN_PIPE, new ItemMeshDefinition()
+        {
+            public ModelResourceLocation getModelLocation(ItemStack stack)
+            {
+                ModelResourceLocation m = new ModelResourceLocation(new ADResourceLocation(Items.BROWN_PIPE.getModelName(stack)), "inventory");
+            	return m;
+            }
+        });
         this.registerADItem(Items.STONE_OF_DARKNESS, "stone_of_darkness");
         this.registerADItem(Items.STONE_OF_EARTH, "stone_of_earth");
         this.registerADItem(Items.STONE_OF_FIRE, "stone_of_fire");

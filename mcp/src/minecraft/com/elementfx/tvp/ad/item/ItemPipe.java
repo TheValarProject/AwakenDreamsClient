@@ -2,6 +2,7 @@ package com.elementfx.tvp.ad.item;
 
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import javax.annotation.Nullable;
@@ -175,15 +176,15 @@ public class ItemPipe extends Item
         {
         	if(playerIn.isCreative())
         	{
-        		tooltip.add(TextFormatting.DARK_GREEN + I18n.translateToLocal(this.getUnlocalizedName() + "." + this.getStuffing(stack).getUnlocalizedName().substring(5)).replace(" %s ", " "));
+        		tooltip.add(TextFormatting.DARK_GREEN + I18n.translateToLocal("stuffing." + this.getStuffing(stack).getUnlocalizedName().substring(5)).replace(" %s ", " "));
         	}
         	else
         	{
-        		tooltip.add(TextFormatting.DARK_GREEN + String.format(I18n.translateToLocal(this.getUnlocalizedName() + "." + this.getStuffing(stack).getUnlocalizedName().substring(5)), this.getStuffingAmount(stack)));
+        		tooltip.add(TextFormatting.DARK_GREEN + String.format(I18n.translateToLocal("stuffing." + this.getStuffing(stack).getUnlocalizedName().substring(5)), this.getStuffingAmount(stack)));
         	}
         }
         else {
-        	tooltip.add(TextFormatting.GRAY + I18n.translateToLocal(this.getUnlocalizedName() + ".empty"));
+        	tooltip.add(TextFormatting.GRAY + I18n.translateToLocal("stuffing.empty"));
         }
     }
     
@@ -198,7 +199,19 @@ public class ItemPipe extends Item
     
     public String getModelName(ItemStack stack)
     {
-        return super.getUnlocalizedName().substring(5).replace('.', '_') + (this.isPacked(stack) ? "_" + this.getStuffing(stack).getUnlocalizedName().substring(5).replace('.', '_') : "");
+        return transformName(super.getUnlocalizedName().substring(5)) + (this.isPacked(stack) ? "_" + this.getStuffing(stack).getUnlocalizedName().substring(5).replace('.', '_') : "");
+    }
+    
+    public String transformName(String s)
+    {
+    	for(int i = 0; i < s.length(); i++)
+    	{
+    		if(Character.isUpperCase(s.charAt(i)))
+    		{
+    			s = s.substring(0, i) + "_" + Character.toLowerCase(s.charAt(i)) + s.substring(i + 1, s.length());
+    		}
+    	}
+    	return s;
     }
     
     public void addSmokableItem(Item smokable)

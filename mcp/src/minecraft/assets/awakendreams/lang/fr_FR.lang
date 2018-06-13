@@ -226,9 +226,6 @@ item.lembas.name=Lambas
 item.mithrilIngot.name=Lingot de mithril
 item.bronzeIngot.name=Lingot de bronze
 item.pipe.name=Pipe
-item.pipe.empty=Vide
-item.pipe.tobacco=Rempli de %d Tabac
-item.pipe.oldToby=Rempli de %d Vieux Tobie
 item.tobacco.name=Tabac
 item.flamingArrow.name=Flèche Enflammée
 item.jade.name=Jade
@@ -572,6 +569,12 @@ item.ruby.name=Rubis
 item.duck.name=Canard cru
 item.cookedDuck.name=Canard rôti
 item.duckEgg.name=Oeuf de canard
+
+stuffing.empty=Vide
+stuffing.tobacco=Rempli de %d Tabac
+stuffing.oldToby=Rempli de %d Vieux Tobie
+stuffing.southernStar=Rempli de %d Étoile du Sud
+stuffing.southlinch=Rempli de %d Herbe à Pipe de Bree
 
 container.elvenCrafting=Fabrication Elfique
 container.humanCrafting=Fabrication Humaine

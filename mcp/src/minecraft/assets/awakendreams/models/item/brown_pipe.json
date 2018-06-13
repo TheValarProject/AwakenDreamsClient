@@ -1,0 +1,6 @@
+{
+  "parent": "awakendreams:item/pipe",
+  "textures": {
+    "layer0": "awakendreams:items/brown_pipe"
+  }
+}

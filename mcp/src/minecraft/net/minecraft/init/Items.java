@@ -295,6 +295,7 @@ public class Items
     public static final Item SOUTHERN_STAR;
     public static final Item SOUTHLINCH;
     public static final Item OLD_TOBY;
+    public static final ItemPipe BROWN_PIPE;
     public static final Item STONE_OF_DARKNESS;
     public static final Item STONE_OF_EARTH;
     public static final Item STONE_OF_FIRE;
@@ -823,11 +824,18 @@ public class Items
             BROKEN_NARSIL = getRegisteredADItem("broken_narsil");
             SOUTHERN_STAR = getRegisteredADItem("southern_star");
             Blocks.SOUTHERN_STAR_PLANT.setCrop(SOUTHERN_STAR);
+            PIPE.addSmokableItem(SOUTHERN_STAR);
             SOUTHLINCH = getRegisteredADItem("southlinch");
             Blocks.SOUTHLINCH.setCrop(SOUTHLINCH);
+            PIPE.addSmokableItem(SOUTHLINCH);
             OLD_TOBY = getRegisteredADItem("old_toby");
             PIPE.addSmokableItem(OLD_TOBY);
             Blocks.OLD_TOBY_PLANT.setCrop(OLD_TOBY);
+            BROWN_PIPE = (ItemPipe) getRegisteredADItem("brown_pipe");
+            BROWN_PIPE.addSmokableItem(TOBACCO);
+            BROWN_PIPE.addSmokableItem(OLD_TOBY);
+            BROWN_PIPE.addSmokableItem(SOUTHERN_STAR);
+            BROWN_PIPE.addSmokableItem(SOUTHLINCH);
             STONE_OF_DARKNESS = getRegisteredADItem("stone_of_darkness");
             STONE_OF_EARTH = getRegisteredADItem("stone_of_earth");
             STONE_OF_FIRE = getRegisteredADItem("stone_of_fire");
