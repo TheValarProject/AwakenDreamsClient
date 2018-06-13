@@ -1,6 +1,8 @@
 package net.minecraft.client;
 
+import com.elementfx.tvp.ad.client.gui.GuiADUpdateAvailable;
 import com.elementfx.tvp.ad.client.resources.AwakenDreamsResourcePack;
+import com.elementfx.tvp.ad.util.ADDefinitions;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Queues;
 import com.google.common.collect.Sets;
@@ -20,6 +22,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.Proxy;
 import java.net.SocketAddress;
+import java.net.URL;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.IntBuffer;
@@ -601,7 +604,34 @@ public class Minecraft implements IThreadListener, ISnooperInfo
         this.checkGLError("Post startup");
         this.ingameGUI = new GuiIngame(this);
 
-        if (this.serverName != null)
+        // Begin Awaken Dreams code
+        boolean modUpdateAvailable = false;
+        String modVersion = "";
+
+        try
+        {
+	        URL url = new URL("https://raw.githubusercontent.com/scribblemaniac/AwakenDreamsClient/update-check/version.txt");
+	        InputStream is = url.openStream();
+	        int ptr = 0;
+	        StringBuffer buffer = new StringBuffer();
+	        while ((ptr = is.read()) != -1) {
+	            buffer.append((char)ptr);
+	        }
+	        is.close();
+	        modVersion = buffer.toString().trim();
+	        modUpdateAvailable = !modVersion.equals(ADDefinitions.version);
+        }
+        catch (IOException e)
+        {
+        	this.LOGGER.warn("Cannot get latest mod version. Error message: " + e.toString());
+        }
+        
+        if (modUpdateAvailable)
+        {
+        	this.displayGuiScreen(new GuiADUpdateAvailable(modVersion));
+        }
+        else if (this.serverName != null)
+        // End Awaken Dreams code
         {
             this.displayGuiScreen(new GuiConnecting(new GuiMainMenu(), this, this.serverName, this.serverPort));
         }

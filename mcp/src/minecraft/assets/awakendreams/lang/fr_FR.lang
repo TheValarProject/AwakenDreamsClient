@@ -615,3 +615,7 @@ container.dwarvenCrafting=Fabrication des Nains
 container.rucksack=Sac à dos
 
 entity.Duck.name=Canard
+
+gui.updateAvailable.title=Mise à jour disponible
+gui.updateAvailable.message1=Une mise à jour es disponible pour l'Awaken Dreams mod.
+gui.updateAvailable.message2=Vous êtes en train d'utilizer version %s, et la plus récent version disponsable est %s.

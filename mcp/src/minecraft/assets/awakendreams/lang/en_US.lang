@@ -615,3 +615,7 @@ container.dwarvenCrafting=Dwarven Crafting
 container.rucksack=Rucksack
 
 entity.Duck.name=Duck
+
+gui.updateAvailable.title=Update Available
+gui.updateAvailable.message1=An update is available for the Awaken Dreams mod.
+gui.updateAvailable.message2=You are currently using version %s, and the latest available version is %s.
