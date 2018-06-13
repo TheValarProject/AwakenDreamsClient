@@ -200,7 +200,7 @@ tile.pelargirStone.name=Pelargirský kámen
 tile.whiteCobblestone.name=Bílý kámen
 tile.dunlandTotem.name=Vrchovanský totem
 tile.mirkwoodWeb.name=Pavučina z Temného hvozdu
-tile.daleWindow.name=Dolské okno
+tile.daleWindow1.name=Dolské okno 1
 tile.daleWindow2.name=Dolské okno 2
 tile.dunlandWallDecoration.name=Vrchovinská nástěnná dekorace
 tile.mordorLamp.name=Mordorská lampa
@@ -355,7 +355,7 @@ item.quartzBronzeRing.name=Bronzový prsten s Křemenem
 item.amberBronzeRing.name=Bronzový prsten s Jantarem
 item.mithrilRing.name=Prsten z Mithrilu
 item.onyxMithrilRing.name=Prsten z Mithrilu s Onyxem
-item.tanzaniteMithrilRing.namePrsten z Mithrilu s Tanzanitem
+item.tanzaniteMithrilRing.name=Prsten z Mithrilu s Tanzanitem
 item.jadeMithrilRing.name=Prsten z Mithrilu s Nefritem
 item.moonstoneMithrilRing.name=Prsten z Mithrilu s Měsíčním kamenem
 item.amethystMithrilRing.name=Prsten z Mithrilu s Ametystem
