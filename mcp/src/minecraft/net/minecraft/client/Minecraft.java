@@ -610,7 +610,7 @@ public class Minecraft implements IThreadListener, ISnooperInfo
 
         try
         {
-	        URL url = new URL("https://raw.githubusercontent.com/scribblemaniac/AwakenDreamsClient/update-check/version.txt");
+	        URL url = new URL("https://raw.githubusercontent.com/TheValarProject/AwakenDreamsClient/master/version.txt");
 	        InputStream is = url.openStream();
 	        int ptr = 0;
 	        StringBuffer buffer = new StringBuffer();
