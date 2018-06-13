@@ -33,13 +33,4 @@ public class BlockStakes extends Block3D
     {
         super(Material.PLANTS, Arrays.asList(new AxisAlignedBB(0.125D, 0.0D, 0.125D, 0.875D, 1.0D, 0.875D)));
     }
-    
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ)
-    {
-        if(heldItem != null && heldItem.getItem() instanceof ItemStakeSeeds) {
-        	worldIn.setBlockState(pos, ((ItemStakeSeeds)heldItem.getItem()).getCrop().getDefaultState());
-        	--heldItem.stackSize;
-        }
-        return false;
-    }
 }
