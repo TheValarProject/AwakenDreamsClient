@@ -16,6 +16,10 @@ matrix:
         - npm install jsonlint
       script:
         - tests/json_validate.sh
+    - stage: Translation Check
+      language: python
+      script:
+        - tests/localize_check.py
     - stage: Recompilation
       language: java
       script:
