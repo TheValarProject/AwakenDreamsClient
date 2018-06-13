@@ -436,7 +436,7 @@ public class ModelBakery
         this.variantNames.put(Items.PIPE, pipeNames);
         
         ArrayList<ItemStack> brownPipes = new ArrayList<ItemStack>();
-        Items.PIPE.getSubItems(Items.BROWN_PIPE, CreativeTabs.MISC, brownPipes);
+        Items.BROWN_PIPE.getSubItems(Items.BROWN_PIPE, CreativeTabs.MISC, brownPipes);
         ArrayList<String> brownPipeNames = new ArrayList<String>();
         for(ItemStack brownPipe : brownPipes)
         {
