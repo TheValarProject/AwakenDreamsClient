@@ -7,6 +7,8 @@ finished_files = []
 
 def check_file(path):
     filename = os.path.basename(path)
+    if filename.startswith('.'):
+        return
     curNames = set()
     with open(path, 'r') as f:
         for line in f:
