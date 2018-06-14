@@ -108,18 +108,18 @@ public class RenderItem implements IResourceManagerReloadListener
     {
         this.itemModelMesher.register(itm, subType, new ModelResourceLocation(identifier, "inventory"));
     }
-    
+
     // Begin Awaken Dreams code
     private void registerADItem(Item itm, String identifier)
     {
         this.registerADItem(itm, 0, identifier);
     }
-    
+
     protected void registerADItem(Item itm, int subType, String identifier)
     {
-    		this.itemModelMesher.register(itm, subType, new ModelResourceLocation(new ADResourceLocation(identifier), "inventory"));
+        this.itemModelMesher.register(itm, subType, new ModelResourceLocation(new ADResourceLocation(identifier), "inventory"));
     }
-    
+
     protected void registerADBlock(Block blk, int subType, String identifier)
     {
         this.registerADItem(Item.getItemFromBlock(blk), subType, identifier);
@@ -192,11 +192,13 @@ public class RenderItem implements IResourceManagerReloadListener
                 {
                     this.renderEffect(model);
                 }
+
                 // Begin Awaken Dreams code
-                if(stack.glows())
+                if (stack.glows())
                 {
-                	this.renderGlow(model, stack.glowAmount());
+                    this.renderGlow(model, stack.glowAmount());
                 }
+
                 // End Awaken Dreams code
             }
 
@@ -207,14 +209,14 @@ public class RenderItem implements IResourceManagerReloadListener
     // Begin Awaken Dreams code
     private void renderGlow(IBakedModel model, int glowAmount)
     {
-    	int color = 0x2890D6;
-    	color |= glowAmount / 2 << 24;
-    	GlStateManager.depthMask(false);
+        int color = 0x2890D6;
+        color |= glowAmount / 2 << 24;
+        GlStateManager.depthMask(false);
         GlStateManager.depthFunc(514);
         GlStateManager.disableLighting();
         GlStateManager.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE);
         this.textureManager.bindTexture(RES_ITEM_GLOW);
-        GlStateManager.matrixMode(5890);        
+        GlStateManager.matrixMode(5890);
         GlStateManager.pushMatrix();
         //GlStateManager.alphaFunc(GL11., 0);
         GlStateManager.scale(8.0F, 8.0F, 8.0F);
@@ -222,14 +224,14 @@ public class RenderItem implements IResourceManagerReloadListener
         GlStateManager.translate(f, 0.0F, 0.0F);
         GlStateManager.rotate(-50.0F, 0.0F, 0.0F, 1.0F);
         this.renderModel(model, color);
-        GlStateManager.popMatrix();        
+        GlStateManager.popMatrix();
         GlStateManager.pushMatrix();
         GlStateManager.scale(8.0F, 8.0F, 8.0F);
         float f1 = (float)(Minecraft.getSystemTime() % 4873L) / 4873.0F / 8.0F;
         GlStateManager.translate(-f1, 0.0F, 0.0F);
         GlStateManager.rotate(10.0F, 0.0F, 0.0F, 1.0F);
         this.renderModel(model, color);
-        GlStateManager.popMatrix();       
+        GlStateManager.popMatrix();
         GlStateManager.matrixMode(5888);
         GlStateManager.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
         GlStateManager.enableLighting();
@@ -238,7 +240,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.textureManager.bindTexture(TextureMap.LOCATION_BLOCKS_TEXTURE);
     }
     // End Awaken Dreams code
-    
+
     private void renderEffect(IBakedModel model)
     {
         GlStateManager.depthMask(false);
@@ -246,21 +248,21 @@ public class RenderItem implements IResourceManagerReloadListener
         GlStateManager.disableLighting();
         GlStateManager.blendFunc(GlStateManager.SourceFactor.SRC_COLOR, GlStateManager.DestFactor.ONE);
         this.textureManager.bindTexture(RES_ITEM_GLINT);
-        GlStateManager.matrixMode(5890);        
+        GlStateManager.matrixMode(5890);
         GlStateManager.pushMatrix();
         GlStateManager.scale(8.0F, 8.0F, 8.0F);
         float f = (float)(Minecraft.getSystemTime() % 3000L) / 3000.0F / 8.0F;
         GlStateManager.translate(f, 0.0F, 0.0F);
         GlStateManager.rotate(-50.0F, 0.0F, 0.0F, 1.0F);
         this.renderModel(model, -8372020);
-        GlStateManager.popMatrix();        
+        GlStateManager.popMatrix();
         GlStateManager.pushMatrix();
         GlStateManager.scale(8.0F, 8.0F, 8.0F);
         float f1 = (float)(Minecraft.getSystemTime() % 4873L) / 4873.0F / 8.0F;
         GlStateManager.translate(-f1, 0.0F, 0.0F);
         GlStateManager.rotate(10.0F, 0.0F, 0.0F, 1.0F);
         this.renderModel(model, -8372020);
-        GlStateManager.popMatrix();       
+        GlStateManager.popMatrix();
         GlStateManager.matrixMode(5888);
         GlStateManager.blendFunc(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA);
         GlStateManager.enableLighting();
@@ -1403,9 +1405,9 @@ public class RenderItem implements IResourceManagerReloadListener
         {
             public ModelResourceLocation getModelLocation(ItemStack stack)
             {
-            	ModelResourceLocation m = new ModelResourceLocation(new ADResourceLocation(Items.PIPE.getModelName(stack)), "inventory");
-            	//System.out.println("modelName=" + m.getResourceDomain() + " " + m.getResourcePath());
-            	return m;
+                ModelResourceLocation m = new ModelResourceLocation(new ADResourceLocation(Items.PIPE.getModelName(stack)), "inventory");
+                //System.out.println("modelName=" + m.getResourceDomain() + " " + m.getResourcePath());
+                return m;
             }
         });
         this.registerADItem(Items.TOBACCO, "tobacco");
@@ -1478,7 +1480,7 @@ public class RenderItem implements IResourceManagerReloadListener
             public ModelResourceLocation getModelLocation(ItemStack stack)
             {
                 ModelResourceLocation m = new ModelResourceLocation(new ADResourceLocation(Items.BROWN_PIPE.getModelName(stack)), "inventory");
-            	return m;
+                return m;
             }
         });
         this.registerADItem(Items.STONE_OF_DARKNESS, "stone_of_darkness");
@@ -1687,7 +1689,7 @@ public class RenderItem implements IResourceManagerReloadListener
         {
             public ModelResourceLocation getModelLocation(ItemStack stack)
             {
-            		return new ModelResourceLocation("awakendreams:" + stack.getUnlocalizedName().substring(5).replace('.', '_'), "inventory");
+                return new ModelResourceLocation("awakendreams:" + stack.getUnlocalizedName().substring(5).replace('.', '_'), "inventory");
             }
         });
         // End Awaken Dreams code

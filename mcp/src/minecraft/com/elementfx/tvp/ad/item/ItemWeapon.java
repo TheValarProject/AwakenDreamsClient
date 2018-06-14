@@ -30,18 +30,21 @@ public class ItemWeapon extends Item
     private final int enchantability;
     private final boolean isFull3d;
     private final Item.ToolMaterial material;
-    
-    public ItemWeapon(int maxUses, float damageVsEntity) {
-    	this(maxUses, damageVsEntity, null);
-    }
-    
-    public ItemWeapon(int maxUses, float damageVsEntity, Item.ToolMaterial material) {
-    	this(maxUses, damageVsEntity, -2.4F, 0, true, material);
+
+    public ItemWeapon(int maxUses, float damageVsEntity)
+    {
+        this(maxUses, damageVsEntity, null);
     }
 
-    public ItemWeapon(int maxUses, float damageVsEntity, float attackSpeed, int enchantability, boolean renderFull3D, Item.ToolMaterial material) {
-    	this.setCreativeTab(CreativeTabs.COMBAT);
-    	this.setMaxStackSize(1);
+    public ItemWeapon(int maxUses, float damageVsEntity, Item.ToolMaterial material)
+    {
+        this(maxUses, damageVsEntity, -2.4F, 0, true, material);
+    }
+
+    public ItemWeapon(int maxUses, float damageVsEntity, float attackSpeed, int enchantability, boolean renderFull3D, Item.ToolMaterial material)
+    {
+        this.setCreativeTab(CreativeTabs.COMBAT);
+        this.setMaxStackSize(1);
         this.setMaxDamage(maxUses);
         this.attackDamage = damageVsEntity; // TODO add ability to map special damage value for specific entities
         this.attackSpeed = attackSpeed;
@@ -49,7 +52,7 @@ public class ItemWeapon extends Item
         this.isFull3d = renderFull3D;
         this.material = material;
     }
-    
+
     /**
      * Returns the amount of damage this item will deal. One heart of damage is equal to 2 damage points.
      */
@@ -57,7 +60,7 @@ public class ItemWeapon extends Item
     {
         return this.attackDamage;
     }
-    
+
     public float getStrVsBlock(ItemStack stack, IBlockState state)
     {
         Block block = state.getBlock();
@@ -72,7 +75,7 @@ public class ItemWeapon extends Item
             return material != Material.PLANTS && material != Material.VINE && material != Material.CORAL && material != Material.LEAVES && material != Material.GOURD ? 1.0F : 1.5F;
         }
     }
-    
+
     /**
      * Current implementations of this method in child classes do not use the entry argument beside ev. They just raise
      * the damage on the stack.
@@ -82,7 +85,7 @@ public class ItemWeapon extends Item
         stack.damageItem(1, attacker);
         return true;
     }
-    
+
     /**
      * Called when a Block is destroyed using this Item. Return true to trigger the "Use Item" statistic.
      */
@@ -95,7 +98,7 @@ public class ItemWeapon extends Item
 
         return true;
     }
-    
+
     /**
      * Returns True is the item is renderer in full 3D when hold.
      */
@@ -103,7 +106,7 @@ public class ItemWeapon extends Item
     {
         return true;
     }
-    
+
     /**
      * Check whether this Item can harvest the given Block
      */
@@ -111,7 +114,7 @@ public class ItemWeapon extends Item
     {
         return blockIn.getBlock() == Blocks.WEB;
     }
-    
+
     /**
      * Return the enchantability factor of the item, most of the time is based on material.
      */
@@ -127,7 +130,7 @@ public class ItemWeapon extends Item
     {
         return this.material.getRepairItem() == repair.getItem() ? true : super.getIsRepairable(toRepair, repair);
     }
-    
+
     public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot equipmentSlot)
     {
         Multimap<String, AttributeModifier> multimap = super.getItemAttributeModifiers(equipmentSlot);

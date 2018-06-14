@@ -583,7 +583,7 @@ public abstract class EntityLivingBase extends Entity
             // Begin Awaken Dreams code
             if (item instanceof ItemCustomArmor)
             {
-            	soundevent = ((ItemCustomArmor)item).getSoundEvent();
+                soundevent = ((ItemCustomArmor)item).getSoundEvent();
             }
             // End Awaken Dreams code
             else if (item instanceof ItemArmor)
@@ -1346,7 +1346,7 @@ public abstract class EntityLivingBase extends Entity
             // Begin Awaken Dreams code
             if (iblockstate.getBlock() instanceof BlockLadder && iblockstate.getValue(BlockLadder.FACING) == state.getValue(BlockTrapDoor.FACING))
             {
-            	// End Awaken Dreams code
+                // End Awaken Dreams code
                 return true;
             }
         }

@@ -287,26 +287,26 @@ public class ModelBiped extends ModelBase
         // Begin Awaken Dreams code
         else if (this.rightArmPose == ModelBiped.ArmPose.PIPE)
         {
-        	this.bipedRightArm.rotateAngleY = -0.44F + this.bipedHead.rotateAngleY;
-        	this.bipedRightArm.rotateAngleX = -1.23F + this.bipedHead.rotateAngleX;
+            this.bipedRightArm.rotateAngleY = -0.44F + this.bipedHead.rotateAngleY;
+            this.bipedRightArm.rotateAngleX = -1.23F + this.bipedHead.rotateAngleX;
         }
         else if (this.leftArmPose == ModelBiped.ArmPose.PIPE)
         {
-        	this.bipedLeftArm.rotateAngleY = 0.44F + this.bipedHead.rotateAngleY;
-        	this.bipedLeftArm.rotateAngleX = -1.23F + this.bipedHead.rotateAngleX;
+            this.bipedLeftArm.rotateAngleY = 0.44F + this.bipedHead.rotateAngleY;
+            this.bipedLeftArm.rotateAngleX = -1.23F + this.bipedHead.rotateAngleX;
         }
         else if (this.rightArmPose == ModelBiped.ArmPose.TELESCOPE)
         {
-        	this.bipedRightArm.rotateAngleY = -0.46F + this.bipedHead.rotateAngleY;
-        	this.bipedRightArm.rotateAngleX = -1.77F + this.bipedHead.rotateAngleX;
+            this.bipedRightArm.rotateAngleY = -0.46F + this.bipedHead.rotateAngleY;
+            this.bipedRightArm.rotateAngleX = -1.77F + this.bipedHead.rotateAngleX;
         }
         else if (this.leftArmPose == ModelBiped.ArmPose.TELESCOPE)
         {
-        	this.bipedLeftArm.rotateAngleY = 0.46F + this.bipedHead.rotateAngleY;
-        	this.bipedLeftArm.rotateAngleX = -1.77F + this.bipedHead.rotateAngleX;
+            this.bipedLeftArm.rotateAngleY = 0.46F + this.bipedHead.rotateAngleY;
+            this.bipedLeftArm.rotateAngleX = -1.77F + this.bipedHead.rotateAngleX;
         }
+
         // End Awaken Dreams code
-        
         copyModelAngles(this.bipedHead, this.bipedHeadwear);
     }
 
@@ -356,8 +356,8 @@ public class ModelBiped extends ModelBase
         BLOCK,
         BOW_AND_ARROW,
         // Begin Awaken Dreams code
-    	PIPE,
-    	TELESCOPE;
-    	// End Awaken Dreams code
+        PIPE,
+        TELESCOPE;
+        // End Awaken Dreams code
     }
 }

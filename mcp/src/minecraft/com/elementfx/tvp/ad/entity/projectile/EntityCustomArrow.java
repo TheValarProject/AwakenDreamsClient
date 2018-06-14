@@ -6,7 +6,7 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 public class EntityCustomArrow extends EntityTippedArrow
-{    
+{
     public EntityCustomArrow(World worldIn)
     {
         super(worldIn);
@@ -21,13 +21,14 @@ public class EntityCustomArrow extends EntityTippedArrow
     {
         super(worldIn, shooter);
     }
-    
-    public EntityCustomArrow(World worldIn, EntityLivingBase shooter, boolean isFlamingIn) 
+
+    public EntityCustomArrow(World worldIn, EntityLivingBase shooter, boolean isFlamingIn)
     {
-		this(worldIn, shooter);
-		if(isFlamingIn)
-		{
-			this.setFire(180);	
-		}
-	}
+        this(worldIn, shooter);
+
+        if (isFlamingIn)
+        {
+            this.setFire(180);
+        }
+    }
 }

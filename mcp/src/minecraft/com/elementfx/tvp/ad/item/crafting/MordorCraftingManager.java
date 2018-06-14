@@ -23,7 +23,7 @@ import net.minecraft.world.World;
 
 public class MordorCraftingManager extends CustomCraftingManager
 {
-	 /** The static instance of this class */
+    /** The static instance of this class */
     private static final MordorCraftingManager INSTANCE = new MordorCraftingManager();
     private final List<IRecipe> recipes = Lists.<IRecipe>newArrayList();
 
@@ -36,12 +36,12 @@ public class MordorCraftingManager extends CustomCraftingManager
     }
 
     protected MordorCraftingManager()
-    {    	
-    	this.addRecipe(new ItemStack(Items.MORANNON_DAGGER, 1), new Object[] {"G", "S", 'S', Items.STICK, 'G', Items.GOLD_INGOT});
-    	this.addRecipe(new ItemStack(Items.DOL_GULDUR_SPIKED_MACE, 1), new Object[] {" I ", "IPI", " S ", 'S', Items.STICK, 'I', Items.IRON_INGOT, 'P', Blocks.PLANKS});
-    	this.addRecipe(new ItemStack(Items.MORGUL_SWORD, 1), new Object[] {"D", "D", "S", 'S', Items.STICK, 'D', Items.DIAMOND});
-    	(new RecipesOrcWeapons()).addRecipes(this);
-    	Collections.sort(this.getRecipeList(), new Comparator<IRecipe>()
+    {
+        this.addRecipe(new ItemStack(Items.MORANNON_DAGGER, 1), new Object[] {"G", "S", 'S', Items.STICK, 'G', Items.GOLD_INGOT});
+        this.addRecipe(new ItemStack(Items.DOL_GULDUR_SPIKED_MACE, 1), new Object[] {" I ", "IPI", " S ", 'S', Items.STICK, 'I', Items.IRON_INGOT, 'P', Blocks.PLANKS});
+        this.addRecipe(new ItemStack(Items.MORGUL_SWORD, 1), new Object[] {"D", "D", "S", 'S', Items.STICK, 'D', Items.DIAMOND});
+        (new RecipesOrcWeapons()).addRecipes(this);
+        Collections.sort(this.getRecipeList(), new Comparator<IRecipe>()
         {
             public int compare(IRecipe p_compare_1_, IRecipe p_compare_2_)
             {

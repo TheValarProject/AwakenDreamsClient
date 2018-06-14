@@ -70,8 +70,8 @@ public class ResourcePackRepository
     // Begin Awaken Dreams code
     public ResourcePackRepository(File dirResourcepacksIn, File dirServerResourcepacksIn, IResourcePack rprDefaultResourcePackIn, IResourcePack rprAwakenDreamsResourcePackIn, MetadataSerializer rprMetadataSerializerIn, GameSettings settings)
     {
-    	this.rprAwakenDreamsResourcePack = rprAwakenDreamsResourcePackIn;
-    	// End Awaken Dreams code
+        this.rprAwakenDreamsResourcePack = rprAwakenDreamsResourcePackIn;
+        // End Awaken Dreams code
         this.dirResourcepacks = dirResourcepacksIn;
         this.dirServerResourcepacks = dirServerResourcepacksIn;
         this.rprDefaultResourcePack = rprDefaultResourcePackIn;

@@ -479,7 +479,6 @@ public class Item
     {
         return stack.isItemEnchanted();
     }
-    
 
     /**
      * Return an item rarity from EnumRarity
@@ -1608,8 +1607,9 @@ public class Item
         registerADItem(6312, "purple_Grape_Seed", new ItemStakeSeeds(Blocks.PURPLE_GRAPE, Blocks.FARMLAND));
         registerADItem(6313, "purple_Grapes", new ItemCustomFood(2, 15, 0.3F, false));
         registerADItem(6314, "pipeweed_Seed", new ItemSeeds(Blocks.PIPEWEED_PLANT, Blocks.FARMLAND));
-        registerADItem(6315, "peas", new ItemSeedFood(1, 10, 0.1F, Blocks.PEA_PLANT, Blocks.FARMLAND) {
-        	public int getHealAmount(ItemStack stack)
+        registerADItem(6315, "peas", new ItemSeedFood(1, 10, 0.1F, Blocks.PEA_PLANT, Blocks.FARMLAND)
+        {
+            public int getHealAmount(ItemStack stack)
             {
                 return this.itemRand.nextInt(6) == 0 ? 1 : 0;
             }
@@ -1627,7 +1627,7 @@ public class Item
         //registerADItem(6326, "elven_Steel_Ingot", (new Item()).setCreativeTab(CreativeTabs.MATERIALS)); - deprecated
         registerADItem(6327, "ruby", (new Item()).setCreativeTab(CreativeTabs.MATERIALS));
         registerADItem(6328, "duck", (new ItemCustomFood(2, 0.35F, true)).setPotionEffect(new PotionEffect(MobEffects.HUNGER, 600, 0), 0.3F));
-        registerADItem(6329, "cooked_Duck", (new ItemCustomFood(6, 0.7F, true)));   
+        registerADItem(6329, "cooked_Duck", (new ItemCustomFood(6, 0.7F, true)));
         registerADItem(6330, "duck_Egg", new ItemCustomEgg());
         // Temporary Id, change to proper id when adding items
         //registerADItem(10003, "frodos_Finger", new ItemValarFood(2, 0.1F, true));
@@ -1660,23 +1660,24 @@ public class Item
     {
         registerItem(id, new ResourceLocation(textualID), itemIn);
     }
-    
+
     // Begin Awaken Dreams code
     /**
      * @param mixedId Requires format of _ instead of spaces and camel caps. Ex: item_Name
      */
     private static void registerADItem(int id, String mixedId, Item itemIn)
     {
-    		registerADItem(id, mixedId.toLowerCase(), mixedId.replace("_", ""), itemIn);
+        registerADItem(id, mixedId.toLowerCase(), mixedId.replace("_", ""), itemIn);
     }
-    
+
     private static void registerADItem(int id, String textualID, String unlocalizedName, Item itemIn)
     {
-    		if(unlocalizedName != null)
-    		{
-    			itemIn.setUnlocalizedName(unlocalizedName);
-    		}
-    		registerItem(id, new ADResourceLocation(textualID), itemIn);
+        if (unlocalizedName != null)
+        {
+            itemIn.setUnlocalizedName(unlocalizedName);
+        }
+
+        registerItem(id, new ADResourceLocation(textualID), itemIn);
     }
     // End Awaken Dreams code
 

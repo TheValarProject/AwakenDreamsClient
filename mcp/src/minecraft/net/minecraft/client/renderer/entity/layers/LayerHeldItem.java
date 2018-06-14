@@ -41,11 +41,13 @@ public class LayerHeldItem implements LayerRenderer<EntityLivingBase>
 
             this.renderHeldItem(entitylivingbaseIn, itemstack1, ItemCameraTransforms.TransformType.THIRD_PERSON_RIGHT_HAND, EnumHandSide.RIGHT);
             this.renderHeldItem(entitylivingbaseIn, itemstack, ItemCameraTransforms.TransformType.THIRD_PERSON_LEFT_HAND, EnumHandSide.LEFT);
+
             // Begin Awaken Dreams code
-            if(entitylivingbaseIn != null)
+            if (entitylivingbaseIn != null)
             {
-            	this.setLightmap(entitylivingbaseIn, null); //if this wasn't set, any item layer rendering after itemstack would render with same lighmap as itemstack
+                this.setLightmap(entitylivingbaseIn, null); //if this wasn't set, any item layer rendering after itemstack would render with same lighmap as itemstack
             }
+
             // End Awaken Dreams code
             GlStateManager.popMatrix();
         }
@@ -74,30 +76,33 @@ public class LayerHeldItem implements LayerRenderer<EntityLivingBase>
             GlStateManager.popMatrix();
         }
     }
-    
+
     // Begin Awaken Dreams code
     private void setLightmap(EntityLivingBase entity, ItemStack itemstack)
     {
         int i = entity.getBrightnessForRender(0F);
         float f = i % 65536;
         float f1 = i / 65536;
-        if(itemstack != null && itemstack.getItem() instanceof ItemElvenWeapon)
+
+        if (itemstack != null && itemstack.getItem() instanceof ItemElvenWeapon)
         {
             ItemElvenWeapon itemweapon = (ItemElvenWeapon) itemstack.getItem();
-			float f2 = (float)(itemweapon.getGlowAmount());
-			f2 = Math.min(f2, 240F);
-			if(itemweapon.isGlowing())
-			{
-	    		if(f<f1)
-	    		{
-	    			f = Math.min(f + f2, 240);
-	    		}
-	    		else
-	    		{
-	    			f1 = Math.min(f1 + f2, 240);
-	    		}
-			}
+            float f2 = (float)(itemweapon.getGlowAmount());
+            f2 = Math.min(f2, 240F);
+
+            if (itemweapon.isGlowing())
+            {
+                if (f < f1)
+                {
+                    f = Math.min(f + f2, 240);
+                }
+                else
+                {
+                    f1 = Math.min(f1 + f2, 240);
+                }
+            }
         }
+
         OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, f, f1);
     }
     //End Awaken Dreams code

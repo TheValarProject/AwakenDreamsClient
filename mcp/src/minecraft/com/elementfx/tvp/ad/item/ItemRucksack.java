@@ -32,72 +32,71 @@ import net.minecraft.world.World;
 
 public class ItemRucksack extends Item
 {
-	public ItemRucksack() {
+    public ItemRucksack()
+    {
         this.setCreativeTab(CreativeTabs.MISC);
         this.setMaxStackSize(1);
-	}
-	
-	public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
-    {
-		if(worldIn.isRemote)
-		{
-			return new ActionResult(EnumActionResult.SUCCESS, itemStackIn);
-		}
-    	playerIn.openRucksack(itemStackIn, hand);
-        playerIn.addStat(StatList.getObjectUseStats(this));
-    	return new ActionResult(EnumActionResult.SUCCESS, itemStackIn);
     }
-	
-	public InventoryBasic getInventory(ItemStack rucksack)
-	{
-		if(!rucksack.hasTagCompound())
-		{
-			return new InventoryBasic("Rucksack", false, 9);
-		}
-		
-		InventoryBasic inventory = new InventoryBasic("Rucksack", false, 9);
 
-		NBTTagList nbttaglist = rucksack.getTagCompound().getTagList("Items", 10);
-		
-		if(nbttaglist == null)
-		{
-			return new InventoryBasic("Rucksack", false, 9);
-		}
+    public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
+    {
+        if (worldIn.isRemote)
+        {
+            return new ActionResult(EnumActionResult.SUCCESS, itemStackIn);
+        }
 
-		for (int i = 0; i < nbttaglist.tagCount(); ++i)
-		{
-			NBTTagCompound nbttagcompound = nbttaglist.getCompoundTagAt(i);
-			int j = nbttagcompound.getByte("Slot") & 255;
+        playerIn.openRucksack(itemStackIn, hand);
+        playerIn.addStat(StatList.getObjectUseStats(this));
+        return new ActionResult(EnumActionResult.SUCCESS, itemStackIn);
+    }
 
-			if (j >= 0 && j < inventory.getSizeInventory())
-			{
-				inventory.setInventorySlotContents(j, ItemStack.loadItemStackFromNBT(nbttagcompound));
-			}
-		}
-		
-		return inventory;
-	}
-	
-	public ItemStack saveInventory(ItemStack rucksack, IInventory inventory)
-	{
-		NBTTagList nbttaglist = new NBTTagList();
+    public InventoryBasic getInventory(ItemStack rucksack)
+    {
+        if (!rucksack.hasTagCompound())
+        {
+            return new InventoryBasic("Rucksack", false, 9);
+        }
 
-		for (int i = 0; i < inventory.getSizeInventory(); ++i)
-		{
-			if (inventory.getStackInSlot(i) != null)
-			{
-				NBTTagCompound nbttagcompound = new NBTTagCompound();
-				nbttagcompound.setByte("Slot", (byte)i);
-				inventory.getStackInSlot(i).writeToNBT(nbttagcompound);
-				nbttaglist.appendTag(nbttagcompound);
-			}
-		}
+        InventoryBasic inventory = new InventoryBasic("Rucksack", false, 9);
+        NBTTagList nbttaglist = rucksack.getTagCompound().getTagList("Items", 10);
 
-		NBTTagCompound compound = rucksack.hasTagCompound() ? rucksack.getTagCompound() : new NBTTagCompound();
-		compound.setTag("Items", nbttaglist);
-		
-		rucksack.setTagCompound(compound);
-		
-		return rucksack;
-	}
+        if (nbttaglist == null)
+        {
+            return new InventoryBasic("Rucksack", false, 9);
+        }
+
+        for (int i = 0; i < nbttaglist.tagCount(); ++i)
+        {
+            NBTTagCompound nbttagcompound = nbttaglist.getCompoundTagAt(i);
+            int j = nbttagcompound.getByte("Slot") & 255;
+
+            if (j >= 0 && j < inventory.getSizeInventory())
+            {
+                inventory.setInventorySlotContents(j, ItemStack.loadItemStackFromNBT(nbttagcompound));
+            }
+        }
+
+        return inventory;
+    }
+
+    public ItemStack saveInventory(ItemStack rucksack, IInventory inventory)
+    {
+        NBTTagList nbttaglist = new NBTTagList();
+
+        for (int i = 0; i < inventory.getSizeInventory(); ++i)
+        {
+            if (inventory.getStackInSlot(i) != null)
+            {
+                NBTTagCompound nbttagcompound = new NBTTagCompound();
+                nbttagcompound.setByte("Slot", (byte)i);
+                inventory.getStackInSlot(i).writeToNBT(nbttagcompound);
+                nbttaglist.appendTag(nbttagcompound);
+            }
+        }
+
+        NBTTagCompound compound = rucksack.hasTagCompound() ? rucksack.getTagCompound() : new NBTTagCompound();
+        compound.setTag("Items", nbttaglist);
+        rucksack.setTagCompound(compound);
+        return rucksack;
+    }
 }

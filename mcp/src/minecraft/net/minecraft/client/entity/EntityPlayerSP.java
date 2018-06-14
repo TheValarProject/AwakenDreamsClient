@@ -788,11 +788,11 @@ public class EntityPlayerSP extends AbstractClientPlayer
     {
         this.mc.displayGuiScreen(new GuiScreenHorseInventory(this.inventory, inventoryIn, horse));
     }
-    
+
     // Begin Awaken Dreams code
     public void openRucksack(ItemStack rucksack, EnumHand hand)
     {
-    	this.mc.displayGuiScreen(new GuiRucksack(this, rucksack, hand));
+        this.mc.displayGuiScreen(new GuiRucksack(this, rucksack, hand));
     }
     // End Awaken Dreams code
 
@@ -813,43 +813,44 @@ public class EntityPlayerSP extends AbstractClientPlayer
             this.mc.displayGuiScreen(new GuiRepair(this.inventory, this.worldObj));
         }
         //Begin Awaken Dreams code
-        else if("minecraft:elven_crafting_table".equals(s))
+        else if ("minecraft:elven_crafting_table".equals(s))
         {
             this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "elven", 15859662, 0, 204, 194));
         }
-        else if("minecraft:human_crafting_table".equals(s))
+        else if ("minecraft:human_crafting_table".equals(s))
         {
             this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "human", 12366482, 1));
         }
-        else if("minecraft:gondorian_crafting_table".equals(s))
+        else if ("minecraft:gondorian_crafting_table".equals(s))
         {
             this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "gondorian", 2236448, 2, 192, 172));
         }
-        else if("minecraft:rohirrim_crafting_table".equals(s))
+        else if ("minecraft:rohirrim_crafting_table".equals(s))
         {
             this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "rohirrim", 4210752, 3));
         }
-        else if("minecraft:hobbit_crafting_table".equals(s))
+        else if ("minecraft:hobbit_crafting_table".equals(s))
         {
             this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "hobbit", 4210752, 4));
         }
-        else if("minecraft:mordor_crafting_table".equals(s))
+        else if ("minecraft:mordor_crafting_table".equals(s))
         {
             this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "mordor", 4210752, 5));
         }
-        else if("minecraft:isengard_crafting_table".equals(s))
+        else if ("minecraft:isengard_crafting_table".equals(s))
         {
             this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "isengard", 4142656, 6));
         }
-        else if("minecraft:goblin_crafting_table".equals(s))
+        else if ("minecraft:goblin_crafting_table".equals(s))
         {
             this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "goblin", 4210752, 7));
         }
-        else if("minecraft:dwarven_crafting_table".equals(s))
+        else if ("minecraft:dwarven_crafting_table".equals(s))
         {
             this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "dwarven", 4210752, 8));
         }
-    	//End Awaken Dreams code
+
+        //End Awaken Dreams code
     }
 
     public void displayVillagerTradeGui(IMerchant villager)

@@ -16,7 +16,7 @@ import net.minecraft.util.EnumHand;
 public class ContainerRucksack extends Container
 {
     private final IInventory rucksackInventory;
-    
+
     private static final EntityEquipmentSlot[] VALID_EQUIPMENT_SLOTS = new EntityEquipmentSlot[] {EntityEquipmentSlot.HEAD, EntityEquipmentSlot.CHEST, EntityEquipmentSlot.LEGS, EntityEquipmentSlot.FEET};
 
     public ContainerRucksack(IInventory playerInventory, IInventory rucksackInventoryIn, int readOnlySlot)
@@ -31,7 +31,7 @@ public class ContainerRucksack extends Container
                 this.addSlotToContainer(new SlotRucksack(rucksackInventoryIn, j + i * 3, 106 + j * 18, 17 + i * 18));
             }
         }
-        
+
         // Player armor slots
         for (int k = 0; k < 4; ++k)
         {
@@ -61,37 +61,37 @@ public class ContainerRucksack extends Container
                 }
             });
         }
-        
+
         // Player left hand
-        if(readOnlySlot == 40)
+        if (readOnlySlot == 40)
         {
-        	this.addSlotToContainer(new SlotReadOnly(playerInventory, 40, 77, 62)
-        	{
-        		public boolean isItemValid(@Nullable ItemStack stack)
-        		{
-        			return super.isItemValid(stack);
-        		}
-        		@Nullable
-        		public String getSlotTexture()
-        		{
-        			return "minecraft:items/empty_armor_slot_shield";
-        		}
-        	});
+            this.addSlotToContainer(new SlotReadOnly(playerInventory, 40, 77, 62)
+            {
+                public boolean isItemValid(@Nullable ItemStack stack)
+                {
+                    return super.isItemValid(stack);
+                }
+                @Nullable
+                public String getSlotTexture()
+                {
+                    return "minecraft:items/empty_armor_slot_shield";
+                }
+            });
         }
         else
         {
-        	this.addSlotToContainer(new Slot(playerInventory, 40, 77, 62)
-        	{
-        		public boolean isItemValid(@Nullable ItemStack stack)
-        		{
-        			return super.isItemValid(stack);
-        		}
-        		@Nullable
-        		public String getSlotTexture()
-        		{
-        			return "minecraft:items/empty_armor_slot_shield";
-        		}
-        	});
+            this.addSlotToContainer(new Slot(playerInventory, 40, 77, 62)
+            {
+                public boolean isItemValid(@Nullable ItemStack stack)
+                {
+                    return super.isItemValid(stack);
+                }
+                @Nullable
+                public String getSlotTexture()
+                {
+                    return "minecraft:items/empty_armor_slot_shield";
+                }
+            });
         }
 
         // Player inventory slots
@@ -106,20 +106,20 @@ public class ContainerRucksack extends Container
         // Player hotbar slots
         for (int l = 0; l < 9; ++l)
         {
-        	if(readOnlySlot == l)
-        	{
-        		this.addSlotToContainer(new SlotReadOnly(playerInventory, l, 8 + l * 18, 142));
-        	}
-        	else
-        	{
-        		this.addSlotToContainer(new Slot(playerInventory, l, 8 + l * 18, 142));
-        	}
+            if (readOnlySlot == l)
+            {
+                this.addSlotToContainer(new SlotReadOnly(playerInventory, l, 8 + l * 18, 142));
+            }
+            else
+            {
+                this.addSlotToContainer(new Slot(playerInventory, l, 8 + l * 18, 142));
+            }
         }
     }
-    
+
     public IInventory getRucksackInventory()
     {
-    	return this.rucksackInventory;
+        return this.rucksackInventory;
     }
 
     public boolean canInteractWith(EntityPlayer playerIn)

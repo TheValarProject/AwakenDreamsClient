@@ -10,5 +10,5 @@ public enum EnumAction
     // Begin Awaken Dreams code
     SMOKE,
     OBSERVE;
-	// End AWaken Dreams code
+    // End AWaken Dreams code
 }

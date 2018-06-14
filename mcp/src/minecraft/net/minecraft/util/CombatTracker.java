@@ -43,7 +43,7 @@ public class CombatTracker
             // Begin Awaken Dreams code
             if (block instanceof BlockLadder)
             {
-            	// End Awaken Dreams code
+                // End Awaken Dreams code
                 this.fallSuffix = "ladder";
             }
             else if (block == Blocks.VINE)

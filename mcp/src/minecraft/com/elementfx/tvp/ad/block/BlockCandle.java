@@ -35,12 +35,12 @@ public class BlockCandle extends Block3D
         this.setCreativeTab(CreativeTabs.DECORATIONS);
         this.setLightLevel(0.5F);
     }
-    
+
     public void randomDisplayTick(IBlockState stateIn, World worldIn, BlockPos pos, Random rand)
     {
-    	double x = pos.getX() + 0.5D;
-    	double y = pos.getY() + 0.9D;
-    	double z = pos.getZ() + 0.5D;
+        double x = pos.getX() + 0.5D;
+        double y = pos.getY() + 0.9D;
+        double z = pos.getZ() + 0.5D;
         worldIn.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, x, y, z, 0.0D, 0.0D, 0.0D, new int[0]);
         worldIn.spawnParticle(EnumParticleTypes.FLAME, x, y, z, 0.0D, 0.0D, 0.0D, new int[0]);
     }

@@ -17,12 +17,12 @@ import net.minecraft.util.EnumHand;
 
 public class SlotRucksack extends Slot
 {
-	public SlotRucksack(IInventory inventoryIn, int index, int xPosition, int yPosition)
+    public SlotRucksack(IInventory inventoryIn, int index, int xPosition, int yPosition)
     {
-		super(inventoryIn, index, xPosition, yPosition);
+        super(inventoryIn, index, xPosition, yPosition);
     }
-	
-	/**
+
+    /**
      * Check if the stack is a valid item for this slot. Always true beside for the armor slots.
      */
     public boolean isItemValid(@Nullable ItemStack stack)

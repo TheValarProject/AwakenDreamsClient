@@ -99,6 +99,7 @@ public class RegionFile
     /**
      * Returns an uncompressed chunk stream from the region file.
      */
+
     public synchronized DataInputStream getChunkDataInputStream(int x, int z)
     {
         if (this.outOfBounds(x, z))
@@ -179,6 +180,7 @@ public class RegionFile
     /**
      * Writes the specified chunk to disk.
      */
+
     protected synchronized void write(int x, int z, byte[] data, int length)
     {
         try

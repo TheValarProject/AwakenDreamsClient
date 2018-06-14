@@ -111,28 +111,31 @@ public class ItemRenderer
         int i = this.mc.theWorld.getCombinedLight(new BlockPos(abstractclientplayer.posX, abstractclientplayer.posY + (double)abstractclientplayer.getEyeHeight(), abstractclientplayer.posZ), 0);
         float f = (float)(i & 65535);
         float f1 = (float)(i >> 16);
+
         // Begin Awaken Dreams code
-        if(itemstack != null && itemstack.getItem() instanceof ItemElvenWeapon)
+        if (itemstack != null && itemstack.getItem() instanceof ItemElvenWeapon)
         {
-			ItemElvenWeapon itemweapon = (ItemElvenWeapon) itemstack.getItem();
-			float f2 = (float)(itemweapon.getGlowAmount());
-			f2 = Math.min(f2, 240F);
-			if(itemweapon.isGlowing())
-			{
-	    		if(f<f1)
-	    		{
-	    			f = Math.min(f + f2, 240);
-	    		}
-	    		else
-	    		{
-	    			f1 = Math.min(f1 + f2, 240);
-	    		}
-			}
+            ItemElvenWeapon itemweapon = (ItemElvenWeapon) itemstack.getItem();
+            float f2 = (float)(itemweapon.getGlowAmount());
+            f2 = Math.min(f2, 240F);
+
+            if (itemweapon.isGlowing())
+            {
+                if (f < f1)
+                {
+                    f = Math.min(f + f2, 240);
+                }
+                else
+                {
+                    f1 = Math.min(f1 + f2, 240);
+                }
+            }
         }
+
         // End Awaken Dreams  code
         OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, f, f1);
     }
-    
+
     private void rotateArm(float p_187458_1_)
     {
         EntityPlayerSP entityplayersp = this.mc.thePlayer;
@@ -458,14 +461,15 @@ public class ItemRenderer
                         GlStateManager.scale(1.0F, 1.0F, 1.0F + f6 * 0.2F);
                         GlStateManager.rotate((float)j * 45.0F, 0.0F, -1.0F, 0.0F);
                         break;
-                        
-                    // Begin Awaken Dreams code
+
+                        // Begin Awaken Dreams code
                     case SMOKE:
-                    	this.transformSideFirstPerson(enumhandside, p_187457_7_);
+                        this.transformSideFirstPerson(enumhandside, p_187457_7_);
                         break;
+
                     case OBSERVE:
-                    	break;
-                    // End Awaken Dreams code
+                        break;
+                        // End Awaken Dreams code
                 }
             }
             else
@@ -481,6 +485,7 @@ public class ItemRenderer
 
             this.renderItemSide(p_187457_1_, p_187457_6_, flag1 ? ItemCameraTransforms.TransformType.FIRST_PERSON_RIGHT_HAND : ItemCameraTransforms.TransformType.FIRST_PERSON_LEFT_HAND, !flag1);
         }
+
         GlStateManager.popMatrix();
     }
 

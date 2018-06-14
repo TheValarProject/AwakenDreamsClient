@@ -883,16 +883,16 @@ public final class ItemStack
     {
         return this.getItem().hasEffect(this);
     }
-    
+
     // Begin Awaken Dreams code
     public boolean glows()
     {
-    	return this.getItem() instanceof ItemElvenWeapon && ((ItemElvenWeapon) this.getItem()).isGlowing();
+        return this.getItem() instanceof ItemElvenWeapon && ((ItemElvenWeapon) this.getItem()).isGlowing();
     }
-    
+
     public int glowAmount()
     {
-    	return this.getItem() instanceof ItemElvenWeapon ? ((ItemElvenWeapon) this.getItem()).getGlowAmount() : 0;
+        return this.getItem() instanceof ItemElvenWeapon ? ((ItemElvenWeapon) this.getItem()).getGlowAmount() : 0;
     }
     // End Awaken Dreams code
 

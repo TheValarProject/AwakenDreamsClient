@@ -34,7 +34,7 @@ import net.minecraft.world.World;
 
 public class BlockCustomWorkbench extends Block
 {
-	public static final PropertyEnum<BlockCustomWorkbench.EnumType> TYPE = PropertyEnum.<BlockCustomWorkbench.EnumType>create("type", BlockCustomWorkbench.EnumType.class);
+    public static final PropertyEnum<BlockCustomWorkbench.EnumType> TYPE = PropertyEnum.<BlockCustomWorkbench.EnumType>create("type", BlockCustomWorkbench.EnumType.class);
 
     public BlockCustomWorkbench()
     {
@@ -86,37 +86,37 @@ public class BlockCustomWorkbench extends Block
     {
         return ((BlockCustomWorkbench.EnumType)state.getValue(TYPE)).getMetadata();
     }
-    
+
     public static String getName(IBlockState state)
     {
-    	return ((BlockCustomWorkbench.EnumType)state.getValue(TYPE)).getName();
+        return ((BlockCustomWorkbench.EnumType)state.getValue(TYPE)).getName();
     }
 
     protected BlockStateContainer createBlockState()
     {
         return new BlockStateContainer(this, new IProperty[] {TYPE});
     }
-    
-    public boolean isOpaqueCube(IBlockState state) 
+
+    public boolean isOpaqueCube(IBlockState state)
     {
-    	return false;
+        return false;
     }
-    
+
     public BlockRenderLayer getBlockLayer()
     {
         return BlockRenderLayer.CUTOUT;
     }
-    
+
     public boolean isFullCube(IBlockState state)
     {
         return false;
     }
-    
+
     public static String getUnlocalizedName(IBlockState state)
     {
         return ((BlockCustomWorkbench.EnumType)state.getValue(TYPE)).getUnlocalizedName();
     }
-    
+
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ)
     {
         if (worldIn.isRemote)
@@ -130,7 +130,7 @@ public class BlockCustomWorkbench extends Block
             return true;
         }
     }
-    
+
     public static class InterfaceCustomCraftingTable extends InterfaceCraftingTable
     {
         private final World world;
@@ -138,39 +138,38 @@ public class BlockCustomWorkbench extends Block
 
         public InterfaceCustomCraftingTable(World worldIn, BlockPos pos)
         {
-        	super(worldIn, pos);
+            super(worldIn, pos);
             this.world = worldIn;
             this.position = pos;
         }
 
         public ITextComponent getDisplayName()
         {
-        	return new TextComponentTranslation("tile.customWorkbench." + BlockCustomWorkbench.getUnlocalizedName(world.getBlockState(position)) + ".name");
+            return new TextComponentTranslation("tile.customWorkbench." + BlockCustomWorkbench.getUnlocalizedName(world.getBlockState(position)) + ".name");
         }
-        
+
         public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn)
         {
-        	return new ContainerCustomWorkbench(playerInventory, this.world, this.position, world.getBlockState(position).getBlock().getMetaFromState(world.getBlockState(position)));
+            return new ContainerCustomWorkbench(playerInventory, this.world, this.position, world.getBlockState(position).getBlock().getMetaFromState(world.getBlockState(position)));
         }
 
         public String getGuiID()
-        { 	
-        	return "minecraft:" + BlockCustomWorkbench.getName(world.getBlockState(position));   
+        {
+            return "minecraft:" + BlockCustomWorkbench.getName(world.getBlockState(position));
         }
     }
 
-
     public static enum EnumType implements IStringSerializable
     {
-    	ELVEN(0, "elven_crafting_table", "elven"),
-    	HUMAN(1, "human_crafting_table", "human"),
-    	GONDORIAN(2, "gondorian_crafting_table", "gondorian"),
-    	ROHIRRIM(3, "rohirrim_crafting_table", "rohirrim"),
-    	HOBBIT(4, "hobbit_crafting_table", "hobbit"),
-    	MORDOR(5, "mordor_crafting_table", "mordor"),
-    	ISENGARD(6, "isengard_crafting_table", "isengard"),
-    	GOBLIN(7, "goblin_crafting_table", "goblin"),
-    	DWARVEN(8, "dwarven_crafting_table", "dwarven");
+        ELVEN(0, "elven_crafting_table", "elven"),
+        HUMAN(1, "human_crafting_table", "human"),
+        GONDORIAN(2, "gondorian_crafting_table", "gondorian"),
+        ROHIRRIM(3, "rohirrim_crafting_table", "rohirrim"),
+        HOBBIT(4, "hobbit_crafting_table", "hobbit"),
+        MORDOR(5, "mordor_crafting_table", "mordor"),
+        ISENGARD(6, "isengard_crafting_table", "isengard"),
+        GOBLIN(7, "goblin_crafting_table", "goblin"),
+        DWARVEN(8, "dwarven_crafting_table", "dwarven");
 
         private static final BlockCustomWorkbench.EnumType[] META_LOOKUP = new BlockCustomWorkbench.EnumType[values().length];
         private final int metadata;

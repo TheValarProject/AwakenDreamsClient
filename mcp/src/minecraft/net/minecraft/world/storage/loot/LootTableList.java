@@ -82,10 +82,10 @@ public class LootTableList
     public static final ResourceLocation GAMEPLAY_FISHING_FISH = register("gameplay/fishing/fish");
     // Begin Awaken Dreams code
     public static final ResourceLocation ENTITIES_DUCK = registerAD("entities/duck");
-    
+
     private static ResourceLocation registerAD(String id)
     {
-    		return register(new ADResourceLocation(id));
+        return register(new ADResourceLocation(id));
     }
     // End Awaken Dreams code
 

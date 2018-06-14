@@ -506,7 +506,7 @@ public class Minecraft implements IThreadListener, ISnooperInfo
     {
         this.gameSettings = new GameSettings(this, this.mcDataDir);
         this.defaultResourcePacks.add(this.mcDefaultResourcePack);
-        // Begin Awaken Dreams code 
+        // Begin Awaken Dreams code
         this.defaultResourcePacks.add(this.adDefaultResourcePack);
         // End Awaken Dreams code
         this.startTimerHackThread();
@@ -603,35 +603,37 @@ public class Minecraft implements IThreadListener, ISnooperInfo
         this.effectRenderer = new ParticleManager(this.theWorld, this.renderEngine);
         this.checkGLError("Post startup");
         this.ingameGUI = new GuiIngame(this);
-
         // Begin Awaken Dreams code
         boolean modUpdateAvailable = false;
         String modVersion = "";
 
         try
         {
-	        URL url = new URL("https://raw.githubusercontent.com/TheValarProject/AwakenDreamsClient/master/version.txt");
-	        InputStream is = url.openStream();
-	        int ptr = 0;
-	        StringBuffer buffer = new StringBuffer();
-	        while ((ptr = is.read()) != -1) {
-	            buffer.append((char)ptr);
-	        }
-	        is.close();
-	        modVersion = buffer.toString().trim();
-	        modUpdateAvailable = !modVersion.equals(ADDefinitions.version);
+            URL url = new URL("https://raw.githubusercontent.com/TheValarProject/AwakenDreamsClient/master/version.txt");
+            InputStream is = url.openStream();
+            int ptr = 0;
+            StringBuffer buffer = new StringBuffer();
+
+            while ((ptr = is.read()) != -1)
+            {
+                buffer.append((char)ptr);
+            }
+
+            is.close();
+            modVersion = buffer.toString().trim();
+            modUpdateAvailable = !modVersion.equals(ADDefinitions.version);
         }
         catch (IOException e)
         {
-        	this.LOGGER.warn("Cannot get latest mod version. Error message: " + e.toString());
+            this.LOGGER.warn("Cannot get latest mod version. Error message: " + e.toString());
         }
-        
+
         if (modUpdateAvailable)
         {
-        	this.displayGuiScreen(new GuiADUpdateAvailable(modVersion));
+            this.displayGuiScreen(new GuiADUpdateAvailable(modVersion));
         }
         else if (this.serverName != null)
-        // End Awaken Dreams code
+            // End Awaken Dreams code
         {
             this.displayGuiScreen(new GuiConnecting(new GuiMainMenu(), this, this.serverName, this.serverPort));
         }

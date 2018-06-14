@@ -1,6 +1,5 @@
 package com.elementfx.tvp.ad.item;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,12 +34,11 @@ import net.minecraft.world.World;
 import net.minecraft.world.storage.WorldInfo;
 
 public class ItemTelescope extends Item
-{	
-	public ItemTelescope()
-	{
-		this.setMaxStackSize(1);
+{
+    public ItemTelescope()
+    {
+        this.setMaxStackSize(1);
         this.setCreativeTab(CreativeTabs.TOOLS);
-        
         this.addPropertyOverride(new ResourceLocation("observing"), new IItemPropertyGetter()
         {
             public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
@@ -48,8 +46,8 @@ public class ItemTelescope extends Item
                 return entityIn != null && entityIn.isHandActive() && entityIn.getActiveItemStack() == stack ? 1.0F : 0.0F;
             }
         });
-	}
-    
+    }
+
     public int getMaxItemUseDuration(ItemStack stack)
     {
         return 72000;
@@ -64,8 +62,8 @@ public class ItemTelescope extends Item
     }
 
     public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
-    {    	
-    	playerIn.setActiveHand(hand);
-    	return new ActionResult(EnumActionResult.SUCCESS, itemStackIn);
+    {
+        playerIn.setActiveHand(hand);
+        return new ActionResult(EnumActionResult.SUCCESS, itemStackIn);
     }
 }

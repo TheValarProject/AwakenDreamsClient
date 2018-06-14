@@ -79,13 +79,14 @@ public class AwakenDreamsResourcePack implements IResourcePack
         {
 //        	ResourceLocation location = new ResourceLocation("awakendreams:pack.mcmeta");
             //InputStream inputstream = new FileInputStream("/assets/" + location.getResourceDomain() + "/" + location.getResourcePath());
-        		InputStream inputstream = this.getResourceStream(new ADResourceLocation("pack.mcmeta"));
+            InputStream inputstream = this.getResourceStream(new ADResourceLocation("pack.mcmeta"));
             return AbstractResourcePack.readMetadata(metadataSerializer, inputstream, metadataSectionName);
         }
         catch (RuntimeException var4)
         {
             return (T)null;
         }
+
         /*catch (FileNotFoundException var5)
         {
             return (T)null;

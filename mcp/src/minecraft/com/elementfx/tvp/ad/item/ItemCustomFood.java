@@ -17,17 +17,18 @@ import net.minecraft.world.World;
 
 public class ItemCustomFood extends ItemFood
 {
-	/** Number of ticks to run while 'EnumAction'ing until result. */
+    /** Number of ticks to run while 'EnumAction'ing until result. */
     private int itemUseDuration;
 
-    public ItemCustomFood(int amount, int duration, float saturation, boolean isWolfFood) {
-    	super(amount, saturation, isWolfFood);
-    	this.itemUseDuration = duration;
+    public ItemCustomFood(int amount, int duration, float saturation, boolean isWolfFood)
+    {
+        super(amount, saturation, isWolfFood);
+        this.itemUseDuration = duration;
     }
 
     public ItemCustomFood(int amount, float saturation, boolean isWolfFood)
     {
-    	this(amount, 32, saturation, isWolfFood);
+        this(amount, 32, saturation, isWolfFood);
     }
 
     public ItemCustomFood(int amount, boolean isWolfFood)

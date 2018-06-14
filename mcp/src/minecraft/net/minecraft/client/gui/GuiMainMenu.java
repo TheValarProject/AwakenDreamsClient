@@ -80,13 +80,13 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
     private static final ResourceLocation[][] TITLE_PANORAMA_PATHS = new ResourceLocation[PANORAMA_INFO.length][6];
     static
     {
-    		for(int i = 0; i < PANORAMA_INFO.length; i++)
-    		{
-    			for(int j = 0; j < 6; j++)
-    			{
-    				TITLE_PANORAMA_PATHS[i][j] = new ADResourceLocation(String.format("textures/gui/title/background/%s_%d.png", new Object[] { PANORAMA_INFO[i], j }));
-    			}
-    		}
+        for (int i = 0; i < PANORAMA_INFO.length; i++)
+        {
+            for (int j = 0; j < 6; j++)
+            {
+                TITLE_PANORAMA_PATHS[i][j] = new ADResourceLocation(String.format("textures/gui/title/background/%s_%d.png", new Object[] { PANORAMA_INFO[i], j }));
+            }
+        }
     }
     private final int PANORAMA_INDEX;
     // End Awaken Dreams code
@@ -177,7 +177,7 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
             this.openGLWarning2 = I18n.format("title.oldgl2", new Object[0]);
             this.openGLWarningLink = "https://help.mojang.com/customer/portal/articles/325948?ref=game";
         }
-        
+
         // Begin Awaken Dreams code
         PANORAMA_INDEX = RANDOM.nextInt(PANORAMA_INFO.length);
         // End Awaken Dreams code
@@ -246,10 +246,10 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
         // Begin Awaken Dreams code
         else if (calendar.get(Calendar.MONTH) == 3 && calendar.get(Calendar.DAY_OF_MONTH) == 15)
         {
-        	this.splashText = "Happy Birthday TVP!";
+            this.splashText = "Happy Birthday TVP!";
         }
-        // End Awaken Dreams code
 
+        // End Awaken Dreams code
         int i = 24;
         int j = this.height / 4 + 48;
 

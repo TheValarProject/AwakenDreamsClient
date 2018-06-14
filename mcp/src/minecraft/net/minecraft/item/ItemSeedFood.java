@@ -23,7 +23,7 @@ public class ItemSeedFood extends ItemCustomFood
         this.crops = crops;
         this.soilId = soil;
     }
-    
+
     public ItemSeedFood(int healAmount, float saturation, Block crops, Block soil)
     {
         super(healAmount, saturation, false);

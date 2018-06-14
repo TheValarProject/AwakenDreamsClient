@@ -24,17 +24,17 @@ import net.minecraft.world.World;
 
 public class BlockCustomCrops extends BlockCrops
 {
-	public PropertyInteger age;
-	private int stages;
-	private Item seedItem, cropItem;
-	protected final BlockStateContainer customBlockState;
+    public PropertyInteger age;
+    private int stages;
+    private Item seedItem, cropItem;
+    protected final BlockStateContainer customBlockState;
 
     public BlockCustomCrops(int totalStages)
     {
-    	this.stages = totalStages - 1;
-    	this.age = PropertyInteger.create("age", 0, this.stages);
-    	this.customBlockState = this.createBlockState();
-    	this.setDefaultState(this.customBlockState.getBaseState().withProperty(this.getAgeProperty(), Integer.valueOf(0)));
+        this.stages = totalStages - 1;
+        this.age = PropertyInteger.create("age", 0, this.stages);
+        this.customBlockState = this.createBlockState();
+        this.setDefaultState(this.customBlockState.getBaseState().withProperty(this.getAgeProperty(), Integer.valueOf(0)));
         this.setTickRandomly(true);
         this.setCreativeTab((CreativeTabs)null);
         this.setHardness(0.0F);
@@ -112,17 +112,19 @@ public class BlockCustomCrops extends BlockCrops
         return f;
     }
 
-    public void setSeed(Item seed) {
-    	this.seedItem = seed;
+    public void setSeed(Item seed)
+    {
+        this.seedItem = seed;
     }
-    
+
     protected Item getSeed()
     {
         return this.seedItem;
     }
-    
-    public void setCrop(Item crop) {
-    	this.cropItem = crop;
+
+    public void setCrop(Item crop)
+    {
+        this.cropItem = crop;
     }
 
     protected Item getCrop()
@@ -155,28 +157,34 @@ public class BlockCustomCrops extends BlockCrops
             }
         }
     }
-    
+
     protected PropertyInteger getAgeProperty()
     {
-    	if(this.age == null) {
-    		return super.getAgeProperty();
-    	}
+        if (this.age == null)
+        {
+            return super.getAgeProperty();
+        }
+
         return this.age;
     }
-    
+
     public BlockStateContainer getBlockState()
     {
-    	if(this.customBlockState == null) {
-    		return super.getBlockState();
-    	}
+        if (this.customBlockState == null)
+        {
+            return super.getBlockState();
+        }
+
         return this.customBlockState;
     }
-    
+
     protected BlockStateContainer createBlockState()
     {
-    	if(age == null) {
-    		return super.createBlockState();
-    	}
+        if (age == null)
+        {
+            return super.createBlockState();
+        }
+
         return new BlockStateContainer(this, new IProperty[] {age});
     }
 }

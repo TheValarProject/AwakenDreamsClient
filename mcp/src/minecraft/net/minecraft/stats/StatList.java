@@ -165,7 +165,7 @@ public class StatList
                 set.add(irecipe.getRecipeOutput().getItem());
             }
         }
-        
+
         //Begin Awaken Dreams code
         for (IRecipe irecipe : ElvenCraftingManager.getInstance().getRecipeList())
         {
@@ -174,6 +174,7 @@ public class StatList
                 set.add(irecipe.getRecipeOutput().getItem());
             }
         }
+
         //End Awaken Dreams code
 
         for (ItemStack itemstack : FurnaceRecipes.instance().getSmeltingList().values())

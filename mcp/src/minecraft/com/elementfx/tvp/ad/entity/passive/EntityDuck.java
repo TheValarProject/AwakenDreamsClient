@@ -42,7 +42,7 @@ public class EntityDuck extends EntityAnimal
     public float oFlapSpeed;
     public float oFlap;
     public float wingRotDelta = 1.0F;
-    
+
     /** The time until the next egg is spawned. */
     public int timeUntilNextEgg;
 
@@ -103,7 +103,7 @@ public class EntityDuck extends EntityAnimal
         }
 
         this.wingRotation += this.wingRotDelta * 2.0F;
-        
+
         if (!this.worldObj.isRemote && !this.isChild() && --this.timeUntilNextEgg <= 0)
         {
             this.playSound(SoundEvents.ENTITY_CHICKEN_EGG, 1.0F, (this.rand.nextFloat() - this.rand.nextFloat()) * 0.2F + 1.0F);
@@ -155,7 +155,7 @@ public class EntityDuck extends EntityAnimal
     {
         return stack != null && TEMPTATION_ITEMS.contains(stack.getItem());
     }
-    
+
     public static void func_189789_b(DataFixer p_189789_0_)
     {
         EntityLiving.func_189752_a(p_189789_0_, "Duck");

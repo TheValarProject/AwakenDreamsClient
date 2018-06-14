@@ -18,46 +18,46 @@ import net.minecraft.world.World;
 
 public class BlockCustomOre extends BlockOre
 {
-	private int minExp;
-	private int maxExp;
-	private int dropAmount = 1;
-	private Item dropItem;
-	
-	public BlockCustomOre(int minExpIn, int maxExpIn)
-	{
-		this.minExp = minExpIn;
-		this.maxExp = maxExpIn;
-		this.setHardness(1.5F);
-		this.setResistance(10.0F);
-		this.setSoundType(SoundType.STONE);
-		this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
-	}
-	
-	public BlockCustomOre()
-	{
-		this(3, 7);
-	}
-	
-	public void setItemDrop(Item drop)
-	{
-		this.dropItem = drop;
-	}
-	
-	public Block setQuantityDropped(int quantity)
-	{
-		this.dropAmount = Math.max(0, quantity);
-		return this;
-	}
-	
-	/**
+    private int minExp;
+    private int maxExp;
+    private int dropAmount = 1;
+    private Item dropItem;
+
+    public BlockCustomOre(int minExpIn, int maxExpIn)
+    {
+        this.minExp = minExpIn;
+        this.maxExp = maxExpIn;
+        this.setHardness(1.5F);
+        this.setResistance(10.0F);
+        this.setSoundType(SoundType.STONE);
+        this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+    }
+
+    public BlockCustomOre()
+    {
+        this(3, 7);
+    }
+
+    public void setItemDrop(Item drop)
+    {
+        this.dropItem = drop;
+    }
+
+    public Block setQuantityDropped(int quantity)
+    {
+        this.dropAmount = Math.max(0, quantity);
+        return this;
+    }
+
+    /**
      * Returns the quantity of items to drop on block destruction.
      */
     public int quantityDropped(Random random)
     {
         return this.dropAmount;
     }
-	
-	@Nullable
+
+    @Nullable
 
     /**
      * Get the Item that this Block should drop when harvested.
@@ -66,8 +66,8 @@ public class BlockCustomOre extends BlockOre
     {
         return this.dropItem != null ? this.dropItem : Item.getItemFromBlock(this);
     }
-	
-	/**
+
+    /**
      * Spawns this Block's drops into the World as EntityItems.
      */
     public void dropBlockAsItemWithChance(World worldIn, BlockPos pos, IBlockState state, float chance, int fortune)

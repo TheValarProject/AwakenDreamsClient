@@ -16,11 +16,11 @@ import net.minecraft.world.World;
 
 public class ItemCustomEgg extends ItemEgg
 {
-	public ItemCustomEgg()
-	{
-	}
-	
-	public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
+    public ItemCustomEgg()
+    {
+    }
+
+    public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
     {
         if (!playerIn.capabilities.isCreativeMode)
         {

@@ -15,18 +15,19 @@ import net.minecraft.world.World;
 
 public class EntityThrowingStone extends EntityThrowable
 {
-	private int thrownDemage;
-	
-	public EntityThrowingStone(World worldIn) {
-		super(worldIn);
-	}
-	
-	public EntityThrowingStone(World worldIn, EntityLivingBase throwerIn)
+    private int thrownDemage;
+
+    public EntityThrowingStone(World worldIn)
+    {
+        super(worldIn);
+    }
+
+    public EntityThrowingStone(World worldIn, EntityLivingBase throwerIn)
     {
         super(worldIn, throwerIn);
     }
-	
-	public EntityThrowingStone(World worldIn, EntityLivingBase throwerIn, int thrownDemageIn)
+
+    public EntityThrowingStone(World worldIn, EntityLivingBase throwerIn, int thrownDemageIn)
     {
         super(worldIn, throwerIn);
         this.thrownDemage = thrownDemageIn;
@@ -36,20 +37,22 @@ public class EntityThrowingStone extends EntityThrowable
     {
         super(worldIn, x, y, z);
     }
-    
+
     public static void func_189664_a(DataFixer p_189664_0_)
     {
         EntityThrowable.func_189661_a(p_189664_0_, "ThrownWeapon");
     }
 
-	protected void onImpact(RayTraceResult result) {
-		if (result.entityHit != null)
-		{
-			result.entityHit.attackEntityFrom(DamageSource.causeThrownDamage(this, this.getThrower()), thrownDemage);
-		}
-		if (!this.worldObj.isRemote)
-		{
-			this.setDead();
-		}
-	}
+    protected void onImpact(RayTraceResult result)
+    {
+        if (result.entityHit != null)
+        {
+            result.entityHit.attackEntityFrom(DamageSource.causeThrownDamage(this, this.getThrower()), thrownDemage);
+        }
+
+        if (!this.worldObj.isRemote)
+        {
+            this.setDead();
+        }
+    }
 }

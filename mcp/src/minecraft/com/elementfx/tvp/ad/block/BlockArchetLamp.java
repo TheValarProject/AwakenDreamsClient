@@ -33,12 +33,12 @@ public class BlockArchetLamp extends BlockLamp
         super(Material.ROCK, Arrays.asList(new AxisAlignedBB(4.5 / 16, 0.0D, 4.5 / 16, 11.5 / 16, 1.0D, 11.5 / 16)));
         this.setTickRandomly(true);
     }
-    
+
     public void randomDisplayTick(IBlockState stateIn, World worldIn, BlockPos pos, Random rand)
     {
-    	double x = pos.getX() + 0.5D;
-    	double y = pos.getY() + 0.4D;
-    	double z = pos.getZ() + 0.5D;
+        double x = pos.getX() + 0.5D;
+        double y = pos.getY() + 0.4D;
+        double z = pos.getZ() + 0.5D;
         worldIn.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, x, y, z, 0.0D, 0.0D, 0.0D, new int[0]);
         worldIn.spawnParticle(EnumParticleTypes.FLAME, x, y, z, 0.0D, 0.0D, 0.0D, new int[0]);
     }

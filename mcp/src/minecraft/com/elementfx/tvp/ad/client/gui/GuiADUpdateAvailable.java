@@ -32,7 +32,7 @@ public class GuiADUpdateAvailable extends GuiScreen
      */
     public void drawScreen(int mouseX, int mouseY, float partialTicks)
     {
-    	this.drawDefaultBackground();
+        this.drawDefaultBackground();
         this.drawCenteredString(this.fontRendererObj, I18n.format("gui.updateAvailable.title", new Object[0]), this.width / 2, 90, 16777215);
         this.drawCenteredString(this.fontRendererObj, I18n.format("gui.updateAvailable.message1", new Object[0]), this.width / 2, 110, 16777215);
         this.drawCenteredString(this.fontRendererObj, I18n.format("gui.updateAvailable.message2", ADDefinitions.version, newVersion), this.width / 2, 120, 16777215);

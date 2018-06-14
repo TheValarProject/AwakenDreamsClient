@@ -1178,7 +1178,7 @@ public abstract class EntityPlayer extends EntityLivingBase
     public void openGuiHorseInventory(EntityHorse horse, IInventory inventoryIn)
     {
     }
-    
+
     // Begin Awaken Dreams code
     public void openRucksack(ItemStack rucksack, EnumHand hand)
     {

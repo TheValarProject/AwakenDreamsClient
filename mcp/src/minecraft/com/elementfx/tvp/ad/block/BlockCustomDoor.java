@@ -33,22 +33,24 @@ import net.minecraft.world.World;
 
 public class BlockCustomDoor extends BlockDoor
 {
-	private Item inventoryItem = null;
-	
+    private Item inventoryItem = null;
+
     public BlockCustomDoor(Material in)
     {
         super(in);
     }
-    
+
     // The item cannot be set in the constructor because the members of Items aren't initialized yet
-    public void setItem(Item i) {
-    	this.inventoryItem = i;
+    public void setItem(Item i)
+    {
+        this.inventoryItem = i;
     }
-    
-    public Item getItem(Item i) {
-    	return this.inventoryItem;
+
+    public Item getItem(Item i)
+    {
+        return this.inventoryItem;
     }
-    
+
     @Nullable
 
     /**
@@ -58,12 +60,12 @@ public class BlockCustomDoor extends BlockDoor
     {
         return state.getValue(HALF) == BlockDoor.EnumDoorHalf.UPPER ? null : this.getItem();
     }
-    
+
     public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
     {
         return new ItemStack(this.getItem());
     }
-    
+
     protected Item getItem()
     {
         return this.inventoryItem == null ? Items.OAK_DOOR : this.inventoryItem;

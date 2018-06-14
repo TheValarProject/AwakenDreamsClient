@@ -42,6 +42,7 @@ public class RegionFileCache
     /**
      * clears region file references
      */
+
     public static synchronized void clearRegionFileReferences()
     {
         for (RegionFile regionfile : REGIONS_BY_FILE.values())

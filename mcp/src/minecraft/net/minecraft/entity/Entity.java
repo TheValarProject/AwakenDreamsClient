@@ -980,7 +980,7 @@ public abstract class Entity implements ICommandSender
                 // Begin Awaken Dreams code
                 if (!(block instanceof BlockLadder))
                 {
-                	// End Awaken Dreams code
+                    // End Awaken Dreams code
                     d13 = 0.0D;
                 }
 

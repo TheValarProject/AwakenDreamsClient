@@ -66,7 +66,7 @@ public abstract class AbstractResourcePack implements IResourcePack
     // Begin Awaken Dreams code
     public static <T extends IMetadataSection> T readMetadata(MetadataSerializer metadataSerializer, InputStream p_110596_1_, String sectionName)
     {
-    	// End Awaken Dreams code
+        // End Awaken Dreams code
         JsonObject jsonobject = null;
         BufferedReader bufferedreader = null;
 

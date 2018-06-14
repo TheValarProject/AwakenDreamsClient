@@ -29,25 +29,25 @@ import net.minecraft.world.World;
 
 public class BlockStakePlant extends BlockCustomCrops
 {
-	private static final AxisAlignedBB boundingBox = new AxisAlignedBB(0.125D, 0.0D, 0.125D, 0.875D, 1.0D, 0.875D);
+    private static final AxisAlignedBB boundingBox = new AxisAlignedBB(0.125D, 0.0D, 0.125D, 0.875D, 1.0D, 0.875D);
 
-	public BlockStakePlant(int totalStages)
+    public BlockStakePlant(int totalStages)
     {
-		super(totalStages);
+        super(totalStages);
     }
-	
-	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
     {
         return BlockStakePlant.boundingBox;
     }
-	
-	@Nullable
+
+    @Nullable
     public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, World worldIn, BlockPos pos)
     {
         return blockState.getBoundingBox(worldIn, pos);
     }
-	
-	/**
+
+    /**
      * Spawns this Block's drops into the World as EntityItems.
      */
     public void dropBlockAsItemWithChance(World worldIn, BlockPos pos, IBlockState state, float chance, int fortune)
@@ -56,7 +56,7 @@ public class BlockStakePlant extends BlockCustomCrops
 
         if (!worldIn.isRemote)
         {
-        	spawnAsEntity(worldIn, pos, new ItemStack(Blocks.STAKES));
+            spawnAsEntity(worldIn, pos, new ItemStack(Blocks.STAKES));
         }
     }
 }

@@ -10,7 +10,7 @@ import net.minecraft.util.SoundCategory;
 
 public class TileEntityBell extends TileEntity implements ITickable
 {
-	/** The current index angle (between -14 and 14 inclusive) */
+    /** The current index angle (between -14 and 14 inclusive) */
     public int angleIndex;
     /** The previous index angle (between -14 and 14 inclusive, -1 <= angleIndex - prevAngleIndex <= 1 */
     public int prevAngleIndex;
@@ -23,64 +23,65 @@ public class TileEntityBell extends TileEntity implements ITickable
      * (see update for usage details)
      */
     final public float[] angleLookup = { -1, -.99371f, -.97493f, -.94388f, -.90097f, -.84672f, -.78183f, -.70711f, -.62349f, -.53203f, -.43388f, -.33028f, -.22252f, -.11196f, 0f, .11196f, .22252f, .33028f, .43388f, .53203f, .62349f, .70711f, .78183f, .84672f, .90097f, .94388f, .97493f, .99371f, 1 };
-    
+
     /** The direction of the bell (determined when placed) */
     public EnumFacing direction;
-    
+
     public void ring()
     {
-    	this.continueMoving = true;
-    	// If the bell is not moving yet
-    	if(this.angleDirection == 0)
-    	{
-    		this.angleDirection = 1;
-    	}
+        this.continueMoving = true;
+
+        // If the bell is not moving yet
+        if (this.angleDirection == 0)
+        {
+            this.angleDirection = 1;
+        }
     }
-    
+
     public float getAngle()
     {
-    	return this.angleLookup[this.angleIndex + 14];
+        return this.angleLookup[this.angleIndex + 14];
     }
-    
+
     public float getPrevAngle()
     {
-    	return this.angleLookup[this.prevAngleIndex + 14];
+        return this.angleLookup[this.prevAngleIndex + 14];
     }
-	
-	/**
+
+    /**
      * Like the old updateEntity(), except more generic.
      */
-	public void update()
-	{
-		this.prevAngleIndex = this.angleIndex;
-		// Bell is moving
-		if(this.angleDirection != 0)
-		{
-			this.angleIndex += this.angleDirection;
-			
-			// If bell is at the bottom of its swing
-			if(this.angleIndex == 0)
-			{
-				if(this.continueMoving)
-				{
-					this.continueMoving = false;
-				}
-				else
-				{
-					// Stop
-					this.angleDirection = 0;
-				}
-			}
-			
-			// If bell is at the top of its swing
-			if(this.angleIndex <= -14 || this.angleIndex >= 14)
-			{
-				// Reverse the direction
-				this.angleDirection *= -1;
-				
-				// Play sound
-				BlockBell.playSound(this.worldObj, this.pos);
-			}
-		}
-	}
+    public void update()
+    {
+        this.prevAngleIndex = this.angleIndex;
+
+        // Bell is moving
+        if (this.angleDirection != 0)
+        {
+            this.angleIndex += this.angleDirection;
+
+            // If bell is at the bottom of its swing
+            if (this.angleIndex == 0)
+            {
+                if (this.continueMoving)
+                {
+                    this.continueMoving = false;
+                }
+                else
+                {
+                    // Stop
+                    this.angleDirection = 0;
+                }
+            }
+
+            // If bell is at the top of its swing
+            if (this.angleIndex <= -14 || this.angleIndex >= 14)
+            {
+                // Reverse the direction
+                this.angleDirection *= -1;
+                // Play sound
+                BlockBell.playSound(this.worldObj, this.pos);
+            }
+        }
+    }
 }

@@ -42,7 +42,7 @@ public class ItemSword extends Item
 
         // Begin Awaken Dreams code
         if (block instanceof BlockWeb)
-        	// End Awaken Dreams code
+            // End Awaken Dreams code
         {
             return 15.0F;
         }
@@ -89,7 +89,7 @@ public class ItemSword extends Item
      */
     public boolean canHarvestBlock(IBlockState blockIn)
     {
-    		// Begin Awaken Dreams code
+        // Begin Awaken Dreams code
         return blockIn.getBlock() instanceof BlockWeb;
         // End Awken Dreams code
     }

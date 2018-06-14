@@ -911,24 +911,22 @@ public class EntityPlayerMP extends EntityPlayer implements IContainerListener
         this.openContainer.windowId = this.currentWindowId;
         this.openContainer.addListener(this);
     }
-    
+
     // Begin Awaken Dreams code
     public void openRucksack(ItemStack rucksack, EnumHand hand)
     {
-    	if (this.openContainer != this.inventoryContainer)
+        if (this.openContainer != this.inventoryContainer)
         {
             this.closeScreen();
         }
-    	InventoryBasic rucksackInventory = ((ItemRucksack)rucksack.getItem()).getInventory(rucksack);
 
+        InventoryBasic rucksackInventory = ((ItemRucksack)rucksack.getItem()).getInventory(rucksack);
         this.getNextWindowId();
-        
         PacketBuffer packetbuffer = new PacketBuffer(Unpooled.buffer());
         packetbuffer.writeItemStackToBuffer(rucksack);
         packetbuffer.writeEnumValue(hand);
         packetbuffer.writeInt(this.currentWindowId);
         this.connection.sendPacket(new SPacketCustomPayload("AD|Rucksack", packetbuffer));
-        
         this.openContainer = new ContainerRucksack(this.inventory, rucksackInventory, hand == EnumHand.MAIN_HAND ? this.inventory.currentItem : 40);
         this.openContainer.windowId = this.currentWindowId;
         this.openContainer.addListener(this);

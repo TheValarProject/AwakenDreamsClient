@@ -115,13 +115,14 @@ public class RenderPlayer extends RenderLivingBase<AbstractClientPlayer>
                     }
                     // Begin Awaken Dreams code
                     else if (enumaction == EnumAction.SMOKE)
-                    {                	
-                    	modelbiped$armpose = ModelBiped.ArmPose.PIPE;
+                    {
+                        modelbiped$armpose = ModelBiped.ArmPose.PIPE;
                     }
                     else if (enumaction == EnumAction.OBSERVE)
-                    {                	
-                    	modelbiped$armpose = ModelBiped.ArmPose.TELESCOPE;
+                    {
+                        modelbiped$armpose = ModelBiped.ArmPose.TELESCOPE;
                     }
+
                     // End Awaken Dreams code
                 }
             }
@@ -140,13 +141,14 @@ public class RenderPlayer extends RenderLivingBase<AbstractClientPlayer>
                     }
                     // Begin Awaken Dreams code
                     else if (enumaction1 == EnumAction.SMOKE)
-                    {                	
-                    	modelbiped$armpose1 = ModelBiped.ArmPose.PIPE;
+                    {
+                        modelbiped$armpose1 = ModelBiped.ArmPose.PIPE;
                     }
                     else if (enumaction1 == EnumAction.OBSERVE)
-                    {                	
-                    	modelbiped$armpose1 = ModelBiped.ArmPose.TELESCOPE;
+                    {
+                        modelbiped$armpose1 = ModelBiped.ArmPose.TELESCOPE;
                     }
+
                     // End Awaken Dreams code
                 }
             }

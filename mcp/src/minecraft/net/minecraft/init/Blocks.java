@@ -545,20 +545,20 @@ public class Blocks
             return block;
         }
     }
-    
+
     // Begin Awaken Dreams code
     private static Block getRegisteredADBlock(String blockName)
     {
-    		Block block = (Block)Block.REGISTRY.getObject(new ADResourceLocation(blockName));
-    		
-    		if (!CACHE.add(block))
-    		{
-    			throw new IllegalStateException("Invalid Block requested: " + blockName);
-    		}
-    		else
-    		{
-    			return block;
-    		}
+        Block block = (Block)Block.REGISTRY.getObject(new ADResourceLocation(blockName));
+
+        if (!CACHE.add(block))
+        {
+            throw new IllegalStateException("Invalid Block requested: " + blockName);
+        }
+        else
+        {
+            return block;
+        }
     }
     // End Awaken Dreams code
 
@@ -968,7 +968,8 @@ public class Blocks
             DALE_SANDSTONE = getRegisteredADBlock("dale_sandstone");
             DALE_TILES = getRegisteredADBlock("dale_tiles");
             DALE_WALL = getRegisteredADBlock("dale_wall");
-            HARAD_SANDSTONE_FLOOR = getRegisteredADBlock("harad_sandstone_floor");HARAD_STONE_BRICKS = getRegisteredADBlock("harad_stone_bricks");
+            HARAD_SANDSTONE_FLOOR = getRegisteredADBlock("harad_sandstone_floor");
+            HARAD_STONE_BRICKS = getRegisteredADBlock("harad_stone_bricks");
             SANDFLOOR = getRegisteredADBlock("sandfloor");
             UMBAR_HAVEN_FLOOR = getRegisteredADBlock("umbar_haven_floor");
             UMBAR_STONE_BRICKS = getRegisteredADBlock("umbar_stone_bricks");

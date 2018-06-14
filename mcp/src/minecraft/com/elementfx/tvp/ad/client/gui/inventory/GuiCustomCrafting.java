@@ -14,32 +14,31 @@ import net.minecraft.world.World;
 
 public class GuiCustomCrafting extends GuiContainer
 {
-	private static ResourceLocation CUSTOM_CRAFTING_TABLE_GUI_TEXTURES;
-	private static String typeIdentifier;
-	private static int fontColor;
-    
-	protected int xSize;
+    private static ResourceLocation CUSTOM_CRAFTING_TABLE_GUI_TEXTURES;
+    private static String typeIdentifier;
+    private static int fontColor;
+
+    protected int xSize;
     protected int ySize;
-    
+
     public GuiCustomCrafting(InventoryPlayer playerInv, World worldIn, String typeIdentifierIn, int fontColorIn, int metaIn)
     {
-    	this(playerInv, worldIn, BlockPos.ORIGIN, typeIdentifierIn, fontColorIn, metaIn, 176, 166);
+        this(playerInv, worldIn, BlockPos.ORIGIN, typeIdentifierIn, fontColorIn, metaIn, 176, 166);
     }
-    
+
     public GuiCustomCrafting(InventoryPlayer playerInv, World worldIn, String typeIdentifierIn, int fontColorIn, int metaIn, int xSizeIn, int ySizeIn)
     {
-    	this(playerInv, worldIn, BlockPos.ORIGIN, typeIdentifierIn, fontColorIn, metaIn, xSizeIn, ySizeIn);
+        this(playerInv, worldIn, BlockPos.ORIGIN, typeIdentifierIn, fontColorIn, metaIn, xSizeIn, ySizeIn);
     }
-    
+
     public GuiCustomCrafting(InventoryPlayer playerInv, World worldIn, BlockPos blockPosition, String typeIdentifierIn, int fontColorIn, int metaIn, int xSizeIn, int ySizeIn)
     {
-    	super(new ContainerCustomWorkbench(playerInv, worldIn, blockPosition, metaIn));
-    	this.typeIdentifier = typeIdentifierIn;
-    	this.fontColor = fontColorIn;
-    	this.xSize = xSizeIn;
-    	this.ySize = ySizeIn;
-    	CUSTOM_CRAFTING_TABLE_GUI_TEXTURES = new ADResourceLocation("textures/gui/container/" + typeIdentifier + "_crafting_table.png");
-    		
+        super(new ContainerCustomWorkbench(playerInv, worldIn, blockPosition, metaIn));
+        this.typeIdentifier = typeIdentifierIn;
+        this.fontColor = fontColorIn;
+        this.xSize = xSizeIn;
+        this.ySize = ySizeIn;
+        CUSTOM_CRAFTING_TABLE_GUI_TEXTURES = new ADResourceLocation("textures/gui/container/" + typeIdentifier + "_crafting_table.png");
     }
 
     /**

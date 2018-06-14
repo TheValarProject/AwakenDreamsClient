@@ -452,16 +452,17 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
         //Begin Awaken Dreams code
         else if (packetIn.getType() == 500)
         {
-        	entity = new EntityThrowingStone(this.clientWorldController, d0, d1, d2);
+            entity = new EntityThrowingStone(this.clientWorldController, d0, d1, d2);
         }
         else if (packetIn.getType() == 502)
         {
-        	entity = new EntityCustomEgg(this.clientWorldController, d0, d1, d2);
+            entity = new EntityCustomEgg(this.clientWorldController, d0, d1, d2);
         }
         else if (packetIn.getType() == 503)
         {
-        	entity = new EntityCustomArrow(this.clientWorldController, d0, d1, d2);
+            entity = new EntityCustomArrow(this.clientWorldController, d0, d1, d2);
         }
+
         //End Awaken Dreams code
 
         if (entity != null)
@@ -1950,18 +1951,24 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
         // Begin Awaken Dreams code
         else if ("AD|Rucksack".equals(packetIn.getChannelName()))
         {
-        	EntityPlayerSP entityplayersp = this.gameController.thePlayer;
-        	PacketBuffer packetbuffer = packetIn.getBufferData();
-			try {
-				ItemStack rucksack = packetbuffer.readItemStackFromBuffer();
-				EnumHand hand = (EnumHand)packetbuffer.readEnumValue(EnumHand.class);
-				entityplayersp.openRucksack(rucksack, hand);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-        	int windowId = packetbuffer.readInt();
+            EntityPlayerSP entityplayersp = this.gameController.thePlayer;
+            PacketBuffer packetbuffer = packetIn.getBufferData();
+
+            try
+            {
+                ItemStack rucksack = packetbuffer.readItemStackFromBuffer();
+                EnumHand hand = (EnumHand)packetbuffer.readEnumValue(EnumHand.class);
+                entityplayersp.openRucksack(rucksack, hand);
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+
+            int windowId = packetbuffer.readInt();
             entityplayersp.openContainer.windowId = windowId;
         }
+
         // End Awaken Dreams code
     }
 

@@ -43,8 +43,8 @@ import net.minecraft.world.World;
 
 public class BlockCustomBed extends BlockBed
 {
-	private Item inventoryItem = null;
-	/** Whether this bed is placed below another one */
+    private Item inventoryItem = null;
+    /** Whether this bed is placed below another one */
     public static final PropertyBool BUNK = PropertyBool.create("bunk");
     public static final AxisAlignedBB BOTTOM_BUNK_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
 
@@ -55,29 +55,34 @@ public class BlockCustomBed extends BlockBed
         this.setSoundType(SoundType.CLOTH);
         this.setDefaultState(this.blockState.getBaseState().withProperty(BUNK, Boolean.valueOf(false)));
     }
-    
+
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState stateIn, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ)
     {
-    	IBlockState state = this.getActualState(stateIn, worldIn, pos);
-    	boolean flag = heldItem != null;
-    	if(flag && heldItem.getItem() instanceof ItemCustomBed && !((Boolean)stateIn.getValue(BUNK)).booleanValue())
-    	{
-    		ItemCustomBed bed = (ItemCustomBed) heldItem.getItem();
-    		if(bed.onItemUse(heldItem, playerIn, worldIn, pos, hand, side, hitX, hitY, hitZ) == EnumActionResult.SUCCESS)
-    		{
-    			return true;
-    		}
-    	}
-    	return super.onBlockActivated(worldIn, pos, stateIn, playerIn, hand, heldItem, side, hitX, hitY, hitZ);
+        IBlockState state = this.getActualState(stateIn, worldIn, pos);
+        boolean flag = heldItem != null;
+
+        if (flag && heldItem.getItem() instanceof ItemCustomBed && !((Boolean)stateIn.getValue(BUNK)).booleanValue())
+        {
+            ItemCustomBed bed = (ItemCustomBed) heldItem.getItem();
+
+            if (bed.onItemUse(heldItem, playerIn, worldIn, pos, hand, side, hitX, hitY, hitZ) == EnumActionResult.SUCCESS)
+            {
+                return true;
+            }
+        }
+
+        return super.onBlockActivated(worldIn, pos, stateIn, playerIn, hand, heldItem, side, hitX, hitY, hitZ);
     }
-    
+
     // The item cannot be set in the constructor because the members of Items aren't initialized yet
-    public void setItem(Item i) {
-    	this.inventoryItem = i;
+    public void setItem(Item i)
+    {
+        this.inventoryItem = i;
     }
-    
-    public Item getItem(Item i) {
-    	return this.inventoryItem;
+
+    public Item getItem(Item i)
+    {
+        return this.inventoryItem;
     }
 
     @Nullable
@@ -94,33 +99,34 @@ public class BlockCustomBed extends BlockBed
     {
         return new ItemStack(this.inventoryItem);
     }
-    
+
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
     {
         state = this.getActualState(state, source, pos);
-        if(((Boolean)state.getValue(BUNK)).booleanValue())
+
+        if (((Boolean)state.getValue(BUNK)).booleanValue())
         {
-        	return BOTTOM_BUNK_AABB;
+            return BOTTOM_BUNK_AABB;
         }
+
         return BED_AABB;
     }
 
     public boolean canConnectTo(IBlockAccess worldIn, BlockPos pos)
     {
-    	IBlockState iblockstate = worldIn.getBlockState(pos);
+        IBlockState iblockstate = worldIn.getBlockState(pos);
         Block block = iblockstate.getBlock();
         IBlockState iblockstateup = worldIn.getBlockState(pos.up());
         Block blockup = iblockstateup.getBlock();
-        
-        if(!(blockup instanceof BlockCustomBed && block instanceof BlockCustomBed))
+
+        if (!(blockup instanceof BlockCustomBed && block instanceof BlockCustomBed))
         {
-        	return false;
+            return false;
         }
-        
+
         Boolean isSameDirection = iblockstate.getValue(FACING) == iblockstateup.getValue(FACING);
         Boolean isOppositeDirection = iblockstate.getValue(FACING) == iblockstateup.getValue(FACING).getOpposite();
         Boolean isSamePart = iblockstate.getValue(PART) == iblockstateup.getValue(PART);
-
         return (isSameDirection && isSamePart) || (isOppositeDirection && !isSamePart);
     }
 

@@ -36,21 +36,21 @@ import net.minecraft.util.ResourceLocation;
 
 public class GuiRucksack extends GuiContainer
 {
-	private static final ResourceLocation RUCKSACK_BACKGROUND = new ResourceLocation("textures/gui/container/rucksack.png");
-	
+    private static final ResourceLocation RUCKSACK_BACKGROUND = new ResourceLocation("textures/gui/container/rucksack.png");
+
     /** The old x position of the mouse pointer */
     private float oldMouseX;
 
     /** The old y position of the mouse pointer */
     private float oldMouseY;
-    
+
     private ItemStack rucksack;
     private IInventory rucksackInventory;
     private EnumHand hand;
 
     public GuiRucksack(EntityPlayer player, ItemStack rucksack, EnumHand hand)
     {
-    	super(new ContainerRucksack(player.inventory, ((ItemRucksack)rucksack.getItem()).getInventory(rucksack), hand == EnumHand.MAIN_HAND ? player.inventory.currentItem : 40));
+        super(new ContainerRucksack(player.inventory, ((ItemRucksack)rucksack.getItem()).getInventory(rucksack), hand == EnumHand.MAIN_HAND ? player.inventory.currentItem : 40));
         this.allowUserInput = true;
         this.rucksack = rucksack;
         this.rucksackInventory = ((ContainerRucksack)this.inventorySlots).getRucksackInventory();
@@ -146,24 +146,22 @@ public class GuiRucksack extends GuiContainer
             this.mc.displayGuiScreen(new GuiStats(this, this.mc.thePlayer.getStatFileWriter()));
         }
     }
-    
+
     private void sendToServer()
     {
-    	PacketBuffer packetbuffer = new PacketBuffer(Unpooled.buffer());
-    	packetbuffer.writeItemStackToBuffer(((ItemRucksack)this.rucksack.getItem()).saveInventory(this.rucksack, ((ContainerRucksack)this.inventorySlots).getRucksackInventory()));
-    	packetbuffer.writeEnumValue(this.hand);
-    	this.mc.getConnection().sendPacket(new CPacketCustomPayload("AD|Rucksack", packetbuffer));
+        PacketBuffer packetbuffer = new PacketBuffer(Unpooled.buffer());
+        packetbuffer.writeItemStackToBuffer(((ItemRucksack)this.rucksack.getItem()).saveInventory(this.rucksack, ((ContainerRucksack)this.inventorySlots).getRucksackInventory()));
+        packetbuffer.writeEnumValue(this.hand);
+        this.mc.getConnection().sendPacket(new CPacketCustomPayload("AD|Rucksack", packetbuffer));
     }
-    
+
     /**
      * Called when the screen is unloaded. Used to disable keyboard repeat events
      */
     public void onGuiClosed()
     {
-    	super.onGuiClosed();
-    	
-    	((ItemRucksack)this.rucksack.getItem()).saveInventory(this.rucksack, this.rucksackInventory);
-    	
-    	this.sendToServer();
+        super.onGuiClosed();
+        ((ItemRucksack)this.rucksack.getItem()).saveInventory(this.rucksack, this.rucksackInventory);
+        this.sendToServer();
     }
 }

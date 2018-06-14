@@ -359,24 +359,27 @@ public class RenderManager
 
         int j = i % 65536;
         int k = i / 65536;
+
         // Begin Awaken Dreams code
-        if(p_188388_1_ instanceof EntityItem && ((EntityItem) p_188388_1_).getEntityItem().getItem() instanceof ItemElvenWeapon)
+        if (p_188388_1_ instanceof EntityItem && ((EntityItem) p_188388_1_).getEntityItem().getItem() instanceof ItemElvenWeapon)
         {
-        	ItemElvenWeapon itemweapon= (ItemElvenWeapon) ((EntityItem) p_188388_1_).getEntityItem().getItem();
-        	int g = itemweapon.getGlowAmount();
-			g = Math.min(g, 240);
-			if(itemweapon.isGlowing())
-			{
-	    		if(j<k)
-	    		{
-	    			j = Math.min(j + g, 240);
-	    		}
-	    		else
-	    		{
-	    			k = Math.min(j + g, 240);
-	    		}
-			}
+            ItemElvenWeapon itemweapon = (ItemElvenWeapon)((EntityItem) p_188388_1_).getEntityItem().getItem();
+            int g = itemweapon.getGlowAmount();
+            g = Math.min(g, 240);
+
+            if (itemweapon.isGlowing())
+            {
+                if (j < k)
+                {
+                    j = Math.min(j + g, 240);
+                }
+                else
+                {
+                    k = Math.min(j + g, 240);
+                }
+            }
         }
+
         // End Awaken Dreams code
         OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, (float)j, (float)k);
         GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);

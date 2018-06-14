@@ -15,12 +15,12 @@ import net.minecraft.util.EnumHand;
 
 public class SlotReadOnly extends Slot
 {
-	public SlotReadOnly(IInventory inventoryIn, int index, int xPosition, int yPosition)
+    public SlotReadOnly(IInventory inventoryIn, int index, int xPosition, int yPosition)
     {
-		super(inventoryIn, index, xPosition, yPosition);
+        super(inventoryIn, index, xPosition, yPosition);
     }
-	
-	/**
+
+    /**
      * Return whether this slot's stack can be taken from this slot.
      */
     public boolean canTakeStack(EntityPlayer playerIn)

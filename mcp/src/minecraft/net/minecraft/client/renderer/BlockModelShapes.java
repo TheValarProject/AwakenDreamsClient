@@ -114,12 +114,14 @@ public class BlockModelShapes
             // Begin Awaken Dreams code
             if (block == Blocks.BELL)
             {
-            		return this.modelManager.getTextureMap().getAtlasSprite("awakendreams:items/bell");
+                return this.modelManager.getTextureMap().getAtlasSprite("awakendreams:items/bell");
             }
+
             if (block == Blocks.WATER_WHEEL)
             {
-            		return this.modelManager.getTextureMap().getAtlasSprite("awakendreams:blocks/water_wheel");
+                return this.modelManager.getTextureMap().getAtlasSprite("awakendreams:blocks/water_wheel");
             }
+
             // End Awaken Dreams code
         }
 

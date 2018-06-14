@@ -27,18 +27,16 @@ import net.minecraft.item.crafting.CraftingManager;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-
-
 public class ContainerCustomWorkbench extends Container
 {
-	/** The crafting matrix inventory (3x3). */
+    /** The crafting matrix inventory (3x3). */
     public InventoryCrafting craftMatrix = new InventoryCrafting(this, 3, 3);
     public IInventory craftResult = new InventoryCraftResult();
     private final World worldObj;
 
     /** Position of the workbench */
     private final BlockPos pos;
-    
+
     private final int meta;
 
     public ContainerCustomWorkbench(InventoryPlayer playerInventory, World worldIn, BlockPos posIn, int metaIn)
@@ -46,8 +44,6 @@ public class ContainerCustomWorkbench extends Container
         this.worldObj = worldIn;
         this.pos = posIn;
         this.meta = metaIn;
-        
-        
         this.addSlotToContainer(new SlotCustomCrafting(playerInventory.player, this.craftMatrix, this.craftResult, 0, 124, 35, meta));
 
         for (int i = 0; i < 3; ++i)
@@ -79,49 +75,50 @@ public class ContainerCustomWorkbench extends Container
      */
     public void onCraftMatrixChanged(IInventory inventoryIn)
     {
-    	ItemStack recipe;
-        switch(meta)
+        ItemStack recipe;
+
+        switch (meta)
         {
-        case 0:
-        	recipe = ElvenCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
-        	break;
-        	
-        case 1:
-        	recipe = HumanCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
-        	break;
-        	
-        case 2:
-        	recipe = GondorianCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
-        	break;
-        	
-        case 3:
-        	recipe = RohirrimCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
-        	break;
-        	
-        case 4:
-        	recipe = HobbitCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
-        	break;
-        	
-        case 5:
-        	recipe = MordorCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
-        	break;
-        	
-        case 6:
-        	recipe = IsengardCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
-        	break;
-        	
-        case 7:
-        	recipe = GoblinCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
-        	break;
-        	
-        case 8:
-        	recipe = DwarvenCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
-        	break;
-        	
-        default:
-        	recipe = CraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+            case 0:
+                recipe = ElvenCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+                break;
+
+            case 1:
+                recipe = HumanCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+                break;
+
+            case 2:
+                recipe = GondorianCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+                break;
+
+            case 3:
+                recipe = RohirrimCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+                break;
+
+            case 4:
+                recipe = HobbitCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+                break;
+
+            case 5:
+                recipe = MordorCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+                break;
+
+            case 6:
+                recipe = IsengardCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+                break;
+
+            case 7:
+                recipe = GoblinCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+                break;
+
+            case 8:
+                recipe = DwarvenCraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
+                break;
+
+            default:
+                recipe = CraftingManager.getInstance().findMatchingRecipe(this.craftMatrix, this.worldObj);
         }
-        
+
         this.craftResult.setInventorySlotContents(0, recipe);
     }
 

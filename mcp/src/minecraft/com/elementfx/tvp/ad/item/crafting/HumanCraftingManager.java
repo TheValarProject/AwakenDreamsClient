@@ -23,7 +23,7 @@ import net.minecraft.world.World;
 
 public class HumanCraftingManager extends CustomCraftingManager
 {
-	 /** The static instance of this class */
+    /** The static instance of this class */
     private static final HumanCraftingManager INSTANCE = new HumanCraftingManager();
     private final List<IRecipe> recipes = Lists.<IRecipe>newArrayList();
 
@@ -37,8 +37,8 @@ public class HumanCraftingManager extends CustomCraftingManager
 
     protected HumanCraftingManager()
     {
-		this.addRecipe(new ItemStack(Items.HUMAN_DAGGER, 1), new Object[] {" I", "S ", 'S', Items.STICK, 'I', Items.IRON_INGOT});
-    	Collections.sort(this.getRecipeList(), new Comparator<IRecipe>()
+        this.addRecipe(new ItemStack(Items.HUMAN_DAGGER, 1), new Object[] {" I", "S ", 'S', Items.STICK, 'I', Items.IRON_INGOT});
+        Collections.sort(this.getRecipeList(), new Comparator<IRecipe>()
         {
             public int compare(IRecipe p_compare_1_, IRecipe p_compare_2_)
             {

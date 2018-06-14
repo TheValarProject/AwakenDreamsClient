@@ -15,31 +15,31 @@ import net.minecraft.world.World;
 
 public class ItemThrowingStone extends Item
 {
-	private int thrownDemage;
-	public ItemThrowingStone(int thrownDemage)
-	{
-		this.maxStackSize = 64;
-		this.setCreativeTab(CreativeTabs.COMBAT);
-		this.thrownDemage = thrownDemage;
-	}
-	
-	public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
+    private int thrownDemage;
+    public ItemThrowingStone(int thrownDemage)
+    {
+        this.maxStackSize = 64;
+        this.setCreativeTab(CreativeTabs.COMBAT);
+        this.thrownDemage = thrownDemage;
+    }
+
+    public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
     {
         if (!playerIn.capabilities.isCreativeMode)
         {
-        	--itemStackIn.stackSize;
+            --itemStackIn.stackSize;
         }
-        
+
         playerIn.swingArm(hand);
         worldIn.playSound(playerIn, playerIn.posX, playerIn.posY, playerIn.posZ, SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.NEUTRAL, 1.0F, 1.0F / (itemRand.nextFloat() * 0.4F + 1.2F));
-       
-        if(!worldIn.isRemote)
+
+        if (!worldIn.isRemote)
         {
-        	EntityThrowingStone thrownStone = new EntityThrowingStone(worldIn, playerIn, thrownDemage);
-        	thrownStone.setHeadingFromThrower(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 1.1F, 1.0F);
-        	worldIn.spawnEntityInWorld(thrownStone);
+            EntityThrowingStone thrownStone = new EntityThrowingStone(worldIn, playerIn, thrownDemage);
+            thrownStone.setHeadingFromThrower(playerIn, playerIn.rotationPitch, playerIn.rotationYaw, 0.0F, 1.1F, 1.0F);
+            worldIn.spawnEntityInWorld(thrownStone);
         }
-        
+
         return new ActionResult(EnumActionResult.SUCCESS, itemStackIn);
     }
 }

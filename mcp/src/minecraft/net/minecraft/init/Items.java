@@ -351,7 +351,7 @@ public class Items
     public static final Item BOROMIRS_SWORD;
     public static final Item ORC_SWORD_1;
     public static final Item ORC_SWORD_2;
-	public static final Item RIVENDELL_SWORD;
+    public static final Item RIVENDELL_SWORD;
     public static final Item GOBLIN_SWORD;
     public static final Item HOBBIT_AXE;
     public static final Item SHARKUS_SHORTSWORD;
@@ -499,21 +499,21 @@ public class Items
     public static final Item DUCK;
     public static final Item COOKED_DUCK;
     public static final Item DUCK_EGG;
-    
+
     private static Item getRegisteredADItem(String name)
     {
-	    	Item item = (Item)Item.REGISTRY.getObject(new ADResourceLocation(name));
-	
-	    	if (item == null)
-	    	{
-	    		throw new IllegalStateException("Invalid Item requested: " + name);
-	    	}
-	    	else
-	    	{
-	    		return item;
-	    	}
+        Item item = (Item)Item.REGISTRY.getObject(new ADResourceLocation(name));
+
+        if (item == null)
+        {
+            throw new IllegalStateException("Invalid Item requested: " + name);
+        }
+        else
+        {
+            return item;
+        }
     }
-    
+
     // End Awaken Dreams code
 
     private static Item getRegisteredItem(String name)

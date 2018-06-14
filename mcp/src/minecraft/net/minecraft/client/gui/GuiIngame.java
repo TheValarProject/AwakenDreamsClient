@@ -174,11 +174,13 @@ public class GuiIngame extends Gui
                 this.renderPortal(f, scaledresolution);
             }
         }
-        
+
         // Begin Awaken Dreams code
-        if(this.mc.gameSettings.thirdPersonView == 0 && this.mc.thePlayer.isHandActive() && this.mc.thePlayer.getActiveItemStack() != null && this.mc.thePlayer.getActiveItemStack().getItem() == Items.TELESCOPE) {
-        	this.renderTelescopeOverlay(scaledresolution);
+        if (this.mc.gameSettings.thirdPersonView == 0 && this.mc.thePlayer.isHandActive() && this.mc.thePlayer.getActiveItemStack() != null && this.mc.thePlayer.getActiveItemStack().getItem() == Items.TELESCOPE)
+        {
+            this.renderTelescopeOverlay(scaledresolution);
         }
+
         // End Awaken Dreams code
 
         if (this.mc.playerController.isSpectator())
@@ -815,16 +817,16 @@ public class GuiIngame extends Gui
 
             for (int k3 = 0; k3 < 10; ++k3)
             {
-            	// Begin Awaken Dreams code
-            	this.mc.getTextureManager().bindTexture(CUSTOM_ICONS);
+                // Begin Awaken Dreams code
+                this.mc.getTextureManager().bindTexture(CUSTOM_ICONS);
+
                 if (i3 > 0)
                 {
                     int l3 = l + k3 * 8;
-                    
                     this.drawTexturedModalRect(l3, j2, (int)(Math.min(2, Math.max(0, i3 - k3 * 2)) * 2) * 9, 0, 9, 9);
                 }
+
                 this.mc.getTextureManager().bindTexture(ICONS);
-                
                 // End Awaken Dreams code
             }
 
@@ -1051,11 +1053,11 @@ public class GuiIngame extends Gui
         GlStateManager.enableAlpha();
         GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
     }
-    
+
     // Begin Awaken Dreams code
     private void renderTelescopeOverlay(ScaledResolution scaledRes)
     {
-    	GlStateManager.disableDepth();
+        GlStateManager.disableDepth();
         GlStateManager.depthMask(false);
         GlStateManager.tryBlendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
         GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);

@@ -21,13 +21,13 @@ import net.minecraft.world.World;
 
 public class ItemCustomBed extends ItemBed
 {
-	private BlockCustomBed bedBlock;
-    
-	public ItemCustomBed(BlockCustomBed block)
+    private BlockCustomBed bedBlock;
+
+    public ItemCustomBed(BlockCustomBed block)
     {
-		super();
-		this.bedBlock = block;
-		this.setMaxStackSize(1);
+        super();
+        this.bedBlock = block;
+        this.setMaxStackSize(1);
     }
 
     /**
@@ -78,10 +78,12 @@ public class ItemCustomBed extends ItemBed
 
                     SoundType soundtype = iblockstate1.getBlock().getSoundType();
                     worldIn.playSound((EntityPlayer)null, pos, soundtype.getPlaceSound(), SoundCategory.BLOCKS, (soundtype.getVolume() + 1.0F) / 2.0F, soundtype.getPitch() * 0.8F);
-                    if(!playerIn.isCreative())
+
+                    if (!playerIn.isCreative())
                     {
-                    	--stack.stackSize;	
+                        --stack.stackSize;
                     }
+
                     return EnumActionResult.SUCCESS;
                 }
                 else

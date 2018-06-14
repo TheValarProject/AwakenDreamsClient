@@ -29,16 +29,16 @@ import net.minecraft.world.World;
 
 public class BlockDwarvenTorch extends BlockTorch
 {
-	private final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(5.0 / 16, 0.0D, 5.0 / 16, 11.0 / 16, 9.0 / 16, 11.0 / 16);
+    private final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(5.0 / 16, 0.0D, 5.0 / 16, 11.0 / 16, 9.0 / 16, 11.0 / 16);
 
-	public BlockDwarvenTorch()
+    public BlockDwarvenTorch()
     {
         super();
         this.setCreativeTab(CreativeTabs.DECORATIONS);
         this.setLightLevel(1.0F);
     }
-	
-	public void randomDisplayTick(IBlockState stateIn, World worldIn, BlockPos pos, Random rand)
+
+    public void randomDisplayTick(IBlockState stateIn, World worldIn, BlockPos pos, Random rand)
     {
         EnumFacing enumfacing = (EnumFacing)stateIn.getValue(FACING);
         double d0 = (double)pos.getX() + 0.5D;

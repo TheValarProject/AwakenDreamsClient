@@ -4,7 +4,8 @@ import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
-public class ModelWaterWheel extends ModelBase {
+public class ModelWaterWheel extends ModelBase
+{
     public ModelRenderer Axel;
     public ModelRenderer SpokeBack1;
     public ModelRenderer SpokeBack2;
@@ -47,13 +48,14 @@ public class ModelWaterWheel extends ModelBase {
     public ModelRenderer SpokeConnector7;
     public ModelRenderer SpokeConnector8;
 
-    public ModelWaterWheel() {
+    public ModelWaterWheel()
+    {
         this.textureWidth = 64;
         this.textureHeight = 32;
         this.RimConnector7 = new ModelRenderer(this, 0, 0);
         this.RimConnector7.setRotationPoint(0.0F, 0.0F, 5.0F);
         this.RimConnector7.addBox(-24.0F, -2.5F, 0.0F, 1, 5, 7, 0.0F);
-        this.setRotateAngle(RimConnector7, 0.0F, 0.0F, 4.71238898038469F);
+        this.setRotateAngle(RimConnector7, 0.0F, 0.0F, ((float)Math.PI * 3F / 2F));
         this.SpokeFront4 = new ModelRenderer(this, 0, 0);
         this.SpokeFront4.setRotationPoint(0.0F, 0.0F, 13.0F);
         this.SpokeFront4.addBox(-23.0F, -0.5F, 0.0F, 46, 1, 2, 0.0F);
@@ -61,33 +63,33 @@ public class ModelWaterWheel extends ModelBase {
         this.SpokeConnector5 = new ModelRenderer(this, 0, 0);
         this.SpokeConnector5.setRotationPoint(0.0F, 0.0F, 4.0F);
         this.SpokeConnector5.addBox(-23.0F, -0.5F, 0.0F, 6, 1, 9, 0.0F);
-        this.setRotateAngle(SpokeConnector5, 0.0F, 0.0F, 3.141592653589793F);
+        this.setRotateAngle(SpokeConnector5, 0.0F, 0.0F, (float)Math.PI);
         this.OuterRimBack5 = new ModelRenderer(this, 0, 0);
         this.OuterRimBack5.setRotationPoint(0.0F, 0.0F, 1.0F);
         this.OuterRimBack5.addBox(-24.0F, -10.0F, 0.0F, 1, 20, 4, 0.0F);
-        this.setRotateAngle(OuterRimBack5, 0.0F, 0.0F, 3.141592653589793F);
+        this.setRotateAngle(OuterRimBack5, 0.0F, 0.0F, (float)Math.PI);
         this.SpokeBack3 = new ModelRenderer(this, 0, 0);
         this.SpokeBack3.setRotationPoint(0.0F, 0.0F, 2.0F);
         this.SpokeBack3.addBox(-23.0F, -0.5F, 0.0F, 46, 1, 2, 0.0F);
-        this.setRotateAngle(SpokeBack3, 0.0F, 0.0F, 1.5707963267948966F);
+        this.setRotateAngle(SpokeBack3, 0.0F, 0.0F, ((float)Math.PI / 2F));
         this.OuterRimBack1 = new ModelRenderer(this, 0, 0);
         this.OuterRimBack1.setRotationPoint(0.0F, 0.0F, 1.0F);
         this.OuterRimBack1.addBox(-24.0F, -10.0F, 0.0F, 1, 20, 4, 0.0F);
         this.SpokeConnector3 = new ModelRenderer(this, 0, 0);
         this.SpokeConnector3.setRotationPoint(0.0F, 0.0F, 4.0F);
         this.SpokeConnector3.addBox(-23.0F, -0.5F, 0.0F, 6, 1, 9, 0.0F);
-        this.setRotateAngle(SpokeConnector3, 0.0F, 0.0F, 1.5707963267948966F);
+        this.setRotateAngle(SpokeConnector3, 0.0F, 0.0F, ((float)Math.PI / 2F));
         this.OuterRimBack7 = new ModelRenderer(this, 0, 0);
         this.OuterRimBack7.setRotationPoint(0.0F, 0.0F, 1.0F);
         this.OuterRimBack7.addBox(-24.0F, -10.0F, 0.0F, 1, 20, 4, 0.0F);
-        this.setRotateAngle(OuterRimBack7, 0.0F, 0.0F, 4.71238898038469F);
+        this.setRotateAngle(OuterRimBack7, 0.0F, 0.0F, ((float)Math.PI * 3F / 2F));
         this.Axel = new ModelRenderer(this, 0, 0);
         this.Axel.setRotationPoint(0.0F, 8.0F, 8.0F);
         this.Axel.addBox(-1.0F, -1.0F, 0.0F, 2, 2, 16, 0.0F);
         this.SpokeBack2 = new ModelRenderer(this, 0, 0);
         this.SpokeBack2.setRotationPoint(0.0F, 0.0F, 2.0F);
         this.SpokeBack2.addBox(-23.0F, -0.5F, 0.0F, 46, 1, 2, 0.0F);
-        this.setRotateAngle(SpokeBack2, 0.0F, 0.0F, 0.7853981633974483F);
+        this.setRotateAngle(SpokeBack2, 0.0F, 0.0F, ((float)Math.PI / 4F));
         this.OuterRimBack4 = new ModelRenderer(this, 0, 0);
         this.OuterRimBack4.setRotationPoint(0.0F, 0.0F, 1.0F);
         this.OuterRimBack4.addBox(-24.0F, -10.0F, 0.0F, 1, 20, 4, 0.0F);
@@ -95,26 +97,26 @@ public class ModelWaterWheel extends ModelBase {
         this.OuterRimFront5 = new ModelRenderer(this, 0, 0);
         this.OuterRimFront5.setRotationPoint(0.0F, 0.0F, 12.0F);
         this.OuterRimFront5.addBox(-24.0F, -10.0F, 0.0F, 1, 20, 4, 0.0F);
-        this.setRotateAngle(OuterRimFront5, 0.0F, 0.0F, 3.141592653589793F);
+        this.setRotateAngle(OuterRimFront5, 0.0F, 0.0F, (float)Math.PI);
         this.RimConnector5 = new ModelRenderer(this, 0, 0);
         this.RimConnector5.setRotationPoint(0.0F, 0.0F, 5.0F);
         this.RimConnector5.addBox(-24.0F, -2.5F, 0.0F, 1, 5, 7, 0.0F);
-        this.setRotateAngle(RimConnector5, 0.0F, 0.0F, 3.141592653589793F);
+        this.setRotateAngle(RimConnector5, 0.0F, 0.0F, (float)Math.PI);
         this.RimConnector1 = new ModelRenderer(this, 0, 0);
         this.RimConnector1.setRotationPoint(0.0F, 0.0F, 5.0F);
         this.RimConnector1.addBox(-24.0F, -2.5F, 0.0F, 1, 5, 7, 0.0F);
         this.OuterRimFront3 = new ModelRenderer(this, 0, 0);
         this.OuterRimFront3.setRotationPoint(0.0F, 0.0F, 12.0F);
         this.OuterRimFront3.addBox(-24.0F, -10.0F, 0.0F, 1, 20, 4, 0.0F);
-        this.setRotateAngle(OuterRimFront3, 0.0F, 0.0F, 1.5707963267948966F);
+        this.setRotateAngle(OuterRimFront3, 0.0F, 0.0F, ((float)Math.PI / 2F));
         this.OuterRimFront7 = new ModelRenderer(this, 0, 0);
         this.OuterRimFront7.setRotationPoint(0.0F, 0.0F, 12.0F);
         this.OuterRimFront7.addBox(-24.0F, -10.0F, 0.0F, 1, 20, 4, 0.0F);
-        this.setRotateAngle(OuterRimFront7, 0.0F, 0.0F, 4.71238898038469F);
+        this.setRotateAngle(OuterRimFront7, 0.0F, 0.0F, ((float)Math.PI * 3F / 2F));
         this.SpokeConnector7 = new ModelRenderer(this, 0, 0);
         this.SpokeConnector7.setRotationPoint(0.0F, 0.0F, 4.0F);
         this.SpokeConnector7.addBox(-23.0F, -0.5F, 0.0F, 6, 1, 9, 0.0F);
-        this.setRotateAngle(SpokeConnector7, 0.0F, 0.0F, 4.71238898038469F);
+        this.setRotateAngle(SpokeConnector7, 0.0F, 0.0F, ((float)Math.PI * 3F / 2F));
         this.SpokeConnector1 = new ModelRenderer(this, 0, 0);
         this.SpokeConnector1.setRotationPoint(0.0F, 0.0F, 4.0F);
         this.SpokeConnector1.addBox(-23.0F, -0.5F, 0.0F, 6, 1, 9, 0.0F);
@@ -129,7 +131,7 @@ public class ModelWaterWheel extends ModelBase {
         this.SpokeConnector2 = new ModelRenderer(this, 0, 0);
         this.SpokeConnector2.setRotationPoint(0.0F, 0.0F, 4.0F);
         this.SpokeConnector2.addBox(-23.0F, -0.5F, 0.0F, 6, 1, 9, 0.0F);
-        this.setRotateAngle(SpokeConnector2, 0.0F, 0.0F, 0.7853981633974483F);
+        this.setRotateAngle(SpokeConnector2, 0.0F, 0.0F, ((float)Math.PI / 4F));
         this.SpokeBack1 = new ModelRenderer(this, 0, 0);
         this.SpokeBack1.setRotationPoint(0.0F, 0.0F, 2.0F);
         this.SpokeBack1.addBox(-23.0F, -0.5F, 0.0F, 46, 1, 2, 0.0F);
@@ -139,7 +141,7 @@ public class ModelWaterWheel extends ModelBase {
         this.RimConnector3 = new ModelRenderer(this, 0, 0);
         this.RimConnector3.setRotationPoint(0.0F, 0.0F, 5.0F);
         this.RimConnector3.addBox(-24.0F, -2.5F, 0.0F, 1, 5, 7, 0.0F);
-        this.setRotateAngle(RimConnector3, 0.0F, 0.0F, 1.5707963267948966F);
+        this.setRotateAngle(RimConnector3, 0.0F, 0.0F, ((float)Math.PI / 2F));
         this.OuterRimBack6 = new ModelRenderer(this, 0, 0);
         this.OuterRimBack6.setRotationPoint(0.0F, 0.0F, 1.0F);
         this.OuterRimBack6.addBox(-24.0F, -10.0F, 0.0F, 1, 20, 4, 0.0F);
@@ -147,7 +149,7 @@ public class ModelWaterWheel extends ModelBase {
         this.OuterRimFront2 = new ModelRenderer(this, 0, 0);
         this.OuterRimFront2.setRotationPoint(0.0F, 0.0F, 12.0F);
         this.OuterRimFront2.addBox(-24.0F, -10.0F, 0.0F, 1, 20, 4, 0.0F);
-        this.setRotateAngle(OuterRimFront2, 0.0F, 0.0F, 0.7853981633974483F);
+        this.setRotateAngle(OuterRimFront2, 0.0F, 0.0F, ((float)Math.PI / 4F));
         this.OuterRimFront8 = new ModelRenderer(this, 0, 0);
         this.OuterRimFront8.setRotationPoint(0.0F, 0.0F, 12.0F);
         this.OuterRimFront8.addBox(-24.0F, -10.0F, 0.0F, 1, 20, 4, 0.0F);
@@ -162,7 +164,7 @@ public class ModelWaterWheel extends ModelBase {
         this.RimConnector2 = new ModelRenderer(this, 0, 0);
         this.RimConnector2.setRotationPoint(0.0F, 0.0F, 5.0F);
         this.RimConnector2.addBox(-24.0F, -2.5F, 0.0F, 1, 5, 7, 0.0F);
-        this.setRotateAngle(RimConnector2, 0.0F, 0.0F, 0.7853981633974483F);
+        this.setRotateAngle(RimConnector2, 0.0F, 0.0F, ((float)Math.PI / 4F));
         this.OuterRimBack8 = new ModelRenderer(this, 0, 0);
         this.OuterRimBack8.setRotationPoint(0.0F, 0.0F, 1.0F);
         this.OuterRimBack8.addBox(-24.0F, -10.0F, 0.0F, 1, 20, 4, 0.0F);
@@ -178,7 +180,7 @@ public class ModelWaterWheel extends ModelBase {
         this.SpokeFront3 = new ModelRenderer(this, 0, 0);
         this.SpokeFront3.setRotationPoint(0.0F, 0.0F, 13.0F);
         this.SpokeFront3.addBox(-23.0F, -0.5F, 0.0F, 46, 1, 2, 0.0F);
-        this.setRotateAngle(SpokeFront3, 0.0F, 0.0F, 1.5707963267948966F);
+        this.setRotateAngle(SpokeFront3, 0.0F, 0.0F, ((float)Math.PI / 2F));
         this.RimConnector6 = new ModelRenderer(this, 0, 0);
         this.RimConnector6.setRotationPoint(0.0F, 0.0F, 5.0F);
         this.RimConnector6.addBox(-24.0F, -2.5F, 0.0F, 1, 5, 7, 0.0F);
@@ -186,7 +188,7 @@ public class ModelWaterWheel extends ModelBase {
         this.OuterRimBack3 = new ModelRenderer(this, 0, 0);
         this.OuterRimBack3.setRotationPoint(0.0F, 0.0F, 1.0F);
         this.OuterRimBack3.addBox(-24.0F, -10.0F, 0.0F, 1, 20, 4, 0.0F);
-        this.setRotateAngle(OuterRimBack3, 0.0F, 0.0F, 1.5707963267948966F);
+        this.setRotateAngle(OuterRimBack3, 0.0F, 0.0F, ((float)Math.PI / 2F));
         this.RimConnector8 = new ModelRenderer(this, 0, 0);
         this.RimConnector8.setRotationPoint(0.0F, 0.0F, 5.0F);
         this.RimConnector8.addBox(-24.0F, -2.5F, 0.0F, 1, 5, 7, 0.0F);
@@ -194,7 +196,7 @@ public class ModelWaterWheel extends ModelBase {
         this.OuterRimBack2 = new ModelRenderer(this, 0, 0);
         this.OuterRimBack2.setRotationPoint(0.0F, 0.0F, 1.0F);
         this.OuterRimBack2.addBox(-24.0F, -10.0F, 0.0F, 1, 20, 4, 0.0F);
-        this.setRotateAngle(OuterRimBack2, 0.0F, 0.0F, 0.7853981633974483F);
+        this.setRotateAngle(OuterRimBack2, 0.0F, 0.0F, ((float)Math.PI / 4F));
         this.OuterRimFront4 = new ModelRenderer(this, 0, 0);
         this.OuterRimFront4.setRotationPoint(0.0F, 0.0F, 12.0F);
         this.OuterRimFront4.addBox(-24.0F, -10.0F, 0.0F, 1, 20, 4, 0.0F);
@@ -206,7 +208,7 @@ public class ModelWaterWheel extends ModelBase {
         this.SpokeFront2 = new ModelRenderer(this, 0, 0);
         this.SpokeFront2.setRotationPoint(0.0F, 0.0F, 13.0F);
         this.SpokeFront2.addBox(-23.0F, -0.5F, 0.0F, 46, 1, 2, 0.0F);
-        this.setRotateAngle(SpokeFront2, 0.0F, 0.0F, 0.7853981633974483F);
+        this.setRotateAngle(SpokeFront2, 0.0F, 0.0F, ((float)Math.PI / 4F));
         this.Axel.addChild(this.RimConnector7);
         this.Axel.addChild(this.SpokeFront4);
         this.Axel.addChild(this.SpokeConnector5);
@@ -250,14 +252,16 @@ public class ModelWaterWheel extends ModelBase {
     }
 
     @Override
-    public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) { 
+    public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5)
+    {
         this.Axel.render(f5);
     }
 
     /**
      * This is a helper function from Tabula to set the rotation of model parts
      */
-    public void setRotateAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+    public void setRotateAngle(ModelRenderer modelRenderer, float x, float y, float z)
+    {
         modelRenderer.rotateAngleX = x;
         modelRenderer.rotateAngleY = y;
         modelRenderer.rotateAngleZ = z;

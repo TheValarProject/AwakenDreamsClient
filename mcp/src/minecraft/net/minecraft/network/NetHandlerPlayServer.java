@@ -1791,6 +1791,7 @@ public class NetHandlerPlayServer implements INetHandlerPlayServer, ITickable
                 LOGGER.error((String)"Couldn\'t pick item", (Throwable)exception);
             }
         }
+
         // Begin Awaken Dreams code
         if ("AD|Rucksack".equals(s))
         {
@@ -1805,7 +1806,7 @@ public class NetHandlerPlayServer implements INetHandlerPlayServer, ITickable
                 {
                     return;
                 }
-                
+
                 ItemStack itemstack1 = this.playerEntity.getHeldItem(hand);
 
                 if (itemstack1 == null)
@@ -1823,6 +1824,7 @@ public class NetHandlerPlayServer implements INetHandlerPlayServer, ITickable
                 LOGGER.error((String)"Couldn\'t handle rucksack info", (Throwable)exception6);
             }
         }
+
         // End Awaken Dreams code
     }
 }

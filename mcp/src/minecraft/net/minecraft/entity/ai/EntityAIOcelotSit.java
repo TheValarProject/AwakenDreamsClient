@@ -105,7 +105,7 @@ public class EntityAIOcelotSit extends EntityAIMoveToBlock
                 // Begin Awaken Dreams code
                 if (block instanceof BlockBed && iblockstate.getValue(BlockBed.PART) != BlockBed.EnumPartType.HEAD)
                 {
-                	// End Awaken Dreams code
+                    // End Awaken Dreams code
                     return true;
                 }
             }

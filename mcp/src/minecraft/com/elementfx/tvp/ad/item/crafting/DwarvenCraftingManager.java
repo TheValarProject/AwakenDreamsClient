@@ -14,7 +14,7 @@ import net.minecraft.item.crafting.ShapelessRecipes;
 
 public class DwarvenCraftingManager extends CustomCraftingManager
 {
-	 /** The static instance of this class */
+    /** The static instance of this class */
     private static final DwarvenCraftingManager INSTANCE = new DwarvenCraftingManager();
     private final List<IRecipe> recipes = Lists.<IRecipe>newArrayList();
 
@@ -28,10 +28,10 @@ public class DwarvenCraftingManager extends CustomCraftingManager
 
     protected DwarvenCraftingManager()
     {
-    	this.addRecipe(new ItemStack(Items.DWARVEN_LORD_KNIFE, 1), new Object[] {"I", "S", 'S', Items.STICK, 'I', Items.MITHRIL_INGOT});
-    	this.addRecipe(new ItemStack(Items.GOLDEN_WAR_HAMMER_OF_EREBOR, 1), new Object[] {"IGI", "ISI", " S ", 'S', Items.STICK, 'I', Items.IRON_INGOT, 'G', Items.GOLD_INGOT});
-    	this.addRecipe(new ItemStack(Items.DWARVEN_AXE_MORIA, 1), new Object[] {"IGI", " SI", " S ", 'S', Items.STICK, 'I', Items.IRON_INGOT, 'G', Items.GOLD_INGOT});
-    	Collections.sort(this.getRecipeList(), new Comparator<IRecipe>()
+        this.addRecipe(new ItemStack(Items.DWARVEN_LORD_KNIFE, 1), new Object[] {"I", "S", 'S', Items.STICK, 'I', Items.MITHRIL_INGOT});
+        this.addRecipe(new ItemStack(Items.GOLDEN_WAR_HAMMER_OF_EREBOR, 1), new Object[] {"IGI", "ISI", " S ", 'S', Items.STICK, 'I', Items.IRON_INGOT, 'G', Items.GOLD_INGOT});
+        this.addRecipe(new ItemStack(Items.DWARVEN_AXE_MORIA, 1), new Object[] {"IGI", " SI", " S ", 'S', Items.STICK, 'I', Items.IRON_INGOT, 'G', Items.GOLD_INGOT});
+        Collections.sort(this.getRecipeList(), new Comparator<IRecipe>()
         {
             public int compare(IRecipe p_compare_1_, IRecipe p_compare_2_)
             {

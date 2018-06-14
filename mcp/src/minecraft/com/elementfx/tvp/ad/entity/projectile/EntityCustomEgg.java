@@ -15,12 +15,11 @@ import net.minecraft.world.World;
 
 public class EntityCustomEgg extends EntityThrowable
 {
+    public EntityCustomEgg(World worldIn)
+    {
+        super(worldIn);
+    }
 
-	public EntityCustomEgg(World worldIn) 
-	{
-		super(worldIn);
-	}
-	
     public EntityCustomEgg(World worldIn, EntityLivingBase throwerIn)
     {
         super(worldIn, throwerIn);

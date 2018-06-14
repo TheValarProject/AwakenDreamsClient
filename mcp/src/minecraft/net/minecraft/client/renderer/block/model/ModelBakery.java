@@ -419,32 +419,35 @@ public class ModelBakery
         ArrayList<ItemStack> rings = new ArrayList<ItemStack>();
         Items.RING.getSubItems(Items.RING, CreativeTabs.MISC, rings);
         ArrayList<String> ringNames = new ArrayList<String>();
-        for(ItemStack ring : rings)
+
+        for (ItemStack ring : rings)
         {
-        		ringNames.add("awakendreams:" + ring.getUnlocalizedName().substring(5).replace('.', '_'));
+            ringNames.add("awakendreams:" + ring.getUnlocalizedName().substring(5).replace('.', '_'));
         }
+
         this.variantNames.put(Items.RING, ringNames);
-        
         ArrayList<ItemStack> pipes = new ArrayList<ItemStack>();
         Items.PIPE.getSubItems(Items.PIPE, CreativeTabs.MISC, pipes);
         ArrayList<String> pipeNames = new ArrayList<String>();
-        for(ItemStack pipe : pipes)
+
+        for (ItemStack pipe : pipes)
         {
-	        	//System.out.println("stacks" + pipe.getMName().substring(5).replace('.', '_'));
-	        	pipeNames.add("awakendreams:" + Items.PIPE.getModelName(pipe));
+            //System.out.println("stacks" + pipe.getMName().substring(5).replace('.', '_'));
+            pipeNames.add("awakendreams:" + Items.PIPE.getModelName(pipe));
         }
+
         this.variantNames.put(Items.PIPE, pipeNames);
-        
         ArrayList<ItemStack> brownPipes = new ArrayList<ItemStack>();
         Items.BROWN_PIPE.getSubItems(Items.BROWN_PIPE, CreativeTabs.MISC, brownPipes);
         ArrayList<String> brownPipeNames = new ArrayList<String>();
-        for(ItemStack brownPipe : brownPipes)
+
+        for (ItemStack brownPipe : brownPipes)
         {
-	        	//System.out.println("stacks" + pipe.getMName().substring(5).replace('.', '_'));
-	        	pipeNames.add("awakendreams:" + Items.BROWN_PIPE.getModelName(brownPipe));
+            //System.out.println("stacks" + pipe.getMName().substring(5).replace('.', '_'));
+            pipeNames.add("awakendreams:" + Items.BROWN_PIPE.getModelName(brownPipe));
         }
+
         this.variantNames.put(Items.BROWN_PIPE, brownPipeNames);
-        
         this.variantNames.put(Item.getItemFromBlock(Blocks.CUSTOM_CRAFTING_TABLE), Lists.newArrayList(new String[] {"awakendreams:elven_crafting_table", "awakendreams:human_crafting_table", "awakendreams:gondorian_crafting_table", "awakendreams:rohirrim_crafting_table", "awakendreams:hobbit_crafting_table", "awakendreams:mordor_crafting_table", "awakendreams:isengard_crafting_table", "awakendreams:goblin_crafting_table"}));
         // End Awaken Dreams code
     }

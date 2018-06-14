@@ -24,52 +24,53 @@ public class RecipePipe implements IRecipe
 
     public ItemStack[] getRemainingItems(InventoryCrafting inv)
     {
-    	ItemStack pipeStack = null;
-    	int pipeIndex = 0;
+        ItemStack pipeStack = null;
+        int pipeIndex = 0;
+
         for (int i = 0; i < inv.getSizeInventory(); ++i)
         {
-        	ItemStack itemstack = inv.getStackInSlot(i);
+            ItemStack itemstack = inv.getStackInSlot(i);
 
-        	if (itemstack != null && itemstack.getItem() instanceof ItemPipe)
-        	{
-        		pipeStack = itemstack;
-        		pipeIndex = i;
-        		break;
-        	}
+            if (itemstack != null && itemstack.getItem() instanceof ItemPipe)
+            {
+                pipeStack = itemstack;
+                pipeIndex = i;
+                break;
+            }
         }
+
         ItemPipe pipe = (ItemPipe) pipeStack.getItem();
-        
         int stuffingAmount = pipe.getStuffingAmount(pipeStack);
-    	
         ItemStack[] aitemstack = new ItemStack[inv.getSizeInventory()];
 
         for (int i = 0; i < aitemstack.length; ++i)
         {
-        	if(i == pipeIndex)
-        	{
-        		continue;
-        	}
-        	
+            if (i == pipeIndex)
+            {
+                continue;
+            }
+
             ItemStack itemstack = inv.getStackInSlot(i);
 
             if (itemstack != null)
             {
-            	int stackSize = itemstack.stackSize;
-            	
-            	if(stackSize + stuffingAmount >= itemstack.getMaxStackSize())
-            	{;
-            		itemstack.stackSize = stackSize - (itemstack.getMaxStackSize() - stuffingAmount) + 1;
-            	}
-            	else if(itemstack.getItem().hasContainerItem())
-            	{
-            		aitemstack[i] = new ItemStack(itemstack.getItem().getContainerItem());
-            	}
-            	else
-            	{
-            		itemstack.stackSize = 0;
-            	}
-            	
-            	stuffingAmount = Math.min(stuffingAmount + stackSize, itemstack.getMaxStackSize());
+                int stackSize = itemstack.stackSize;
+
+                if (stackSize + stuffingAmount >= itemstack.getMaxStackSize())
+                {
+                    ;
+                    itemstack.stackSize = stackSize - (itemstack.getMaxStackSize() - stuffingAmount) + 1;
+                }
+                else if (itemstack.getItem().hasContainerItem())
+                {
+                    aitemstack[i] = new ItemStack(itemstack.getItem().getContainerItem());
+                }
+                else
+                {
+                    itemstack.stackSize = 0;
+                }
+
+                stuffingAmount = Math.min(stuffingAmount + stackSize, itemstack.getMaxStackSize());
             }
         }
 
@@ -84,67 +85,73 @@ public class RecipePipe implements IRecipe
         // Look for an instance of ItemPipe
         ItemStack pipeStack = null;
         int pipeIndex = 0;
+
         for (int i = 0; i < inv.getSizeInventory(); ++i)
         {
-        	ItemStack itemstack = inv.getStackInSlot(i);
+            ItemStack itemstack = inv.getStackInSlot(i);
 
-        	if (itemstack != null && itemstack.getItem() instanceof ItemPipe)
-        	{
-        		if(pipeStack != null)
-        		{
-        			// More than one pipe found
-        			return false;
-        		}
-        		pipeStack = itemstack;
-        		pipeIndex = i;
-        	}
+            if (itemstack != null && itemstack.getItem() instanceof ItemPipe)
+            {
+                if (pipeStack != null)
+                {
+                    // More than one pipe found
+                    return false;
+                }
+
+                pipeStack = itemstack;
+                pipeIndex = i;
+            }
         }
-        if(pipeStack == null)
+
+        if (pipeStack == null)
         {
-        	// No pipe found
-        	return false;
+            // No pipe found
+            return false;
         }
+
         ItemPipe pipe = (ItemPipe) pipeStack.getItem();
-        
         // Look for something to stuff the pipe with
         Item stuffing = null;
+
         for (int i = 0; i < inv.getSizeInventory(); ++i)
         {
-        	if(i == pipeIndex)
-        	{
-        		continue;
-        	}
-        	
-        	ItemStack itemstack = inv.getStackInSlot(i);
+            if (i == pipeIndex)
+            {
+                continue;
+            }
 
-        	if (itemstack != null)
-        	{
-        		if(stuffing == null)
-        		{
-        			stuffing = itemstack.getItem();
-        			if(!pipe.canSmoke(stuffing))
-        			{
-        				// Unsmokable item found
-        				return false;
-        			}
-        		}
-        		else if(stuffing != itemstack.getItem())
-        		{
-        			// More than one type of stuffing found
-        			return false;
-        		}
-        	}
+            ItemStack itemstack = inv.getStackInSlot(i);
+
+            if (itemstack != null)
+            {
+                if (stuffing == null)
+                {
+                    stuffing = itemstack.getItem();
+
+                    if (!pipe.canSmoke(stuffing))
+                    {
+                        // Unsmokable item found
+                        return false;
+                    }
+                }
+                else if (stuffing != itemstack.getItem())
+                {
+                    // More than one type of stuffing found
+                    return false;
+                }
+            }
         }
-        if(stuffing == null)
+
+        if (stuffing == null)
         {
-        	// No smokable item found
-        	return false;
+            // No smokable item found
+            return false;
         }
-        
-        if(pipe.getStuffing(pipeStack) != null && pipe.getStuffing(pipeStack).getItem() != stuffing)
+
+        if (pipe.getStuffing(pipeStack) != null && pipe.getStuffing(pipeStack).getItem() != stuffing)
         {
-        	// Smokable item is different from item already in pipe
-        	return false;
+            // Smokable item is different from item already in pipe
+            return false;
         }
 
         return true;
@@ -157,47 +164,48 @@ public class RecipePipe implements IRecipe
      */
     public ItemStack getCraftingResult(InventoryCrafting inv)
     {
-    	ItemStack pipeStack = null;
+        ItemStack pipeStack = null;
         int pipeIndex = 0;
+
         for (int i = 0; i < inv.getSizeInventory(); ++i)
         {
-        	ItemStack itemstack = inv.getStackInSlot(i);
+            ItemStack itemstack = inv.getStackInSlot(i);
 
-        	if (itemstack != null && itemstack.getItem() instanceof ItemPipe)
-        	{
-        		pipeStack = itemstack;
-        		pipeIndex = i;
-        		break;
-        	}
+            if (itemstack != null && itemstack.getItem() instanceof ItemPipe)
+            {
+                pipeStack = itemstack;
+                pipeIndex = i;
+                break;
+            }
         }
+
         ItemPipe pipe = (ItemPipe) pipeStack.getItem();
         pipeStack = pipeStack.copy();
-        
         ItemStack stuffing = pipe.getStuffing(pipeStack);
+
         for (int i = 0; i < inv.getSizeInventory(); ++i)
         {
-        	if(i == pipeIndex)
-        	{
-        		continue;
-        	}
-        	
-        	ItemStack itemstack = inv.getStackInSlot(i);
+            if (i == pipeIndex)
+            {
+                continue;
+            }
 
-        	if (itemstack != null)
-        	{
-        		if(stuffing == null)
-        		{
-        			stuffing = itemstack.copy();
-        		}
-        		else
-        		{
-        			stuffing.stackSize = Math.min(stuffing.stackSize + itemstack.stackSize, stuffing.getMaxStackSize());
-        		}
-        	}
+            ItemStack itemstack = inv.getStackInSlot(i);
+
+            if (itemstack != null)
+            {
+                if (stuffing == null)
+                {
+                    stuffing = itemstack.copy();
+                }
+                else
+                {
+                    stuffing.stackSize = Math.min(stuffing.stackSize + itemstack.stackSize, stuffing.getMaxStackSize());
+                }
+            }
         }
-        
+
         pipe.stuffStack(pipeStack, stuffing);
-        
         return pipeStack;
     }
 

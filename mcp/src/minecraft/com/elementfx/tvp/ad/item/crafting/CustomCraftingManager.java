@@ -27,8 +27,8 @@ public abstract class CustomCraftingManager
 
     protected CustomCraftingManager()
     {
-    	//space for recipes needed in all custom crafting tables but not in the vanilla one
-    	Collections.sort(this.getRecipeList(), new Comparator<IRecipe>()
+        //space for recipes needed in all custom crafting tables but not in the vanilla one
+        Collections.sort(this.getRecipeList(), new Comparator<IRecipe>()
         {
             public int compare(IRecipe p_compare_1_, IRecipe p_compare_2_)
             {

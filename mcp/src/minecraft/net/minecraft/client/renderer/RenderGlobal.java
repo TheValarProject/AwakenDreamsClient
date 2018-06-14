@@ -757,7 +757,7 @@ public class RenderGlobal implements IWorldEventListener, IResourceManagerReload
                 // Begin Awaken Dreams code
                 if (tileentity1 != null && (block instanceof BlockChest || block instanceof BlockEnderChest || block instanceof BlockSign || block instanceof BlockSkull || block instanceof BlockBell || block instanceof BlockWaterWheel))
                 {
-                	// End Awaken Dreams code
+                    // End Awaken Dreams code
                     TileEntityRendererDispatcher.instance.renderTileEntity(tileentity1, partialTicks, destroyblockprogress.getPartialBlockDamage());
                 }
             }
@@ -1912,7 +1912,7 @@ public class RenderGlobal implements IWorldEventListener, IResourceManagerReload
                 // Being Awaken Dreams code
                 if (!(block instanceof BlockChest) && !(block instanceof BlockEnderChest) && !(block instanceof BlockSign) && !(block instanceof BlockSkull) && !(block instanceof BlockBell))
                 {
-                	// End Awaken Dreams code
+                    // End Awaken Dreams code
                     if (d3 * d3 + d4 * d4 + d5 * d5 > 1024.0D)
                     {
                         iterator.remove();

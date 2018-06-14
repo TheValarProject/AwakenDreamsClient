@@ -198,12 +198,13 @@ public class EntityTracker
         //Begin Awaken Dreams code
         else if (entityIn instanceof EntityThrowingStone)
         {
-        	this.addEntityToTracker(entityIn, 64, 10, true);
+            this.addEntityToTracker(entityIn, 64, 10, true);
         }
         else if (entityIn instanceof EntityCustomEgg)
         {
             this.addEntityToTracker(entityIn, 64, 10, true);
         }
+
         //End Awaken Dreams code
     }
 

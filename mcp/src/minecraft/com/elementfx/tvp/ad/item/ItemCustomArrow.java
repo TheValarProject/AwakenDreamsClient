@@ -12,20 +12,20 @@ import net.minecraft.world.World;
 
 public class ItemCustomArrow extends ItemArrow
 {
-	/**Hold  whether the arrow is flaming or not*/
-	public boolean isFlaming;
-	
+    /**Hold  whether the arrow is flaming or not*/
+    public boolean isFlaming;
+
     public ItemCustomArrow()
     {
         this(false);
     }
-    
+
     public ItemCustomArrow(boolean flaming)
     {
         super();
         this.isFlaming = flaming;
     }
-    
+
     public EntityArrow createArrow(World worldIn, ItemStack stack, EntityLivingBase shooter)
     {
         EntityCustomArrow entityarrow = new EntityCustomArrow(worldIn, shooter, isFlaming);

@@ -654,7 +654,7 @@ public class EntityTrackerEntry
         //Begin Awaken Dreams code
         else if (this.trackedEntity instanceof EntityThrowingStone)
         {
-        	return new SPacketSpawnObject(this.trackedEntity, 500);
+            return new SPacketSpawnObject(this.trackedEntity, 500);
         }
         else if (this.trackedEntity instanceof EntityCustomEgg)
         {
@@ -664,7 +664,6 @@ public class EntityTrackerEntry
         {
             Entity entityx = ((EntityArrow)this.trackedEntity).shootingEntity;
             return new SPacketSpawnObject(this.trackedEntity, 503, 1 + (entityx != null ? entityx.getEntityId() : this.trackedEntity.getEntityId()));
-       
         }
         //End Awaken Dreams code
         else
