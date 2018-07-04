@@ -1,0 +1,735 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+  "particle": "awakendreams:blocks/rohirrim_crafting_table_banner",
+    "all": "awakendreams:blocks/bree_oak_planks",
+    "top": "awakendreams:blocks/rohirrim_crafting_table_top",
+    "banner": "awakendreams:blocks/rohirrim_crafting_table_banner"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0.5
+      ],
+      "to": [
+        16,
+        16,
+        0.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#banner"
+        },
+        "south": {
+          "texture": "#banner"
+        }
+      }
+    },
+    {
+      "from": [
+        0.5,
+        0,
+        0
+      ],
+      "to": [
+        0.5,
+        16,
+        16
+      ],
+      "faces": {
+        "west": {
+          "texture": "#banner"
+        },
+        "east": {
+          "texture": "#banner"
+        }
+      }
+    },
+    {
+      "from": [
+        15.5,
+        0,
+        0
+      ],
+      "to": [
+        15.5,
+        16,
+        16
+      ],
+      "faces": {
+        "east": {
+          "texture": "#banner"
+        },
+        "west": {
+          "texture": "#banner"
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        0,
+        15.5
+      ],
+      "to": [
+        16,
+        16,
+        15.5
+      ],
+      "faces": {
+        "south": {
+          "texture": "#banner"
+        },
+        "north": {
+          "texture": "#banner"
+        }
+      }
+    },
+    {
+      "from": [
+        0.501,
+        13.5,
+        0.501
+      ],
+      "to": [
+        15.499,
+        15,
+        15.499
+      ],
+      "faces": {
+        "up": {
+          "texture": "#top"
+        },
+        "down": {
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        2,
+        16,
+        2
+      ],
+      "faces": {
+        "up": {
+          "texture": "#all",
+          "cullface": "up"
+        },
+        "down": {
+          "texture": "#all",
+          "cullface": "down"
+        },
+        "north": {
+          "texture": "#all",
+          "cullface": "north"
+        },
+        "east": {
+          "texture": "#all"
+        },
+        "south": {
+          "texture": "#all"
+        },
+        "west": {
+          "texture": "#all",
+          "cullface": "west"
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        0,
+        14
+      ],
+      "to": [
+        2,
+        16,
+        16
+      ],
+      "faces": {
+        "up": {
+          "texture": "#all",
+          "cullface": "up"
+        },
+        "down": {
+          "texture": "#all",
+          "cullface": "down"
+        },
+        "north": {
+          "texture": "#all"
+        },
+        "east": {
+          "texture": "#all"
+        },
+        "south": {
+          "texture": "#all",
+          "cullface": "south"
+        },
+        "west": {
+          "texture": "#all",
+          "cullface": "west"
+        }
+      }
+    },
+    {
+      "from": [
+        14,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        2
+      ],
+      "faces": {
+        "up": {
+          "texture": "#all",
+          "cullface": "up"
+        },
+        "down": {
+          "texture": "#all",
+          "cullface": "down"
+        },
+        "north": {
+          "texture": "#all",
+          "cullface": "north"
+        },
+        "east": {
+          "texture": "#all",
+          "cullface": "east"
+        },
+        "south": {
+          "texture": "#all"
+        },
+        "west": {
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "from": [
+        14,
+        0,
+        14
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "up": {
+          "texture": "#all",
+          "cullface": "up"
+        },
+        "down": {
+          "texture": "#all",
+          "cullface": "down"
+        },
+        "north": {
+          "texture": "#all"
+        },
+        "east": {
+          "texture": "#all",
+          "cullface": "east"
+        },
+        "south": {
+          "texture": "#all",
+          "cullface": "south"
+        },
+        "west": {
+          "texture": "#all"
+        }
+      }
+    },
+    {
+      "from": [
+        -1,
+        7,
+        0.55
+      ],
+      "to": [
+        17,
+        8,
+        1.55
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          7.5,
+          8
+        ],
+        "axis": "z",
+        "angle": 45
+      },
+      "faces": {
+        "down": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "north": {
+          "texture": "#all",
+          "cullface": "north",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "south": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        -1,
+        7,
+        0.551
+      ],
+      "to": [
+        17,
+        8,
+        1.551
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          7.5,
+          8
+        ],
+        "axis": "z",
+        "angle": -45
+      },
+      "faces": {
+        "down": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "north": {
+          "texture": "#all",
+          "cullface": "north",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "south": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        -1,
+        7,
+        14.45
+      ],
+      "to": [
+        17,
+        8,
+        15.45
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          7.5,
+          8
+        ],
+        "axis": "z",
+        "angle": 45
+      },
+      "faces": {
+        "down": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "north": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "south": {
+          "texture": "#all",
+          "cullface" :"south",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        -1,
+        7,
+        14.449
+      ],
+      "to": [
+        17,
+        8,
+        15.451
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          7.5,
+          8
+        ],
+        "axis": "z",
+        "angle": -45
+      },
+      "faces": {
+        "down": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "north": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "south": {
+          "texture": "#all",
+          "cullface": "south",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        0.55,
+        7,
+        -1
+      ],
+      "to": [
+        1.55,
+        8,
+        17
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          7.5,
+          8
+        ],
+        "axis": "x",
+        "angle": -45
+      },
+      "faces": {
+        "down": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "east": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "west": {
+          "texture": "#all",
+          "cullface": "west",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        0.549,
+        7,
+        -1
+      ],
+      "to": [
+        1.551,
+        8,
+        17
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          7.5,
+          8
+        ],
+        "axis": "x",
+        "angle": 45
+      },
+      "faces": {
+        "down": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "east": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "west": {
+          "texture": "#all",
+          "cullface": "west",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        14.45,
+        7,
+        -1
+      ],
+      "to": [
+        15.45,
+        8,
+        17
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          7.5,
+          8
+        ],
+        "axis": "x",
+        "angle": -45
+      },
+      "faces": {
+        "down": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "east": {
+          "texture": "#all",
+          "cullface": "east",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "west": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "from": [
+        14.449,
+        7,
+        -1
+      ],
+      "to": [
+        15.451,
+        8,
+        17
+      ],
+      "rotation": {
+        "origin": [
+          8,
+          7.5,
+          8
+        ],
+        "axis": "x",
+        "angle": 45
+      },
+      "faces": {
+        "down": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "up": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "east": {
+          "texture": "#all",
+          "cullface": "east",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        },
+        "west": {
+          "texture": "#all",
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ]
+        }
+      }
+    }
+  ]
+}

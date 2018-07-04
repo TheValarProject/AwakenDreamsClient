@@ -10,7 +10,7 @@
       "model": "awakendreams:gondorian_crafting_table"
     },
     "type=rohirrim_crafting_table": {
-      "model": "awakendreams:elven_crafting_table"
+      "model": "awakendreams:rohirrim_crafting_table"
     },
     "type=hobbit_crafting_table": {
       "model": "awakendreams:elven_crafting_table"
