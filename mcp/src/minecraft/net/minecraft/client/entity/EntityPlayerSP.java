@@ -827,7 +827,7 @@ public class EntityPlayerSP extends AbstractClientPlayer
         }
         else if ("minecraft:rohirrim_crafting_table".equals(s))
         {
-            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "rohirrim", 4210752, 3));
+            this.mc.displayGuiScreen(new GuiCustomCrafting(this.inventory, this.worldObj, "rohirrim", 1126163, 3, 204, 194));
         }
         else if ("minecraft:hobbit_crafting_table".equals(s))
         {
